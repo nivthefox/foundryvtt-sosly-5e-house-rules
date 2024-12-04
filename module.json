@@ -1,0 +1,94 @@
+{
+  "id": "sosly-5e-house-rules",
+  "title": "SoSly House Rules",
+  "description": "House Rules for 5th Edition Dungeons and Dragons",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "nivthefox",
+      "discord": "nivthefox",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.1.2",
+          "verified": "4.1.2"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "dist/house-rules.js"
+  ],
+  "styles": [
+    "dist/house-rules.css"
+  ],
+  "socket": true,
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "dist/lang/en.json",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules",
+  "license": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/LICENSE",
+  "manifest": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/bundle/module.json",
+  "download": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/bundle/foundryvtt-sosly-5e-house-rules.zip",
+  "readme": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/README.md",
+  "packs": [
+    {
+      "name": "equipment",
+      "label": "Equipment",
+      "path": "packs/equipment",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "house-rules",
+      "label": "House Rules",
+      "system": "dnd5e",
+      "path": "packs/house-rules",
+      "type": "JournalEntry"
+    }
+  ],
+  "documentTypes": {
+    "JournalEntryPage": {
+      "class": {
+        "htmlFields": [
+          "details.value",
+          "details.additionalHitPoints",
+          "description.additionalTraits",
+          "description.additionalEquipment",
+          "description.subclass"
+        ]
+      },
+      "map": {},
+      "rule": {
+        "htmlFields": [
+          "tooltip"
+        ]
+      },
+      "spells": {},
+      "subclass": {
+        "htmlFields": [
+          "details.value"
+        ]
+      }
+    }
+  }
+}
