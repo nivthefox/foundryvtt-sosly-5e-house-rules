@@ -1,5 +1,6 @@
 import {utils} from '../../../../systems/dnd5e/dnd5e.mjs';
 import {id as module_id} from '../../module.json';
+import {Breather} from '../breather/breather.js';
 
 export function registerSoSlyActor() {
     CONFIG.Actor.documentClass = mixinPlayerCharacterSheet(CONFIG.Actor.documentClass);
@@ -11,6 +12,25 @@ export function registerSoSlyActor() {
             }
         }
     });
+
+    Hooks.on('renderActorSheet5eCharacter2', (app, html, data) => {
+        const buttons = html.find('.sheet-header-buttons');
+        const button = document.createElement('button');
+        button.classList.add('breather-button');
+        button.classList.add('gold-button');
+        button.setAttribute('data-tooltip', 'sosly.breather.label');
+        button.setAttribute('aria-label', game.i18n.localize('sosly.breather.label'));
+
+        const icon = document.createElement('i');
+        icon.classList.add('fas', 'fa-face-exhaling');
+
+        button.appendChild(icon);
+        buttons.prepend(button);
+
+        button.addEventListener('click', async event => {
+            await app.actor.breather(event);
+        });
+    });
 }
 
 function mixinPlayerCharacterSheet(Actor5e) {
@@ -19,6 +39,35 @@ function mixinPlayerCharacterSheet(Actor5e) {
             super.prepareDerivedData();
             const rollData = this.system.parent.getRollData({deterministic: true});
             prepareEncumbrance.call(this.system, rollData);
+        }
+
+        async breather(config = {}) {
+            if (this.type === 'vehicle') {
+                return;
+            }
+
+            if (Hooks.call('sosly.preBreather', this, config) === false) {
+                return;
+            }
+
+            // Take note of the initial hit points and number of hit dice the Actor has
+            const hd0 = foundry.utils.getProperty(this, 'system.attributes.hd.value');
+
+            // Display a Dialog for rolling hit dice
+            try {
+                foundry.utils.mergeObject(config, await Breather.breatherDialog({actor: this, canRoll: hd0 > 0}));
+            }
+            catch (err) {
+                return;
+            }
+
+            if (Hooks.call('sosly.breather', this, config) === false) {
+                return;
+            }
+
+            if (!config.dialog && config.autoHD) {
+                await this.autoSpendHitDice({threshold: config.autoHDThreshold});
+            }
         }
 
         async _preUpdate(changed, options, userId) {
