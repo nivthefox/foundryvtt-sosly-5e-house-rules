@@ -129,7 +129,7 @@ function prepareEncumbrance(rollData, { validateItem }={}) {
 
     // Determine the Encumbrance size class
     const keys = Object.keys(CONFIG.DND5E.actorSizes);
-    const index = keys.findIndex(k => k === this.traits.size);
+    const index = keys.findIndex(k => k === this.traits?.size);
     const sizeConfig = CONFIG.DND5E.actorSizes[
         keys[this.parent.flags.dnd5e?.powerfulBuild ? Math.min(index + 1, keys.length - 1) : index]
     ];
