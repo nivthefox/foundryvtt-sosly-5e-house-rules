@@ -1,0 +1,108 @@
+name: Pianoforte
+type: tool
+img: modules/sosly-5e-house-rules/public/equipment/tools/pianoforte.png
+system:
+  activities:
+    ybgV8fjEBeN7J8EE:
+      _id: ybgV8fjEBeN7J8EE
+      type: check
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      check:
+        associated: []
+        dc: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>A pianoforte to evoke awe, wonder, or fear in your audience. <br />If
+      you have proficiency with a given musical instrument, you can add your
+      proficiency bonus to any ability checks you make to play music with the
+      instrument. A bard can use a musical instrument as a spellcasting focus.
+      Each type of musical instrument requires a separate proficiency.</p><p
+      class="whitespace-pre-wrap break-words"></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 750
+    units: lb
+  price:
+    value: 500
+    denomination: gp
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  type:
+    value: music
+    baseItem: ''
+  ability: cha
+  chatFlavor: ''
+  proficient: null
+  properties: []
+  bonus: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  exportSource:
+    world: syclod
+    system: dnd5e
+    coreVersion: '12.331'
+    systemVersion: 4.1.2
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1733292645071
+  modifiedTime: 1733292645071
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 71VziEvvvWmeFCuo
+sort: 0
+_key: '!items!71VziEvvvWmeFCuo'
+

@@ -1,9 +1,11 @@
 {
     "types": "src/types.js",
     "scripts": {
-        "build": "npm run lint:code && npm run build:code && npm run build:styles",
+        "build": "npm run lint:code && npm run build:code && npm run build:styles && npm run build:packs",
         "build:code": "npx rollup --config rollup.config.mjs",
+        "build:packs": "node ./tools/convert_yaml_to_ldb.mjs",
         "build:styles": "sass src/styles/house-rules.scss:dist/house-rules.css --style compressed",
+        "compose:packs": "node ./tools/convert_ldb_to_yaml.mjs",
         "lint": "npm run lint:code",
         "lint:code": "npx eslint -c .eslintrc.json src/*/**.js",
         "watch": "npm-run-all --parallel watch:*",
@@ -23,6 +25,17 @@
             "extensions": [
                 "js",
                 "json",
+                "yaml"
+            ],
+            "quiet": false,
+            "silent": false,
+            "inherit": true
+        },
+        "build:packs": {
+            "patterns": [
+                "src/packs/"
+            ],
+            "extensions": [
                 "yaml"
             ],
             "quiet": false,

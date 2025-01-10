@@ -1,0 +1,65 @@
+name: Conditions
+pages:
+  - name: Imperiled
+    type: rule
+    sort: 200000
+    _id: wWUvr8XTV3xFqI4R
+    system:
+      type: condition
+      tooltip: ''
+    title:
+      show: true
+      level: 2
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <ul><li><p>An imperiled creature gains exhaustion at the end of their
+        turn.</p></li><li><p>An imperiled creature can choose to fall
+        @UUID[Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.UWw13ISmMxDzmwbd]{Unconscious}
+        as a free action.</p></li><li><p>An imperiled creature does not have to
+        make death saving throws.</p></li><li><p>An Imperiled creature who gains
+        at least 1 hit point is no longer Imperiled.</p></li><li><p>An Imperiled
+        creature who falls
+        @UUID[Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.UWw13ISmMxDzmwbd]{Unconscious}
+        is no longer Imperiled.</p></li></ul>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: 1733302479682
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!journal.pages!OosZQsAJrULa2WcY.wWUvr8XTV3xFqI4R'
+folder: null
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  exportSource:
+    world: 5e
+    system: dnd5e
+    coreVersion: '12.331'
+    systemVersion: 4.1.2
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1733301916541
+  modifiedTime: 1733301916541
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: OosZQsAJrULa2WcY
+sort: 0
+_key: '!journal!OosZQsAJrULa2WcY'
+
