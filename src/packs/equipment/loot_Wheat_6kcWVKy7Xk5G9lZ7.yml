@@ -1,0 +1,54 @@
+name: Wheat
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: loot
+system:
+  description:
+    value: >-
+      <p>A common ingredient for bread, beer, and more; this staple often forms
+      the base of a diet for people where their land is open and relatively
+      flat, the weather temperate, and the area safe enough for farmers to
+      operate.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 1
+    denomination: cp
+  rarity: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+  identifier: wheat
+flags: {}
+img: icons/consumables/grains/sack-oats-glowing-white.webp
+effects: []
+folder: IJudv26uooWF6FWv
+_stats:
+  duplicateSource: null
+  compendiumSource: Compendium.dnd5e.tradegoods.Item.WdPAGBRUWYaS0TNQ
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736570165527
+  modifiedTime: 1736570165527
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 6kcWVKy7Xk5G9lZ7
+sort: 0
+_key: '!items!6kcWVKy7Xk5G9lZ7'
+

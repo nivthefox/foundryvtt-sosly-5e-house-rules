@@ -1,0 +1,54 @@
+name: Pepper
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: loot
+system:
+  description:
+    value: >-
+      <p>Peppercorns are the tiny fruit, or drupe, of the pepper plant, a
+      flowering vine also known as the piper nigrum. Highly prized by chefs for
+      its versaility and can be utilized in a pinch by adventurers when ground
+      down for distractions and shenanigans.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 2
+    denomination: gp
+  rarity: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+  identifier: pepper
+flags: {}
+img: icons/commodities/materials/powder-red-green-yellow.webp
+effects: []
+folder: IJudv26uooWF6FWv
+_stats:
+  duplicateSource: null
+  compendiumSource: Compendium.dnd5e.tradegoods.Item.8SQ7vyE6gevpfJvn
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736570165527
+  modifiedTime: 1736570165527
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: CEsAaXJ2lxOPd6TL
+sort: 0
+_key: '!items!CEsAaXJ2lxOPd6TL'
+

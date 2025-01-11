@@ -1,0 +1,56 @@
+name: Cotton
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: loot
+system:
+  description:
+    value: >-
+      <p>A square yard of cotton of average quality and weight. Used for all
+      many of items and clothing.</p>
+
+      <p>Far lighter, more comfortable, and easier to work with than canvas;
+      however, the comparatively more delicate crop means it is accordingly more
+      expensive and potentially harder to come by.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 0.5
+    units: lb
+  price:
+    value: 5
+    denomination: sp
+  rarity: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+  identifier: cotton
+flags: {}
+img: icons/sundries/flags/banner-worn-green.webp
+effects: []
+folder: IJudv26uooWF6FWv
+_stats:
+  duplicateSource: null
+  compendiumSource: Compendium.dnd5e.tradegoods.Item.ZcAgZHJ1hhqbedLF
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736570165527
+  modifiedTime: 1736570165527
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: ePa5fruNwdrXcLVC
+sort: 0
+_key: '!items!ePa5fruNwdrXcLVC'
+

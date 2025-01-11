@@ -1,0 +1,20 @@
+name: Trade Goods
+type: Item
+color: null
+_id: IJudv26uooWF6FWv
+description: ''
+folder: null
+sorting: a
+sort: 100000
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736570165494
+  modifiedTime: 1736570169715
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!IJudv26uooWF6FWv'
+
