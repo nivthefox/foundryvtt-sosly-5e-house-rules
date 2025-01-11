@@ -1,0 +1,20 @@
+name: Genasi Features
+sorting: a
+folder: iprmNgxQbT21wsdX
+type: Item
+description: ''
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736588652072
+  modifiedTime: 1736588676044
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: tmnYM8t9UDaWClox
+sort: 300000
+_key: '!folders!tmnYM8t9UDaWClox'
+

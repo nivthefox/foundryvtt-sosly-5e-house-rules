@@ -1,0 +1,50 @@
+name: Trance
+type: feat
+img: icons/magic/perception/third-eye-blue-red.webp
+system:
+  description:
+    value: >-
+      <p>You don’t need to sleep, and magic can’t put you to sleep. You can
+      finish a Long Rest in 4 hours if you spend those hours in a trancelike
+      meditation, during which you retain consciousness.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: Elf
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: trance
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.races.Item.Zn043hdPVzkAn2Rl
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736588650716
+  modifiedTime: 1736588650716
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: wW7qM4F253nUmUlG
+_id: Zn043hdPVzkAn2Rl
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Zn043hdPVzkAn2Rl'
+

@@ -1,0 +1,110 @@
+name: Wildhunt Shifter
+type: race
+img: modules/sosly-5e-house-rules/public/species/wildhunt-shifter.webp
+system:
+  description:
+    value: >-
+      <p><em><strong>Creature Type.</strong></em>
+      Humanoid</p><p><em><strong>Size.</strong></em> Medium (about 5—6 feet
+      tall)</p><p><em><strong>Speed.</strong></em> 30 feet</p><p>As a Wildhunt
+      Shifter, you have these special traits.</p><p><em><strong>Bestial
+      Instincts. </strong></em>Channeling the beast within, you have proficiency
+      in one of the following skills of your choice: Acrobatics, Athletics,
+      Intimidation, or Survival.</p><p><em><strong>Darkvision. </strong></em>You
+      have Darkvision with a range of 120 feet.</p><p><em><strong>Shifting.
+      </strong></em>As a bonus action, you can assume a more bestial appearance.
+      This transformation lasts for 1 minute, until you die, or until you revert
+      to your normal appearance as a bonus action. When you shift, you gain
+      temporary hit points equal to 2 × your proficiency bonus. You can shift a
+      number of times equal to your proficiency bonus, and you regain all
+      expended uses when you finish a long rest.</p><p>While shifted, you have
+      advantage on Wisdom checks, and no creature within 30 feet of you can make
+      an attack roll with advantage against you unless you’re incapacitated.</p>
+    chat: ''
+  identifier: wildhunt-shifter
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: Size
+      _id: HKVwz0fvqz9MbQyL
+      configuration:
+        sizes:
+          - med
+      level: 0
+      value: {}
+    - type: Trait
+      configuration:
+        grants:
+          - languages:standard:common
+        mode: default
+        allowReplacements: false
+        choices: []
+      _id: 7ncKz8ouPmTwVJTw
+      value:
+        chosen: []
+      level: 0
+    - _id: z6X80s8mRwtsyjUI
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:acr
+              - skills:ath
+              - skills:itm
+              - skills:sur
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: HZ4ZwIzUeEtSwYlN
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.NNxeqf4RRNyncheH
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: 60
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736588690204
+  modifiedTime: 1736590344219
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: gPVHJoQR7XR3dUmD
+sort: 0
+_key: '!items!gPVHJoQR7XR3dUmD'
+

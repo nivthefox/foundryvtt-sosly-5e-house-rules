@@ -1,0 +1,124 @@
+name: Kenku
+type: race
+img: modules/sosly-5e-house-rules/public/species/kenku.webp
+system:
+  description:
+    value: >-
+      <p><em><strong>Creature Type.</strong></em><strong>
+      </strong>Humanoid</p><p><em><strong>Size. </strong></em>Medium (about 4—5
+      feet tall)</p><p><em><strong>Speed.</strong></em> 30 feet</p><p>As a
+      Kenku, you have these special traits.</p><p><em><strong>Expert Forgery.
+      </strong></em>You can duplicate other creatures’ handwriting and
+      craftwork. You have advantage on all checks made to produce forgeries or
+      duplicates of existing objects.</p><p><em><strong>Kenku Training.
+      </strong></em>You are proficient in your choice of two of the following
+      skills: Acrobatics, Deception, Stealth, and Sleight of
+      Hand.</p><p><em><strong>Mimicry. </strong></em>You can mimic sounds you
+      have heard, including voices. A creature that hears the sounds you make
+      can tell they are imitations with a successful Wisdom (Insight) check
+      opposed by your Charisma (Deception) check.</p><p><em><strong>Languages.
+      </strong></em>You can read and write Common and Auran, but you can speak
+      only by using your Mimicry trait.</p><p></p>
+    chat: ''
+  identifier: kenku
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: Size
+      _id: it9zj9FpE4ugEhQr
+      configuration:
+        sizes:
+          - med
+      level: 0
+      value: {}
+    - type: Trait
+      configuration:
+        grants:
+          - languages:standard:common
+          - languages:exotic:primordial:auran
+        mode: default
+        allowReplacements: false
+        choices: []
+      _id: 6JcCbtnUAbkGzFbt
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: DcIwq94UKfcqf1Go
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.9NDMZn1YY5zAdB0I
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.jWy5TJ3O2LX74VAH
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+    - _id: 5GmAVsAhicEJECCp
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices: []
+      value:
+        chosen: []
+      level: 0
+    - _id: DSDLnj37c7bfpSM3
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:acr
+              - skills:dec
+              - skills:slt
+              - skills:ste
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: null
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736588687721
+  modifiedTime: 1736589301125
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: z62vxk9wXuEzoDtt
+sort: 200000
+_key: '!items!z62vxk9wXuEzoDtt'
+

@@ -1,0 +1,111 @@
+name: Earth Genasi
+type: race
+img: modules/sosly-5e-house-rules/public/species/earth-genasi.webp
+system:
+  description:
+    value: >-
+      <p><em><strong>Creature Type.</strong></em><strong>
+      </strong>Humanoid</p><p><em><strong>Size. </strong></em>Medium (about 5—6
+      feet tall)</p><p><em><strong>Speed. </strong></em>30 feet.</p><h4>As an
+      Earth Genasi, you have these special traits.</h4><p><em><strong>Earth
+      Walk. </strong></em>You can move across difficult terrain made of earth or
+      stone without expending extra movement.</p><p><em><strong>Merge with
+      Stone. </strong></em>You can cast the
+      <em>@UUID[Compendium.dnd5e.spells.Item.pRMvmknwLf2tdMTj]{pass without
+      trace}</em> spell once with this trait, requiring no material components,
+      and you regain the ability to cast it this way when you finish a long
+      rest. Constitution is your spellcasting ability for this spell.</p><p></p>
+    chat: ''
+  identifier: earth-genasi
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: Size
+      _id: QVdFWWFMkRc0M5Io
+      configuration:
+        sizes:
+          - med
+      level: 0
+      value: {}
+    - type: Trait
+      configuration:
+        grants:
+          - languages:standard:common
+          - languages:exotic:primordial
+        mode: default
+        allowReplacements: false
+        choices: []
+      _id: iiu38tMOsJAqp44L
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: YV12A4QvrHmanJck
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.spells.Item.9w9ZavaVQSyXnS7q
+        optional: false
+        spell:
+          ability:
+            - con
+          preparation: innate
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+      value: {}
+      level: 0
+      title: Features
+      hint: ''
+    - _id: qegbqIdWn41nBu3e
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.species.Item.F2U6LTrqcz77P1g9
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Features
+      hint: ''
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: null
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736588685223
+  modifiedTime: 1736589047677
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: TuutVzBuReAYDCa7
+sort: 100000
+_key: '!items!TuutVzBuReAYDCa7'
+
