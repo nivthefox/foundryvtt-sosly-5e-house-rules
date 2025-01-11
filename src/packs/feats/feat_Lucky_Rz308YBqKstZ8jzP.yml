@@ -1,0 +1,58 @@
+name: Lucky
+type: feat
+system:
+  description:
+    value: >-
+      <p>You gain the following benefits.</p><p><em><strong>Luck
+      Points.</strong></em> You have a number of Luck Points equal to your
+      Proficiency Bonus and can spend the points on the benefits below. You
+      regain your expended Luck Points when you finish a Long
+      Rest.</p><p><em><strong>Advantage.</strong></em> When you roll a d20 for a
+      D20 Test, you can spend 1 Luck Point to give yourself Advantage on the
+      roll.</p><p><em><strong>Disadvantage.</strong></em> When a creature rolls
+      a d20 for an attack roll against you, you can spend 1 Luck Point to impose
+      Disadvantage on that roll.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: '@attributes.prof'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+  type:
+    value: feat
+    subtype: origin
+  requirements: Halfling
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: lucky
+flags: {}
+img: icons/sundries/gaming/dice-runed-brown.webp
+effects: []
+folder: fivVf9w4MWrcgBK2
+_stats:
+  compendiumSource: Compendium.world.feats.Item.Rz308YBqKstZ8jzP
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592051758
+  modifiedTime: 1736592051758
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: Rz308YBqKstZ8jzP
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Rz308YBqKstZ8jzP'
+

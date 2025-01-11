@@ -1,0 +1,50 @@
+name: Two-Weapon Fighting
+type: feat
+system:
+  description:
+    value: >-
+      <p>When you make an extra attack as a result of using a weapon that has
+      the Light property, you can add your ability modifier to the damage of
+      that attack if you aren’t already adding it to the damage.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: feat
+    subtype: fightingStyle
+  requirements: Fighting Style Feature
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: two-weapon-fighting
+flags: {}
+img: icons/skills/melee/weapons-crossed-swords-white-blue.webp
+effects: []
+folder: 8E6wafl6BUR7EeSd
+_stats:
+  compendiumSource: Compendium.world.feats.Item.PC0uIwTUPVeTXtqe
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592048316
+  modifiedTime: 1736592048316
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: PC0uIwTUPVeTXtqe
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!PC0uIwTUPVeTXtqe'
+

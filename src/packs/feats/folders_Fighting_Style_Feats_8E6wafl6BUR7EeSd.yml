@@ -1,0 +1,20 @@
+name: Fighting Style Feats
+sorting: a
+folder: null
+type: Item
+description: ''
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592048287
+  modifiedTime: 1736592048342
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 8E6wafl6BUR7EeSd
+sort: 100000
+_key: '!folders!8E6wafl6BUR7EeSd'
+

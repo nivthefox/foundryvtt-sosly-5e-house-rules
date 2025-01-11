@@ -1,0 +1,118 @@
+folder: 8E6wafl6BUR7EeSd
+name: Unarmed Fighting
+type: feat
+img: icons/skills/melee/unarmed-punch-fist-yellow-red.webp
+system:
+  activities:
+    bBYBVW172uYZ6Efp:
+      type: attack
+      _id: bBYBVW172uYZ6Efp
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creatureOrObject
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: unarmed
+        ability: ''
+        bonus: '@attributes.prof'
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: '@abilities.str.mod'
+            types: []
+            scaling:
+              number: 1
+      name: Unarmed Strike
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you hit with your Unarmed Strike and deal damage, you can deal
+      Bludgeoning damage equal to 1d6 plus your Strength modifier instead of the
+      normal damage of an Unarmed Strike. If you aren’t holding any weapons or a
+      Shield when you make the attack roll, the d6 becomes a d8.</p><p>At the
+      start of each of your turns, you can deal 1d4 Bludgeoning damage to one
+      creature Grappled by you.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: feat
+    subtype: fightingStyle
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Fighting Style Feature
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.feats.Item.BWi83psegCR3BFsh
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592048316
+  modifiedTime: 1736592048316
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: BWi83psegCR3BFsh
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!BWi83psegCR3BFsh'
+

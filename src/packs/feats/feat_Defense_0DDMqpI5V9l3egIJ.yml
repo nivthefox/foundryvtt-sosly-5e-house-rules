@@ -1,0 +1,85 @@
+name: Defense
+type: feat
+system:
+  description:
+    value: >-
+      <p>While you’re wearing Light, Medium, or Heavy armor, you gain a +1 bonus
+      to Armor Class.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: feat
+    subtype: fightingStyle
+  requirements: Fighting Style Feature
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: defense
+flags: {}
+img: icons/equipment/shield/heater-stone-orange.webp
+effects:
+  - _id: U3so0zDcVt4sIBRz
+    flags: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        value: '+1'
+        mode: 2
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.4mQUDmiDBePkQD6Y
+    tint: '#ffffff'
+    transfer: true
+    name: 'Fighting Style: Defense'
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    img: icons/equipment/shield/heater-stone-orange.webp
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!0DDMqpI5V9l3egIJ.U3so0zDcVt4sIBRz'
+folder: 8E6wafl6BUR7EeSd
+_stats:
+  compendiumSource: Compendium.world.feats.Item.0DDMqpI5V9l3egIJ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592048316
+  modifiedTime: 1736592048316
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 0DDMqpI5V9l3egIJ
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!0DDMqpI5V9l3egIJ'
+

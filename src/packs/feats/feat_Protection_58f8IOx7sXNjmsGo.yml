@@ -1,0 +1,105 @@
+name: Protection
+type: feat
+img: icons/magic/defensive/shield-barrier-deflect-gold.webp
+system:
+  description:
+    value: >-
+      <p>When a creature you can see attacks a target other than you that is
+      within 5 feet of you, you can take a Reaction to interpose your Shield if
+      you’re holding one. You impose Disadvantage on the triggering attack roll
+      and all other attack rolls against the target until the start of your next
+      turn if you remain within 5 feet of the target.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: feat
+    subtype: fightingStyle
+  requirements: Fighting Style Feature
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: reaction
+        value: 1
+        condition: Must be wearing a shield.
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '5'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: protection
+effects: []
+folder: 8E6wafl6BUR7EeSd
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.feats.Item.58f8IOx7sXNjmsGo
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592048316
+  modifiedTime: 1736592048316
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 58f8IOx7sXNjmsGo
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!58f8IOx7sXNjmsGo'
+

@@ -172,16 +172,16 @@ system:
         allowDrops: true
         type: feat
         pool:
-          - uuid: Compendium.world.feats.Item.UdVo7KtcCVdvH1qG
-          - uuid: Compendium.world.feats.Item.D19C0gcWJgxvU66y
-          - uuid: Compendium.world.feats.Item.0DDMqpI5V9l3egIJ
-          - uuid: Compendium.world.feats.Item.HGDExYAleyKOU2kc
-          - uuid: Compendium.world.feats.Item.UHXBBBBcNnrO7mL3
-          - uuid: Compendium.world.feats.Item.HNBbLfP992D4YlwB
-          - uuid: Compendium.world.feats.Item.58f8IOx7sXNjmsGo
-          - uuid: Compendium.world.feats.Item.4BZsOmmvRPs3XsXs
-          - uuid: Compendium.world.feats.Item.PC0uIwTUPVeTXtqe
-          - uuid: Compendium.world.feats.Item.BWi83psegCR3BFsh
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.UdVo7KtcCVdvH1qG
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.D19C0gcWJgxvU66y
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.0DDMqpI5V9l3egIJ
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.HGDExYAleyKOU2kc
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.UHXBBBBcNnrO7mL3
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.HNBbLfP992D4YlwB
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.58f8IOx7sXNjmsGo
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.4BZsOmmvRPs3XsXs
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.PC0uIwTUPVeTXtqe
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.BWi83psegCR3BFsh
         spell: null
         restriction:
           type: feat
@@ -463,7 +463,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548928074
-  modifiedTime: 1736588454287
+  modifiedTime: 1736592251843
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

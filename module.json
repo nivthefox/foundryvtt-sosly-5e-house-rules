@@ -29,12 +29,20 @@
       {
         "id": "dnd5e-spellpoints",
         "type": "module",
-        "compatibility": {}
-      },
+        "compatibility": {
+          "minimum": "2.4.22",
+          "verified": "2.4.22"
+        }
+      }
+    ],
+    "recommends": [
       {
         "id": "ActiveAuras",
         "type": "module",
-        "compatibility": {}
+        "compatibility": {
+          "minimum": "0.10.0",
+          "verified": "0.10.0"
+        }
       }
     ]
   },
@@ -60,9 +68,42 @@
   "readme": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/README.md",
   "packs": [
     {
+      "name": "backgrounds",
+      "label": "Backgrounds",
+      "path": "packs/backgrounds",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "classes",
+      "label": "Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "equipment",
       "label": "Equipment",
       "path": "packs/equipment",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "feats",
+      "label": "Feats",
+      "path": "packs/feats",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -82,9 +123,9 @@
       }
     },
     {
-      "name": "classes",
-      "label": "Classes",
-      "path": "packs/classes",
+      "name": "species",
+      "label": "Species",
+      "path": "packs/species",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -96,17 +137,6 @@
       "name": "spells",
       "label": "Spells",
       "path": "packs/spells",
-      "type": "Item",
-      "system": "dnd5e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "species",
-      "label": "Species",
-      "path": "packs/species",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
