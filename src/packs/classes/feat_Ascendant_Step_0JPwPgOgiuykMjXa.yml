@@ -1,0 +1,101 @@
+name: Ascendant Step
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: feat
+system:
+  description:
+    value: >-
+      <p>You can cast
+      @UUID[Compendium.sosly-5e-house-rules.spells.LytqvAI0dOI5Gvbp]{Levitate}
+      on yourself at will, without expending a spell slot.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: eldritchInvocation
+  requirements: Level 5+ Warlock
+  properties: []
+  prerequisites:
+    level: 9
+  activities:
+    RvubJ11HxRUTHnz1:
+      type: cast
+      _id: RvubJ11HxRUTHnz1
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      spell:
+        challenge:
+          attack: null
+          save: null
+          override: false
+        level: null
+        properties:
+          - vocal
+          - somatic
+          - material
+        spellbook: true
+        uuid: Compendium.sosly-5e-house-rules.spells.TcKQR8EbsaKtFBNI
+      name: ''
+      img: ''
+  enchant: {}
+  identifier: ascendant-step
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/light/explosion-beam-impact-silhouette.webp
+effects: []
+folder: u224n6f5KyPpS4dX
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736593374610
+  modifiedTime: 1736593469831
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 0JPwPgOgiuykMjXa
+sort: 0
+_key: '!items!0JPwPgOgiuykMjXa'
+

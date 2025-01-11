@@ -21,11 +21,15 @@ system:
   target:
     affects:
       choice: false
+      count: ''
+      type: ''
     template:
       units: touch
       contiguous: false
+      type: ''
   range:
     units: touch
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -84,7 +88,10 @@ system:
         visible: false
       sort: 0
   identifier: mage-armor
-  properties: []
+  properties:
+    - vocal
+    - somatic
+    - material
 name: Mage Armor
 flags:
   ddbimporter:
@@ -218,7 +225,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736583831658
-  modifiedTime: 1736583831658
+  modifiedTime: 1736593542234
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: vozZLJY1ioSGYAQ3
 _id: jzBTNgPIr92daZFR

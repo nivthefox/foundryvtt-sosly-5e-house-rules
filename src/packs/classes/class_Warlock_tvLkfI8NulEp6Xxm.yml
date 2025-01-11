@@ -1,0 +1,655 @@
+name: Warlock
+type: class
+_id: tvLkfI8NulEp6Xxm
+img: modules/sosly-5e-house-rules/public/classes/warlock.jpg
+system:
+  description:
+    value: >-
+      <table><tbody><tr><td data-colwidth="225"><p><strong>Primary
+      Ability</strong></p></td><td><p>Charisma</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D8
+      per Warlock level</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Wisdom and
+      Charisma</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
+      Proficiencies</strong></p></td><td><p><em>Choose 2:</em> Arcana,
+      Deception, History, Intimidation, Investigation, Nature, or
+      Religion</p></td></tr><tr><td data-colwidth="225"><p><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Simple weapons</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Armor
+      Training</strong></p></td><td><p>Light armor</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Starting
+      Equipment</strong></p></td><td><p><em>Choose A or B:</em> (A) Leather
+      Armor, Sickle, 2 Daggers, Arcane Focus (orb), Book (occult lore),
+      Scholar's Pack, and 15 GP; or (B) 100
+      GP</p></td></tr></tbody></table><p>Warlocks quest for knowledge that lies
+      hidden in the fabric of the multiverse. They often begin their search for
+      magical power by delving into tomes of forbidden lore, dabbling in
+      invocations meant to attract the power of extraplanar beings, or seeking
+      places of power where the influence of these beings can be felt. In no
+      time, each Warlock is drawn into a binding pact with a powerful patron.
+      Drawing on the ancient knowledge of beings such as angels, archfey,
+      demons, devils, hags, and alien entities of the Far Realm, Warlocks piece
+      together arcane secrets to bolster their own power.</p><p>Warlocks view
+      their patrons as resources, as means to the end of achieving magical
+      power. Some Warlocks respect, revere, or even love their patrons; some
+      serve their patrons grudgingly; and some seek to undermine their patrons
+      even as they wield the power their patrons have given them.</p><p>Once a
+      pact is made, a Warlock’s thirst for knowledge and power can’t be slaked
+      with mere study. Most Warlocks spend their days pursuing greater power and
+      deeper knowledge, which typically means some kind of adventure.</p><p></p>
+    chat: ''
+  identifier: warlock
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  levels: 1
+  primaryAbility:
+    value:
+      - cha
+    all: true
+  hitDice: d8
+  hitDiceUsed: 0
+  advancement:
+    - _id: lB6uYQPcwL9U6Z3h
+      type: HitPoints
+      configuration: {}
+      value: {}
+      title: ''
+      hint: ''
+      icon: systems/dnd5e/icons/svg/hit-points.svg
+    - _id: 0m073tRX2VXz0Huq
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:dex
+          - saves:cha
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: Ty412g6MRMPpHf6l
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:arc
+              - skills:dec
+              - skills:his
+              - skills:itm
+              - skills:inv
+              - skills:nat
+              - skills:rel
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: X9M1RSG5W38xesut
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - armor:lgt
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+    - _id: O2GmMKs8tYXQegMB
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: tVc5ZmWLwrslBmqU
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.E4Fo8bJK3Bd13E0a
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Z4U0kWLuwSwelT3K
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Features
+      hint: ''
+    - _id: BZ1iHUKvJerUMkn8
+      type: ItemChoice
+      configuration:
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        allowDrops: true
+        type: feat
+        pool: []
+        spell: null
+        restriction:
+          type: class
+          subtype: eldritchInvocation
+      value:
+        added: {}
+        replaced: {}
+      title: Eldritch Invocations
+      hint: ''
+    - _id: NFTNQdfSUBtP1EVv
+      type: ItemChoice
+      configuration:
+        choices:
+          '1':
+            count: 2
+            replacement: false
+          '2':
+            count: null
+            replacement: true
+          '3':
+            count: null
+            replacement: true
+          '4':
+            count: 1
+            replacement: true
+          '5':
+            count: null
+            replacement: true
+          '6':
+            count: null
+            replacement: true
+          '7':
+            count: null
+            replacement: true
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: 1
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+        restriction:
+          level: '0'
+      value:
+        added: {}
+        replaced: {}
+      title: Cantrips
+      hint: ''
+    - _id: tulqBAL96AirNFL2
+      type: ItemChoice
+      configuration:
+        choices:
+          '1':
+            count: 2
+            replacement: false
+          '2':
+            count: 1
+            replacement: true
+          '3':
+            count: 1
+            replacement: true
+          '4':
+            count: 1
+            replacement: true
+          '5':
+            count: 1
+            replacement: true
+          '6':
+            count: 1
+            replacement: true
+          '7':
+            count: 1
+            replacement: true
+          '8':
+            count: 1
+            replacement: true
+          '9':
+            count: 1
+            replacement: true
+          '10':
+            count: 0
+            replacement: true
+          '11':
+            count: 1
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: 1
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: 1
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: 1
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: 1
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+        restriction:
+          level: available
+      value:
+        added: {}
+        replaced: {}
+      title: Prepared Spells
+      hint: ''
+    - _id: 3POwBFTK934uULFU
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.gNeWgDO0KBve1Ct4
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 2
+      title: Features
+      hint: ''
+    - _id: sX9VoRZipJdnvVcn
+      type: Subclass
+      configuration: {}
+      value: {}
+      level: 3
+      title: Warlock Subclass
+      hint: ''
+    - _id: czRGAo0ke3E3zQJu
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 1
+    - _id: 2zLUXEp8Szw4WuLj
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 4
+      title: ''
+      hint: ''
+    - _id: UlCRbwWH5gBBb5e4
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 8
+      title: ''
+      hint: ''
+    - _id: BjP6Q4V2M5HQ8zqz
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 12
+      title: ''
+      hint: ''
+    - _id: U6N9mRC1kPVWGOoH
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 16
+      title: ''
+      hint: ''
+    - _id: m7LSi7DvygrrSJKZ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.wk9kUedT6Zr62tHS
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 9
+      title: Features
+      hint: ''
+    - _id: 6NsiqPrmlyNahkGn
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.LHXDRx1fzjkxBjFy
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 19
+      title: Features
+      hint: ''
+    - _id: BZtfX2i4Jycxfyb7
+      type: ItemChoice
+      configuration:
+        choices:
+          '11':
+            count: 1
+            replacement: false
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: innate
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+        restriction:
+          level: '6'
+      value:
+        added: {}
+        replaced: {}
+      title: Mystic Arcanum (level 6 spell)
+      hint: ''
+    - type: ItemChoice
+      configuration:
+        choices:
+          '13':
+            count: 1
+            replacement: false
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: innate
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+        restriction:
+          level: '7'
+      value:
+        added: {}
+        replaced: {}
+      title: Mystic Arcanum (level 7 spell)
+      hint: ''
+      _id: ZsJJOmPssABLSxT2
+    - type: ItemChoice
+      configuration:
+        choices:
+          '15':
+            count: 1
+            replacement: false
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: innate
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+        restriction:
+          level: '8'
+      value:
+        added: {}
+        replaced: {}
+      title: Mystic Arcanum (level 8 spell)
+      hint: ''
+      _id: SN6Js22Y0pFOaFta
+    - type: ItemChoice
+      configuration:
+        choices:
+          '17':
+            count: 1
+            replacement: false
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: innate
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+        restriction:
+          level: '9'
+      value:
+        added: {}
+        replaced: {}
+      title: Mystic Arcanum (level 9 spell)
+      hint: ''
+      _id: Qira2l6Rl9UzJOuo
+    - _id: GYPGNepniRb1FcNm
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Qpoa4eTM6vUwIya7
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 20
+      title: Features
+      hint: ''
+  spellcasting:
+    progression: pact
+    preparation:
+      formula: ''
+    ability: cha
+  wealth: '100'
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736592794137
+  modifiedTime: 1736594718900
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!tvLkfI8NulEp6Xxm'
+

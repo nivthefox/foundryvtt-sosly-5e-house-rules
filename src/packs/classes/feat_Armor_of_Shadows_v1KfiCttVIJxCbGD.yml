@@ -1,0 +1,102 @@
+name: Armor of Shadows
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: feat
+system:
+  description:
+    value: >-
+      <p>You can cast
+      @UUID[Compendium.sosly-5e-house-rules.spells.ar35SiMOP5sfcuFe]{Mage Armor}
+      on yourself at will, without expending a spell slot or material
+      components.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: eldritchInvocation
+  requirements: ''
+  properties: []
+  activities:
+    KOorl3izVHjQ6TXj:
+      type: cast
+      _id: KOorl3izVHjQ6TXj
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      spell:
+        challenge:
+          attack: null
+          save: null
+          override: false
+        level: null
+        properties:
+          - vocal
+          - somatic
+          - material
+        spellbook: true
+        uuid: Compendium.sosly-5e-house-rules.spells.jzBTNgPIr92daZFR
+      name: ''
+      img: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: armor-of-shadows
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/control/control-influence-rally-purple.webp
+effects: []
+folder: u224n6f5KyPpS4dX
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736593330303
+  modifiedTime: 1736593527439
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: v1KfiCttVIJxCbGD
+sort: 0
+_key: '!items!v1KfiCttVIJxCbGD'
+

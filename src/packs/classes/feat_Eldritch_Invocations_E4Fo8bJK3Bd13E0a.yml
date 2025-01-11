@@ -1,0 +1,63 @@
+name: Eldritch Invocations
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: feat
+system:
+  description:
+    value: >-
+      <p>You have unearthed Eldritch Invocations, pieces of forbidden knowledge
+      that imbue you with an abiding magical ability or other lessons. You gain
+      one invocation of your choice, such as Pact of the Tome. Invocations are
+      described in the “Eldritch Invocation Options”
+      section.</p><p><em><strong>Prerequisites.</strong></em> If an invocation
+      has a prerequisite, you must meet it to learn that invocation. For
+      example, if an invocation requires you to be a level 5+ Warlock, you can
+      select the invocation once you reach Warlock level
+      5.</p><p><em><strong>Replacing and Gaining Invocations.</strong></em>
+      Whenever you gain a Warlock level, you can replace one of your invocations
+      with another one for which you qualify. You can’t replace an invocation if
+      it’s a prerequisite for another invocation that you have.</p><p>When you
+      gain certain Warlock levels, you gain more invocations of your choice, as
+      shown in the Invocations column of the Warlock Features table.</p><p>You
+      can’t pick the same invocation more than once unless its description says
+      otherwise.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Warlock 2
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: eldritch-invocations
+folder: I6C2up2LvZXGkXnN
+flags: {}
+img: icons/magic/unholy/strike-hand-glow-pink.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736593159625
+  modifiedTime: 1736594339043
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: E4Fo8bJK3Bd13E0a
+sort: 100000
+_key: '!items!E4Fo8bJK3Bd13E0a'
+

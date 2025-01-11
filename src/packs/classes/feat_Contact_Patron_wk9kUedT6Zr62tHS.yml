@@ -1,0 +1,104 @@
+folder: I6C2up2LvZXGkXnN
+name: Contact Patron
+type: feat
+_id: wk9kUedT6Zr62tHS
+img: icons/magic/sonic/scream-wail-shout-teal.webp
+system:
+  activities:
+    IEdntPJMJG1e9YyQ:
+      type: cast
+      _id: IEdntPJMJG1e9YyQ
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      spell:
+        challenge:
+          attack: null
+          save: null
+          override: false
+        level: null
+        properties:
+          - vocal
+          - somatic
+          - material
+        spellbook: true
+        uuid: Compendium.sosly-5e-house-rules.spells.Uv7Z9pkCqln5QxVc
+      name: ''
+      img: ''
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>In the past, you usually contacted your patron through intermediaries.
+      Now you can communicate directly; you always have the
+      @UUID[Compendium.sosly-5e-house-rules.spells.Uv7Z9pkCqln5QxVc]{Contact
+      Other Plane} spell prepared. With this feature, you can cast the spell
+      without expending a spell slot to contact your patron, and you
+      automatically succeed on the spell’s saving throw.</p><p>Once you cast the
+      spell with this feature, you can’t do so in this way again until you
+      finish a Long Rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Warlock 9
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736594208971
+  modifiedTime: 1736594339043
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!wk9kUedT6Zr62tHS'
+

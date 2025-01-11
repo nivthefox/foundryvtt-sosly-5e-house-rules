@@ -33,11 +33,14 @@ system:
     affects:
       type: self
       choice: false
+      special: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
     units: self
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -95,7 +98,8 @@ system:
         visible: false
       sort: 0
   identifier: contact-other-plane
-  properties: []
+  properties:
+    - vocal
 name: Contact Other Plane
 flags:
   ddbimporter:
@@ -155,7 +159,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736583831658
-  modifiedTime: 1736583831658
+  modifiedTime: 1736594307427
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: okMiH1OcHpnXhTqw
 _id: Uv7Z9pkCqln5QxVc

@@ -34,12 +34,15 @@ system:
       type: creature
       count: '1'
       choice: false
+      special: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
     value: '60'
     units: ft
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -238,7 +241,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736583831658
-  modifiedTime: 1736583831658
+  modifiedTime: 1736593464391
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: 2fsZjAlRuZaXCtAM
 _id: TcKQR8EbsaKtFBNI

@@ -1,7 +1,7 @@
 folder: 2B3ZPqDz4gMjvekQ
 name: Sorcerous Restoration
 type: feat
-img: icons/magic/control/silhouette-hold-beam-blue.webp
+img: icons/magic/earth/explosion-lava-stone-yellow-orange.webp
 system:
   activities:
     WwQcJjoN2YIah24N:
@@ -92,7 +92,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548922821
-  modifiedTime: 1736548922821
+  modifiedTime: 1736593988191
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: wj9CIP0QbARRCwvR
 ownership:
