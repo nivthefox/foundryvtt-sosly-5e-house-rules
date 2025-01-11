@@ -164,14 +164,16 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.DD4eOIDCHExBQcpG
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.DD4eOIDCHExBQcpG
             optional: false
-          - uuid: Compendium.world.classes.Item.wysyZNHt3mSdFJBr
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.wysyZNHt3mSdFJBr
             optional: false
         optional: false
         spell: null
       value: {}
       level: 1
+      title: Features
+      hint: ''
     - _id: pxZYIgjPbIyjWo2v
       type: ScaleValue
       configuration:
@@ -203,10 +205,10 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.vllHDf9uOYXDnyVT
-          - optional: false
-            uuid: Compendium.world.classes.Item.LGzC3GtiSrnWhjv2
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.vllHDf9uOYXDnyVT
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.LGzC3GtiSrnWhjv2
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -326,8 +328,8 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.3kMLJKxc7niMN36b
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.3kMLJKxc7niMN36b
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -338,7 +340,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.CCE6kiJp14aSSyiv
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.CCE6kiJp14aSSyiv
             optional: false
         optional: false
         spell: null
@@ -350,7 +352,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.dfJ0WKKTHKCV8xSu
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.dfJ0WKKTHKCV8xSu
             optional: false
         optional: false
         spell: null
@@ -362,7 +364,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.5WYTkb8H52JzCw3Q
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.5WYTkb8H52JzCw3Q
             optional: false
         optional: false
         spell: null
@@ -374,7 +376,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.5qbx1V3CyHY0STVw
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.5qbx1V3CyHY0STVw
             optional: false
         optional: false
         spell: null
@@ -386,7 +388,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.7FEDU0YLLohuLJAz
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.7FEDU0YLLohuLJAz
             optional: false
         optional: false
         spell: null
@@ -573,7 +575,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548926898
-  modifiedTime: 1736571170918
+  modifiedTime: 1736579969990
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

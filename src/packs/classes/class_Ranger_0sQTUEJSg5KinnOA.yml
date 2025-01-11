@@ -199,11 +199,11 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.mnqutlmNmk06fcXL
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Ju1xtGFYVya7mg6o
             optional: false
-          - uuid: Compendium.world.classes.Item.Ju1xtGFYVya7mg6o
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.mnqutlmNmk06fcXL
             optional: false
-          - uuid: Compendium.world.classes.Item.uZAlxNLKppJKu6yu
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.uZAlxNLKppJKu6yu
             optional: false
         optional: false
         spell: null
@@ -215,9 +215,9 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.9eObHa6CLQSvyc9z
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.9eObHa6CLQSvyc9z
             optional: false
-          - uuid: Compendium.world.classes.Item.w8ZH9S4TTLbd4wTY
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.w8ZH9S4TTLbd4wTY
             optional: false
         optional: false
         spell: null
@@ -338,7 +338,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.mLGJWtJz0loCh6NT
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.mLGJWtJz0loCh6NT
             optional: false
         optional: false
         spell: null
@@ -350,7 +350,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.Jx8kxouA85515StK
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Jx8kxouA85515StK
             optional: false
         optional: false
         spell: null
@@ -362,7 +362,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.T6Ti3jQNUYlspBGv
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.T6Ti3jQNUYlspBGv
             optional: false
         optional: false
         spell: null
@@ -374,7 +374,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.xOW5zqFXki5cqZsZ
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.xOW5zqFXki5cqZsZ
             optional: false
         optional: false
         spell: null
@@ -386,7 +386,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.Ftue8yFbR17ROta9
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Ftue8yFbR17ROta9
             optional: false
         optional: false
         spell: null
@@ -398,7 +398,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.C2dI9JHUltmVdzuj
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.C2dI9JHUltmVdzuj
             optional: false
         optional: false
         spell: null
@@ -410,7 +410,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.N3vJ7M0EmKdq7gn1
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.N3vJ7M0EmKdq7gn1
             optional: false
         optional: false
         spell: null
@@ -422,7 +422,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.E9X8jHnAIHV1dY8Z
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.E9X8jHnAIHV1dY8Z
             optional: false
         optional: false
         spell: null
@@ -434,7 +434,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.sPM10XIsXcohGKCM
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.sPM10XIsXcohGKCM
             optional: false
         optional: false
         spell: null
@@ -446,7 +446,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.ORmJO8C8khjAgAtJ
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.ORmJO8C8khjAgAtJ
             optional: false
         optional: false
         spell: null
@@ -514,7 +514,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548932959
-  modifiedTime: 1736571307191
+  modifiedTime: 1736580323538
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
