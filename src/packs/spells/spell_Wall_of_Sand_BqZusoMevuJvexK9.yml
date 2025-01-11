@@ -1,0 +1,147 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You conjure up a wall of swirling sand on the ground at a point you can
+      see within range. You can make the wall up to 30 feet long, 10 feet high,
+      and 10 feet thick, and it vanishes when the spell ends. It blocks line of
+      sight but not movement. A creature is
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{blinded} while in the wall’s
+      space and must spend 3 feet of movement for every 1 foot it moves
+      there.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 170
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: wall
+      size: '30'
+      contiguous: false
+  range:
+    value: '90'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: evo
+  materials:
+    value: a handful of sand
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: wall-of-sand
+  properties: []
+name: Wall of Sand
+flags:
+  ddbimporter:
+    id: 138284
+    definitionId: 2405
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Wall of Sand
+    sources:
+      - sourceId: 4
+        pageNumber: 170
+        sourceType: 1
+    tags:
+      - Control
+      - Debuff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.BqZusoMevuJvexK9
+    hash: a317b477fad8a858d8fd5e90484177dd434d0281
+  cf:
+    id: temp_makmayeu1vq
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/environment/wilderness/cave-entrance-rocky.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.BqZusoMevuJvexK9
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: BqZusoMevuJvexK9
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!BqZusoMevuJvexK9'
+

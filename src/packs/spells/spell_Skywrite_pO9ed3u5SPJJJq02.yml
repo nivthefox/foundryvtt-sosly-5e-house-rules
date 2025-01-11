@@ -1,0 +1,141 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You cause up to ten words to form in a part of the sky you can see. The
+      words appear to be made of cloud and remain in place for the spell’s
+      duration. The words dissipate when the spell ends. A strong wind can
+      disperse the clouds and end the spell early.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 165
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: special
+      contiguous: false
+  range:
+    units: special
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: skywrite
+  properties: []
+name: Skywrite
+flags:
+  ddbimporter:
+    id: 138239
+    definitionId: 2398
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Skywrite
+    sources:
+      - sourceId: 4
+        pageNumber: 165
+        sourceType: 1
+    tags:
+      - Control
+      - Communication
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.pO9ed3u5SPJJJq02
+    hash: 2f77b7480e88602460544c94155913d428a013e9
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - ritual
+      - concentration
+img: icons/magic/air/wind-stream-red.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.pO9ed3u5SPJJJq02
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Q2Im3uIUT7sJoMeI
+_id: pO9ed3u5SPJJJq02
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!pO9ed3u5SPJJJq02'
+

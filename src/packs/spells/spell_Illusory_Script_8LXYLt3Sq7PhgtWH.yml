@@ -1,0 +1,154 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You write on parchment, paper, or some other suitable writing material
+      and imbue it with a potent illusion that lasts for the duration.</p>
+
+      <p>To you and any creatures you designate when you cast the spell, the
+      writing appears normal, written in your hand, and conveys whatever meaning
+      you intended when you wrote the text. To all others, the writing appears
+      as if it were written in an unknown or magical script that is
+      unintelligible. Alternatively, you can cause the writing to appear to be
+      an entirely different message, written in a different hand and language,
+      though the language must be one you know.</p>
+
+      <p>Should the spell be dispelled, the original script and the illusion
+      both disappear.</p>
+
+      <p>A creature with @Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{truesight}
+      can read the hidden message.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 252
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: day
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: ill
+  materials:
+    value: a lead-based ink worth at least 10 gp, which the spell consumes
+    consumed: true
+    cost: 10
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: illusory-script
+  properties: []
+name: Illusory Script
+flags:
+  ddbimporter:
+    id: 138345
+    definitionId: 2153
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Illusory Script
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 252
+        sourceType: 1
+    tags:
+      - Communication
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.8LXYLt3Sq7PhgtWH
+    hash: 8fc0c78e296640615946efc3548e353a795f3cbb
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+      - material
+      - ritual
+img: icons/magic/air/fog-gas-smoke-purple.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.8LXYLt3Sq7PhgtWH
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583830507
+  modifiedTime: 1736583830507
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: oIUjvWjkFTJjqwLl
+_id: 8LXYLt3Sq7PhgtWH
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!8LXYLt3Sq7PhgtWH'
+

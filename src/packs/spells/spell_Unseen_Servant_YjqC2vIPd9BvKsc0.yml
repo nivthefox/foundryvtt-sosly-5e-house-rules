@@ -1,0 +1,157 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>This spell creates an
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{invisible}, mindless, shapeless,
+      Medium force that performs simple tasks at your command until the spell
+      ends. The servant springs into existence in an unoccupied space on the
+      ground within range. It has AC 10, 1 hit point, and a Strength of 2, and
+      it can't attack. If it drops to 0 hit points, the spell ends.</p>
+
+      <p>Once on each of your turns as a bonus action, you can mentally command
+      the servant to move up to 15 feet and interact with an object. The servant
+      can perform simple tasks that a human servant could do, such as fetching
+      things, cleaning, mending, folding clothes, lighting fires, serving food,
+      and pouring wine. Once you give the command, the servant performs the task
+      to the best of its ability until it completes the task, then waits for
+      your next command.</p>
+
+      <p>If you command the servant to perform a task that would move it more
+      than 60 feet away from you, the spell ends.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 284
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: con
+  materials:
+    value: a bit of string and of wood
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: unseen-servant
+  properties: []
+name: Unseen Servant
+flags:
+  ddbimporter:
+    id: 138901
+    definitionId: 2288
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Unseen Servant
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 284
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.YjqC2vIPd9BvKsc0
+    hash: 6bce76b8b71211f4c364ac27d21caf46467352a2
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - ritual
+img: icons/magic/control/debuff-energy-hold-blue-yellow.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.YjqC2vIPd9BvKsc0
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583821766
+  modifiedTime: 1736583821766
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ORVdT5qwDf0iP7Ld
+_id: YjqC2vIPd9BvKsc0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!YjqC2vIPd9BvKsc0'
+

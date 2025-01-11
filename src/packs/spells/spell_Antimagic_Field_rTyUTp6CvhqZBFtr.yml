@@ -1,0 +1,143 @@
+type: spell
+system:
+  description:
+    value: "<p>A 10-foot-radius @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{invisible} sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.</p>\n<p>Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.</p>\n<p><strong>Targeted Effects.</strong> Spells and other magical effects, such as <strong>magic missile</strong> and <strong>charm person</strong>, that target a creature or an object in the sphere have no effect on that target.</p>\n<p><strong>Areas of Magic.</strong> The area of another spell or magical effect, such as <strong>fireball</strong>, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a <strong>wall of fire</strong> are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.</p>\n<p><strong>Spells.</strong> Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.</p>\n<p><strong>Magic Items.</strong> The properties and powers of magic items are suppressed in the sphere. For example, a <strong>longsword, +1</strong>\_in the sphere functions as a nonmagical longsword.</p>\n<p>A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.</p>\n<p><strong>Magical Travel.</strong> Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the <strong>rope trick</strong> spell, temporarily closes while in the sphere.</p>\n<p><strong>Creatures and Objects.</strong> A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.</p>\n<p><strong>Dispel Magic.</strong> Spells and magical effects such as <strong>dispel magic</strong> have no effect on the sphere. Likewise, the spheres created by different <strong>antimagic field</strong> spells don't nullify each other.</p>"
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 213
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: sphere
+      size: '10'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 8
+  school: abj
+  materials:
+    value: a pinch of powdered iron or iron filings
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: antimagic-field
+  properties: []
+name: Antimagic Field
+flags:
+  ddbimporter:
+    id: 136051
+    definitionId: 1999
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Antimagic Field
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 213
+        sourceType: 1
+    tags:
+      - Control
+      - Negation
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.rTyUTp6CvhqZBFtr
+    hash: 49b5550e52f764badbf06885b8fecf38e454791e
+  cf:
+    id: temp_xysomitp3f
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/magic/control/debuff-chains-ropes-net-purple-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.rTyUTp6CvhqZBFtr
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: vaD090pp0j6zOH1p
+_id: rTyUTp6CvhqZBFtr
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!rTyUTp6CvhqZBFtr'
+

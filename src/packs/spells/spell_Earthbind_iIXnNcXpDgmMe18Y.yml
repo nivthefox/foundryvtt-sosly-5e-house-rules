@@ -1,0 +1,148 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Choose one creature you can see within range. Yellow strips of magical
+      energy loop around the creature. The target must succeed on a Strength
+      saving throw, or its flying speed (if any) is reduced to 0 feet for the
+      spell’s duration. An airborne creature affected by this spell safely
+      descends at 60 feet per round until it reaches the ground or the spell
+      ends.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 154
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '300'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: earthbind
+  properties: []
+name: Earthbind
+flags:
+  ddbimporter:
+    id: 137987
+    definitionId: 2377
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Earthbind
+    sources:
+      - sourceId: 4
+        pageNumber: 154
+        sourceType: 1
+    tags:
+      - Control
+      - Debuff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.iIXnNcXpDgmMe18Y
+    hash: 1f28114700bd7719be036e9ad6d18f81535215b5
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+img: icons/magic/symbols/runes-carved-stone-yellow.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.iIXnNcXpDgmMe18Y
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Q2Im3uIUT7sJoMeI
+_id: iIXnNcXpDgmMe18Y
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!iIXnNcXpDgmMe18Y'
+

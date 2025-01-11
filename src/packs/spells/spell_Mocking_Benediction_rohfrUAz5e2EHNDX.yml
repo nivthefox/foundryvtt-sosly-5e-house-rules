@@ -1,0 +1,207 @@
+folder: 80bcfTnNn6o7Y5dR
+name: Mocking Benediction
+type: spell
+img: icons/magic/unholy/silhouette-light-fire-blue.webp
+system:
+  description:
+    value: >-
+      <p>Up to three creatures the huecuva can see receive its blessing. For the
+      duration of mocking benediction, they add 1d4 to attack rolls and saving
+      throws they make for the next minute. An unwilling creature makes a a DC
+      15 Charisma saving throw, resisting the effect on a
+      success.</p><p>Whenever a creature affected by this blessing fails a
+      saving throw, it takes 1d10 necrotic damage.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: ''
+    units: ''
+  target:
+    affects:
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: innate
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: JR2N6WmMvCHiDF2D
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: mocking-benediction
+  properties: []
+effects:
+  - name: Mocking Benediction
+    origin: Compendium.sosly.spells.Item.rohfrUAz5e2EHNDX
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: JR2N6WmMvCHiDF2D
+    changes:
+      - key: system.bonuses.All-Attacks
+        mode: 2
+        value: '-1d4'
+        priority: 20
+      - key: system.bonuses.abilities.save
+        mode: 2
+        value: '-1d4'
+        priority: 20
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: false
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/unholy/silhouette-light-fire-blue.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!rohfrUAz5e2EHNDX.JR2N6WmMvCHiDF2D'
+flags:
+  scene-packer:
+    hash: 6e000400d6458edd1e6873c52caab649ba3182e7
+    sourceId: Compendium.sosly.spells.Item.rohfrUAz5e2EHNDX
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickOther:
+      context: ''
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+_stats:
+  compendiumSource: Compendium.world.spells.Item.rohfrUAz5e2EHNDX
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583829108
+  modifiedTime: 1736583829108
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: rohfrUAz5e2EHNDX
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!rohfrUAz5e2EHNDX'
+

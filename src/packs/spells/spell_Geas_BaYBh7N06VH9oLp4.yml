@@ -1,0 +1,166 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You place a magical command on a creature that you can see within
+      range, forcing it to carry out some service or refrain from some action or
+      course of activity as you decide. If the creature can understand you, it
+      must succeed on a Wisdom saving throw or become
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{charmed} by you for the
+      duration. While the creature is
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{charmed} by you, it takes 5d10
+      psychic damage each time it acts in a manner directly counter to your
+      instructions, but no more than once each day. A creature that can't
+      understand you is unaffected by the spell.</p>
+
+      <p>You can issue any command you choose, short of an activity that would
+      result in certain death. Should you issue a suicidal command, the spell
+      ends.</p>
+
+      <p>You can end the spell early by using an action to dismiss it. A
+      <strong>remove curse</strong>, <strong>greater restoration</strong>, or
+      <strong>wish</strong> spell also ends it.</p>
+
+      <p><strong>At Higher Levels.</strong> When you cast this spell using a
+      spell slot of 7th or 8th level, the duration is 1 year. When you cast this
+      spell using a spell slot of 9th level, the spell lasts until it is ended
+      by one of the spells mentioned above.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 244
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: '30'
+    units: day
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 5
+  school: enc
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: geas
+  properties: []
+name: Geas
+flags:
+  ddbimporter:
+    id: 137928
+    definitionId: 2120
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Geas
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 244
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.BaYBh7N06VH9oLp4
+    hash: c4c44cd727c0d41f0ee22d73c66970e82f596980
+  cf:
+    id: temp_o8z4x8hk29r
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+img: icons/magic/air/air-burst-spiral-large-yellow.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.BaYBh7N06VH9oLp4
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Ul1P7irSGcR2bqsV
+_id: BaYBh7N06VH9oLp4
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!BaYBh7N06VH9oLp4'
+

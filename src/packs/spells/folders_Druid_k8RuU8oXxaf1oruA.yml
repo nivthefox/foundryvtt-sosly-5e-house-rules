@@ -1,0 +1,20 @@
+name: Druid
+sorting: m
+folder: null
+type: Item
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824225
+  modifiedTime: 1736583824442
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+description: ''
+_id: k8RuU8oXxaf1oruA
+sort: 100000
+_key: '!folders!k8RuU8oXxaf1oruA'
+

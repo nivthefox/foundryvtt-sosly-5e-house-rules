@@ -1,0 +1,172 @@
+folder: ba6WumygoPVmzqsa
+name: Earthen Might
+type: spell
+img: icons/magic/earth/strike-fist-stone-gray.webp
+system:
+  activities:
+    1ulIs8oXSelXQR8C:
+      type: damage
+      _id: 1ulIs8oXSelXQR8C
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 8
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: whole
+              number: 1
+      name: ''
+    zCyY6rpjnv90ft8q:
+      type: damage
+      _id: zCyY6rpjnv90ft8q
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: ''
+              number: 1
+      name: Damage to Elementals
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: ''
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: >-
+      Which you take immediately after hitting a target with a Melee weapon or
+      an Unarmed Strike
+  duration:
+    units: inst
+  level: 1
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  properties:
+    - vocal
+  range:
+    units: self
+    special: ''
+  school: evo
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      count: '1'
+      type: creature
+      special: The target of your attack
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.DjZubR9RobPxRxmw
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583825514
+  modifiedTime: 1736583825514
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: DjZubR9RobPxRxmw
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!DjZubR9RobPxRxmw'
+

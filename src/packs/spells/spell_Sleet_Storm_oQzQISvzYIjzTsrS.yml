@@ -1,0 +1,134 @@
+name: Sleet Storm
+type: spell
+system:
+  description:
+    value: >-
+      <p>Until the spell ends, freezing rain and sleet fall in a 20-foot-tall
+      cylinder with a 40-foot radius centered on a point you choose within
+      range. The area is heavily obscured, and exposed flames in the area are
+      doused.</p><p>The ground in the area is covered with slick ice, making it
+      difficult terrain. When a creature enters the spell's area for the first
+      time on a turn or starts its turn there, it must make a Dexterity saving
+      throw. On a failed save, it falls Prone.</p><p>If a creature is
+      concentrating in the spell's area, the creature must make a successful
+      Constitution saving throw against your spell save DC or lose
+      concentration.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cylinder
+      size: '40'
+      contiguous: false
+  range:
+    value: '150'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: con
+  materials:
+    value: A pinch of dust and a few drops of water.
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: sleet-storm
+  properties: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.oQzQISvzYIjzTsrS
+    hash: 416b6b1fcba9121ede58753916e886e914142d3b
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/magic/water/projectile-beams-salvo-blue.webp
+effects: []
+folder: wiWIE0sfpfU4nxXS
+_stats:
+  compendiumSource: Compendium.world.spells.Item.oQzQISvzYIjzTsrS
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: oQzQISvzYIjzTsrS
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!oQzQISvzYIjzTsrS'
+

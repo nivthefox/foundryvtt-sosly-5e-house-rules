@@ -1,0 +1,172 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You create a ghostly, skeletal hand in the space of a creature within
+      range. Make a ranged spell attack against the creature to assail it with
+      the chill of the grave. On a hit, the target takes 1d8 necrotic damage,
+      and it can't regain hit points until the start of your next turn. Until
+      then, the hand clings to the target.</p>
+
+      <p>If you hit an undead target, it also has disadvantage on attack rolls
+      against you until the end of your next turn.</p>
+
+      <p>This spell's damage increases by 1d8 when you reach 5th level (2d8),
+      11th level (3d8), and 17th level (4d8).</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 221
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '120'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: true
+              formula: 1d8[necrotic]
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      sort: 0
+  identifier: chill-touch
+  properties: []
+name: Chill Touch
+flags:
+  ddbimporter:
+    id: 136198
+    definitionId: 2026
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Chill Touch
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 221
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.yJxAm3Yf04ifY4ow
+    hash: c2267864fb665db3ae2f689114de447cba00f3a1
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/water/projectile-ice-faceted-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.yJxAm3Yf04ifY4ow
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 6ddfzIod0oziPTv1
+_id: yJxAm3Yf04ifY4ow
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!yJxAm3Yf04ifY4ow'
+

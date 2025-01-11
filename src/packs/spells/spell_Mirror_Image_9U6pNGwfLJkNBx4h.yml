@@ -1,0 +1,379 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Three illusory duplicates of yourself appear in your space. Until the
+      spell ends, the duplicates move with you and mimic your actions, shifting
+      position so it's impossible to track which image is real. You can use your
+      action to dismiss the illusory duplicates.</p>
+
+      <p>Each time a creature targets you with an attack during the spell's
+      duration, roll a d20 to determine whether the attack instead targets one
+      of your duplicates.</p>
+
+      <p>If you have three duplicates, you must roll a 6 or higher to change the
+      attack's target to a duplicate. With two duplicates, you must roll an 8 or
+      higher. With one duplicate, you must roll an 11 or higher.</p>
+
+      <p>A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits
+      a duplicate, the duplicate is destroyed. A duplicate can be destroyed only
+      by an attack that hits it. It ignores all other damage and effects. The
+      spell ends when all three duplicates are destroyed.</p>
+
+      <p>A creature is unaffected by this spell if it can't see, if it relies on
+      senses other than sight, such as
+      @Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{blindsight}, or if it can
+      perceive illusions as false, as with
+      @Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{truesight}.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 260
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: self
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: ill
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 6Z670R1pqXxAzS8V
+        - _id: UicfAxo581C21zaY
+        - _id: HOKmFWCtEL4upm2F
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: mirror-image
+  properties: []
+name: Mirror Image
+flags:
+  ddbimporter:
+    id: 138495
+    definitionId: 2193
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Mirror Image
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 260
+        sourceType: 1
+    tags:
+      - Deception
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.9U6pNGwfLJkNBx4h
+    hash: 974f687bf9f72fb142b76a5744e512fa170497f0
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+        '1': true
+        '2': true
+      altValue:
+        '0': true
+        '1': true
+        '2': true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+effects:
+  - name: Mirror Image 1
+    origin: Compendium.sosly.spells.Item.FYGg4L5LzciOSZdI
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: 6Z670R1pqXxAzS8V
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: false
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9U6pNGwfLJkNBx4h.6Z670R1pqXxAzS8V'
+  - name: Mirror Image 2
+    origin: Compendium.sosly.spells.Item.FYGg4L5LzciOSZdI
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: UicfAxo581C21zaY
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: false
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9U6pNGwfLJkNBx4h.UicfAxo581C21zaY'
+  - name: Mirror Image 3
+    origin: Compendium.sosly.spells.Item.FYGg4L5LzciOSZdI
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: HOKmFWCtEL4upm2F
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: false
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9U6pNGwfLJkNBx4h.HOKmFWCtEL4upm2F'
+_stats:
+  compendiumSource: Compendium.world.spells.Item.9U6pNGwfLJkNBx4h
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: dUX5wJivnVkmB5Uy
+_id: 9U6pNGwfLJkNBx4h
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!9U6pNGwfLJkNBx4h'
+

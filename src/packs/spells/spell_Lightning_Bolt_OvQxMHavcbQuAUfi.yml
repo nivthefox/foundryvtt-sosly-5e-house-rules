@@ -1,0 +1,142 @@
+name: Lightning Bolt
+type: spell
+system:
+  description:
+    value: >-
+      <p>A stroke of lightning forming a line 100 feet long and 5 feet wide
+      blasts out from you in a direction you choose. Each creature in the line
+      must make a Dexterity saving throw. A creature takes 8d6 lightning damage
+      on a failed save, or half as much damage on a successful one.</p><p>The
+      lightning ignites flammable objects in the area that aren't being worn or
+      carried.</p><p><strong>At Higher Levels.</strong> When you cast this spell
+      using a spell slot of 4th level or higher, the damage increases by 1d6 for
+      each slot level above 3rd.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: line
+      size: '100'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: evo
+  materials:
+    value: A bit of fur and a rod of amber, crystal, or glass
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: 8
+            denomination: 6
+            bonus: ''
+            types:
+              - lightning
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: lightning-bolt
+  properties: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.OvQxMHavcbQuAUfi
+    hash: cccfbae4c7da871b13a8093ce4b71460b962867a
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/lightning/bolt-forked-large-blue.webp
+effects: []
+folder: IFCjYR5MzJQDc4Yl
+_stats:
+  compendiumSource: Compendium.world.spells.Item.OvQxMHavcbQuAUfi
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: OvQxMHavcbQuAUfi
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!OvQxMHavcbQuAUfi'
+

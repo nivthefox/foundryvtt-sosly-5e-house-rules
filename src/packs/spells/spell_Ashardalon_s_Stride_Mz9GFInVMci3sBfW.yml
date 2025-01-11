@@ -1,0 +1,253 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The billowing flames of a dragon blast from your feet, granting you
+      explosive speed. For the duration, your speed increases by 20 feet and
+      moving doesn’t provoke opportunity attacks.</p>
+
+      <p>When you move within 5 feet of a creature or an object that isn’t being
+      worn or carried, it takes 1d6 fire damage from your trail of heat. A
+      creature or object can take this damage only once during a turn.</p>
+
+      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell
+      using a spell slot of 4th level or higher, increase your speed by 5 feet
+      for each spell slot level above 3rd. The spell deals an additional 1d6
+      fire damage for each slot level above 3rd.</p>
+    chat: ''
+  source:
+    custom: Fizban's Treasury of Dragons pg 19
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 45EXIlnMbLfd2zZ3
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - fire
+            custom:
+              enabled: true
+              formula: 1d6[fire]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d6
+      sort: 0
+  identifier: ashardalons-stride
+  properties: []
+name: Ashardalon's Stride
+flags:
+  ddbimporter:
+    id: 9603621
+    definitionId: 1183862
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Ashardalon's Stride
+    sources:
+      - sourceId: 81
+        pageNumber: 19
+        sourceType: 1
+    tags: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.Mz9GFInVMci3sBfW
+    hash: 57754f7723b59f7e012f19600020761870f412ac
+  cf:
+    id: temp_makmayeu1vq
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/fire/projectile-bolt-zigzag-orange.webp
+effects:
+  - name: Ashardalon's Stride
+    origin: Compendium.sosly.spells.Item.Mz9GFInVMci3sBfW
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: 45EXIlnMbLfd2zZ3
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 2
+        value: '20'
+        priority: 20
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: false
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: All
+        radius: '5'
+        alignment: ''
+        type: ''
+        ignoreSelf: true
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/fire/projectile-bolt-zigzag-orange.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Mz9GFInVMci3sBfW.45EXIlnMbLfd2zZ3'
+_stats:
+  compendiumSource: Compendium.world.spells.Item.Mz9GFInVMci3sBfW
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: Mz9GFInVMci3sBfW
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Mz9GFInVMci3sBfW'
+

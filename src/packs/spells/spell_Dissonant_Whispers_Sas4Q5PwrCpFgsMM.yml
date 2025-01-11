@@ -1,0 +1,153 @@
+type: spell
+system:
+  description:
+    value: "<p>You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away. A @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{deafened} creature automatically succeeds on the save.</p>\n<p><strong>At Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>"
+    chat: ''
+  source:
+    custom: Player's Handbook pg 234
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: enc
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - psychic
+            custom:
+              enabled: true
+              formula: 3d6[psychic]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d6
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: dissonant-whispers
+  properties: []
+name: Dissonant Whispers
+flags:
+  ddbimporter:
+    id: 136624
+    definitionId: 2314
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Dissonant Whispers
+    sources:
+      - sourceId: 2
+        pageNumber: 234
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.Sas4Q5PwrCpFgsMM
+    hash: d14d30a47f0c7fee462865ebca26295656be414a
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+img: icons/magic/control/fear-fright-shadow-monster-green.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.Sas4Q5PwrCpFgsMM
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583821766
+  modifiedTime: 1736583821766
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ORVdT5qwDf0iP7Ld
+_id: Sas4Q5PwrCpFgsMM
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Sas4Q5PwrCpFgsMM'
+

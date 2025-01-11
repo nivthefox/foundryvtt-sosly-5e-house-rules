@@ -1,0 +1,164 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Your magic turns others into beasts. Choose any number of willing
+      creatures that you can see within range. You transform each target into
+      the form of a Large or smaller beast with a challenge rating of 4 or
+      lower. On subsequent turns, you can use your action to transform affected
+      creatures into new forms.</p>
+
+      <p>The transformation lasts for the duration for each target, or until the
+      target drops to 0 hit points or dies. You can choose a different form for
+      each target. A target's game statistics are replaced by the statistics of
+      the chosen beast, though the target retains its alignment and
+      Intelligence, Wisdom, and Charisma scores. The target assumes the hit
+      points of its new form, and when it reverts to its normal form, it returns
+      to the number of hit points it had before it transformed. If it reverts as
+      a result of dropping to 0 hit points, any excess damage carries over to
+      its normal form. As long as the excess damage doesn't reduce the
+      creature's normal form to 0 hit points, it isn't knocked
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{unconscious}. The creature is
+      limited in the actions it can perform by the
+      @Compendium[dnd5e.rules.0AGfrwZRzSG0vNKb]{nature} of its new form, and it
+      can't speak or cast spells.</p>
+
+      <p>The target's gear melds into the new form. The target can't activate,
+      wield, or otherwise benefit from any of its equipment.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 212
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '24'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 8
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: animal-shapes
+  properties: []
+name: Animal Shapes
+flags:
+  ddbimporter:
+    id: 136038
+    definitionId: 1995
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Animal Shapes
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 212
+        sourceType: 1
+    tags:
+      - Shapechanging
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.oLGspMHHG8FG5k8W
+    hash: 2fc3e7dca9a22343a6d0ea94e12e9e52f3e2187f
+  cf:
+    id: temp_xysomitp3f
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/nature/wolf-paw-glow-large-teal-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.oLGspMHHG8FG5k8W
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: cYg27m4dGoMMY3ti
+_id: oLGspMHHG8FG5k8W
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!oLGspMHHG8FG5k8W'
+

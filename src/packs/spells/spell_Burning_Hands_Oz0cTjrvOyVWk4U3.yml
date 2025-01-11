@@ -1,0 +1,167 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>As you hold your hands with thumbs touching and fingers spread, a thin
+      sheet of flames shoots forth from your outstretched fingertips. Each
+      creature in a 15-foot cone must make a Dexterity saving throw. A creature
+      takes 3d6 fire damage on a failed save, or half as much damage on a
+      successful one.</p>
+
+      <p>The fire ignites any flammable objects in the area that aren't being
+      worn or carried.</p>
+
+      <p><strong>At Higher Levels.</strong> When you cast this spell using a
+      spell slot of 2nd level or higher, the damage increases by 1d6 for each
+      slot level above 1st.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 220
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cone
+      size: '15'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - fire
+            custom:
+              enabled: true
+              formula: 3d6[fire]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d6
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: burning-hands
+  properties: []
+name: Burning Hands
+flags:
+  ddbimporter:
+    id: 136168
+    definitionId: 2021
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Burning Hands
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 220
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.Oz0cTjrvOyVWk4U3
+    hash: 723be94af35556162e44429ea8efab0d491b7ecc
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/air/fog-gas-smoke-dense-orange.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.Oz0cTjrvOyVWk4U3
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: IvNp2hpPuCEfGHw4
+_id: Oz0cTjrvOyVWk4U3
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Oz0cTjrvOyVWk4U3'
+

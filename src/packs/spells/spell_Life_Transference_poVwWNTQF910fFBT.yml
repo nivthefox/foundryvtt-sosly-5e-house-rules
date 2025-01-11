@@ -1,0 +1,145 @@
+type: spell
+system:
+  description:
+    value: "<p class=\"Core-Styles_Core-Body\">You sacrifice some of your health to mend another creature’s injuries. You take 4d8 necrotic damage, which can’t be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take.</p>\n<p class=\"Core-Styles_Core-Body\"><span class=\"Serif-Character-Style_Inline-Subhead-Serif\"><strong>At Higher Levels.</strong>\_</span>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>"
+    chat: ''
+  source:
+    custom: Xanathar's Guide to Everything pg 160
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      healing:
+        number: null
+        denomination: null
+        bonus: ''
+        types:
+          - necrotic
+        custom:
+          enabled: true
+          formula: 4d8[necrotic - Self Only]
+        scaling:
+          mode: whole
+          number: null
+          formula: 1d8
+      sort: 0
+  identifier: life-transference
+  properties: []
+name: Life Transference
+flags:
+  ddbimporter:
+    id: 138182
+    definitionId: 14880
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Life Transference
+    sources:
+      - sourceId: 27
+        pageNumber: 160
+        sourceType: 1
+    tags:
+      - Healing
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.poVwWNTQF910fFBT
+    hash: dd3597a639f798d4350efd35f1eefd24cc0819dc
+  cf:
+    id: temp_makmayeu1vq
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/life/heart-glowing-red.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.poVwWNTQF910fFBT
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: poVwWNTQF910fFBT
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!poVwWNTQF910fFBT'
+

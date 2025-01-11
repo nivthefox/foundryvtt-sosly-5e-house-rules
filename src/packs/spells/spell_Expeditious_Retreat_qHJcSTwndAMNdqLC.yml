@@ -1,0 +1,142 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>This spell allows you to move at an incredible pace. When you cast this
+      spell, and then as a bonus action on each of your turns until the spell
+      ends, you can take the Dash action.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 238
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      type: self
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: expeditious-retreat
+  properties: []
+name: Expeditious Retreat
+flags:
+  ddbimporter:
+    id: 136742
+    definitionId: 2088
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Expeditious Retreat
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 238
+        sourceType: 1
+    tags:
+      - Movement
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.qHJcSTwndAMNdqLC
+    hash: 027584111b77a0d75fe78f18637bd1332379702a
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/air/wind-stream-blue-gray.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.qHJcSTwndAMNdqLC
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: IvNp2hpPuCEfGHw4
+_id: qHJcSTwndAMNdqLC
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!qHJcSTwndAMNdqLC'
+

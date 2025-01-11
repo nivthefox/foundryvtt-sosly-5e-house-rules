@@ -1,0 +1,194 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You draw the moisture from every creature in a 30-foot cube centered on
+      a point you choose within range. Each creature in that area must make a
+      Constitution saving throw. Constructs and undead aren’t affected, and
+      plants and water elementals make this saving throw with disadvantage. A
+      creature takes 12d8 necrotic damage on a failed save, or half as much
+      damage on a successful one.</p>
+
+      <p class="Core-Styles_Core-Body">Nonmagical plants in the area that aren’t
+      creatures, such as trees and shrubs, wither and die instantly.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 150
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '30'
+      contiguous: false
+  range:
+    value: '150'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 8
+  school: nec
+  materials:
+    value: a bit of sponge
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: true
+              formula: >-
+                12d8[necrotic - Constructs and undead aren’t affected, and
+                plants and water elementals make this saving throw with
+                disadvantage]
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: abi-dalzims-horrid-wilting
+  properties: []
+name: Abi-Dalzim's Horrid Wilting
+flags:
+  ddbimporter:
+    id: 137855
+    definitionId: 2367
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Abi-Dalzim's Horrid Wilting
+    sources:
+      - sourceId: 4
+        pageNumber: 150
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.46u1YHoBdUgmqkhe
+    hash: 5a9ee77b172ff495feff567371ba5b42d04f24a2
+  cf:
+    id: temp_xysomitp3f
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  enhanced-terrain-layer:
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/air/fog-gas-smoke-dense-brown.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.46u1YHoBdUgmqkhe
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: cd0lN1Ux8etxnszU
+_id: 46u1YHoBdUgmqkhe
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!46u1YHoBdUgmqkhe'
+

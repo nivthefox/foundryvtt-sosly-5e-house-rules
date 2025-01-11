@@ -1,0 +1,264 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You tap into the nightmares of a creature you can see within range and
+      create an illusory manifestation of its deepest fears, visible only to
+      that creature. The target must make a Wisdom saving throw. On a failed
+      save, the target becomes
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{frightened} for the duration. At
+      the end of each of the target's turns before the spell ends, the target
+      must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a
+      successful save, the spell ends.</p>
+
+      <p><strong>At Higher Levels.</strong> When you cast this spell using a
+      spell slot of 5th level or higher, the damage increases by 1d10 for each
+      slot level above 4th.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 265
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '120'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 4
+  school: ill
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: dvh2hN7sn3vwgo9P
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - psychic
+            custom:
+              enabled: true
+              formula: 4d10[psychic]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d10
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: phantasmal-killer
+  properties: []
+name: Phantasmal Killer
+flags:
+  ddbimporter:
+    id: 138547
+    definitionId: 2202
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Phantasmal Killer
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 265
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.1VDtt5kvukSCLux9
+    hash: 6bd67faff4ca2572759423fbaca87680ab7a7da5
+  cf:
+    id: temp_exodbmz9z4h
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+effects:
+  - name: Phantasmal Killer
+    origin: Compendium.sosly.spells.Item.1VDtt5kvukSCLux9
+    duration:
+      rounds: 10
+      startTime: 47095748437
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: dvh2hN7sn3vwgo9P
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: false
+          target: true
+          always: true
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!1VDtt5kvukSCLux9.dvh2hN7sn3vwgo9P'
+_stats:
+  compendiumSource: Compendium.world.spells.Item.1VDtt5kvukSCLux9
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: bBYlJfHel8ScrFwO
+_id: 1VDtt5kvukSCLux9
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!1VDtt5kvukSCLux9'
+

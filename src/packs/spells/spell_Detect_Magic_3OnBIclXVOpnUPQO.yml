@@ -1,0 +1,149 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>For the duration, you sense the presence of magic within 30 feet of
+      you. If you sense magic in this way, you can use your action to see a
+      faint aura around any visible creature or object in the area that bears
+      magic, and you learn its school of magic, if any.</p>
+
+      <p>The spell can penetrate most barriers, but it is blocked by 1 foot of
+      stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or
+      dirt.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 231
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: sphere
+      size: '30'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: div
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: detect-magic
+  properties: []
+name: Detect Magic
+flags:
+  ddbimporter:
+    id: 136561
+    definitionId: 2065
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Detect Magic
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 231
+        sourceType: 1
+    tags:
+      - Detection
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.3OnBIclXVOpnUPQO
+    hash: 0a86afb858394b1bc31d084d70b950cd62fe26a9
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - ritual
+      - concentration
+img: icons/magic/light/explosion-star-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.3OnBIclXVOpnUPQO
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: FQ76AHmRFavXtg0D
+_id: 3OnBIclXVOpnUPQO
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!3OnBIclXVOpnUPQO'
+

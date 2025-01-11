@@ -1,0 +1,161 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>By means of this spell, you use an animal to deliver a message. Choose
+      a Tiny beast you can see within range, such as a squirrel, a blue jay, or
+      a bat. You specify a location, which you must have visited, and a
+      recipient who matches a general description, such as "a man or woman
+      dressed in the uniform of the town guard" or "a red-haired dwarf wearing a
+      pointed hat." You also speak a message of up to twenty-five words. The
+      target beast travels for the duration of the spell toward the specified
+      location, covering about 50 miles per 24 hours for a flying messenger, or
+      25 miles for other animals.</p>
+
+      <p>When the messenger arrives, it delivers your message to the creature
+      that you described, replicating the sound of your voice. The messenger
+      speaks only to a creature matching the description you gave. If the
+      messenger doesn't reach its destination before the spell ends, the message
+      is lost, and the beast makes its way back to where you cast this
+      spell.</p>
+
+      <p><strong>At Higher Levels.</strong> If you cast this spell using a spell
+      slot of 3rd level or higher, the duration of the spell increases by 48
+      hours for each slot level above 2nd.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 212
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '24'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: enc
+  materials:
+    value: a morsel of food
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: animal-messenger
+  properties: []
+name: Animal Messenger
+flags:
+  ddbimporter:
+    id: 136036
+    definitionId: 1994
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Animal Messenger
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 212
+        sourceType: 1
+    tags:
+      - Communication
+      - Social
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.KUoe029RpozqAQ6P
+    hash: 99280e08528031430b27acd7fbe65775fc6b2ee2
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - ritual
+img: icons/magic/nature/wolf-paw-glow-small-teal-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.KUoe029RpozqAQ6P
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583826720
+  modifiedTime: 1736583826720
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: PYojGyeAKWpWC7YK
+_id: KUoe029RpozqAQ6P
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!KUoe029RpozqAQ6P'
+

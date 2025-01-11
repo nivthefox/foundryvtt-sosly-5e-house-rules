@@ -1,0 +1,160 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You drive a disorienting spike of psychic energy into the mind of one
+      creature you can see within range. The target must succeed on an
+      Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from
+      the next saving throw it makes before the end of your next turn.</p>
+
+      <p>This spell’s damage increases by 1d6 when you reach certain levels: 5th
+      level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+    chat: ''
+  source:
+    custom: Tasha’s Cauldron of Everything pg 108
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: enc
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - psychic
+            custom:
+              enabled: true
+              formula: 1d6[psychic]
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: mind-sliver
+  properties: []
+name: Mind Sliver
+flags:
+  ddbimporter:
+    id: 5833520
+    definitionId: 718568
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Mind Sliver
+    sources:
+      - sourceId: 67
+        pageNumber: 108
+        sourceType: 1
+    tags:
+      - Damage
+      - Debuff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.aqBDOWvg7tzg5XdD
+    hash: 34d56e7ed60d1708a173fd46139c11dce0b5fb85
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+img: icons/magic/light/beam-rays-magenta.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.aqBDOWvg7tzg5XdD
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: qdjGOoCe8eONIY2C
+_id: aqBDOWvg7tzg5XdD
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!aqBDOWvg7tzg5XdD'
+

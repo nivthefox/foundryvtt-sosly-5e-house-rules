@@ -1,0 +1,151 @@
+type: spell
+system:
+  description:
+    value: "<p>A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{unconscious} creatures and creatures that can't see).</p>\n<p>Starting with the creature that has the lowest current hit points, each creature affected by this spell is @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{blinded} until the\_end of your next turn. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.</p>\n<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.</p>"
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 222
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cone
+      size: '15'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: ill
+  materials:
+    value: a pinch of powder or sand that is colored red, yellow, and blue
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - number: 6
+            denomination: 10
+            bonus: ''
+            types: []
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 2
+              formula: ''
+      sort: 0
+  identifier: color-spray
+  properties: []
+name: Color Spray
+flags:
+  ddbimporter:
+    id: 136229
+    definitionId: 2031
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Color Spray
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 222
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.D5CBZR1DyLr9qVC0
+    hash: f99b85f04528a72248541014a2ac017a7c28bc9c
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/air/fog-gas-smoke-dense-pink.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.D5CBZR1DyLr9qVC0
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: IvNp2hpPuCEfGHw4
+_id: D5CBZR1DyLr9qVC0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!D5CBZR1DyLr9qVC0'
+

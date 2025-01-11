@@ -1,0 +1,167 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p class="Core-Styles_Core-Body">You cause a cloud of mites, fleas, and
+      other parasites to appear momentarily on one creature you can see within
+      range. The target must succeed on a Constitution saving throw, or it takes
+      1d6 poison damage and moves 5 feet in a random direction if it can move
+      and its speed is at least 5 feet. Roll a d4 for the direction: 1, north;
+      2, south; 3, east; or 4, west. This movement doesn’t provoke opportunity
+      attacks, and if the direction rolled is blocked, the target doesn’t
+      move.</p>
+
+      <p class="Core-Styles_Core-Body">The spell’s damage increases by 1d6 when
+      you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+    chat: ''
+  source:
+    custom: Xanathar's Guide to Everything pg 158
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: con
+  materials:
+    value: a living flea
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - poison
+            custom:
+              enabled: true
+              formula: 1d6[poison]
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: infestation
+  properties: []
+name: Infestation
+flags:
+  ddbimporter:
+    id: 138125
+    definitionId: 14878
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Infestation
+    sources:
+      - sourceId: 27
+        pageNumber: 158
+        sourceType: 1
+    tags:
+      - Summoning
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.SxVidXdDgABQqtdr
+    hash: 7ca8cbbddff75ab6c8fbc458e4545c27a38bbff9
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/creatures/invertebrates/fly-wasp-mosquito-green.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.SxVidXdDgABQqtdr
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: URnwDpE7Q2xwmQh3
+_id: SxVidXdDgABQqtdr
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!SxVidXdDgABQqtdr'
+

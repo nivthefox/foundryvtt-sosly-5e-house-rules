@@ -1,0 +1,191 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>As you hit the creature, your strike channels divine wrath. The target
+      takes an extra 1d6 Necrotic damage from the attack, and it must succeed on
+      a Wisdom saving throw or have the Frightened condition until the spell
+      ends. At the end of each of its turns, the Frightened target repeats the
+      saving throw, ending the spell on itself on a success.</p><p><strong>At
+      Higher Levels.</strong> When you cast this spell using a spell slot of 2nd
+      level or higher, the damage increases by 1d6 for each slot level above
+      1st.</p>
+    chat: ''
+  source:
+    custom: Player's Handbook pg 289
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: >-
+      which you take immediately after hitting a creature with a melee weapon or
+      an unarmed strike.
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      choice: false
+      count: ''
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: true
+              formula: 1d6[necroti]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d6
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: wrathful-smite
+  properties: []
+name: Wrathful Smite
+flags:
+  ddbimporter:
+    id: 138957
+    definitionId: 2324
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Wrathful Smite
+    sources:
+      - sourceId: 2
+        pageNumber: 289
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.pslZnAFKTrlhp9iv
+    hash: 3e53888d0dfdc80c11002875a1ce720921dd479d
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+img: icons/magic/fire/dagger-rune-enchant-flame-purple-orange.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.pslZnAFKTrlhp9iv
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583825514
+  modifiedTime: 1736583825514
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ba6WumygoPVmzqsa
+_id: pslZnAFKTrlhp9iv
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!pslZnAFKTrlhp9iv'
+

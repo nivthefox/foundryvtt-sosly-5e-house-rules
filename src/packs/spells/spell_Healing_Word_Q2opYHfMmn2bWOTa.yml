@@ -1,0 +1,149 @@
+name: Healing Word
+type: spell
+system:
+  description:
+    value: >-
+      <p>A creature of your choice that you can see within range regains hit
+      points equal to 2d4 + your spellcasting ability modifier. This spell has
+      no effect on undead or constructs.</p><p><strong>Higher Levels.</strong>
+      When you cast this spell using a spell slot of 2nd level or higher, the
+      healing increases by 2d4 for each slot level above 1st.</p><p><em>This
+      spell has been modified from its original form.</em></p>
+    chat: ''
+  source:
+    custom: Society of SIlliness
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      healing:
+        number: 2
+        denomination: 4
+        bonus: '@mod'
+        types:
+          - healing
+        custom:
+          enabled: false
+          formula: ''
+        scaling:
+          mode: whole
+          number: 2
+          formula: ''
+      sort: 0
+  identifier: healing-word
+  properties: []
+flags:
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.Q2opYHfMmn2bWOTa
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+img: icons/magic/life/heart-cross-green.webp
+effects: []
+folder: FQ76AHmRFavXtg0D
+_stats:
+  compendiumSource: Compendium.world.spells.Item.Q2opYHfMmn2bWOTa
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: Q2opYHfMmn2bWOTa
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Q2opYHfMmn2bWOTa'
+

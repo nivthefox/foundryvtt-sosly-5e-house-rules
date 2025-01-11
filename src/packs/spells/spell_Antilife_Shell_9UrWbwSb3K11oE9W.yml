@@ -1,0 +1,151 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A shimmering barrier extends out from you in a 10-foot radius and moves
+      with you, remaining centered on you and hedging out creatures other than
+      undead and constructs. The barrier lasts for the duration.</p>
+
+      <p>The barrier prevents an affected creature from passing or reaching
+      through. An affected creature can cast spells or make attacks with ranged
+      or reach weapons through the barrier.</p>
+
+      <p>If you move so that an affected creature is forced to pass through the
+      barrier, the spell ends.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 213
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: sphere
+      size: '10'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 5
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: antilife-shell
+  properties: []
+name: Antilife Shell
+flags:
+  ddbimporter:
+    id: 136050
+    definitionId: 1998
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Antilife Shell
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 213
+        sourceType: 1
+    tags:
+      - Control
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.9UrWbwSb3K11oE9W
+    hash: 5fcee7b29cd27a5e75fcebf3d60ed8bdac642797
+  cf:
+    id: temp_o8z4x8hk29r
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/defensive/shield-barrier-flaming-diamond-teal.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.9UrWbwSb3K11oE9W
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Ul1P7irSGcR2bqsV
+_id: 9UrWbwSb3K11oE9W
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!9UrWbwSb3K11oE9W'
+

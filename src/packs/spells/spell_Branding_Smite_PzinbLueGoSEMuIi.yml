@@ -1,0 +1,185 @@
+type: spell
+system:
+  description:
+    value: "<p>As you hit the target, your strike gleams with astral radiance  and the target takes an extra 2d6 radiant damage. The target becomes visible if it is @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{invisible}, and the target sheds dim light in a 5-foot radius and can’t become @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{invisible} until the spell ends.\_</p><p><strong>At Higher Levels.\_</strong>When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.</p>"
+    chat: ''
+  source:
+    custom: Playtest Packet 6
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - radiant
+            custom:
+              enabled: true
+              formula: >-
+                2d6[radiant - The next time you hit a creature with a weapon
+                attack before this spell ends]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d6
+      sort: 0
+  identifier: branding-smite
+  properties: []
+name: Branding Smite
+flags:
+  ddbimporter:
+    id: 307827
+    definitionId: 2326
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Branding Smite
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 219
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.PzinbLueGoSEMuIi
+    hash: 37548d68ee67849c0753ba2ed25b6ba43ddf644e
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+img: icons/magic/fire/dagger-rune-enchant-flame-orange.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.PzinbLueGoSEMuIi
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583825514
+  modifiedTime: 1736583825514
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 5xW4eRhTfVPr0kWw
+_id: PzinbLueGoSEMuIi
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!PzinbLueGoSEMuIi'
+

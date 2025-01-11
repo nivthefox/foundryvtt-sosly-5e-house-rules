@@ -1,0 +1,129 @@
+name: Phantom Steed
+type: spell
+system:
+  description:
+    value: >-
+      <p>A Large quasi-real, horselike creature appears on the ground in an
+      unoccupied space of your choice within range. You decide the creature's
+      appearance, but it is equipped with a saddle, bit, and bridle. Any of the
+      equipment created by the spell vanishes in a puff of smoke if it is
+      carried more than 10 feet away from the steed.</p><p>For the duration, you
+      or a creature you choose can ride the steed. The creature uses the
+      statistics for a riding horse, except it has a speed of 100 feet and can
+      travel 10 miles in an hour, or 13 miles at a fast pace. When the spell
+      ends, the steed gradually fades, giving the rider 1 minute to dismount.
+      The spell ends if you use an action to dismiss it or if the steed takes
+      any damage.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      type: space
+      choice: false
+    template:
+      units: any
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: ill
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: phantom-steed
+  properties: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.TFQYKEaDwwnKvA03
+    hash: 858c9cc9ad5c0a1adcaa51771a040226841bf238
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - ritual
+img: icons/magic/nature/wolf-paw-glow-teal-blue.webp
+effects: []
+folder: ICLHN4HLH8bsknQK
+_stats:
+  compendiumSource: Compendium.world.spells.Item.TFQYKEaDwwnKvA03
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: TFQYKEaDwwnKvA03
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!TFQYKEaDwwnKvA03'
+

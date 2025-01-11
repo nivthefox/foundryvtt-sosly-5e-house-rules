@@ -1,0 +1,228 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You touch a willing creature. Once on each of its  turns until the
+      spell ends, that creature can jump up to 30 feet by spending only 10 feet
+      of movement.</p><p><strong>At Higher Levels:</strong> When you cast this
+      spell using a spell slot of level 2 or higher, you can target one
+      additional creature for each slot level above 1.</p>
+    chat: ''
+  source:
+    custom: Playtest Packet 7
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: trs
+  materials:
+    value: a grasshopper's hind leg
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: z2httO5Ue3eM2qPx
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: jump
+  properties: []
+name: Jump
+flags:
+  ddbimporter:
+    id: 138367
+    definitionId: 2161
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Jump
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 254
+        sourceType: 1
+    tags:
+      - Movement
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.kch1CuvMb8SIl7hK
+    hash: 52ff86e1f1a094a0c5531a9d530d4255c4a1df5b
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  journal-backlinks:
+    references: []
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/control/debuff-energy-hold-blue-yellow.webp
+effects:
+  - name: Jump
+    origin: Compendium.ddb-data.ddb-spells.Item.9np3EjfVhu4uXDSn
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: z2httO5Ue3eM2qPx
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/control/debuff-energy-hold-blue-yellow.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!kch1CuvMb8SIl7hK.z2httO5Ue3eM2qPx'
+_stats:
+  compendiumSource: Compendium.world.spells.Item.kch1CuvMb8SIl7hK
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583826720
+  modifiedTime: 1736583826720
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: PiEjXtuOcXVaLwnv
+_id: kch1CuvMb8SIl7hK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!kch1CuvMb8SIl7hK'
+

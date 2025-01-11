@@ -1,0 +1,127 @@
+name: Haste
+type: spell
+system:
+  description:
+    value: >-
+      <p>Choose a willing creature that you can see within range. Until the
+      spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it
+      has advantage on Dexterity Saving Throws, and it gains an additional
+      action on each of its turns. That action can be used only to take the
+      Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object
+      action.</p><p>When the spell ends, the target can't move or take Actions
+      until after its next turn, as a wave of lethargy sweeps over it.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: trs
+  materials:
+    value: A shaving of licorice root
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: haste
+  properties: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.sy1JqEssog6FF3GN
+    hash: 772a3c3a245d3451e36540a3ce9f14998ff042cc
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/magic/control/buff-flight-wings-runes-purple.webp
+effects: []
+folder: IFCjYR5MzJQDc4Yl
+_stats:
+  compendiumSource: Compendium.world.spells.Item.sy1JqEssog6FF3GN
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: sy1JqEssog6FF3GN
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!sy1JqEssog6FF3GN'
+

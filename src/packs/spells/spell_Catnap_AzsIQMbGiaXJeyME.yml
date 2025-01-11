@@ -1,0 +1,138 @@
+type: spell
+system:
+  description:
+    value: "<p class=\"Core-Styles_Core-Body\">You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{unconscious} for the spell’s duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{unconscious} for the full duration, that target gains the benefit of a short rest, and it can’t be affected by this spell again until it finishes a long rest.</p>\n<p class=\"Core-Styles_Core-Body\"><span class=\"Serif-Character-Style_Inline-Subhead-Serif\"><strong>At Higher Levels.</strong>\_</span>When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3rd.</p>"
+    chat: ''
+  source:
+    custom: Xanathar's Guide to Everything pg 151
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '3'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: enc
+  materials:
+    value: a pinch of sand
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: catnap
+  properties: []
+name: Catnap
+flags:
+  ddbimporter:
+    id: 137941
+    definitionId: 14754
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Catnap
+    sources:
+      - sourceId: 27
+        pageNumber: 151
+        sourceType: 1
+    tags:
+      - Buff
+      - Utility
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.AzsIQMbGiaXJeyME
+    hash: 961d858dbc6fc5f237a66803469339382828c9bc
+  cf:
+    id: temp_makmayeu1vq
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+      - material
+img: icons/magic/perception/third-eye-blue-red.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.AzsIQMbGiaXJeyME
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: AzsIQMbGiaXJeyME
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!AzsIQMbGiaXJeyME'
+

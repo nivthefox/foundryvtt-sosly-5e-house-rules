@@ -1,0 +1,122 @@
+name: Beacon of Hope
+type: spell
+system:
+  description:
+    value: >-
+      <p>This spell bestows hope and vitality. Choose any number of creatures
+      within range. For the duration, each target has advantage on Wisdom saving
+      throws and death saving throws, and regains the maximum number of hit
+      points possible from any healing.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      choice: false
+    template:
+      units: any
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: beacon-of-hope
+  properties: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.F1Kt4OpEvluf8rZ2
+    hash: f29cb802c6af702ef9dc00e924cb5ae528298424
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/light/explosion-star-large-blue-yellow.webp
+effects: []
+folder: A1VNA98XWVgXUK2W
+_stats:
+  compendiumSource: Compendium.world.spells.Item.F1Kt4OpEvluf8rZ2
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583823076
+  modifiedTime: 1736583823076
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: F1Kt4OpEvluf8rZ2
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!F1Kt4OpEvluf8rZ2'
+

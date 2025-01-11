@@ -1,0 +1,158 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You choose nonmagical flame that you can see within range and that fits
+      within a 5-foot cube. You affect it in one of the following ways:</p>
+
+      <ul>
+
+      <li>You instantaneously expand the flame 5 feet in one direction, provided
+      that wood or other fuel is present in the new location.</li>
+
+      <li>You instantaneously extinguish the flames within the cube.</li>
+
+      <li>You double or halve the area of bright light and dim light cast by the
+      flame, change its color, or both. The change lasts for 1 hour.</li>
+
+      <li>You cause simple shapes—such as the vague form of a creature, an
+      inanimate object, or a location—to appear within the flames and animate as
+      you like. The shapes last for 1 hour.</li>
+
+      </ul>
+
+      <p>If you cast this spell multiple times, you can have up to three of its
+      non-instantaneous effects active at a time, and you can dismiss such an
+      effect as an action.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 152
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '5'
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: control-flames
+  properties: []
+name: Control Flames
+flags:
+  ddbimporter:
+    id: 137958
+    definitionId: 2374
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Control Flames
+    sources:
+      - sourceId: 4
+        pageNumber: 152
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.EPVseszQwh1ILFD7
+    hash: d78bc8b0e872ff8ef7b45115ad33402b60201971
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+img: icons/magic/light/hand-sparks-glow-yellow.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.EPVseszQwh1ILFD7
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: URnwDpE7Q2xwmQh3
+_id: EPVseszQwh1ILFD7
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!EPVseszQwh1ILFD7'
+

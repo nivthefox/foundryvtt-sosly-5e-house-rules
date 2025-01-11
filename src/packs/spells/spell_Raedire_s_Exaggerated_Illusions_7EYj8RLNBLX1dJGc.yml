@@ -1,0 +1,129 @@
+name: Raedire's Exaggerated Illusions
+type: spell
+img: icons/skills/magic/Exaggerated%20Ilusion.webp
+system:
+  description:
+    value: >-
+      <p>You throw gold at foolish flights of fancy.  Any <em>minor
+      illusion</em> you cast while you concentrate on this spell persists for
+      the duration of this spell.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '24'
+    units: hour
+  target:
+    affects:
+      type: self
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 2
+  school: ill
+  materials:
+    value: gold worth 150 gp, which the spell consumes
+    consumed: true
+    cost: 250
+    supply: null
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: raedires-exaggerated-illusions
+  properties: []
+effects: []
+folder: MH7Bn6dvyjJFukFL
+flags:
+  scene-packer:
+    hash: 31a12092179d000d421d8c400dbf35a5701f664b
+    sourceId: Compendium.sosly.spells.Item.7EYj8RLNBLX1dJGc
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - material
+      - concentration
+_stats:
+  compendiumSource: Compendium.world.spells.Item.7EYj8RLNBLX1dJGc
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583821766
+  modifiedTime: 1736583821766
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 7EYj8RLNBLX1dJGc
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!7EYj8RLNBLX1dJGc'
+

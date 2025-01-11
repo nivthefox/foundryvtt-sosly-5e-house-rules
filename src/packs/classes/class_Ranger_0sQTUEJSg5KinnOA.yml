@@ -376,6 +376,8 @@ system:
         items:
           - uuid: Compendium.sosly-5e-house-rules.classes.Item.xOW5zqFXki5cqZsZ
             optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.chQCKxhck6I2yf4G
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -499,6 +501,23 @@ system:
       level: 2
       title: ''
       hint: ''
+    - _id: OBTpUeZWaRpth0yj
+      type: ScaleValue
+      configuration:
+        identifier: hunters-mark-damage
+        type: string
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: 1d6
+          '10':
+            value: 1d8
+          '20':
+            value: 1d10
+      value: {}
+      title: Hunter's Mark Damage
+      hint: ''
   spellcasting:
     progression: half
     preparation:
@@ -514,7 +533,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548932959
-  modifiedTime: 1736580323538
+  modifiedTime: 1736584175931
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

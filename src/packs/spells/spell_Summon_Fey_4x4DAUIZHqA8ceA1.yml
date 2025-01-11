@@ -1,0 +1,139 @@
+type: spell
+system:
+  description:
+    value: "<p>You call forth a fey spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fey Spirit stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a fey creature of your choice marked by the chosen mood, which determines one of the traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>\n<p>The creature is an ally to you and your companions. In combat, the creature shares your initiative\_count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>\n<p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p>\n<div class=\"Basic-Text-Frame stat-block-finder\">\n<p class=\"Stat-Block-Styles_Stat-Block-Title\">Fey Spirit</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Metadata\">Small fey</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Data\"><strong>Armor Class</strong> 12 + the level of the spell (natural armor)</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Data\"><strong>Hit Points</strong> 30 + 10 for each spell level above 3rd</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Data\"><strong>Speed</strong> 40 ft.</p>\n<div class=\"stat-block-ability-scores\">\n<div class=\"stat-block-ability-scores-stat\">\n<div class=\"stat-block-ability-scores-heading\">STR</div>\n<div class=\"stat-block-ability-scores-data\"><span class=\"stat-block-ability-scores-score\">13</span><span class=\"stat-block-ability-scores-modifier\">(+1)</span></div>\n</div>\n<div class=\"stat-block-ability-scores-stat\">\n<div class=\"stat-block-ability-scores-heading\">DEX</div>\n<div class=\"stat-block-ability-scores-data\"><span class=\"stat-block-ability-scores-score\">16</span><span class=\"stat-block-ability-scores-modifier\">(+3)</span></div>\n</div>\n<div class=\"stat-block-ability-scores-stat\">\n<div class=\"stat-block-ability-scores-heading\">CON</div>\n<div class=\"stat-block-ability-scores-data\"><span class=\"stat-block-ability-scores-score\">14</span><span class=\"stat-block-ability-scores-modifier\">(+2)</span></div>\n</div>\n<div class=\"stat-block-ability-scores-stat\">\n<div class=\"stat-block-ability-scores-heading\">INT</div>\n<div class=\"stat-block-ability-scores-data\"><span class=\"stat-block-ability-scores-score\">14</span><span class=\"stat-block-ability-scores-modifier\">(+2)</span></div>\n</div>\n<div class=\"stat-block-ability-scores-stat\">\n<div class=\"stat-block-ability-scores-heading\">WIS</div>\n<div class=\"stat-block-ability-scores-data\"><span class=\"stat-block-ability-scores-score\">11</span><span class=\"stat-block-ability-scores-modifier\">(+0)</span></div>\n</div>\n<div class=\"stat-block-ability-scores-stat\">\n<div class=\"stat-block-ability-scores-heading\">CHA</div>\n<div class=\"stat-block-ability-scores-data\"><span class=\"stat-block-ability-scores-score\">16</span><span class=\"stat-block-ability-scores-modifier\">(+3)</span></div>\n</div>\n</div>\n<p class=\"Stat-Block-Styles_Stat-Block-Data\"><strong>Condition Immunities</strong> @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{charmed}</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Data\"><strong>Senses</strong> @Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{darkvision} 60 ft., passive @Compendium[dnd5e.rules.0AGfrwZRzSG0vNKb]{Perception} 10</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Data\"><strong>Languages</strong> Sylvan, understands the languages you speak</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Data-Last\"><strong>Challenge</strong>\_—\_<strong>Proficiency Bonus</strong>\_equals your bonus</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Heading\">Actions</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><em><strong>Multiattack.</strong></em> The fey makes a number of attacks equal to half this spell’s level (rounded down).</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><em><strong>Shortsword.</strong> Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 + 3 + the spell’s level piercing damage + 1d6 force damage.</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Heading\">Bonus Actions</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><em><strong>Fey Step.</strong></em> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey’s chosen mood:</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><strong>Fuming.</strong> The fey has advantage on the next attack roll it makes before the end of this turn.</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><strong>Mirthful.</strong> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{charmed} by you and the fey for 1 minute or until the target takes any damage.</p>\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><strong>Tricksy.</strong> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</p>\n</div>"
+    chat: ''
+  source:
+    custom: Tasha’s Cauldron of Everything pg 112
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '90'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: con
+  materials:
+    value: a gilded flower worth at least 300 gp
+    consumed: false
+    cost: 300
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: summon-fey
+  properties: []
+name: Summon Fey
+flags:
+  ddbimporter:
+    id: 5855036
+    definitionId: 721204
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Summon Fey
+    sources:
+      - sourceId: 67
+        pageNumber: 112
+        sourceType: 1
+    tags:
+      - Summoning
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.4x4DAUIZHqA8ceA1
+    hash: 8391114a43272533b3d433906a8490951264a61c
+  cf:
+    id: temp_makmayeu1vq
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/creatures/mammals/elk-moose-marked-green.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.4x4DAUIZHqA8ceA1
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: 4x4DAUIZHqA8ceA1
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!4x4DAUIZHqA8ceA1'
+

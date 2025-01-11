@@ -77,7 +77,8 @@ system:
         units: minute
         special: ''
         override: false
-      effects: []
+      effects:
+        - _id: eWhL8hUr0c2ujDUm
       range:
         units: self
         special: ''
@@ -109,31 +110,42 @@ system:
         max: ''
       sort: 0
       name: ''
+      img: ''
+      appliedEffects:
+        - eWhL8hUr0c2ujDUm
   enchant: {}
   prerequisites:
     level: null
   identifier: rage
 effects:
   - _id: eWhL8hUr0c2ujDUm
-    flags: {}
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
     changes:
       - key: system.bonuses.mwak.damage
         mode: 2
         value: +@scale.barbarian.rage-damage
-        priority: null
+        priority: 20
       - key: system.traits.dr.value
         mode: 2
         value: slashing
-        priority: null
+        priority: 20
       - key: system.traits.dr.value
         mode: 2
         value: piercing
-        priority: null
+        priority: 20
       - key: system.traits.dr.value
         mode: 2
         value: bludgeoning
-        priority: null
-    disabled: true
+        priority: 20
+    disabled: false
     duration:
       startTime: null
       rounds: 10
@@ -142,7 +154,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    origin: Item.bdfYHJstcltQC7SZ
+    origin: Compendium.sosly-5e-house-rules.classes.Item.X1TlX1BgNOiuY15l
     tint: '#ffffff'
     transfer: true
     name: Rage
@@ -155,8 +167,8 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1736584563730
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     img: icons/creatures/abilities/mouth-teeth-human.webp
     type: base
     system: {}
@@ -175,7 +187,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548916236
-  modifiedTime: 1736548916236
+  modifiedTime: 1736584551427
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: X1TlX1BgNOiuY15l
 ownership:

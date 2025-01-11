@@ -1,0 +1,190 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You touch a quiver containing arrows or bolts. When a target is hit by
+      a ranged weapon attack using a piece of ammunition drawn from the quiver,
+      the target takes an extra 1d6 fire damage. The spell’s magic ends on the
+      piece of ammunition when it hits or misses, and the spell ends when twelve
+      pieces of ammunition have been drawn from the quiver.</p>
+
+      <p class="s19"><strong>At Higher Levels.</strong> <span class="p">When you
+      cast this spell using a spell slot of 4th level or higher, the number of
+      pieces of ammunition you can affect with this spell increases by two for
+      each slot level above 3rd.</span></p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 156
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - fire
+            custom:
+              enabled: true
+              formula: 1d6[fire - extra 1d6 fire damage with ammunition]
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+      sort: 0
+  identifier: flame-arrows
+  properties: []
+name: Flame Arrows
+flags:
+  ddbimporter:
+    id: 138100
+    definitionId: 2381
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Flame Arrows
+    sources:
+      - sourceId: 4
+        pageNumber: 156
+        sourceType: 1
+    tags:
+      - Damage
+      - Buff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.0QsAITN5UYPTNBIf
+    hash: 9c270e44659e917ada5166266c192423de36ed60
+  cf:
+    id: temp_makmayeu1vq
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/fire/projectile-arrow-fire-orange-yellow.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.0QsAITN5UYPTNBIf
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: 0QsAITN5UYPTNBIf
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!0QsAITN5UYPTNBIf'
+

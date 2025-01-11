@@ -1,0 +1,161 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You create a sound or an image of an object within range that lasts for
+      the duration. The illusion also ends if you dismiss it as an action or
+      cast this spell again.</p>
+
+      <p>If you create a sound, its volume can range from a whisper to a scream.
+      It can be your voice, someone else's voice, a lion's roar, a beating of
+      drums, or any other sound you choose. The sound continues unabated
+      throughout the duration, or you can make discrete sounds at different
+      times before the spell ends.</p>
+
+      <p>If you create an image of an object--such as a chair, muddy footprints,
+      or a small chest--it must be no larger than a 5-foot cube. The image can't
+      create sound, light, smell, or any other sensory effect. Physical
+      interaction with the image reveals it to be an illusion, because things
+      can pass through it.</p>
+
+      <p>If a creature uses its action to examine the sound or image, the
+      creature can determine that it is an illusion with a successful
+      Intelligence (@Compendium[dnd5e.rules.0AGfrwZRzSG0vNKb]{Investigation})
+      check against your spell save DC. If a creature discerns the illusion for
+      what it is, the illusion becomes faint to the creature.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 260
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '5'
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: ill
+  materials:
+    value: a bit of fleece
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: minor-illusion
+  properties: []
+name: Minor Illusion
+flags:
+  ddbimporter:
+    id: 138487
+    definitionId: 2191
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Minor Illusion
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 260
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.EMZtWhfxJQaZI4Q4
+    hash: 4fc33cb68b9e545a0cd9d3471cb7ef1eec837081
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+      - material
+img: icons/magic/control/hypnosis-mesmerism-eye.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.EMZtWhfxJQaZI4Q4
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: qdjGOoCe8eONIY2C
+_id: EMZtWhfxJQaZI4Q4
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!EMZtWhfxJQaZI4Q4'
+

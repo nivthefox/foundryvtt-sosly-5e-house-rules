@@ -1,0 +1,162 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A flurry of magic snowballs erupts from a point you choose within
+      range. Each creature in a 5-foot-radius sphere centered on that point must
+      make a Dexterity saving throw. A creature takes 3d6 cold damage on a
+      failed save, or half as much damage on a successful one.</p>
+
+      <p class="s19"><strong>At Higher Levels.</strong> <span class="p">When you
+      cast this spell using a spell slot of 3rd level or higher, the damage
+      increases by 1d6 for each slot level above 2nd.</span></p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 165
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: sphere
+      size: '5'
+      contiguous: false
+  range:
+    value: '90'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: a piece of ice or a small white rock chip
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - cold
+            custom:
+              enabled: true
+              formula: 3d6[cold]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d6
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: snillocs-snowball-swarm
+  properties: []
+name: Snilloc's Snowball Swarm
+flags:
+  ddbimporter:
+    id: 138244
+    definitionId: 2399
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Snilloc's Snowball Swarm
+    sources:
+      - sourceId: 4
+        pageNumber: 165
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.Zwzn13y79ICjNVJX
+    hash: e792e46bcc1229648fb114b4b1aed60e05d1ac39
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/fire/projectile-meteor-salvo-heavy-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.Zwzn13y79ICjNVJX
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: dUX5wJivnVkmB5Uy
+_id: Zwzn13y79ICjNVJX
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Zwzn13y79ICjNVJX'
+

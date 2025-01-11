@@ -1,0 +1,152 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The ground in a 20-foot radius centered on a point within range twists
+      and sprouts hard spikes and thorns. The area becomes difficult terrain for
+      the duration. When a creature moves into or within the area, it takes 2d4
+      piercing damage for every 5 feet it travels.</p>
+
+      <p>The transformation of the ground is camouflaged to look natural. Any
+      creature that can't see the area at the time the spell is cast must make a
+      Wisdom (Perception) check against your spell save DC to recognize the
+      terrain as hazardous before entering it.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 277
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: sphere
+      size: '20'
+      contiguous: false
+  range:
+    value: '150'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: trs
+  materials:
+    value: seven sharp thorns or seven small twigs, each sharpened to a point
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: spike-growth
+  properties: []
+name: Spike Growth
+flags:
+  ddbimporter:
+    id: 138780
+    definitionId: 2262
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Spike Growth
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 277
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.jMhDNOvcugEAIXnk
+    hash: 89563171152b202f9d1013fb0e6c477bd5c8217e
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/magic/nature/vines-thorned-curled-glow-green.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.jMhDNOvcugEAIXnk
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583826720
+  modifiedTime: 1736583826720
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: PYojGyeAKWpWC7YK
+_id: jMhDNOvcugEAIXnk
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!jMhDNOvcugEAIXnk'
+

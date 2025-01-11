@@ -1,0 +1,240 @@
+name: Annoying Bee
+type: spell
+img: items/spells/Annoying%20Bee.png
+system:
+  description:
+    value: >-
+      <p>You create an illusory bee to distract one creature you can see within
+      range. The target has disadvantage on Concentration checks until the start
+      of your next turn, and must make an Intelligence saving throw or take 1d4
+      psychic damage.</p><p>This spell's damage increases by 1d4 when you reach
+      5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+    chat: ''
+  source:
+    custom: Solasta
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: ill
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: JeNLWWfs8KVDh0fc
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - number: 1
+            denomination: 4
+            bonus: ''
+            types:
+              - psychic
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: annoying-bee
+  properties: []
+effects:
+  - origin: Item.aB1osdP5w6mNXZFs
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    _id: JeNLWWfs8KVDh0fc
+    changes: []
+    tint: '#ffffff'
+    transfer: false
+    flags:
+      times-up: {}
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        stackable: none
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnStartSource
+      core:
+        statusId: ''
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    name: Annoying Bee
+    description: ''
+    statuses: []
+    img: items/spells/Annoying%20Bee.png
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!dpZi5BAmQCwcOan5.JeNLWWfs8KVDh0fc'
+flags:
+  tidy5e-sheet:
+    gender: ''
+    age: ''
+    height: ''
+    weight: ''
+    eyes: ''
+    skin: ''
+    hair: ''
+    notes:
+      value: ''
+    notes1:
+      name: ''
+      value: ''
+    notes2:
+      name: ''
+      value: ''
+    notes3:
+      name: ''
+      value: ''
+    notes4:
+      name: ''
+      value: ''
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickOther:
+      context: ''
+      value: true
+    quickSave:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  journal-backlinks:
+    references: []
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  core: {}
+  cf:
+    id: temp_fgrqfjce6mm
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.dpZi5BAmQCwcOan5
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+_stats:
+  compendiumSource: Compendium.world.spells.Item.dpZi5BAmQCwcOan5
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: qdjGOoCe8eONIY2C
+_id: dpZi5BAmQCwcOan5
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!dpZi5BAmQCwcOan5'
+

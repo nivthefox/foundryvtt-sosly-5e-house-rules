@@ -1,0 +1,131 @@
+name: Wall of Gloom
+type: spell
+system:
+  description:
+    value: >-
+      <p>A wall of magical darkness appears at a point you choose within range.
+      The wall appears in any orientation you choose: horizontally, vertically,
+      or diagonally. It can be free floating or it can rest on a solid surface.
+      The wall can be up to 40 feet long, 10 feet high, and 10 feet thick. The
+      wall blocks line of sight, but creatures and objects can pass through it.
+      A creature with darkvision can’t see through this darkness, and nonmagical
+      light can’t illuminate it.</p><p>A creature that starts its turn in the
+      wall or enters the wall for the first time on its turn must succeed on a
+      Charisma saving throw. On a failed save, the creature’s speed is halved
+      until the beginning of their next turn.</p><p>If any part of this spell’s
+      area overlaps with an area of light created by a spell of 2nd level or
+      lower, the spell that created the light is dispelled.</p>
+    chat: ''
+  source:
+    custom: Society of Silliness
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      width: '10'
+      type: wall
+      size: '40'
+      contiguous: false
+  range:
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 2
+  school: ill
+  materials:
+    value: a bit of fleece from a black goat
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: wall-of-gloom
+  properties: []
+img: icons/magic/air/fog-gas-smoke-gray.webp
+effects: []
+flags:
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_2257h10m9hlh
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.QubrpmhDNfz7lnu6
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+_stats:
+  compendiumSource: Compendium.world.spells.Item.QubrpmhDNfz7lnu6
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583830507
+  modifiedTime: 1736583830507
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: qyFhQYSKMf8kr6pt
+_id: QubrpmhDNfz7lnu6
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!QubrpmhDNfz7lnu6'
+

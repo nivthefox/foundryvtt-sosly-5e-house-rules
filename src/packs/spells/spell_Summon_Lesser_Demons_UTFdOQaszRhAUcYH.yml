@@ -1,0 +1,137 @@
+type: spell
+system:
+  description:
+    value: "<p class=\"Core-Styles_Core-Body ParaOverride-1\">You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.</p>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d6</th>\n<th>Demons Summoned</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1–2</td>\n<td>Two demons of challenge rating 1 or lower</td>\n</tr>\n<tr>\n<td>3–4</td>\n<td>Four demons of challenge rating 1/2 or lower</td>\n</tr>\n<tr>\n<td>5–6</td>\n<td>Eight demons of challenge rating 1/4 or lower</td>\n</tr>\n</tbody>\n</table><div id=\"table-link\">@Compendium[ddb-data.ddb-tables.Summon Lesser Demons: Demons Summoned]{Open RollTable Summon Lesser Demons: Demons Summoned}</div>\n</div>\n<p class=\"Core-Styles_Core-Body\">The DM chooses the demons, such as manes or dretches, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.</p>\n<p class=\"Core-Styles_Core-Body\">The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.</p>\n<p class=\"Core-Styles_Core-Body\">As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can’t cross the circle or harm it, and they can’t target anyone within it. Using the material component in this manner consumes it when the spell ends.</p>\n<p class=\"Core-Styles_Core-Body\"><strong><span class=\"Serif-Character-Style_Inline-Subhead-Serif\">At Higher Levels.</span></strong>\_When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons.</p>"
+    chat: ''
+  source:
+    custom: Xanathar's Guide to Everything pg 167
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 3
+  school: con
+  materials:
+    value: a vial of blood from a humanoid killed within the past 24 hours
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: summon-lesser-demons
+  properties: []
+name: Summon Lesser Demons
+flags:
+  ddbimporter:
+    id: 138254
+    definitionId: 14604
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Summon Lesser Demons
+    sources:
+      - sourceId: 27
+        pageNumber: 167
+        sourceType: 1
+    tags:
+      - Summoning
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.UTFdOQaszRhAUcYH
+    hash: d4a0b2e6d9458145c41e5f89fab8a46820a271e5
+  cf:
+    id: temp_makmayeu1vq
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/environment/creatures/gargoyle-grey-stone.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.UTFdOQaszRhAUcYH
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ICLHN4HLH8bsknQK
+_id: UTFdOQaszRhAUcYH
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!UTFdOQaszRhAUcYH'
+

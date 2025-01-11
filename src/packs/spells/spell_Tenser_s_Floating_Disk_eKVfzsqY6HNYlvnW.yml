@@ -1,0 +1,170 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>This spell creates a circular, horizontal plane of force, 3 feet in
+      diameter and 1 inch thick, that floats 3 feet above the ground in an
+      unoccupied space of your choice that you can see within range. The disk
+      remains for the duration, and can hold up to 500 pounds. If more weight is
+      placed on it, the spell ends, and everything on the disk falls to the
+      ground.</p>
+
+      <p>The disk is immobile while you are within 20 feet of it. If you move
+      more than 20 feet away from it, the disk follows you so that it remains
+      within 20 feet of you. It can move across uneven terrain, up or down
+      stairs, slopes and the like, but it can't cross an elevation change of 10
+      feet or more. For example, the disk can't move across a 10-foot-deep pit,
+      nor could it leave such a pit if it was created at the bottom.</p>
+
+      <p>If you move more than 100 feet from the disk (typically because it
+      can't move around an obstacle to follow you), the spell ends.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: con
+  materials:
+    value: a drop of mercury
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: tensers-floating-disk
+  properties: []
+name: Tenser's Floating Disk
+flags:
+  ddbimporter:
+    id: 2307
+    definitionId: 2110
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Floating Disk
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: null
+        sourceType: 1
+    tags:
+      - Movement
+      - Utility
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.eKVfzsqY6HNYlvnW
+    hash: 0666be62b60bb54d3bc4c958e8b9ca982e782280
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - ritual
+img: icons/magic/symbols/runes-triangle-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.eKVfzsqY6HNYlvnW
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: vozZLJY1ioSGYAQ3
+_id: eKVfzsqY6HNYlvnW
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!eKVfzsqY6HNYlvnW'
+

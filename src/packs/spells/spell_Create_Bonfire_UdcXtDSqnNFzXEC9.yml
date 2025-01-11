@@ -1,0 +1,195 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You create a bonfire on ground that you can see within range. Until the
+      spell ends, the magic bonfire fills a 5-foot cube. Any creature in the
+      bonfire’s space when you cast the spell must succeed on a Dexterity saving
+      throw or take 1d8 fire damage. A creature must also make the saving throw
+      when it moves into the bonfire’s space for the first time on a turn or
+      ends its turn there.</p>
+
+      <p>The bonfire ignites flammable objects in its area that aren’t being
+      worn or carried.</p>
+
+      <p>The spell’s damage increases by 1d8 when you reach 5th level (2d8),
+      11th level (3d8), and 17th level (4d8).</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 152
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '5'
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: con
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - fire
+            custom:
+              enabled: true
+              formula: 1d8[fire]
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: create-bonfire
+  properties: []
+name: Create Bonfire
+flags:
+  ddbimporter:
+    id: 137964
+    definitionId: 2373
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Create Bonfire
+    sources:
+      - sourceId: 4
+        pageNumber: 152
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.UdcXtDSqnNFzXEC9
+    hash: 8c0f6c3a5eace9bfac74853bd0407de837c38ede
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  enhanced-terrain-layer:
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/magic/fire/flame-burning-campfire-rocks.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.UdcXtDSqnNFzXEC9
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583830507
+  modifiedTime: 1736583830507
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 6yxcxoLHVoiXhCOc
+_id: UdcXtDSqnNFzXEC9
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!UdcXtDSqnNFzXEC9'
+

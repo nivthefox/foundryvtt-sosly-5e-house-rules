@@ -1,0 +1,53 @@
+name: Deadly Focus
+type: feat
+system:
+  description:
+    value: >-
+      <p>The damage die of your Hunter’s Mark is a d8 rather than a
+      d6.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: Ranger 10
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: foe-slayer
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/projectile-arrow-fire-purple.webp
+effects: []
+folder: CoC02wk51g9flcd8
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736584051253
+  modifiedTime: 1736584168464
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: chQCKxhck6I2yf4G
+sort: 1500000
+_key: '!items!chQCKxhck6I2yf4G'
+

@@ -1,0 +1,138 @@
+name: Ward of Silence
+type: spell
+img: icons/magic/sonic/explosion-impact-shock-wave.webp
+system:
+  description:
+    value: >-
+      <p>You ward an area within range that is no larger than a 15-foot radius.
+      Until the spell ends, each creature outside of the warded area takes a -10
+      penalty to Wisdom (Perception) checks made to hear sound within the warded
+      area.</p>
+    chat: ''
+  source:
+    custom: Society of Silliness
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: radius
+      size: '15'
+      contiguous: false
+  range:
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 2
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: ward-of-silence
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: 764b7bd900b876176c9a26aa268d8f05dc7e48f9
+    sourceId: Compendium.sosly.spells.Item.3GAjhPl8C9jRZB7z
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  enhanced-terrain-layer:
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+  core: {}
+  cf:
+    id: temp_fgrqfjce6mm
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - ritual
+_stats:
+  compendiumSource: Compendium.world.spells.Item.3GAjhPl8C9jRZB7z
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583823076
+  modifiedTime: 1736583823076
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: QebHher7FA9ahfwQ
+_id: 3GAjhPl8C9jRZB7z
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!3GAjhPl8C9jRZB7z'
+

@@ -1,0 +1,169 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A wave of thunderous force sweeps out from you. Each creature in a
+      15-foot cube originating from you must make a Constitution saving throw.
+      On a failed save, a creature takes 2d8 thunder damage and is pushed 10
+      feet away from you. On a successful save, the creature takes half as much
+      damage and isn't pushed.</p>
+
+      <p>In addition, unsecured objects that are completely within the area of
+      effect are automatically pushed 10 feet away from you by the spell's
+      effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+
+      <p><strong>At Higher Levels.</strong> When you cast this spell using a
+      spell slot of 2nd level or higher, the damage increases by 1d8 for each
+      slot level above 1st.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 282
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '15'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - thunder
+            custom:
+              enabled: true
+              formula: 2d8[thunder]
+            scaling:
+              mode: whole
+              number: null
+              formula: 1d8
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: thunderwave
+  properties: []
+name: Thunderwave
+flags:
+  ddbimporter:
+    id: 138851
+    definitionId: 2278
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Thunderwave
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 282
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.cjDvNl8eZM86sh5t
+    hash: 6bfe265b22d50bb3712d012068dcb8584021937c
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/lightning/bolt-forked-teal.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.cjDvNl8eZM86sh5t
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: IvNp2hpPuCEfGHw4
+_id: cjDvNl8eZM86sh5t
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!cjDvNl8eZM86sh5t'
+

@@ -4,11 +4,11 @@ system:
   description:
     value: >-
       <p>You always have the
-      @UUID[Compendium.world.spells.ZcyDDSBXyJrqketu]{Hunter's Mark} spell
-      prepared. You can cast it twice without expending a spell slot, and you
-      regain all expended uses of this ability when you finish a Long
-      Rest.</p><p>The number of times you can cast the spell without a spell
-      slot increases when you reach certain Ranger levels.</p><p></p>
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.ZcyDDSBXyJrqketu]{Hunter's
+      Mark} spell prepared. You can cast it twice without expending a spell
+      slot, and you regain all expended uses of this ability when you finish a
+      Long Rest.</p><p>The number of times you can cast the spell without a
+      spell slot increases when you reach certain Ranger levels.</p><p></p>
     chat: ''
   source:
     custom: ''
@@ -18,9 +18,11 @@ system:
     rules: '2014'
     revision: 1
   uses:
-    max: ''
+    max: '@scale.ranger.favored-enemy'
     spent: 0
-    recovery: []
+    recovery:
+      - period: lr
+        type: recoverAll
   type:
     value: class
     subtype: ''
@@ -40,7 +42,11 @@ system:
         scaling:
           allowed: false
         spellSlot: true
-        targets: []
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -68,11 +74,69 @@ system:
           attack: null
           save: null
           override: false
-        level: 1
+        level: '1'
         properties: []
         spellbook: true
-        uuid: Compendium.world.spells.ZcyDDSBXyJrqketu
+        uuid: Compendium.sosly-5e-house-rules.spells.Item.ZcyDDSBXyJrqketu
       name: ''
+      img: ''
+    gGkk1JycvPHwxBJa:
+      type: damage
+      _id: gGkk1JycvPHwxBJa
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.ranger.hunters-mark-damage'
+            number: null
+            denomination: 0
+            bonus: ''
+            types: []
+            scaling:
+              number: 1
+      name: ''
+      img: ''
+      appliedEffects: []
   enchant: {}
   prerequisites:
     level: null
@@ -92,12 +156,12 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548921764
-  modifiedTime: 1736548921764
+  modifiedTime: 1736584292371
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: mnqutlmNmk06fcXL
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 1100000
 _key: '!items!mnqutlmNmk06fcXL'
 

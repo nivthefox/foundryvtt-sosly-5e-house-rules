@@ -1,0 +1,134 @@
+type: spell
+system:
+  description:
+    value: "<p class=\"Core-Styles_Core-Body\" data-content-chunk-id=\"bb4a54ec-2670-4136-871f-e0e0db9f7f93\">You temporarily summon three familiars — spirits that take animal forms of your choice. Each familiar uses the same rules and options for a familiar conjured by the <span class=\"Serif-Character-Style_Italic-Serif\" data-content-chunk-id=\"7dcb9bab-34db-4540-b3ce-8da36aa4091d\">find familiar\_</span>spell. All the familiars conjured by this spell must be the same type of creature (celestials, fey, or fiends; your choice). If you already have a familiar conjured by the <span class=\"Serif-Character-Style_Italic-Serif\" data-content-chunk-id=\"7dcb9bab-34db-4540-b3ce-8da36aa4091d\">find familiar</span><span class=\"Serif-Character-Style_Italic-Serif\" data-content-chunk-id=\"4f08e313-42a3-43d2-ae6a-35de74b58ee4\"><a class=\"tooltip-hover spell-tooltip\" href=\"https://www.dndbeyond.com/spells/find-familiar\" data-tooltip-href=\"//www.dndbeyond.com/spells/2097-tooltip?disable-webm=1&amp;disable-webm=1\">\_</a></span>spell or similar means, then one fewer familiars are conjured by this spell.</p>\n<p class=\"Core-Styles_Core-Body\" data-content-chunk-id=\"f3a937dd-9286-44f5-98f2-e6dd21661087\">Familiars summoned by this spell can telepathically communicate with you and share their visual or auditory senses while they are within 1 mile of you.</p>\n<p class=\"Core-Styles_Core-Body\" data-content-chunk-id=\"3e7c0dc4-ddfb-40e4-9dbf-0757922858c6\">When you cast a spell with a range of touch, one of the familiars conjured by this spell can deliver the spell, as normal. However, you can cast a touch spell through only one familiar per turn.</p>\n<p class=\"Core-Styles_Core-Body\" data-content-chunk-id=\"50059038-325f-4799-8797-1466bb5d0661\"><em><strong><span class=\"Serif-Character-Style_Inline-Subhead-Serif\" data-content-chunk-id=\"ef1bf831-e7d3-4788-a80b-a790879524e5\">At Higher Levels.</span>\_</strong></em>When you cast this spell using a spell slot of 3rd level or higher, you conjure an additional familiar for each slot level above 2nd.</p>"
+    chat: ''
+  source:
+    custom: Lost Laboratory of Kwalish
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: con
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: flock-of-familiars
+  properties: []
+name: Flock of Familiars
+flags:
+  ddbimporter:
+    id: 863070
+    definitionId: 92691
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Flock of Familiars
+    sources:
+      - sourceId: 40
+        pageNumber: null
+        sourceType: 1
+    tags: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.Vpe0oxd9cXHsbmGa
+    hash: 2d69306a7b6bf9529938c284c03f54c6c4a97b14
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+img: icons/creatures/mammals/bats-movement-flying-black.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.Vpe0oxd9cXHsbmGa
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 2fsZjAlRuZaXCtAM
+_id: Vpe0oxd9cXHsbmGa
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Vpe0oxd9cXHsbmGa'
+

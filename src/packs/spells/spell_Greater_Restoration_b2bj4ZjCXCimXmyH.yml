@@ -1,0 +1,169 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You imbue a creature you touch with positive energy to undo a
+      debilitating effect. You can reduce the target's
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{exhaustion} level to 0, or end
+      one of the following effects on the target:</p><ul><li>One effect that
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{charmed} or
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{petrified} the
+      target</li><li>One curse, including the target's attunement to a cursed
+      magic item</li><li>Any reduction to one of the target's ability
+      scores</li><li>One effect reducing the target's hit point
+      maximum</li></ul>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 246
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 5
+  school: abj
+  materials:
+    value: diamond dust worth at least 100 gp, which the spell consumes
+    consumed: true
+    cost: 100
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      healing:
+        number: null
+        denomination: null
+        bonus: ''
+        types: []
+        custom:
+          enabled: false
+          formula: ''
+        scaling:
+          mode: ''
+          number: null
+          formula: ''
+      sort: 0
+  identifier: greater-restoration
+  properties: []
+name: Greater Restoration
+flags:
+  ddbimporter:
+    id: 138005
+    definitionId: 2129
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Greater Restoration
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 246
+        sourceType: 1
+    tags:
+      - Healing
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.b2bj4ZjCXCimXmyH
+    hash: 77bcb9b9c010f9beeac0c3df52580a9f0f48573c
+  cf:
+    id: temp_o8z4x8hk29r
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/life/heart-cross-strong-flame-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.b2bj4ZjCXCimXmyH
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583823076
+  modifiedTime: 1736583823076
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: IO76v6Bl5gWEMzyF
+_id: b2bj4ZjCXCimXmyH
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!b2bj4ZjCXCimXmyH'
+

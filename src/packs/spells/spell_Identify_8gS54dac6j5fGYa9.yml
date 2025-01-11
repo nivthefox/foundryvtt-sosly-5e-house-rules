@@ -1,0 +1,148 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You choose one object that you must touch throughout the casting of the
+      spell. If it is a magic item or some other magic-imbued object, you learn
+      its properties and how to use them, whether it requires attunement to use,
+      and how many charges it has, if any. You learn whether any spells are
+      affecting the item and what they are. If the item was created by a spell,
+      you learn which spell created it.</p>
+
+      <p>If you instead touch a creature throughout the casting, you learn what
+      spells, if any, are currently affecting it.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 252
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: div
+  materials:
+    value: a pearl worth at least 100 gp and an owl feather
+    consumed: false
+    cost: 100
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: identify
+  properties: []
+name: Identify
+flags:
+  ddbimporter:
+    id: 138343
+    definitionId: 2152
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Identify
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 252
+        sourceType: 1
+    tags:
+      - Detection
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.8gS54dac6j5fGYa9
+    hash: 00cb909f7c1acb6e19f336bf90c1ec4ac0d2c53a
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - ritual
+img: icons/magic/light/explosion-star-small-teal-purple.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.8gS54dac6j5fGYa9
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: vozZLJY1ioSGYAQ3
+_id: 8gS54dac6j5fGYa9
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!8gS54dac6j5fGYa9'
+

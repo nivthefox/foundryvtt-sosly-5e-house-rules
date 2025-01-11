@@ -1,0 +1,20 @@
+name: Wizard
+sorting: m
+folder: null
+type: Item
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831472
+  modifiedTime: 1736583831911
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+description: ''
+_id: rsTUOyh4kRLra0E3
+sort: 100000
+_key: '!folders!rsTUOyh4kRLra0E3'
+

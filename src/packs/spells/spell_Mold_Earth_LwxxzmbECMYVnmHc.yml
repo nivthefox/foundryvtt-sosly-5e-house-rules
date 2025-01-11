@@ -1,0 +1,172 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You choose a portion of dirt or stone that you can see within range and
+      that fits within a 5-foot cube. You manipulate it in one of the following
+      ways:</p>
+
+      <ul>
+
+      <li>
+
+      <p>If you target an area of loose earth, you can instantaneously excavate
+      it, move it along the ground, and deposit it up to 5 feet away. This
+      movement doesn’t have enough force to cause damage.</p>
+
+      </li>
+
+      <li>
+
+      <p>You cause shapes, colors, or both to appear on the dirt or stone,
+      spelling out words, creating images, or shaping patterns. The changes last
+      for 1 hour.</p>
+
+      </li>
+
+      <li>
+
+      <p>If the dirt or stone you target is on the ground, you cause it to
+      become difficult terrain. Alternatively, you can cause the ground to
+      become normal terrain if it is already difficult terrain. This change
+      lasts for 1 hour.</p>
+
+      </li>
+
+      </ul>
+
+      <p>If you cast this spell multiple times, you can have no more than two of
+      its non-instantaneous effects active at a time, and you can dismiss such
+      an effect as an action.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 162
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '5'
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: mold-earth
+  properties: []
+name: Mold Earth
+flags:
+  ddbimporter:
+    id: 138204
+    definitionId: 2394
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Mold Earth
+    sources:
+      - sourceId: 4
+        pageNumber: 162
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.LwxxzmbECMYVnmHc
+    hash: ab948689e33973575821b5c24563d6a826fb089c
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+img: icons/magic/light/beam-strike-village-yellow.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.LwxxzmbECMYVnmHc
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 6ddfzIod0oziPTv1
+_id: LwxxzmbECMYVnmHc
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!LwxxzmbECMYVnmHc'
+

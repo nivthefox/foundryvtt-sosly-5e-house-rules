@@ -1,0 +1,166 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The wood of a club or quarterstaff you are holding is imbued with
+      nature's power. For the duration, you can use your spellcasting ability
+      instead of Strength for the attack and damage rolls of melee attacks using
+      that weapon, and the weapon's damage die becomes a d8. The weapon also
+      becomes magical, if it isn't already. The spell ends if you cast it again
+      or if you let go of the weapon.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 275
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: trs
+  materials:
+    value: mistletoe, a shamrock leaf, and a club or quarterstaff
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - bludgeoning
+            custom:
+              enabled: true
+              formula: 1d8[bludgeoning - The weapon is magical.] + @mod
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+      sort: 0
+  identifier: shillelagh
+  properties: []
+name: Shillelagh
+flags:
+  ddbimporter:
+    id: 138708
+    definitionId: 2249
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Shillelagh
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 275
+        sourceType: 1
+    tags:
+      - Damage
+      - Buff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.c7JUB2xKyHP6rnOC
+    hash: 0b35e0f1ef02061f16ade0d4edab0151945028e8
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/fire/dagger-rune-enchant-teal.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.c7JUB2xKyHP6rnOC
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: URnwDpE7Q2xwmQh3
+_id: c7JUB2xKyHP6rnOC
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!c7JUB2xKyHP6rnOC'
+

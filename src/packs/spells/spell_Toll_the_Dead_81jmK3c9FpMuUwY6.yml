@@ -1,0 +1,214 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p class="Core-Styles_Core-Body">You point at one creature you can see
+      within range, and the sound of a dolorous bell fills the air around it for
+      a moment. The target must succeed on a Wisdom saving throw or take 1d8
+      necrotic damage. If the target is missing any of its hit points, it
+      instead takes 1d12 necrotic damage.</p>
+
+      <p class="Core-Styles_Core-Body">The spell’s damage increases by one die
+      when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th
+      level (4d8 or 4d12).</p>
+    chat: ''
+  source:
+    custom: Xanathar's Guide to Everything pg 169
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '60'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - number: 1
+            denomination: 8
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+          - number: 1
+            denomination: 12
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: toll-the-dead
+  properties: []
+name: Toll the Dead
+flags:
+  ddbimporter:
+    id: 138274
+    definitionId: 14615
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Toll the Dead
+    sources:
+      - sourceId: 27
+        pageNumber: 169
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.81jmK3c9FpMuUwY6
+    hash: 4edccd0a099c205638dd1ac7b6feaff5c6e71f0f
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+        '1': ''
+      value:
+        '0': true
+        '1': true
+      altValue:
+        '0': true
+        '1': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+  rollgroups:
+    config:
+      groups:
+        - label: No Damage
+          parts:
+            - 0
+        - label: Missing HP
+          parts:
+            - 1
+      versatile: null
+      bladeCantrip: false
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/death/skull-humanoid-worn-teal.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.81jmK3c9FpMuUwY6
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583831658
+  modifiedTime: 1736583831658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 6ddfzIod0oziPTv1
+_id: 81jmK3c9FpMuUwY6
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!81jmK3c9FpMuUwY6'
+

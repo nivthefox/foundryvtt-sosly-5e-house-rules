@@ -1,0 +1,198 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The spell captures some of the incoming energy, lessening its effect on
+      you and storing it for your next melee attack. You have resistance to the
+      triggering damage type until the start of your next turn. Also, the first
+      time you hit with a melee attack on your next turn, the target takes an
+      extra 1d6 damage of the triggering type, and the spell ends.</p>
+
+      <p><strong><em>At Higher Levels.</em></strong> When you cast this spell
+      using a spell slot of 2nd level or higher, the extra damage increases by
+      1d6 for each slot level above 1st.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 150
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    condition: >-
+      which you take when you take acid, cold, fire, lightning, or thunder
+      damage
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: >-
+          Uses the damage type of the triggered attack: Acid, Cold, Fire,
+          Lightning, or Poison.
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - number: 1
+            denomination: 6
+            bonus: ''
+            types: []
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      sort: 0
+  identifier: absorb-elements
+  properties: []
+name: Absorb Elements
+flags:
+  ddbimporter:
+    id: 137857
+    definitionId: 2368
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Absorb Elements
+    sources:
+      - sourceId: 4
+        pageNumber: 150
+        sourceType: 1
+    tags:
+      - Damage
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.HPvrXX3885llew6h
+    hash: 4185901814a76e53b2edd25deb421e0b8bfd6394
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFlavor:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+img: icons/magic/lightning/orb-ball-purple.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.HPvrXX3885llew6h
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: IvNp2hpPuCEfGHw4
+_id: HPvrXX3885llew6h
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!HPvrXX3885llew6h'
+

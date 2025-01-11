@@ -1,0 +1,160 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A strong wind (20 miles per hour) blows around you in a 10-foot radius
+      and moves with you, remaining centered on you. The wind lasts for the
+      spell’s duration.</p>
+
+      <p>The wind has the following effects:</p>
+
+      <ul>
+
+      <li>It deafens you and other creatures in its area.</li>
+
+      <li>It extinguishes unprotected flames in its area that are torch-sized or
+      smaller.</li>
+
+      <li>It hedges out vapor, gas, and fog that can be dispersed by strong
+      wind.</li>
+
+      <li>The area is difficult terrain for creatures other than you.</li>
+
+      <li>The attack rolls of ranged weapon attacks have disadvantage if the
+      attacks pass in or out of the wind.</li>
+
+      </ul>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 170
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: sphere
+      size: '10'
+      contiguous: false
+  range:
+    units: self
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: warding-wind
+  properties: []
+name: Warding Wind
+flags:
+  ddbimporter:
+    id: 138289
+    definitionId: 2407
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Warding Wind
+    sources:
+      - sourceId: 4
+        pageNumber: 170
+        sourceType: 1
+    tags:
+      - Control
+      - Debuff
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.I9XTWXRFdNgUjJVQ
+    hash: 70aa81b3e036169e0d9dee12830a04f13a8d1450
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+img: icons/magic/air/wind-swirl-purple-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.I9XTWXRFdNgUjJVQ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583821766
+  modifiedTime: 1736583821766
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: MH7Bn6dvyjJFukFL
+_id: I9XTWXRFdNgUjJVQ
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!I9XTWXRFdNgUjJVQ'
+

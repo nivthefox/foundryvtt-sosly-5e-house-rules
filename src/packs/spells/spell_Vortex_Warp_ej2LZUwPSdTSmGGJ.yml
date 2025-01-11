@@ -1,0 +1,150 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You magically twist space around another creature you can see within
+      range. The target must succeed on a Constitution saving throw (the target
+      can choose to fail), or the target is teleported to an unoccupied space of
+      your choice that you can see within range. The chosen space must be on a
+      surface or in a liquid that can support the target without the target
+      having to squeeze.</p>
+
+      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell
+      using a spell slot of 3rd level or higher, the range of the spell
+      increases by 30 feet for each slot level above 2nd.</p>
+    chat: ''
+  source:
+    custom: 'Strixhaven: A Curriculum of Chaos pg 38'
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '90'
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: con
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: vortex-warp
+  properties: []
+name: Vortex Warp
+flags:
+  ddbimporter:
+    id: 10075689
+    definitionId: 1239805
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Vortex Warp
+    sources:
+      - sourceId: 80
+        pageNumber: 38
+        sourceType: 1
+    tags:
+      - Teleportation
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.ej2LZUwPSdTSmGGJ
+    hash: 5a8b8cb34af90d9e685483a2fc26c915879887ea
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/water/vortex-water-whirlpool-blue.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.ej2LZUwPSdTSmGGJ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583827908
+  modifiedTime: 1736583827908
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: dUX5wJivnVkmB5Uy
+_id: ej2LZUwPSdTSmGGJ
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!ej2LZUwPSdTSmGGJ'
+

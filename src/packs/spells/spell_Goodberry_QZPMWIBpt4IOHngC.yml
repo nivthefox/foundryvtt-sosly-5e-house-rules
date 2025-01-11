@@ -1,0 +1,169 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A number of berries equal to your spellcasting ability modifier appear
+      in your hand and are infused with magic for the duration. A creature can
+      use its action to eat one berry. Eating a berry allows the creature to
+      expend a hit die as if they had taken a breather, and the berry provides
+      enough nourishment to sustain a creature for one day.</p><p>The berries
+      lose their potency if they have not been consumed within 24 hours of the
+      casting of this spell.</p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook pg 246
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+    template:
+      units: touch
+      contiguous: false
+  range:
+    units: touch
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: trs
+  materials:
+    value: a sprig of mistletoe
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: true
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      healing:
+        number: null
+        denomination: null
+        bonus: ''
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '1'
+        scaling:
+          mode: ''
+          number: null
+          formula: ''
+      sort: 0
+  identifier: goodberry
+  properties: []
+name: Goodberry
+flags:
+  ddbimporter:
+    id: 137985
+    definitionId: 2126
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Goodberry
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 246
+        sourceType: 1
+    tags:
+      - Healing
+    version: 3.3.4
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/consumables/plants/leaf-veins-glowing-green.webp
+effects: []
+_stats:
+  compendiumSource: Compendium.world.spells.Item.QZPMWIBpt4IOHngC
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736583824321
+  modifiedTime: 1736583824321
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: FQ76AHmRFavXtg0D
+_id: QZPMWIBpt4IOHngC
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!QZPMWIBpt4IOHngC'
+
