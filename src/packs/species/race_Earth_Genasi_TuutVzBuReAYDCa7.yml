@@ -42,25 +42,6 @@ system:
       level: 0
       title: ''
       hint: ''
-    - _id: YV12A4QvrHmanJck
-      type: ItemGrant
-      configuration:
-        items:
-          - optional: false
-            uuid: Compendium.sosly-5e-house-rules.spells.Item.9w9ZavaVQSyXnS7q
-        optional: false
-        spell:
-          ability:
-            - con
-          preparation: innate
-          uses:
-            max: '1'
-            per: lr
-            requireSlot: false
-      value: {}
-      level: 0
-      title: Features
-      hint: ''
     - _id: qegbqIdWn41nBu3e
       type: ItemGrant
       configuration:
@@ -99,7 +80,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588685223
-  modifiedTime: 1736589047677
+  modifiedTime: 1736598879674
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

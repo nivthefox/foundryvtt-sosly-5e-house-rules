@@ -3,11 +3,63 @@ name: Earth Walk
 type: feat
 img: icons/skills/movement/figure-running-gray.webp
 system:
-  activities: {}
+  activities:
+    pxaZ5YSKk68MAI41:
+      type: cast
+      _id: pxaZ5YSKk68MAI41
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      spell:
+        challenge:
+          attack: null
+          save: null
+          override: false
+        level: '2'
+        properties:
+          - vocal
+          - somatic
+          - material
+        spellbook: true
+        uuid: Compendium.sosly-5e-house-rules.spells.9w9ZavaVQSyXnS7q
+      name: ''
+      img: ''
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
   description:
     value: >-
       <p><span style="font-family:Roboto, Helvetica, sans-serif">You can move
@@ -27,7 +79,11 @@ system:
   properties: []
   requirements: ''
 effects: []
-flags: {}
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
 _stats:
   compendiumSource: Compendium.world.races.Item.F2U6LTrqcz77P1g9
   duplicateSource: null
@@ -35,7 +91,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588652077
-  modifiedTime: 1736588652077
+  modifiedTime: 1736598867767
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: F2U6LTrqcz77P1g9
 ownership:

@@ -18,17 +18,20 @@ system:
     condition: ''
     value: 1
   duration:
-    value: '1'
+    value: '8'
     units: hour
   target:
     affects:
       type: self
       choice: false
+      special: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
     units: self
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -86,7 +89,10 @@ system:
         visible: false
       sort: 0
   identifier: pass-without-trace
-  properties: []
+  properties:
+    - vocal
+    - somatic
+    - material
 name: Pass without Trace
 flags:
   ddbimporter:
@@ -135,7 +141,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736583824321
-  modifiedTime: 1736583824321
+  modifiedTime: 1736598847765
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: Q2Im3uIUT7sJoMeI
 _id: 9w9ZavaVQSyXnS7q
