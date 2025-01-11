@@ -16,7 +16,10 @@ system:
         scaling:
           allowed: false
         spellSlot: true
-        targets: []
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -44,23 +47,25 @@ system:
           attack: null
           save: null
           override: false
-        level: 2
+        level: '2'
         properties: []
         spellbook: true
-        uuid: Compendium.world.spells.gq3LFiBdg8B9shSU
+        uuid: Compendium.sosly-5e-house-rules.spells.T8DtpI4uKi2BOTia
       name: Earthbind
+      img: ''
   uses:
     spent: 0
     recovery:
       - period: lr
         type: recoverAll
-    max: ''
+    max: '1'
   description:
     value: >-
       <p>You always have the
-      @UUID[Compendium.world.spells.gq3LFiBdg8B9shSU]{Earthbind} spell
-      prepared.</p><p>You can also cast the spell once without expending a spell
-      slot, and you regain the ability to do so when you finish a Long Rest.</p>
+      @UUID[Compendium.sosly-5e-house-rules.spells.T8DtpI4uKi2BOTia]{Earthbind}
+      spell prepared.</p><p>You can also cast the spell once without expending a
+      spell slot, and you regain the ability to do so when you finish a Long
+      Rest.</p>
     chat: ''
   identifier: new-item
   source:
@@ -87,7 +92,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548920700
-  modifiedTime: 1736548920700
+  modifiedTime: 1736591539496
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: orD1E2ZjAovBdOpb
 ownership:
