@@ -50,14 +50,16 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.sosly-5e-house-rules.species.Item.9NDMZn1YY5zAdB0I
-            optional: false
-          - uuid: Compendium.sosly-5e-house-rules.species.Item.jWy5TJ3O2LX74VAH
-            optional: false
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.species.Item.9NDMZn1YY5zAdB0I
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.species.Item.jWy5TJ3O2LX74VAH
         optional: false
         spell: null
       value: {}
       level: 0
+      title: Features
+      hint: ''
     - _id: 5GmAVsAhicEJECCp
       type: Trait
       configuration:
@@ -112,7 +114,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588687721
-  modifiedTime: 1736589301125
+  modifiedTime: 1736595243091
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
