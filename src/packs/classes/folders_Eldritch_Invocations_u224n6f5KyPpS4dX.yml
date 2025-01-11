@@ -1,0 +1,20 @@
+name: Eldritch Invocations
+sorting: a
+folder: I6C2up2LvZXGkXnN
+type: Item
+description: ''
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548924526
+  modifiedTime: 1736548924526
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: u224n6f5KyPpS4dX
+sort: 0
+_key: '!folders!u224n6f5KyPpS4dX'
+

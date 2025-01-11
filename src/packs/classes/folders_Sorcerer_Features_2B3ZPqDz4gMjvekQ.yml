@@ -1,0 +1,20 @@
+name: Sorcerer Features
+sorting: a
+folder: null
+type: Item
+description: ''
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548922795
+  modifiedTime: 1736548922851
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 2B3ZPqDz4gMjvekQ
+sort: 100000
+_key: '!folders!2B3ZPqDz4gMjvekQ'
+

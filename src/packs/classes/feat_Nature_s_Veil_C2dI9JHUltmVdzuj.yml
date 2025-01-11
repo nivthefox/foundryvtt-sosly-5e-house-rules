@@ -1,0 +1,177 @@
+name: Nature's Veil
+type: feat
+system:
+  description:
+    value: >-
+      <p>You invoke spirits of nature to magically hide yourself. As a Bonus
+      Action, you can give yourself the Invisible condition until the end of
+      your next turn.</p><p>You can use this feature a number of times equal to
+      your Wisdom modifier (minimum of once), and you regain all expended uses
+      when you finish a Long Rest.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: Ranger 14
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: activityUses
+            value: '1'
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: '1'
+        units: round
+        special: ''
+        override: false
+      effects:
+        - _id: 7if4vIkT84Sw2zFm
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+            type: recoverAll
+        max: '@abilities.wis.mod'
+      sort: 0
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: hide-in-plain-sight
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/nature/stealth-hide-eyes-green.webp
+effects:
+  - _id: 7if4vIkT84Sw2zFm
+    changes:
+      - key: system.skills.ste.bonuses.check
+        mode: 2
+        value: '+10'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.r0unvWK0lPsDthDx
+    transfer: false
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+    tint: '#ffffff'
+    name: Nature's Veil
+    description: ''
+    statuses:
+      - invisible
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!C2dI9JHUltmVdzuj.7if4vIkT84Sw2zFm'
+folder: CoC02wk51g9flcd8
+_stats:
+  compendiumSource: Compendium.world.classes.Item.C2dI9JHUltmVdzuj
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548921764
+  modifiedTime: 1736548921764
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: C2dI9JHUltmVdzuj
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!C2dI9JHUltmVdzuj'
+

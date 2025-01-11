@@ -1,0 +1,50 @@
+name: Roving
+type: feat
+system:
+  description:
+    value: >-
+      <p>Your Speed increases by 10 feet while you aren’t wearing Heavy armor.
+      You also have a Climb Speed and a Swim Speed equal to your
+      Speed.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Ranger 6
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: lands-stride
+flags: {}
+img: icons/magic/nature/root-vine-entangle-foot-green.webp
+effects: []
+folder: CoC02wk51g9flcd8
+_stats:
+  compendiumSource: Compendium.world.classes.Item.Jx8kxouA85515StK
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548921764
+  modifiedTime: 1736548921764
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: Jx8kxouA85515StK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Jx8kxouA85515StK'
+

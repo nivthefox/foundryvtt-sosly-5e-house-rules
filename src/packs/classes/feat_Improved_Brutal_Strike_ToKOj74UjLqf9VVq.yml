@@ -1,0 +1,55 @@
+name: Improved Brutal Strike
+type: feat
+system:
+  description:
+    value: >-
+      <p>You have honed new ways to attack furiously. The following effects are
+      now among your Brutal Strike options.</p><p><em><strong>Staggering
+      Blow.</strong></em> The target has Disadvantage on the next saving throw
+      it makes, and it can’t make Opportunity Attacks until the start of your
+      next turn.</p><p><em><strong>Sundering Blow.</strong></em> Before the
+      start of your next turn, the next attack roll made by another creature
+      against the target gains a +5 bonus to the roll. An attack roll can gain
+      only one Sundering Blow bonus.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Barbarian 13
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: brutal-critical
+flags: {}
+img: icons/skills/melee/strike-axe-red.webp
+effects: []
+folder: BEF1gRRevGwUFXCn
+_stats:
+  compendiumSource: Compendium.world.classes.Item.ToKOj74UjLqf9VVq
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548916236
+  modifiedTime: 1736548916236
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: ToKOj74UjLqf9VVq
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!ToKOj74UjLqf9VVq'
+

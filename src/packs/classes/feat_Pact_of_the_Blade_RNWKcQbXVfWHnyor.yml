@@ -1,0 +1,105 @@
+folder: u224n6f5KyPpS4dX
+name: Pact of the Blade
+type: feat
+img: icons/weapons/swords/greatsword-evil-green.webp
+system:
+  activities:
+    5iqN9KcHqRj9TS2d:
+      type: utility
+      _id: 5iqN9KcHqRj9TS2d
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: spec
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a Bonus Action, you can conjure a pact weapon in your hand—a Simple
+      or Martial Melee weapon of your choice with which you bond—or create a
+      bond with a magic weapon you touch; you can’t bond with a magic weapon if
+      someone else is attuned to it or another Warlock is bonded with it. Until
+      the bond ends, you have proficiency with the weapon, and you can use it as
+      a Spellcasting Focus.</p><p>Whenever you attack with the bonded weapon,
+      you can use your Charisma modifier for the attack and damage rolls instead
+      of using Strength or Dexterity; and you can cause the weapon to deal
+      Necrotic, Psychic, or Radiant damage or its normal damage type.</p><p>Your
+      bond with the weapon ends if you use this feature’s Bonus Action again, if
+      the weapon is more than 5 feet away from you for 1 minute or more, or if
+      you die. A conjured weapon disappears when the bond ends.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: eldritchInvocation
+  prerequisites:
+    level: 1
+  properties: []
+  requirements: ''
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.classes.Item.RNWKcQbXVfWHnyor
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548924535
+  modifiedTime: 1736548924535
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: RNWKcQbXVfWHnyor
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!RNWKcQbXVfWHnyor'
+

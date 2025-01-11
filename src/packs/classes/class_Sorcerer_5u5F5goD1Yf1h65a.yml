@@ -1,0 +1,466 @@
+name: Sorcerer
+type: class
+img: modules/sosly-5e-house-rules/public/classes/sorcerer.jpg
+system:
+  description:
+    value: ''
+    chat: ''
+  identifier: sorcerer
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  levels: 1
+  primaryAbility:
+    value:
+      - cha
+    all: true
+  hitDice: d6
+  hitDiceUsed: 0
+  advancement:
+    - _id: VLxI4q3XJ849zoWz
+      type: HitPoints
+      configuration: {}
+      value: {}
+      title: ''
+      hint: ''
+      icon: systems/dnd5e/icons/svg/hit-points.svg
+    - _id: C23A23VYWZwBdm2p
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:con
+          - saves:cha
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: K2iRP8rH15G0O7EJ
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:arc
+              - skills:dec
+              - skills:ins
+              - skills:itm
+              - skills:per
+              - skills:rel
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: TO2qZ4yzISF93syN
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: BMx8Pq2d9Lhc6Ytc
+      type: Subclass
+      configuration: {}
+      value: {}
+      level: 1
+      title: Sorcerous Origin
+      hint: ''
+    - _id: vA0CNKrKLYRCxodG
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.yV2SxGVya8ctz1qJ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Features
+      hint: ''
+    - _id: 4aOgL027KaXS4OWn
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.MJPvd0qH8XzTwkPR
+            optional: false
+          - uuid: Compendium.world.classes.Item.HxV2n471EqdwJeMt
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 2
+      title: Features
+      hint: ''
+    - _id: cBixYbFsRLg0r0EW
+      type: ItemChoice
+      configuration:
+        choices:
+          '2':
+            count: 2
+            replacement: false
+          '10':
+            count: 2
+            replacement: false
+          '17':
+            count: 2
+            replacement: false
+        allowDrops: true
+        type: feat
+        pool:
+          - uuid: Compendium.world.classes.Item.QfHSASboQ7vpSljp
+          - uuid: Compendium.world.classes.Item.3dKB4qYL1FigAcQK
+          - uuid: Compendium.world.classes.Item.OJDTHiYezueel1WB
+          - uuid: Compendium.world.classes.Item.Rzs4JGKih7SdrIdE
+          - uuid: Compendium.world.classes.Item.5ujPMfjsrrEWizaR
+          - uuid: Compendium.world.classes.Item.8ssHY9InF1Z3fu5p
+          - uuid: Compendium.world.classes.Item.NTGXaGic6QkE2fm9
+          - uuid: Compendium.world.classes.Item.iPKuVucTfPdcw6R6
+          - uuid: Compendium.world.classes.Item.aUOG3tKqx3B6we98
+          - uuid: Compendium.world.classes.Item.quvCPGAK3elIf5lk
+        spell: null
+        restriction:
+          type: class
+          subtype: metamagic
+      value:
+        added: {}
+        replaced: {}
+      title: Metamagic
+      hint: ''
+    - _id: 8mtAsTPDy3slCHK0
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.world.classes.Item.hCngiZ17GW4gCyYK
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Features
+      hint: ''
+    - _id: rpG4V8nOjyBS0eTY
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 4
+      title: ''
+      hint: ''
+    - _id: qkcmeD0DIIfrbHLm
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 8
+      title: ''
+      hint: ''
+    - _id: AYTsmSjpOI7KGipX
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 12
+      title: ''
+      hint: ''
+    - _id: c5IZ2Ui9LrUuZUQJ
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 16
+      title: ''
+      hint: ''
+    - _id: 6kuHORminAtmL9nV
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.wj9CIP0QbARRCwvR
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: Features
+      hint: ''
+    - _id: 4cB4WxY5N0WLMyBD
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.UlZrV7Y6j6TGLndp
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 7
+      title: Features
+      hint: ''
+    - _id: rULPWD5LbnoxOf7h
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.world.classes.Item.lWJv7ESgJFpC3LGR
+        optional: false
+        spell: null
+      value: {}
+      level: 18
+      title: Features
+      hint: ''
+    - _id: bjuAUaBTNTuN3pcV
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.world.classes.Item.VZm1YjPF4ongB3zL
+        optional: false
+        spell: null
+      value: {}
+      level: 20
+      title: Features
+      hint: ''
+    - _id: DbwuigN0jf6Q861D
+      type: ItemChoice
+      configuration:
+        choices:
+          '1':
+            count: 4
+            replacement: false
+          '2':
+            count: null
+            replacement: true
+          '3':
+            count: null
+            replacement: true
+          '4':
+            count: null
+            replacement: true
+          '5':
+            count: 1
+            replacement: true
+          '6':
+            count: null
+            replacement: true
+          '7':
+            count: null
+            replacement: true
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: 1
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+        restriction:
+          level: '0'
+      value:
+        added: {}
+        replaced: {}
+      title: Cantrips
+      hint: ''
+    - _id: tulqBAL96AirNFL2
+      type: ItemChoice
+      configuration:
+        choices:
+          '1':
+            count: 2
+            replacement: false
+          '2':
+            count: 2
+            replacement: true
+          '3':
+            count: 2
+            replacement: true
+          '4':
+            count: 1
+            replacement: true
+          '5':
+            count: 2
+            replacement: true
+          '6':
+            count: 1
+            replacement: true
+          '7':
+            count: 1
+            replacement: true
+          '8':
+            count: 1
+            replacement: true
+          '9':
+            count: 2
+            replacement: true
+          '10':
+            count: 1
+            replacement: true
+          '11':
+            count: 1
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: 1
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: 1
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: 1
+            replacement: true
+          '18':
+            count: 1
+            replacement: true
+          '19':
+            count: 1
+            replacement: true
+          '20':
+            count: 1
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+        restriction:
+          level: available
+      value:
+        added: {}
+        replaced: {}
+      title: Spells Known
+      hint: ''
+  spellcasting:
+    progression: full
+    preparation:
+      formula: ''
+    ability: cha
+  wealth: '50'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548934238
+  modifiedTime: 1736549348196
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: 5u5F5goD1Yf1h65a
+sort: 0
+_key: '!items!5u5F5goD1Yf1h65a'
+

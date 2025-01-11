@@ -1,0 +1,105 @@
+name: Nightshirt, Silk
+type: equipment
+img: >-
+  modules/sosly-5e-house-rules/public/equipment/clothing/tunics-and-chemises/silk-nightgown.webp
+system:
+  description:
+    value: <p>Elegant full-length sleeping garment.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 6
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: nightshirt-silk
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: df7f8e018c63ddbb11b8866906e56bc26b939864
+    sourceId: Compendium.sosly.equipment.Item.0JDt8oIddQTwuybR
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.0JDt8oIddQTwuybR
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: ajfmFQfduBfdvTOx
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: yB4vaaqiftywLoN7
+sort: 0
+_key: '!items!yB4vaaqiftywLoN7'
+

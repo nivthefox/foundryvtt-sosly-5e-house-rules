@@ -1,0 +1,115 @@
+name: Gloves, Woolen
+type: equipment
+img: icons/equipment/hand/glove-frayed-cloth-white.webp
+system:
+  description:
+    value: >-
+      <div class="font-claude-message  pr-4  md:pr-9  relative 
+      leading-[1.65rem]  [&amp;_pre&gt;div]:bg-bg-300 
+      [&amp;_.ignore-pre-bg&gt;div]:bg-transparent  [&amp;_pre]:-mr-4 
+      md:[&amp;_pre]:-mr-9"><div><div class="grid-cols-1 grid gap-2.5
+      [&amp;_&gt;_*]:min-w-0"><p class="whitespace-pre-wrap break-words">Warm
+      hand coverings knitted from sheep's wool.</p></div></div></div><div
+      class="absolute -bottom-0 -right-1.5" style="transform:none"><div
+      class="border-0.5 border-border-300 flex items-center translate-y-1/2
+      rounded-lg shadow-sm transition bg-bg-000 p-1"><div class="text-text-400
+      flex items-stretch justify-between gap-0.5"><div class="flex
+      gap-0.5"><p></p></div></div></div></div>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 8
+    denomination: sp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: gloves-woolen
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: bea952ad6a7b1fe0066f88763a606e953adffe88
+    sourceId: Compendium.sosly.equipment.Item.0ZaMQkIkaCCKPSqv
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.0ZaMQkIkaCCKPSqv
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: UUHPRPLj1mKNfrsG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: F0goF7pb3MDTaIRe
+sort: 0
+_key: '!items!F0goF7pb3MDTaIRe'
+

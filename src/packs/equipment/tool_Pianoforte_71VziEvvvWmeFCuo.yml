@@ -79,7 +79,7 @@ system:
   properties: []
   bonus: ''
 effects: []
-folder: null
+folder: o393vzOEBIbgQvSb
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -100,9 +100,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1733292645071
-  modifiedTime: 1733292645071
+  modifiedTime: 1736563870908
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 71VziEvvvWmeFCuo
-sort: 0
+sort: 100000
 _key: '!items!71VziEvvvWmeFCuo'
 

@@ -1,0 +1,114 @@
+name: Quickened Spell
+type: feat
+system:
+  description:
+    value: >-
+      <p>When you cast a spell that has a casting time of an action, you can
+      spend 2 Sorcery Points to change the casting time to a Bonus Action for
+      this casting. You can’t modify a spell in this way if you’ve already cast
+      a level 1+ spell on the current turn, nor can you cast a level 1+ spell on
+      this turn after modifying a spell in this way.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: metamagic
+  requirements: Sorcerer 2
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: special
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.world.classes.Item.MJPvd0qH8XzTwkPR
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: quickened-spell
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/time/clock-stopwatch-white-blue.webp
+effects: []
+folder: DM8YKgHatWhuxqOJ
+_stats:
+  compendiumSource: Compendium.world.classes.Item.8ssHY9InF1Z3fu5p
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548922821
+  modifiedTime: 1736548922821
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 8ssHY9InF1Z3fu5p
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!8ssHY9InF1Z3fu5p'
+

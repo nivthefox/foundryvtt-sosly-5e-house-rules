@@ -1,0 +1,73 @@
+name: Spellcasting
+type: feat
+system:
+  description:
+    value: >-
+      <p><span style="font-family:Roboto, Helvetica, sans-serif">You have
+      learned to channel the magical essence of nature to cast
+      spells.</span></p><p><em><strong>Spell Slots. </strong></em><span
+      style="font-family:Roboto, Helvetica, sans-serif">The Ranger Features
+      table shows how many spell slots you have to cast your level 1+ spells.
+      You regain all expended slots when you finish a Long
+      Rest.</span></p><p><em><strong>Prepared Spells of Level 1+.</strong></em>
+      You prepare the list of level 1+ spells that are available for you to cast
+      with this feature. To start, choose two level 1 Ranger spells.</p><p>The
+      number of spells on your list increases as you gain Ranger levels, as
+      shown in the Prepared Spells column of the Ranger Features table. Whenever
+      that number increases, choose additional Ranger spells until the number of
+      spells on your list matches the number in the Ranger Features table. The
+      chosen spells must be of a level for which you have spell slots. For
+      example, if you’re a level 5 Ranger, your list of prepared spells can
+      include six Ranger spells of level 1 or 2 in any combination.</p><p>If
+      another Ranger feature gives you spells that you always have prepared,
+      those spells don’t count against the number of spells you can prepare with
+      this feature, but those spells otherwise count as Ranger spells for
+      you.</p><p><em><strong>Changing Your Prepared Spells.
+      </strong></em>Whenever you finish a Long Rest, you can replace one spell
+      on your list with another Ranger spell for which you have spell
+      slots.</p><p><em><strong>Spellcasting Ability. </strong></em>Wisdom is
+      your spellcasting ability for your Ranger
+      spells.</p><p><em><strong>Spellcasting Focus.</strong></em> You can use a
+      Druidic Focus as a Spellcasting Focus for your Ranger spells.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Ranger
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: spellcasting
+flags: {}
+img: icons/magic/nature/trap-spikes-thorns-green.webp
+effects: []
+folder: CoC02wk51g9flcd8
+_stats:
+  compendiumSource: Compendium.world.classes.Item.Ju1xtGFYVya7mg6o
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548921764
+  modifiedTime: 1736548921764
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: Ju1xtGFYVya7mg6o
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!Ju1xtGFYVya7mg6o'
+

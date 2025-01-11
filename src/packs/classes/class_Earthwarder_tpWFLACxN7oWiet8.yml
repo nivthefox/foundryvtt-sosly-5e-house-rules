@@ -1,0 +1,436 @@
+name: Earthwarder
+type: class
+img: modules/sosly-5e-house-rules/public/classes/earthwarder.webp
+system:
+  description:
+    value: <p><em>Variant Paladin.</em></p><p></p>
+    chat: ''
+  identifier: paladin
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  levels: 1
+  primaryAbility:
+    value:
+      - str
+      - cha
+    all: true
+  hitDice: d10
+  hitDiceUsed: 0
+  advancement:
+    - _id: 3rc3GRh7rUI37ai5
+      type: HitPoints
+      configuration: {}
+      value: {}
+      title: ''
+      hint: ''
+      icon: systems/dnd5e/icons/svg/hit-points.svg
+    - _id: YTKTedUxZKXY8RXx
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:wis
+          - saves:cha
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: Saving Throws
+      hint: ''
+      classRestriction: primary
+    - _id: BMfkdG3M2DN1iWG9
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ath
+              - skills:ins
+              - skills:itm
+              - skills:med
+              - skills:nat
+              - skills:per
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: UBU9wE6dzko8vOoq
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - armor:lgt
+          - armor:med
+          - armor:hvy
+          - armor:shl
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: Armor Training
+      hint: ''
+      classRestriction: primary
+    - type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - armor:lgt
+          - armor:med
+          - armor:shl
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: Armor Training
+      hint: ''
+      classRestriction: secondary
+      _id: hz21HitJjU8FiXTv
+    - _id: ywUJeFaHNsYKMLqm
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+          - weapon:mar
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+    - _id: s6EmR5ljhYEetvOG
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.nXiOxBzeV5UORIoc
+            optional: false
+          - uuid: Compendium.world.classes.Item.KQpXduvnPRrWzEQ5
+            optional: false
+          - uuid: Compendium.world.classes.Item.Qlbfcym278pfVNvn
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Features
+      hint: ''
+    - _id: oJjMK7qISz9Fncx4
+      type: ItemChoice
+      configuration:
+        choices:
+          '2':
+            count: 1
+            replacement: true
+        allowDrops: true
+        type: feat
+        pool:
+          - uuid: Compendium.world.feats.Item.UdVo7KtcCVdvH1qG
+          - uuid: Compendium.world.feats.Item.D19C0gcWJgxvU66y
+          - uuid: Compendium.world.feats.Item.0DDMqpI5V9l3egIJ
+          - uuid: Compendium.world.feats.Item.HGDExYAleyKOU2kc
+          - uuid: Compendium.world.feats.Item.UHXBBBBcNnrO7mL3
+          - uuid: Compendium.world.feats.Item.HNBbLfP992D4YlwB
+          - uuid: Compendium.world.feats.Item.58f8IOx7sXNjmsGo
+          - uuid: Compendium.world.feats.Item.4BZsOmmvRPs3XsXs
+          - uuid: Compendium.world.feats.Item.PC0uIwTUPVeTXtqe
+          - uuid: Compendium.world.feats.Item.BWi83psegCR3BFsh
+        spell: null
+        restriction:
+          type: feat
+          subtype: fightingStyle
+      value:
+        added: {}
+        replaced: {}
+      title: Fighting Style
+      hint: ''
+      icon: icons/skills/melee/weapons-crossed-daggers-orange.webp
+    - _id: iqNBywO5FJQg6Q8F
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: '2'
+          '2':
+            value: '3'
+          '3':
+            value: '4'
+          '4':
+            value: '5'
+          '5':
+            value: '6'
+          '7':
+            value: '7'
+          '9':
+            value: '9'
+          '11':
+            value: '10'
+          '13':
+            value: '11'
+          '15':
+            value: '12'
+          '17':
+            value: '14'
+          '19':
+            value: '15'
+      value: {}
+      title: Prepared Spells
+      hint: ''
+    - _id: vFUhj04Mh6SB1ApC
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.world.classes.Item.PxHnW9kfP8d5xQYL
+        optional: false
+        spell: null
+      value: {}
+      level: 2
+      title: ''
+      hint: ''
+    - _id: 9w5j1HQ9Xh48utEp
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '3':
+            value: '2'
+          '11':
+            value: '3'
+      value: {}
+      title: Channel Divinity
+      hint: ''
+    - _id: xgww9vcx9W5Ri0qE
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.world.classes.Item.Aefcimi0l2ArOMsB
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: ''
+      hint: ''
+    - _id: sNWEbusCtySt9y3H
+      type: Subclass
+      configuration: {}
+      value: {}
+      level: 3
+      title: Paladin Subclass
+      hint: ''
+    - _id: b8tSygRpGw9GJdFk
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 4
+      title: ''
+      hint: ''
+    - _id: 5wkGTWKf5yNdsUBQ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.XVPSaqPB3IsEYCZb
+            optional: false
+          - uuid: Compendium.world.classes.Item.orD1E2ZjAovBdOpb
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: Features
+      hint: ''
+    - _id: vlYdByMR5u40Xf90
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.i0dsDgycs9Czrb2F
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Features
+      hint: ''
+    - _id: y14qZfBPVHw1RhTy
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 8
+      title: ''
+      hint: ''
+    - _id: p9ZdyMQL3dLYsa2S
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 12
+      title: ''
+      hint: ''
+    - _id: 5lbJAhko7ewIJ5hu
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 16
+      title: ''
+      hint: ''
+    - _id: yyj048JpkOl084gq
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.9Da7O9yuyKFTtLA6
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 9
+      title: Features
+      hint: ''
+    - _id: tEnBAR28hnnePotZ
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '6':
+            value: '10'
+          '18':
+            value: '30'
+      value: {}
+      title: Aura of Protection
+      hint: ''
+    - _id: mYLFhCaGDhvGFTYJ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.yCFF7WzGTlbbc6be
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 11
+      title: Features
+      hint: ''
+    - _id: zjz7S0xHwjRa3Sr3
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.5YzSmywQPFrlplrE
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Features
+      hint: ''
+    - _id: nWk0M8YAuA0fF5UB
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.z8RPmjrkZP2PBJRU
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Features
+      hint: ''
+    - _id: mOW1IhZONH85LIeh
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.celk0oxCKREzo71d
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 19
+      title: Feature
+      hint: ''
+  spellcasting:
+    progression: half
+    preparation:
+      formula: '@scale.paladin.prepared-spells'
+    ability: cha
+  wealth: '150'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548928074
+  modifiedTime: 1736548928095
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: tpWFLACxN7oWiet8
+sort: 200000
+_key: '!items!tpWFLACxN7oWiet8'
+

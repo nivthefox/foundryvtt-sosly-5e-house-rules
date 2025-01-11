@@ -1,0 +1,53 @@
+name: Precise Hunter
+type: feat
+system:
+  description:
+    value: >-
+      <p>You have Advantage on attack rolls against the creature currently
+      marked by your Hunter’s Mark.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: Ranger 17
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: primeval-awareness
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/skills/targeting/crosshair-ringed-gray.webp
+effects: []
+folder: CoC02wk51g9flcd8
+_stats:
+  compendiumSource: Compendium.world.classes.Item.N3vJ7M0EmKdq7gn1
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548921764
+  modifiedTime: 1736548921764
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: N3vJ7M0EmKdq7gn1
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!N3vJ7M0EmKdq7gn1'
+

@@ -1,0 +1,104 @@
+name: Headwear, Beret
+type: equipment
+img: icons/equipment/head/hat-cocked-feather-green.webp
+system:
+  description:
+    value: <p>A round, flat cap without a brim.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 1
+    denomination: sp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: headwear-cap-cotton
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: 32057106c2990aea7188fb6c7c81a08515cdfae9
+    sourceId: Compendium.sosly.equipment.Item.u9NFUw8AEQlCvAIj
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.qdT6cj2LZuhnDrgP
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Q4XE3TVgjGxnWQvV
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: RqAHmTKkaaOlYI44
+sort: 0
+_key: '!items!RqAHmTKkaaOlYI44'
+

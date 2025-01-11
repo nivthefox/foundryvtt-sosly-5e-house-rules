@@ -1,0 +1,501 @@
+name: Ranger
+type: class
+img: modules/sosly-5e-house-rules/public/classes/ranger.jpg
+system:
+  description:
+    value: ''
+    chat: ''
+  identifier: ranger
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  levels: 1
+  primaryAbility:
+    value: []
+    all: true
+  hitDice: d10
+  hitDiceUsed: 0
+  advancement:
+    - _id: mrKk0imVq9VPzcx0
+      type: HitPoints
+      configuration: {}
+      value: {}
+      title: ''
+      hint: ''
+      icon: systems/dnd5e/icons/svg/hit-points.svg
+    - _id: dWL7DSVP6x8YeJbl
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:str
+          - saves:dex
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - _id: Y0amj0OB7VvcF00y
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 3
+            pool:
+              - skills:ani
+              - skills:ath
+              - skills:ins
+              - skills:inv
+              - skills:nat
+              - skills:prc
+              - skills:ste
+              - skills:sur
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: primary
+    - type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ani
+              - skills:ath
+              - skills:ins
+              - skills:inv
+              - skills:nat
+              - skills:prc
+              - skills:ste
+              - skills:sur
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+      classRestriction: secondary
+      _id: H09Vm2glFejBiDjV
+    - _id: iABTdIECyLdz5K4b
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+          - weapon:mar
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+    - _id: KsWAaXKPaOFyXWSy
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - armor:lgt
+          - armor:med
+          - armor:shl
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: ''
+      hint: ''
+    - _id: iqNBywO5FJQg6Q8F
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: '2'
+          '2':
+            value: '3'
+          '3':
+            value: '4'
+          '4':
+            value: '5'
+          '5':
+            value: '6'
+          '7':
+            value: '7'
+          '9':
+            value: '9'
+          '11':
+            value: '10'
+          '13':
+            value: '11'
+          '15':
+            value: '12'
+          '17':
+            value: '14'
+          '19':
+            value: '15'
+      value: {}
+      title: Prepared Spells
+      hint: ''
+    - _id: R9MEdkK9CXTxee5v
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: '2'
+          '5':
+            value: '3'
+          '9':
+            value: '4'
+          '13':
+            value: '5'
+          '17':
+            value: '6'
+      value: {}
+      title: Favored Enemy
+      hint: ''
+    - _id: zEsCPBesvd07wd2A
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.mnqutlmNmk06fcXL
+            optional: false
+          - uuid: Compendium.world.classes.Item.Ju1xtGFYVya7mg6o
+            optional: false
+          - uuid: Compendium.world.classes.Item.uZAlxNLKppJKu6yu
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Features
+      hint: ''
+    - _id: kSF8Hezzzkxi8YUM
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.9eObHa6CLQSvyc9z
+            optional: false
+          - uuid: Compendium.world.classes.Item.w8ZH9S4TTLbd4wTY
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 2
+      title: Features
+      hint: ''
+    - _id: oJjMK7qISz9Fncx4
+      type: ItemChoice
+      configuration:
+        choices:
+          '2':
+            count: 1
+            replacement: true
+        allowDrops: true
+        type: feat
+        pool:
+          - uuid: Compendium.world.feats.Item.UdVo7KtcCVdvH1qG
+          - uuid: Compendium.world.feats.Item.D19C0gcWJgxvU66y
+          - uuid: Compendium.world.feats.Item.0DDMqpI5V9l3egIJ
+          - uuid: Compendium.world.feats.Item.HGDExYAleyKOU2kc
+          - uuid: Compendium.world.feats.Item.UHXBBBBcNnrO7mL3
+          - uuid: Compendium.world.feats.Item.HNBbLfP992D4YlwB
+          - uuid: Compendium.world.feats.Item.58f8IOx7sXNjmsGo
+          - uuid: Compendium.world.feats.Item.4BZsOmmvRPs3XsXs
+          - uuid: Compendium.world.feats.Item.PC0uIwTUPVeTXtqe
+          - uuid: Compendium.world.feats.Item.BWi83psegCR3BFsh
+        spell: null
+        restriction:
+          type: feat
+          subtype: fightingStyle
+      value:
+        added: {}
+        replaced: {}
+      title: Fighting Style
+      hint: ''
+      icon: icons/skills/melee/weapons-crossed-daggers-orange.webp
+    - _id: jbBi7a349pjHbHWN
+      type: Subclass
+      configuration: {}
+      value: {}
+      level: 3
+      title: ''
+      hint: ''
+    - _id: 2zLUXEp8Szw4WuLj
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 4
+      title: ''
+      hint: ''
+    - _id: UlCRbwWH5gBBb5e4
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 8
+      title: ''
+      hint: ''
+    - _id: BjP6Q4V2M5HQ8zqz
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 12
+      title: ''
+      hint: ''
+    - _id: U6N9mRC1kPVWGOoH
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+      value:
+        type: asi
+      level: 16
+      title: ''
+      hint: ''
+    - _id: w3fWl09OBuLgbgPO
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.mLGJWtJz0loCh6NT
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: Features
+      hint: ''
+    - _id: ItaM7heYWMa4JIIh
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.Jx8kxouA85515StK
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Features
+      hint: ''
+    - _id: qC8jpC71YSo6fSQA
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.T6Ti3jQNUYlspBGv
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 9
+      title: Features
+      hint: ''
+    - _id: oV79LiSznz5FMhcl
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.xOW5zqFXki5cqZsZ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Features
+      hint: ''
+    - _id: vhKLWaqrqZKI9Ci8
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.Ftue8yFbR17ROta9
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 13
+      title: Features
+      hint: ''
+    - _id: IwpdjveWlF64etEE
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.C2dI9JHUltmVdzuj
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Features
+      hint: ''
+    - _id: e6eVAJo3fcdgnBi3
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.N3vJ7M0EmKdq7gn1
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 17
+      title: Features
+      hint: ''
+    - _id: tmYXOsggMtGyIljt
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.E9X8jHnAIHV1dY8Z
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 18
+      title: Features
+      hint: ''
+    - _id: LNf6AvtISBvVq9GR
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.sPM10XIsXcohGKCM
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 19
+      title: Features
+      hint: ''
+    - _id: 3JwuSTJCedz4hA6M
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.classes.Item.ORmJO8C8khjAgAtJ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 20
+      title: Features
+      hint: ''
+    - _id: dbXkjuQWIMtKdXtT
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - languages:*
+      value:
+        chosen: []
+      level: 2
+      title: ''
+      hint: ''
+    - _id: 80BuCS2dVlICF2Sz
+      type: Trait
+      configuration:
+        mode: expertise
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:*
+      value:
+        chosen: []
+      level: 9
+      title: ''
+      hint: ''
+    - _id: nD9nmkpvS3moYAbv
+      type: Trait
+      configuration:
+        mode: expertise
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:*
+      value:
+        chosen: []
+      level: 2
+      title: ''
+      hint: ''
+  spellcasting:
+    progression: half
+    preparation:
+      formula: '@scale.ranger.prepared-spells'
+    ability: wis
+  wealth: '150'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548932959
+  modifiedTime: 1736548932959
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: 0sQTUEJSg5KinnOA
+sort: 0
+_key: '!items!0sQTUEJSg5KinnOA'
+

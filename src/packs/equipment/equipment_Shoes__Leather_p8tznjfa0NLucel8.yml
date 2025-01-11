@@ -1,0 +1,106 @@
+name: Shoes, Leather
+type: equipment
+img: icons/equipment/feet/shoes-rounded-pink.webp
+system:
+  description:
+    value: >-
+      <p class="whitespace-pre-wrap break-words">Simple shoes of tanned
+      hide.</p><p class="whitespace-pre-wrap break-words"></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 3
+    denomination: sp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: shoes-leather
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: 4b18ff14e20258e770805ada81a7b1868de51f5b
+    sourceId: Compendium.sosly.equipment.Item.gFI5almKlGRS3ak7
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.gFI5almKlGRS3ak7
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Ck8hCzk0ztCrwX7U
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: p8tznjfa0NLucel8
+sort: 0
+_key: '!items!p8tznjfa0NLucel8'
+

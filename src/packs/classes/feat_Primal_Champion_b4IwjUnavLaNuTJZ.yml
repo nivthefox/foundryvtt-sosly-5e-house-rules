@@ -1,0 +1,49 @@
+name: Primal Champion
+type: feat
+system:
+  description:
+    value: >-
+      <p>You embody primal power. Your Strength and Constitution scores increase
+      by 4, and their maximum is now 25.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Barbarian 20
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: primal-champion
+flags: {}
+img: icons/magic/control/sihouette-hold-beam-green.webp
+effects: []
+folder: BEF1gRRevGwUFXCn
+_stats:
+  compendiumSource: Compendium.world.classes.Item.b4IwjUnavLaNuTJZ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548916236
+  modifiedTime: 1736548916236
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: b4IwjUnavLaNuTJZ
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!b4IwjUnavLaNuTJZ'
+

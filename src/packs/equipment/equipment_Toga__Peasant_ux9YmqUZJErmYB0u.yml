@@ -1,0 +1,105 @@
+name: Toga, Peasant
+type: equipment
+img: >-
+  modules/sosly-5e-house-rules/public/equipment/clothing/dresses-and-robes/peasant-toga.png
+system:
+  description:
+    value: <p>A simple draped garment of undyed wool or linen.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 3
+    units: lb
+  price:
+    value: 8
+    denomination: cp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: toga-peasant
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: 3fef51d2198c5769f6653945a41fe7b6155f955d
+    sourceId: Compendium.sosly.equipment.Item.kEll99REpNmremh5
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.kEll99REpNmremh5
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Fna0YnMqckSmaUEv
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: ux9YmqUZJErmYB0u
+sort: 0
+_key: '!items!ux9YmqUZJErmYB0u'
+

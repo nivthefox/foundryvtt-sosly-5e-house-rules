@@ -1,0 +1,118 @@
+name: Brutal Strike
+type: feat
+system:
+  description:
+    value: >-
+      <p>If you use Reckless Attack, you can forgo any Advantage on one
+      Strength-based attack roll of your choice on your turn. The chosen attack
+      roll mustn’t have Disadvantage. If the chosen attack roll hits, the target
+      takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed
+      Strike, and you can cause one Brutal Strike effect of your choice. You
+      have the following effect options.</p><p><em><strong>Forceful
+      Blow.</strong></em> The target is pushed 15 feet straight away from you.
+      You can then move up to half your Speed straight toward the target without
+      provoking Opportunity Attacks.</p><p><em><strong>Hamstring
+      Blow.</strong></em> The target’s Speed is reduced by 15 feet until the
+      start of your next turn. A target can be affected by only one Hamstring
+      Blow at a time—the most recent one.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Barbarian 9
+  properties: []
+  activities:
+    n75vuvGIGy1Aod8V:
+      type: damage
+      _id: n75vuvGIGy1Aod8V
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.barbarian.brutal-strike'
+            number: null
+            denomination: 10
+            bonus: ''
+            types: []
+            scaling:
+              number: 1
+      name: Brutal Strike
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: brutal-critical
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/skills/melee/strike-axe-blood-red.webp
+effects: []
+folder: BEF1gRRevGwUFXCn
+_stats:
+  compendiumSource: Compendium.world.classes.Item.x2QRNFdEBgPQNFx9
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548916236
+  modifiedTime: 1736548916236
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: x2QRNFdEBgPQNFx9
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!x2QRNFdEBgPQNFx9'
+

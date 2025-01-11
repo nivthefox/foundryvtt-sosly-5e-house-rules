@@ -1,0 +1,88 @@
+name: Jack of All Trades
+type: feat
+system:
+  description:
+    value: >-
+      <p>You can add half your Proficiency Bonus (round down) to any ability
+      check you make that uses a skill proficiency you lack and that doesn’t
+      otherwise use your Proficiency Bonus.</p><p>For example, if you make a
+      Strength (Athletics) check and lack Athletics proficiency, you can add
+      half your Proficiency Bonus to the check.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Bard 2
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: jack-of-all-trades
+flags: {}
+img: icons/commodities/tech/cog-steel.webp
+effects:
+  - _id: K4xQzXl1Z4zMnyOa
+    changes:
+      - key: flags.dnd5e.jackOfAllTrades
+        mode: 5
+        value: 'true'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.LaQuQ37mInXH6TiR
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    name: Jack of All Trades
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    img: icons/commodities/tech/cog-steel.webp
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!LGzC3GtiSrnWhjv2.K4xQzXl1Z4zMnyOa'
+folder: 6Kk5eK2naIYH5dib
+_stats:
+  compendiumSource: Compendium.world.classes.Item.LGzC3GtiSrnWhjv2
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548917687
+  modifiedTime: 1736548917687
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: LGzC3GtiSrnWhjv2
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!LGzC3GtiSrnWhjv2'
+

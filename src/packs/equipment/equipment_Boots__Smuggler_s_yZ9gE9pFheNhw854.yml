@@ -1,0 +1,110 @@
+name: Boots, Smuggler's
+type: equipment
+img: icons/equipment/feet/boots-collared-leather-blue.webp
+system:
+  description:
+    value: >-
+      <p><span style="font-family:Signika, sans-serif">These otherwise normal
+      high boots have hinged heels that swing open to reveal small storage
+      spaces. Each can hold one or two small objects, such as a vial of poison.
+      In addition, the inside lining of the boot can be removed to hide thin,
+      flat objects like a map or slender dagger. It requires a successful Search
+      check (DC 20) to locate items hidden in the boots.</span></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 10
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: boots-smugglers
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: 0586f888fd5ff248ba6e87d411dcc0533dca182d
+    sourceId: Compendium.sosly.equipment.Item.M6GcBCsE9rQpIHlH
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.M6GcBCsE9rQpIHlH
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: Ck8hCzk0ztCrwX7U
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: yZ9gE9pFheNhw854
+sort: 0
+_key: '!items!yZ9gE9pFheNhw854'
+

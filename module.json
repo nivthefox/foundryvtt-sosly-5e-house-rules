@@ -61,9 +61,24 @@
     {
       "name": "house-rules",
       "label": "House Rules",
-      "system": "dnd5e",
       "path": "packs/house-rules",
-      "type": "JournalEntry"
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "classes",
+      "label": "Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
     }
   ],
   "documentTypes": {

@@ -10,8 +10,9 @@
         "lint:code": "npx eslint -c .eslintrc.json src/*/**.js",
         "watch": "npm-run-all --parallel watch:*",
         "watch:code": "npm-watch build:code",
-        "watch:styles": "npm-watch build:styles",
-        "watch:lint": "npm-watch lint:code"
+        "watch:lint": "npm-watch lint:code",
+        "watch:packs": "npm-watch build:packs",
+        "watch:styles": "npm-watch build:styles"
     },
     "watch": {
         "build:code": {

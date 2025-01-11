@@ -1,0 +1,106 @@
+name: Breeches or Pants, Sackcloth
+type: equipment
+img: icons/equipment/leg/pants-orange-red-fabric-pants.webp
+system:
+  description:
+    value: >-
+      <p class="whitespace-pre-wrap break-words">Rough pants made of coarse
+      burlap.</p><p class="whitespace-pre-wrap break-words"></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 5
+    denomination: cp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: clothing
+    baseItem: ''
+  activities: {}
+  identifier: breeches-or-pants-sackcloth
+  container: null
+  attuned: false
+  properties: []
+effects: []
+flags:
+  scene-packer:
+    hash: 732c155855a8947082bc61020ee60d0f63ad7c40
+    sourceId: Compendium.sosly.equipment.Item.R76uXQsLim9K9PJ3
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    consumeQuantity:
+      value: false
+  journal-backlinks:
+    references: []
+  core: {}
+  cf:
+    id: temp_rreitvjg2c
+    path: Loot#/CF_SEP/Adventuring Gear#/CF_SEP/Clothing
+    color: '#444444'
+_stats:
+  compendiumSource: Compendium.world.clothing.Item.R76uXQsLim9K9PJ3
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736568120912
+  modifiedTime: 1736568120912
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: njdwzIX01lhf1KVB
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: zRRaofetR40S1sa9
+sort: 0
+_key: '!items!zRRaofetR40S1sa9'
+

@@ -1,0 +1,128 @@
+name: Font of Magic
+type: feat
+system:
+  description:
+    value: >-
+      <p>You can tap into the wellspring of magic within yourself. This
+      wellspring is represented by Sorcery Points, which allow you to create a
+      variety of magical effects.</p><p>You have 2 Sorcery Points, and you gain
+      more as you reach higher levels, as shown in the Sorcery Points column of
+      the Sorcerer Features table. You can’t have more Sorcery Points than the
+      number shown in the table for your level. You regain all expended Sorcery
+      Points when you finish a Long Rest.</p><p>You can use your Sorcery Points
+      to fuel the options below, along with other features, such as Metamagic,
+      that use those points.</p><p>Converting Spell Slots to Sorcery Points. You
+      can expend a spell slot to gain a number of Sorcery Points equal to the
+      slot’s level (no action required).</p><p>Creating Spell Slots. As a Bonus
+      Action, you can transform unexpended Sorcery Points into one spell slot.
+      The Creating Spell Slots table shows the cost of creating a spell slot of
+      a given level, and it lists the minimum Sorcerer level you must be to
+      create a slot. You can create a spell slot no higher than level
+      5.</p><p>Any spell slot you create with this feature vanishes when you
+      finish a Long Rest.</p><p></p><table><caption>Creating Spell
+      Slots</caption><thead><tr><td><strong>Spell Slot
+      Level</strong></td><td><strong>Sorcery Point
+      Cost</strong></td><td><strong>Min. Sorcerer
+      Level</strong></td></tr></thead><tbody><tr><td>1st</td><td>2</td><td>2</td></tr><tr><td>2nd</td><td>3</td><td>3</td></tr><tr><td>3rd</td><td>5</td><td>5</td></tr><tr><td>4th</td><td>6</td><td>7</td></tr><tr><td>5th</td><td>7</td><td>9</td></tr></tbody></table>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: '@classes.sorcerer.levels'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: Sorcerer 2
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: special
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: font-of-magic
+flags: {}
+img: icons/magic/control/silhouette-hold-change-blue.webp
+effects: []
+folder: 2B3ZPqDz4gMjvekQ
+_stats:
+  compendiumSource: Compendium.world.classes.Item.MJPvd0qH8XzTwkPR
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548922821
+  modifiedTime: 1736548922821
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: MJPvd0qH8XzTwkPR
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!MJPvd0qH8XzTwkPR'
+

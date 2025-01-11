@@ -1,0 +1,124 @@
+name: Aura of Protection
+type: feat
+system:
+  description:
+    value: >-
+      <p>You radiate a protective, unseeable aura in a 10-foot Emanation that
+      originates from you. The aura is inactive while you have the Incapacitated
+      condition.</p><p>You and your allies in the aura gain a bonus to saving
+      throws equal to your Charisma modifier (minimum bonus of +1).</p><p>If
+      another Paladin is present, a creature can benefit from only one Aura of
+      Protection at a time; the creature chooses which aura while in
+      them.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Paladin 6
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: aura-of-protection
+flags: {}
+img: icons/magic/air/wind-tornado-wall-blue.webp
+effects:
+  - _id: AyZpyu9HkkZ1r2mj
+    flags:
+      ActiveAuras:
+        aura: Allies
+        radius: '@scale.paladin.aura-of-protection'
+        isAura: true
+        inactive: false
+        hidden: false
+        ignoreSelf: false
+        height: false
+        alignment: ''
+        type: ''
+        save: ''
+        savedc: null
+        hostile: false
+        onlyOnce: false
+        time: None
+        displayTemp: true
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+      dae:
+        stackable: noneName
+        specialDuration:
+          - None
+        transfer: true
+        macroRepeat: none
+        durationExpression: ''
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        showIcon: true
+        disableCondition: ''
+      core:
+        overlay: false
+    changes:
+      - key: system.bonuses.abilities.save
+        mode: 2
+        value: +@abilities.cha.mod
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.world.classes.Item.i0dsDgycs9Czrb2F
+    tint: '#ffffff'
+    transfer: true
+    name: Aura of Protection
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: >-
+        Compendium.ActiveAuras.aa-aura-items.Item.wRjkVOup7yqk2CKU.ActiveEffect.YA6d5MuIdX6Bkc8O
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    img: icons/magic/air/wind-tornado-wall-blue.webp
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!i0dsDgycs9Czrb2F.AyZpyu9HkkZ1r2mj'
+folder: YaNjZLuI8Gnirjce
+_stats:
+  compendiumSource: Compendium.world.classes.Item.i0dsDgycs9Czrb2F
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548920700
+  modifiedTime: 1736548920700
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: i0dsDgycs9Czrb2F
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!i0dsDgycs9Czrb2F'
+

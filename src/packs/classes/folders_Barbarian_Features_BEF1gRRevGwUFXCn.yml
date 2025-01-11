@@ -1,0 +1,20 @@
+name: Barbarian Features
+sorting: a
+folder: null
+type: Item
+description: ''
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548916212
+  modifiedTime: 1736548916270
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: BEF1gRRevGwUFXCn
+sort: 100000
+_key: '!folders!BEF1gRRevGwUFXCn'
+

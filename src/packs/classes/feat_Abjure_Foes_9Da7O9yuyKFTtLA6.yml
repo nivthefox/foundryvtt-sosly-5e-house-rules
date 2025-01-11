@@ -1,0 +1,158 @@
+folder: YaNjZLuI8Gnirjce
+name: Abjure Foes
+type: feat
+img: icons/magic/control/fear-fright-monster-purple-blue.webp
+system:
+  activities:
+    PEEFoe1YFJv6WxWN:
+      type: save
+      _id: PEEFoe1YFJv6WxWN
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.world.classes.Item.Aefcimi0l2ArOMsB
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: HwhEsq2XY1tzB0Kp
+          onSave: true
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          size: ''
+          count: ''
+        affects:
+          choice: false
+          count: '@abilities.cha.mod'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: none
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a Magic action, you can expend one use of this class’s Channel
+      Divinity to overwhelm foes with awe. As you present your Holy Symbol or
+      weapon, you can target a number of creatures equal to your Charisma
+      modifier (minimum of one creature) that you can see within 60 feet of
+      yourself. Each target must succeed on a Wisdom saving throw or have the
+      Frightened condition for 1 minute or until it takes any damage. While
+      Frightened in this way, a target can do only one of the following on its
+      turns: move, take an action, or take a Bonus Action.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: channelDivinity
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Paladin 9
+effects:
+  - name: Abjure Foes
+    img: icons/magic/control/fear-fright-monster-purple-blue.webp
+    origin: Compendium.world.classes.Item.9Da7O9yuyKFTtLA6
+    transfer: false
+    _id: HwhEsq2XY1tzB0Kp
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - F1bDZVaFK0EN5kry
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9Da7O9yuyKFTtLA6.HwhEsq2XY1tzB0Kp'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.classes.Item.9Da7O9yuyKFTtLA6
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548920700
+  modifiedTime: 1736548920700
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 9Da7O9yuyKFTtLA6
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!9Da7O9yuyKFTtLA6'
+

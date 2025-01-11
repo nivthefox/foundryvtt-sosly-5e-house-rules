@@ -1,0 +1,186 @@
+name: Rage
+type: feat
+img: icons/creatures/abilities/mouth-teeth-human.webp
+system:
+  description:
+    value: >-
+      <p>You can imbue yourself with a primal power called Rage, a force that
+      grants you extraordinary might and resilience. You can enter it as a Bonus
+      Action if you aren’t wearing Heavy armor.</p><p>You can enter your Rage
+      the number of times shown for your Barbarian level in the Rages column of
+      the Barbarian Features table. You regain one expended use when you finish
+      a Short Rest, and you regain all expended uses when you finish a Long
+      Rest.</p><p>While active, your Rage follows the rules
+      below.</p><p><em><strong>Damage Resistance.</strong></em> You have
+      Resistance to Bludgeoning, Piercing, and Slashing
+      damage.</p><p><em><strong>Rage Damage.</strong></em> When you make an
+      attack using Strength—with either a weapon or an Unarmed Strike—and deal
+      damage to the target, you gain a bonus to the damage that increases as you
+      gain levels as a Barbarian, as shown in the Rage Damage column of the
+      Barbarian Features table.</p><p><em><strong>Strength
+      Advantage.</strong></em> You have Advantage on Strength checks and
+      Strength saving throws.</p><p><em><strong>No Concentration or
+      Spells.</strong></em> You can’t maintain Concentration, and you can’t cast
+      spells.</p><p><em><strong>Duration.</strong></em> The Rage lasts until the
+      end of your next turn, and it ends early if you don Heavy armor or have
+      the Incapacitated condition. If your Rage is still active on your next
+      turn, you can extend the Rage for another round by doing one of the
+      following:</p><ul><li><p>Make an attack roll against an
+      enemy.</p></li><li><p>Force an enemy to make a saving
+      throw.</p></li><li><p>Take a Bonus Action to extend your
+      Rage.</p></li></ul><p>Each time the Rage is extended, it lasts until the
+      end of your next turn. You can maintain a Rage for up to 10
+      minutes.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: '@scale.barbarian.rages'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: Barbarian 1
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: '10'
+        units: minute
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: rage
+effects:
+  - _id: eWhL8hUr0c2ujDUm
+    flags: {}
+    changes:
+      - key: system.bonuses.mwak.damage
+        mode: 2
+        value: +@scale.barbarian.rage-damage
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: slashing
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: piercing
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: bludgeoning
+        priority: null
+    disabled: true
+    duration:
+      startTime: null
+      rounds: 10
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.bdfYHJstcltQC7SZ
+    tint: '#ffffff'
+    transfer: true
+    name: Rage
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    img: icons/creatures/abilities/mouth-teeth-human.webp
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!X1TlX1BgNOiuY15l.eWhL8hUr0c2ujDUm'
+folder: BEF1gRRevGwUFXCn
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.classes.Item.X1TlX1BgNOiuY15l
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548916236
+  modifiedTime: 1736548916236
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: X1TlX1BgNOiuY15l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!X1TlX1BgNOiuY15l'
+

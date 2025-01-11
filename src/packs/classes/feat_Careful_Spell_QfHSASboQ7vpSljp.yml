@@ -1,0 +1,116 @@
+name: Careful Spell
+type: feat
+system:
+  description:
+    value: >-
+      <p>When you cast a spell that forces other creatures to make a saving
+      throw, you can protect some of those creatures from the spell’s full
+      force. To do so, spend 1 Sorcery Point and choose a number of those
+      creatures up to your Charisma modifier (minimum of one creature). A chosen
+      creature automatically succeeds on its saving throw against the spell, and
+      it takes no damage if it would normally take half damage on a successful
+      save.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: metamagic
+  requirements: Sorcerer 2
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: special
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.world.classes.Item.MJPvd0qH8XzTwkPR
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: careful-spell
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/nature/beam-hand-leaves-green.webp
+effects: []
+folder: DM8YKgHatWhuxqOJ
+_stats:
+  compendiumSource: Compendium.world.classes.Item.QfHSASboQ7vpSljp
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736548922821
+  modifiedTime: 1736548922821
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: QfHSASboQ7vpSljp
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!QfHSASboQ7vpSljp'
+
