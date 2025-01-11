@@ -74,6 +74,7 @@
         }
     },
     "devDependencies": {
+        "@foundryvtt/foundryvtt-cli": "^1.0.3",
         "@rollup/plugin-alias": "^5.1.0",
         "@rollup/plugin-json": "^6.1.0",
         "@rollup/plugin-node-resolve": "^15.2.3",
