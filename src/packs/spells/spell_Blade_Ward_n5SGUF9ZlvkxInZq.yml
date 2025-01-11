@@ -2,30 +2,35 @@ type: spell
 system:
   description:
     value: >-
-      <p>You extend your hand and trace a sigil of warding in the air. For the
-      next 3 rounds, you have resistance against bludgeoning, piercing, and
-      slashing damage dealt by weapon attacks.</p>
+      <p>Whenever a creature makes an attack roll against you before the spell
+      ends, the attacker subtracts 1d4 from the attack roll.</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook pg 218
+    custom: ''
     revision: 1
     rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
   activation:
     type: action
     condition: ''
     value: 1
   duration:
-    value: '3'
-    units: round
+    value: '1'
+    units: minute
   target:
     affects:
       type: self
       choice: false
+      special: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
     units: self
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -39,8 +44,8 @@ system:
     cost: 0
     supply: 0
   preparation:
-    mode: prepared
-    prepared: false
+    mode: always
+    prepared: true
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -78,13 +83,20 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: ''
-        name: ''
+        formula: 1d4
+        name: Blade Ward
         prompt: false
         visible: false
       sort: 0
+      name: ''
+      img: ''
+      appliedEffects:
+        - PTD01vc1EuxAWpXb
   identifier: blade-ward
-  properties: []
+  properties:
+    - vocal
+    - somatic
+    - concentration
 name: Blade Ward
 flags:
   ddbimporter:
@@ -139,19 +151,22 @@ flags:
     migratedProperties:
       - vocal
       - somatic
+    riders:
+      activity: []
+      effect: []
 img: icons/equipment/shield/buckler-wooden-boss-glowing-blue.webp
 effects:
   - name: Blade Ward
-    origin: Item.XNeG63hhv32sSwJQ
+    origin: Compendium.sosly-5e-house-rules.spells.Item.n5SGUF9ZlvkxInZq
     duration:
-      rounds: 3
+      rounds: 10
       startTime: null
       seconds: null
       combat: null
       turns: null
       startRound: null
       startTurn: null
-    transfer: false
+    transfer: true
     disabled: false
     _id: PTD01vc1EuxAWpXb
     changes: []
@@ -178,6 +193,7 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        disableCondition: ''
       ActiveAuras:
         isAura: false
         aura: None
@@ -190,6 +206,12 @@ effects:
         displayTemp: false
         hostile: false
         onlyOnce: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+        statuses: []
+      core:
+        overlay: false
     tint: '#ffffff'
     img: icons/equipment/shield/buckler-wooden-boss-glowing-blue.webp
     type: base
@@ -202,23 +224,23 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1736625996126
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!items.effects!n5SGUF9ZlvkxInZq.PTD01vc1EuxAWpXb'
 _stats:
-  compendiumSource: Compendium.world.spells.Item.n5SGUF9ZlvkxInZq
+  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.n5SGUF9ZlvkxInZq
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736583821766
-  modifiedTime: 1736583821766
+  createdTime: 1736624241236
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 _id: n5SGUF9ZlvkxInZq
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 4700000
 _key: '!items!n5SGUF9ZlvkxInZq'
 

@@ -2,15 +2,15 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>You hurl a mote of fire at a creature or an object within range. Make a
+      ranged spell attack against the target. On a hit, the target takes 1d10
+      Fire damage. A flammable object hit by this spell starts burning if it
+      isn’t being worn or carried.</p><p><em><strong>Cantrip
+      Upgrade.</strong></em> The damage increases by 1d10 when you reach levels
+      5 (2d10), 11 (3d10), and 17 (4d10).</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -25,18 +25,17 @@ system:
     units: inst
   target:
     affects:
-      choice: false
-      count: ''
       type: creature
+      count: '1'
+      choice: false
       special: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
-    units: self
+    value: '120'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -56,7 +55,7 @@ system:
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: save
+      type: attack
       activation:
         type: action
         value: null
@@ -88,49 +87,58 @@ system:
         spent: 0
         max: ''
         recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: spell
       damage:
-        onSave: none
+        critical:
+          bonus: ''
+        includeBase: true
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d10[fire]
             number: 1
-            denomination: 6
+            denomination: 10
             bonus: ''
             types:
-              - thunder
+              - fire
             scaling:
               mode: whole
               number: 1
               formula: ''
-      save:
-        ability:
-          - con
-        dc:
-          calculation: spellcasting
-          formula: ''
       sort: 0
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: fire-bolt
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+name: Fire Bolt
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 136818
+    definitionId: 2103
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Fire Bolt
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 242
         sourceType: 1
     tags:
       - Damage
@@ -139,34 +147,35 @@ flags:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.pWipZwrbzmu3qzdp
+    hash: d7ad2002bb11751ecce8b0357462cff8d3707c73
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/fire/projectile-fireball-smoke-orange.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624354322
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: rznKuOlZ2ttcM6lE
+sort: 2200000
+_key: '!items!rznKuOlZ2ttcM6lE'
 

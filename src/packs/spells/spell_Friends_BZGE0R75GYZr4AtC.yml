@@ -2,17 +2,22 @@ type: spell
 system:
   description:
     value: >-
-      <p>For the duration, you have advantage on all Charisma checks directed at
-      one creature of your choice that isn’t hostile toward you. When the spell
-      ends, the creature realizes that you used magic to influence its mood and
-      becomes hostile toward you. A creature prone to violence might attack you.
-      Another creature might seek retribution in other ways (at the DM’s
-      discretion), depending on the nature of your interaction with it.</p>
+      <p>You magically emanate a sense of friendship toward one creature you can
+      see within range. The target must succeed on a Wisdom saving throw or have
+      the Charmed condition for the duration. The target succeeds automatically
+      if it isn’t a Humanoid, if you’re fighting it, or if you have cast this
+      spell on it within the past 24 hours.</p><p>The spell ends early if the
+      target takes damage or if you make an attack roll, deal damage, or force
+      anyone to make a saving throw. When the spell ends, the target knows it
+      was Charmed by you.</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook pg 244
+    custom: ''
     revision: 1
     rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
   activation:
     type: action
     condition: ''
@@ -22,14 +27,18 @@ system:
     units: minute
   target:
     affects:
-      type: self
+      type: creature
       count: '1'
       choice: false
+      special: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
-    units: self
+    units: ft
+    special: ''
+    value: '10'
   uses:
     max: ''
     spent: 0
@@ -38,56 +47,68 @@ system:
   level: 0
   school: enc
   materials:
-    value: a small amount of makeup applied to the face as this spell is cast
+    value: some makeup
     consumed: false
     cost: 0
     supply: 0
   preparation:
-    mode: prepared
+    mode: always
     prepared: false
   activities:
-    dnd5eactivity000:
-      _id: dnd5eactivity000
-      type: utility
+    PIfrAb4XbVOF9CfO:
+      type: save
+      _id: PIfrAb4XbVOF9CfO
+      sort: 0
       activation:
         type: action
         value: null
         override: false
       consumption:
-        targets: []
         scaling:
           allowed: false
-          max: ''
         spellSlot: true
+        targets: []
       description:
         chatFlavor: ''
       duration:
         units: inst
         concentration: false
         override: false
-      effects: []
+      effects:
+        - _id: kxkdYDSGf9UpTaRz
+          onSave: false
       range:
         override: false
       target:
-        prompt: true
         template:
           contiguous: false
           units: ft
         affects:
           choice: false
         override: false
+        prompt: true
       uses:
         spent: 0
-        max: ''
         recovery: []
-      roll:
-        formula: ''
-        name: ''
-        prompt: false
-        visible: false
-      sort: 0
+        max: ''
+      damage:
+        parts: []
+        onSave: none
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects:
+        - kxkdYDSGf9UpTaRz
   identifier: friends
-  properties: []
+  properties:
+    - somatic
+    - material
+    - concentration
 name: Friends
 flags:
   ddbimporter:
@@ -139,22 +160,83 @@ flags:
       - somatic
       - material
       - concentration
+    riders:
+      activity: []
+      effect: []
 img: icons/magic/air/wind-vortex-swirl-purple.webp
-effects: []
+effects:
+  - name: Friends
+    img: icons/magic/air/wind-vortex-swirl-purple.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.BZGE0R75GYZr4AtC
+    _id: kxkdYDSGf9UpTaRz
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses:
+      - charmed
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736628715580
+      modifiedTime: 1736628738874
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!BZGE0R75GYZr4AtC.kxkdYDSGf9UpTaRz'
 _stats:
-  compendiumSource: Compendium.world.spells.Item.BZGE0R75GYZr4AtC
+  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.BZGE0R75GYZr4AtC
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736583821766
-  modifiedTime: 1736583821766
+  createdTime: 1736624241236
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 _id: BZGE0R75GYZr4AtC
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 3900000
 _key: '!items!BZGE0R75GYZr4AtC'
 

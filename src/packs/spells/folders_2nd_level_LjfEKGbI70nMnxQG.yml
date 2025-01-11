@@ -1,7 +1,10 @@
-name: Cantrips
+name: 2nd-level
 sorting: a
 folder: null
 type: Item
+_id: LjfEKGbI70nMnxQG
+description: ''
+sort: 300000
 color: null
 flags: {}
 _stats:
@@ -10,11 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241216
+  createdTime: 1736628438675
   modifiedTime: 1736628452788
   lastModifiedBy: n9iY1vD5eGeaHb7l
-description: ''
-_id: MgD1KyupgXa2j2fO
-sort: 200000
-_key: '!folders!MgD1KyupgXa2j2fO'
+_key: '!folders!LjfEKGbI70nMnxQG'
 

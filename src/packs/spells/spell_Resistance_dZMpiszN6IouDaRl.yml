@@ -1,0 +1,1241 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You touch a willing creature and choose a damage type: Acid,
+      Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant,
+      Slashing, or Thunder. When the creature takes damage of the chosen type
+      before the spell ends, the creature reduces the total damage taken by 1d4.
+      A creature can benefit from this spell only once per turn.</p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: abj
+  materials:
+    value: a miniature cloak
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities:
+    fDNlfQH1ZYCpYlQf:
+      type: utility
+      _id: fDNlfQH1ZYCpYlQf
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: tAk4RqwjeczrKM5v
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: Resist
+        formula: 1d4
+      name: Acid
+      img: ''
+      appliedEffects:
+        - tAk4RqwjeczrKM5v
+    UJXjR3AP3dgdLSIj:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: gcG2lD5JccAWOIgK
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Bludgeoning
+      _id: UJXjR3AP3dgdLSIj
+      img: ''
+      appliedEffects:
+        - gcG2lD5JccAWOIgK
+    3pClNtUk9vzE3EVf:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 6aKXQdscjWBDFtJu
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Cold
+      _id: 3pClNtUk9vzE3EVf
+      img: ''
+      appliedEffects:
+        - 6aKXQdscjWBDFtJu
+    NBpJWUGgen5TmXR1:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Gigwe33QEknXBCsg
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Fire
+      _id: NBpJWUGgen5TmXR1
+      img: ''
+      appliedEffects:
+        - Gigwe33QEknXBCsg
+    FFk0gz31dempJH5H:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: XSVc62gE6WVsQLfR
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Lightning
+      _id: FFk0gz31dempJH5H
+      img: ''
+      appliedEffects:
+        - XSVc62gE6WVsQLfR
+    CKUvbFdULWhDPJba:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: u2jBTfzoxQYqMJUh
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Necrotic
+      _id: CKUvbFdULWhDPJba
+      img: ''
+      appliedEffects:
+        - u2jBTfzoxQYqMJUh
+    bOsVofVj8BOzCclR:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: FSfatMvGNUs592Y2
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Piercing
+      _id: bOsVofVj8BOzCclR
+      img: ''
+      appliedEffects:
+        - FSfatMvGNUs592Y2
+    9cjIKVUKyAJX4VGQ:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: ZThsdslo8DIc4V8i
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Poison
+      _id: 9cjIKVUKyAJX4VGQ
+      img: ''
+      appliedEffects:
+        - ZThsdslo8DIc4V8i
+    KnFo5TGdtQA3ZS6F:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 70vFWbsvUZpmlsT6
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Radiant
+      _id: KnFo5TGdtQA3ZS6F
+      img: ''
+      appliedEffects:
+        - 70vFWbsvUZpmlsT6
+    yWSKh0h9SAX2Oa2A:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: pPnXqIsgohGzkNI4
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Slashing
+      _id: yWSKh0h9SAX2Oa2A
+      img: ''
+      appliedEffects:
+        - pPnXqIsgohGzkNI4
+    elD81Z3ui84BeOl6:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Xg9xGU13Kho4ZN0N
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1d4
+        name: Resist
+      name: Thunder
+      _id: elD81Z3ui84BeOl6
+      img: ''
+      appliedEffects:
+        - Xg9xGU13Kho4ZN0N
+  identifier: resistance
+  properties:
+    - vocal
+    - somatic
+    - concentration
+name: Resistance
+flags:
+  ddbimporter:
+    id: 138647
+    definitionId: 2231
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Resistance
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 272
+        sourceType: 1
+    tags:
+      - Buff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.hnScjqZlst6aOBug
+    hash: 1e5854b4c3b1782201de9882d6aaa87794f4130b
+  cf:
+    id: temp_swxucta6r2
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp
+effects:
+  - name: Resistance (Bludgeoning)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630792152
+      modifiedTime: 1736630816199
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: gcG2lD5JccAWOIgK
+    _key: '!items.effects!dZMpiszN6IouDaRl.gcG2lD5JccAWOIgK'
+  - name: Resistance (Cold)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630818721
+      modifiedTime: 1736630837290
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: 6aKXQdscjWBDFtJu
+    _key: '!items.effects!dZMpiszN6IouDaRl.6aKXQdscjWBDFtJu'
+  - name: Resistance (Fire)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-red.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630839829
+      modifiedTime: 1736630851742
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: Gigwe33QEknXBCsg
+    _key: '!items.effects!dZMpiszN6IouDaRl.Gigwe33QEknXBCsg'
+  - name: Resistance (Lightning)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630854066
+      modifiedTime: 1736630890379
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: XSVc62gE6WVsQLfR
+    _key: '!items.effects!dZMpiszN6IouDaRl.XSVc62gE6WVsQLfR'
+  - name: Resistance (Necrotic)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-magenta.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630892735
+      modifiedTime: 1736630913265
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: u2jBTfzoxQYqMJUh
+    _key: '!items.effects!dZMpiszN6IouDaRl.u2jBTfzoxQYqMJUh'
+  - name: Resistance (Piercing)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-purple-orange.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630915669
+      modifiedTime: 1736630937748
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: FSfatMvGNUs592Y2
+    _key: '!items.effects!dZMpiszN6IouDaRl.FSfatMvGNUs592Y2'
+  - name: Resistance (Poison)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-acid.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630946477
+      modifiedTime: 1736630969394
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: ZThsdslo8DIc4V8i
+    _key: '!items.effects!dZMpiszN6IouDaRl.ZThsdslo8DIc4V8i'
+  - name: Resistance (Radiant)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-purple-orange.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630971862
+      modifiedTime: 1736630994748
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: 70vFWbsvUZpmlsT6
+    _key: '!items.effects!dZMpiszN6IouDaRl.70vFWbsvUZpmlsT6'
+  - name: Resistance (Slashing)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736630997757
+      modifiedTime: 1736631012072
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: pPnXqIsgohGzkNI4
+    _key: '!items.effects!dZMpiszN6IouDaRl.pPnXqIsgohGzkNI4'
+  - name: Resistance (Thunder)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736631014666
+      modifiedTime: 1736631033845
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: Xg9xGU13Kho4ZN0N
+    _key: '!items.effects!dZMpiszN6IouDaRl.Xg9xGU13Kho4ZN0N'
+  - name: Resistance (Acid)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-teal-purple.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.dZMpiszN6IouDaRl
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736631084124
+      modifiedTime: 1736631100391
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: tAk4RqwjeczrKM5v
+    _key: '!items.effects!dZMpiszN6IouDaRl.tAk4RqwjeczrKM5v'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736624279518
+  modifiedTime: 1736632493379
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: MgD1KyupgXa2j2fO
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: dZMpiszN6IouDaRl
+sort: 2500000
+_key: '!items!dZMpiszN6IouDaRl'
+

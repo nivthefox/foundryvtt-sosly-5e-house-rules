@@ -27,11 +27,14 @@ system:
       type: object
       count: '1'
       choice: false
+      special: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
     units: touch
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -45,7 +48,7 @@ system:
     cost: 0
     supply: 0
   preparation:
-    mode: prepared
+    mode: always
     prepared: false
   activities:
     dnd5eactivity000:
@@ -93,7 +96,9 @@ system:
           formula: ''
       sort: 0
   identifier: light
-  properties: []
+  properties:
+    - vocal
+    - material
 name: Light
 flags:
   ddbimporter:
@@ -134,19 +139,19 @@ flags:
 img: icons/magic/light/explosion-star-small-blue-yellow.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.world.spells.Item.kINr640zdKMi2riU
+  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.kINr640zdKMi2riU
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736583821766
-  modifiedTime: 1736583821766
+  createdTime: 1736624241236
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 _id: kINr640zdKMi2riU
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 4600000
 _key: '!items!kINr640zdKMi2riU'
 

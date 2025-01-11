@@ -1,0 +1,124 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You manifest a minor wonder within range. You create one of the effects
+      below within range. If you cast this spell multiple times, you can have up
+      to three of its 1-minute effects active at a
+      time.</p><p><em><strong>Altered Eyes.</strong></em> You alter the
+      appearance of your eyes for 1 minute.</p><p><em><strong>Booming
+      Voice.</strong></em> Your voice booms up to three times as loud as normal
+      for 1 minute. For the duration, you have Advantage on Charisma
+      (Intimidation) checks.</p><p><em><strong>Fire Play.</strong></em> You
+      cause flames to flicker, brighten, dim, or change color for 1
+      minute.</p><p><em><strong>Invisible Hand.</strong></em> You
+      instantaneously cause an unlocked door or window to fly open or slam
+      shut.</p><p><em><strong>Phantom Sound.</strong></em> You create an
+      instantaneous sound that originates from a point of your choice within
+      range, such as a rumble of thunder, the cry of a raven, or ominous
+      whispers.</p><p><em><strong>Tremors.</strong></em> You cause harmless
+      tremors in the ground for 1 minute.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities: {}
+  identifier: thaumaturgy
+  properties:
+    - vocal
+name: Thaumaturgy
+flags:
+  ddbimporter:
+    id: 138846
+    definitionId: 2277
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Thaumaturgy
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 282
+        sourceType: 1
+    tags:
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.yxAXsloSytnatK2l
+    hash: e564324ddfb3e3f196a58826c596b79dec49d79f
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/explosion-fireball-small-purple-orange.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736624285224
+  modifiedTime: 1736633884090
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: MgD1KyupgXa2j2fO
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: QIXZ2uhhVsiuK0H5
+sort: 2800000
+_key: '!items!QIXZ2uhhVsiuK0H5'
+

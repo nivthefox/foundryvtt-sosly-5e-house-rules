@@ -2,20 +2,41 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>You seize the air and compel it to create one of the following effects
+      at a point you can see within range:</p>
+
+      <ul>
+
+      <li>
+
+      <p>One Medium or smaller creature that you choose must succeed on a
+      Strength saving throw or be pushed up to 5 feet away from you.</p>
+
+      </li>
+
+      <li>
+
+      <p>You create a small blast of air capable of moving one object that is
+      neither held nor carried and that weighs no more than 5 pounds. The object
+      is pushed up to 10 feet away from you. It isn’t pushed with enough force
+      to cause damage.</p>
+
+      </li>
+
+      <li>
+
+      <p>You create a harmless sensory effect using air, such as causing leaves
+      to rustle, wind to slam shutters shut, or your clothing to ripple in a
+      breeze.</p>
+
+      </li>
+
+      </ul>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: Elemental Evil Player's Companion pg 157
     revision: 1
     rules: '2024'
-    book: ''
-    page: ''
-    license: ''
   activation:
     type: action
     condition: ''
@@ -27,16 +48,14 @@ system:
     affects:
       choice: false
       count: ''
-      type: creature
-      special: ''
+      type: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
-    units: self
+    value: '30'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -44,7 +63,7 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: trs
   materials:
     value: ''
     consumed: false
@@ -90,83 +109,67 @@ system:
         recovery: []
       damage:
         onSave: none
-        parts:
-          - custom:
-              enabled: false
-              formula: 1d6[thunder]
-            number: 1
-            denomination: 6
-            bonus: ''
-            types:
-              - thunder
-            scaling:
-              mode: whole
-              number: 1
-              formula: ''
+        parts: []
       save:
         ability:
-          - con
+          - str
         dc:
           calculation: spellcasting
           formula: ''
       sort: 0
-      name: ''
-      img: ''
-      appliedEffects: []
-  identifier: thunderclap
+  identifier: gust
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+name: Gust
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 138110
+    definitionId: 2383
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Gust
     sources:
       - sourceId: 4
-        pageNumber: 168
+        pageNumber: 157
         sourceType: 1
     tags:
-      - Damage
+      - Control
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.Zb3omXXRa0dCy9dt
+    hash: f2931c1fda8364f8ac8d77bfb2c6a79e49eb8366
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
-    riders:
-      activity: []
-      effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/air/wind-swirl-purple-blue.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624304097
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: 7OifIgMujLT4AZd7
+sort: 3600000
+_key: '!items!7OifIgMujLT4AZd7'
 

@@ -2,17 +2,16 @@ type: spell
 system:
   description:
     value: >-
-      <p>Guided by a flash of magical insight, you make one attack with the
-      weapon used in the spell’s casting. The attack uses your spellcasting
-      ability for the attack and damage rolls instead of using Strength or
-      Dexterity. If the attack deals damage, it can be Radiant damage or the
-      weapon’s normal damage type (your choice).</p><p><em><strong>Cantrip
-      Upgrade.</strong></em> Whether you deal Radiant damage or the weapon’s
-      normal damage type, the attack deals extra Radiant damage when you reach
-      levels 5 (1d6), 11 (2d6), and 17 (3d6).</p><p></p>
+      <p>Electricity courses from your fingertips and dances through the body of
+      one creature that you can see within range. The target must succeed on a
+      Constitution saving throw. On a failed save, the target takes 1d6
+      lightning damage, and it has disadvantage on the next weapon attack roll
+      it makes before the end of its next turn.</p><p>The spell’s damage
+      increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and
+      17th level (4d6).</p>
     chat: ''
   source:
-    custom: D&D Free Rules (2024)
+    custom: SoSly House RUles
     revision: 1
     rules: '2024'
     book: ''
@@ -23,21 +22,21 @@ system:
     condition: ''
     value: 1
   duration:
-    value: '1'
+    value: ''
     units: inst
   target:
     affects:
+      type: creature
+      count: '1'
       choice: false
-      count: ''
-      type: self
       special: ''
     template:
       units: ''
       contiguous: false
       type: ''
   range:
-    value: '30'
-    units: self
+    value: '60'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -45,29 +44,29 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: div
+  school: evo
   materials:
-    value: a weapon with which you have proficiency and that is worth 1+ CP
+    value: ''
     consumed: false
-    cost: 0.01
+    cost: 0
     supply: 0
   preparation:
     mode: always
     prepared: false
   activities:
-    RE0Mgl5XY8FlYhz5:
-      type: enchant
-      _id: RE0Mgl5XY8FlYhz5
-      sort: 0
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
       activation:
         type: action
         value: null
         override: false
       consumption:
+        targets: []
         scaling:
           allowed: false
+          max: ''
         spellSlot: true
-        targets: []
       description:
         chatFlavor: ''
       duration:
@@ -75,77 +74,109 @@ system:
         concentration: false
         override: false
       effects:
-        - _id: YcaHk9OHR3fhYhrc
-          level:
-            min: null
-            max: null
-          riders:
-            activity: []
-            effect: []
-            item: []
+        - _id: DN6h0t6H7eib1PeC
+          onSave: false
       range:
         override: false
       target:
+        prompt: false
         template:
           contiguous: false
           units: ft
         affects:
           choice: false
         override: false
-        prompt: false
       uses:
         spent: 0
-        recovery: []
         max: ''
-      enchant: {}
-      restrictions:
-        allowMagical: true
-        categories: []
-        properties: []
-        type: weapon
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - custom:
+              enabled: false
+              formula: 1d6[lightning]
+            number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - lightning
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
       name: ''
       img: ''
-      appliedEffects: []
-  identifier: true-strike
+      appliedEffects:
+        - DN6h0t6H7eib1PeC
+  identifier: jolt
   properties:
+    - vocal
     - somatic
-    - material
-name: True Strike
+name: Jolt
 flags:
   ddbimporter:
-    id: 138893
-    definitionId: 2287
+    id: 138104
+    definitionId: 2382
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: True Strike
+    originalName: Frostbite
     sources:
-      - sourceId: 1
-        pageNumber: null
-        sourceType: 2
-      - sourceId: 2
-        pageNumber: 284
+      - sourceId: 4
+        pageNumber: 156
         sourceType: 1
     tags:
-      - Foreknowledge
-    version: 3.4.17
-  midiProperties:
-    magicdam: true
-    magiceffect: true
-  scene-packer:
-    sourceId: Compendium.sosly.spells.Item.b29cHN0AKRT55t1I
-    hash: 67b2f396d280773c272f0c4625903d69c732b310
+      - Damage
+      - Debuff
+    version: 3.3.4
   cf:
-    id: temp_swxucta6r2
+    id: temp_9ykd9r1nsxt
   core: {}
+  tidy5e-sheet:
+    gender: ''
+    age: ''
+    height: ''
+    weight: ''
+    eyes: ''
+    skin: ''
+    hair: ''
+    notes:
+      value: ''
+    notes1:
+      name: ''
+      value: ''
+    notes2:
+      name: ''
+      value: ''
+    notes3:
+      name: ''
+      value: ''
+    notes4:
+      name: ''
+      value: ''
   rest-recovery:
     data:
       recovery:
         enabled: false
   rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
     quickOther:
       context: ''
     quickDesc:
@@ -154,37 +185,40 @@ flags:
     quickFooter:
       value: true
       altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.GG6uZIcyCmp7cPey
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
-      - concentration
     riders:
       activity: []
       effect: []
-img: icons/magic/fire/dagger-rune-enchant-blue-gray.webp
+img: icons/magic/lightning/bolt-blue.webp
 effects:
-  - type: enchantment
-    name: True Strike
-    img: icons/magic/fire/dagger-rune-enchant-blue-gray.webp
-    disabled: false
-    _id: YcaHk9OHR3fhYhrc
+  - name: Jolt
+    img: icons/magic/lightning/bolt-blue.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.O5dRxnOTVuJRQ7Ly
+    _id: DN6h0t6H7eib1PeC
+    type: base
     system: {}
-    changes:
-      - key: activities[attack].attack.ability
-        mode: 5
-        value: cha
-        priority: 20
+    changes: []
+    disabled: false
     duration:
       startTime: null
       seconds: null
       combat: null
-      rounds: null
-      turns: 1
+      rounds: 1
+      turns: null
       startRound: null
       startTurn: null
     description: ''
-    origin: null
     tint: '#ffffff'
     transfer: false
     statuses: []
@@ -198,7 +232,7 @@ effects:
         durationExpression: ''
         specialDuration: []
       core:
-        overlay: true
+        overlay: false
       ActiveAuras:
         isAura: false
         aura: None
@@ -221,24 +255,24 @@ effects:
       coreVersion: '12.331'
       systemId: dnd5e
       systemVersion: 4.1.2
-      createdTime: 1736634511885
-      modifiedTime: 1736635651985
+      createdTime: 1736629182648
+      modifiedTime: 1736629236445
       lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!b29cHN0AKRT55t1I.YcaHk9OHR3fhYhrc'
+    _key: '!items.effects!O5dRxnOTVuJRQ7Ly.DN6h0t6H7eib1PeC'
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.b29cHN0AKRT55t1I
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736634898587
+  createdTime: 1736624359557
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: b29cHN0AKRT55t1I
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4400000
-_key: '!items!b29cHN0AKRT55t1I'
+_id: O5dRxnOTVuJRQ7Ly
+sort: 2300000
+_key: '!items!O5dRxnOTVuJRQ7Ly'
 

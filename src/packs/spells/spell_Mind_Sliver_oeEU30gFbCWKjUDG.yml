@@ -2,42 +2,40 @@ type: spell
 system:
   description:
     value: >-
-      <p>Guided by a flash of magical insight, you make one attack with the
-      weapon used in the spell’s casting. The attack uses your spellcasting
-      ability for the attack and damage rolls instead of using Strength or
-      Dexterity. If the attack deals damage, it can be Radiant damage or the
-      weapon’s normal damage type (your choice).</p><p><em><strong>Cantrip
-      Upgrade.</strong></em> Whether you deal Radiant damage or the weapon’s
-      normal damage type, the attack deals extra Radiant damage when you reach
-      levels 5 (1d6), 11 (2d6), and 17 (3d6).</p><p></p>
+      <p>You try to temporarily sliver the mind of one creature you can see
+      within range. The target must succeed on an Intelligence saving throw or
+      take 1d6 Psychic damage and subtract 1d4 from the next saving throw it
+      makes before the end of your next turn.</p><p><em><strong>Cantrip
+      Upgrade.</strong></em> The damage increases by 1d6 when you reach levels 5
+      (2d6), 11 (3d6), and 17 (4d6).</p><p></p>
     chat: ''
   source:
-    custom: D&D Free Rules (2024)
-    revision: 1
+    custom: ''
+    revision: 2
     rules: '2024'
-    book: ''
-    page: ''
+    book: Tasha’s Cauldron of Everything
+    page: '108'
     license: ''
   activation:
     type: action
     condition: ''
     value: 1
   duration:
-    value: '1'
+    value: ''
     units: inst
   target:
     affects:
+      type: creature
+      count: '1'
       choice: false
-      count: ''
-      type: self
       special: ''
     template:
       units: ''
       contiguous: false
       type: ''
   range:
-    value: '30'
-    units: self
+    value: '60'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -45,29 +43,29 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: div
+  school: enc
   materials:
-    value: a weapon with which you have proficiency and that is worth 1+ CP
+    value: ''
     consumed: false
-    cost: 0.01
+    cost: 0
     supply: 0
   preparation:
     mode: always
     prepared: false
   activities:
-    RE0Mgl5XY8FlYhz5:
-      type: enchant
-      _id: RE0Mgl5XY8FlYhz5
-      sort: 0
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
       activation:
         type: action
         value: null
         override: false
       consumption:
+        targets: []
         scaling:
           allowed: false
+          max: ''
         spellSlot: true
-        targets: []
       description:
         chatFlavor: ''
       duration:
@@ -75,116 +73,110 @@ system:
         concentration: false
         override: false
       effects:
-        - _id: YcaHk9OHR3fhYhrc
-          level:
-            min: null
-            max: null
-          riders:
-            activity: []
-            effect: []
-            item: []
+        - _id: 3hTbybUvsRq9za1q
+          onSave: false
       range:
         override: false
       target:
+        prompt: true
         template:
           contiguous: false
           units: ft
         affects:
           choice: false
         override: false
-        prompt: false
       uses:
         spent: 0
-        recovery: []
         max: ''
-      enchant: {}
-      restrictions:
-        allowMagical: true
-        categories: []
-        properties: []
-        type: weapon
+        recovery: []
+      damage:
+        onSave: none
+        parts:
+          - custom:
+              enabled: false
+              formula: 1d6[psychic]
+            number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - psychic
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
       name: ''
       img: ''
-      appliedEffects: []
-  identifier: true-strike
+      appliedEffects:
+        - 3hTbybUvsRq9za1q
+  identifier: mind-sliver
   properties:
-    - somatic
-    - material
-name: True Strike
+    - vocal
+name: Mind Sliver
 flags:
   ddbimporter:
-    id: 138893
-    definitionId: 2287
+    id: 5833520
+    definitionId: 718568
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: True Strike
+    originalName: Mind Sliver
     sources:
-      - sourceId: 1
-        pageNumber: null
-        sourceType: 2
-      - sourceId: 2
-        pageNumber: 284
+      - sourceId: 67
+        pageNumber: 108
         sourceType: 1
     tags:
-      - Foreknowledge
+      - Damage
+      - Debuff
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.b29cHN0AKRT55t1I
-    hash: 67b2f396d280773c272f0c4625903d69c732b310
+    sourceId: Compendium.sosly.spells.Item.aqBDOWvg7tzg5XdD
+    hash: 34d56e7ed60d1708a173fd46139c11dce0b5fb85
   cf:
     id: temp_swxucta6r2
   core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
-      - somatic
-      - concentration
+      - vocal
     riders:
       activity: []
       effect: []
-img: icons/magic/fire/dagger-rune-enchant-blue-gray.webp
+img: icons/magic/light/beam-rays-magenta.webp
 effects:
-  - type: enchantment
-    name: True Strike
-    img: icons/magic/fire/dagger-rune-enchant-blue-gray.webp
-    disabled: false
-    _id: YcaHk9OHR3fhYhrc
+  - name: Mind Sliver
+    img: icons/magic/light/beam-rays-magenta.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.oeEU30gFbCWKjUDG
+    _id: 3hTbybUvsRq9za1q
+    type: base
     system: {}
     changes:
-      - key: activities[attack].attack.ability
-        mode: 5
-        value: cha
+      - key: system.bonuses.abilities.save
+        mode: 2
+        value: '-1d4'
         priority: 20
+    disabled: false
     duration:
       startTime: null
       seconds: null
       combat: null
-      rounds: null
-      turns: 1
+      rounds: 1
+      turns: null
       startRound: null
       startTurn: null
     description: ''
-    origin: null
     tint: '#ffffff'
     transfer: false
     statuses: []
@@ -198,7 +190,7 @@ effects:
         durationExpression: ''
         specialDuration: []
       core:
-        overlay: true
+        overlay: false
       ActiveAuras:
         isAura: false
         aura: None
@@ -221,24 +213,24 @@ effects:
       coreVersion: '12.331'
       systemId: dnd5e
       systemVersion: 4.1.2
-      createdTime: 1736634511885
-      modifiedTime: 1736635651985
+      createdTime: 1736629758069
+      modifiedTime: 1736629794339
       lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!b29cHN0AKRT55t1I.YcaHk9OHR3fhYhrc'
+    _key: '!items.effects!oeEU30gFbCWKjUDG.3hTbybUvsRq9za1q'
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.b29cHN0AKRT55t1I
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736634898587
+  createdTime: 1736624370737
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: b29cHN0AKRT55t1I
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4400000
-_key: '!items!b29cHN0AKRT55t1I'
+_id: oeEU30gFbCWKjUDG
+sort: 500000
+_key: '!items!oeEU30gFbCWKjUDG'
 

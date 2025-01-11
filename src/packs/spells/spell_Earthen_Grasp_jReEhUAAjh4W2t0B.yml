@@ -2,15 +2,15 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>You reach out with earthen energy that strikes at one creature of your
+      choice that you can see within 15 feet of you. The target must succeed on
+      a Strength saving throw or be pulled up to 10 feet in a straight line
+      toward you and then take 1d8 bludgeoning damage if it is within 5 feet of
+      you.</p><p>This spell’s damage increases by 1d8 when you reach 5th level
+      (2d8), 11th level (3d8), and 17th level (4d8).</p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: SoSly House Rules
     revision: 1
     rules: '2024'
     book: ''
@@ -25,16 +25,14 @@ system:
     units: inst
   target:
     affects:
-      choice: false
-      count: ''
       type: creature
+      count: '1'
+      choice: false
       special: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
     units: self
     special: ''
@@ -52,7 +50,7 @@ system:
     supply: 0
   preparation:
     mode: always
-    prepared: false
+    prepared: true
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -93,19 +91,19 @@ system:
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d8[bludgeoning - target must be within 5 ft]
             number: 1
-            denomination: 6
+            denomination: 8
             bonus: ''
             types:
-              - thunder
+              - bludgeoning
             scaling:
               mode: whole
               number: 1
               formula: ''
       save:
         ability:
-          - con
+          - str
         dc:
           calculation: spellcasting
           formula: ''
@@ -113,60 +111,63 @@ system:
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: earthen-grasp
   properties:
-    - somatic
-name: Thunderclap
+    - vocal
+  sourceClass: sorcerer
+name: Earthen Grasp
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 31466
+    definitionId: 2412
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Lightning Lure
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 13
+        pageNumber: 143
         sourceType: 1
     tags:
       - Damage
+      - Control
+      - Combat
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.Oc5i9DE1puO5jbuI
+    hash: 911303e55d608840adc8de3f0ea59f1ea45b39d1
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
-      - somatic
+      - vocal
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/earth/strike-fist-stone-light.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624352278
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: jReEhUAAjh4W2t0B
+sort: 2100000
+_key: '!items!jReEhUAAjh4W2t0B'
 

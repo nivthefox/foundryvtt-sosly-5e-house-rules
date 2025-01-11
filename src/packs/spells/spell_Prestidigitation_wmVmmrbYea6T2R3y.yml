@@ -2,40 +2,31 @@ type: spell
 system:
   description:
     value: >-
-      <p>This spell is a minor magical trick that novice spellcasters use for
-      practice. You create one of the following magical effects within
-      range:</p>
-
-      <ul>
-
-      <li>You create an instantaneous, harmless sensory effect, such as a shower
-      of sparks, a puff of wind, faint musical notes, or an odd odor.</li>
-
-      <li>You instantaneously light or snuff out a candle, a torch, or a small
-      campfire.</li>
-
-      <li>You instantaneously clean or soil an object no larger than 1 cubic
-      foot.</li>
-
-      <li>You chill, warm, or flavor up to 1 cubic foot of nonliving material
-      for 1 hour.</li>
-
-      <li>You make a color, a small mark, or a symbol appear on an object or a
-      surface for 1 hour.</li>
-
-      <li>You create a nonmagical trinket or an illusory image that can fit in
-      your hand and that lasts until the end of your next turn.</li>
-
-      </ul>
-
-      <p><br />If you cast this spell multiple times, you can have up to three
-      of its non-instantaneous effects active at a time, and you can dismiss
-      such an effect as an action.</p>
+      <p>You create a magical effect within range. Choose the effect from the
+      options below. If you cast this spell multiple times, you can have up to
+      three of its non-instantaneous effects active at a
+      time.</p><p><em><strong>Sensory Effect.</strong></em> You create an
+      instantaneous, harmless sensory effect, such as a shower of sparks, a puff
+      of wind, faint musical notes, or an odd odor.</p><p><em><strong>Fire
+      Play.</strong></em> You instantaneously light or snuff out a candle, a
+      torch, or a small campfire.</p><p><em><strong>Clean or Soil.</strong></em>
+      You instantaneously clean or soil an object no larger than 1 cubic
+      foot.</p><p><em><strong>Minor Sensation.</strong></em> You chill, warm, or
+      flavor up to 1 cubic foot of nonliving material for 1
+      hour.</p><p><em><strong>Magic Mark.</strong></em> You make a color, a
+      small mark, or a symbol appear on an object or a surface for 1
+      hour.</p><p><em><strong>Minor Creation.</strong></em> You create a
+      nonmagical trinket or an illusory image that can fit in your hand. It
+      lasts until the end of your next turn. A trinket can deal no damage and
+      has no monetary worth.</p><p></p>
     chat: ''
   source:
-    custom: Basic Rules, Player's Handbook pg 267
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
+    book: ''
+    page: ''
+    license: ''
   activation:
     type: action
     condition: ''
@@ -46,12 +37,16 @@ system:
   target:
     affects:
       choice: false
+      count: ''
+      type: ''
     template:
       units: ''
       contiguous: false
+      type: ''
   range:
     value: '10'
     units: ft
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -65,51 +60,13 @@ system:
     cost: 0
     supply: 0
   preparation:
-    mode: prepared
+    mode: always
     prepared: false
-  activities:
-    dnd5eactivity000:
-      _id: dnd5eactivity000
-      type: utility
-      activation:
-        type: action
-        value: null
-        override: false
-      consumption:
-        targets: []
-        scaling:
-          allowed: false
-          max: ''
-        spellSlot: true
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects: []
-      range:
-        override: false
-      target:
-        prompt: true
-        template:
-          contiguous: false
-          units: ft
-        affects:
-          choice: false
-        override: false
-      uses:
-        spent: 0
-        max: ''
-        recovery: []
-      roll:
-        formula: ''
-        name: ''
-        prompt: false
-        visible: false
-      sort: 0
+  activities: {}
   identifier: prestidigitation
-  properties: []
+  properties:
+    - vocal
+    - somatic
 name: Prestidigitation
 flags:
   ddbimporter:
@@ -146,22 +103,25 @@ flags:
     migratedProperties:
       - vocal
       - somatic
+    riders:
+      activity: []
+      effect: []
 img: icons/magic/fire/explosion-fireball-small-purple-orange.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.world.spells.Item.wmVmmrbYea6T2R3y
+  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.wmVmmrbYea6T2R3y
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736583821766
-  modifiedTime: 1736583821766
+  createdTime: 1736624241236
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 _id: wmVmmrbYea6T2R3y
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 5200000
 _key: '!items!wmVmmrbYea6T2R3y'
 

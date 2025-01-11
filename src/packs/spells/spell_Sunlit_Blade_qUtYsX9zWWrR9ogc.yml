@@ -1,40 +1,44 @@
-name: Annoying Bee
+name: Sunlit Blade
 type: spell
-img: modules/sosly-5e-house-rules/public/spells/annoying-bee.png
+img: modules/sosly-5e-house-rules/public/spells/sunlit-blade.png
 system:
   description:
     value: >-
-      <p>You create an illusory bee to distract one creature you can see within
-      range. The target has disadvantage on Concentration checks until the start
-      of your next turn, and must make an Intelligence saving throw or take 1d4
-      psychic damage.</p><p><em><strong>Cantrip Upgrade.</strong></em> The
-      damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17
-      (4d4).</p><p></p>
+      <p>You brandish the weapon used in the spell's casting and make a melee
+      attack with it against one creature within 5 feet of you. On a hit, the
+      target suffers the weapon attack's normal effects and becomes wreathed in
+      light until the end of your next turn.  While affected by this spell, the
+      target sheds dim light to 15 feet. The next attack made against the target
+      while they are affected by this spell has advantage.</p><p>This spell's
+      damage increases when you reach certain levels. At 5th level, the attack
+      deals an extra 1d8 radiant damage to the target on a hit. The extra damage
+      roll increases by 1d8 at 11th level (2d8) and again at 17th level
+      (3d8).</p>
     chat: ''
   source:
-    custom: Solasta
+    custom: Solasta Unfinished Business
     revision: 1
     rules: '2024'
   activation:
     type: action
     condition: ''
-    value: 1
+    value: null
   duration:
-    value: ''
-    units: inst
+    value: '1'
+    units: round
   target:
     affects:
-      type: creature
       choice: false
-      count: '1'
-      special: ''
-    template:
-      units: ''
-      contiguous: false
+      count: ''
       type: ''
+    template:
+      units: ft
+      type: sphere
+      size: '5'
+      contiguous: false
+      count: ''
   range:
-    units: ft
-    value: '60'
+    units: self
     special: ''
   uses:
     max: ''
@@ -42,11 +46,11 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: ill
+  school: evo
   materials:
-    value: ''
+    value: a melee weapon worth at least 1 sp
     consumed: false
-    cost: 0
+    cost: 0.1
     supply: 0
   preparation:
     mode: always
@@ -54,7 +58,7 @@ system:
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: save
+      type: damage
       activation:
         type: action
         value: null
@@ -72,8 +76,7 @@ system:
         concentration: false
         override: false
       effects:
-        - _id: JeNLWWfs8KVDh0fc
-          onSave: false
+        - _id: IKlKYuydVhFedjoP
       range:
         override: false
       target:
@@ -89,94 +92,105 @@ system:
         max: ''
         recovery: []
       damage:
-        onSave: none
+        critical:
+          allow: false
+          bonus: ''
         parts:
-          - number: 1
-            denomination: 4
+          - custom:
+              enabled: false
+              formula: '0'
+            number: null
+            denomination: 0
             bonus: ''
             types:
-              - psychic
-            custom:
-              enabled: false
-              formula: ''
+              - radiant
             scaling:
               mode: whole
               number: 1
-              formula: ''
-      save:
-        ability:
-          - int
-        dc:
-          calculation: spellcasting
-          formula: ''
+              formula: d8
       sort: 0
-  identifier: annoying-bee
+      name: ''
+      img: ''
+      appliedEffects:
+        - IKlKYuydVhFedjoP
+  identifier: sunlit-blade
   properties:
-    - vocal
     - somatic
+    - material
 effects:
-  - origin: Item.aB1osdP5w6mNXZFs
+  - name: Sunlit Blade
+    img: modules/sosly-5e-house-rules/public/spells/sunlit-blade.png
+    origin: Compendium.sosly-5e-house-rules.spells.Item.qUtYsX9zWWrR9ogc
+    _id: IKlKYuydVhFedjoP
+    type: base
+    system: {}
+    changes:
+      - key: ATL.light.dim
+        mode: 2
+        value: '15'
+        priority: 20
+      - key: ATL.light.animation
+        mode: 2
+        value: '{type: "none"}'
+        priority: 20
+      - key: ATL.light.color
+        mode: 2
+        value: '#ffffff'
+        priority: 20
+      - key: ATL.light.alpha
+        mode: 2
+        value: '0.5'
+        priority: 20
+    disabled: false
     duration:
-      rounds: 1
       startTime: null
       seconds: null
       combat: null
+      rounds: 1
       turns: null
       startRound: null
       startTurn: null
-    disabled: false
-    _id: JeNLWWfs8KVDh0fc
-    changes: []
+    description: ''
     tint: '#ffffff'
     transfer: false
+    statuses: []
+    sort: 0
     flags:
-      times-up: {}
       dae:
-        selfTarget: false
-        selfTargetAlways: false
-        stackable: none
-        durationExpression: ''
-        macroRepeat: none
-        specialDuration:
-          - None
         enableCondition: ''
         disableCondition: ''
-        showIcon: false
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
       core:
         overlay: false
       ActiveAuras:
         isAura: false
         aura: None
-        radius: undefined
+        nameOverride: ''
+        radius: ''
         alignment: ''
         type: ''
+        customCheck: ''
         ignoreSelf: false
         height: false
         hidden: false
         displayTemp: false
         hostile: false
         onlyOnce: false
-        nameOverride: ''
-        customCheck: ''
         wallsBlock: system
         statuses: []
-    name: Annoying Bee
-    description: ''
-    statuses: []
-    img: modules/sosly-5e-house-rules/public/spells/annoying-bee.png
-    type: base
-    system: {}
-    sort: 0
     _stats:
       compendiumSource: null
       duplicateSource: null
       coreVersion: '12.331'
       systemId: dnd5e
       systemVersion: 4.1.2
-      createdTime: null
-      modifiedTime: 1736627536100
+      createdTime: 1736632743773
+      modifiedTime: 1736633521956
       lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!VlY62bccECT7B1Rt.JeNLWWfs8KVDh0fc'
+    _key: '!items.effects!qUtYsX9zWWrR9ogc.IKlKYuydVhFedjoP'
 flags:
   tidy5e-sheet:
     gender: ''
@@ -203,17 +217,21 @@ flags:
   rsr5e:
     quickDesc:
       value: true
+      altValue: true
     quickFooter:
       value: true
+      altValue: true
     quickOther:
       context: ''
       value: true
-    quickSave:
+    quickAttack:
       value: true
     quickDamage:
       context:
         '0': ''
       value:
+        '0': true
+      altValue:
         '0': true
   journal-backlinks:
     references: []
@@ -221,30 +239,39 @@ flags:
     data:
       recovery:
         enabled: false
+  enhanced-terrain-layer:
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
   core: {}
   cf:
     id: temp_9ykd9r1nsxt
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.VlY62bccECT7B1Rt
+    hash: 63eee9375dc20fd931e4e55a0bbf0c31bafde258
+    sourceId: Compendium.sosly.spells.Item.epb9RGQvwcruQBlf
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
-      - vocal
       - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.VlY62bccECT7B1Rt
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736632493379
+  createdTime: 1736624412454
+  modifiedTime: 1736632767992
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: VlY62bccECT7B1Rt
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4300000
-_key: '!items!VlY62bccECT7B1Rt'
+_id: qUtYsX9zWWrR9ogc
+sort: 600000
+_key: '!items!qUtYsX9zWWrR9ogc'
 

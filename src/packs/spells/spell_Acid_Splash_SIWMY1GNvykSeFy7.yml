@@ -2,15 +2,14 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>You create an acidic bubble at a point within range, where it explodes
+      in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a
+      Dexterity saving throw or take 1d6 Acid damage.</p><p><em><strong>Cantrip
+      Upgrade.</strong></em> The damage increases by 1d6 when you reach levels 5
+      (2d6), 11 (3d6), and 17 (4d6).</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -25,18 +24,19 @@ system:
     units: inst
   target:
     affects:
-      choice: false
-      count: ''
       type: creature
+      count: ''
+      choice: false
       special: ''
     template:
       units: ft
-      type: radius
-      size: '5'
       contiguous: false
+      type: sphere
+      size: '5'
       count: ''
   range:
-    units: self
+    value: '60'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -44,7 +44,7 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: con
   materials:
     value: ''
     consumed: false
@@ -93,19 +93,19 @@ system:
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d6[acid]
             number: 1
             denomination: 6
             bonus: ''
             types:
-              - thunder
+              - acid
             scaling:
               mode: whole
               number: 1
               formula: ''
       save:
         ability:
-          - con
+          - dex
         dc:
           calculation: spellcasting
           formula: ''
@@ -113,24 +113,28 @@ system:
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: acid-splash
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+name: Acid Splash
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 136018
+    definitionId: 1989
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Acid Splash
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 211
         sourceType: 1
     tags:
       - Damage
@@ -139,34 +143,35 @@ flags:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.YnqRCfGXKViP2bBD
+    hash: 6c21070129ec5b482cf49ff001877abdbc30f5e9
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/fire/projectile-fireball-smoke-green.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624340891
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: SIWMY1GNvykSeFy7
+sort: 1800000
+_key: '!items!SIWMY1GNvykSeFy7'
 

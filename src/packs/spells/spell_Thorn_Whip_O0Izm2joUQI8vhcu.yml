@@ -2,15 +2,15 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>You create a vine-like whip covered in thorns that lashes out at your
+      command toward a creature in range. Make a melee spell attack against the
+      target. On a hit, the target takes 1d6 Piercing damage, and if it is Large
+      or smaller, you can pull it up to 10 feet closer to
+      you.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage increases
+      by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -27,16 +27,14 @@ system:
     affects:
       choice: false
       count: ''
-      type: creature
-      special: ''
+      type: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
-    units: self
+    value: '30'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -44,9 +42,9 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: trs
   materials:
-    value: ''
+    value: the stem of a plant with thorns
     consumed: false
     cost: 0
     supply: 0
@@ -56,7 +54,7 @@ system:
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: save
+      type: attack
       activation:
         type: action
         value: null
@@ -88,85 +86,95 @@ system:
         spent: 0
         max: ''
         recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: spell
       damage:
-        onSave: none
+        critical:
+          bonus: ''
+        includeBase: true
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d6[piercing]
             number: 1
             denomination: 6
             bonus: ''
             types:
-              - thunder
+              - piercing
             scaling:
               mode: whole
               number: 1
               formula: ''
-      save:
-        ability:
-          - con
-        dc:
-          calculation: spellcasting
-          formula: ''
       sort: 0
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: thorn-whip
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+    - material
+name: Thorn Whip
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 138847
+    definitionId: 2309
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Thorn Whip
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 2
+        pageNumber: 282
         sourceType: 1
     tags:
       - Damage
+      - Control
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.0aA3VTlEqhZzn7vs
+    hash: 12e5124a8194d0f20744280068f6a6d7bc8c8635
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
+      - material
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/nature/root-vine-thorned-coil-green.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624329321
+  modifiedTime: 1736633937329
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: O0Izm2joUQI8vhcu
+sort: 1700000
+_key: '!items!O0Izm2joUQI8vhcu'
 

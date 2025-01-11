@@ -1,0 +1,119 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Putting a finger to your head, you pull a memory, an idea, or a message
+      from your mind and transform it into a tangible string of glowing energy
+      called a thought strand, which persists for the duration or until you cast
+      this spell again. The thought strand appears in an unoccupied space within
+      5 feet of you as a Tiny, weightless, semisolid object that can be held and
+      carried like a ribbon. It is otherwise stationary.</p><p>If you cast this
+      spell while concentrating on a spell or an ability that allows you to read
+      or manipulate the thoughts of others (such as detect thoughts or modify
+      memory), you can transform the thoughts or memories you read, rather than
+      your own, into a thought strand.</p><p>A creature can use an action while
+      holding a thought strand to receive whatever memory, idea, or message the
+      thought strand contains. Casting
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.ufwSCz2mMY98iz1k]{detect
+      thoughts} on the thought strand has the same effect.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 2
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '24'
+    units: hour
+  target:
+    affects:
+      type: self
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: enc
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities: {}
+  identifier: encode-thoughts
+  properties:
+    - somatic
+name: Encode Thoughts
+flags:
+  ddbimporter:
+    id: 776203
+    definitionId: 83532
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Encode Thoughts
+    sources:
+      - sourceId: 38
+        pageNumber: null
+        sourceType: 1
+    tags:
+      - Creation
+      - Deception
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.axKJDgvYvAo8vW2E
+    hash: fa397bfc9801f2e1d3d1608c3940c3e84227913a
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/air/air-wave-gust-blue.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736628249317
+  modifiedTime: 1736632493379
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: MgD1KyupgXa2j2fO
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: xLWkUHnvqzfDFr7h
+sort: 900000
+_key: '!items!xLWkUHnvqzfDFr7h'
+

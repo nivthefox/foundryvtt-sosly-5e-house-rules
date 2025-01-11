@@ -2,15 +2,18 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>A flickering flame appears in your hand and remains there for the
+      duration. While there, the flame emits no heat and ignites nothing, and it
+      sheds Bright Light in a 20-foot radius and Dim Light for an additional 20
+      feet. The spell ends if you cast it again.</p><p>Until the spell ends, you
+      can take a Magic action to hurl fire at a creature or an object within 60
+      feet of you. Make a ranged spell attack. On a hit, the target takes 1d8
+      Fire damage.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
+      increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17
+      (4d8).</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: SoSly House Rules
     revision: 1
     rules: '2024'
     book: ''
@@ -21,22 +24,21 @@ system:
     condition: ''
     value: 1
   duration:
-    value: ''
-    units: inst
+    value: '1'
+    units: hour
   target:
     affects:
+      type: creature
       choice: false
       count: ''
-      type: creature
       special: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
-    units: self
+    value: '30'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -44,7 +46,7 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: con
   materials:
     value: ''
     consumed: false
@@ -56,7 +58,7 @@ system:
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: save
+      type: attack
       activation:
         type: action
         value: null
@@ -88,85 +90,96 @@ system:
         spent: 0
         max: ''
         recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
       damage:
-        onSave: none
+        critical:
+          bonus: ''
+        includeBase: true
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d8[fire]
             number: 1
-            denomination: 6
+            denomination: 8
             bonus: ''
             types:
-              - thunder
+              - fire
             scaling:
               mode: whole
               number: 1
               formula: ''
-      save:
-        ability:
-          - con
-        dc:
-          calculation: spellcasting
-          formula: ''
       sort: 0
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: produce-flame
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+name: Produce Flame
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 138596
+    definitionId: 2217
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Produce Flame
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 269
         sourceType: 1
     tags:
+      - Creation
       - Damage
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.dHQ9MRmIwwp859QR
+    hash: f12164de884282b7ee0f9a02de3c706823296af2
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/fire/explosion-fireball-medium-orange.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624318961
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: cppZc7tRNjAUnoYz
+sort: 1400000
+_key: '!items!cppZc7tRNjAUnoYz'
 

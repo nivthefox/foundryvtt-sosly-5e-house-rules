@@ -2,20 +2,22 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p class="Core-Styles_Core-Body">You cause a cloud of mites, fleas, and
+      other parasites to appear momentarily on one creature you can see within
+      range. The target must succeed on a Constitution saving throw, or it takes
+      1d6 poison damage and moves 5 feet in a random direction if it can move
+      and its speed is at least 5 feet. Roll a d4 for the direction: 1, north;
+      2, south; 3, east; or 4, west. This movement doesn’t provoke opportunity
+      attacks, and if the direction rolled is blocked, the target doesn’t
+      move.</p>
+
+      <p class="Core-Styles_Core-Body">The spell’s damage increases by 1d6 when
+      you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: Xanathar's Guide to Everything pg 158
     revision: 1
     rules: '2024'
-    book: ''
-    page: ''
-    license: ''
   activation:
     type: action
     condition: ''
@@ -25,18 +27,17 @@ system:
     units: inst
   target:
     affects:
-      choice: false
-      count: ''
       type: creature
+      count: '1'
+      choice: false
       special: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
-    units: self
+    value: '30'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -44,9 +45,9 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: con
   materials:
-    value: ''
+    value: a living flea
     consumed: false
     cost: 0
     supply: 0
@@ -93,12 +94,12 @@ system:
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d6[poison]
             number: 1
             denomination: 6
             bonus: ''
             types:
-              - thunder
+              - poison
             scaling:
               mode: whole
               number: 1
@@ -113,60 +114,66 @@ system:
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: infestation
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+    - material
+name: Infestation
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 138125
+    definitionId: 14878
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Infestation
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 27
+        pageNumber: 158
         sourceType: 1
     tags:
+      - Summoning
       - Damage
+      - Control
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.SxVidXdDgABQqtdr
+    hash: 7ca8cbbddff75ab6c8fbc458e4545c27a38bbff9
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
+      - material
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/creatures/invertebrates/fly-wasp-mosquito-green.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624306274
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: 9nkVuniyDYWShQbp
+sort: 3500000
+_key: '!items!9nkVuniyDYWShQbp'
 

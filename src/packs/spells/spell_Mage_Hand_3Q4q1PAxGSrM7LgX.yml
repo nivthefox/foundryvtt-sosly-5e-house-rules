@@ -29,12 +29,18 @@ system:
   target:
     affects:
       choice: false
+      count: ''
+      type: ''
     template:
-      units: ''
+      units: ft
       contiguous: false
+      type: sphere
+      size: '2.5'
+      count: ''
   range:
     value: '30'
     units: ft
+    special: ''
   uses:
     max: ''
     spent: 0
@@ -48,51 +54,13 @@ system:
     cost: 0
     supply: 0
   preparation:
-    mode: prepared
-    prepared: false
-  activities:
-    dnd5eactivity000:
-      _id: dnd5eactivity000
-      type: utility
-      activation:
-        type: action
-        value: null
-        override: false
-      consumption:
-        targets: []
-        scaling:
-          allowed: false
-          max: ''
-        spellSlot: true
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects: []
-      range:
-        override: false
-      target:
-        prompt: true
-        template:
-          contiguous: false
-          units: ft
-        affects:
-          choice: false
-        override: false
-      uses:
-        spent: 0
-        max: ''
-        recovery: []
-      roll:
-        formula: ''
-        name: ''
-        prompt: false
-        visible: false
-      sort: 0
+    mode: always
+    prepared: true
+  activities: {}
   identifier: mage-hand
-  properties: []
+  properties:
+    - vocal
+    - somatic
 name: Mage Hand
 flags:
   ddbimporter:
@@ -129,22 +97,25 @@ flags:
     migratedProperties:
       - vocal
       - somatic
+    riders:
+      activity: []
+      effect: []
 img: icons/magic/water/water-hand.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.world.spells.Item.3Q4q1PAxGSrM7LgX
+  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.3Q4q1PAxGSrM7LgX
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736583821766
-  modifiedTime: 1736583821766
+  createdTime: 1736624241236
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 _id: 3Q4q1PAxGSrM7LgX
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 3800000
 _key: '!items!3Q4q1PAxGSrM7LgX'
 

@@ -33,6 +33,11 @@
           "minimum": "2.4.22",
           "verified": "2.4.22"
         }
+      },
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {}
       }
     ],
     "recommends": [
@@ -43,6 +48,16 @@
           "minimum": "0.10.0",
           "verified": "0.10.0"
         }
+      },
+      {
+        "id": "ATL",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "retroactive-advantage-5e",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },

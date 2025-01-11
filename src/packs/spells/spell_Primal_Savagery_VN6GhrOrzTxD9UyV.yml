@@ -2,20 +2,18 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p class="Core-Styles_Core-Body">You channel primal magic to cause your
+      teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make
+      a melee spell attack against one creature within 5 feet of you. On a hit,
+      the target takes 1d10 acid damage. After you make the attack, your teeth
+      or fingernails return to normal.</p><p class="Core-Styles_Core-Body">The
+      spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th
+      level (3d10), and 17th level (4d10).</p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: Xanathar's Guide to Everything pg 163
     revision: 1
     rules: '2024'
-    book: ''
-    page: ''
-    license: ''
   activation:
     type: action
     condition: ''
@@ -25,16 +23,14 @@ system:
     units: inst
   target:
     affects:
+      type: creature
       choice: false
       count: ''
-      type: creature
       special: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: ''
       contiguous: false
-      count: ''
+      type: ''
   range:
     units: self
     special: ''
@@ -44,7 +40,7 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: trs
   materials:
     value: ''
     consumed: false
@@ -56,7 +52,7 @@ system:
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: save
+      type: attack
       activation:
         type: action
         value: null
@@ -88,49 +84,54 @@ system:
         spent: 0
         max: ''
         recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
       damage:
-        onSave: none
+        critical:
+          bonus: ''
+        includeBase: true
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d10[acid]
             number: 1
-            denomination: 6
+            denomination: 10
             bonus: ''
             types:
-              - thunder
+              - acid
             scaling:
               mode: whole
               number: 1
               formula: ''
-      save:
-        ability:
-          - con
-        dc:
-          calculation: spellcasting
-          formula: ''
       sort: 0
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: primal-savagery
   properties:
     - somatic
-name: Thunderclap
+name: Primal Savagery
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 138213
+    definitionId: 14558
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Primal Savagery
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 27
+        pageNumber: 163
         sourceType: 1
     tags:
       - Damage
@@ -139,8 +140,8 @@ flags:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.eHhXTMZGzSlrA0gG
+    hash: 266eb0abc5cdaed7a04bfca9f0b0713b8ac9cd60
   cf:
     id: temp_swxucta6r2
   core: {}
@@ -151,22 +152,22 @@ flags:
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/skills/melee/strike-slashes-red.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624316678
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: VN6GhrOrzTxD9UyV
+sort: 1300000
+_key: '!items!VN6GhrOrzTxD9UyV'
 

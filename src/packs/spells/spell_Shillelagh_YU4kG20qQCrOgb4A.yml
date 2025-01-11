@@ -2,41 +2,41 @@ type: spell
 system:
   description:
     value: >-
-      <p>Each creature in a 5-foot Emanation originating from you must succeed
-      on a Constitution saving throw or take 1d6 Thunder damage. The spell’s
-      thunderous sound can be heard up to 100 feet
-      away.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
-      increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17
-      (4d6).</p><p></p>
+      <p>A Club or Quarterstaff you are holding is imbued with nature’s power.
+      For the duration, you can use your spellcasting ability instead of
+      Strength for the attack and damage rolls of melee attacks using that
+      weapon, and the weapon’s damage die becomes a d8. If the attack deals
+      damage, it can be Force damage or the weapon’s normal damage type (your
+      choice).</p><p>The spell ends early if you cast it again or if you let go
+      of the weapon.</p><p><em><strong>Cantrip Upgrade.</strong></em> The damage
+      die changes when you reach levels 5 (d10), 11 (d12), and 17
+      (2d6).</p><p></p>
     chat: ''
   source:
-    custom: Player's Handbook (2024)
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
     page: ''
     license: ''
   activation:
-    type: action
+    type: bonus
     condition: ''
     value: 1
   duration:
-    value: ''
-    units: inst
+    value: '1'
+    units: minute
   target:
     affects:
       choice: false
       count: ''
-      type: creature
-      special: ''
+      type: ''
     template:
-      units: ft
-      type: radius
-      size: '5'
+      units: touch
       contiguous: false
-      count: ''
+      type: ''
   range:
-    units: self
+    units: touch
     special: ''
   uses:
     max: ''
@@ -44,9 +44,9 @@ system:
     recovery: []
   ability: ''
   level: 0
-  school: evo
+  school: trs
   materials:
-    value: ''
+    value: mistletoe, a shamrock leaf, and a club or quarterstaff
     consumed: false
     cost: 0
     supply: 0
@@ -56,7 +56,7 @@ system:
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: save
+      type: attack
       activation:
         type: action
         value: null
@@ -88,85 +88,97 @@ system:
         spent: 0
         max: ''
         recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: spell
       damage:
-        onSave: none
+        critical:
+          bonus: ''
+        includeBase: true
         parts:
           - custom:
               enabled: false
-              formula: 1d6[thunder]
+              formula: 1d8[bludgeoning - The weapon is magical.] + @mod
             number: 1
-            denomination: 6
-            bonus: ''
+            denomination: 8
+            bonus: '@mod'
             types:
-              - thunder
+              - bludgeoning
             scaling:
-              mode: whole
+              mode: ''
               number: 1
-              formula: ''
-      save:
-        ability:
-          - con
-        dc:
-          calculation: spellcasting
-          formula: ''
       sort: 0
       name: ''
       img: ''
       appliedEffects: []
-  identifier: thunderclap
+  identifier: shillelagh
   properties:
+    - vocal
     - somatic
-name: Thunderclap
+    - material
+name: Shillelagh
 flags:
   ddbimporter:
-    id: 138266
-    definitionId: 2401
+    id: 138708
+    definitionId: 2249
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Thunderclap
+    originalName: Shillelagh
     sources:
-      - sourceId: 4
-        pageNumber: 168
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 275
         sourceType: 1
     tags:
       - Damage
+      - Buff
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.fb5laBsozezu9OY7
-    hash: 672178d8be8f06892e276e84813be68b3eb176b4
+    sourceId: Compendium.sosly.spells.Item.c7JUB2xKyHP6rnOC
+    hash: 0b35e0f1ef02061f16ade0d4edab0151945028e8
   cf:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
+      - vocal
       - somatic
+      - material
     riders:
       activity: []
       effect: []
-img: icons/magic/air/air-burst-spiral-blue-gray.webp
+img: icons/magic/fire/dagger-rune-enchant-teal.webp
 effects: []
 _stats:
-  compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.fb5laBsozezu9OY7
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736624241236
-  modifiedTime: 1736635977133
+  createdTime: 1736624327161
+  modifiedTime: 1736632493379
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
-_id: fb5laBsozezu9OY7
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 4500000
-_key: '!items!fb5laBsozezu9OY7'
+_id: YU4kG20qQCrOgb4A
+sort: 1600000
+_key: '!items!YU4kG20qQCrOgb4A'
 
