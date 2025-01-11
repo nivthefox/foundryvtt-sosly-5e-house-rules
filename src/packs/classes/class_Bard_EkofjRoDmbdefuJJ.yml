@@ -3,7 +3,35 @@ type: class
 img: modules/sosly-5e-house-rules/public/classes/bard.jpg
 system:
   description:
-    value: ''
+    value: >-
+      <table><tbody><tr><td data-colwidth="225"><p><strong>Primary
+      Ability</strong></p></td><td><p>Charisma</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D8
+      per Bard level</p></td></tr><tr><td data-colwidth="225"><p><strong>Saving
+      Throw Proficiencies</strong></p></td><td><p>Dexterity and
+      Charisma</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
+      Proficiencies</strong></p></td><td><p><em>Choose any 3
+      skills</em></p></td></tr><tr><td data-colwidth="225"><p><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Simple weapons</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Tool
+      Proficiencies</strong></p></td><td><p><em>Choose 3 Musical
+      Instruments</em></p></td></tr><tr><td data-colwidth="225"><p><strong>Armor
+      Training</strong></p></td><td><p>Light armor</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Starting
+      Equipment</strong></p></td><td><p><em>Choose A or B:</em> (A) Leather
+      Armor, 2 Daggers, Musical Instrument of your choice, Entertainer's Pack,
+      and 19 GP; or (B) 90 GP</p></td></tr></tbody></table><p>Invoking magic
+      through music, dance, and verse, Bards are expert at inspiring others,
+      soothing hurts, disheartening foes, and creating illusions. Bards believe
+      the multiverse was spoken into existence and that remnants of its Words of
+      Creation still resound and glimmer on every plane of existence. Bardic
+      magic attempts to harness those words, which transcend any
+      language.</p><p>Anything can inspire a new song or tale, so Bards are
+      fascinated by almost everything. They become masters of many things,
+      including performing music, working magic, and making jests.</p><p>A
+      Bard’s life is spent traveling, gathering lore, telling stories, and
+      living on the gratitude of audiences, much like any other entertainer. But
+      Bards’ depth of knowledge and mastery of magic sets them apart.</p><p></p>
     chat: ''
   identifier: bard
   source:
@@ -545,7 +573,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548926898
-  modifiedTime: 1736548928095
+  modifiedTime: 1736571170918
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

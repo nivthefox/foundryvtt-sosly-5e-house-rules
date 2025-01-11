@@ -3,7 +3,42 @@ type: class
 img: modules/sosly-5e-house-rules/public/classes/sorcerer.jpg
 system:
   description:
-    value: ''
+    value: >-
+      <p></p><table><tbody><tr><td data-colwidth="225"><p><strong>Primary
+      Ability</strong></p></td><td><p>Charisma</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D6
+      per Sorcerer level</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Constitution and
+      Charisma</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
+      Proficiencies</strong></p></td><td><p><em>Choose 2:</em> Arcana,
+      Deception, Insight, Intimidation, Persuasion, or
+      Religion.</p></td></tr><tr><td data-colwidth="225"><p><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Simple Weapons</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Armor
+      Training</strong></p></td><td><p>None</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Starting
+      Equipment</strong></p></td><td><p><em>Choose A or B: </em>(A) Spear, 2
+      Daggers, Arcane Focus (Crystal), Dungeoneer's Pack, and 28 GP; or (B) 50
+      GP</p></td></tr></tbody></table><p>Sorcerers wield innate magic that is
+      stamped into their being. Some Sorcerers can’t name the origin of their
+      power, while others trace it to strange events in their personal or family
+      history. The blessing of a dragon or a dryad at a baby’s birth or the
+      strike of lightning from a clear sky might spark a Sorcerer’s gift. So too
+      might the gift of a deity, exposure to the strange magic of another plane
+      of existence, or a glimpse into the inner workings of reality. Whatever
+      the origin, the result is an indelible mark on the Sorcerer, a churning
+      magic that can be passed down through generations.</p><p>Sorcerers don’t
+      learn magic; the raw, roiling power of magic is part of them. The
+      essential art of a Sorcerer is learning to harness and channel that innate
+      magic, allowing the Sorcerer to discover new and staggering ways to
+      unleash their power. As Sorcerers master their innate magic, they grow
+      more attuned to its origin, developing distinct powers that reflect its
+      source.</p><p>Sorcerers are rare. Some family lines produce exactly one
+      Sorcerer in every generation, but most of the time, the talents of sorcery
+      appear as a fluke. People who have this magical power soon discover that
+      it doesn’t like to stay quiet. A Sorcerer’s magic wants to be
+      wielded.</p><p></p>
     chat: ''
   identifier: sorcerer
   source:
@@ -86,7 +121,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.yV2SxGVya8ctz1qJ
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.yV2SxGVya8ctz1qJ
             optional: false
         optional: false
         spell: null
@@ -98,9 +133,9 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.MJPvd0qH8XzTwkPR
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.MJPvd0qH8XzTwkPR
             optional: false
-          - uuid: Compendium.world.classes.Item.HxV2n471EqdwJeMt
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.HxV2n471EqdwJeMt
             optional: false
         optional: false
         spell: null
@@ -124,16 +159,16 @@ system:
         allowDrops: true
         type: feat
         pool:
-          - uuid: Compendium.world.classes.Item.QfHSASboQ7vpSljp
-          - uuid: Compendium.world.classes.Item.3dKB4qYL1FigAcQK
-          - uuid: Compendium.world.classes.Item.OJDTHiYezueel1WB
-          - uuid: Compendium.world.classes.Item.Rzs4JGKih7SdrIdE
-          - uuid: Compendium.world.classes.Item.5ujPMfjsrrEWizaR
-          - uuid: Compendium.world.classes.Item.8ssHY9InF1Z3fu5p
-          - uuid: Compendium.world.classes.Item.NTGXaGic6QkE2fm9
-          - uuid: Compendium.world.classes.Item.iPKuVucTfPdcw6R6
-          - uuid: Compendium.world.classes.Item.aUOG3tKqx3B6we98
-          - uuid: Compendium.world.classes.Item.quvCPGAK3elIf5lk
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.QfHSASboQ7vpSljp
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.3dKB4qYL1FigAcQK
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.OJDTHiYezueel1WB
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Rzs4JGKih7SdrIdE
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.5ujPMfjsrrEWizaR
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.8ssHY9InF1Z3fu5p
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.NTGXaGic6QkE2fm9
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.iPKuVucTfPdcw6R6
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.aUOG3tKqx3B6we98
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.quvCPGAK3elIf5lk
         spell: null
         restriction:
           type: class
@@ -147,8 +182,8 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.hCngiZ17GW4gCyYK
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.hCngiZ17GW4gCyYK
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -231,7 +266,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.wj9CIP0QbARRCwvR
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.wj9CIP0QbARRCwvR
             optional: false
         optional: false
         spell: null
@@ -243,7 +278,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.UlZrV7Y6j6TGLndp
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.UlZrV7Y6j6TGLndp
             optional: false
         optional: false
         spell: null
@@ -251,24 +286,12 @@ system:
       level: 7
       title: Features
       hint: ''
-    - _id: rULPWD5LbnoxOf7h
-      type: ItemGrant
-      configuration:
-        items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.lWJv7ESgJFpC3LGR
-        optional: false
-        spell: null
-      value: {}
-      level: 18
-      title: Features
-      hint: ''
     - _id: bjuAUaBTNTuN3pcV
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.VZm1YjPF4ongB3zL
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.VZm1YjPF4ongB3zL
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -439,6 +462,18 @@ system:
         replaced: {}
       title: Spells Known
       hint: ''
+    - _id: WR4lzTLJkM0fEuey
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.lWJv7ESgJFpC3LGR
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 19
+      title: Features
+      hint: ''
   spellcasting:
     progression: full
     preparation:
@@ -454,7 +489,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548934238
-  modifiedTime: 1736549348196
+  modifiedTime: 1736571500490
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

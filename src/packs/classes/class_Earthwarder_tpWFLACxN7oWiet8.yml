@@ -3,7 +3,44 @@ type: class
 img: modules/sosly-5e-house-rules/public/classes/earthwarder.webp
 system:
   description:
-    value: <p><em>Variant Paladin.</em></p><p></p>
+    value: >-
+      <p><em>Variant Paladin.</em></p><table><tbody><tr><td
+      data-colwidth="225"><p><strong>Primary
+      Ability</strong></p></td><td><p>Strength and Charisma</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D10
+      per Earthwarder level</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Wisdom and
+      Charisma</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
+      Proficiencies</strong></p></td><td><p><em>Choose 2:</em> Athletics,
+      Insight, Intimidation, Medicine, Persuasion, or
+      Religion</p></td></tr><tr><td data-colwidth="225"><p><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Simple and Martial
+      weapons</p></td></tr><tr><td data-colwidth="225"><p><strong>Armor
+      Training</strong></p></td><td><p>Light, Medium, and Heavy armor and
+      Shields</p></td></tr><tr><td data-colwidth="225"><p><strong>Starting
+      Equipment</strong></p></td><td><p><em>Choose A or B:</em> (A) Chain Mail,
+      Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack, and 9 GP; or
+      (B) 150 GP</p></td></tr></tbody></table><p>Earthwarders are united by
+      their sacred connection to the primal forces of stone and soil. Whether
+      sworn before an ancient mountain, in the depths of a crystalline cave, or
+      in a moment of profound connection with the bones of the world, an
+      Earthwarder's bond with the land is an unbreakable covenant. It is a
+      source of power that transforms a steadfast warrior into a guardian of the
+      earth's might.</p><p>Earthwarders train to learn the skills of combat,
+      mastering weapons and armor much like their traditional counterparts. Yet
+      their martial prowess is secondary to the telluric power they wield: power
+      to mend wounds through nature's vitality, strike foes with the force of
+      tectonic shifts, and protect their allies with barriers of living stone.
+      They draw their strength from the very ground beneath their feet,
+      channeling the ancient might of the earth itself.</p><p>Almost by
+      definition, the life of an Earthwarder is one of vigilant guardianship,
+      for they stand as wardens between civilization and the raw powers that
+      shape the world. Warriors who can tap into the earth's strength are rare
+      enough, but even fewer can claim the calling of an Earthwarder. When they
+      do hear the earth's call, these chosen few abandon their former lives to
+      take up arms and stone magic, becoming living embodiments of the land's
+      resolve.</p>
     chat: ''
   identifier: paladin
   source:
@@ -424,7 +461,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548928074
-  modifiedTime: 1736548928095
+  modifiedTime: 1736571089999
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

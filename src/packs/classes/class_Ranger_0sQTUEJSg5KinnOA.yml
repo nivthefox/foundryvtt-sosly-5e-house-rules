@@ -3,7 +3,32 @@ type: class
 img: modules/sosly-5e-house-rules/public/classes/ranger.jpg
 system:
   description:
-    value: ''
+    value: >-
+      <table><tbody><tr><td data-colwidth="225"><p><strong>Primary
+      Ability</strong></p></td><td><p>Dexterity and Wisdom</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D10
+      per Ranger level</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Strength and
+      Dexterity</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
+      Proficiencies</strong></p></td><td><p><em>Choose 3:</em> Animal Handling,
+      Athletics, Insight, Investigation, Nature, Perception, Stealth, or
+      Survival</p></td></tr><tr><td data-colwidth="225"><p><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Simple and Martial
+      weapons</p></td></tr><tr><td data-colwidth="225"><p><strong>Armor
+      Training</strong></p></td><td><p>Light and Medium armor and
+      Shields</p></td></tr><tr><td data-colwidth="225"><p><strong>Starting
+      Equipment</strong></p></td><td><p><em>Choose A or B:</em> (A) Studded
+      Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Druidic
+      Focus (sprig of mistletoe), Explorer's Pack, and 7 GP; or (B) 150
+      GP</p></td></tr></tbody></table><p>Far from bustling cities, amid the
+      trees of trackless forests and across wide plains, Rangers keep their
+      unending watch in the wilderness. Rangers learn to track their quarry as a
+      predator does, moving stealthily through the wilds and hiding themselves
+      in brush and rubble.</p><p>Thanks to their connection with nature, Rangers
+      can also cast spells that harness primal powers of the wilderness. A
+      Ranger’s talents and magic are honed with deadly focus to protect the
+      world from the ravages of monsters and tyrants.</p><p></p>
     chat: ''
   identifier: ranger
   source:
@@ -489,7 +514,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548932959
-  modifiedTime: 1736548932959
+  modifiedTime: 1736571307191
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0

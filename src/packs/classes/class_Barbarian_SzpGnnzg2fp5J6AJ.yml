@@ -3,7 +3,36 @@ type: class
 img: modules/sosly-5e-house-rules/public/classes/barbarian.jpg
 system:
   description:
-    value: ''
+    value: >-
+      <table><tbody><tr><td data-colwidth="225"><p><strong>Primary
+      Ability</strong></p></td><td><p>Strength</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D12
+      per Barbarian level</p></td></tr><tr><td
+      data-colwidth="225"><p><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Strength and
+      Constitution</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
+      Proficiencies</strong></p></td><td><p><em>Choose 2:</em> Animal Handling,
+      Athletics, Intimidation, Nature, Perception, or
+      Survival</p></td></tr><tr><td data-colwidth="225"><p><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Simple and Martial
+      weapons</p></td></tr><tr><td data-colwidth="225"><p><strong>Armor
+      Training</strong></p></td><td><p>Light and Medium armor and
+      Shields</p></td></tr><tr><td data-colwidth="225"><p><strong>Starting
+      Equipment</strong></p></td><td><p><em>Choose A or B: </em>(A) Greataxe, 4
+      Handaxes, Explorer's Pack, and 15 GP; or (B) 75
+      GP</p></td></tr></tbody></table><p>Barbarians are mighty warriors who are
+      powered by primal forces of the multiverse that manifest as a Rage. More
+      than a mere emotion—and not limited to anger—this Rage is an incarnation
+      of a predator’s ferocity, a storm’s fury, and a sea’s turmoil.</p><p>Some
+      Barbarians personify their Rage as a fierce spirit or revered forebear.
+      Others see it as a connection to the pain and anguish of the world, as an
+      impersonal tangle of wild magic, or as an expression of their own deepest
+      self. For every Barbarian, their Rage is a power that fuels not just
+      battle prowess, but also uncanny reflexes and heightened
+      senses.</p><p>Barbarians often serve as protectors and leaders in their
+      communities. They charge headlong into danger so those under their
+      protection don’t have to. Their courage in the face of danger makes
+      Barbarians perfectly suited for adventure.</p><p></p>
     chat: ''
   identifier: barbarian
   source:
@@ -147,11 +176,11 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.X1TlX1BgNOiuY15l
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.X1TlX1BgNOiuY15l
             optional: false
-          - uuid: Compendium.world.classes.Item.KnkW8w1D9ip3Ssd9
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.KnkW8w1D9ip3Ssd9
             optional: false
-          - uuid: Compendium.world.classes.Item.rZX7lyomGPy9ICv4
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.rZX7lyomGPy9ICv4
             optional: false
         optional: false
         spell: null
@@ -163,10 +192,10 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.aaB3b4aZga6Hex33
-          - optional: false
-            uuid: Compendium.world.classes.Item.6WpxhaZf98AFkXKd
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.aaB3b4aZga6Hex33
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.6WpxhaZf98AFkXKd
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -177,7 +206,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.6BwsHE4DjGqspYNi
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.6BwsHE4DjGqspYNi
             optional: false
         optional: false
         spell: null
@@ -268,9 +297,9 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.QlXn3QvDx6cFW1he
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.QlXn3QvDx6cFW1he
             optional: false
-          - uuid: Compendium.world.classes.Item.j9MmAM9KsTvw8idq
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.j9MmAM9KsTvw8idq
             optional: false
         optional: false
         spell: null
@@ -282,9 +311,9 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.jfzAHOgyvcCZSIrY
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.jfzAHOgyvcCZSIrY
             optional: false
-          - uuid: Compendium.world.classes.Item.nYHbtiZiRc6C8ep6
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.nYHbtiZiRc6C8ep6
             optional: false
         optional: false
         spell: null
@@ -296,7 +325,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.x2QRNFdEBgPQNFx9
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.x2QRNFdEBgPQNFx9
             optional: false
         optional: false
         spell: null
@@ -308,7 +337,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.x0eJDJMBBNNYif1Y
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.x0eJDJMBBNNYif1Y
             optional: false
         optional: false
         spell: null
@@ -320,7 +349,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.ToKOj74UjLqf9VVq
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.ToKOj74UjLqf9VVq
             optional: false
         optional: false
         spell: null
@@ -332,7 +361,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.VvIMPHwJglPduSQ0
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.VvIMPHwJglPduSQ0
             optional: false
         optional: false
         spell: null
@@ -344,8 +373,8 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.world.classes.Item.llQVjAedDQBoq7e3
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.ToKOj74UjLqf9VVq
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -375,7 +404,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.5HlpABaa1aedtVWL
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.5HlpABaa1aedtVWL
             optional: false
         optional: false
         spell: null
@@ -387,7 +416,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.jeSzSQIS2n75yVlS
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.jeSzSQIS2n75yVlS
             optional: false
         optional: false
         spell: null
@@ -399,7 +428,7 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.world.classes.Item.b4IwjUnavLaNuTJZ
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.b4IwjUnavLaNuTJZ
             optional: false
         optional: false
         spell: null
@@ -442,7 +471,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548925778
-  modifiedTime: 1736548928095
+  modifiedTime: 1736571675772
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
