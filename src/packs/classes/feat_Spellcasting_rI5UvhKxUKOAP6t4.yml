@@ -1,0 +1,85 @@
+name: Spellcasting
+type: feat
+system:
+  description:
+    value: >-
+      <p>An event in your past, or in the life of a parent or ancestor, left an
+      indelible mark on you, infusing you with arcane magic. This font of magic,
+      whatever its origin, fuels your spells. See chapter 10 of the Player’s
+      Handbook for the general rules of spellcasting, and chapter 11 for the
+      sorcerer spell list.</p><p><em><strong>Cantrips. </strong></em>At 1st
+      level, you know four cantrips of your choice from the sorcerer spell list.
+      You learn additional sorcerer cantrips of your choice at higher levels, as
+      shown in the Cantrips Known column of the Sorcerer
+      table.</p><p><em><strong>Strain. </strong></em>You do not have a pool of
+      spell slots from which to cast your spells. Instead, as the raw magic of
+      your spells course through you, you must strain to channel and shape the
+      magic. As the strain builds up, it warps and twists your body. As part of
+      casting a spell of 1st-level or higher (or using an ability which requires
+      a spell slot) you gain an amount of strain to create a spell slot of a
+      given level, and then use that slot to cast the spell. Cantrips don’t
+      require spell slots, and thus don’t cause strain.</p><p>The amount of
+      strain you can endure is limited based on your level as a Sorcerer, as
+      shown in the strain limit column of the sorcerer table. You cannot cast a
+      spell if it would result in you gaining strain in excess of this limit.
+      You reduce your strain to 0 when you finish a long rest. Your level also
+      determines the maximum-level spell you can cast. You cannot create a spell
+      slot which exceeds this level, even if it would not exceed your strain
+      limit.</p><p><em><strong>Prepared Spells of Level 1+.</strong></em> You
+      know two 1st-level spells of your choice from the sorcerer spell
+      list.</p><p>The Spells Known column of the Sorcerer table shows when you
+      learn more sorcerer spells of your choice. Each of these spells must be of
+      a level for which you have spell slots. For instance, when you reach 3rd
+      level in this class, you can learn one new spell of 1st or 2nd
+      level.</p><p>Additionally, when you gain a level in this class, you can
+      choose one of the sorcerer spells you know and replace it with another
+      spell from the sorcerer spell list, which also must be of a level for
+      which you have spell slots.</p><p><em><strong>Changing Your Prepared
+      Spells.</strong></em> Whenever you gain a Sorcerer level, you can replace
+      one spell on your list with another Sorcerer spell for which you have
+      spell slots.</p><p><em><strong>Spellcasting Ability.</strong></em>
+      Charisma is your spellcasting ability for your Sorcerer
+      spells.</p><p><em><strong>Spellcasting Focus.</strong></em> You can use an
+      Arcane Focus as a Spellcasting Focus for your Sorcerer spells.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Primalist 1
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: spellcasting
+flags: {}
+img: icons/magic/unholy/strike-hand-glow-pink.webp
+effects: []
+folder: nvn6lfwXLGbphmfx
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736588022115
+  modifiedTime: 1736588177864
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: rI5UvhKxUKOAP6t4
+sort: 0
+_key: '!items!rI5UvhKxUKOAP6t4'
+

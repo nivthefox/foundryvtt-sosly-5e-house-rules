@@ -1,0 +1,20 @@
+name: Primalist Features
+sorting: a
+folder: zvPnD9kpxxgQHEF2
+type: Item
+_id: nvn6lfwXLGbphmfx
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736585568142
+  modifiedTime: 1736588231394
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!nvn6lfwXLGbphmfx'
+

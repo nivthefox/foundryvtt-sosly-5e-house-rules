@@ -24,6 +24,13 @@
           "verified": "4.1.2"
         }
       }
+    ],
+    "requires": [
+      {
+        "id": "dnd5e-spellpoints",
+        "type": "module",
+        "compatibility": {}
+      }
     ]
   },
   "esmodules": [
@@ -85,11 +92,11 @@
       "label": "Spells",
       "path": "packs/spells",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     }
   ],
   "documentTypes": {

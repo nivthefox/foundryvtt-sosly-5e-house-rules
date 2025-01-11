@@ -1,0 +1,83 @@
+name: Strain
+type: feat
+img: modules/dnd5e-spellpoints/img/mana-icon.webp
+system:
+  description:
+    value: "<h1>Variant: Spell Points</h1><p>Source: <a href=\"https://www.dndbeyond.com/marketplace/sourcebooks/dungeon-masters-guide#VariantSpellPoints\">Dungeon Masters Guide</a></p><p>With this variant system, a character who has the Spellcasting feature uses spell points instead spell slots to fuel spells. Spell points give a caster more flexibility, at the cost of greater complexity.</p><p>In this variant, each spell has a point cost based on its level. The Spell Point Cost table summarizes the cost in spell points of slots from 1st to 9th level. Cantrips don't require slots and therefore don't require spell points.</p><p>Instead of gaining a number of spell slots to cast your spells from the Spellcasting feature, you gain a pool of spell points instead. You expend a number of spell points to create a spell slot of a given level, and then use that slot to cast a spell. You can't reduce your spell points total to less than 0, and you regain all spent spell points when you finish a long rest.</p><p>Spells of 6th level and higher are particularly taxing to cast. You can use spell points to create one slot of each level of 6th or higher. You can't create another slot of the same level until you finish a long rest.</p><p>The number of spell points you have to spend is based on your level as a spellcaster, as shown in the Spell Points by Level table. Your level also determines the maximum-level spell slot you can create. Even though you might have enough points to create a slot above this maximum, you can't do so.</p><p>The Spell Points by Level table applies to bards, clerics, druids, sorcerers, and wizards. For a paladin or ranger, halve the character's level in that class and then consult the table. For a fighter (Eldritch Knight) or rogue (Arcane Trickster), divide the character's level in that class by three.\_</p><p><em>For an Artificer, add half your levels (rounded up) in the artificer class to to determine your available spell points.\_(homebrew)</em></p>"
+    chat: >-
+      <p></p><h2>Spell Point Cost (default DMG)</h2><table
+      style="padding:5px"><tbody><tr><th><p>Spell Level</p></th><th><p>Point
+      Cost</p></th></tr><tr><td><p>1st</p></td><td><p>2</p></td></tr><tr><td><p>2nd</p></td><td><p>3</p></td></tr><tr><td><p>3rd</p></td><td><p>5</p></td></tr><tr><td><p>4th</p></td><td><p>6</p></td></tr><tr><td><p>5th</p></td><td><p>7</p></td></tr><tr><td><p>6th</p></td><td><p>9</p></td></tr><tr><td><p>7th</p></td><td><p>10</p></td></tr><tr><td><p>8th</p></td><td><p>11</p></td></tr><tr><td><p>9th</p></td><td><p>13</p></td></tr></tbody></table><p></p><h2>Spell
+      Points by Level</h2><table><tbody><tr><th><p>Class
+      Level</p></th><th><p>Spell Points</p></th><th><p>Max Spell
+      Level</p></th></tr><tr><td><p>1st</p></td><td><p>4</p></td><td><p>1st</p></td></tr><tr><td><p>2nd</p></td><td><p>6</p></td><td><p>1st</p></td></tr><tr><td><p>3rd</p></td><td><p>14</p></td><td><p>2nd</p></td></tr><tr><td><p>4th</p></td><td><p>17</p></td><td><p>2nd</p></td></tr><tr><td><p>5th</p></td><td><p>27</p></td><td><p>3rd</p></td></tr><tr><td><p>6th</p></td><td><p>32</p></td><td><p>3rd</p></td></tr><tr><td><p>7th</p></td><td><p>38</p></td><td><p>4th</p></td></tr><tr><td><p>8th</p></td><td><p>44</p></td><td><p>4th</p></td></tr><tr><td><p>9th</p></td><td><p>57</p></td><td><p>5th</p></td></tr><tr><td><p>10th</p></td><td><p>64</p></td><td><p>5th</p></td></tr><tr><td><p>11th</p></td><td><p>73</p></td><td><p>6th</p></td></tr><tr><td><p>12th</p></td><td><p>73</p></td><td><p>6th</p></td></tr><tr><td><p>13th</p></td><td><p>83</p></td><td><p>7th</p></td></tr><tr><td><p>14th</p></td><td><p>83</p></td><td><p>7th</p></td></tr><tr><td><p>15th</p></td><td><p>94</p></td><td><p>8th</p></td></tr><tr><td><p>16th</p></td><td><p>94</p></td><td><p>8th</p></td></tr><tr><td><p>17th</p></td><td><p>107</p></td><td><p>9th</p></td></tr><tr><td><p>18th</p></td><td><p>114</p></td><td><p>9th</p></td></tr><tr><td><p>19th</p></td><td><p>123</p></td><td><p>9th</p></td></tr><tr><td><p>20th</p></td><td><p>133</p></td><td><p>9th</p></td></tr></tbody></table>
+  source:
+    book: SRD 5.1
+    page: '5'
+    custom: Spell Points
+    license: ''
+    revision: 1
+    rules: '2024'
+  uses:
+    max: '@scale.sorcerer.strain-limit'
+    recovery:
+      - period: lr
+        type: loseAll
+    spent: 0
+  type:
+    value: class
+    subtype: sp
+  properties:
+    - mgc
+  requirements: ''
+  activities: {}
+  identifier: spell-points
+  enchant: {}
+  prerequisites:
+    level: null
+effects: []
+folder: nvn6lfwXLGbphmfx
+ownership:
+  default: 0
+  Ug7GkMF9eyyz1JZt: 3
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  core: {}
+  spellpoints:
+    override: true
+    config:
+      previousFormula: CUSTOM
+      isCustom: true
+      spFormula: CUSTOM
+      spAutoSpellpoints: false
+      spellPointsCosts:
+        '1': '-2'
+        '2': '-3'
+        '3': '-5'
+        '4': '-6'
+        '5': '-7'
+        '6': '-9'
+        '7': ''
+        '8': ''
+        '9': ''
+      spCustomFormulaSlotMultiplier: ''
+      spEnableVariant: false
+      spLifeCost: '2'
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    migratedUses: 1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736586204053
+  modifiedTime: 1736587069531
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: y5ubVYWLa9PBBVMC
+sort: 0
+_key: '!items!y5ubVYWLa9PBBVMC'
+
