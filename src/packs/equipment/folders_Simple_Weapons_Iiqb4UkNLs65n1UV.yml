@@ -1,0 +1,20 @@
+name: Simple Weapons
+sorting: a
+folder: jSumlN49Do69bf0T
+type: Item
+_id: Iiqb4UkNLs65n1UV
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!folders!Iiqb4UkNLs65n1UV'
+

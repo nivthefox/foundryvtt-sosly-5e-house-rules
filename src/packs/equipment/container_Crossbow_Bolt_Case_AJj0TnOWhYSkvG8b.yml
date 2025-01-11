@@ -1,0 +1,59 @@
+name: Crossbow Bolt Case
+type: container
+img: icons/containers/ammunition/quiver-simple-brown.webp
+system:
+  description:
+    value: <p>This wooden case can hold up to twenty crossbow bolts.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 1
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  capacity:
+    type: weight
+    value: 1.5
+  currency:
+    cp: 0
+    sp: 0
+    ep: 0
+    gp: 0
+    pp: 0
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  attuned: false
+  identifier: crossbow-bolt-case
+effects: []
+folder: YxlY1lduxLKWDV5n
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569315399
+  modifiedTime: 1736569329354
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: AJj0TnOWhYSkvG8b
+sort: 1000000
+_key: '!items!AJj0TnOWhYSkvG8b'
+

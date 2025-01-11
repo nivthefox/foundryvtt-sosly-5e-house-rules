@@ -1,0 +1,79 @@
+name: Ring Mail
+type: equipment
+img: icons/equipment/chest/breastplate-banded-simple-leather-brown.webp
+system:
+  description:
+    value: >-
+      <p>This armor is leather armor with heavy rings sewn into it. The rings
+      help reinforce the armor against blows from swords and axes. Ring mail is
+      inferior to chain mail, and it's usually worn only by those who can't
+      afford better armor.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 40
+    units: lb
+  price:
+    value: 30
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: 14
+    dex: 0
+    magicalBonus: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: null
+  type:
+    value: heavy
+    baseItem: ringmail
+  unidentified:
+    description: ''
+  container: null
+  properties:
+    - stealthDisadvantage
+  activities: {}
+  attuned: false
+  identifier: ring-mail
+effects: []
+folder: UdZuhsN2KIbVEbP4
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569245261
+  modifiedTime: 1736569245287
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 75LNOFeTUEu6Hsr1
+sort: 200000
+_key: '!items!75LNOFeTUEu6Hsr1'
+

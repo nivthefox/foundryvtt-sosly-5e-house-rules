@@ -1,0 +1,52 @@
+name: Small Knife
+type: loot
+img: icons/weapons/daggers/knife-green.webp
+system:
+  description:
+    value: >-
+      <p>A blunt knife used by the scholarly to open letters and
+      correspondence.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 0.5
+    units: lb
+  price:
+    value: 5
+    denomination: sp
+  rarity: ''
+  identified: true
+  type:
+    value: ''
+    subtype: ''
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  identifier: small-knife
+effects: []
+folder: 3cicKh579e98xgvc
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569522658
+  modifiedTime: 1736569641641
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: nNub0FLdj4ynBmB4
+sort: 1100000
+_key: '!items!nNub0FLdj4ynBmB4'
+

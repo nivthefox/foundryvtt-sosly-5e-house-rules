@@ -1,0 +1,20 @@
+name: Spellcasting Focus
+sorting: a
+folder: null
+type: Item
+_id: xedn1r43VWuEBcli
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  duplicateSource: null
+  compendiumSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569562417
+  modifiedTime: 1736569562515
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!xedn1r43VWuEBcli'
+

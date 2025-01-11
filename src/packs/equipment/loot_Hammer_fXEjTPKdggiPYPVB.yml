@@ -1,0 +1,52 @@
+name: Hammer
+type: loot
+img: icons/tools/hand/hammer-cobbler-steel.webp
+system:
+  description:
+    value: >-
+      <p>A tool with a heavy metal head mounted at the end of its handle, used
+      for jobs such as breaking things and driving in nails. </p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 3
+    units: lb
+  price:
+    value: 1
+    denomination: gp
+  rarity: ''
+  identified: true
+  type:
+    value: ''
+    subtype: ''
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  identifier: hammer
+effects: []
+folder: 3cicKh579e98xgvc
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569470939
+  modifiedTime: 1736569641641
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: fXEjTPKdggiPYPVB
+sort: 2800000
+_key: '!items!fXEjTPKdggiPYPVB'
+

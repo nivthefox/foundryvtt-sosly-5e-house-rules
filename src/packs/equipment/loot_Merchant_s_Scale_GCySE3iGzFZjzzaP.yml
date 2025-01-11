@@ -1,0 +1,54 @@
+name: Merchant's Scale
+type: loot
+img: icons/tools/hand/scale-balances-merchant-brown.webp
+system:
+  description:
+    value: >-
+      <p>A scale includes a small balance, pans, and a suitable assortment of
+      weights up to 2 pounds. With it, you can measure the exact weight of small
+      objects, such as raw precious metals or trade goods, to help determine
+      their worth.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 3
+    units: lb
+  price:
+    value: 5
+    denomination: gp
+  rarity: ''
+  identified: true
+  type:
+    value: ''
+    subtype: ''
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  identifier: merchants-scale
+effects: []
+folder: 3cicKh579e98xgvc
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569482072
+  modifiedTime: 1736569641641
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: GCySE3iGzFZjzzaP
+sort: 3500000
+_key: '!items!GCySE3iGzFZjzzaP'
+

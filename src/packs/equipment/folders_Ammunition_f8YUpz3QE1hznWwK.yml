@@ -1,0 +1,20 @@
+name: Ammunition
+sorting: a
+folder: null
+type: Item
+_id: f8YUpz3QE1hznWwK
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736569179244
+  modifiedTime: 1736569179244
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!f8YUpz3QE1hznWwK'
+
