@@ -102,11 +102,13 @@ function mixinPlayerCharacterSheet(Actor5e) {
         async _preUpdate(changed, options, userId) {
             await super._preUpdate(changed, options, userId);
 
-            if (!this.system.attributes.hp.max || !changed.system?.attributes?.hp?.max) {
+            if (this.type === 'vehicle' || this.type === 'group') {
                 return;
             }
 
-            debugger;
+            if (!this.system.attributes.hp.max || !changed.system?.attributes?.hp?.max) {
+                return;
+            }
 
             if (changed.system?.attributes?.hp) {
                 await this.#handleImperiled(changed, options, userId);
