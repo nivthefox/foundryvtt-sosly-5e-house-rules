@@ -1,4 +1,4 @@
-name: Works in Progress
+name: Custom Classes
 sorting: a
 folder: null
 type: Item
@@ -14,7 +14,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588219937
-  modifiedTime: 1736588219937
+  modifiedTime: 1736588451263
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!folders!zvPnD9kpxxgQHEF2'
 
