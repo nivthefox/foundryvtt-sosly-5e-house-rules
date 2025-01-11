@@ -1,0 +1,53 @@
+name: Hunter's Prey
+type: feat
+system:
+  description:
+    value: >-
+      <p>You gain one of the following feature options of your choice. Whenever
+      you finish a Short or Long Rest, you can replace the chosen option with
+      the other
+      one.</p><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.classes.PCdslFPNfXADSGyX]{Colossus
+      Slayer}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.classes.4aoY6N0tdxCj4cmc]{Horde
+      Breaker}</p></li></ul>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Hunter 3
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: hunters-prey
+flags: {}
+img: icons/magic/acid/dissolve-bone-skull.webp
+effects: []
+folder: j1LK0A271GjToc2m
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.BzdpnAADoSyBcSbI
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590965040
+  modifiedTime: 1736591038944
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: BzdpnAADoSyBcSbI
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!BzdpnAADoSyBcSbI'
+

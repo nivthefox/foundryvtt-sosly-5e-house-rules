@@ -1,0 +1,118 @@
+folder: XthCG1oiiZLrg2Ld
+name: College of Ardent Empathy
+type: subclass
+img: icons/skills/social/diplomacy-peace-alliance.webp
+system:
+  description:
+    value: >-
+      <p><em>Harmonize the Heart and Mind</em></p><p>Bards of the College of
+      Ardent Empathy understand that emotions are more than fleeting
+      feelings—they are a primal force that can be harnessed and shaped. These
+      bards learn to project their will and emotional state as tangible psychic
+      energy, forming protective mantles that bolster their allies. Unlike their
+      more traditional peers who inspire through song and story, Ardent bards
+      draw upon the raw power of joy, clarity, and determination, turning these
+      emotions into a resonating field of psionic energy that strengthens those
+      around them.</p><p></p>
+    chat: ''
+  identifier: ardent
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: hcLCuIORjCLxdWKq
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:mar
+          - armor:med
+          - armor:shl
+        choices: []
+      value:
+        chosen: []
+      level: 3
+      title: ''
+      hint: ''
+    - _id: l4h2JBr4ISZA5BCD
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.MBR1Phlz6BIRfbWd
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.yr4qeHlZiZTK7DmD
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.dgPIQBtQ6f3EvVUQ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Features
+      hint: ''
+    - _id: 4xWVKcMmHbohooLi
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.eSVNwx3UmUDqXqEi
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.UNAp4LCk04Q28vvj
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Features
+      hint: ''
+    - _id: ZmVQzUhNGuHaQN6u
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.8H6ctWgPLiB9uIiE
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Features
+      hint: ''
+    - _id: N6kpREw1Nl2sJFri
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '3':
+            value: '15'
+          '14':
+            value: '30'
+      value: {}
+      title: Mantle
+      hint: ''
+  classIdentifier: bard
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.D8uz5qHaS4xkIGPj
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590669262
+  modifiedTime: 1736590784479
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: D8uz5qHaS4xkIGPj
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!D8uz5qHaS4xkIGPj'
+

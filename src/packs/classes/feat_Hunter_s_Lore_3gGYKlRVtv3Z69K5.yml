@@ -1,0 +1,48 @@
+folder: j1LK0A271GjToc2m
+name: Hunter's Lore
+type: feat
+img: icons/sundries/scrolls/scroll-runed-brown-green.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can call on the forces of nature to reveal certain strengths and
+      weaknesses of your prey. While a creature is marked by your Hunter’s Mark,
+      you know whether that creature has any Immunities, Resistances, or
+      Vulnerabilities, and if the creature has any, you know what they
+      are.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Hunter 3
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.3gGYKlRVtv3Z69K5
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590965040
+  modifiedTime: 1736590965040
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 3gGYKlRVtv3Z69K5
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!3gGYKlRVtv3Z69K5'
+

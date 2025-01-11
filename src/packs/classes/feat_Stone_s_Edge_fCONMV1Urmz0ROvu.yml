@@ -1,0 +1,110 @@
+folder: kKe1Q38V6IBP6kRm
+name: Stone's Edge
+type: feat
+img: icons/magic/earth/barrier-stone-explosion-debris.webp
+system:
+  activities:
+    vnjlS4gN1PUdtnOS:
+      type: damage
+      _id: vnjlS4gN1PUdtnOS
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: You cast a spell that deals damage.
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: creature damaged by the spell
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.stoneborn-sorcerer.stone-edge'
+            number: null
+            denomination: 0
+            bonus: ''
+            types:
+              - force
+            scaling:
+              number: 1
+      name: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Starting at 14th level, your mastery of earth magic allows you to add
+      the force of elemental earth to your spells. When you cast a spell that
+      deals damage, choose one creature damaged by that spell on the round you
+      cast it. That creature takes extra force damage equal to half your
+      sorcerer level. This feature can be used only once per casting of a
+      spell.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+  properties:
+    - mgc
+  requirements: Stoneborn 14th
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.fCONMV1Urmz0ROvu
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591230614
+  modifiedTime: 1736591361291
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: fCONMV1Urmz0ROvu
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!fCONMV1Urmz0ROvu'
+

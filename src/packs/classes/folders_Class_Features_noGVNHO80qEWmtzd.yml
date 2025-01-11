@@ -1,8 +1,10 @@
-name: Bard Features
+name: Class Features
 sorting: a
-folder: noGVNHO80qEWmtzd
+folder: null
 type: Item
+_id: noGVNHO80qEWmtzd
 description: ''
+sort: 300000
 color: null
 flags: {}
 _stats:
@@ -11,10 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736548917671
-  modifiedTime: 1736590492171
+  createdTime: 1736590485101
+  modifiedTime: 1736590488258
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: 6Kk5eK2naIYH5dib
-sort: 100000
-_key: '!folders!6Kk5eK2naIYH5dib'
+_key: '!folders!noGVNHO80qEWmtzd'
 

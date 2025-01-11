@@ -1,0 +1,111 @@
+name: Frenzy
+type: feat
+system:
+  description:
+    value: >-
+      <p>If you use Reckless Attack while your Rage is active, you deal extra
+      damage to the first target you hit on your turn with a Strength-based
+      attack. To determine the extra damage, roll a number of d6s equal to your
+      Rage Damage bonus, and add them together. The damage has the same type as
+      the weapon or Unarmed Strike used for the attack.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: Path of the Berserker 3
+  properties: []
+  activities:
+    R36SdrpZF0NM2rwP:
+      type: damage
+      _id: R36SdrpZF0NM2rwP
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scale.barbarian.rage)d6
+            number: null
+            denomination: 0
+            bonus: ''
+            types: []
+            scaling:
+              number: 1
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: frenzy
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/skills/wounds/anatomy-organ-heart-red.webp
+effects: []
+folder: TXqUY6JnTdiz5QSg
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.LSvOmp59CBXQT98p
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590553950
+  modifiedTime: 1736590553950
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: LSvOmp59CBXQT98p
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!LSvOmp59CBXQT98p'
+

@@ -1,0 +1,49 @@
+folder: uqK3NxAO1eIJ1Rf8
+name: Harmonic Resonance
+type: feat
+img: icons/magic/sonic/projectile-sound-rings-wave.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your Ardent Mantle is now a 30-foot Emanation.</p><p>While a creature
+      in your ardent mantle has temporary hit points, their strikes resonate
+      with emotional energy. When they hit with an attack, they can choose to
+      lose a number of temporary hit points up to your Charisma modifier
+      (minimum 1) to deal additional psychic damage equal to twice the number of
+      temporary hit points lost.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Ardent 14
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.8H6ctWgPLiB9uIiE
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590654658
+  modifiedTime: 1736590654658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 8H6ctWgPLiB9uIiE
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!8H6ctWgPLiB9uIiE'
+

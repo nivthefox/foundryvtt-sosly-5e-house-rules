@@ -1,8 +1,10 @@
-name: Bard Features
+name: Subclasses
 sorting: a
-folder: noGVNHO80qEWmtzd
+folder: null
 type: Item
+_id: IKanCduoB4Oa1v9R
 description: ''
+sort: 0
 color: null
 flags: {}
 _stats:
@@ -11,10 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736548917671
-  modifiedTime: 1736590492171
+  createdTime: 1736590514131
+  modifiedTime: 1736590514131
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: 6Kk5eK2naIYH5dib
-sort: 100000
-_key: '!folders!6Kk5eK2naIYH5dib'
+_key: '!folders!IKanCduoB4Oa1v9R'
 

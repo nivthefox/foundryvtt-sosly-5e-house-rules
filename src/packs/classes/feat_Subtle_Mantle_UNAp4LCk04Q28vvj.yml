@@ -1,0 +1,176 @@
+name: Subtle Mantle
+type: feat
+system:
+  description:
+    value: >-
+      <p>You can now channel more subtle emotions through your Ardent
+      Mantle.</p><p><em><strong>Confidence.</strong></em> When you or an ally in
+      your aura makes an attack roll, you add your Bardic Inspiration die to the
+      attack roll.</p><p><em><strong>Doubt.</strong></em> When a creature within
+      your aura makes a saving throw, you can subtract your Bardic Inspiration
+      die from the roll.</p><p><em><strong>Relief.</strong></em> When you or an
+      ally in your aura rolls to regain hit points, you can add your Bardic
+      Inspiration die to the amount healed.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Ardent 6
+  properties: []
+  activities:
+    EAigHKzHFtDTpBFC:
+      type: utility
+      _id: EAigHKzHFtDTpBFC
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.world.classes.Item.DD4eOIDCHExBQcpG
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: spec
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 1@scale.bard.inspiration.die
+        name: ''
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: aura-of-protection
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/air/wind-vortex-swirl-red.webp
+effects:
+  - _id: AyZpyu9HkkZ1r2mj
+    flags:
+      ActiveAuras:
+        aura: Allies
+        radius: '@scale.ardent.mantle'
+        isAura: true
+        inactive: false
+        hidden: false
+        ignoreSelf: false
+        height: false
+        alignment: ''
+        type: ''
+        save: ''
+        savedc: null
+        hostile: false
+        onlyOnce: false
+        time: None
+        displayTemp: true
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+      dae:
+        stackable: noneName
+        specialDuration:
+          - None
+        transfer: true
+        macroRepeat: none
+        durationExpression: ''
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        showIcon: true
+        disableCondition: ''
+      core:
+        overlay: false
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.world.subclasses.Item.MBR1Phlz6BIRfbWd
+    tint: '#ffffff'
+    transfer: true
+    name: Ardent Mantle
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: >-
+        Compendium.ActiveAuras.aa-aura-items.Item.wRjkVOup7yqk2CKU.ActiveEffect.YA6d5MuIdX6Bkc8O
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    img: icons/magic/air/wind-vortex-swirl-blue-purple.webp
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!UNAp4LCk04Q28vvj.AyZpyu9HkkZ1r2mj'
+folder: uqK3NxAO1eIJ1Rf8
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.UNAp4LCk04Q28vvj
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590654658
+  modifiedTime: 1736590654658
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: UNAp4LCk04Q28vvj
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!UNAp4LCk04Q28vvj'
+

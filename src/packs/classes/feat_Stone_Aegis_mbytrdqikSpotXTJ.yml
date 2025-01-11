@@ -1,0 +1,196 @@
+folder: kKe1Q38V6IBP6kRm
+name: Stone Aegis
+type: feat
+img: icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp
+system:
+  activities:
+    rclLtGg4JFIWdwE9:
+      type: utility
+      _id: rclLtGg4JFIWdwE9
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: cVTwkOFUwrQVkSs1
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Stone Aegis
+      img: icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp
+    vG7H6Hnmr0MBHpl3:
+      type: utility
+      _id: vG7H6Hnmr0MBHpl3
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: >-
+          A creature you can see within 60 feet of you hits the target you
+          protected with your Stone Aegis.
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: space
+          special: within 5 feet of the attacker
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: Extra Damage
+        formula: 1d10
+      name: 'Stone Aegis: Teleport'
+      img: icons/magic/movement/trail-streak-zigzag-yellow.webp
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Starting at 6th level, your command of earth magic grows stronger,
+      allowing you to harness it for your allies’ protection.</p><p>As a bonus
+      action, you can grant an aegis to one allied creature you can see within
+      60 feet of you. The aegis is a dim, gray aura of earth magic that protects
+      the target. Any bludgeoning, piercing, or slashing damage the target takes
+      is reduced by 2 + your sorcerer level divided by 4. This effect lasts for
+      1 minute, until you use it again, or until you are incapacitated.</p><p>In
+      addition, when a creature you can see within 60 feet of you hits the
+      protected target with a melee attack, you can use your reaction to
+      teleport to an unoccupied space you can see within 5 feet of the attacker.
+      You can teleport only if you and the attacker are on the same surface. You
+      can then make one melee weapon attack against the attacker. If that attack
+      hits, it deals an extra 1d10 force damage. This extra damage increases to
+      2d10 at 11th level and 3d10 at 17th level.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: Stoneborn 6th
+effects:
+  - name: Stone Aegis
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp
+    origin: Compendium.world.subclasses.Item.mbytrdqikSpotXTJ
+    transfer: false
+    _id: cVTwkOFUwrQVkSs1
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Bludgeoning, piercing, or slashing damage you take is reduced by 2 +
+      the Stoneborn's sorcerer level divided by 4.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!mbytrdqikSpotXTJ.cVTwkOFUwrQVkSs1'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.mbytrdqikSpotXTJ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591230614
+  modifiedTime: 1736591370958
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: mbytrdqikSpotXTJ
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!mbytrdqikSpotXTJ'
+

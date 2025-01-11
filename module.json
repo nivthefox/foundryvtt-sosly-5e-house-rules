@@ -30,6 +30,11 @@
         "id": "dnd5e-spellpoints",
         "type": "module",
         "compatibility": {}
+      },
+      {
+        "id": "ActiveAuras",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },
@@ -103,11 +108,11 @@
       "label": "Species",
       "path": "packs/species",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     }
   ],
   "documentTypes": {

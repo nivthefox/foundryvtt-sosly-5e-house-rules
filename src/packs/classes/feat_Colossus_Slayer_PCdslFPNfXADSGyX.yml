@@ -1,0 +1,118 @@
+name: Colossus Slayer
+type: feat
+system:
+  description:
+    value: >-
+      <p>Your tenacity can wear down even the most resilient foes. When you hit
+      a creature with a weapon, the weapon deals an extra 1d8 damage to the
+      target if it’s missing any of its Hit Points. You can deal this extra
+      damage only once per turn.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: huntersPrey
+  requirements: Hunter 3
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: special
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            types: []
+            scaling:
+              number: 1
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: colossus-slayer
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+img: icons/creatures/magical/construct-iron-stomping-yellow.webp
+effects: []
+folder: j1LK0A271GjToc2m
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.PCdslFPNfXADSGyX
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590965040
+  modifiedTime: 1736590965040
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: PCdslFPNfXADSGyX
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!PCdslFPNfXADSGyX'
+

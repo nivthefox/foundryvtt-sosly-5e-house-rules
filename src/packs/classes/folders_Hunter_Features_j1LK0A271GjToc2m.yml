@@ -1,6 +1,6 @@
-name: Bard Features
+name: Hunter Features
 sorting: a
-folder: noGVNHO80qEWmtzd
+folder: CoC02wk51g9flcd8
 type: Item
 description: ''
 color: null
@@ -11,10 +11,10 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736548917671
-  modifiedTime: 1736590492171
+  createdTime: null
+  modifiedTime: 1736590965064
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: 6Kk5eK2naIYH5dib
+_id: j1LK0A271GjToc2m
 sort: 100000
-_key: '!folders!6Kk5eK2naIYH5dib'
+_key: '!folders!j1LK0A271GjToc2m'
 

@@ -1,0 +1,50 @@
+name: Bonus Proficiencies
+type: feat
+system:
+  description:
+    value: >-
+      <p>You gain martial weapon proficiency, and training with Medium armor and
+      Shields.</p><p>In addition, you can use a Simple or Martial weapon as a
+      Spellcasting Focus to cast spells from your Bard spell list.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Ardent Empathy 3
+  properties: []
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  identifier: bonus-proficiency
+flags: {}
+img: icons/equipment/chest/breastplate-layered-steel.webp
+effects: []
+folder: uqK3NxAO1eIJ1Rf8
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.dgPIQBtQ6f3EvVUQ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736590654658
+  modifiedTime: 1736590757181
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: dgPIQBtQ6f3EvVUQ
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!dgPIQBtQ6f3EvVUQ'
+

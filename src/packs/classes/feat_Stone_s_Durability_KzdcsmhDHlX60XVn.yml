@@ -1,0 +1,193 @@
+folder: kKe1Q38V6IBP6kRm
+name: Stone's Durability
+type: feat
+img: icons/magic/defensive/armor-stone-skin.webp
+system:
+  activities:
+    lXOBjzi8491w5dm5:
+      type: utility
+      _id: lXOBjzi8491w5dm5
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: You harden your skin.
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: PG0UBTHWRmXhDHtZ
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>At 1st level, your connection to stone gives you extra fortitude. Your
+      hit point maximum increases by 1, and it increases by 1 again whenever you
+      gain a level in this class.</p><p>As an action, you can gain a base AC of
+      13 + your Constitution modifier if you aren’t wearing armor, and your skin
+      assumes a stony appearance. This effect lasts until you end it as a bonus
+      action, you are incapacitated, or you don armor other than a
+      shield.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+  properties: []
+  requirements: Stoneborn 1st
+effects:
+  - name: Stone's Durability (AC)
+    img: icons/magic/defensive/armor-stone-skin.webp
+    origin: Compendium.world.subclasses.Item.KzdcsmhDHlX60XVn
+    transfer: true
+    _id: PG0UBTHWRmXhDHtZ
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.formula
+        mode: 5
+        value: 13 + @abilities.con.mod
+        priority: 50
+      - key: system.attributes.ac.calc
+        mode: 5
+        value: custom
+        priority: 50
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!KzdcsmhDHlX60XVn.PG0UBTHWRmXhDHtZ'
+  - name: Stone's Durability (HP)
+    img: icons/magic/defensive/armor-stone-skin.webp
+    origin: Compendium.world.subclasses.Item.KzdcsmhDHlX60XVn
+    _id: zwbZ7VQ5NcNWSx4t
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.hp.bonuses.overall
+        mode: 2
+        value: '@classes.sorcerer.levels'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!KzdcsmhDHlX60XVn.zwbZ7VQ5NcNWSx4t'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.KzdcsmhDHlX60XVn
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591230614
+  modifiedTime: 1736591357028
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: KzdcsmhDHlX60XVn
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 0
+_key: '!items!KzdcsmhDHlX60XVn'
+
