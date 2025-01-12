@@ -1,0 +1,153 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You remove poison and rot from nonmagical food and drink in a
+      5-foot-radius Sphere centered on a point within range.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: sphere
+      size: '5'
+      contiguous: false
+      count: ''
+  range:
+    value: '10'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: purify-food-and-drink
+  properties:
+    - vocal
+    - somatic
+    - ritual
+name: Purify Food and Drink
+flags:
+  ddbimporter:
+    id: 138619
+    definitionId: 2223
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Purify Food and Drink
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 270
+        sourceType: 1
+    tags:
+      - Utility
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.C7T1yHoxSaOwE6HE
+    hash: 44151f2803bf53fd10715f8e3d6a22305a66e881
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - ritual
+img: icons/magic/light/explosion-star-small-teal.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736658803964
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: UWz4RNHeM8hickU2
+sort: 2000000
+_key: '!items!UWz4RNHeM8hickU2'
+

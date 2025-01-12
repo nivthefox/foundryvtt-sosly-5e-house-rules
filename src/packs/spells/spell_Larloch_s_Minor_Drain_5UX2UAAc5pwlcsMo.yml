@@ -1,0 +1,175 @@
+name: Larloch's Minor Drain
+type: spell
+img: modules/sosly-5e-house-rules/public/spells/Larlochs-minor-drain.webp
+system:
+  description:
+    value: >-
+      <p>One creature you can see within range makes a Constitution saving
+      throw. On a failed save, the target takes 1d12 necrotic damage and you can
+      spend and roll one of your unspent Hit Dice. You regain a number of hit
+      points equal to the roll. If any of this healing would be wasted, you gain
+      temporary hit points for that amount up to a maximum equal to the amount
+      of damage done by this spell.</p><p><strong>At Higher Levels.</strong>
+      When you cast this spell using a spell slot of 2nd level or higher, the
+      target takes an additional 1d12 necrotic damage for each slot level above
+      1st.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: 1
+            denomination: 12
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: larlochs-minor-drain
+  properties:
+    - vocal
+    - somatic
+effects: []
+flags:
+  scene-packer:
+    hash: 1f7e9d3264d62dba0cf55c84bf4abaf9d76291ca
+    sourceId: Compendium.sosly.spells.Item.kKjq0gzFDbdi8GvQ
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickOther:
+      context: ''
+    quickSave:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  journal-backlinks:
+    references: []
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  core: {}
+  cf:
+    id: temp_9ykd9r1nsxt
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736658264776
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 5UX2UAAc5pwlcsMo
+sort: 2600000
+_key: '!items!5UX2UAAc5pwlcsMo'
+

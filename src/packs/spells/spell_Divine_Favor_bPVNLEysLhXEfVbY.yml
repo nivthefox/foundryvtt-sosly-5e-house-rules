@@ -1,0 +1,261 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Until the spell ends, your attacks with weapons deal an extra 1d4
+      Radiant damage on a hit.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: self
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    ZA4lbQs3HpruPZax:
+      type: utility
+      _id: ZA4lbQs3HpruPZax
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: sN96JgvXZrDt3gBw
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects:
+        - sN96JgvXZrDt3gBw
+  identifier: divine-favor
+  properties:
+    - vocal
+    - somatic
+name: Divine Favor
+flags:
+  ddbimporter:
+    id: 136645
+    definitionId: 2074
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Divine Favor
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 234
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.GaWz63gRaDb9NukA
+    hash: 86ff3ccab273810112b2691ff2db453b0bdbc45e
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/dagger-rune-enchant-flame-blue-yellow.webp
+effects:
+  - name: Divine Favor
+    origin: Compendium.ddb-data.ddb-spells.Item.lTM2KtGmn2CHtjeX
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: sN96JgvXZrDt3gBw
+    changes:
+      - key: system.bonuses.mwak.damage
+        mode: 2
+        value: 1d4[radiant]
+        priority: 20
+      - key: system.bonuses.rwak.damage
+        mode: 2
+        value: 1d4[radiant]
+        priority: 20
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+        statuses: []
+      core:
+        overlay: false
+    tint: '#ffffff'
+    img: icons/magic/fire/dagger-rune-enchant-flame-blue-yellow.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: 1736652577863
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!bPVNLEysLhXEfVbY.sN96JgvXZrDt3gBw'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736652541299
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: bPVNLEysLhXEfVbY
+sort: 4900000
+_key: '!items!bPVNLEysLhXEfVbY'
+

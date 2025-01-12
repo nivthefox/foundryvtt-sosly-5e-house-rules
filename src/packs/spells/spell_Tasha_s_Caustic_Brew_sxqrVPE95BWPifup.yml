@@ -1,0 +1,279 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A stream of acid emanates from you in a line 30 feet long and 5 feet
+      wide in a direction you choose. Each creature in the line must succeed on
+      a Dexterity saving throw or be covered in acid for the spell’s duration or
+      until a creature uses its action to scrape or wash the acid off itself or
+      another creature. A creature covered in the acid takes 2d4 acid damage at
+      start of each of its turns.</p>
+
+      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell
+      using a spell slot of 2nd level or higher, the damage increases by 2d4 for
+      each slot level above 1st.</p>
+    chat: ''
+  source:
+    custom: Tasha’s Cauldron of Everything pg 115
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: line
+      size: '30'
+      contiguous: false
+      width: ''
+      count: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: a bit of rotten food
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: RwLzSnGjieBvvpZe
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+    xtchtrJp018mIuyk:
+      type: damage
+      name: Ongoing Damage
+      _id: xtchtrJp018mIuyk
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 4
+            bonus: ''
+            types:
+              - acid
+            scaling:
+              mode: whole
+              number: 2
+              formula: ''
+      img: ''
+      appliedEffects: []
+  identifier: tashas-caustic-brew
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Tasha's Caustic Brew
+flags:
+  ddbimporter:
+    id: 5843280
+    definitionId: 719953
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Tasha's Caustic Brew
+    sources:
+      - sourceId: 67
+        pageNumber: 115
+        sourceType: 1
+    tags: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.723rlto08JBDmBW7
+    hash: 90c52a7f9c5839ae03d7ac7af7aa8ce3a9d0a575
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/acid/projectile-glowing-bubbles.webp
+effects:
+  - name: Tasha's Caustic Brew
+    img: icons/magic/acid/projectile-glowing-bubbles.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.sxqrVPE95BWPifup
+    transfer: false
+    _id: RwLzSnGjieBvvpZe
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - bleeding
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736660027954
+      modifiedTime: 1736660055594
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!sxqrVPE95BWPifup.RwLzSnGjieBvvpZe'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736659964343
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: sxqrVPE95BWPifup
+sort: 500000
+_key: '!items!sxqrVPE95BWPifup'
+

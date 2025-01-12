@@ -1,0 +1,153 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>For the duration, you sense the location of any Aberration, Celestial,
+      Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also
+      sense whether the Hallow spell is active there and, if so,
+      where.</p><p>The spell is blocked by 1 foot of stone, dirt, or wood; 1
+      inch of metal; or a thin sheet of lead.</p><p></p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: sphere
+      size: '30'
+      contiguous: false
+      count: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: div
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    zs4i6gbv52oIUJGH:
+      type: utility
+      _id: zs4i6gbv52oIUJGH
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  identifier: detect-evil-and-good
+  properties:
+    - vocal
+    - somatic
+    - concentration
+name: Detect Evil and Good
+flags:
+  ddbimporter:
+    id: 136555
+    definitionId: 2064
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Detect Evil and Good
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 231
+        sourceType: 1
+    tags:
+      - Detection
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.dq2LnPIoymNKIRR7
+    hash: f2c314e950d09b064b6faf5a4e974f215af036e9
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/air/air-burst-spiral-blue-gray.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736651788731
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 0jpTW2SjCc2fICn6
+sort: 6100000
+_key: '!items!0jpTW2SjCc2fICn6'
+

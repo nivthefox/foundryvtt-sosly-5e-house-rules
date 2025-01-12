@@ -1,7 +1,7 @@
-name: Primalist
+name: Conduit
 type: class
 _id: 38LZXsaBWZX2yCBI
-img: modules/sosly-5e-house-rules/public/classes/primal-sorcerer.webp
+img: modules/sosly-5e-house-rules/public/classes/conduit.webp
 system:
   description:
     value: >-
@@ -9,7 +9,7 @@ system:
       data-colwidth="225"><p><strong>Primary
       Ability</strong></p></td><td><p>Charisma</p></td></tr><tr><td
       data-colwidth="225"><p><strong>Hit Point Die</strong></p></td><td><p>D6
-      per Primal Sorcerer level</p></td></tr><tr><td
+      per Conduit level</p></td></tr><tr><td
       data-colwidth="225"><p><strong>Saving Throw
       Proficiencies</strong></p></td><td><p>Constitution and
       Charisma</p></td></tr><tr><td data-colwidth="225"><p><strong>Skill
@@ -21,31 +21,30 @@ system:
       Training</strong></p></td><td><p>None</p></td></tr><tr><td
       data-colwidth="225"><p><strong>Starting
       Equipment</strong></p></td><td><p><em>Choose A or B: </em>(A) Spear, 2
-      Daggers, Arcane Focus (Crystal), Dungeoneer's Pack, and 28 GP; or (B) 50
-      GP</p></td></tr></tbody></table><p>Sorcerers wield innate magic that burns
-      through their very being. Some Sorcerers can't name the origin of their
-      power, while others trace it to strange events in their personal or family
-      history. The blessing of a dragon or a dryad at a baby's birth or the
-      strike of lightning from a clear sky might spark a Sorcerer's gift. So too
-      might the gift of a deity, exposure to the strange magic of another plane
-      of existence, or a glimpse into the inner workings of reality. Whatever
-      the origin, the result is an indelible mark on the Sorcerer, a churning
-      magic that writhes beneath their skin, yearning to be
-      unleashed.</p><p>Sorcerers don't learn magic; the raw, roiling power of
-      magic is part of them. Each spell they cast sends magic coursing through
-      their body, straining flesh and bone as they channel powers beyond mortal
-      limits. The essential art of a Sorcerer is learning to endure this strain,
-      to push themselves further without being broken by their own power. As
-      Sorcerers master their innate magic, they learn to bend rather than break,
-      developing techniques that let them channel ever greater
-      powers.</p><p>Sorcerers are rare, and those who survive to master their
-      gift rarer still. Some family lines produce exactly one Sorcerer in every
-      generation, but most of the time, the talents of sorcery appear as a
-      fluke. People who have this magical power soon discover that it doesn't
-      like to stay quiet. A Sorcerer's magic demands to be wielded, no matter
-      the cost to its bearer.</p>
+      Daggers, Arcane Focus (Wand), Dungeoneer's Pack, and 28 GP; or (B) 50
+      GP</p></td></tr></tbody></table><p>Magic flows through a Conduit's very
+      being. Some Conduits can't name the origin of their power, while others
+      trace it to strange events in their personal or family history. The
+      blessing of a dragon or a dryad at a baby's birth or the strike of
+      lightning from a clear sky might spark a Conduit's gift. So too might the
+      gift of a deity, exposure to the strange magic of another plane of
+      existence, or a glimpse into the inner workings of reality. Whatever the
+      origin, the result is an indelible mark on the Conduit, raw magic that
+      writhes beneath their skin, yearning to be unleashed.</p><p>Conduits don't
+      learn magic; they embody it. Each spell they cast sends magic coursing
+      through their body, straining flesh and bone as they channel powers beyond
+      mortal limits. The essential art of a Conduit is learning to endure this
+      strain, to push themselves further without being broken by their own
+      power. As Conduits master their gift, they learn to bend rather than
+      break, developing techniques that let them channel ever greater
+      powers.</p><p>Conduits are rare, and those who survive to master their
+      gift rarer still. Some family lines produce exactly one Conduit in every
+      generation, but most of the time, this talent appears as a fluke. People
+      who possess this power soon discover that it doesn't like to stay quiet. A
+      Conduit's magic demands to flow, no matter the cost to its
+      bearer.</p><p></p>
     chat: ''
-  identifier: sorcerer
+  identifier: conduit
   source:
     revision: 1
     rules: '2024'
@@ -298,7 +297,7 @@ system:
       configuration: {}
       value: {}
       level: 1
-      title: Sorcerous Origin
+      title: Powersource
       hint: ''
     - _id: Ubbj9pSdjbyOAhHL
       type: ScaleValue
@@ -372,7 +371,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736585585297
-  modifiedTime: 1736588225317
+  modifiedTime: 1736654723577
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!38LZXsaBWZX2yCBI'
 

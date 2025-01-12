@@ -1,0 +1,243 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>An imperceptible barrier of magical force protects you. Until the start
+      of your next turn, you have a +5 bonus to AC, including against the
+      triggering attack, and you take no damage from
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.XxwM155Yshp18AsA]{Magic
+      Missile}.</p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: reaction
+    condition: >-
+      which you take when you are hit by an attack or targeted by the magic
+      missile spell
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      type: self
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 1OidBsvdx0jOGdZ8
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: shield
+  properties:
+    - vocal
+    - somatic
+name: Shield
+flags:
+  ddbimporter:
+    id: 138701
+    definitionId: 2247
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Shield
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 275
+        sourceType: 1
+    tags:
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.ncMSYHBFxeOugJ35
+    hash: 77b81fe23197ab1c1c8f2ed09e68da59d1f0c7b8
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  journal-backlinks:
+    references: []
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
+effects:
+  - name: Shield
+    origin: Compendium.sosly.spells.Item.mmYuLYPA9DaxdLMG
+    duration:
+      rounds: null
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: 1OidBsvdx0jOGdZ8
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '5'
+        priority: 20
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: false
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnStartSource
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!7mTmqqdtObLVct2s.1OidBsvdx0jOGdZ8'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736659204746
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 7mTmqqdtObLVct2s
+sort: 1200000
+_key: '!items!7mTmqqdtObLVct2s'
+

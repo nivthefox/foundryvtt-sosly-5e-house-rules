@@ -1,0 +1,165 @@
+name: Amaneusis
+type: spell
+img: icons/sundries/scrolls/scroll-bound-green.webp
+system:
+  description:
+    value: >-
+      <p>You trace your finger along each character or glyph on a source (a
+      book, scroll, tablet, or sign) containing up to 250 words of text, and
+      cause it to appear onto a specially prepared parchment.</p><p>If you use
+      this spell to copy spells from a spellbook or to create a duplicate of a
+      spell scroll, you must also supply the special inks and materials that
+      would be needed to create those normally.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: object
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 1
+  school: evo
+  materials:
+    value: >-
+      A specially prepared spell scroll worth at least 10 gp, which the spell
+      consumes.
+    consumed: true
+    cost: 10
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    JtrAYu9UFZaEGgpf:
+      type: utility
+      _id: JtrAYu9UFZaEGgpf
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  identifier: amaneusis
+  properties:
+    - somatic
+    - material
+    - ritual
+effects: []
+flags:
+  tidy5e-sheet:
+    gender: ''
+    age: ''
+    height: ''
+    weight: ''
+    eyes: ''
+    skin: ''
+    hair: ''
+    notes:
+      value: ''
+    notes1:
+      name: ''
+      value: ''
+    notes2:
+      name: ''
+      value: ''
+    notes3:
+      name: ''
+      value: ''
+    notes4:
+      name: ''
+      value: ''
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  core: {}
+  cf:
+    id: temp_45ok56gs3h8
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.O1AYPiaFIlTg2tua
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - material
+      - ritual
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736645985054
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 4th83KV4A8V3P3mw
+sort: 7800000
+_key: '!items!4th83KV4A8V3P3mw'
+

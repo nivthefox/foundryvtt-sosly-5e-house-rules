@@ -1,0 +1,226 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Target a Beast that you can see within range. The target must succeed
+      on a Wisdom saving throw or have the Charmed condition for the duration.
+      If you or one of your allies deals damage to the target, the spells
+      ends.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em> You
+      can target one additional Beast for each spell slot level above
+      1.</p><p></p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: day
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: enc
+  materials:
+    value: a morsel of food
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: niU4QbbFQXg7B5n8
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: none
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: animal-friendship
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Animal Friendship
+flags:
+  ddbimporter:
+    id: 136033
+    definitionId: 1993
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Animal Friendship
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 212
+        sourceType: 1
+    tags:
+      - Control
+      - Social
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.WHwA6F5vP5LarcNn
+    hash: c5aba2297461a36dfb2220388641d2542cc0595b
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/nature/wolf-paw-glow-teal-blue.webp
+effects:
+  - name: Animal Friendship
+    img: icons/magic/nature/wolf-paw-glow-teal-blue.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.Mk5ukPAOrTa8Jw2i
+    transfer: false
+    _id: niU4QbbFQXg7B5n8
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - charmed
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736646517197
+      modifiedTime: 1736646528878
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!Mk5ukPAOrTa8Jw2i.niU4QbbFQXg7B5n8'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736646426145
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: Mk5ukPAOrTa8Jw2i
+sort: 7900000
+_key: '!items!Mk5ukPAOrTa8Jw2i'
+

@@ -1,0 +1,299 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The target takes an extra 1d6 Necrotic damage from the attack, and it
+      must succeed on a Wisdom saving throw or have the Frightened condition
+      until the spell ends. At the end of each of its turns, the Frightened
+      target repeats the save, ending the spell on itself on a
+      success.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em>
+      The damage increases by 1d6 for each spell slot level above 1.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: >-
+      which you take immediately after hitting a creature with a melee weapon or
+      an unarmed strike.
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      choice: false
+      count: ''
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    jBs8YXTDrwNvCikT:
+      type: damage
+      _id: jBs8YXTDrwNvCikT
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            scaling:
+              mode: whole
+              number: 1
+      name: ''
+      img: ''
+      appliedEffects: []
+    Nctce2Bqzc6aCKhj:
+      type: save
+      _id: Nctce2Bqzc6aCKhj
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: yaBr6k4hd7CC9xqk
+          onSave: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: none
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: wrathful-smite
+  properties:
+    - vocal
+name: Wrathful Smite
+flags:
+  ddbimporter:
+    id: 138957
+    definitionId: 2324
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Wrathful Smite
+    sources:
+      - sourceId: 2
+        pageNumber: 289
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.pslZnAFKTrlhp9iv
+    hash: 3e53888d0dfdc80c11002875a1ce720921dd479d
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/dagger-rune-enchant-flame-purple-orange.webp
+effects:
+  - name: Wrathful Smite
+    img: icons/magic/fire/dagger-rune-enchant-flame-purple-orange.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.Xc3t3WvHwBzplLJ3
+    transfer: false
+    _id: yaBr6k4hd7CC9xqk
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - frightened
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736660919259
+      modifiedTime: 1736660933914
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!Xc3t3WvHwBzplLJ3.yaBr6k4hd7CC9xqk'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736660814130
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: Xc3t3WvHwBzplLJ3
+sort: 400000
+_key: '!items!Xc3t3WvHwBzplLJ3'
+

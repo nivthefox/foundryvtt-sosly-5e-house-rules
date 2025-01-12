@@ -1,0 +1,293 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The spell captures some of the incoming energy, lessening its effect on
+      you and storing it for your next melee attack. You have resistance to the
+      triggering damage type until the start of your next turn. Also, the first
+      time you hit with a melee attack on your next turn, the target takes an
+      extra 1d6 damage of the triggering type, and the spell ends.</p>
+
+      <p><strong><em>At Higher Levels.</em></strong> When you cast this spell
+      using a spell slot of 2nd level or higher, the extra damage increases by
+      1d6 for each slot level above 1st.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 150
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    condition: >-
+      which you take when you take acid, cold, fire, lightning, or thunder
+      damage
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    zK0gCmaSC1s8dyjM:
+      type: utility
+      _id: zK0gCmaSC1s8dyjM
+      sort: 100000
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: ktE1xiaMondqSlsI
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: true
+        visible: false
+        name: ''
+        formula: ''
+      name: Resistance
+      img: ''
+      appliedEffects:
+        - ktE1xiaMondqSlsI
+    PxfBHl3iYTMvEZ7h:
+      type: damage
+      _id: PxfBHl3iYTMvEZ7h
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            types: []
+            scaling:
+              mode: whole
+              number: 1
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: absorb-elements
+  properties:
+    - somatic
+name: Absorb Elements
+flags:
+  ddbimporter:
+    id: 137857
+    definitionId: 2368
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Absorb Elements
+    sources:
+      - sourceId: 4
+        pageNumber: 150
+        sourceType: 1
+    tags:
+      - Damage
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.sUg9868kGeaa8xdT
+    hash: 4185901814a76e53b2edd25deb421e0b8bfd6394
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFlavor:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/lightning/orb-ball-purple.webp
+effects:
+  - name: Absorb Elements
+    img: icons/magic/lightning/orb-ball-purple.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.DOaQoZliG3uD4qW8
+    transfer: false
+    _id: ktE1xiaMondqSlsI
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736646109619
+      modifiedTime: 1736646282639
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!DOaQoZliG3uD4qW8.ktE1xiaMondqSlsI'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736646029674
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: DOaQoZliG3uD4qW8
+sort: 8100000
+_key: '!items!DOaQoZliG3uD4qW8'
+

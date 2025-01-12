@@ -1,0 +1,300 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Your strike rings with thunder that is audible within 300 feet of you,
+      and the target takes an extra 2d6 Thunder damage from the attack.
+      Additionally, if the target is a creature, it must succeed on a Strength
+      saving throw or be pushed 10 feet away from you and have the Prone
+      condition.</p><p><em><strong>Using a Higher-Level Spell
+      Slot.</strong></em> The damage increases by 1d6 for each spell slot level
+      above 1.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: >-
+      which you take immediately after hitting a target with a Melee weapon or
+      an Unarmed Strike
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creatureOrObject
+      choice: false
+      count: ''
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    LfaBXKl4s3uIQE3r:
+      type: damage
+      _id: LfaBXKl4s3uIQE3r
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 6
+            bonus: ''
+            types:
+              - thunder
+            scaling:
+              mode: whole
+              number: 1
+      name: ''
+      img: ''
+      appliedEffects: []
+    EmIff91g9dW5tHP9:
+      type: save
+      _id: EmIff91g9dW5tHP9
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: hJ9qKFKXLjrfjVP5
+          onSave: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: none
+      save:
+        ability: []
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: searing-smite
+  properties:
+    - vocal
+name: Thunderous Smite
+flags:
+  ddbimporter:
+    id: 138679
+    definitionId: 2319
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Searing Smite
+    sources:
+      - sourceId: 2
+        pageNumber: 274
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.tWwx5rpLNgGzgLG4
+    hash: bc5f1616402fd5b779d771abf217d22355be9e6a
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+      value: true
+      altValue: true
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/sonic/explosion-impact-shock-wave.webp
+effects:
+  - name: Thunderous Smite
+    img: icons/magic/sonic/explosion-impact-shock-wave.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.W6Xw5qRKIsE60mRd
+    transfer: false
+    _id: hJ9qKFKXLjrfjVP5
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - prone
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736660454167
+      modifiedTime: 1736660458871
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!W6Xw5qRKIsE60mRd.hJ9qKFKXLjrfjVP5'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736660243588
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: W6Xw5qRKIsE60mRd
+sort: 900000
+_key: '!items!W6Xw5qRKIsE60mRd'
+

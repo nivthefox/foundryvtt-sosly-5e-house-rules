@@ -1,0 +1,254 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You try to compel a creature into a duel. One creature that you can see
+      within range makes a Wisdom saving throw. On a failed save, the target has
+      Disadvantage on attack rolls against creatures other than you, and it
+      can’t willingly move to a space that is more than 30 feet away from
+      you.</p><p>The spell ends if you make an attack roll against a creature
+      other than the target, if you cast a spell on an enemy other than the
+      target, if an ally of yours damages the target, or if you end your turn
+      more than 30 feet away from the target.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: enc
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: mN7KsD7EL75tzclv
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: compelled-duel
+  properties:
+    - vocal
+    - concentration
+name: Compelled Duel
+flags:
+  ddbimporter:
+    id: 136243
+    definitionId: 2313
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Compelled Duel
+    sources:
+      - sourceId: 2
+        pageNumber: 224
+        sourceType: 1
+    tags:
+      - Control
+      - Social
+      - Debuff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.eXKxq3WF5BMxs55y
+    hash: e1e671a9aac4ecf2ff70f0fc4c95339cff9ecfb8
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+img: icons/skills/melee/weapons-crossed-swords-white-blue.webp
+effects:
+  - name: Compelled Duel
+    origin: Compendium.sosly.spells.Item.eXKxq3WF5BMxs55y
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: mN7KsD7EL75tzclv
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: false
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+        statuses: []
+      core:
+        overlay: false
+    tint: '#ffffff'
+    img: icons/skills/melee/weapons-crossed-swords-white-blue.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: 1736651578145
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!9E4yNP0lGllyNOEG.mN7KsD7EL75tzclv'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736651521559
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 9E4yNP0lGllyNOEG
+sort: 5900000
+_key: '!items!9E4yNP0lGllyNOEG'
+

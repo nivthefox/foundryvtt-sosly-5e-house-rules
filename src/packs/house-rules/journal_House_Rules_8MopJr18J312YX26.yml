@@ -18,8 +18,10 @@ pages:
         of their change.</p><h2>Content Changes</h2><p>Some spells, feats,
         sublcasses, and other specific forms of content may have changed. Always
         check the Society of Silliness compendia for content which may override
-        the default rules.</p><h2>Changelog</h2><p><strong>3rd December
-        2024.</strong> This document was created.</p>
+        the default rules.</p><h2>Changelog</h2><p><strong>11th January 2024.
+        </strong>Implemented spell changes directly in the associated
+        compendia.</p><p><strong>3rd December 2024.</strong> This document was
+        created.</p>
     video:
       controls: true
       volume: 0.5
@@ -35,8 +37,8 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1736653424198
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.uqU02nnI0FIkMVrv'
   - name: Losing Hit Points
     type: text
@@ -319,14 +321,12 @@ pages:
       format: 1
       content: >-
         <h2>General Spell Changes</h2><p>Because of our
-        @UUID[JournalEntry.1yj85LDANYEdkBEH.JournalEntryPage.9oEuvO7EaoaXfie7]{Resting}
-        rules, some general changes have been made to adjust the duration of
-        longer spells. If your spell has a duration of 10 minutes or longer, use
-        the following table to determine its new duration. Spells with a
-        duration greater than 1 day, and spells which can be cast as a ritual,
-        do not benefit from these duration changes.</p><p>If a spell requires
-        concentration, you cannot concentrate on it while you are
-        sleeping.</p><table style="width:25em"><thead><tr><th><p>Original
+        @UUID[.YPEh6g1kO6DWVGSR]{Resting} rules, some general changes have been
+        made to adjust the duration of longer spells. Most spells with a
+        duration over 10 minutes have been adjusted according to the following
+        table.</p><p>If a spell requires concentration, you cannot concentrate
+        on it while you are incapacitated.</p><table
+        style="width:25em"><thead><tr><th><p>Original
         Duration</p></th><th><p>New
         Duration</p></th></tr></thead><tbody><tr><td><p>10
         minutes</p></td><td><p>1 hour</p></td></tr><tr><td><p>1
@@ -337,11 +337,9 @@ pages:
         original form. These changes are reflected in the item cards found under
         the Society of Silliness Spells
         compendium:</p><h3>Cantrips</h3><ul><li><p><em>guidance</em> is a
-        reaction</p></li></ul><h3>1st-level</h3><ul><li><p><em>cure wounds</em>
-        heals 2d8 + Mod</p></li><li><p><em>goodberry</em> heals 1 hit die, but
-        only generates Ability Mod berries</p></li><li><p><em>healing word</em>
-        heals 2d4 +
-        Mod</p></li></ul><h3>2nd-level</h3><ul><li><p><em>blindness/deafness</em>
+        reaction</p></li></ul><h3>1st-level</h3><ul><li><p><em>goodberry</em>
+        heals 1 hit die, but only generates Ability Mod
+        berries</p></li></ul><h3>2nd-level</h3><ul><li><p><em>blindness/deafness</em>
         lasts until dispelled.</p></li><li><p><em>lesser restoration</em> can
         reduce exhaustion by 1
         level.</p></li></ul><h3>3rd-level</h3><ul><li><p><em>animate dead</em>
@@ -350,10 +348,9 @@ pages:
         Template} and
         @UUID[JournalEntry.nLCkz56fjUw2811V.JournalEntryPage.zshfJKwuowfSnBTV]{Zombie
         Template} and is no longer limited by the creature's
-        size.</p></li><li><p><em>mass healing word</em> heals 2d4 +
-        Mod</p></li></ul><h3>5th-level</h3><ul><li><p><em>mass cure wounds</em>
-        heals 4d8 + Mod</p></li><li><p><em>greater restoration</em> can now be
-        used to reduce exhaustion to 0.</p></li></ul>
+        size.</p></li></ul><h3>5th-level</h3><ul><li><p><em>greater
+        restoration</em> can now be used to reduce exhaustion to
+        0.</p></li></ul>
     video:
       controls: true
       volume: 0.5
@@ -369,8 +366,8 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1736657342689
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.mSXdERiQroyAnH45'
   - name: Variant Encumbrance
     type: text

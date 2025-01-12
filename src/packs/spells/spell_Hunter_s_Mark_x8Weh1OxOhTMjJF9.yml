@@ -1,0 +1,254 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You magically mark one creature you can see within range as your
+      quarry. Until the spell ends, you deal an extra 1d6 Force damage to the
+      target whenever you hit it with an attack roll. You also have Advantage on
+      any Wisdom (Perception or Survival) check you make to find it.</p><p>If
+      the target drops to 0 Hit Points before this spell ends, you can take a
+      Bonus Action to move the mark to a new creature you can see within
+      range.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em>
+      Your Concentration can last longer with a spell slot of level 3–4 (up to
+      24 hours) or 5+ (up to 10 days).</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: div
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            types: []
+            scaling:
+              mode: ''
+              number: 1
+      sort: 100000
+      name: ''
+    vOhDjeU5abesl5ww:
+      type: utility
+      _id: vOhDjeU5abesl5ww
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: r8aJ4OWSZMisy1WP
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+  identifier: hunters-mark
+  properties:
+    - vocal
+    - concentration
+name: Hunter's Mark
+flags:
+  ddbimporter:
+    id: 138323
+    definitionId: 2149
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Hunter's Mark
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 251
+        sourceType: 1
+    tags:
+      - Damage
+      - Debuff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.ZcyDDSBXyJrqketu
+    hash: 7896dba99243797ddffcae3386406e73fb577d4d
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/perception/eye-ringed-glow-angry-large-red.webp
+effects:
+  - name: Hunter's Mark
+    img: icons/magic/perception/eye-ringed-glow-angry-large-red.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.ZcyDDSBXyJrqketu
+    _id: r8aJ4OWSZMisy1WP
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!x8Weh1OxOhTMjJF9.r8aJ4OWSZMisy1WP'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736657485875
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: x8Weh1OxOhTMjJF9
+sort: 3300000
+_key: '!items!x8Weh1OxOhTMjJF9'
+

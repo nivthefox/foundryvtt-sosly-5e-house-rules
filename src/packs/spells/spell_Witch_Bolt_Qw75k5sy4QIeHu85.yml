@@ -1,0 +1,296 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A beam of crackling energy lances toward a creature within range,
+      forming a sustained arc of lightning between you and the target. Make a
+      ranged spell attack against it. On a hit, the target takes 2d12 Lightning
+      damage.</p><p>On each of your subsequent turns, you can take a Bonus
+      Action to deal 1d12 Lightning damage to the target automatically, even if
+      the first attack missed.</p><p>The spell ends if the target is ever
+      outside the spell’s range or if it has Total Cover from
+      you.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The
+      initial damage increases by 1d12 for each spell slot level above
+      1.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: a twig from a tree that has been struck by lightning
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: HCLZI57jhJNV6hFv
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: 1d12[lightning]
+            number: 2
+            denomination: 12
+            bonus: ''
+            types:
+              - lightning
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+    TDqGV5cJLNOHW36E:
+      type: damage
+      _id: TDqGV5cJLNOHW36E
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 12
+            bonus: ''
+            types:
+              - lightning
+            scaling:
+              mode: ''
+              number: 1
+      name: Ongoing Damage
+      img: ''
+      appliedEffects: []
+  identifier: witch-bolt
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Witch Bolt
+flags:
+  ddbimporter:
+    id: 138953
+    definitionId: 2323
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Witch Bolt
+    sources:
+      - sourceId: 2
+        pageNumber: 289
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.OUENxXD4BKCGHc9X
+    hash: 0594da010fc5899fccd28efc4552146e8080810a
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/lightning/bolt-forked-large-orange-purple.webp
+effects:
+  - name: Witch Bolt
+    img: icons/magic/lightning/bolt-forked-large-orange-purple.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.Qw75k5sy4QIeHu85
+    transfer: false
+    _id: HCLZI57jhJNV6hFv
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736660641910
+      modifiedTime: 1736660685189
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!Qw75k5sy4QIeHu85.HCLZI57jhJNV6hFv'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736660587973
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: Qw75k5sy4QIeHu85
+sort: 100000
+_key: '!items!Qw75k5sy4QIeHu85'
+

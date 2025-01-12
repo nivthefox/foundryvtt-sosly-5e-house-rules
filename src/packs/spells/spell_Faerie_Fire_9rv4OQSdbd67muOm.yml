@@ -1,0 +1,237 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Objects in a 20-foot Cube within range are outlined in blue, green, or
+      violet light (your choice). Each creature in the Cube is also outlined if
+      it fails a Dexterity saving throw. For the duration, objects and affected
+      creatures shed Dim Light in a 10-foot radius and can’t benefit from the
+      Invisible condition.</p><p>Attack rolls against an affected creature or
+      object have Advantage if the attacker can see it.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: cube
+      size: '20'
+      contiguous: false
+      count: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: ubcqjoRp1EuaTFMH
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: faerie-fire
+  properties:
+    - vocal
+    - concentration
+name: Faerie Fire
+flags:
+  ddbimporter:
+    id: 136755
+    definitionId: 2091
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Faerie Fire
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 239
+        sourceType: 1
+    tags:
+      - Debuff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.7SNT68L0dsP10AFj
+    hash: 6f934f005ac8a9d37a0063c8b96bbdc2830ba543
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/projectile-meteor-salvo-strong-teal.webp
+effects:
+  - name: Faerie Fire
+    img: icons/magic/fire/projectile-meteor-salvo-strong-teal.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.9rv4OQSdbd67muOm
+    transfer: false
+    _id: ubcqjoRp1EuaTFMH
+    type: base
+    system: {}
+    changes:
+      - key: ATL.light.color
+        mode: 2
+        value: '#FFFFFF'
+        priority: 20
+      - key: ATL.light.dim
+        mode: 2
+        value: '10'
+        priority: 20
+      - key: ATL.light.alpha
+        mode: 2
+        value: '0.5'
+        priority: 20
+      - key: ATL.light.animation
+        mode: 2
+        value: '{type: "fairy light"}'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736653585968
+      modifiedTime: 1736653667713
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!9rv4OQSdbd67muOm.ubcqjoRp1EuaTFMH'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736653499921
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 9rv4OQSdbd67muOm
+sort: 4500000
+_key: '!items!9rv4OQSdbd67muOm'
+

@@ -1,0 +1,256 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You ward a creature within range. Until the spell ends, any creature
+      who targets the warded creature with an attack roll or a damaging spell
+      must succeed on a Wisdom saving throw or either choose a new target or
+      lose the attack or spell. This spell doesn’t protect the warded creature
+      from areas of effect.</p><p>The spell ends if the warded creature makes an
+      attack roll, casts a spell, or deals damage.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: abj
+  materials:
+    value: shard of glass from a mirror
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QpAFGZAWQRLV9eXV
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: sanctuary
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Sanctuary
+flags:
+  ddbimporter:
+    id: 138661
+    definitionId: 2237
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Sanctuary
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 272
+        sourceType: 1
+    tags:
+      - Buff
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.KrHv9WyoQKtZre1j
+    hash: 951edea654344258dd1ccd300b44515737852f17
+  cf:
+    id: temp_ag8qdr5hh9i
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/defensive/barrier-shield-dome-blue-purple.webp
+effects:
+  - name: Sanctuary
+    origin: Compendium.ddb-data.ddb-spells.Item.BLr4cizOx8tRGiUK
+    duration:
+      rounds: 10
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: QpAFGZAWQRLV9eXV
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+        statuses: []
+      core:
+        overlay: false
+    tint: '#ffffff'
+    img: icons/magic/defensive/barrier-shield-dome-blue-purple.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: 1736658985827
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!rbjt1ESWyBRC9a3t.QpAFGZAWQRLV9eXV'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736658914551
+  modifiedTime: 1736660943021
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: rbjt1ESWyBRC9a3t
+sort: 2300000
+_key: '!items!rbjt1ESWyBRC9a3t'
+
