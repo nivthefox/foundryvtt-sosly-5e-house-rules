@@ -1,0 +1,204 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You call forth a bestial spirit. It manifests in an unoccupied space
+      that you can see within range and uses the Bestial Spirit stat block. When
+      you cast the spell, choose an environment: Air, Land, or Water. The
+      creature resembles an animal of your choice that is native to the chosen
+      environment, which determines certain details in its stat block. The
+      creature disappears when it drops to 0 Hit Points or when the spell
+      ends.</p><p>The creature is an ally to you and your allies. In combat, the
+      creature shares your Initiative count, but it takes its turn immediately
+      after yours. It obeys your verbal commands (no action required by you). If
+      you don’t issue any, it takes the Dodge action and uses its movement to
+      avoid danger.</p><p><em><strong>Using a Higher-Level Spell
+      Slot.</strong></em> Use the spell slot’s level for the spell’s level in
+      the stat block.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: con
+  materials:
+    value: >-
+      a feather, tuft of fur, and fish tail inside a gilded acorn worth at least
+      200 gp
+    consumed: false
+    cost: 200
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    AqUBYCrxhZ92Wuwu:
+      type: summon
+      _id: AqUBYCrxhZ92Wuwu
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      bonuses:
+        ac: '@item.level'
+        hd: ''
+        hp: '@scaling.increase * 5'
+        attackDamage: '@item.level'
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: true
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - count: ''
+          name: ''
+          _id: k5zNmFm1A051n3lC
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.WUHBurbPsG5t6W2b
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: 9Mpu8zV5IoojPqUq
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.x5MgrzEnVwVpE8f3
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: KeYR0qEHYxJZugqs
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.YDGTdzA3fDUcaUtt
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: false
+        mode: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: summon-beast
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Summon Beast
+flags:
+  ddbimporter:
+    id: 5854852
+    definitionId: 721187
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Summon Beast
+    sources:
+      - sourceId: 67
+        pageNumber: 109
+        sourceType: 1
+    tags:
+      - Summoning
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.6cEQmQFpbHUkKyFn
+    hash: 54c0e3982f8704d4bd7bba923b2fdf8fc58329fd
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/commodities/claws/claw-bear-brown-grey.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736744171990
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: M34V3xcKfZMT7TfP
+sort: 600000
+_key: '!items!M34V3xcKfZMT7TfP'
+

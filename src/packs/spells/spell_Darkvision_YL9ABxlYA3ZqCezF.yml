@@ -1,49 +1,51 @@
-folder: 80bcfTnNn6o7Y5dR
-name: Mocking Benediction
 type: spell
-img: icons/magic/unholy/silhouette-light-fire-blue.webp
 system:
   description:
     value: >-
-      <p>Up to three creatures the huecuva can see receive its blessing. For the
-      duration of mocking benediction, they add 1d4 to attack rolls and saving
-      throws they make for the next minute. An unwilling creature makes a a DC
-      15 Charisma saving throw, resisting the effect on a
-      success.</p><p>Whenever a creature affected by this blessing fails a
-      saving throw, it takes 1d10 necrotic damage.</p>
+      <p>For the duration, a willing creature you touch has Darkvision with a
+      range of 150 feet.</p><p></p>
     chat: ''
   source:
+    custom: SoSly House Rules
     revision: 1
     rules: '2024'
+    book: ''
+    page: ''
+    license: ''
   activation:
     type: action
     condition: ''
-    value: null
+    value: 1
   duration:
-    value: ''
-    units: ''
+    value: '24'
+    units: hour
   target:
     affects:
+      type: creature
       choice: false
+      count: ''
+      special: ''
     template:
-      units: ''
+      units: touch
       contiguous: false
+      type: ''
   range:
-    units: ''
+    units: touch
+    special: ''
   uses:
     max: ''
     spent: 0
     recovery: []
   ability: ''
-  level: 0
-  school: nec
+  level: 2
+  school: trs
   materials:
-    value: ''
+    value: either a pinch of dried carrot or an agate
     consumed: false
     cost: 0
     supply: 0
   preparation:
-    mode: innate
+    mode: prepared
     prepared: false
   activities:
     dnd5eactivity000:
@@ -66,7 +68,7 @@ system:
         concentration: false
         override: false
       effects:
-        - _id: JR2N6WmMvCHiDF2D
+        - _id: k9WQo9qjvZUnHCNK
       range:
         override: false
       target:
@@ -87,13 +89,72 @@ system:
         prompt: false
         visible: false
       sort: 0
-  identifier: mocking-benediction
-  properties: []
+  identifier: darkvision
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Darkvision
+flags:
+  ddbimporter:
+    id: 136497
+    definitionId: 2059
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Darkvision
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 230
+        sourceType: 1
+    tags:
+      - Buff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.6pCej6eIeI2xFsos
+    hash: a61c32f1bf82ba19fa802635e4242fb1491eacdd
+  cf:
+    id: temp_3jaisgztlwn
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+img: icons/magic/perception/eye-ringed-glow-angry-small-red.webp
 effects:
-  - name: Mocking Benediction
-    origin: Compendium.sosly.spells.Item.rohfrUAz5e2EHNDX
+  - name: Darkvision
+    origin: Compendium.ddb-data.ddb-spells.Item.1VIGqY7SmUPUhYf3
     duration:
-      rounds: 10
+      rounds: null
       startTime: null
       seconds: null
       combat: null
@@ -102,15 +163,11 @@ effects:
       startTurn: null
     transfer: false
     disabled: false
-    _id: JR2N6WmMvCHiDF2D
+    _id: k9WQo9qjvZUnHCNK
     changes:
-      - key: system.bonuses.All-Attacks
-        mode: 2
-        value: '-1d4'
-        priority: 20
-      - key: system.bonuses.abilities.save
-        mode: 2
-        value: '-1d4'
+      - key: system.attributes.senses.darkvision
+        mode: 4
+        value: '60'
         priority: 20
     description: ''
     statuses: []
@@ -123,7 +180,7 @@ effects:
           chat: false
           displayCard: false
         transferrable:
-          self: false
+          self: true
           target: true
           always: false
       dae:
@@ -135,6 +192,8 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
       ActiveAuras:
         isAura: false
         aura: None
@@ -147,8 +206,14 @@ effects:
         displayTemp: false
         hostile: false
         onlyOnce: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+        statuses: []
+      core:
+        overlay: false
     tint: '#ffffff'
-    img: icons/magic/unholy/silhouette-light-fire-blue.webp
+    img: icons/magic/perception/eye-ringed-glow-angry-small-red.webp
     type: base
     system: {}
     sort: 0
@@ -159,49 +224,23 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-    _key: '!items.effects!rohfrUAz5e2EHNDX.JR2N6WmMvCHiDF2D'
-flags:
-  scene-packer:
-    hash: 6e000400d6458edd1e6873c52caab649ba3182e7
-    sourceId: Compendium.sosly.spells.Item.rohfrUAz5e2EHNDX
-  rsr5e:
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-    quickOther:
-      context: ''
-    quickEffects:
-      value:
-        '0': true
-      altValue:
-        '0': true
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - concentration
+      modifiedTime: 1736726416214
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!YL9ABxlYA3ZqCezF.k9WQo9qjvZUnHCNK'
 _stats:
-  compendiumSource: Compendium.world.spells.Item.rohfrUAz5e2EHNDX
+  compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736583829108
-  modifiedTime: 1736583829108
+  createdTime: 1736726358445
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: rohfrUAz5e2EHNDX
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
-_key: '!items!rohfrUAz5e2EHNDX'
+_id: YL9ABxlYA3ZqCezF
+sort: 5800000
+_key: '!items!YL9ABxlYA3ZqCezF'
 

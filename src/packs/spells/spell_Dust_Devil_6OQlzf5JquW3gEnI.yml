@@ -1,0 +1,184 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Choose an unoccupied 5-foot cube of air that you can see within range.
+      An elemental force that resembles a dust devil appears in the cube and
+      lasts for the spell’s duration.</p><p>Any creature that ends its turn
+      within 5 feet of the dust devil must make a Strength saving throw. On a
+      failed save, the creature takes 1d8 bludgeoning damage and is pushed 10
+      feet away. On a successful save, the creature takes half as much damage
+      and isn’t pushed.</p><p>As a bonus action, you can move the dust devil up
+      to 30 feet in any direction. If the dust devil moves over sand, dust,
+      loose dirt, or small gravel, it sucks up the material and forms a
+      10-foot-radius cloud of debris around itself that lasts until the start of
+      your next turn. The cloud heavily obscures its area.</p><p><em><strong>At
+      Higher Levels.</strong></em> When you cast this spell using a spell slot
+      of 3rd level or higher, the damage increases by 1d8 for each slot level
+      above 2nd.</p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 154
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: cube
+      size: '5'
+      contiguous: false
+      count: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: con
+  materials:
+    value: a pinch of dust
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: 1d8[bludgeoning]
+            number: 1
+            denomination: 8
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: dust-devil
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Dust Devil
+flags:
+  ddbimporter:
+    id: 137982
+    definitionId: 2376
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Dust Devil
+    sources:
+      - sourceId: 4
+        pageNumber: 154
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.fMvUsIh75Iswe7T6
+    hash: b738bb07a309a5b664cfbc25049d431dc716dd87
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/air/wind-tornado-cyclone-red-orange.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736726554673
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 6OQlzf5JquW3gEnI
+sort: 6100000
+_key: '!items!6OQlzf5JquW3gEnI'
+

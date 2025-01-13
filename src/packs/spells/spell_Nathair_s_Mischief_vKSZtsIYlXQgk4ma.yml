@@ -1,0 +1,209 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You fill a 20-foot cube you can see within range with fey and draconic
+      magic. Roll on the Mischievous Surge table to determine the magical effect
+      produced, and roll again at the start of each of your turns until the
+      spell ends. You can move the cube up to 10 feet before you
+      roll.</p><p><strong>Mischievous
+      Surge</strong></p><table><thead><tr><th>d4</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>The
+      smell of apple pie fills the air, and each creature in the cube must
+      succeed on a Wisdom saving throw or become
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{charmed} by you until the start
+      of your next turn.</td></tr><tr><td>2</td><td>Bouquets of flowers appear
+      all around, and each creature in the cube must succeed on a Dexterity
+      saving throw or be @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{blinded}
+      until the start of your next turn as the flowers spray water in their
+      faces.</td></tr><tr><td>3</td><td>Each creature in the cube must succeed
+      on a Wisdom saving throw or begin giggling until the start of your next
+      turn. A giggling creature is
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{incapacitated} and uses all its
+      movement to move in a random direction.</td></tr><tr><td>4</td><td>Drops
+      of molasses hover in the cube, making it difficult terrain until the start
+      of your next turn.</td></tr></tbody></table><div
+      id="table-link"><p></p></div>
+    chat: ''
+  source:
+    custom: Fizban's Treasury of Dragons pg 20
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: cube
+      size: '20'
+      contiguous: false
+      count: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: ill
+  materials:
+    value: a piece of crust from an apple pie
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    evXutGCbHkLPcZC2:
+      type: summon
+      _id: evXutGCbHkLPcZC2
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: true
+        ability: ''
+      profiles:
+        - count: ''
+          name: ''
+          _id: LmcHaYCRl18NyEWN
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.7K9il0oQK7U0k9bC
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: nathairs-mischief
+  properties:
+    - somatic
+    - material
+    - concentration
+name: Nathair's Mischief
+flags:
+  ddbimporter:
+    id: 9603630
+    definitionId: 1183865
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Nathair's Mischief
+    sources:
+      - sourceId: 81
+        pageNumber: 20
+        sourceType: 1
+    tags: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.dPdZvtiQG0GZ4Rc4
+    hash: 1c771b55bc83ed3224d26a137a463ba057807aac
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  enhanced-terrain-layer:
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: modules/sosly-5e-house-rules/public/spells/nathairs-mischief.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736739745417
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: vKSZtsIYlXQgk4ma
+sort: 3200000
+_key: '!items!vKSZtsIYlXQgk4ma'
+

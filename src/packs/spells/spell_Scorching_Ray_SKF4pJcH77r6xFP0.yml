@@ -2,18 +2,14 @@ type: spell
 system:
   description:
     value: >-
-      <p>A number of
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.MLaNL8Y5OzZdIcMA]{berries}
-      equal to your spellcasting ability modifier appear in your hand and are
-      infused with magic for the duration. A creature can use its action to eat
-      one berry. Eating a berry allows the creature to expend a hit die as if
-      they had taken a breather, and the berry provides enough nourishment to
-      sustain a creature for one day.</p><p>The berries lose their potency if
-      they have not been consumed within 24 hours of the casting of this
-      spell.</p>
+      <p>You hurl three fiery rays. You can hurl them at one target within range
+      or at several. Make a ranged spell attack for each ray. On a hit, the
+      target takes 2d6 Fire damage.</p><p><em><strong>Using a Higher-Level Spell
+      Slot.</strong></em> You create one additional ray for each spell slot
+      level above 2.</p><p></p>
     chat: ''
   source:
-    custom: SoSly House Rules
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -28,35 +24,37 @@ system:
     units: inst
   target:
     affects:
+      type: creature
+      count: '1'
       choice: false
-      count: ''
-      type: ''
+      special: ''
     template:
-      units: touch
+      units: ''
       contiguous: false
       type: ''
   range:
-    units: touch
+    value: '120'
+    units: ft
     special: ''
   uses:
     max: ''
     spent: 0
     recovery: []
   ability: ''
-  level: 1
-  school: trs
+  level: 2
+  school: evo
   materials:
-    value: a sprig of mistletoe
+    value: ''
     consumed: false
     cost: 0
     supply: 0
   preparation:
     mode: prepared
-    prepared: true
+    prepared: false
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: heal
+      type: attack
       activation:
         type: action
         value: null
@@ -88,79 +86,80 @@ system:
         spent: 0
         max: ''
         recovery: []
-      healing:
-        number: null
-        denomination: null
+      attack:
+        ability: ''
         bonus: ''
-        types:
-          - healing
-        custom:
-          enabled: true
-          formula: '1'
-        scaling:
-          mode: ''
-          number: null
-          formula: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: 2d6[fire - 3 Rays]
+            number: 2
+            denomination: 6
+            bonus: ''
+            types:
+              - fire
+            scaling:
+              mode: ''
+              number: 1
+              formula: ''
       sort: 0
-  identifier: goodberry
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: scorching-ray
   properties:
     - vocal
     - somatic
-    - material
-name: Goodberry
+name: Scorching Ray
 flags:
   ddbimporter:
-    id: 137985
-    definitionId: 2126
+    id: 138665
+    definitionId: 2238
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Goodberry
+    originalName: Scorching Ray
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 246
+        pageNumber: 273
         sourceType: 1
     tags:
-      - Healing
-    version: 3.3.4
-  core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickDamage:
-      context:
-        '0': ''
-      value:
-        '0': true
-      altValue:
-        '0': true
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-  journal-backlinks:
-    references: []
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+    sourceId: Compendium.sosly.spells.Item.9rqqJxEj9dg4Ig0s
+    hash: 7c63f0e0c7c566078802cd236c005f5b5064ed11
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
       - vocal
       - somatic
-      - material
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/light/beam-rays-red.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -168,14 +167,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655518477
-  modifiedTime: 1736742491916
+  createdTime: 1736742268959
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-folder: OouqYOD5Z1oGHStK
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: xBYl9MLuNY5afkf1
-sort: 3700000
-_key: '!items!xBYl9MLuNY5afkf1'
+_id: SKF4pJcH77r6xFP0
+sort: 2000000
+_key: '!items!SKF4pJcH77r6xFP0'
 

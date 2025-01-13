@@ -2,18 +2,16 @@ type: spell
 system:
   description:
     value: >-
-      <p>A number of
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.MLaNL8Y5OzZdIcMA]{berries}
-      equal to your spellcasting ability modifier appear in your hand and are
-      infused with magic for the duration. A creature can use its action to eat
-      one berry. Eating a berry allows the creature to expend a hit die as if
-      they had taken a breather, and the berry provides enough nourishment to
-      sustain a creature for one day.</p><p>The berries lose their potency if
-      they have not been consumed within 24 hours of the casting of this
-      spell.</p>
+      <p>You touch a corpse or other remains. For the duration, the target is
+      protected from decay and can’t become Undead.</p><p>The spell also
+      effectively extends the time limit on raising the target from the dead,
+      since days spent under the influence of this spell don’t count against the
+      time limit of spells such as
+      @UUID[Compendium.sosly-5e-house-rules.spells.vPa0yZTmhBg7WYja]{Raise
+      Dead}.</p>
     chat: ''
   source:
-    custom: SoSly House Rules
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -24,8 +22,8 @@ system:
     condition: ''
     value: 1
   duration:
-    value: ''
-    units: inst
+    value: '10'
+    units: day
   target:
     affects:
       choice: false
@@ -43,20 +41,20 @@ system:
     spent: 0
     recovery: []
   ability: ''
-  level: 1
-  school: trs
+  level: 2
+  school: nec
   materials:
-    value: a sprig of mistletoe
-    consumed: false
-    cost: 0
+    value: 2 copper pieces, which the spell consumes
+    consumed: true
+    cost: 0.02
     supply: 0
   preparation:
     mode: prepared
-    prepared: true
+    prepared: false
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: heal
+      type: utility
       activation:
         type: action
         value: null
@@ -88,79 +86,57 @@ system:
         spent: 0
         max: ''
         recovery: []
-      healing:
-        number: null
-        denomination: null
-        bonus: ''
-        types:
-          - healing
-        custom:
-          enabled: true
-          formula: '1'
-        scaling:
-          mode: ''
-          number: null
-          formula: ''
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
       sort: 0
-  identifier: goodberry
+  identifier: gentle-repose
   properties:
     - vocal
     - somatic
     - material
-name: Goodberry
+    - ritual
+name: Gentle Repose
 flags:
   ddbimporter:
-    id: 137985
-    definitionId: 2126
+    id: 137935
+    definitionId: 2121
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Goodberry
+    originalName: Gentle Repose
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 246
+        pageNumber: 245
         sourceType: 1
     tags:
-      - Healing
-    version: 3.3.4
-  core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickDamage:
-      context:
-        '0': ''
-      value:
-        '0': true
-      altValue:
-        '0': true
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-  journal-backlinks:
-    references: []
+      - Warding
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+    sourceId: Compendium.sosly.spells.Item.18oNXDg7TQgQsVac
+    hash: b6e1d66732bbd1947caf45dccb5f115a2e788aba
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
       - vocal
       - somatic
       - material
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+      - ritual
+img: icons/magic/light/explosion-star-blue.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -168,14 +144,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655518477
-  modifiedTime: 1736742491916
+  createdTime: 1736735933677
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-folder: OouqYOD5Z1oGHStK
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: xBYl9MLuNY5afkf1
-sort: 3700000
-_key: '!items!xBYl9MLuNY5afkf1'
+_id: DgPij1yiKhrMMnj1
+sort: 5400000
+_key: '!items!DgPij1yiKhrMMnj1'
 

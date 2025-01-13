@@ -2,18 +2,17 @@ type: spell
 system:
   description:
     value: >-
-      <p>A number of
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.MLaNL8Y5OzZdIcMA]{berries}
-      equal to your spellcasting ability modifier appear in your hand and are
-      infused with magic for the duration. A creature can use its action to eat
-      one berry. Eating a berry allows the creature to expend a hit die as if
-      they had taken a breather, and the berry provides enough nourishment to
-      sustain a creature for one day.</p><p>The berries lose their potency if
-      they have not been consumed within 24 hours of the casting of this
-      spell.</p>
+      <p>You sense any trap within range that is within line of sight. A trap,
+      for the purpose of this spell, includes any object or mechanism that was
+      created to cause damage or other danger. Thus, the spell would sense the
+      Alarm or Glyph of Warding spell or a mechanical pit trap, but it wouldn’t
+      reveal a natural weakness in the floor, an unstable ceiling, or a hidden
+      sinkhole.</p><p>This spell reveals that a trap is present but not its
+      location. You do learn the general nature of the danger posed by a trap
+      you sense.</p><p></p>
     chat: ''
   source:
-    custom: SoSly House Rules
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -32,31 +31,32 @@ system:
       count: ''
       type: ''
     template:
-      units: touch
+      units: ''
       contiguous: false
       type: ''
   range:
-    units: touch
+    value: '120'
+    units: ft
     special: ''
   uses:
     max: ''
     spent: 0
     recovery: []
   ability: ''
-  level: 1
-  school: trs
+  level: 2
+  school: div
   materials:
-    value: a sprig of mistletoe
+    value: ''
     consumed: false
     cost: 0
     supply: 0
   preparation:
     mode: prepared
-    prepared: true
+    prepared: false
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: heal
+      type: utility
       activation:
         type: action
         value: null
@@ -88,79 +88,53 @@ system:
         spent: 0
         max: ''
         recovery: []
-      healing:
-        number: null
-        denomination: null
-        bonus: ''
-        types:
-          - healing
-        custom:
-          enabled: true
-          formula: '1'
-        scaling:
-          mode: ''
-          number: null
-          formula: ''
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
       sort: 0
-  identifier: goodberry
+  identifier: find-traps
   properties:
     - vocal
     - somatic
-    - material
-name: Goodberry
+name: Find Traps
 flags:
   ddbimporter:
-    id: 137985
-    definitionId: 2126
+    id: 136808
+    definitionId: 2100
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Goodberry
+    originalName: Find Traps
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 246
+        pageNumber: 241
         sourceType: 1
     tags:
-      - Healing
-    version: 3.3.4
-  core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickDamage:
-      context:
-        '0': ''
-      value:
-        '0': true
-      altValue:
-        '0': true
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-  journal-backlinks:
-    references: []
+      - Detection
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+    sourceId: Compendium.sosly.spells.Item.b0lXqXjJ2ZKb2jZp
+    hash: dcd35e7b7e4669101ebdede47cef572973fa2e90
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
       - vocal
       - somatic
-      - material
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+img: icons/magic/light/explosion-star-blue-small.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -168,14 +142,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655518477
-  modifiedTime: 1736742491916
+  createdTime: 1736727297843
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-folder: OouqYOD5Z1oGHStK
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: xBYl9MLuNY5afkf1
-sort: 3700000
-_key: '!items!xBYl9MLuNY5afkf1'
+_id: fubm2hvJsCVHeyd3
+sort: 4900000
+_key: '!items!fubm2hvJsCVHeyd3'
 

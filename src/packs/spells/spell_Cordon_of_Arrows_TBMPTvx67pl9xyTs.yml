@@ -1,0 +1,236 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You touch up to four nonmagical Arrows or Bolts and plant them in the
+      ground in your space. Until the spell ends, the ammunition can’t be
+      physically uprooted, and whenever a creature other than you enters a space
+      within 30 feet of the ammunition for the first time on a turn or ends its
+      turn there, one piece of ammunition flies up to strike it. The creature
+      must succeed on a Dexterity saving throw or take 2d4 Piercing damage. The
+      piece of ammunition is then destroyed. The spell ends when none of the
+      ammunition remains planted in the ground.</p><p>When you cast this spell,
+      you can designate any creatures you choose, and the spell ignores
+      them.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The
+      amount of ammunition that can be affected increases by two for each spell
+      slot level above 2.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+    book: Player's Handbook (2024)
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '5'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: trs
+  materials:
+    value: four or more arrows or bolts
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    GC9IVxi062ggP1dF:
+      type: utility
+      _id: GC9IVxi062ggP1dF
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: true
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: sphere
+          size: '30'
+          count: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+    6rKde4uyWAXcohWk:
+      type: save
+      _id: 6rKde4uyWAXcohWk
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: true
+        units: ft
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 4
+            bonus: ''
+            types:
+              - piercing
+            scaling:
+              mode: ''
+              number: 1
+        onSave: none
+      save:
+        ability: []
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: Activate Arrow
+      img: ''
+      appliedEffects: []
+  identifier: cordon-of-arrows
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Cordon of Arrows
+flags:
+  ddbimporter:
+    id: 136441
+    definitionId: 2328
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Cordon of Arrows
+    sources:
+      - sourceId: 2
+        pageNumber: 228
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.6YuyI1KG3VsYLJzt
+    hash: d9355221fed60c1bd765f6a76f6623857fa7ef9f
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/skills/ranged/arrows-flying-salvo-yellow.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736725707155
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: TBMPTvx67pl9xyTs
+sort: 6500000
+_key: '!items!TBMPTvx67pl9xyTs'
+

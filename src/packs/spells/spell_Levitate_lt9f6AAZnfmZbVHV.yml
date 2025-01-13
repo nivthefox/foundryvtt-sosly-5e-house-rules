@@ -1,0 +1,257 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>One creature or loose object of your choice that you can see within
+      range rises vertically up to 20 feet and remains suspended there for the
+      duration. The spell can levitate an object that weighs up to 500 pounds.
+      An unwilling creature that succeeds on a Constitution saving throw is
+      unaffected.</p><p>The target can move only by pushing or pulling against a
+      fixed object or surface within reach (such as a wall or a ceiling), which
+      allows it to move as if it were climbing. You can change the target’s
+      altitude by up to 20 feet in either direction on your turn. If you are the
+      target, you can move up or down as part of your move. Otherwise, you can
+      take a Magic action to move the target, which must remain within the
+      spell’s range.</p><p>When the spell ends, the target floats gently to the
+      ground if it is still aloft.</p><p></p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: trs
+  materials:
+    value: >-
+      either a small leather loop or a piece of golden wire bent into a cup
+      shape with a long shank on one end
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: pLStLdciKlnwgCWk
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: levitate
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Levitate
+flags:
+  ddbimporter:
+    id: 138393
+    definitionId: 2165
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Levitate
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 255
+        sourceType: 1
+    tags:
+      - Movement
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.TcKQR8EbsaKtFBNI
+    hash: 6f0f1247c1429f1ab99d4f2c493270e773fb00d5
+  cf:
+    id: temp_3jaisgztlwn
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+effects:
+  - name: Levitate
+    origin: Compendium.ddb-data.ddb-spells.Item.Y2hZX9hoJLGgo8xA
+    duration:
+      rounds: 100
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: pLStLdciKlnwgCWk
+    changes: []
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: true
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!lt9f6AAZnfmZbVHV.pLStLdciKlnwgCWk'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736736981470
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: lt9f6AAZnfmZbVHV
+sort: 4500000
+_key: '!items!lt9f6AAZnfmZbVHV'
+

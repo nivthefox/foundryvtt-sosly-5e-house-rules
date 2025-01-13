@@ -83,6 +83,17 @@
   "readme": "https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/README.md",
   "packs": [
     {
+      "name": "auxiliaries",
+      "label": "Auxiliaries",
+      "path": "packs/auxiliaries",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "backgrounds",
       "label": "Backgrounds",
       "path": "packs/backgrounds",
@@ -103,6 +114,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "effect-tables",
+      "label": "Effect Tables",
+      "path": "packs/effect-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
     },
     {
       "name": "equipment",

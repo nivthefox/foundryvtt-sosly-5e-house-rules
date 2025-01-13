@@ -1,0 +1,145 @@
+name: Beast Growth
+type: spell
+img: icons/creatures/mammals/spirit-deer-herd-blue.webp
+system:
+  description:
+    value: >-
+      <p>When you cast this spell, you touch one tiny or larger beast. The
+      creature's size increases by one, and its Strength score increases by 4
+      for the duration of the spell.</p><p>If the creature dies, it returns to
+      its normal size.</p><p><em><strong>Using a Higher-Level Spell
+      Slot.</strong></em> You can target one additional creature for each spell
+      slot level above 2.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '24'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 2
+  school: trs
+  materials:
+    value: A handful of powdered iron worth 10 gp, which the spell consumes.
+    consumed: true
+    cost: 10
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: beast-growth
+  properties:
+    - vocal
+    - somatic
+    - material
+effects: []
+flags:
+  scene-packer:
+    hash: db5a375902ddf997c6d63a7981542e2196795fa3
+    sourceId: Compendium.sosly.spells.Item.220w5OlfttjXx8Dq
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  journal-backlinks:
+    references: []
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  core: {}
+  cf:
+    id: temp_9ykd9r1nsxt
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - ritual
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736724077847
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: 54y3Ck3c8wWVaDvk
+sort: 7800000
+_key: '!items!54y3Ck3c8wWVaDvk'
+

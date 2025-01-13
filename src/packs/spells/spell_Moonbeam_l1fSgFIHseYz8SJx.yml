@@ -2,17 +2,20 @@ type: spell
 system:
   description:
     value: >-
-      <p>A Line of strong wind 60 feet long and 10 feet wide blasts from you in
-      a direction you choose for the duration. Each creature in the Line must
-      succeed on a Strength saving throw or be pushed 15 feet away from you in a
-      direction following the Line. A creature that ends its turn in the Line
-      must make the same save.</p><p>Any creature in the Line must spend 2 feet
-      of movement for every 1 foot it moves when moving closer to you.</p><p>The
-      gust disperses gas or vapor, and it extinguishes candles and similar
-      unprotected flames in the area. It causes protected flames, such as those
-      of lanterns, to dance wildly and has a 50 percent chance to extinguish
-      them.</p><p>As a Bonus Action on your later turns, you can change the
-      direction in which the Line blasts from you.</p><p></p>
+      <p>A silvery beam of pale light shines down in a 5-foot-radius,
+      40-foot-high Cylinder centered on a point within range. Until the spell
+      ends, Dim Light fills the Cylinder, and you can take a Magic action on
+      later turns to move the Cylinder up to 60 feet.</p><p>When the Cylinder
+      appears, each creature in it makes a Constitution saving throw. On a
+      failed save, a creature takes 2d10 Radiant damage, and if the creature is
+      shape-shifted (as a result of the Polymorph spell, for example), it
+      reverts to its true form and can’t shape-shift until it leaves the
+      Cylinder. On a successful save, a creature takes half as much damage only.
+      A creature also makes this save when the spell’s area moves into its space
+      and when it enters the spell’s area or ends its turn there. A creature
+      makes this save only once per turn.</p><p><em><strong>Using a Higher-Level
+      Spell Slot.</strong></em> The damage increases by 1d10 for each spell slot
+      level above 2.</p><p></p>
     chat: ''
   source:
     custom: D&D Free Rules (2024)
@@ -35,13 +38,14 @@ system:
       type: ''
     template:
       units: ft
-      width: '10'
-      type: line
-      size: '60'
+      type: cylinder
+      size: '5'
       contiguous: false
+      height: ''
       count: ''
   range:
-    units: self
+    value: '120'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -51,7 +55,7 @@ system:
   level: 2
   school: evo
   materials:
-    value: a legume seed
+    value: several seeds of any moonseed plant and a piece of opalescent feldspar
     consumed: false
     cost: 0
     supply: 0
@@ -59,19 +63,19 @@ system:
     mode: prepared
     prepared: false
   activities:
-    dnd5eactivity000:
-      _id: dnd5eactivity000
-      type: save
+    KdrNBeRD7d259Fql:
+      type: summon
+      _id: KdrNBeRD7d259Fql
+      sort: 0
       activation:
         type: action
         value: null
         override: false
       consumption:
-        targets: []
         scaling:
           allowed: false
-          max: ''
         spellSlot: true
+        targets: []
       description:
         chatFlavor: ''
       duration:
@@ -82,59 +86,54 @@ system:
       range:
         override: false
       target:
-        prompt: true
         template:
           contiguous: false
           units: ft
         affects:
           choice: false
         override: false
+        prompt: false
       uses:
         spent: 0
-        max: ''
         recovery: []
-      damage:
-        onSave: half
-        parts: []
-      save:
-        ability:
-          - str
-        dc:
-          calculation: spellcasting
-          formula: ''
-      sort: 0
-    nnFnfM2yiXOVdEMF:
-      type: forward
-      _id: nnFnfM2yiXOVdEMF
+        max: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: (@scaling.increase)d10
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: true
+        ability: ''
+      profiles:
+        - count: ''
+          name: ''
+          _id: 7ld7A9v1fsNsnnPA
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.9jsXHaEz8kSBjZAc
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      name: Place Beam
+      img: ''
+      appliedEffects: []
+    ZjntX0RCLN0Nr5dP:
+      type: utility
+      _id: ZjntX0RCLN0Nr5dP
       sort: 0
       activation:
         type: action
         value: null
         override: false
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets: []
-      description:
-        chatFlavor: ''
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      activity:
-        id: dnd5eactivity000
-      name: End of Turn Save
-      img: ''
-    sbsTXjt2N8Qk1ct0:
-      type: utility
-      _id: sbsTXjt2N8Qk1ct0
-      sort: 0
-      activation:
-        type: bonus
-        value: null
-        override: true
-        condition: ''
       consumption:
         scaling:
           allowed: false
@@ -156,7 +155,7 @@ system:
         affects:
           choice: false
         override: false
-        prompt: true
+        prompt: false
       uses:
         spent: 0
         recovery: []
@@ -166,43 +165,44 @@ system:
         visible: false
         name: ''
         formula: ''
-      name: Change Direction
+      name: Move Beam
       img: ''
       appliedEffects: []
-  identifier: gust-of-wind
+  identifier: moonbeam
   properties:
     - vocal
     - somatic
     - material
     - concentration
-name: Gust of Wind
+name: Moonbeam
 flags:
   ddbimporter:
-    id: 138026
-    definitionId: 2134
+    id: 138513
+    definitionId: 2197
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Gust of Wind
+    originalName: Moonbeam
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 248
+        pageNumber: 261
         sourceType: 1
     tags:
+      - Damage
       - Control
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.J97aiIocc124vmBK
-    hash: 4dad20df756cc11b78dbed3b4606a81b9df87dab
+    sourceId: Compendium.sosly.spells.Item.GtRbYKd236R0duYx
+    hash: b2d5c7a6d0ad2da0d009c6cba2f675c3b9e8cac6
   cf:
     id: temp_3jaisgztlwn
   core: {}
@@ -216,7 +216,7 @@ flags:
     riders:
       activity: []
       effect: []
-img: icons/magic/air/wind-swirl-gray-blue.webp
+img: icons/magic/light/beam-rays-blue-large.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -224,14 +224,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655067346
+  createdTime: 1736738407237
   modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: vVuPpxfCCVRsl0v0
-sort: 8200000
-_key: '!items!vVuPpxfCCVRsl0v0'
+_id: l1fSgFIHseYz8SJx
+sort: 3300000
+_key: '!items!l1fSgFIHseYz8SJx'
 

@@ -1,0 +1,160 @@
+folder: 80bcfTnNn6o7Y5dR
+name: Natural Weapons
+type: weapon
+_id: 7iDLAMexnKjcOZty
+img: icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp
+system:
+  activities:
+    v9VVyvxc9Tf8Or5P:
+      _id: v9VVyvxc9Tf8Or5P
+      type: attack
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: ''
+        ability: spellcasting
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You grow claws (Slashing), fangs (Piercing), horns (Piercing), or
+      hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with
+      that new growth, it deals 1d6 damage of the type in parentheses instead of
+      dealing the normal damage for your Unarmed Strike, and you use your
+      spellcasting ability modifier for the attack and damage rolls rather than
+      using Strength.</p><p>This feature ends when you stop concentrating on
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.JVr7Jy0qxg5nX1hA]{Alter
+      Self}.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  armor:
+    value: null
+  cover: null
+  crewed: false
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: natural
+    baseItem: ''
+  ammunition: {}
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      types:
+        - piercing
+        - slashing
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      bonus: ''
+    versatile:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+  magicalBonus: null
+  properties:
+    - mgc
+  proficient: null
+  range:
+    value: null
+    long: null
+    reach: null
+    units: ''
+  mastery: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736723442952
+  modifiedTime: 1736723531937
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!7iDLAMexnKjcOZty'
+

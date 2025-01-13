@@ -1,0 +1,170 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You implant a message within an object in range—a message that is
+      uttered when a trigger condition is met. Choose an object that you can see
+      and that isn’t being worn or carried by another creature. Then speak the
+      message, which must be 25 words or fewer, though it can be delivered over
+      as long as 10 minutes. Finally, determine the circumstance that will
+      trigger the spell to deliver your message.</p><p>When that trigger occurs,
+      a magical mouth appears on the object and recites the message in your
+      voice and at the same volume you spoke. If the object you chose has a
+      mouth or something that looks like a mouth (for example, the mouth of a
+      statue), the magical mouth appears there, so the words appear to come from
+      the object’s mouth. When you cast this spell, you can have the spell end
+      after it delivers its message, or it can remain and repeat its message
+      whenever the trigger occurs.</p><p>The trigger can be as general or as
+      detailed as you like, though it must be based on visual or audible
+      conditions that occur within 30 feet of the object. For example, you could
+      instruct the mouth to speak when any creature moves within 30 feet of the
+      object or when a silver bell rings within 30 feet of it.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: disp
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: ill
+  materials:
+    value: >-
+      a small bit of honeycomb and jade dust worth at least 10 gp, which the
+      spell consumes
+    consumed: true
+    cost: 10
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: magic-mouth
+  properties:
+    - vocal
+    - somatic
+    - material
+    - ritual
+name: Magic Mouth
+flags:
+  ddbimporter:
+    id: 138447
+    definitionId: 2177
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Magic Mouth
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 257
+        sourceType: 1
+    tags:
+      - Communication
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.6fwjocMREUqFFmDe
+    hash: 1b137b975b328399cfbd398240d894428c303a1c
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - ritual
+img: icons/magic/air/wind-vortex-swirl-purple.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736737253517
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: br2myakbvCxnEuNX
+sort: 3600000
+_key: '!items!br2myakbvCxnEuNX'
+

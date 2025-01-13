@@ -1,0 +1,217 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You radiate a concealing aura in a 30-foot Emanation for the duration.
+      While in the aura, you and each creature you choose have a +10 bonus to
+      Dexterity (Stealth) checks and leave no tracks.</p><p></p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: creature
+      choice: true
+      special: ''
+      count: ''
+    template:
+      units: ft
+      contiguous: false
+      type: radius
+      size: '30'
+      count: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: abj
+  materials:
+    value: ashes from a burned leaf of mistletoe and a sprig of spruce
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    eVUmaqK8E1KLnpM9:
+      type: utility
+      _id: eVUmaqK8E1KLnpM9
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: DxagBy8wkwkzBC70
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  identifier: pass-without-trace
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Pass without Trace
+flags:
+  ddbimporter:
+    id: 138536
+    definitionId: 2201
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Pass without Trace
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 264
+        sourceType: 1
+    tags:
+      - Buff
+      - Exploration
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.9w9ZavaVQSyXnS7q
+    hash: 2cabb652ceb311d24170f40d5febee38485f8ca8
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/air/fog-gas-smoke-brown.webp
+effects:
+  - name: Pass without Trace
+    img: icons/magic/air/fog-gas-smoke-brown.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.VbgzCzooUMEIz5js
+    transfer: false
+    _id: DxagBy8wkwkzBC70
+    type: base
+    system: {}
+    changes:
+      - key: system.skills.ste.bonuses.check
+        mode: 2
+        value: '+10'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736741344403
+      modifiedTime: 1736741368305
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!VbgzCzooUMEIz5js.DxagBy8wkwkzBC70'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736741278848
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: VbgzCzooUMEIz5js
+sort: 2700000
+_key: '!items!VbgzCzooUMEIz5js'
+

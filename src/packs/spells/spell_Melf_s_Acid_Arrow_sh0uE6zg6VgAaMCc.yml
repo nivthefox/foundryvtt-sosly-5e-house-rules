@@ -1,0 +1,316 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A shimmering green arrow streaks toward a target within range and
+      bursts in a spray of acid. Make a ranged spell attack against the target.
+      On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end
+      of its next turn. On a miss, the arrow splashes the target with acid for
+      half as much of the initial damage only.</p><p><em><strong>Using a
+      Higher-Level Spell Slot.</strong></em> The damage (both initial and later)
+      increases by 1d4 for each spell slot level above 2.</p><p></p>
+    chat: ''
+  source:
+    custom: Basic Rules, Player's Handbook
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: powdered rhubarb leaf and an adder’s stomach
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 4DvARaHqLy4dHC8m
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: 4d4[acid]
+            number: 4
+            denomination: 4
+            bonus: ''
+            types:
+              - acid
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+    9Gc8lweHHRhgvdfn:
+      type: damage
+      _id: 9Gc8lweHHRhgvdfn
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 4
+            bonus: ''
+            types:
+              - acid
+            scaling:
+              mode: whole
+              number: 1
+      name: Secondary Damage
+      img: ''
+      appliedEffects: []
+  identifier: melfs-acid-arrow
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Melf's Acid Arrow
+flags:
+  ddbimporter:
+    id: 2323
+    definitionId: 1988
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Acid Arrow
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: null
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.u7K9j75RnSnCtgGR
+    hash: 1dd22f5ad10833e332f6917692426f6e0044970c
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+      value: true
+      altValue: true
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/acid/projectile-bolts-salvo-green.webp
+effects:
+  - name: Melf's Acid Arrow
+    img: icons/magic/acid/projectile-bolts-salvo-green.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.sh0uE6zg6VgAaMCc
+    transfer: false
+    _id: 4DvARaHqLy4dHC8m
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736737791143
+      modifiedTime: 1736737797877
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!sh0uE6zg6VgAaMCc.4DvARaHqLy4dHC8m'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736737698256
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: sh0uE6zg6VgAaMCc
+sort: 3800000
+_key: '!items!sh0uE6zg6VgAaMCc'
+

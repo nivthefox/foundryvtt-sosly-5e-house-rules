@@ -1,0 +1,160 @@
+folder: 80bcfTnNn6o7Y5dR
+name: Shadow Blade
+type: weapon
+img: icons/weapons/swords/sword-flanged-lightning.webp
+system:
+  activities:
+    66231Dis8Ede1NDV:
+      _id: 66231Dis8Ede1NDV
+      type: attack
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ''
+          classification: ''
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      name: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>This magic sword lasts until the spell ends. It counts as a simple
+      melee weapon with which you are proficient. It deals 2d8 psychic damage on
+      a hit and has the finesse, light, and thrown properties (range 20/60). In
+      addition, when you use the sword to attack a target that is in dim light
+      or darkness, you make the attack roll with advantage.</p><p>If you drop
+      the weapon or throw it, it dissipates at the end of the turn. Thereafter,
+      while the spell persists, you can use a bonus action to cause the sword to
+      reappear in your hand.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  armor:
+    value: null
+  cover: null
+  crewed: false
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: simpleM
+    baseItem: ''
+  ammunition: {}
+  damage:
+    base:
+      number: 2
+      denomination: 8
+      types:
+        - psychic
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      bonus: ''
+    versatile:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+  magicalBonus: null
+  properties:
+    - fin
+    - lgt
+    - mgc
+    - thr
+  proficient: null
+  range:
+    value: 20
+    long: 60
+    reach: null
+    units: ft
+  mastery: ''
+effects: []
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736742682184
+  modifiedTime: 1736742682220
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: DVziStqn0Ev2QWgy
+sort: 100000
+_key: '!items!DVziStqn0Ev2QWgy'
+

@@ -2,15 +2,12 @@ type: spell
 system:
   description:
     value: >-
-      <p>A number of
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.MLaNL8Y5OzZdIcMA]{berries}
-      equal to your spellcasting ability modifier appear in your hand and are
-      infused with magic for the duration. A creature can use its action to eat
-      one berry. Eating a berry allows the creature to expend a hit die as if
-      they had taken a breather, and the berry provides enough nourishment to
-      sustain a creature for one day.</p><p>The berries lose their potency if
-      they have not been consumed within 24 hours of the casting of this
-      spell.</p>
+      <p>For the duration, no sound can be created within or pass through a
+      20-foot-radius Sphere centered on a point you choose within range. Any
+      creature or object entirely inside the Sphere has Immunity to Thunder
+      damage, and creatures have the Deafened condition while entirely inside
+      it. Casting a spell that includes a Verbal component is impossible
+      there.</p><p></p>
     chat: ''
   source:
     custom: SoSly House Rules
@@ -24,39 +21,42 @@ system:
     condition: ''
     value: 1
   duration:
-    value: ''
-    units: inst
+    value: '1'
+    units: hour
   target:
     affects:
       choice: false
       count: ''
       type: ''
     template:
-      units: touch
+      units: ft
+      type: sphere
+      size: '20'
       contiguous: false
-      type: ''
+      count: ''
   range:
-    units: touch
+    value: '120'
+    units: ft
     special: ''
   uses:
     max: ''
     spent: 0
     recovery: []
   ability: ''
-  level: 1
-  school: trs
+  level: 2
+  school: ill
   materials:
-    value: a sprig of mistletoe
+    value: ''
     consumed: false
     cost: 0
     supply: 0
   preparation:
     mode: prepared
-    prepared: true
+    prepared: false
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: heal
+      type: utility
       activation:
         type: action
         value: null
@@ -88,79 +88,56 @@ system:
         spent: 0
         max: ''
         recovery: []
-      healing:
-        number: null
-        denomination: null
-        bonus: ''
-        types:
-          - healing
-        custom:
-          enabled: true
-          formula: '1'
-        scaling:
-          mode: ''
-          number: null
-          formula: ''
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
       sort: 0
-  identifier: goodberry
+  identifier: silence
   properties:
     - vocal
     - somatic
-    - material
-name: Goodberry
+    - concentration
+name: Silence
 flags:
   ddbimporter:
-    id: 137985
-    definitionId: 2126
+    id: 138712
+    definitionId: 2251
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Goodberry
+    originalName: Silence
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 246
+        pageNumber: 275
         sourceType: 1
     tags:
-      - Healing
-    version: 3.3.4
-  core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickDamage:
-      context:
-        '0': ''
-      value:
-        '0': true
-      altValue:
-        '0': true
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-  journal-backlinks:
-    references: []
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+    sourceId: Compendium.sosly.spells.Item.3RozP8o6Tuo6QufO
+    hash: 12cb090e4986299a7feedc849c92fc55570dd22e
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
       - vocal
       - somatic
-      - material
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+      - ritual
+      - concentration
+img: icons/magic/symbols/runes-triangle-magenta.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -168,14 +145,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655518477
-  modifiedTime: 1736742491916
+  createdTime: 1736743402969
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-folder: OouqYOD5Z1oGHStK
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: xBYl9MLuNY5afkf1
-sort: 3700000
-_key: '!items!xBYl9MLuNY5afkf1'
+_id: eMsp2uIj1toogM5m
+sort: 1500000
+_key: '!items!eMsp2uIj1toogM5m'
 

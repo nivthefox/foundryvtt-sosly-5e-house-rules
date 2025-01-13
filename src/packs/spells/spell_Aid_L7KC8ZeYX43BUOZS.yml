@@ -1,0 +1,322 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>Choose up to three creatures within range. Each target’s Hit Point
+      maximum and current Hit Points increase by 5 for the
+      duration.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em>
+      Each target’s Hit Points increase by 5 for each spell slot level above
+      2.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '24'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '3'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: abj
+  materials:
+    value: a tiny strip of white cloth
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    k09PT815julPSa9w:
+      type: heal
+      _id: k09PT815julPSa9w
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: PvaxJhANV85VlB7X
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: ''
+        types:
+          - healing
+        custom:
+          enabled: false
+        scaling:
+          number: null
+          mode: whole
+          formula: '5'
+        bonus: '5'
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: aid
+  properties:
+    - vocal
+    - somatic
+    - material
+name: Aid
+flags:
+  ddbimporter:
+    id: 136020
+    definitionId: 1990
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Aid
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 211
+        sourceType: 1
+    tags:
+      - Buff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.h7gQyHiEdsN4rWi2
+    hash: 52f602e2893d3ce51a44fe5b18f3eb4ddb9c7096
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickEffects:
+      value:
+        '0': true
+      altValue:
+        '0': true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/life/heart-cross-blue.webp
+effects:
+  - name: Aid
+    origin: Compendium.ddb-data.ddb-spells.Item.Z6A8Kj7D4AVRaiKq
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 28800
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    transfer: false
+    disabled: false
+    _id: YFHnZKxI9eCx72Qb
+    changes:
+      - key: system.attributes.hp.tempmax
+        mode: 4
+        value: '5'
+        priority: 20
+    description: ''
+    statuses: []
+    flags:
+      times-up:
+        isPassive: false
+      effective-transferral:
+        transferBlock:
+          button: false
+          chat: false
+          displayCard: false
+        transferrable:
+          self: true
+          target: true
+          always: false
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: undefined
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    img: icons/magic/life/heart-cross-blue.webp
+    type: base
+    system: {}
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!L7KC8ZeYX43BUOZS.YFHnZKxI9eCx72Qb'
+  - name: Aid
+    img: icons/magic/life/heart-cross-blue.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.L7KC8ZeYX43BUOZS
+    transfer: false
+    _id: PvaxJhANV85VlB7X
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.hp.bonuses.overall
+        mode: 2
+        value: '5'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736722067180
+      modifiedTime: 1736722296142
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!L7KC8ZeYX43BUOZS.PvaxJhANV85VlB7X'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736722007522
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: L7KC8ZeYX43BUOZS
+sort: 7100000
+_key: '!items!L7KC8ZeYX43BUOZS'
+

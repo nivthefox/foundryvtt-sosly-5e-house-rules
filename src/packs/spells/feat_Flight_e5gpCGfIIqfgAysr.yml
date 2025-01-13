@@ -1,0 +1,106 @@
+folder: 80bcfTnNn6o7Y5dR
+name: Flight
+type: feat
+_id: e5gpCGfIIqfgAysr
+img: icons/creatures/abilities/wings-birdlike-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: ''
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: monster
+    subtype: ''
+  prerequisites:
+    level: null
+  properties:
+    - mgc
+  requirements: ''
+effects:
+  - name: Flight
+    img: icons/creatures/abilities/wings-birdlike-blue.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.e5gpCGfIIqfgAysr
+    transfer: true
+    _id: Z5BnVCtl2fATzsRA
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.fly
+        mode: 2
+        value: '60'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: >-
+        Compendium.sosly-5e-house-rules.spells.Item.oMxPLACHMsy9HXqf.ActiveEffect.MPyNu2sJzYSjxD2y
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736748817658
+      modifiedTime: 1736748852961
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!e5gpCGfIIqfgAysr.Z5BnVCtl2fATzsRA'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736748807454
+  modifiedTime: 1736748829838
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!e5gpCGfIIqfgAysr'
+

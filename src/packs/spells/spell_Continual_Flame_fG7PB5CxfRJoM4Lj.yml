@@ -2,18 +2,14 @@ type: spell
 system:
   description:
     value: >-
-      <p>A number of
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.MLaNL8Y5OzZdIcMA]{berries}
-      equal to your spellcasting ability modifier appear in your hand and are
-      infused with magic for the duration. A creature can use its action to eat
-      one berry. Eating a berry allows the creature to expend a hit die as if
-      they had taken a breather, and the berry provides enough nourishment to
-      sustain a creature for one day.</p><p>The berries lose their potency if
-      they have not been consumed within 24 hours of the casting of this
-      spell.</p>
+      <p>A flame springs from an object that you touch. The effect casts Bright
+      Light in a 20-foot radius and Dim Light for an additional 20 feet. It
+      looks like a regular flame, but it creates no heat and consumes no fuel.
+      The flame can be covered or hidden but not smothered or
+      quenched.</p><p></p>
     chat: ''
   source:
-    custom: SoSly House Rules
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
@@ -25,7 +21,7 @@ system:
     value: 1
   duration:
     value: ''
-    units: inst
+    units: disp
   target:
     affects:
       choice: false
@@ -43,20 +39,20 @@ system:
     spent: 0
     recovery: []
   ability: ''
-  level: 1
-  school: trs
+  level: 2
+  school: evo
   materials:
-    value: a sprig of mistletoe
-    consumed: false
-    cost: 0
+    value: ruby dust worth 50 gp, which the spell consumes
+    consumed: true
+    cost: 50
     supply: 0
   preparation:
     mode: prepared
-    prepared: true
+    prepared: false
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
-      type: heal
+      type: utility
       activation:
         type: action
         value: null
@@ -88,79 +84,55 @@ system:
         spent: 0
         max: ''
         recovery: []
-      healing:
-        number: null
-        denomination: null
-        bonus: ''
-        types:
-          - healing
-        custom:
-          enabled: true
-          formula: '1'
-        scaling:
-          mode: ''
-          number: null
-          formula: ''
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
       sort: 0
-  identifier: goodberry
+  identifier: continual-flame
   properties:
     - vocal
     - somatic
     - material
-name: Goodberry
+name: Continual Flame
 flags:
   ddbimporter:
-    id: 137985
-    definitionId: 2126
+    id: 136431
+    definitionId: 2048
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Goodberry
+    originalName: Continual Flame
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 246
+        pageNumber: 227
         sourceType: 1
     tags:
-      - Healing
-    version: 3.3.4
-  core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickDamage:
-      context:
-        '0': ''
-      value:
-        '0': true
-      altValue:
-        '0': true
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-  journal-backlinks:
-    references: []
+      - Creation
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+    sourceId: Compendium.sosly.spells.Item.niT1sEXOQ86JXVGK
+    hash: 5e5d456c1307842e06505eabe73839697739ca8a
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
       - vocal
       - somatic
       - material
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+img: icons/magic/fire/explosion-fireball-medium-orange.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -168,14 +140,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655518477
-  modifiedTime: 1736742491916
+  createdTime: 1736725621490
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-folder: OouqYOD5Z1oGHStK
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: xBYl9MLuNY5afkf1
-sort: 3700000
-_key: '!items!xBYl9MLuNY5afkf1'
+_id: fG7PB5CxfRJoM4Lj
+sort: 6700000
+_key: '!items!fG7PB5CxfRJoM4Lj'
 

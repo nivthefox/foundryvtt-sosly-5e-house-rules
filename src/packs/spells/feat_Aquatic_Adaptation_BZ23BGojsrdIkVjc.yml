@@ -1,0 +1,109 @@
+folder: 80bcfTnNn6o7Y5dR
+name: Aquatic Adaptation
+type: feat
+_id: BZ23BGojsrdIkVjc
+img: icons/creatures/amphibians/frog-water-teal.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You sprout gills and grow webs between your fingers. You can breathe
+      underwater and gain a Swim Speed equal to your Speed.</p><p><br />This
+      feature ends when you stop concentrating on
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.JVr7Jy0qxg5nX1hA]{Alter
+      Self}.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: enchantment
+    subtype: ''
+  prerequisites:
+    level: null
+  properties:
+    - mgc
+  requirements: Alter Self
+effects:
+  - name: Aquatic Adaptation
+    img: icons/creatures/amphibians/frog-water-teal.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.BZ23BGojsrdIkVjc
+    _id: MvtuWuTqnGq6yAdr
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.swim
+        mode: 4
+        value: '@attributes.movement.walk'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736722554187
+      modifiedTime: 1736722635244
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!BZ23BGojsrdIkVjc.MvtuWuTqnGq6yAdr'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736722456950
+  modifiedTime: 1736722978148
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!BZ23BGojsrdIkVjc'
+

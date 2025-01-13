@@ -1,0 +1,208 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You invoke both death and life upon a 10-foot-radius sphere centered on
+      a point within range. Each creature of your choice in that area must make
+      a Constitution saving throw, taking 2d6 necrotic damage on a failed save,
+      or half as much damage on a successful one. Nonmagical vegetation in that
+      area withers.</p><p>In addition, each creature of your choice in that area
+      can spend and roll one of its unspent Hit Dice and regain a number of hit
+      points equal to the roll plus your spellcasting ability
+      modifier.</p><p><em><strong>At Higher Levels. </strong></em>When you cast
+      this spell using a spell slot of 3rd level or higher, the damage increases
+      by 1d6 for each slot above the 2nd, and the number of Hit Dice that can be
+      spent and added to the healing roll increases by one for each slot above
+      2nd.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: sphere
+      size: '10'
+      contiguous: false
+      count: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: nec
+  materials:
+    value: a withered vine twisted into a loop
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: 2d6[necrotic]
+            number: 2
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: wither-and-bloom
+  properties: []
+name: Wither and Bloom
+flags:
+  ddbimporter:
+    id: 10075692
+    definitionId: 1239806
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Wither and Bloom
+    sources:
+      - sourceId: 80
+        pageNumber: 38
+        sourceType: 1
+    tags: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.IDzQR0B9ZmArFojB
+    hash: 07d4760f3c4a4783a035a04c52f09b81823ae962
+  cf:
+    id: temp_3jaisgztlwn
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+  enhanced-terrain-layer:
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+  journal-backlinks:
+    references: []
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/nature/plant-vines-skull-green.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736750499801
+  modifiedTime: 1736750555020
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: fuqU4kfVqPXwmlnG
+sort: 0
+_key: '!items!fuqU4kfVqPXwmlnG'
+

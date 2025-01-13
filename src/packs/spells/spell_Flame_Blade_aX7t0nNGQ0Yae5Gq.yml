@@ -1,0 +1,160 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You evoke a
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.fHSy6mLbvYduFVj0]{fiery
+      blade} in your free hand. The blade is similar in size and shape to a
+      scimitar, and it lasts for the duration. If you let go of the blade, it
+      disappears, but you can evoke it again as a Bonus Action.</p><p>As a Magic
+      action, you can make a melee spell attack with the fiery blade. On a hit,
+      the target takes Fire damage equal to 3d6 plus your spellcasting ability
+      modifier.</p><p>The flaming blade sheds Bright Light in a 10-foot radius
+      and Dim Light for an additional 10 feet.</p><p><em><strong>Using a
+      Higher-Level Spell Slot.</strong></em> The damage increases by 1d6 for
+      each spell slot level above 2.</p><p></p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      type: creature
+      choice: false
+      count: ''
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: leaf of sumac
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    c7YIpqnTlx4OTwhD:
+      type: utility
+      _id: c7YIpqnTlx4OTwhD
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  identifier: flame-blade
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Flame Blade
+flags:
+  ddbimporter:
+    id: 136965
+    definitionId: 2106
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Flame Blade
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 242
+        sourceType: 1
+    tags:
+      - Damage
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.wtTg4SSztgYOMVVz
+    hash: 119559dd86518ceb75337050e1cb11347981ad8f
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/dagger-rune-enchant-flame-orange.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736727700041
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: aX7t0nNGQ0Yae5Gq
+sort: 4800000
+_key: '!items!aX7t0nNGQ0Yae5Gq'
+

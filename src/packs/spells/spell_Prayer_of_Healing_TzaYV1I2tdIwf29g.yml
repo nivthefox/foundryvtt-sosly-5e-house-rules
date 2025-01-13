@@ -2,57 +2,56 @@ type: spell
 system:
   description:
     value: >-
-      <p>A number of
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.MLaNL8Y5OzZdIcMA]{berries}
-      equal to your spellcasting ability modifier appear in your hand and are
-      infused with magic for the duration. A creature can use its action to eat
-      one berry. Eating a berry allows the creature to expend a hit die as if
-      they had taken a breather, and the berry provides enough nourishment to
-      sustain a creature for one day.</p><p>The berries lose their potency if
-      they have not been consumed within 24 hours of the casting of this
-      spell.</p>
+      <p>Up to five creatures of your choice who remain within range for the
+      spell’s entire casting gain the benefits of a Short Rest and also regain
+      2d8 Hit Points. A creature can’t be affected by this spell again until
+      that creature finishes a Long Rest.</p><p><em><strong>Using a Higher-Level
+      Spell Slot.</strong></em> The healing increases by 1d8 for each spell slot
+      level above 2.</p><p></p>
     chat: ''
   source:
-    custom: SoSly House Rules
+    custom: D&D Free Rules (2024)
     revision: 1
     rules: '2024'
     book: ''
     page: ''
     license: ''
   activation:
-    type: action
+    type: minute
     condition: ''
-    value: 1
+    value: 10
   duration:
     value: ''
     units: inst
   target:
     affects:
+      type: creature
+      count: '6'
       choice: false
-      count: ''
-      type: ''
+      special: ''
     template:
-      units: touch
+      units: ''
       contiguous: false
       type: ''
   range:
-    units: touch
+    value: '30'
+    units: ft
     special: ''
   uses:
     max: ''
     spent: 0
     recovery: []
   ability: ''
-  level: 1
-  school: trs
+  level: 2
+  school: evo
   materials:
-    value: a sprig of mistletoe
+    value: ''
     consumed: false
     cost: 0
     supply: 0
   preparation:
     mode: prepared
-    prepared: true
+    prepared: false
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -89,78 +88,64 @@ system:
         max: ''
         recovery: []
       healing:
-        number: null
-        denomination: null
+        number: 2
+        denomination: '8'
         bonus: ''
         types:
           - healing
         custom:
-          enabled: true
-          formula: '1'
+          enabled: false
+          formula: '2d8[healing - Unaffected: constructs, undead] + @mod'
         scaling:
-          mode: ''
-          number: null
+          mode: whole
+          number: 1
           formula: ''
       sort: 0
-  identifier: goodberry
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: prayer-of-healing
   properties:
     - vocal
-    - somatic
-    - material
-name: Goodberry
+name: Prayer of Healing
 flags:
   ddbimporter:
-    id: 137985
-    definitionId: 2126
+    id: 138584
+    definitionId: 2212
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Goodberry
+    originalName: Prayer of Healing
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 246
+        pageNumber: 267
         sourceType: 1
     tags:
       - Healing
-    version: 3.3.4
-  core: {}
-  rest-recovery:
-    data:
-      recovery:
-        enabled: false
-  rsr5e:
-    quickDamage:
-      context:
-        '0': ''
-      value:
-        '0': true
-      altValue:
-        '0': true
-    quickOther:
-      context: ''
-    quickDesc:
-      value: true
-      altValue: true
-    quickFooter:
-      value: true
-      altValue: true
-  journal-backlinks:
-    references: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
+    sourceId: Compendium.sosly.spells.Item.lkFz5C5RxZrvF0F9
+    hash: 16ff77502c6e53e078a2a05e1574e4bbf9e955da
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
   dnd5e:
     persistSourceMigration: true
     migratedProperties:
       - vocal
-      - somatic
-      - material
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/life/heart-cross-strong-green.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -168,14 +153,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736655518477
-  modifiedTime: 1736742491916
+  createdTime: 1736741581281
+  modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
-folder: OouqYOD5Z1oGHStK
+folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: xBYl9MLuNY5afkf1
-sort: 3700000
-_key: '!items!xBYl9MLuNY5afkf1'
+_id: TzaYV1I2tdIwf29g
+sort: 2900000
+_key: '!items!TzaYV1I2tdIwf29g'
 

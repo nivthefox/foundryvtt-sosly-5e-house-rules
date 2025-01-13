@@ -1,0 +1,95 @@
+folder: 80bcfTnNn6o7Y5dR
+name: Change Appearance
+type: feat
+_id: sgIOmzRVWKLhbsdS
+img: >-
+  modules/sosly-5e-house-rules/public/spells/features/alter-self_change-appearance.webp
+system:
+  activities:
+    R8ganfGfwXgaw9a9:
+      type: utility
+      _id: R8ganfGfwXgaw9a9
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You alter your appearance. You decide what you look like, including
+      your height, weight, facial features, sound of your voice, hair length,
+      coloration, and other distinguishing characteristics. You can make
+      yourself appear as a member of another species, though none of your
+      statistics change. You can’t appear as a creature of a different size, and
+      your basic shape stays the same; if you’re bipedal, you can’t use this
+      spell to become quadrupedal, for instance. For the duration, you can take
+      a Magic action to change your appearance in this way again.</p><p>This
+      feature ends when you stop concentrating on
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.JVr7Jy0qxg5nX1hA]{Alter
+      Self}.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: enchantment
+    subtype: ''
+  prerequisites:
+    level: null
+  properties:
+    - mgc
+  requirements: Alter Self
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736722746331
+  modifiedTime: 1736723101792
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!sgIOmzRVWKLhbsdS'
+

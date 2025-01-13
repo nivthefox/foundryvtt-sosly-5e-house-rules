@@ -2,27 +2,12 @@ type: spell
 system:
   description:
     value: >-
-      <p>You activate one of the effects below. Until the spell ends, you can
-      activate either effect as a Magic action on your later
-      turns.</p><p><em><strong>Sense Thoughts.</strong></em> You sense the
-      presence of thoughts within 30 feet of yourself that belong to creatures
-      that know languages or are telepathic. You don’t read the thoughts, but
-      you know that a thinking creature is present.</p><p>The spell is blocked
-      by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of
-      lead.</p><p><em><strong>Read Thoughts.</strong></em> Target one creature
-      you can see within 30 feet of yourself or one creature within 30 feet of
-      yourself that you detected with the Sense Thoughts option. You learn what
-      is most on the target’s mind right now. If the target doesn’t know any
-      languages and isn’t telepathic, you learn nothing.</p><p>As a Magic action
-      on your next turn, you can try to probe deeper into the target’s mind. If
-      you probe deeper, the target makes a Wisdom saving throw. On a failed
-      save, you discern the target’s reasoning, emotions, and something that
-      looms large in its mind (such as a worry, love, or hate). On a successful
-      save, the spell ends. Either way, the target knows that you are probing
-      into its mind, and until you shift your attention away from the target’s
-      mind, the target can take an action on its turn to make an Intelligence
-      (Arcana) check against your spell save DC, ending the spell on a
-      success.</p><p></p>
+      <p>You weave a distracting string of words, causing creatures of your
+      choice that you can see within range to make a Wisdom saving throw. Any
+      creature you or your companions are fighting automatically succeeds on
+      this save. On a failed save, a target has a −10 penalty to Wisdom
+      (Perception) checks and Passive Perception until the spell
+      ends.</p><p></p>
     chat: ''
   source:
     custom: D&D Free Rules (2024)
@@ -40,7 +25,7 @@ system:
     units: minute
   target:
     affects:
-      type: self
+      type: creature
       count: '1'
       choice: false
       special: ''
@@ -49,7 +34,8 @@ system:
       contiguous: false
       type: ''
   range:
-    units: self
+    value: '60'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -57,9 +43,9 @@ system:
     recovery: []
   ability: ''
   level: 2
-  school: div
+  school: enc
   materials:
-    value: a copper piece
+    value: ''
     consumed: false
     cost: 0
     supply: 0
@@ -111,40 +97,39 @@ system:
           calculation: spellcasting
           formula: ''
       sort: 0
-  identifier: detect-thoughts
+  identifier: enthrall
   properties:
     - vocal
     - somatic
-    - material
-name: Detect Thoughts
+    - concentration
+name: Enthrall
 flags:
   ddbimporter:
-    id: 136574
-    definitionId: 2067
+    id: 136720
+    definitionId: 2086
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Detect Thoughts
+    originalName: Enthrall
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 231
+        pageNumber: 238
         sourceType: 1
     tags:
-      - Social
-      - Detection
+      - Control
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.qgkDX6hctfDUZ5pW
-    hash: 9a2a6f77faa117a29e39b7190c0adf7743253dba
+    sourceId: Compendium.sosly.spells.Item.V5WZyFpyLB8J7ZQJ
+    hash: f7db65e5d93b27b8fdc4f88e2a9811a2a09e8099
   cf:
     id: temp_3jaisgztlwn
   core: {}
@@ -153,9 +138,7 @@ flags:
     migratedProperties:
       - vocal
       - somatic
-      - material
-      - concentration
-img: icons/magic/light/explosion-star-teal-purple.webp
+img: icons/magic/air/air-burst-spiral-pink.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -163,14 +146,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736628461102
+  createdTime: 1736727009396
   modifiedTime: 1736750342302
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: ufwSCz2mMY98iz1k
-sort: 8000000
-_key: '!items!ufwSCz2mMY98iz1k'
+_id: VQ1qGtJ5fBxgqlUh
+sort: 4700000
+_key: '!items!VQ1qGtJ5fBxgqlUh'
 

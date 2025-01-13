@@ -1,0 +1,265 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>The target hit by the strike takes an extra 2d6 Radiant damage from the
+      attack. Until the spell ends, the target sheds Bright Light in a 5-foot
+      radius, attack rolls against it have Advantage, and it can’t benefit from
+      the Invisible condition.</p><p><em><strong>Using a Higher-Level Spell
+      Slot.</strong></em> The damage increases by 1d6 for each spell slot level
+      above 2.</p><p></p>
+    chat: ''
+  source:
+    custom: D&D Free Rules (2024)
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: >-
+      which you take immediately after hitting a creature with a Melee weapon or
+      an Unarmed Strike
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      choice: false
+      count: ''
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    PNB3sgKxYe6zQlNA:
+      type: damage
+      _id: PNB3sgKxYe6zQlNA
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: vwAQDkQQLmkjrI9y
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 6
+            bonus: ''
+            types:
+              - radiant
+            scaling:
+              mode: whole
+              number: 1
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: branding-smite
+  properties:
+    - vocal
+    - concentration
+name: Shining Smite
+flags:
+  ddbimporter:
+    id: 307827
+    definitionId: 2326
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Branding Smite
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 219
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.PzinbLueGoSEMuIi
+    hash: 37548d68ee67849c0753ba2ed25b6ba43ddf644e
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  rsr5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/fire/dagger-rune-enchant-flame-strong-blue-yellow.webp
+effects:
+  - name: Shining Smite
+    img: icons/magic/fire/dagger-rune-enchant-flame-strong-blue-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.YsPTkUASWh2ajbqm
+    transfer: false
+    _id: vwAQDkQQLmkjrI9y
+    type: base
+    system: {}
+    changes:
+      - key: ATL.light.alpha
+        mode: 4
+        value: '0.2'
+        priority: 20
+      - key: ATL.light.color
+        mode: 4
+        value: FFFFFF
+        priority: 20
+      - key: ATL.light.bright
+        mode: 4
+        value: '5'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736743080063
+      modifiedTime: 1736743194051
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!YsPTkUASWh2ajbqm.vwAQDkQQLmkjrI9y'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736742982655
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: YsPTkUASWh2ajbqm
+sort: 1400000
+_key: '!items!YsPTkUASWh2ajbqm'
+

@@ -2,27 +2,20 @@ type: spell
 system:
   description:
     value: >-
-      <p>You activate one of the effects below. Until the spell ends, you can
-      activate either effect as a Magic action on your later
-      turns.</p><p><em><strong>Sense Thoughts.</strong></em> You sense the
-      presence of thoughts within 30 feet of yourself that belong to creatures
-      that know languages or are telepathic. You don’t read the thoughts, but
-      you know that a thinking creature is present.</p><p>The spell is blocked
-      by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of
-      lead.</p><p><em><strong>Read Thoughts.</strong></em> Target one creature
-      you can see within 30 feet of yourself or one creature within 30 feet of
-      yourself that you detected with the Sense Thoughts option. You learn what
-      is most on the target’s mind right now. If the target doesn’t know any
-      languages and isn’t telepathic, you learn nothing.</p><p>As a Magic action
-      on your next turn, you can try to probe deeper into the target’s mind. If
-      you probe deeper, the target makes a Wisdom saving throw. On a failed
-      save, you discern the target’s reasoning, emotions, and something that
-      looms large in its mind (such as a worry, love, or hate). On a successful
-      save, the spell ends. Either way, the target knows that you are probing
-      into its mind, and until you shift your attention away from the target’s
-      mind, the target can take an action on its turn to make an Intelligence
-      (Arcana) check against your spell save DC, ending the spell on a
-      success.</p><p></p>
+      <p>You conjure a mass of sticky webbing at a point within range. The webs
+      fill a 20-foot Cube there for the duration. The webs are Difficult
+      Terrain, and the area within them is Lightly Obscured.</p><p>If the webs
+      aren’t anchored between two solid masses (such as walls or trees) or
+      layered across a floor, wall, or ceiling, the web collapses on itself, and
+      the spell ends at the start of your next turn. Webs layered over a flat
+      surface have a depth of 5 feet.</p><p>The first time a creature enters the
+      webs on a turn or starts its turn there, it must succeed on a Dexterity
+      saving throw or have the Restrained condition while in the webs or until
+      it breaks free.</p><p>A creature Restrained by the webs can take an action
+      to make a Strength (Athletics) check against your spell save DC. If it
+      succeeds, it is no longer Restrained.</p><p>The webs are flammable. Any
+      5-foot Cube of webs exposed to fire burns away in 1 round, dealing 2d4
+      Fire damage to any creature that starts its turn in the fire.</p><p></p>
     chat: ''
   source:
     custom: D&D Free Rules (2024)
@@ -37,19 +30,21 @@ system:
     value: 1
   duration:
     value: '1'
-    units: minute
+    units: hour
   target:
     affects:
-      type: self
-      count: '1'
       choice: false
-      special: ''
-    template:
-      units: ''
-      contiguous: false
+      count: ''
       type: ''
+    template:
+      units: ft
+      type: cube
+      size: '20'
+      contiguous: false
+      count: ''
   range:
-    units: self
+    value: '60'
+    units: ft
     special: ''
   uses:
     max: ''
@@ -57,9 +52,9 @@ system:
     recovery: []
   ability: ''
   level: 2
-  school: div
+  school: con
   materials:
-    value: a copper piece
+    value: a bit of spiderweb
     consumed: false
     cost: 0
     supply: 0
@@ -106,45 +101,45 @@ system:
         parts: []
       save:
         ability:
-          - wis
+          - dex
         dc:
           calculation: spellcasting
           formula: ''
       sort: 0
-  identifier: detect-thoughts
+  identifier: web
   properties:
     - vocal
     - somatic
     - material
-name: Detect Thoughts
+    - concentration
+name: Web
 flags:
   ddbimporter:
-    id: 136574
-    definitionId: 2067
+    id: 138944
+    definitionId: 2299
     entityTypeId: 435869154
     dndbeyond:
       lookup: generic
       lookupName: generic
       level: null
       castAtLevel: null
-    originalName: Detect Thoughts
+    originalName: Web
     sources:
       - sourceId: 1
         pageNumber: null
         sourceType: 2
       - sourceId: 2
-        pageNumber: 231
+        pageNumber: 287
         sourceType: 1
     tags:
-      - Social
-      - Detection
+      - Control
     version: 3.4.17
   midiProperties:
     magicdam: true
     magiceffect: true
   scene-packer:
-    sourceId: Compendium.sosly.spells.Item.qgkDX6hctfDUZ5pW
-    hash: 9a2a6f77faa117a29e39b7190c0adf7743253dba
+    sourceId: Compendium.sosly.spells.Item.9p47c5QurgUAT55f
+    hash: 4dc2469473e98cdbe75c992178d3199983d8c88b
   cf:
     id: temp_3jaisgztlwn
   core: {}
@@ -155,7 +150,7 @@ flags:
       - somatic
       - material
       - concentration
-img: icons/magic/light/explosion-star-teal-purple.webp
+img: icons/magic/control/debuff-chains-ropes-net-white.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -163,14 +158,14 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736628461102
-  modifiedTime: 1736750342302
+  createdTime: 1736750342228
+  modifiedTime: 1736750366373
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: LjfEKGbI70nMnxQG
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: ufwSCz2mMY98iz1k
-sort: 8000000
-_key: '!items!ufwSCz2mMY98iz1k'
+_id: HB1tNMm03g6xHBbS
+sort: 300000
+_key: '!items!HB1tNMm03g6xHBbS'
 

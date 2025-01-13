@@ -1,0 +1,237 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>A burst of cold energy emanates from you in a 30-foot cone. Each
+      creature in that area must make a Constitution saving throw. On a failed
+      save, a creature takes 3d8 cold damage and is hindered by ice formations
+      for 1 minute, or until it or another creature within reach of it uses an
+      action to break away the ice. A creature hindered by ice has its speed
+      reduced to 0. On a successful save, a creature takes half as much damage
+      and isn’t hindered by ice.</p>
+
+      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell
+      using a spell slot of 3rd level or higher, increase the cold damage by 1d8
+      for each slot level above 2nd.</p>
+    chat: ''
+  source:
+    custom: Fizban's Treasury of Dragons pg 21
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: cone
+      size: '30'
+      contiguous: false
+      count: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: a vial of meltwater
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QWHMEn1VkJgOeyuI
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: 3d8[cold]
+            number: 3
+            denomination: 8
+            bonus: ''
+            types:
+              - cold
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: rimes-binding-ice
+  properties:
+    - somatic
+    - material
+name: Rime's Binding Ice
+flags:
+  ddbimporter:
+    id: 9603636
+    definitionId: 1183867
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Rime's Binding Ice
+    sources:
+      - sourceId: 81
+        pageNumber: 21
+        sourceType: 1
+    tags: []
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.8Qn9Z1CbiUSf0iue
+    hash: 736d14cb7f7d22c9066a1fa39ebd5f5032517059
+  cf:
+    id: temp_3jaisgztlwn
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/water/barrier-ice-wall-explosion.webp
+effects:
+  - name: Rime's Binding Ice
+    img: icons/magic/water/barrier-ice-wall-explosion.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.UdjqeT8aWxDZGRyt
+    transfer: false
+    _id: QWHMEn1VkJgOeyuI
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 0
+        value: '0'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 10
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736742165535
+      modifiedTime: 1736742195393
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!UdjqeT8aWxDZGRyt.QWHMEn1VkJgOeyuI'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736742124369
+  modifiedTime: 1736750342302
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: UdjqeT8aWxDZGRyt
+sort: 2300000
+_key: '!items!UdjqeT8aWxDZGRyt'
+
