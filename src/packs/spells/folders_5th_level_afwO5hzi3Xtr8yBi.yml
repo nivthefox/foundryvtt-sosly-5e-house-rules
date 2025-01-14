@@ -1,11 +1,11 @@
-name: 5th-level
+name: 5th Level
 sorting: a
 folder: null
 type: Item
 _id: afwO5hzi3Xtr8yBi
 description: ''
-sort: 275000
-color: null
+sort: 600000
+color: '#ba7909'
 flags: {}
 _stats:
   compendiumSource: null
@@ -14,7 +14,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736735973679
-  modifiedTime: 1736735980606
+  modifiedTime: 1736884614229
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!folders!afwO5hzi3Xtr8yBi'
 

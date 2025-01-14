@@ -1,0 +1,309 @@
+name: Enhance Ability
+system:
+  description:
+    value: >-
+      <p>You touch a creature and choose Strength, Dexterity, Intelligence,
+      Wisdom, or Charisma. For the duration, the target has Advantage on ability
+      checks using the chosen ability.</p><p><strong>Using a Higher-Level Spell
+      Slot.</strong> You can target one additional creature for each spell slot
+      level above 2. You can choose a different ability for each target.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '@item.level - 1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 2
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: fur or a feather
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects:
+        - _id: gg9dU0SnvU03C803
+        - _id: GGEj4zNginSIp6VV
+        - _id: NTaFTBr1uam93jHS
+        - _id: EGnngHgGBzTyThW6
+        - _id: e02u2XLDltCT5D5x
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: Cast
+  identifier: enhance-ability
+type: spell
+img: icons/skills/social/intimidation-impressing.webp
+effects:
+  - name: Enhanced Strength
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplEnhanceAbi
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: systems/dnd5e/icons/svg/abilities/strength.svg
+    _id: gg9dU0SnvU03C803
+    type: base
+    system: {}
+    changes: []
+    description: >-
+      <p>The target has Advantage on ability checks made with the chosen
+      ability.</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: >-
+        Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000.ActiveEffect.ljMTBKPVmEnLPX1b
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!pJxmSPOdbennzpy1.gg9dU0SnvU03C803'
+  - name: Enhanced Dexterity
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplEnhanceAbi
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: systems/dnd5e/icons/svg/abilities/dexterity.svg
+    _id: GGEj4zNginSIp6VV
+    type: base
+    system: {}
+    changes: []
+    description: >-
+      <p>The target has Advantage on ability checks made with the chosen
+      ability.</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: >-
+        Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000.ActiveEffect.Mmss2SPIy7wtt2PV
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!pJxmSPOdbennzpy1.GGEj4zNginSIp6VV'
+  - name: Enhanced Intelligence
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplEnhanceAbi
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: systems/dnd5e/icons/svg/abilities/intelligence.svg
+    _id: NTaFTBr1uam93jHS
+    type: base
+    system: {}
+    changes: []
+    description: >-
+      <p>The target has Advantage on ability checks made with the chosen
+      ability.</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: >-
+        Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000.ActiveEffect.FfVB2Yyb7wfgpsQB
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!pJxmSPOdbennzpy1.NTaFTBr1uam93jHS'
+  - name: Enhanced Wisdom
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplEnhanceAbi
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: systems/dnd5e/icons/svg/abilities/wisdom.svg
+    _id: EGnngHgGBzTyThW6
+    type: base
+    system: {}
+    changes: []
+    description: >-
+      <p>The target has Advantage on ability checks made with the chosen
+      ability.</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: >-
+        Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000.ActiveEffect.k2569xtIeXKRReLU
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!pJxmSPOdbennzpy1.EGnngHgGBzTyThW6'
+  - name: Enhanced Charisma
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplEnhanceAbi
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: systems/dnd5e/icons/svg/abilities/charisma.svg
+    _id: e02u2XLDltCT5D5x
+    type: base
+    system: {}
+    changes: []
+    description: >-
+      <p>The target has Advantage on ability checks made with the chosen
+      ability.</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: >-
+        Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000.ActiveEffect.sC2IXWDs07oTt5JN
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!pJxmSPOdbennzpy1.e02u2XLDltCT5D5x'
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736880846281
+  modifiedTime: 1736880856382
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: pJxmSPOdbennzpy1
+sort: 0
+_key: '!items!pJxmSPOdbennzpy1'
+

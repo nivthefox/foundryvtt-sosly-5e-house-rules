@@ -1,0 +1,127 @@
+name: Locate Object
+system:
+  description:
+    value: >-
+      <p>Describe or name an object that is familiar to you. You sense the
+      direction to the object’s location if that object is within 1,000 feet of
+      you. If the object is in motion, you know the direction of its
+      movement.</p><p>The spell can locate a specific object known to you if you
+      have seen it up close—within 30 feet—at least once. Alternatively, the
+      spell can locate the nearest object of a particular kind, such as a
+      certain kind of apparel, jewelry, furniture, tool, or weapon.</p><p>This
+      spell can’t locate an object if any thickness of lead blocks a direct path
+      between you and the object.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 2
+  school: div
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a forked twig
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: Cast
+  identifier: locate-object
+type: spell
+img: icons/tools/navigation/map-marked-gold.webp
+effects: []
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736880997567
+  modifiedTime: 1736881021115
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: mC4z8izbM0iOQnZJ
+sort: 0
+_key: '!items!mC4z8izbM0iOQnZJ'
+

@@ -1,0 +1,718 @@
+name: Skeletal Creature
+type: feat
+img: icons/magic/death/skeleton-worn-skull-tan.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Skeletons are the animated bones of the dead, mindless automatons that
+      obey the orders of their masters. A skeleton is seldom garbed in anything
+      more than the rotting remnants of any clothing or armor it was wearing
+      when slain.</p><p><em><strong>Type.</strong></em> The creature's type
+      changes to Undead</p><p><em><strong>Speed.</strong></em> Skeletons lose
+      any speeds other than their walking speed, unless it is their natural mode
+      of movement.</p><p><em><strong>Armor Class.</strong></em> The creature
+      loses any natural armor it had.</p><p><em><strong>Ability
+      Scores.</strong></em> Reduce the creature's Intelligence and Charisma
+      scores to 5.</p><p><em><strong>Saves.</strong></em> The skeleton is not
+      proficient in saving throws.</p><p><em><strong>Skills.</strong></em> The
+      skeletons is not proficient in skills.</p><p><em><strong>Damage
+      Vulnerabilities.</strong></em> The skeleton is vulnerable to Bludgeoning
+      damage.</p><p><em><strong>Damage Immunities</strong></em>. The skeleton
+      gains immunity to Poison.</p><p><em><strong>Condition
+      Immuntities.</strong></em> The skeleton gains immunity to the Exhausted
+      and Poisoned conditions.</p><p><em><strong>Senses.</strong></em> The
+      skeleton has Darkvision at 60 feet. It loses other abnormal
+      senses.</p><p><em><strong>Languages.</strong></em> The skeleton
+      understands the languages it knew in life, but can't
+      speak.</p><p><em><strong>Attacks.</strong></em> The skeleton retains any
+      natural weapon attacks it had (such as claws, bites, or tails), but loses
+      any supernatural or magical attacks, and it loses multiattack.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: ''
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: SoSly House Rules
+effects:
+  - name: Ability Scores
+    img: icons/skills/wounds/anatomy-organ-brain-pink-red.webp
+    _id: HRcY5GO7Bzk31Z4K
+    type: base
+    system: {}
+    changes:
+      - key: system.abilities.int.value
+        mode: 3
+        value: '5'
+        priority: 20
+      - key: system.abilities.cha.value
+        mode: 3
+        value: '5'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: 1248
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.CjzfaokK0jBED4g0
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        showIcon: false
+        stackable: multi
+        durationExpression: ''
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.AC9EmoOje1JtgJBU
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.HRcY5GO7Bzk31Z4K'
+  - name: Armor Class
+    img: icons/equipment/chest/breastplate-leather-brown-belted.webp
+    _id: h9Y18lRW0CZ5aEHS
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.flat
+        mode: 3
+        value: '10'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: 1092
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.CjzfaokK0jBED4g0
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        showIcon: false
+        stackable: multi
+        durationExpression: ''
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.wQGloHT7MBn5DkSU
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.h9Y18lRW0CZ5aEHS'
+  - name: Movement
+    img: icons/skills/movement/figure-running-gray.webp
+    _id: kJTvOjNLs9s8JVzn
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.burrow
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.attributes.movement.climb
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.attributes.movement.fly
+        mode: 5
+        value: '0'
+        priority: 20
+      - key: system.attributes.movement.swim
+        mode: 2
+        value: '0'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: 2496
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.CjzfaokK0jBED4g0
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        showIcon: false
+        stackable: multi
+        durationExpression: ''
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.SjeiuqkXvwCOa9iu
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.kJTvOjNLs9s8JVzn'
+  - name: Saves
+    img: icons/skills/toxins/symbol-poison-drop-skull-green.webp
+    _id: 27pu9vUXKs42MN0b
+    type: base
+    system: {}
+    changes:
+      - key: system.abilities.str.proficient
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.abilities.dex.proficient
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.abilities.con.proficient
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.abilities.int.proficient
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.abilities.wis.proficient
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.abilities.cha.proficient
+        mode: 3
+        value: '0'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: 2340
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.CjzfaokK0jBED4g0
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        showIcon: false
+        stackable: multi
+        durationExpression: ''
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.xFjWZirA3GSiDKKO
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.27pu9vUXKs42MN0b'
+  - name: Skills
+    img: icons/sundries/books/book-face-black.webp
+    _id: UJ6ipaV0P12gMEKc
+    type: base
+    system: {}
+    changes:
+      - key: system.skills.acr.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.ani.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.arc.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.ath.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.dec.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.his.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.ins.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.itm.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.inv.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.med.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.nat.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.per.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.prc.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.prf.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.rel.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.slt.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.ste.value
+        mode: 3
+        value: '0'
+        priority: 20
+      - key: system.skills.sur.value
+        mode: 3
+        value: '0'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: 3744
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.CjzfaokK0jBED4g0
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        showIcon: false
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.pBJelkA0bxRf9dVR
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.UJ6ipaV0P12gMEKc'
+  - name: Type
+    img: icons/magic/unholy/hand-fire-skeleton-pink.webp
+    _id: ibiXQv8kNxfOVYdy
+    type: base
+    system: {}
+    changes:
+      - key: system.details.type.value
+        mode: 5
+        value: undead
+        priority: 20
+    disabled: false
+    duration:
+      startTime: 1560
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.CjzfaokK0jBED4g0
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        showIcon: false
+        stackable: multi
+        durationExpression: ''
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.fCIkMzqFrqqzYQdF
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.ibiXQv8kNxfOVYdy'
+  - name: Damage Vulnerabilities
+    img: icons/skills/wounds/anatomy-bone-joint.webp
+    origin: Item.CjzfaokK0jBED4g0
+    _id: V8il13LZCRGjB8IW
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dv.value
+        mode: 2
+        value: bludgeoning
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.V8il13LZCRGjB8IW'
+  - name: Damage/Condition Immunities
+    img: icons/magic/acid/dissolve-pool-bubbles.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.0vA3UWKLURcdNPwU
+    _id: Q1CraGoGrr6VSpVA
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.di.value
+        mode: 2
+        value: poison
+        priority: 20
+      - key: system.traits.ci.value
+        mode: 2
+        value: poisoned
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: 1736883845017
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!0vA3UWKLURcdNPwU.Q1CraGoGrr6VSpVA'
+  - name: Senses
+    img: icons/magic/perception/eye-tendrils-web-purple.webp
+    origin: Item.CjzfaokK0jBED4g0
+    _id: NHn6QmUINYGljxz8
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.senses.darkvision
+        mode: 4
+        value: '60'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!0vA3UWKLURcdNPwU.NHn6QmUINYGljxz8'
+folder: 80bcfTnNn6o7Y5dR
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736883740999
+  modifiedTime: 1736885654051
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 0vA3UWKLURcdNPwU
+sort: 200000
+_key: '!items!0vA3UWKLURcdNPwU'
+

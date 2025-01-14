@@ -14,8 +14,8 @@ system:
       your own, into a thought strand.</p><p>A creature can use an action while
       holding a thought strand to receive whatever memory, idea, or message the
       thought strand contains. Casting
-      @UUID[Compendium.sosly-5e-house-rules.spells.Item.ufwSCz2mMY98iz1k]{detect
-      thoughts} on the thought strand has the same effect.</p>
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplDetectThou]{Detect
+      Thoughts} on the thought strand has the same effect.</p>
     chat: ''
   source:
     custom: SoSly House Rules
@@ -107,7 +107,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736628249317
-  modifiedTime: 1736632493379
+  modifiedTime: 1736827838642
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 ownership:

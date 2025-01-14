@@ -1,0 +1,1023 @@
+name: Elemental Weapon
+system:
+  description:
+    value: >-
+      <p>A nonmagical weapon you touch becomes a magic weapon. Choose one of the
+      following damage types: Acid, Cold, Fire, Lightning, or Thunder. For the
+      duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4
+      damage of the chosen type when it hits.</p><p><strong>Using a Higher-Level
+      Spell Slot.</strong> If you use a level 5–6 spell slot, the bonus to
+      attack rolls increases to +2, and the extra damage increases to 2d4. If
+      you use a level 7+ spell slot, the bonus increases to +3, and the extra
+      damage increases to 3d4.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: object
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 3
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: enchant
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects:
+        - _id: pGfFNf1ET79OGY2m
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: wKcTkykZTJwB5WGx
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: JSh7FcMkMvrPuUze
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: 4fKngKGyhjykjx5K
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: xlAFY1k5T1OAtpDy
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: F0jmiP33LCpSXzKS
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: P7l2v5zWI795y0qr
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: 9YTw1A75Wva2KJFq
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: R9Pq5uRtTktLZaBV
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: XN3zomIP0t98AGfc
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: 1l07FgjqaBWVhfdf
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: mDyZ1j4PNKdlJCiD
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: dWeOUtA5QzUSuT5r
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: I4YQq64aes0LeDNj
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: hARI3OSV4CuHMXBT
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+            activity: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      enchant:
+        identifier: ''
+      restrictions:
+        allowMagical: false
+        type: weapon
+        categories: []
+        properties: []
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+  identifier: elemental-weapon
+type: spell
+img: icons/skills/melee/blade-tip-smoke-green.webp
+effects:
+  - name: Elemental Acid +1
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/acid/projectile-flame-smoke-green.webp
+    _id: pGfFNf1ET79OGY2m
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '1'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["1d4", "acid"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.pGfFNf1ET79OGY2m'
+  - name: Elemental Cold +1
+    origin: null
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/water/snowflake-ice-blue.webp
+    _id: wKcTkykZTJwB5WGx
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '1'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["1d4", "cold"]]'
+        priority: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.wKcTkykZTJwB5WGx'
+  - name: Elemental Fire +1
+    origin: null
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/fire/flame-burning-yellow-orange.webp
+    _id: JSh7FcMkMvrPuUze
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '1'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["1d4", "fire"]]'
+        priority: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.JSh7FcMkMvrPuUze'
+  - name: Elemental Lightning +1
+    origin: null
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/lightning/bolts-strike-salvo-blue.webp
+    _id: 4fKngKGyhjykjx5K
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '1'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["1d4", "lightning"]]'
+        priority: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.4fKngKGyhjykjx5K'
+  - name: Elemental Thunder +1
+    origin: null
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 3
+            max: 4
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/lightning/bolt-cloud-sky-white.webp
+    _id: xlAFY1k5T1OAtpDy
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '1'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["1d4", "thunder"]]'
+        priority: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.xlAFY1k5T1OAtpDy'
+  - name: Elemental Acid +2
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/acid/projectile-flame-smoke-green.webp
+    _id: F0jmiP33LCpSXzKS
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["2d4", "acid"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.F0jmiP33LCpSXzKS'
+  - name: Elemental Cold +2
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/water/snowflake-ice-blue.webp
+    _id: P7l2v5zWI795y0qr
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["2d4", "cold"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.P7l2v5zWI795y0qr'
+  - name: Elemental Fire +2
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/fire/flame-burning-yellow-orange.webp
+    _id: 9YTw1A75Wva2KJFq
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["2d4", "fire"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.9YTw1A75Wva2KJFq'
+  - name: Elemental Lightning +2
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/lightning/bolts-strike-salvo-blue.webp
+    _id: R9Pq5uRtTktLZaBV
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["2d4", "lightning"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.R9Pq5uRtTktLZaBV'
+  - name: Elemental Thunder +2
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 5
+            max: 6
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/lightning/bolt-cloud-sky-white.webp
+    _id: XN3zomIP0t98AGfc
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["2d4", "thunder"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.XN3zomIP0t98AGfc'
+  - name: Elemental Acid +3
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/acid/projectile-flame-smoke-green.webp
+    _id: 1l07FgjqaBWVhfdf
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '3'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["3d4", "acid"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.1l07FgjqaBWVhfdf'
+  - name: Elemental Cold +3
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/water/snowflake-ice-blue.webp
+    _id: mDyZ1j4PNKdlJCiD
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '3'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["3d4", "cold"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.mDyZ1j4PNKdlJCiD'
+  - name: Elemental Fire +3
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/fire/flame-burning-yellow-orange.webp
+    _id: dWeOUtA5QzUSuT5r
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '3'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["3d4", "fire"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.dWeOUtA5QzUSuT5r'
+  - name: Elemental Lightning +3
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/lightning/bolts-strike-salvo-blue.webp
+    _id: I4YQq64aes0LeDNj
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '3'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["3d4", "lightning"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.I4YQq64aes0LeDNj'
+  - name: Elemental Thunder +3
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 7
+            max: null
+          riders:
+            effect: []
+            item: []
+    img: icons/magic/lightning/bolt-cloud-sky-white.webp
+    _id: hARI3OSV4CuHMXBT
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.attack.bonus
+        mode: 2
+        value: '3'
+        priority: null
+      - key: system.damage.parts
+        mode: 2
+        value: '[["3d4", "thunder"]]'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!LuT1ncPiESbIpwdo.hARI3OSV4CuHMXBT'
+folder: vufwjv5ImnM2tNaF
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736885368899
+  modifiedTime: 1736889062880
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: LuT1ncPiESbIpwdo
+sort: 800000
+_key: '!items!LuT1ncPiESbIpwdo'
+

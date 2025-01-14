@@ -1,0 +1,117 @@
+name: Lesser Restoration
+system:
+  description:
+    value: >-
+      <p>You touch a creature and end one condition on it:
+      &amp;Reference[blinded], &amp;Reference[deafened],
+      &amp;Reference[paralyzed], or
+      &amp;Reference[poisoned].</p><p>Alternatively, you can reduce the target's
+      @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{exhaustion} level by one.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: null
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 2
+  school: abj
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+  identifier: lesser-restoration
+type: spell
+img: icons/magic/holy/prayer-hands-glowing-yellow-green.webp
+effects: []
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736880942509
+  modifiedTime: 1736880966727
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: YEUJ5BXV2dO2dNA6
+sort: 0
+_key: '!items!YEUJ5BXV2dO2dNA6'
+

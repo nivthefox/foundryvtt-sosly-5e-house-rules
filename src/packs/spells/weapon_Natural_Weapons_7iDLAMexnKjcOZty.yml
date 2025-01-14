@@ -138,7 +138,7 @@ system:
     units: ''
   mastery: ''
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -154,7 +154,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736723442952
-  modifiedTime: 1736723531937
+  modifiedTime: 1736883741044
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!7iDLAMexnKjcOZty'
 

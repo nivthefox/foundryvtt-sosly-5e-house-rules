@@ -169,7 +169,7 @@ flags:
     migratedProperties:
       - vocal
       - somatic
-img: icons/magic/control/buff-flight-wings-blue.webp
+img: icons/sundries/lights/candle-lit-angelic.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -178,7 +178,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736624249750
-  modifiedTime: 1736632493379
+  modifiedTime: 1736877818760
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: MgD1KyupgXa2j2fO
 ownership:

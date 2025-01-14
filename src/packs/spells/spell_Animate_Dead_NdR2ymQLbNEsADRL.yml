@@ -1,0 +1,169 @@
+name: Animate Dead
+system:
+  description:
+    value: >-
+      <p>Choose a pile of bones or a corpse of a creature within range. The
+      creature must be a humanoid, aberration, beast, dragon, giant, or
+      monstrosity, and its Challenge Rating can be no higher than the level of
+      the spell slot used to cast this spell, divided by 3 (round up). The
+      target becomes an Undead creature, applying the
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.0vA3UWKLURcdNPwU]{Skeletal
+      Creature} or the
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.LU66U3A1CyhlSjTi]{Zombified
+      Creature} template.</p><p>On each of your turns, you can take a Bonus
+      Action to mentally command any creature you made with this spell if the
+      creature is within 60 feet of you (if you control multiple creatures, you
+      can command any of them at the same time, issuing the same command to each
+      one). You decide what action the creature will take and where it will move
+      on its next turn, or you can issue a general command, such as to guard a
+      chamber or corridor. If you issue no commands, the creature takes the
+      Dodge action and moves only to avoid harm. Once given an order, the
+      creature continues to follow it until its task is complete.</p><p>The
+      creature is under your control until you complete a long rest, after which
+      it stops obeying any command you've given it. To maintain control of the
+      creature, you can choose not to regain this spell slot during your long
+      rest. This restriction reasserts your control over up to four creatures
+      you have animated with this spell rather than animating a new
+      creature.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
+      animate or reassert control over two additional Undead creatures for each
+      spell slot level above 3. Each of the creatures must come from a different
+      corpse or pile of bones.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: minute
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: object
+      count: '@item.level * 2 - 5'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '10'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 3
+  school: nec
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a drop of blood, a piece of flesh, and a pinch of bone dust
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+      profiles:
+        - count: ''
+          name: Skeleton (bones)
+          _id: l3jb6CSvoMCwcgt6
+          uuid: Compendium.dnd-players-handbook.actors.Actor.phbmobSkeleton00
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: Zombie (corpse)
+          _id: pZwDbNd78btaIk1A
+          uuid: Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        identifier: ''
+        mode: ''
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      effects: []
+  identifier: animate-dead
+type: spell
+img: icons/magic/death/undead-zombie-grave-green.webp
+effects: []
+folder: vufwjv5ImnM2tNaF
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736883979254
+  modifiedTime: 1736889628748
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: NdR2ymQLbNEsADRL
+sort: 100000
+_key: '!items!NdR2ymQLbNEsADRL'
+

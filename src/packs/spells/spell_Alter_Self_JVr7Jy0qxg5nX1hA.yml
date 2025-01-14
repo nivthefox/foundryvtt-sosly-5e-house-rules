@@ -147,7 +147,7 @@ flags:
       - vocal
       - somatic
       - concentration
-img: icons/magic/control/debuff-energy-hold-green.webp
+img: icons/magic/control/silhouette-hold-change-green.webp
 effects: []
 _stats:
   compendiumSource: null
@@ -156,7 +156,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736722335205
-  modifiedTime: 1736750342302
+  modifiedTime: 1736880566853
   lastModifiedBy: n9iY1vD5eGeaHb7l
 folder: LjfEKGbI70nMnxQG
 ownership:

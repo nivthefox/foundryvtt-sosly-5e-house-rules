@@ -2,7 +2,7 @@ name: Cantrips
 sorting: a
 folder: null
 type: Item
-color: null
+color: '#f9a61a'
 flags: {}
 _stats:
   compendiumSource: null
@@ -11,10 +11,10 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736624241216
-  modifiedTime: 1736628452788
+  modifiedTime: 1736884614229
   lastModifiedBy: n9iY1vD5eGeaHb7l
 description: ''
 _id: MgD1KyupgXa2j2fO
-sort: 200000
+sort: 100000
 _key: '!folders!MgD1KyupgXa2j2fO'
 

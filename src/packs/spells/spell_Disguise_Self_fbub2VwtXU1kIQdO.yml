@@ -1,0 +1,162 @@
+name: Disguise Self
+system:
+  description:
+    value: >-
+      <p>You make yourself—including your clothing, armor, weapons, and other
+      belongings on your person—look different until the spell ends. You can
+      seem 1 foot shorter or taller and can appear heavier or lighter. You must
+      adopt a form that has the same basic arrangement of limbs as you have.
+      Otherwise, the extent of the illusion is up to you.</p><p>The changes
+      wrought by this spell fail to hold up to physical inspection. For example,
+      if you use this spell to add a hat to your outfit, objects pass through
+      the hat, and anyone who touches it would feel nothing.</p><p>To discern
+      that you are disguised, a creature must take the Study action to inspect
+      your appearance and succeed on an [[/check ability=int skill=inv
+      dc=@attributes.spelldc]] check against your spell save DC.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 1
+  school: ill
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects:
+        - _id: SrIb7dbaZs5F4zi9
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: Cast
+  identifier: disguise-self
+type: spell
+img: icons/equipment/head/mask-carved-bird-grey-pink.webp
+effects:
+  - name: Disguised
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplDisguiseSe
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: icons/magic/control/silhouette-aura-energy.webp
+    _id: SrIb7dbaZs5F4zi9
+    type: base
+    system: {}
+    changes: []
+    description: >-
+      <p><span style="font-family:Signika, sans-serif">To discern that you are
+      disguised, a creature must take the Study action to inspect your
+      appearance and succeed on an [[/check ability=int skill=inv]] check
+      against your spell save DC.</span></p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!fbub2VwtXU1kIQdO.SrIb7dbaZs5F4zi9'
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736878129207
+  modifiedTime: 1736878725163
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: fbub2VwtXU1kIQdO
+sort: 400000
+_key: '!items!fbub2VwtXU1kIQdO'
+

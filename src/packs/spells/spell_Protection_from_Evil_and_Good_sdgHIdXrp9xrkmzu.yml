@@ -1,0 +1,164 @@
+name: Protection from Evil and Good
+type: spell
+img: icons/magic/symbols/fleur-de-lis-yellow.webp
+system:
+  description:
+    value: >-
+      <div><p>Until the spell ends, one willing creature you touch is protected
+      against creatures that are Aberrations, Celestials, Elementals, Fey,
+      Fiends, or Undead. The protection grants several benefits. Creatures of
+      those types have Disadvantage on attack rolls against the target. The
+      target also can’t be possessed by or gain the &amp;Reference[Charmed
+      apply=false] or &amp;Reference[Frightened apply=false] conditions from
+      them. If the target is already possessed, Charmed, or Frightened by such a
+      creature, the target has Advantage on any new saving throw against the
+      relevant effect.</p></div>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: '1'
+      type: willing
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 1
+  school: abj
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a flask of Holy Water worth 25+ GP, which the spell consumes
+    consumed: true
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    zFTMr0vFdY214UIY:
+      type: utility
+      _id: zFTMr0vFdY214UIY
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 0WW6DMPuabIZh1Tv
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Cast
+  identifier: protection-from-evil-and-good
+effects:
+  - name: Protected
+    img: icons/magic/holy/yin-yang-balance-symbol.webp
+    origin: Compendium.dnd-players-handbook.spells.Item.phbEvilAndGoodPr
+    transfer: false
+    _id: 0WW6DMPuabIZh1Tv
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Creatures of those types have Disadvantage on attack rolls against the
+      target. The target also can’t be possessed by or gain the
+      &amp;Reference[Charmed apply=false] or &amp;Reference[Frightened
+      apply=false] conditions from them. </p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!sdgHIdXrp9xrkmzu.0WW6DMPuabIZh1Tv'
+folder: OouqYOD5Z1oGHStK
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736878437311
+  modifiedTime: 1736878725163
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: sdgHIdXrp9xrkmzu
+sort: 900000
+_key: '!items!sdgHIdXrp9xrkmzu'
+

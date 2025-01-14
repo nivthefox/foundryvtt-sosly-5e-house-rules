@@ -1,11 +1,11 @@
-name: 1st Level
+name: 8th Level
 sorting: a
 folder: null
 type: Item
-_id: OouqYOD5Z1oGHStK
+_id: XBCUBFFMWTJ692AR
 description: ''
-sort: 200000
-color: '#ed9b0c'
+sort: 900000
+color: '#946007'
 flags: {}
 _stats:
   compendiumSource: null
@@ -13,8 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736645964742
+  createdTime: 1736880326746
   modifiedTime: 1736884614229
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_key: '!folders!OouqYOD5Z1oGHStK'
+_key: '!folders!XBCUBFFMWTJ692AR'
 

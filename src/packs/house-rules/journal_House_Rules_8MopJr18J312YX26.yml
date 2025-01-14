@@ -320,35 +320,123 @@ pages:
     text:
       format: 1
       content: >-
-        <h2>General Spell Changes</h2><p>Because of our
-        @UUID[.YPEh6g1kO6DWVGSR]{Resting} rules, some general changes have been
-        made to adjust the duration of longer spells. Most spells with a
-        duration over 10 minutes have been adjusted according to the following
-        table.</p><p>If a spell requires concentration, you cannot concentrate
-        on it while you are incapacitated.</p><table
-        style="width:25em"><thead><tr><th><p>Original
-        Duration</p></th><th><p>New
-        Duration</p></th></tr></thead><tbody><tr><td><p>10
-        minutes</p></td><td><p>1 hour</p></td></tr><tr><td><p>1
-        hour</p></td><td><p>8 hours</p></td></tr><tr><td><p>8
-        hours</p></td><td><p>1 day</p></td></tr><tr><td><p>1
-        day</p></td><td><p>1 tenday</p></td></tr></tbody></table><h2>Specific
-        Spell Changes</h2><p>The following spells have been changed from their
-        original form. These changes are reflected in the item cards found under
-        the Society of Silliness Spells
-        compendium:</p><h3>Cantrips</h3><ul><li><p><em>guidance</em> is a
-        reaction</p></li></ul><h3>1st-level</h3><ul><li><p><em>goodberry</em>
-        heals 1 hit die, but only generates Ability Mod
-        berries</p></li></ul><h3>2nd-level</h3><ul><li><p><em>blindness/deafness</em>
-        lasts until dispelled.</p></li><li><p><em>lesser restoration</em> can
-        reduce exhaustion by 1
-        level.</p></li></ul><h3>3rd-level</h3><ul><li><p><em>animate dead</em>
-        can take advantage of the
-        @UUID[JournalEntry.nLCkz56fjUw2811V.JournalEntryPage.xr71eqWykKUtBwqI]{Skeleton
-        Template} and
-        @UUID[JournalEntry.nLCkz56fjUw2811V.JournalEntryPage.zshfJKwuowfSnBTV]{Zombie
-        Template} and is no longer limited by the creature's
-        size.</p></li></ul><h3>5th-level</h3><ul><li><p><em>greater
+        <p>The following spells have been changed from their original form.
+        These changes are reflected in the item cards found under the D&amp;D
+        SoSly Content Spells
+        compendium.</p><h2>Cantrips</h2><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.xLWkUHnvqzfDFr7h]{Encode
+        Thoughts} has been
+        redesigned</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.Qj4hu6txDolScDst]{Guidance}
+        is a reaction</p></li></ul><h3>New
+        Spells:</h3><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.LFTtcPDcPFcL7oAX]{Air
+        Blast}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.VlY62bccECT7B1Rt]{Annoying
+        Bee}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.NpyqERtGWSynIOo7]{Dazzle}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.jReEhUAAjh4W2t0B]{Earthen
+        Grasp}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.O5dRxnOTVuJRQ7Ly]{Jolt}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.qUtYsX9zWWrR9ogc]{Sunlit
+        Blade}</p></li></ul><h3>1st
+        Level</h3><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.Jli7fh1SUNhFFKyd]{Command}
+        uses the 2014
+        rules</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.ZbarLNuOouueRsYF]{Comprehend
+        Languages} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.1lggRJOl7TD9oNgA]{Detect
+        Evil and Good} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.lzKrBpclHeDKr4nR]{Detect
+        Magic} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.fbub2VwtXU1kIQdO]{Disguise
+        Self} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.xBYl9MLuNY5afkf1]{Goodberry}<em>
+        </em>heals 1 hit die, but only generates Ability Mod
+        berries</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.1mxPKdVO0XP0nn2D]{Grease}
+        is explicitly
+        flammable</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.1mD8vCyhx6TGImHG]{Hex}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.0fg3Jvw4TNjHOMe0]{Hunter's
+        Mark} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.YdRU0wh2Cx8GMy2T]{Longstrider}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.qydIctr7OLkfxcJv]{Mage
+        Armor} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.sdgHIdXrp9xrkmzu]{Protection
+        from Evil and Good} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.cf8oRiymCLA4cBJw]{Shield
+        of Faith} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.kx8BnIKjcM0VQv7a]{Snare}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.8Tl0gXQFjuLZaYH5]{Unseen
+        Servant} has an extended duration</p></li></ul><h3>New
+        Spells:</h3><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.4th83KV4A8V3P3mw]{Amaneusis}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.iouWqa0ng7b61y7a]{Earthen
+        Might}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.5UX2UAAc5pwlcsMo]{Larloch's
+        Minor Drain}</p></li></ul><h2>2nd
+        Level</h2><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.COU39MXXvcT4xrdm]{Aid}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.JVr7Jy0qxg5nX1hA]{Alter
+        Self} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.qjnXlrtnwcr18DGp]{Barkskin}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.4s8rsnsv42q8saPI]{Blindness/Deafness}<em>
+        </em>lasts until
+        dispelled.</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.m0oU5sxyw4MW1t23]{Darkvision}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.pJxmSPOdbennzpy1]{Enhance
+        Ability} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.zI78XwqUu15KtrgX]{Invisibility}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.YEUJ5BXV2dO2dNA6]{Lesser
+        Restoration} can reduce exhaustion by 1
+        level</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.mC4z8izbM0iOQnZJ]{Locate
+        Object} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.9GoCLUd5apenjRLs]{Magic
+        Weapon} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.04Rvtu1aUP8S0VPV]{Protection
+        from Poison} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.LphcrHYu5yEMhfES]{Rope
+        Trick} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.QrQJN8IFH3xe42w3]{Spider
+        Climb} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.PZudzJJoa51Wqn36]{Summon
+        Beast} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.oTjfgTREtv3Ep2Yc]{Warding
+        Bond} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.fuqU4kfVqPXwmlnG]{Wither
+        and Bloom} allows every creature in it to spend a hit die, and scales
+        that healing</p></li></ul><p><strong>New
+        Spells:</strong></p><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.54y3Ck3c8wWVaDvk]{Beast
+        Growth}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.h8v6i5deqr8Tb2Ij]{Comrades'
+        Succor}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.GiyIuVJHPVydP9sG]{Darklight}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.SMkDSFO09jxl1vnR]{Wall
+        of
+        Gloom}</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.nBbXiLQBd3JZ2AWL]{Ward
+        of Silence}</p></li></ul><h2>3rd
+        Level</h2><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.NdR2ymQLbNEsADRL]{Animate
+        Dead} uses the
+        @UUID[Compendium.sosly-5e-house-rules.spells.Item.0vA3UWKLURcdNPwU]{Skeletal
+        Creature} and
+        @UUID[Compendium.sosly-5e-house-rules.spells.Item.LU66U3A1CyhlSjTi]{Zombified
+        Creature} templates, and is no longer restricted to small and medium
+        humanoids. The templates determine CR limitations. The spell's duration
+        has been
+        extended.</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.3ILQfRgLyp918gBV]{Bestow
+        Curse} lasts until
+        dispelled</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.LuT1ncPiESbIpwdo]{Elemental
+        Weapon} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.oZEI9V6CJgs84xqq]{Feign
+        Death} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.tW9W0RblzMea7km8]{Leomund's
+        Tiny Hut} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.QgQpn9iplEaafbgv]{Nondetection}
+        has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.8sjMD2pCUPBid1rA]{Phantom
+        Steed} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.03mP15nmBoAEHfrp]{Summon
+        Fey} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.2X4B3oqCQzg1N8bd]{Summon
+        Undead} has an extended duration</p></li></ul><h2>4th
+        Level</h2><ul><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.ODHb7wsWSKy9k1VV]{Stoneskin}
+        no longer requires concentration, and provides resistance to most
+        damage.</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.jeVDsFYACgDWaQbK]{Summon
+        Aberration} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.NpKnli7OmnDcHxYw]{Summon
+        Construct} has an extended
+        duration</p></li><li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.NfjeIi15Ime2nc6W]{Summon
+        Elemental} has an extended
+        duration</p></li></ul><h3>5th-level</h3><ul><li><p><em>greater
         restoration</em> can now be used to reduce exhaustion to
         0.</p></li></ul>
     video:
@@ -366,7 +454,7 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1736657342689
+      modifiedTime: 1736890229048
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.mSXdERiQroyAnH45'
   - name: Variant Encumbrance

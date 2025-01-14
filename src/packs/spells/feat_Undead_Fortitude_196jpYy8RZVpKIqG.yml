@@ -1,0 +1,111 @@
+name: Undead Fortitude
+system:
+  description:
+    value: >-
+      <p> If damage reduces the zombie to 0 Hit Points, it must make a
+      Constitution saving throw with a DC of 5 plus the damage taken unless the
+      damage is Radiant or from a Critical Hit. On a successful save, the zombie
+      drops to 1 Hit Point instead.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: monster
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Reduced to 0 Hit Points
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: ''
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        value: ''
+        units: inst
+        special: ''
+        override: false
+        concentration: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: ''
+          formula: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+  enchant: {}
+  identifier: undead-fortitude
+type: feat
+img: icons/magic/death/skull-humanoid-white-blue.webp
+effects: []
+folder: 80bcfTnNn6o7Y5dR
+ownership:
+  default: 0
+  UkXd4NXnT5o2bQiL: 3
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736884324714
+  modifiedTime: 1736884324714
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 196jpYy8RZVpKIqG
+sort: 0
+_key: '!items!196jpYy8RZVpKIqG'
+

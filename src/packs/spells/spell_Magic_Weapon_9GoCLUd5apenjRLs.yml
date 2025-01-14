@@ -1,0 +1,305 @@
+name: Magic Weapon
+system:
+  description:
+    value: >-
+      <p>You touch a nonmagical weapon. Until the spell ends, that weapon
+      becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.
+      The spell ends early if you cast it again.</p><p><strong>Using a
+      Higher-Level Spell Slot.</strong> The bonus increases to +2 with a level
+      3–5 spell slot. The bonus increases to +3 with a level 6+ spell slot.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: object
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 2
+  school: trs
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: enchant
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects:
+        - _id: IMt1nMPrWppyRYMT
+          level:
+            min: 2
+            max: 2
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: 9zA6SFF8HKk9xNn2
+          level:
+            min: 3
+            max: 5
+          riders:
+            effect: []
+            item: []
+            activity: []
+        - _id: AJQwm1dgXz7D333k
+          level:
+            min: 6
+            max: null
+          riders:
+            effect: []
+            item: []
+            activity: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      enchant:
+        identifier: ''
+      restrictions:
+        allowMagical: false
+        type: weapon
+        categories: []
+        properties: []
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+  identifier: magic-weapon
+type: spell
+img: icons/skills/melee/sword-engraved-glow-purple.webp
+effects:
+  - name: Magic Weapon +1
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 2
+            max: 2
+          riders:
+            effect: []
+            item: []
+    img: icons/skills/melee/weapons-crossed-swords-black.webp
+    _id: IMt1nMPrWppyRYMT
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.magicalBonus
+        mode: 4
+        value: '1'
+        priority: null
+      - key: name
+        mode: 5
+        value: Magic {} +1
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Until the spell ends, that weapon becomes a magic weapon with a +1
+      bonus to attack rolls and damage rolls.</p>
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9GoCLUd5apenjRLs.IMt1nMPrWppyRYMT'
+  - name: Magic Weapon +2
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 3
+            max: 5
+          riders:
+            effect: []
+            item: []
+    img: icons/skills/melee/weapons-crossed-swords-black-gray.webp
+    _id: 9zA6SFF8HKk9xNn2
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.magicalBonus
+        mode: 4
+        value: '2'
+        priority: null
+      - key: name
+        mode: 5
+        value: Magic {} +2
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Until the spell ends, that weapon becomes a magic weapon with a +2
+      bonus to attack rolls and damage rolls.</p>
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9GoCLUd5apenjRLs.9zA6SFF8HKk9xNn2'
+  - name: Magic Weapon +3
+    flags:
+      dnd5e:
+        enchantment:
+          level:
+            min: 6
+            max: null
+          riders:
+            effect: []
+            item: []
+    img: icons/skills/melee/weapons-crossed-swords-pink.webp
+    _id: AJQwm1dgXz7D333k
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.magicalBonus
+        mode: 4
+        value: '3'
+        priority: null
+      - key: name
+        mode: 2
+        value: Magic {} +3
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 3600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Until the spell ends, that weapon becomes a magic weapon with a +3
+      bonus to attack rolls and damage rolls.</p>
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!9GoCLUd5apenjRLs.AJQwm1dgXz7D333k'
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736880998964
+  modifiedTime: 1736881037200
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 9GoCLUd5apenjRLs
+sort: 0
+_key: '!items!9GoCLUd5apenjRLs'
+

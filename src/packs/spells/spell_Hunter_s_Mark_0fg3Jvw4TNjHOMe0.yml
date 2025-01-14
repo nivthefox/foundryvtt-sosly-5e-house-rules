@@ -1,0 +1,170 @@
+name: Hunter's Mark
+system:
+  description:
+    value: "<p>You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any [[/check ability=wis skill=prc]] or [[/check ability=wis skill=sur]] check you make to find it.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p><p><strong>Using a Higher-Level Spell Slot.</strong>\_Your Concentration can last longer with a spell slot of level 3–4 (up to 24 hours) or 5+ (up to 48 hours).</p>"
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 1
+  school: div
+  properties:
+    - vocal
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: ''
+        value: null
+        override: true
+        condition: ''
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: true
+        concentration: false
+      effects: []
+      range:
+        override: true
+        units: any
+        special: ''
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: ''
+              number: 1
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      name: Bonus Mark Damage
+    vxr2JKuQ3jyMDTwb:
+      type: utility
+      _id: vxr2JKuQ3jyMDTwb
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: hYD38IP9Meq2ArIS
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Mark Creature
+  identifier: hunters-mark
+type: spell
+img: icons/skills/targeting/crosshair-scope-sniper-green.webp
+effects: []
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736878350485
+  modifiedTime: 1736878725163
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 0fg3Jvw4TNjHOMe0
+sort: 600000
+_key: '!items!0fg3Jvw4TNjHOMe0'
+

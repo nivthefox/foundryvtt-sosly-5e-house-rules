@@ -1,0 +1,164 @@
+name: Spider Climb
+system:
+  description:
+    value: >-
+      <p>Until the spell ends, one willing creature you touch gains the ability
+      to move up, down, and across vertical surfaces and along ceilings, while
+      leaving its hands free. The target also gains a Climb Speed equal to its
+      Speed.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
+      target one additional creature for each spell slot level about
+      2.</p><section class="secret"
+      id="secret-4LoECjSnyIsXFdKY"><p><strong>Foundry Note</strong></p><p>The
+      Active Effect provided by the <strong>Cast</strong> activity upgrades the
+      character's Climb Speed to a value of "1" to indicate equivalence to
+      (walk) Speed.</p></section>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: willing
+      count: '@item.level - 1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 2
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a drop of bitumen and a spider
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects:
+        - _id: q2ug9SpVRCGuudoG
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: Cast
+  identifier: spider-climb
+type: spell
+img: icons/creatures/invertebrates/spider-pink-purple.webp
+effects:
+  - name: Spider Climb
+    origin: Compendium.dnd-players-handbook.spells.Item.phbsplSpiderClim
+    duration:
+      rounds: null
+      startTime: null
+      seconds: 3600
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    disabled: false
+    flags:
+      dnd5e: {}
+    img: icons/creatures/invertebrates/spider-dotted-green.webp
+    _id: q2ug9SpVRCGuudoG
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.climb
+        mode: 4
+        value: '1'
+        priority: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!QrQJN8IFH3xe42w3.q2ug9SpVRCGuudoG'
+folder: LjfEKGbI70nMnxQG
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736881153982
+  modifiedTime: 1736881166474
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: QrQJN8IFH3xe42w3
+sort: 0
+_key: '!items!QrQJN8IFH3xe42w3'
+

@@ -1,0 +1,149 @@
+name: Unseen Servant
+system:
+  description:
+    value: >-
+      <p>This spell creates an Invisible, mindless, shapeless, Medium force that
+      performs simple tasks at your command until the spell ends. The servant
+      springs into existence in an unoccupied space on the ground within range.
+      It has AC 10, 1 Hit Point, and a Strength of 2, and it can’t attack. If it
+      drops to 0 Hit Points, the spell ends.</p><p>Once on each of your turns as
+      a Bonus Action, you can mentally command the servant to move up to 15 feet
+      and interact with an object. The servant can perform simple tasks that a
+      human could do, such as fetching things, cleaning, mending, folding
+      clothes, lighting fires, serving food, and pouring drinks. Once you give
+      the command, the servant performs the task to the best of its ability
+      until it completes the task, then waits for your next command.</p><p>If
+      you command the servant to perform a task that would move it more than 60
+      feet away from you, the spell ends.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    rules: '2024'
+    revision: 1
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '8'
+    units: hour
+  target:
+    affects:
+      type: space
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 1
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+    - ritual
+  materials:
+    value: a bit of string and of wood
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        proficiency: false
+        attacks: false
+        saves: false
+      profiles:
+        - count: ''
+          name: ''
+          _id: BO8ylcAe3C1KmDzY
+          uuid: Compendium.dnd-players-handbook.actors.Actor.phbsplUnseenServ
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        identifier: ''
+        mode: ''
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      effects: []
+  identifier: unseen-servant
+type: spell
+img: icons/creatures/magical/humanoid-silhouette-aliens-green.webp
+effects: []
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736878863764
+  modifiedTime: 1736878883064
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 8Tl0gXQFjuLZaYH5
+sort: 0
+_key: '!items!8Tl0gXQFjuLZaYH5'
+

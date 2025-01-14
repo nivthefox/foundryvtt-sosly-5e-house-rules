@@ -2,7 +2,7 @@ folder: 80bcfTnNn6o7Y5dR
 name: Goodberry
 type: consumable
 _id: MLaNL8Y5OzZdIcMA
-img: icons/consumables/plants/herb-marjoram-basil-oregano-leaf-bunch-green.webp
+img: icons/consumables/fruit/berries-hanging-red.webp
 system:
   activities: {}
   uses:
@@ -57,7 +57,7 @@ system:
   properties:
     - mgc
 effects: []
-sort: 0
+sort: 400000
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -69,7 +69,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736655591288
-  modifiedTime: 1736655764968
+  modifiedTime: 1736883741044
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!MLaNL8Y5OzZdIcMA'
 
