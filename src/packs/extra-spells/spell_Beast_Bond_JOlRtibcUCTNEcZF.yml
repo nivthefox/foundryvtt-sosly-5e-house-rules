@@ -1,0 +1,151 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You establish a telepathic link with one beast you touch that is
+      friendly to you or charmed by you. The spell fails if the beast’s
+      Intelligence is 4 or higher. Until the spell ends, the link is active
+      while you and the beast are within line of sight of each other. Through
+      the link, the beast can understand your telepathic messages to it, and it
+      can telepathically communicate simple emotions and concepts back to you.
+      While the link is active, the beast gains advantage on attack rolls
+      against any creature within 5 feet of you that you can see.</p><p></p>
+    chat: ''
+  source:
+    custom: Elemental Evil Player's Companion pg 150
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: touch
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 1
+  school: div
+  materials:
+    value: a bit of fur wrapped in a cloth
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    CqJ2nBBPwO19cPKq:
+      type: utility
+      _id: CqJ2nBBPwO19cPKq
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  identifier: beast-bond
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+name: Beast Bond
+flags:
+  ddbimporter:
+    id: 137863
+    definitionId: 2370
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Beast Bond
+    sources:
+      - sourceId: 4
+        pageNumber: 150
+        sourceType: 1
+    tags:
+      - Communication
+      - Buff
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.M8q9qfSpqzKgmGHF
+    hash: 036cacb74d9fa4360bb00bce97b5649495f6ce19
+  cf:
+    id: temp_ag8qdr5hh9i
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - vocal
+      - somatic
+      - material
+      - concentration
+    riders:
+      activity: []
+      effect: []
+img: icons/magic/nature/wolf-paw-glow-green.webp
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736915936845
+  modifiedTime: 1736915936845
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: 5jrCohKawbl0mTbF
+_id: JOlRtibcUCTNEcZF
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!JOlRtibcUCTNEcZF'
+

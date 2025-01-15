@@ -42,6 +42,19 @@
     ],
     "recommends": [
       {
+        "id": "dnd5e-spellpoints",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.4.22",
+          "verified": "2.4.22"
+        }
+      },
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
         "id": "ActiveAuras",
         "type": "module",
         "compatibility": {
@@ -120,11 +133,11 @@
       "label": "Effect Tables",
       "path": "packs/effect-tables",
       "type": "RollTable",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     },
     {
       "name": "equipment",
@@ -180,6 +193,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "extra-spells",
+      "label": "Extra Spells",
+      "path": "packs/extra-spells",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
     }
   ],
   "documentTypes": {

@@ -1,0 +1,20 @@
+name: 2nd Level
+sorting: a
+folder: null
+type: Item
+_id: ttLxR8zhjacqYg04
+description: ''
+sort: 100000
+color: '#d94038'
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736915940953
+  modifiedTime: 1736915941024
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!ttLxR8zhjacqYg04'
+

@@ -1,0 +1,20 @@
+name: 7th Level
+sorting: a
+folder: null
+type: Item
+_id: FnusyF1ChrzTQBIQ
+description: ''
+sort: 100000
+color: '#992d28'
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736915947001
+  modifiedTime: 1736915947009
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!FnusyF1ChrzTQBIQ'
+

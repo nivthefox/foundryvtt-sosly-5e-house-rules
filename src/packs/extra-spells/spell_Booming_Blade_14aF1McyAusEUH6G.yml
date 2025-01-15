@@ -1,0 +1,281 @@
+type: spell
+system:
+  description:
+    value: >-
+      <p>You brandish the weapon used in the spell’s casting and make a melee
+      attack with it against one creature within 5 feet of you. On a hit, the
+      target suffers the weapon attack’s normal effects and then becomes
+      sheathed in booming energy until the start of your next turn. If the
+      target willingly moves 5 feet or more before then, the target takes 1d8
+      thunder damage, and the spell ends.</p>
+
+      <p>This spell’s damage increases when you reach certain levels. At 5th
+      level, the melee attack deals an extra 1d8 thunder damage to the target on
+      a hit, and the damage the target takes for moving increases to 2d8. Both
+      damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th
+      level (3d8 and 4d8).</p>
+    chat: ''
+  source:
+    custom: Sword Coast Adventurer's Guide pg 142
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      type: sphere
+      size: '5'
+      contiguous: false
+      count: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  ability: ''
+  level: 0
+  school: evo
+  materials:
+    value: a melee weapon worth at least 1 sp
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: ZoavdcEh1HNFbvWE
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: '0'
+            number: null
+            denomination: 0
+            bonus: ''
+            types:
+              - thunder
+            scaling:
+              mode: whole
+              number: 1
+              formula: d8
+      sort: 0
+      name: Initial Damage
+    CiWhClmncA1o6A3d:
+      type: damage
+      _id: CiWhClmncA1o6A3d
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: true
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            types:
+              - thunder
+            scaling:
+              mode: whole
+              number: 1
+      name: Secondary Damage
+  identifier: booming-blade
+  properties:
+    - somatic
+    - material
+name: Booming Blade
+flags:
+  ddbimporter:
+    id: 130378
+    definitionId: 2410
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+    originalName: Booming Blade
+    sources:
+      - sourceId: 13
+        pageNumber: 142
+        sourceType: 1
+    tags:
+      - Damage
+      - Control
+      - Combat
+    version: 3.4.17
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+  scene-packer:
+    sourceId: Compendium.sosly.spells.Item.T0eVx8evDfAdDYTU
+    hash: 23b677bbac117fe2a31d8a621c668313e7bec583
+  cf:
+    id: temp_swxucta6r2
+  core: {}
+  dnd5e:
+    persistSourceMigration: true
+    migratedProperties:
+      - somatic
+      - material
+    riders:
+      activity: []
+      effect: []
+img: icons/skills/melee/sword-stuck-glowing-pink.webp
+effects:
+  - name: Booming Blade
+    img: icons/skills/melee/sword-stuck-glowing-pink.webp
+    origin: Compendium.sosly-5e-house-rules.spells.Item.xgOPJ79LULzSuelr
+    _id: ZoavdcEh1HNFbvWE
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!14aF1McyAusEUH6G.ZoavdcEh1HNFbvWE'
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736915935424
+  modifiedTime: 1736915935424
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+folder: MuV2dgu770kjzsTI
+_id: 14aF1McyAusEUH6G
+sort: 600000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!14aF1McyAusEUH6G'
+
