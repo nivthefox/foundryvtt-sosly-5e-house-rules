@@ -1,0 +1,107 @@
+folder: Zs5cMCOE3WF2ynLZ
+name: Animal Spirit Form
+type: feat
+_id: UODlCkhKMU0thjTS
+img: icons/creatures/mammals/spirit-deer-herd-blue.webp
+system:
+  activities:
+    BUSLWelR1rWsGa02:
+      type: utility
+      _id: BUSLWelR1rWsGa02
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You are able to adopt the form of a specific beast which must be a CR
+      0. As an action, you can magically assume your beast form or a hybrid
+      human and animal form. You can remain in this form indefinitely, and only
+      revert to your natural form when you are rendered unconscious, or with
+      another action.</p><p>While you transformed into a beast, the following
+      rules apply:</p><ul><li><p>Your game statistics are replaced by the
+      statistics of the beast, but you retain your hit points, alignment,
+      personality, and Intelligence, Wisdom, and Charisma scores. You also
+      retain all of your skill and saving throw
+      proficiencies.</p></li><li><p>You can't cast spells, and your ability to
+      speak or take actions which a cat may take. Transforming does not break
+      your concentration on a spell you've already cast, however, or prevent you
+      from taking actions that are part of a spell, such as call lightning that
+      you've already cast.</p></li><li><p>You retain the benefit of any features
+      from your class, race, or other source and can use them if your beast form
+      is physically capable of doing so.</p></li><li><p>Your equipment merges
+      into your new form, and has no effect until you leave the
+      form.</p></li><li><p>Your Hybrid form retains the statistics of your
+      humanoid form.</p></li></ul><section class="fvtt advice"><figure
+      class="icon"><img src="icons/vtt-512.png" /></figure><article><h3>Animal
+      Spirit Form Automation</h3><p>When you would like to use your Animal
+      Spirit Form, drag your animal sheet onto your character sheet, select the
+      Wild Shape option, and Foundry will automatically update your sheet. You
+      can revert the transformation at the top of your sheet or by right
+      clicking on your Actor in the sidebar.</p></article></section>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Hengeyokai
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736918274953
+  modifiedTime: 1736919659214
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!UODlCkhKMU0thjTS'
+

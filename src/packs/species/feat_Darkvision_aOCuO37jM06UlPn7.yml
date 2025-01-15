@@ -1,0 +1,140 @@
+name: Darkvision
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+effects:
+  - _id: pd6hlVPQZRpF1J40
+    flags:
+      dae:
+        stackable: multi
+        specialDuration: []
+        transfer: true
+        disableCondition: ''
+        showIcon: false
+        durationExpression: ''
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    changes:
+      - key: system.attributes.senses.darkvision
+        mode: 4
+        value: '60'
+        priority: 40
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.sosly-5e-house-rules.species.Item.aOCuO37jM06UlPn7
+    tint: '#ffffff'
+    transfer: true
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: 1736919780613
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    name: Darkvision
+    img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!aOCuO37jM06UlPn7.pd6hlVPQZRpF1J40'
+folder: Zs5cMCOE3WF2ynLZ
+flags:
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  betterRolls5e:
+    critRange:
+      value: null
+    critDamage:
+      value: ''
+    quickDesc:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickOther:
+      value: true
+      altValue: true
+    quickFlavor:
+      value: true
+      altValue: true
+  core:
+    sourceId: Compendium.ATL.Token Lighting Premade.P5C2lbFfOm8YQqrz
+  ATL:
+    conversion: 3
+system:
+  description:
+    value: <p>You have Darkvision with a range of 60 feet.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  requirements: Hengeyokai
+  activities: {}
+  identifier: darkvision-60-ft
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+ownership:
+  default: 0
+  E4BVikjIkVl2lL2j: 3
+  n9iY1vD5eGeaHb7l: 3
+_stats:
+  compendiumSource: Compendium.ATL.Token Lighting Premade.P5C2lbFfOm8YQqrz
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736919659193
+  modifiedTime: 1736920628595
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: aOCuO37jM06UlPn7
+sort: 500000
+_key: '!items!aOCuO37jM06UlPn7'
+

@@ -1,0 +1,117 @@
+folder: Zs5cMCOE3WF2ynLZ
+name: Aquatic
+type: feat
+_id: 7HK8AR775L73AqC2
+img: icons/creatures/fish/squid-kraken-teal.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>While in your Hybrid or Animal form, you gain a swim speed of 30 feet
+      and can breathe air and water. Your walking speed becomes 10
+      feet.</p><section class="fvtt advice"><figure class="icon"><img
+      src="icons/vtt-512.png" /></figure><article><h3>Hybrid Form
+      Automation</h3><p>To activate this feature in your Hybrid or Animal form,
+      enable the "Aquatic" effect on your sheet.</p></article></section>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: Hengeyokai
+effects:
+  - name: Aquatic
+    img: icons/creatures/fish/squid-kraken-teal.webp
+    origin: Compendium.sosly-5e-house-rules.species.Item.7HK8AR775L73AqC2
+    transfer: true
+    _id: 4Q7kCoqQHctlTG5l
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 3
+        value: '10'
+        priority: 20
+      - key: system.attributes.movement.swim
+        mode: 2
+        value: '30'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736918884244
+      modifiedTime: 1736919525809
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!7HK8AR775L73AqC2.4Q7kCoqQHctlTG5l'
+sort: 300000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736918815065
+  modifiedTime: 1736919659214
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!7HK8AR775L73AqC2'
+

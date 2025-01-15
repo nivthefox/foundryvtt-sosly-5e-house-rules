@@ -98,13 +98,13 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588690204
-  modifiedTime: 1736590344219
+  modifiedTime: 1736917789176
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
 folder: null
 _id: gPVHJoQR7XR3dUmD
-sort: 0
+sort: 100000
 _key: '!items!gPVHJoQR7XR3dUmD'
 

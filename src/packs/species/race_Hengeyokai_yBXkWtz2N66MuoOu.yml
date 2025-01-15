@@ -1,0 +1,173 @@
+name: Hengeyokai
+type: race
+_id: yBXkWtz2N66MuoOu
+img: modules/sosly-5e-house-rules/public/species/hengeyokai.webp
+system:
+  description:
+    value: >-
+      <p>Hengeyokai (pronounced hen-gey-OH-kai) are shapeshifting beings
+      descended from nature spirits who gained physical form. Each hengeyokai
+      can transform between a humanoid shape and that of a small animal like a
+      fox, cat, or badger. Their spiritual heritage manifests even in their
+      humanoid form through animal traits that vary in prominence—some display
+      subtle features like unusual eyes or pointed ears, while others show more
+      obvious signs like fur patches or tails.</p><p>Hengeyokai are born as
+      animals and gain their shapeshifting ability in early childhood. They have
+      deep connections to spirit-touched places where the material and spiritual
+      worlds overlap, creating communities where mortals and spirits coexist.
+      Though they can live for several centuries, many hengeyokai eventually
+      lose their ability to change shape in old age, remaining in their last
+      chosen form. Their animal aspects always match creatures native to their
+      birthplace, and both their human and animal forms age in parallel, showing
+      the same signs of youth or wisdom.</p><h3>Hengeyokai
+      Traits</h3><p><strong>Creature Type:</strong> Humanoid
+      (Shapechanger)</p><p><strong>Size:</strong> Medium (about 4–7 feet tall)
+      or Small (about 2–4 feet tall), chosen when you select this
+      species</p><p><strong>Speed:</strong> 30 feet</p><p></p><p>As a
+      Hengeyokai, you have the following features:</p><p><strong>Animal Spirit
+      Form.</strong> As an action, you can change into a beast form or your
+      humanoid form. When you do so, your equipment melds into your new form,
+      and you gain certain benefits depending on the type of animal you
+      transform into. While in your beast form, your statistics remain the same
+      but you are unable to make attacks or cast spells. You can talk in your
+      animal form. Pick the type of animal you can transform into, which must be
+      Tiny or Small, and then pick one of the following options that makes sense
+      for your animal form. These traits only apply to your animal or hybrid
+      form.</p><ul><li><p><strong>Burrower.</strong> As an action, you can
+      burrow 10 feet.</p></li><li><p><strong>Aquatic.</strong> You gain a swim
+      speed of 30 feet and can breathe air and water. Your walking speed becomes
+      10 feet.</p></li><li><p><strong>Climber.</strong> You gain a climb speed
+      equal to your speed.</p></li><li><p><strong>Flier.</strong> You gain a fly
+      speed of 30 feet. Your walking speed becomes 10
+      feet.</p></li><li><p><strong>Sprinter.</strong> Your walking speed
+      increased by +10 feet.</p></li></ul><p><strong>Natural Weapons.
+      </strong>In your hybrid form, you have claws (Slashing), fangs (Piercing),
+      horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed
+      Strike to deal damage with that feature, it deals 1d4 damage of the type
+      in paranthesis instead of dealing the normal damage for your Unarmed
+      Strike. You are proficient in your natural weaponry.</p><p></p><p>As a
+      Hengeyokai, you have two of the following minor features (chosen at level
+      1):</p><ul><li><p><strong>Beast Whisperer.</strong> You can speak to and
+      be understood by the animals of the same type that you can transform into.
+      For example, if you can transform into a badger, you can speak to other
+      badgers.</p></li><li><p><strong>Darkvision.</strong> You can see in dim
+      light within 60 feet of you as if it were bright light and in darkness as
+      if it were dim light. You can’t discern color in darkness, only shades of
+      gray.</p></li><li><p><strong>Deceptive.</strong> You have proficiency in
+      the Deception skill.</p></li><li><p><strong>Fleet Foot.</strong> Your base
+      walking speed is 35 feet.</p></li><li><p><strong>Free Spirit.</strong> You
+      are hard to pin down. You have advantage on any checks or saving throws to
+      avoid or escape from grapples or restraints.</p></li></ul>
+    chat: ''
+  identifier: hengeyokai
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: dLxv96vt2B2KOEe2
+      type: Size
+      configuration:
+        sizes:
+          - sm
+          - med
+      level: 0
+      title: ''
+      hint: >-
+        Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), hosen when
+        you select this species
+      value: {}
+    - _id: BhF9SsF0VbA82wls
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.UODlCkhKMU0thjTS
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.DKVOiQRxoaCUZ8qv
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Hengeyokai Traits
+      hint: ''
+    - _id: ZzJhjWU5HA8jrnNQ
+      type: ItemChoice
+      configuration:
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        allowDrops: true
+        type: null
+        pool:
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.7HK8AR775L73AqC2
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.pjCc1BxON2JGiO78
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.VMbJss9m1zfJXXnI
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.IMbHan2X4iYH4t2D
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.VOUS6A3LWAfBdP26
+        spell: null
+        restriction: {}
+      value:
+        added: {}
+        replaced: {}
+      title: Spirit Form Ability
+      hint: ''
+    - _id: pUdP031wE1ODW5ph
+      type: ItemChoice
+      configuration:
+        choices:
+          '0':
+            count: 2
+            replacement: false
+        allowDrops: false
+        type: null
+        pool:
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.1Obngspf1Y6nEPxQ
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.aOCuO37jM06UlPn7
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.33DWLY5P8KXkdOUz
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.DHLS3ipPNalbpF5s
+          - uuid: Compendium.sosly-5e-house-rules.species.Item.QyxKEU7jwcc74oDo
+        spell: null
+        restriction: {}
+      value:
+        added: {}
+        replaced: {}
+      title: Minor Features
+      hint: ''
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: null
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+    custom: ''
+    subtype: Shapeshifter
+effects: []
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736917429668
+  modifiedTime: 1736920596106
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!yBXkWtz2N66MuoOu'
+
