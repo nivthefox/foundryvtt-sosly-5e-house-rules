@@ -2,7 +2,7 @@ folder: ScnmwDFLLriaeHVE
 name: Resourceful
 type: feat
 _id: SVxKEMoZwR6TT2Bb
-img: icons/vtt-512.png
+img: icons/tools/hand/hammer-and-nail.webp
 system:
   activities: {}
   uses:
@@ -39,7 +39,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736595440079
-  modifiedTime: 1736595532333
+  modifiedTime: 1736904885303
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!SVxKEMoZwR6TT2Bb'
 
