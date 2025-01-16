@@ -1,8 +1,10 @@
-name: Ardent Empathy
+name: Druid
 sorting: a
-folder: 6XDwPSRfP0LtLezB
+folder: null
 type: Item
+_id: gMI1bd2udvaSiIx2
 description: ''
+sort: 0
 color: null
 flags: {}
 _stats:
@@ -11,10 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: null
-  modifiedTime: 1737012979216
+  createdTime: 1737012940552
+  modifiedTime: 1737012940552
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: uqK3NxAO1eIJ1Rf8
-sort: 100000
-_key: '!folders!uqK3NxAO1eIJ1Rf8'
+_key: '!folders!gMI1bd2udvaSiIx2'
 

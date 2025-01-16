@@ -1,8 +1,10 @@
-name: Ardent Empathy
+name: Subclass Features
 sorting: a
-folder: 6XDwPSRfP0LtLezB
+folder: gMI1bd2udvaSiIx2
 type: Item
+_id: UQ6R7bKLfps2dRCT
 description: ''
+sort: 0
 color: null
 flags: {}
 _stats:
@@ -12,9 +14,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: null
-  modifiedTime: 1737012979216
-  lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: uqK3NxAO1eIJ1Rf8
-sort: 100000
-_key: '!folders!uqK3NxAO1eIJ1Rf8'
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!folders!UQ6R7bKLfps2dRCT'
 

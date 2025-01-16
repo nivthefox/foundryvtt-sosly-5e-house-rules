@@ -1,0 +1,128 @@
+folder: UQ6R7bKLfps2dRCT
+name: Star Map
+type: feat
+_id: kPC0mmDHrxMDOC1v
+img: icons/sundries/scrolls/scroll-symbol-eye-brown.webp
+system:
+  activities:
+    naUHNFV1uYnMVfTI:
+      type: cast
+      _id: naUHNFV1uYnMVfTI
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      spell:
+        challenge:
+          attack: null
+          save: null
+          override: false
+        level: '1'
+        properties:
+          - vocal
+          - somatic
+          - material
+        spellbook: false
+        uuid: Compendium.dnd-players-handbook.spells.phbsplGuidingBol
+      name: ''
+      img: ''
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@attributes.prof'
+  description:
+    value: >-
+      <p>You’ve created a star chart as part of your heavenly studies. It is a
+      Tiny object and can serve as a spellcasting focus for your druid spells.
+      You determine its form by rolling on the Star Map table or by choosing
+      one.</p><p>While holding this map, you have these benefits:</p><ul><li>You
+      know the
+      @UUID[Compendium.sosly-5e-house-rules.spells.Qj4hu6txDolScDst]{Guidance}
+      cantrip.</li><li>You have the
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplGuidingBol]{Guiding
+      Bolt} spell prepared. It counts as a druid spell for you, and it doesn’t
+      count against the number of spells you can have prepared.</li><li>You can
+      cast
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplGuidingBol]{Guiding
+      Bolt} without expending a spell slot. You can do so a number of times
+      equal to your proficiency bonus, and you regain all expended uses when you
+      finish a long rest.</li></ul><p>If you lose the map, you can perform a
+      1-hour ceremony to magically create a replacement. This ceremony can be
+      performed during a short or long rest, and it destroys the previous
+      map.</p><h5 id="StarMapTable" class="quick-menu-exclude">Star
+      Map</h5><table
+      class="compendium-left-aligned-table"><thead><tr><th>d6</th><th>Map
+      Form</th></tr></thead><tbody><tr><td>1</td><td>A scroll covered with
+      depictions of constellations</td></tr><tr><td>2</td><td>A stone tablet
+      with fine holes drilled through it</td></tr><tr><td>3</td><td>A speckled
+      owlbear hide, tooled with raised marks</td></tr><tr><td>4</td><td>A
+      collection of maps bound in an ebony cover</td></tr><tr><td>5</td><td>A
+      crystal that projects starry patterns when placed before a
+      light</td></tr><tr><td>6</td><td>Glass disks that depict
+      constellations</td></tr></tbody></table>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737013882507
+  modifiedTime: 1737014589327
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!kPC0mmDHrxMDOC1v'
+

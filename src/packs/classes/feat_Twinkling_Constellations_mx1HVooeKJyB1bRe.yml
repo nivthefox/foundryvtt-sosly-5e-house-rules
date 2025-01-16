@@ -1,0 +1,52 @@
+folder: UQ6R7bKLfps2dRCT
+name: Twinkling Constellations
+type: feat
+_id: mx1HVooeKJyB1bRe
+img: icons/skills/trades/academics-astronomy-navigation-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>The constellations of your Starry Form improve. The 1d8 of the Archer
+      and the Chalice becomes 2d8, and while the Dragon is active, you have a
+      flying speed of 20 feet and can hover.</p><p>Moreover, at the start of
+      each of your turns while in your Starry Form, you can change which
+      constellation glimmers on your body.</p><section class="fvtt
+      advice"><figure class="icon"><img src="icons/vtt-512.png"
+      /></figure><article><h3>Starry Form Automation</h3><p>You will need to
+      update the Luminous Bolt and Life Giving Goblet activities of your Starry
+      Form feature to implement this feature..</p></article></section>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 10
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737016285265
+  modifiedTime: 1737016440986
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!mx1HVooeKJyB1bRe'
+

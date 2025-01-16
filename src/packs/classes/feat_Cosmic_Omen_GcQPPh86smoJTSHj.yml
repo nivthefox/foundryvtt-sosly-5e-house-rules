@@ -1,0 +1,218 @@
+folder: UQ6R7bKLfps2dRCT
+name: Cosmic Omen
+type: feat
+_id: GcQPPh86smoJTSHj
+img: icons/skills/trades/academics-astronomy-navigation-purple.webp
+system:
+  activities:
+    Jaq3158sFOR7zUWW:
+      type: utility
+      _id: Jaq3158sFOR7zUWW
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: Cosmic Omen
+        formula: 1d2
+      name: Consult your Star Map
+      img: icons/svg/daze.svg
+      appliedEffects: []
+    wf7D0gXsuNJwsEdd:
+      type: utility
+      _id: wf7D0gXsuNJwsEdd
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: a creature within 30 feet of you is about to make a d20 Test
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: Weal
+        formula: 1d6
+      name: Weal (even)
+      img: ''
+      appliedEffects: []
+    KCIUzRMrwQF8JP6f:
+      type: utility
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: a creature within 30 feet of you is about to make a d20 Test
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        value: '30'
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: 0-1d6
+        name: Woe
+      name: Woe (even)
+      _id: KCIUzRMrwQF8JP6f
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>Whenever you finish a long rest, you can consult your Star Map for
+      omens. When you do so, roll a die. Until you finish your next long rest,
+      you gain access to a special reaction based on whether you rolled an even
+      or an odd number on the die:</p><p><strong>Weal (even).</strong> Whenever
+      a creature you can see within 30 feet of you is about to make an attack
+      roll, a saving throw, or an ability check, you can use your reaction to
+      roll a d6 and add the number rolled to the total.</p><p><strong>Woe
+      (odd).</strong> Whenever a creature you can see within 30 feet of you is
+      about to make an attack roll, a saving throw, or an ability check, you can
+      use your reaction to roll a d6 and subtract the number rolled from the
+      total.</p><p>You can use this reaction a number of times equal to your
+      proficiency bonus, and you regain all expended uses when you finish a long
+      rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737015726900
+  modifiedTime: 1737016191054
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!GcQPPh86smoJTSHj'
+
