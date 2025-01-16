@@ -1,4 +1,4 @@
-folder: XthCG1oiiZLrg2Ld
+folder: 6Kk5eK2naIYH5dib
 name: College of Ardent Empathy
 type: subclass
 img: icons/skills/social/diplomacy-peace-alliance.webp
@@ -107,12 +107,12 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736590669262
-  modifiedTime: 1736590784479
+  modifiedTime: 1736996828216
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: D8uz5qHaS4xkIGPj
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-sort: 0
+sort: 100000
 _key: '!items!D8uz5qHaS4xkIGPj'
 

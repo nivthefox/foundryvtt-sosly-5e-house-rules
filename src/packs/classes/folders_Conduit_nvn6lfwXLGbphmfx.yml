@@ -1,8 +1,10 @@
-name: Earthwarder Features
+name: Conduit
 sorting: a
-folder: noGVNHO80qEWmtzd
+folder: null
 type: Item
+_id: nvn6lfwXLGbphmfx
 description: ''
+sort: 100000
 color: null
 flags: {}
 _stats:
@@ -11,10 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736548920684
-  modifiedTime: 1736996982535
+  createdTime: 1736585568142
+  modifiedTime: 1736996961309
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: YaNjZLuI8Gnirjce
-sort: 100000
-_key: '!folders!YaNjZLuI8Gnirjce'
+_key: '!folders!nvn6lfwXLGbphmfx'
 

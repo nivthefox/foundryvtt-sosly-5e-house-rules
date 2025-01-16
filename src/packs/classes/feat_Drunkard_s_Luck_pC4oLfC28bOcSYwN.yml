@@ -1,0 +1,102 @@
+folder: 1W75OQT6XuvdbC5J
+name: Drunkard's Luck
+type: feat
+_id: pC4oLfC28bOcSYwN
+img: icons/skills/social/peace-luck-insult.webp
+system:
+  activities:
+    RWmTXd7ITjYyL6Wc:
+      type: utility
+      _id: RWmTXd7ITjYyL6Wc
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.dnd-players-handbook.classes.Item.phbmnkMonksFocus
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Expend Focus Point
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you make an ability check, an attack roll, or a saving throw and
+      have disadvantage on the roll, you can spend 2 Focus Points to cancel the
+      disadvantage for that roll.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ki
+  prerequisites:
+    level: 11
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737000204704
+  modifiedTime: 1737000552389
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!pC4oLfC28bOcSYwN'
+

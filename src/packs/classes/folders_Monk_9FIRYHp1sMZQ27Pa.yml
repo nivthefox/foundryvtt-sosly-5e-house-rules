@@ -1,8 +1,10 @@
-name: Earthwarder Features
+name: Monk
 sorting: a
-folder: noGVNHO80qEWmtzd
+folder: null
 type: Item
+_id: 9FIRYHp1sMZQ27Pa
 description: ''
+sort: 0
 color: null
 flags: {}
 _stats:
@@ -11,10 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736548920684
-  modifiedTime: 1736996982535
+  createdTime: 1736997064614
+  modifiedTime: 1736997064614
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: YaNjZLuI8Gnirjce
-sort: 100000
-_key: '!folders!YaNjZLuI8Gnirjce'
+_key: '!folders!9FIRYHp1sMZQ27Pa'
 

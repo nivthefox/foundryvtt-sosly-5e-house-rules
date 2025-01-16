@@ -66,7 +66,7 @@ system:
 flags: {}
 img: icons/magic/unholy/strike-hand-glow-pink.webp
 effects: []
-folder: nvn6lfwXLGbphmfx
+folder: gSMyqndjI9XVxOCm
 _stats:
   compendiumSource: null
   duplicateSource: null
@@ -74,12 +74,12 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588022115
-  modifiedTime: 1736588177864
+  modifiedTime: 1736996998791
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
 _id: rI5UvhKxUKOAP6t4
-sort: 0
+sort: 100000
 _key: '!items!rI5UvhKxUKOAP6t4'
 

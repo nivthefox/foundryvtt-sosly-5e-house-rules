@@ -1,0 +1,84 @@
+folder: 1W75OQT6XuvdbC5J
+name: Kip Up
+type: feat
+_id: 5CV3lRdHsjOVXMCy
+img: modules/sosly-5e-house-rules/public/subclasses/features/kip-up.webp
+system:
+  activities:
+    O7RBr21gecLOXm2Q:
+      type: utility
+      _id: O7RBr21gecLOXm2Q
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you're prone, you can stand up by spending 5 feet of movement,
+      rather than half your speed.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736998735159
+  modifiedTime: 1736999424056
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!5CV3lRdHsjOVXMCy'
+

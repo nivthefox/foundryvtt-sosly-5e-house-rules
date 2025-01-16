@@ -358,8 +358,8 @@ system:
     ability: cha
   wealth: '50'
 effects: []
-folder: zvPnD9kpxxgQHEF2
-sort: 100000
+folder: nvn6lfwXLGbphmfx
+sort: -100000
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -371,7 +371,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736585585297
-  modifiedTime: 1736654723577
+  modifiedTime: 1736996957575
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!38LZXsaBWZX2yCBI'
 

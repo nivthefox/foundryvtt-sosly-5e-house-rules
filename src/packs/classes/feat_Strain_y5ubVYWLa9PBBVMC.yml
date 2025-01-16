@@ -36,7 +36,7 @@ system:
   prerequisites:
     level: null
 effects: []
-folder: nvn6lfwXLGbphmfx
+folder: gSMyqndjI9XVxOCm
 ownership:
   default: 0
   Ug7GkMF9eyyz1JZt: 3
@@ -75,9 +75,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736586204053
-  modifiedTime: 1736587069531
+  modifiedTime: 1736996999993
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: y5ubVYWLa9PBBVMC
-sort: 0
+sort: 200000
 _key: '!items!y5ubVYWLa9PBBVMC'
 

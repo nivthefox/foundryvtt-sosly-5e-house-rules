@@ -1,0 +1,115 @@
+folder: 9FIRYHp1sMZQ27Pa
+name: Warrior of the Drunken Fist
+type: subclass
+_id: gIP5cG7GIYSLpuEh
+img: >-
+  modules/sosly-5e-house-rules/public/subclasses/warrior-of-the-drunken-fist.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Control Chaos Through Fluid
+      Motion</p></blockquote><p>Warriors of the Drunken Fist practice a
+      deceptive martial art that mimics the swaying movements of intoxication.
+      These Monks transform stumbling steps into devastating attacks, using
+      fluid and erratic motions to confound their foes. They excel at turning
+      defense into offense, redirecting enemy strikes while maintaining perfect
+      balance beneath their seemingly unsteady exterior.</p><p></p>
+    chat: ''
+  identifier: drunken-fist
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: SoSly House Rules
+    license: ''
+  advancement:
+    - _id: E5rfmEjXztunpBDk
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - skills:prf
+          - tool:art:brewer
+        choices: []
+      value:
+        chosen: []
+      level: 3
+      title: Bonus Proficiencies
+      hint: ''
+    - _id: suklxrKtazwWmZt4
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.OTYOtYC9oqljoe6D
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.GMP2cjHQthL5yqRb
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - _id: B0is8cIMzaxSzBzW
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.5CV3lRdHsjOVXMCy
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.6NsuzJh2duFS6Yzu
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - _id: JIp2EXLeQFoJEqQd
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.pC4oLfC28bOcSYwN
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 11
+      title: Subclass Features
+      hint: ''
+    - _id: jUVlj40aey8CmYI5
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.e63TcqN9gYgyRuiW
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 17
+      title: Subclass Features
+      hint: ''
+  classIdentifier: monk
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736997186971
+  modifiedTime: 1737000546075
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!gIP5cG7GIYSLpuEh'
+

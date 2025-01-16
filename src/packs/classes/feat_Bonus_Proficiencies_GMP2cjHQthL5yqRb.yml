@@ -1,0 +1,50 @@
+name: Bonus Proficiencies
+type: feat
+folder: 1W75OQT6XuvdbC5J
+img: icons/tools/cooking/bowl-steaming-brown.webp
+system:
+  description:
+    value: >-
+      <p>You gain proficiency in the Performance skill if you don't already have
+      it.  You also gain proficiency with brewer's supplies if you don't already
+      have it.</p><section class="secret"
+      id="secret-3C0ZGx08eY2w3N9d"><p><strong>Foundry Note</strong></p><p>These
+      proficiencies are granted automatically as you level up.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: implements-of-mercy
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736998578440
+  modifiedTime: 1736999435217
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_id: GMP2cjHQthL5yqRb
+sort: 0
+_key: '!items!GMP2cjHQthL5yqRb'
+

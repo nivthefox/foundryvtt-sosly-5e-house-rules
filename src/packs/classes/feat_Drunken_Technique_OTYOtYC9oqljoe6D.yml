@@ -1,0 +1,161 @@
+folder: 1W75OQT6XuvdbC5J
+name: Drunken Technique
+type: feat
+_id: OTYOtYC9oqljoe6D
+img: icons/consumables/drinks/alcohol-beer-stein-wooden-brown.webp
+system:
+  activities:
+    vBzL0h653BVWhgx6:
+      type: utility
+      _id: vBzL0h653BVWhgx6
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When you use Flurry of Blows
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: I86z3mv6HLUGc4qi
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Whenever you use Flurry of Blows, you gain the benefit of the
+      @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.w1AGsemFERfjqWNx]{Disengage}
+      action, and your walking speed increases by 10 feet until the end of the
+      current turn.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+effects:
+  - name: Drunken Technique
+    img: icons/consumables/drinks/alcohol-beer-stein-wooden-brown.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OTYOtYC9oqljoe6D
+    transfer: false
+    _id: I86z3mv6HLUGc4qi
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 2
+        value: '10'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1736998537226
+      modifiedTime: 1736998872045
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OTYOtYC9oqljoe6D.I86z3mv6HLUGc4qi'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736998363072
+  modifiedTime: 1736999430445
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!OTYOtYC9oqljoe6D'
+

@@ -42,7 +42,7 @@ system:
       take up arms and stone magic, becoming living embodiments of the land's
       resolve.</p>
     chat: ''
-  identifier: paladin
+  identifier: earthwarder
   source:
     revision: 1
     rules: '2024'
@@ -451,7 +451,7 @@ system:
   spellcasting:
     progression: half
     preparation:
-      formula: '@scale.paladin.prepared-spells'
+      formula: '@scale.earthwarder.prepared-spells'
     ability: cha
   wealth: '150'
 effects: []
@@ -463,13 +463,13 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736548928074
-  modifiedTime: 1736592251843
+  modifiedTime: 1736997024236
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-folder: zvPnD9kpxxgQHEF2
+folder: noGVNHO80qEWmtzd
 _id: tpWFLACxN7oWiet8
-sort: 200000
+sort: 100000
 _key: '!items!tpWFLACxN7oWiet8'
 

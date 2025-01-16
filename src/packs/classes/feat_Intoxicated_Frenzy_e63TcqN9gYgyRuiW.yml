@@ -1,0 +1,51 @@
+folder: 1W75OQT6XuvdbC5J
+name: Intoxicated Frenzy
+type: feat
+_id: e63TcqN9gYgyRuiW
+img: icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you use your Flurry of Blows, you can make up to three additional
+      attacks with it (up to a total of five Flurry of Blows attacks), provided
+      that each Flurry of Blows attack targets a different creature this
+      turn.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 17
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737000479976
+  modifiedTime: 1737000540400
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!e63TcqN9gYgyRuiW'
+
