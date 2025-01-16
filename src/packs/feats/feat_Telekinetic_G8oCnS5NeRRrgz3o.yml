@@ -1,0 +1,183 @@
+name: Telekinetic
+type: feat
+img: icons/magic/unholy/strike-hand-glow-pink.webp
+system:
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: bonus
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '30'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you choose this feat, select Intelligence, Wisdom, or
+      Charisma.</p><p>You learn the
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplMageHand00]{Mage Hand}
+      cantrip. You can cast it without verbal or somatic components, and you can
+      make the spectral hand invisible. If you already know this spell, its
+      range increases by 30 feet when you cast it. Your spellcasting ability for
+      this spell is the ability score you chose.</p><p>As a bonus action, you
+      can try to telekinetically shove one creature you can see within 30 feet
+      of you. When you do so, the target must succeed on a Strength saving throw
+      (DC 8 + your proficiency bonus + the ability score you chose) or be moved
+      5 feet toward you or away from you. A creature can willingly fail this
+      save.</p>
+    chat: ''
+  identifier: telekinetic
+  source:
+    revision: 1
+    rules: '2014'
+    custom: Tasha's Cauldron of Everything
+  enchant: {}
+  type:
+    value: feat
+    subtype: origin
+  prerequisites:
+    level: null
+  properties: []
+  requirements: ''
+effects: []
+folder: fivVf9w4MWrcgBK2
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  journal-backlinks:
+    references: []
+  tidy5e-sheet:
+    gender: ''
+    age: ''
+    height: ''
+    weight: ''
+    eyes: ''
+    skin: ''
+    hair: ''
+    notes:
+      value: ''
+    notes1:
+      name: ''
+      value: ''
+    notes2:
+      name: ''
+      value: ''
+    notes3:
+      name: ''
+      value: ''
+    notes4:
+      name: ''
+      value: ''
+    section: ''
+    actionSection: ''
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+    quickOther:
+      context: ''
+    quickSave:
+      value: true
+      altValue: true
+  core:
+    sourceId: Compendium.sosly.1st-level-feats.EpDovrUV7nX0vLkz
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  scene-packer:
+    hash: 455530e9b71bd408c37bf240d0d9f10a91f518f3
+    sourceId: Item.Aj79ft7xrtfP83V3
+  exportSource:
+    world: cormyr-a-campaign
+    system: dnd5e
+    coreVersion: '12.331'
+    systemVersion: 4.1.2
+_stats:
+  compendiumSource: Compendium.sosly.1st-level-feats.EpDovrUV7nX0vLkz
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737062674880
+  modifiedTime: 1737062707378
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: G8oCnS5NeRRrgz3o
+sort: 200000
+_key: '!items!G8oCnS5NeRRrgz3o'
+

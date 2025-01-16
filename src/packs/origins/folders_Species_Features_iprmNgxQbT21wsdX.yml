@@ -1,8 +1,10 @@
-name: Fighting Style Feats
+name: Species Features
 sorting: a
-folder: null
+folder: ol4N2HrhCU1VjQjT
 type: Item
+_id: iprmNgxQbT21wsdX
 description: ''
+sort: 100000
 color: null
 flags: {}
 _stats:
@@ -11,10 +13,8 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736592048287
-  modifiedTime: 1736592048342
+  createdTime: 1736588665331
+  modifiedTime: 1737060408960
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: 8E6wafl6BUR7EeSd
-sort: 100000
-_key: '!folders!8E6wafl6BUR7EeSd'
+_key: '!folders!iprmNgxQbT21wsdX'
 

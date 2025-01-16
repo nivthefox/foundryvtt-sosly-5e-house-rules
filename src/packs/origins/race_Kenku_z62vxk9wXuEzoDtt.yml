@@ -50,10 +50,10 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.sosly-5e-house-rules.species.Item.9NDMZn1YY5zAdB0I
-          - optional: false
-            uuid: Compendium.sosly-5e-house-rules.species.Item.jWy5TJ3O2LX74VAH
+          - uuid: Compendium.sosly-5e-house-rules.origins.Item.9NDMZn1YY5zAdB0I
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.origins.Item.jWy5TJ3O2LX74VAH
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -114,12 +114,12 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736588687721
-  modifiedTime: 1736917789176
+  modifiedTime: 1737061021429
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-folder: null
+folder: ol4N2HrhCU1VjQjT
 _id: z62vxk9wXuEzoDtt
 sort: 600000
 _key: '!items!z62vxk9wXuEzoDtt'

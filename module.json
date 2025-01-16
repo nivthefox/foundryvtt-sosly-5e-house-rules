@@ -107,17 +107,6 @@
       }
     },
     {
-      "name": "backgrounds",
-      "label": "Backgrounds",
-      "path": "packs/backgrounds",
-      "type": "Item",
-      "system": "dnd5e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
       "name": "classes",
       "label": "Classes",
       "path": "packs/classes",
@@ -173,9 +162,9 @@
       }
     },
     {
-      "name": "species",
-      "label": "Species",
-      "path": "packs/species",
+      "name": "origins",
+      "label": "Origins",
+      "path": "packs/origins",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -199,11 +188,11 @@
       "label": "Extra Spells",
       "path": "packs/extra-spells",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     }
   ],
   "documentTypes": {

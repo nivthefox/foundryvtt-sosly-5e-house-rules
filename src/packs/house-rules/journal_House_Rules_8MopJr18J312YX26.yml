@@ -18,10 +18,11 @@ pages:
         of their change.</p><h2>Content Changes</h2><p>Some spells, feats,
         sublcasses, and other specific forms of content may have changed. Always
         check the Society of Silliness compendia for content which may override
-        the default rules.</p><h2>Changelog</h2><p><strong>11th January 2024.
-        </strong>Implemented spell changes directly in the associated
-        compendia.</p><p><strong>3rd December 2024.</strong> This document was
-        created.</p>
+        the default rules.</p><h2>Changelog</h2><p><strong>16th January
+        2024.</strong> Human's Resourceful trait has been
+        redesigned.</p><p><strong>11th January 2024. </strong>Implemented spell
+        changes directly in the associated compendia.</p><p><strong>3rd December
+        2024.</strong> This document was created.</p>
     video:
       controls: true
       volume: 0.5
@@ -37,7 +38,7 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1736653424198
+      modifiedTime: 1737060774264
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.uqU02nnI0FIkMVrv'
   - name: Losing Hit Points
@@ -616,6 +617,38 @@ pages:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!journal.pages!8MopJr18J312YX26.J751Y8kSKi332sk7'
+  - sort: 900000
+    name: Species Changes
+    type: text
+    _id: Jrf2ThHLwZAOs1pA
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h2>Human</h2><p>@UUID[Compendium.sosly-5e-house-rules.origins.Item.SVxKEMoZwR6TT2Bb]{Resourceful}
+        has been redesigned.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      n9iY1vD5eGeaHb7l: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737060734727
+      modifiedTime: 1737060753137
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!journal.pages!8MopJr18J312YX26.Jrf2ThHLwZAOs1pA'
 folder: null
 ownership:
   default: 0

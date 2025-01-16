@@ -1,6 +1,6 @@
-name: Half-Elf, High
+name: Half-Elf, Wood
 type: race
-img: modules/dnd-players-handbook/assets/icons/species/elf-high.webp
+img: modules/dnd-players-handbook/assets/icons/species/elf-wood.webp
 system:
   description:
     value: >-
@@ -20,12 +20,12 @@ system:
       subtly transforms elves after they inhabit it for a millennium or more,
       and it grants them certain kinds of magic. Drow, high elves, and wood
       elves are examples of elves who have been transformed thus.</p><h3
-      data-anchor="high-elves">High Elves</h3><p>High elves have been infused
-      with the magic of crossings between the Feywild and the Material Plane. On
-      some worlds, high elves refer to themselves by other names. For example,
-      they call themselves sun or moon elves in the Forgotten Realms setting,
-      Silvanesti and Qualinesti in the Dragonlance setting, and Aereni in the
-      Eberron setting.</p><h3 data-anchor="elf-traits">Elf
+      data-anchor="wood-elves">Wood Elves</h3><p>Wood elves carry the magic of
+      primeval forests within themselves. They are known by many other names,
+      including wild elves, green elves, and forest elves. Grugach are reclusive
+      wood elves of the Greyhawk setting, while the Kagonesti and the Tairnadal
+      are wood elves of the Dragonlance and Eberron settings,
+      respectively.</p><h3 data-anchor="elf-traits">Elf
       Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:
       </strong>Medium (about 5–6 feet tall)</p><p><strong>Speed:</strong> 30
       feet</p><p>As an Elf, you have these special
@@ -38,18 +38,14 @@ system:
       finish a Long Rest. You can also cast the spell using any spell slots you
       have of the appropriate level. Intelligence, Wisdom, or Charisma is your
       spellcasting ability for the spells you cast with this trait (choose the
-      ability when you select the lineage).</p><table><caption>High Elf Lineage
+      ability when you select the lineage).</p><table><caption>Wood Elf Lineage
       Features</caption><thead><tr><td>Level 1</td><td>Level 3</td><td>Level
-      5</td></tr></thead><tbody><tr><td>You know the
-      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]{Prestidigitation}
-      cantrip. Whenever you finish a Long Rest, you can replace that cantrip
-      with a different cantrip from the
-      @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard
-      spell
-      list}.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Detect
-      Magic}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty
-      Step}</td></tr></tbody></table><p><strong>Fey Ancestry.</strong> You have
-      Advantage on saving throws you make to avoid or end the Charmed
+      5</td></tr></thead><tbody><tr><td>Your Speed increases to 35 feet. You
+      also know the
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidcraft}
+      cantrip.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Longstrider}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Pass
+      without Trace}</td></tr></tbody></table><p><strong>Fey Ancestry.</strong>
+      You have Advantage on saving throws you make to avoid or end the Charmed
       condition.</p><p><strong>Keen Senses.</strong> You have proficiency in the
       Insight, Perception, or Survival skill.</p><p><strong>Trance.</strong> You
       don’t need to sleep, and magic can’t put you to sleep. You can finish a
@@ -80,14 +76,75 @@ system:
           - optional: false
             uuid: Compendium.dnd-players-handbook.origins.Item.phbsptTrance0000
           - optional: false
-            uuid: Compendium.dnd-players-handbook.origins.Item.phbsptHighElfLin
+            uuid: Compendium.dnd-players-handbook.origins.Item.phbsptWoodElfLin
         optional: false
         spell: null
       value: {}
       level: 0
       title: Elf Traits
       hint: ''
-    - _id: wyzOrBj4qIVsCKc7
+    - _id: YFS9oEa9Iw1molNm
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft
+        optional: false
+        spell:
+          ability: []
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 1
+      title: Wood Elf Traits
+      hint: ''
+    - _id: FRJszO7cYchbaGzt
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplLongstride
+        optional: false
+        spell:
+          ability:
+            - int
+            - wis
+            - cha
+          preparation: always
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Wood Elf Traits
+      hint: >-
+        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
+        ability.
+    - _id: zFsEPXauTgmYxqiJ
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Wood Elf Traits
+      hint: >-
+        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
+        ability.
+    - _id: RwuXccrKfMuuWLKr
       type: Trait
       configuration:
         mode: default
@@ -104,81 +161,12 @@ system:
       level: 0
       title: Keen Senses
       hint: You have proficiency in the Insight, Perception, or Survival skill.
-    - _id: hraql8YRB41ssDA6
-      type: ItemGrant
-      configuration:
-        items:
-          - optional: false
-            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi
-        optional: false
-        spell:
-          ability:
-            - int
-            - wis
-            - cha
-          preparation: ''
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-      value: {}
-      level: 1
-      title: High Elf Traits
-      hint: >-
-        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
-        ability.
-    - _id: iztB4GPENKXiA72M
-      type: ItemGrant
-      configuration:
-        items:
-          - optional: false
-            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi
-        optional: false
-        spell:
-          ability:
-            - int
-            - wis
-            - cha
-          preparation: always
-          uses:
-            max: '1'
-            per: lr
-            requireSlot: false
-      value: {}
-      level: 3
-      title: High Elf Traits
-      hint: >-
-        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
-        ability.
-    - _id: 1LZlC6uInez1oV7n
-      type: ItemGrant
-      configuration:
-        items:
-          - optional: false
-            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0
-        optional: false
-        spell:
-          ability:
-            - int
-            - wis
-            - cha
-          preparation: always
-          uses:
-            max: '1'
-            per: lr
-            requireSlot: false
-      value: {}
-      level: 5
-      title: High Elf Traits
-      hint: >-
-        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
-        ability.
   movement:
     burrow: null
     climb: null
     fly: null
     swim: null
-    walk: 30
+    walk: 35
     units: null
     hover: false
   senses:
@@ -192,9 +180,9 @@ system:
     value: humanoid
     custom: ''
     subtype: Elf
-  identifier: half-elf-high
+  identifier: half-elf-wood
 effects: []
-folder: null
+folder: ol4N2HrhCU1VjQjT
 flags: {}
 _stats:
   compendiumSource: null
@@ -202,13 +190,13 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736917793952
-  modifiedTime: 1736917925247
+  createdTime: 1736917790847
+  modifiedTime: 1737060413805
   lastModifiedBy: n9iY1vD5eGeaHb7l
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-_id: IXznPgdpK3tFe2Y6
-sort: 0
-_key: '!items!IXznPgdpK3tFe2Y6'
+_id: qWtKludwylibyGVr
+sort: 300000
+_key: '!items!qWtKludwylibyGVr'
 

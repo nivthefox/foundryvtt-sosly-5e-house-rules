@@ -1,0 +1,189 @@
+folder: fivVf9w4MWrcgBK2
+name: Dragon Blooded
+type: feat
+_id: rDrbIfkNwuBM3pGy
+img: icons/magic/defensive/armor-stone-skin.webp
+system:
+  activities:
+    186XtcYfmgzlBGMp:
+      type: attack
+      _id: 186XtcYfmgzlBGMp
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 4
+            bonus: '@mod'
+            types:
+              - slashing
+            scaling:
+              number: 1
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You manifest scales and claws reminiscent of your draconic ancestors.
+      You gain the following benefits:</p><ul><li><p>Your scales harden. While
+      you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity
+      modifier. You can use a shield and still gain this
+      benefit.</p></li><li><p>You grow retractable claws from the tips of your
+      fingers. Extending or retracting the claws requires no action. The claws
+      are natural weapons, which you can use to make unarmed strikes. If you hit
+      with them, you deal slashing damage equal to 1d4 + your Strength modifier,
+      instead of the normal bludgeoning damage for an unarmed
+      strike.</p></li></ul><p>You have Darkvision with a radius of 60
+      feet.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: feat
+    subtype: origin
+  prerequisites:
+    level: null
+  properties: []
+  requirements: ''
+effects:
+  - name: Dragon Blooded
+    img: icons/magic/defensive/armor-stone-skin.webp
+    origin: Compendium.sosly-5e-house-rules.feats.Item.rDrbIfkNwuBM3pGy
+    _id: yTpmOWfChHik8H3Q
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.calc
+        mode: 4
+        value: draconic
+        priority: 20
+      - key: system.attributes.senses.darkvision
+        mode: 4
+        value: '60'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737062477316
+      modifiedTime: 1737062546961
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!rDrbIfkNwuBM3pGy.yTpmOWfChHik8H3Q'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737062401516
+  modifiedTime: 1737062592882
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!rDrbIfkNwuBM3pGy'
+

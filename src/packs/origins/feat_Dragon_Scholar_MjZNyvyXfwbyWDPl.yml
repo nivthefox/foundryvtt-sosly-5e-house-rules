@@ -1,0 +1,80 @@
+name: Dragon Scholar
+type: feat
+img: icons/creatures/reptiles/dragon-winged-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You have studied dragons and their lore for many years. You can
+      automatically identify locations built or used by dragons and can identify
+      dragon eggs and scales by sight. If you fail an Intelligence check to
+      recall lore relating to dragons, you know someone or some book you can
+      consult for the answer unless the DM rules that the lore is unknown.</p>
+    chat: ''
+  identifier: dragon-scholar
+  source:
+    revision: 1
+    rules: '2014'
+  enchant: {}
+  type:
+    value: background
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: ''
+effects: []
+folder: WVWAbYhHrKeaIoxv
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  scene-packer:
+    hash: cecdf2ef6428b62682798ec637e1c596bbcc9f71
+    sourceId: Item.LIApyzNdP6lqeTH0
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  journal-backlinks:
+    references: []
+  core:
+    sourceId: Item.hX5dMkmfMi71O7ew
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  exportSource:
+    world: cormyr-a-campaign
+    system: dnd5e
+    coreVersion: '12.331'
+    systemVersion: 4.1.2
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: Item.hX5dMkmfMi71O7ew
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737064654060
+  modifiedTime: 1737064654060
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: MjZNyvyXfwbyWDPl
+sort: 0
+_key: '!items!MjZNyvyXfwbyWDPl'
+
