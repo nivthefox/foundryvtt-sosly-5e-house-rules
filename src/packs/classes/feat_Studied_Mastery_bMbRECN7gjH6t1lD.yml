@@ -1,0 +1,50 @@
+folder: n3rsV8LnHROlsWhn
+name: Studied Mastery
+type: feat
+_id: bMbRECN7gjH6t1lD
+img: icons/skills/trades/academics-book-study-runes.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>With your patron’s guidance you have learned to master a spell such
+      that you can cast it at will. Choose a level 1 or level 2 spell that you
+      have prepared and has a casting time of an action. You can cast that spell
+      at its lowest level without expending a spell slot. If you want to cast it
+      at a higher level, you must expend a spell slot at normal.</p><p>Whenever
+      you finish a Long Rest, you can study and exchange your spell for another
+      eligible spell of 1st or 2nd level.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737053690577
+  modifiedTime: 1737053758148
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!bMbRECN7gjH6t1lD'
+

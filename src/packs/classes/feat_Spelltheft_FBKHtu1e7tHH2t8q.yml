@@ -1,0 +1,112 @@
+folder: n3rsV8LnHROlsWhn
+name: Spelltheft
+type: feat
+_id: FBKHtu1e7tHH2t8q
+img: icons/magic/symbols/mask-metal-silver-white.webp
+system:
+  activities:
+    q0n1BCRVyPekb53r:
+      type: save
+      _id: q0n1BCRVyPekb53r
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: none
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: ''
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@attributes.prof'
+  description:
+    value: >-
+      <p>When a creature you can see casts a spell, you can expend your reaction
+      to force them to make a Charisma saving throw. If they fail the save, you
+      choose the target or targets of the spell. The spell still originates from
+      the caster, so you must choose targets that are valid.</p><p>You can use
+      this ability a number of times equal to your proficiency bonus, and you
+      regain all expended uses when you complete a Long Rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 10
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737053492276
+  modifiedTime: 1737053611837
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!FBKHtu1e7tHH2t8q'
+

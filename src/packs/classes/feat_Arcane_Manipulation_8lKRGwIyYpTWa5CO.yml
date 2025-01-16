@@ -1,0 +1,109 @@
+folder: n3rsV8LnHROlsWhn
+name: Arcane Manipulation
+type: feat
+_id: 8lKRGwIyYpTWa5CO
+img: icons/magic/symbols/rune-sigil-black-pink.webp
+system:
+  activities:
+    9trnXU4NVavAh5GE:
+      type: utility
+      _id: 9trnXU4NVavAh5GE
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: >-
+          a creature that you can see targets you with a spell that requires an
+          attack roll or saving throw
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>When a creature that you can see targets you with a spell that requires
+      an attack roll or a saving throw, you can use your reaction to impose
+      disadvantage on the attack roll or gain advantage on the saving
+      throw.</p><p>Once you use this feature, you can’t use it again until you
+      finish a Short Rest or Long Rest. You can also restore your use of it by
+      expending a spell slot of level 1 or higher (no action
+      required).</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737053285817
+  modifiedTime: 1737053732641
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!8lKRGwIyYpTWa5CO'
+

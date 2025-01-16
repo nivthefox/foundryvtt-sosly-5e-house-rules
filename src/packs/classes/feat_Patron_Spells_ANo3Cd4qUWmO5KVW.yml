@@ -1,0 +1,61 @@
+folder: n3rsV8LnHROlsWhn
+name: Patron Spells
+type: feat
+_id: ANo3Cd4qUWmO5KVW
+img: icons/sundries/scrolls/scroll-plain-red.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>The magic of your otherworldly patron ensures you always have certain
+      spells ready; when you reach a Warlock level specified in the Archmage
+      Spells table, you thereafter always have the listed spells
+      prepared.</p><p></p><table><tbody><tr><td><p>Warlock
+      Level</p></td><td><p>Spells</p></td></tr><tr><td><p>3</p></td><td><p>@UUID[Compendium.sosly-5e-house-rules.extra-spells.tuvL3QKQxlZhp5Py]{Borrowed
+      Knowledge},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplIdentify00]{Identify},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplMagicMissi]{Magic
+      Missile},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplPrestidigi]{Prestidigitation},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplUnseenServ]{Unseen
+      Servant},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplWeb0000000]{Web}</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.phbsplCounterspe]{Counterspell},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplFireball00]{Fireball}</p></td></tr><tr><td><p>7</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.phbsplDimensionD]{Dimension
+      Door},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplPolymorph0]{Polymorph}</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.phbsplAnimateObj]{Animate
+      Objects},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplScrying000]{Scrying}</p></td></tr></tbody></table>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737052147172
+  modifiedTime: 1737052351779
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!ANo3Cd4qUWmO5KVW'
+

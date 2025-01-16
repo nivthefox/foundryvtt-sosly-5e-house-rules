@@ -1,0 +1,471 @@
+folder: r97xxOKlEZnQendK
+name: Archmage Patron
+type: subclass
+_id: inlE6CmuLgi5m2nd
+img: modules/sosly-5e-house-rules/public/subclasses/archmage-patron.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Channel Ancient Arcane Secrets</p></blockquote><p>Your pact
+      draws on the power of mortal magic mastered to its highest form. When you
+      choose this subclass, you might forge a bargain with a legendary archmage
+      like Azuth or The Simbul, bind yourself to the vestige of ancient
+      spellcasters such as Ioulaum or Vecna, or enter into an agreement with a
+      council of wizards. Your patron grants you access to carefully guarded
+      magical knowledge, though such power often comes with strict conditions
+      and complex obligations.</p>
+    chat: ''
+  identifier: archmage
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: 4vCV534huOlZ4vDQ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.ANo3Cd4qUWmO5KVW
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.extra-spells.Item.tuvL3QKQxlZhp5Py
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplIdentify00
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplUnseenServ
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplWeb0000000
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCounterspe
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplFireball00
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDimensionD
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPolymorph0
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplScrying000
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.5aVVmuSi5PsEgu1q
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.pNA5Tb9NRwBMkBCT
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: true
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.8lKRGwIyYpTWa5CO
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+      _id: 1IEeVqtN4v4wns8Y
+    - type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.FBKHtu1e7tHH2t8q
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Subclass Features
+      hint: ''
+      _id: 2IbbIOYGKsCEflQG
+    - type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.bMbRECN7gjH6t1lD
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+      _id: C8oKsU2mHLxmNM6r
+    - _id: MbqrY2oXreQtnF16
+      type: ItemChoice
+      configuration:
+        choices:
+          '3':
+            count: 1
+            replacement: false
+          '4':
+            count: null
+            replacement: true
+          '5':
+            count: null
+            replacement: true
+          '6':
+            count: null
+            replacement: true
+          '7':
+            count: null
+            replacement: true
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: null
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: pact
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: true
+        restriction:
+          level: '1'
+      value:
+        added: {}
+        replaced: {}
+      title: Minor Arcanum
+      hint: ''
+    - type: ItemChoice
+      configuration:
+        choices:
+          '3':
+            count: 1
+            replacement: false
+          '4':
+            count: null
+            replacement: true
+          '5':
+            count: null
+            replacement: true
+          '6':
+            count: null
+            replacement: true
+          '7':
+            count: null
+            replacement: true
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: null
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: pact
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: true
+        restriction:
+          level: '2'
+      value:
+        added: {}
+        replaced: {}
+      title: Minor Arcanum
+      hint: ''
+      _id: r2PSTJHLyiPskhdb
+    - type: ItemChoice
+      configuration:
+        choices:
+          '5':
+            count: 1
+            replacement: false
+          '6':
+            count: null
+            replacement: true
+          '7':
+            count: null
+            replacement: true
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: null
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: pact
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: true
+        restriction:
+          level: '3'
+      value:
+        added: {}
+        replaced: {}
+      title: Minor Arcanum
+      hint: ''
+      _id: 2uV9Ouo0dg0BUCfa
+    - type: ItemChoice
+      configuration:
+        choices:
+          '7':
+            count: 1
+            replacement: false
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: null
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: pact
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: true
+        restriction:
+          level: '4'
+      value:
+        added: {}
+        replaced: {}
+      title: Minor Arcanum
+      hint: ''
+      _id: G7wRupWYbBWmtsr8
+    - type: ItemChoice
+      configuration:
+        choices:
+          '9':
+            count: 1
+            replacement: false
+          '10':
+            count: null
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: pact
+          uses:
+            max: '1'
+            per: lr
+            requireSlot: true
+        restriction:
+          level: '5'
+      value:
+        added: {}
+        replaced: {}
+      title: Minor Arcanum
+      hint: ''
+      _id: IiS9reaGS54vOHJ5
+  classIdentifier: warlock
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737050681409
+  modifiedTime: 1737053787634
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!inlE6CmuLgi5m2nd'
+
