@@ -1,0 +1,168 @@
+folder: 2B3ZPqDz4gMjvekQ
+name: Divine Sorcery
+type: subclass
+_id: CvR74GeEXrep8NA0
+img: modules/sosly-5e-house-rules/public/subclasses/divine-sorcery.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Channel Sacred Power Within</p></blockquote><p>Your innate
+      magic flows from a divine spark that glimmers in your soul. When this
+      power awakens, it might stem from an angelic ancestor, mark you as part of
+      an ancient prophecy, or reveal itself as a blessing from the gods
+      themselves. Your connection to divine power exists outside traditional
+      religious hierarchies, making you either a blessed champion or a dangerous
+      outsider to established faiths.</p><p></p>
+    chat: ''
+  identifier: divine
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: JsImP1F9ffl7sbhw
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.2D8C04xjOTQaSWnD
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.67xxZ9PKQ0vWcMTN
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.K9i8pykmIO0G3nJa
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+      _id: eMS9AotOYohz0Tjx
+    - type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+      _id: iSS79x0Xzdk9fqXh
+    - type: ItemGrant
+      configuration:
+        items: []
+        optional: false
+        spell: null
+      value: {}
+      level: 18
+      title: Subclass Features
+      hint: ''
+      _id: 6kz7hW5H3pXkBi8x
+    - _id: 1C9uHYxqgr6XebBx
+      type: ItemChoice
+      configuration:
+        choices:
+          '3':
+            count: 4
+            replacement: false
+          '4':
+            count: null
+            replacement: true
+          '5':
+            count: 2
+            replacement: true
+          '6':
+            count: null
+            replacement: true
+          '7':
+            count: 2
+            replacement: true
+          '8':
+            count: null
+            replacement: true
+          '9':
+            count: 2
+            replacement: true
+          '10':
+            count: null
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: null
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: null
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: null
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        allowDrops: true
+        type: spell
+        pool: []
+        spell:
+          ability:
+            - cha
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: true
+        restriction:
+          level: available
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  classIdentifier: sorcerer
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737054689003
+  modifiedTime: 1737059148879
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!CvR74GeEXrep8NA0'
+

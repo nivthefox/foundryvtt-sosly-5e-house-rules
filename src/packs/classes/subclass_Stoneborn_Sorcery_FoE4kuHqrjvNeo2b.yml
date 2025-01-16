@@ -1,0 +1,147 @@
+folder: 2B3ZPqDz4gMjvekQ
+name: Stoneborn Sorcery
+type: subclass
+img: icons/magic/earth/construct-stone.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Wield Earth's Primal Power</p></blockquote><p>Your innate
+      magic flows from an ancient connection to elemental earth. This power
+      might come from dao ancestry, a pact your bloodline made with earth
+      primordials, or some other link to the Plane of Earth. Your earthen
+      heritage manifests in both magical resilience and martial prowess, drawing
+      you to don armor and wield steel as naturally as you channel the raw power
+      of stone.</p><p></p>
+    chat: ''
+  identifier: stoneborn-sorcerer
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: aToXSjiR8JSa3hwN
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+          - weapon:mar
+          - armor:shl
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      title: Bonus Proficiencies
+      hint: ''
+    - _id: HxuPVVvbv6uH8s2m
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.KzdcsmhDHlX60XVn
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Features
+      hint: ''
+    - _id: XAG0W3YI0fSUPSq3
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.mbytrdqikSpotXTJ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Features
+      hint: ''
+    - _id: B3quMoSqX67p4pp8
+      type: ScaleValue
+      configuration:
+        identifier: stone-edge
+        type: string
+        distance:
+          units: ''
+        scale:
+          '14':
+            value: '7'
+          '16':
+            value: '8'
+          '18':
+            value: '9'
+          '20':
+            value: '10'
+      value: {}
+      title: Stone's Edge Damage
+      hint: ''
+    - _id: hjxBbKJBRgXNvUsc
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.fCONMV1Urmz0ROvu
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Features
+      hint: ''
+    - _id: 3TOLX381RT2VJbnu
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '6':
+            value: '3'
+          '8':
+            value: '4'
+          '12':
+            value: '5'
+          '16':
+            value: '6'
+          '20':
+            value: '7'
+      value: {}
+      title: Stone Aegis
+      hint: ''
+    - _id: V9f0j4C1NnOCiFmb
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.gp9t4LGpycXEkEO0
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 18
+      title: Features
+      hint: ''
+  classIdentifier: sorcerer
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.subclasses.Item.FoE4kuHqrjvNeo2b
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591239862
+  modifiedTime: 1737055041889
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: FoE4kuHqrjvNeo2b
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+sort: 100000
+_key: '!items!FoE4kuHqrjvNeo2b'
+

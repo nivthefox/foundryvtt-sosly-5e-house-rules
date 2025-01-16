@@ -1,4 +1,4 @@
-name: Stoneborn Features
+name: Stoneborn Sorcery
 sorting: a
 folder: P1OsX9wJkt1R9IYI
 type: Item
@@ -12,7 +12,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: null
-  modifiedTime: 1737012955653
+  modifiedTime: 1737054991581
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: kKe1Q38V6IBP6kRm
 sort: 100000

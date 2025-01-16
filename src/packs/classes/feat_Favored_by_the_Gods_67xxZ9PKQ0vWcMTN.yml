@@ -1,0 +1,105 @@
+folder: 3bwwDdnh69gTbh9s
+name: Favored by the Gods
+type: feat
+_id: 67xxZ9PKQ0vWcMTN
+img: icons/sundries/gaming/dice-pair-white-green.webp
+system:
+  activities:
+    abevzkl3MQdqfdSn:
+      type: utility
+      _id: abevzkl3MQdqfdSn
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: You fail a saving throw or miss with an attack roll
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: 2d4
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>If you fail a saving throw or miss with an attack roll, you can roll
+      2d4 and add it to the total, possibly changing the outcome. Once you use
+      this feature, you can’t use it again until you finish a short or long
+      rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737056289432
+  modifiedTime: 1737059210202
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!67xxZ9PKQ0vWcMTN'
+

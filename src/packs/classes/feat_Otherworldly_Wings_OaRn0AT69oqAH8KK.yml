@@ -1,0 +1,513 @@
+folder: 3bwwDdnh69gTbh9s
+name: Otherworldly Wings
+type: feat
+_id: OaRn0AT69oqAH8KK
+img: icons/creatures/abilities/wings-birdlike-blue.webp
+system:
+  activities:
+    0Posp5zJzJEBjUFp:
+      type: utility
+      _id: 0Posp5zJzJEBjUFp
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: l21IZt2z2Ka1ZXsH
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can use a bonus action to manifest a pair of spectral wings from
+      your back. While the wings are present, you have a flying speed of 30
+      feet. The wings last until you’re incapacitated, you die, or you dismiss
+      them as a bonus action.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+  properties: []
+  requirements: ''
+effects:
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: Y4Zsy626bZoE5eyi
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058682840
+      modifiedTime: 1737058682840
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.Y4Zsy626bZoE5eyi'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: 6uKE3ghuwfMWkI5j
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058683881
+      modifiedTime: 1737058683881
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.6uKE3ghuwfMWkI5j'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: xLSudfuenkdBCXdn
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058684972
+      modifiedTime: 1737058684972
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.xLSudfuenkdBCXdn'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: F35WmEnapGctgN1M
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058690301
+      modifiedTime: 1737058690301
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.F35WmEnapGctgN1M'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: T27Cd1EtcPGcbdYi
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058704194
+      modifiedTime: 1737058704194
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.T27Cd1EtcPGcbdYi'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: KjAyyj8EbcL42D0R
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058704576
+      modifiedTime: 1737058704576
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.KjAyyj8EbcL42D0R'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: Ma8fFDYpTu7ppote
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058704731
+      modifiedTime: 1737058704731
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.Ma8fFDYpTu7ppote'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: 2rj9rBKw7E5Bu1et
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058705148
+      modifiedTime: 1737058705148
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.2rj9rBKw7E5Bu1et'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: FPHiYm5xSuJ64FtC
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058705294
+      modifiedTime: 1737058705294
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.FPHiYm5xSuJ64FtC'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: LQ3LEnZE62ZCg2ZL
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058705470
+      modifiedTime: 1737058705470
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.LQ3LEnZE62ZCg2ZL'
+  - name: Otherworldly Wings
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: iSEKhzmM1EPmzLnC
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058705643
+      modifiedTime: 1737058705643
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.iSEKhzmM1EPmzLnC'
+  - name: Otherworldly Wings
+    img: icons/creatures/abilities/wings-birdlike-blue.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.OaRn0AT69oqAH8KK
+    transfer: false
+    _id: l21IZt2z2Ka1ZXsH
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.fly
+        mode: 2
+        value: '30'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737058822615
+      modifiedTime: 1737058837567
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!OaRn0AT69oqAH8KK.l21IZt2z2Ka1ZXsH'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737056778249
+  modifiedTime: 1737058822626
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!OaRn0AT69oqAH8KK'
+

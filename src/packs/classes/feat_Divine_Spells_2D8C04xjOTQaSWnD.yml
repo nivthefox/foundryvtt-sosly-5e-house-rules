@@ -1,0 +1,51 @@
+folder: 3bwwDdnh69gTbh9s
+name: Divine Spells
+type: feat
+_id: 2D8C04xjOTQaSWnD
+img: icons/magic/holy/prayer-hands-glowing-yellow-white.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Choose four spells from the Cleric spell list for which you have spell
+      slots. These spells are Sorcerer spells for you, and you always have these
+      spells prepared.</p><p>At level 5, choose an additional two spells for a
+      total of six.</p><p>At level 7, choose an additional two spells for a
+      total of eight.</p><p>At level 9, choose an additional two spells for a
+      total of ten.</p><p>Whenever you gain a Sorcerer level, you can replace
+      one spell on your list with another Cleric spell for which you have spell
+      slots.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737055153715
+  modifiedTime: 1737058588329
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!2D8C04xjOTQaSWnD'
+

@@ -1,0 +1,103 @@
+folder: 3bwwDdnh69gTbh9s
+name: Empowered Healing
+type: feat
+_id: K9i8pykmIO0G3nJa
+img: icons/magic/life/heart-cross-strong-green.webp
+system:
+  activities:
+    rKqSmdCtMJHSZhGZ:
+      type: utility
+      _id: rKqSmdCtMJHSZhGZ
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.dnd-players-handbook.classes.Item.phbscrFontOfMagi
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Whenever you or an ally within 5 feet of you rolls dice to determine
+      the number of hit points a spell restores, you can spend 1 sorcery point
+      to reroll any number of those dice once, provided you aren’t
+      incapacitated. You can use this feature only once per turn.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737056524465
+  modifiedTime: 1737058657500
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!K9i8pykmIO0G3nJa'
+
