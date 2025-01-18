@@ -195,6 +195,24 @@
       }
     }
   ],
+  "packFolders": [
+    {
+      "name": "SoSly House Rules",
+      "color": "#f9a61a",
+      "sorting": "m",
+        "packs": [
+          "house-rules",
+          "classes",
+          "origins",
+          "feats",
+          "spells",
+          "extra-spells",
+          "auxiliaries",
+          "effect-tables",
+          "equipment"
+        ]
+    }
+  ],
   "documentTypes": {
     "JournalEntryPage": {
       "class": {
@@ -218,6 +236,23 @@
           "details.value"
         ]
       }
+    }
+  },
+  "flags": {
+    "dnd5e": {
+      "sourceBooks": {
+        "SoSly House Rules": "SOURCE.BOOK.SOSLY_HOUSE_RULES"
+      },
+      "spellLists": [
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.wwia6Wwo4BgE9GSI",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.SkHptN2PTzFGDaEj",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.LhvuDQEyrCdg5EfU",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.8yD9Jgp404hfZ9ie",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.5HnIk6HsrSxkvkz5",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.VfZ5mH2ZuyFq82Ga",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.sSzagq8GvYXpfmfs",
+        "Compendium.sosly-5e-house-rules.house-rules.JournalEntry.1PWj3pEaMjRbBOF2.JournalEntryPage.6AnqLUowgdsqMFvz"
+      ]
     }
   }
 }

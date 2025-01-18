@@ -18,7 +18,7 @@ system:
     rules: '2024'
   enchant: {}
   type:
-    value: ''
+    value: race
     subtype: ''
   prerequisites:
     level: null
@@ -27,7 +27,7 @@ system:
 effects:
   - name: Deceptive
     img: icons/equipment/head/mask-carved-bird-grey-pink.webp
-    origin: Compendium.sosly-5e-house-rules.species.Item.33DWLY5P8KXkdOUz
+    origin: Compendium.sosly-5e-house-rules.origins.Item.33DWLY5P8KXkdOUz
     _id: 3YEAAJ2uYH39KcAM
     type: base
     system: {}
@@ -97,7 +97,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736919800950
-  modifiedTime: 1736919876628
+  modifiedTime: 1737238239717
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!33DWLY5P8KXkdOUz'
 

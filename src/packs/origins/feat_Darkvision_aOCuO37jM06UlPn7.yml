@@ -43,7 +43,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    origin: Compendium.sosly-5e-house-rules.species.Item.aOCuO37jM06UlPn7
+    origin: Compendium.sosly-5e-house-rules.origins.Item.aOCuO37jM06UlPn7
     tint: '#ffffff'
     transfer: true
     _stats:

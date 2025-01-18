@@ -32,7 +32,7 @@ system:
 effects:
   - name: Sprinter
     img: icons/creatures/mammals/rabbit-movement-glowing-green.webp
-    origin: Compendium.sosly-5e-house-rules.species.Item.VOUS6A3LWAfBdP26
+    origin: Compendium.sosly-5e-house-rules.origins.Item.VOUS6A3LWAfBdP26
     transfer: true
     _id: IXzgADI69bSEzISR
     type: base

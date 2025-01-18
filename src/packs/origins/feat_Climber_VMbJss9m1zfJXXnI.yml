@@ -32,7 +32,7 @@ system:
 effects:
   - name: Climber
     img: icons/creatures/mammals/rodent-rat-diseaed-gray.webp
-    origin: Compendium.sosly-5e-house-rules.species.Item.VMbJss9m1zfJXXnI
+    origin: Compendium.sosly-5e-house-rules.origins.Item.VMbJss9m1zfJXXnI
     transfer: true
     _id: xhKVOVaConM2s5zL
     type: base

@@ -33,7 +33,7 @@ system:
 effects:
   - name: Aquatic
     img: icons/creatures/fish/squid-kraken-teal.webp
-    origin: Compendium.sosly-5e-house-rules.species.Item.7HK8AR775L73AqC2
+    origin: Compendium.sosly-5e-house-rules.origins.Item.7HK8AR775L73AqC2
     transfer: true
     _id: 4Q7kCoqQHctlTG5l
     type: base

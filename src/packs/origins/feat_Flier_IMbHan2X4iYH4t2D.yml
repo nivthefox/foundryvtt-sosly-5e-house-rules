@@ -33,7 +33,7 @@ system:
 effects:
   - name: Flier
     img: icons/creatures/abilities/wing-batlike-purple-blue.webp
-    origin: Compendium.sosly-5e-house-rules.species.Item.IMbHan2X4iYH4t2D
+    origin: Compendium.sosly-5e-house-rules.origins.Item.IMbHan2X4iYH4t2D
     transfer: true
     _id: 2JFUbiMZFXR0ZrxR
     type: base
