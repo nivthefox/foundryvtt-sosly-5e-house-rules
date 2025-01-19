@@ -1,0 +1,84 @@
+name: Grasp of Hadar
+type: feat
+img: icons/magic/unholy/hand-claw-fog-green.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Choose one of your Warlock cantrips that deals damage and that has a
+      range of at least 15 feet. When you hit a creature with that spell, you
+      can move that creature in a straight line 10 feet closer to
+      you.</p><p>Whenever you gain a Warlock level, you can change which of your
+      damaging Warlock cantrips benefits from this invocation.</p>
+    chat: ''
+  identifier: grasp-of-hadar
+  source:
+    revision: 1
+    rules: '2024'
+    custom: Playtest Packet 7
+  enchant: {}
+  type:
+    value: class
+    subtype: eldritchInvocation
+  prerequisites:
+    level: null
+  properties: []
+  requirements: At least One Warlock Cantrip
+effects: []
+folder: m24bSD321Eoz04EA
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  rsr5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickFooter:
+      value: true
+      altValue: true
+  core: {}
+  journal-backlinks:
+    references: []
+  scene-packer:
+    hash: b704c72e718bb0a40081e29df109634437000d94
+    sourceId: Item.OUx6sPmxNup1dU37
+  exportSource:
+    world: cormyr-a-campaign
+    system: dnd5e
+    coreVersion: '11.315'
+    systemVersion: 2.4.1
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737267183973
+  modifiedTime: 1737267183973
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 53AyIq0X3sRYMAMO
+sort: 0
+_key: '!items!53AyIq0X3sRYMAMO'
+
