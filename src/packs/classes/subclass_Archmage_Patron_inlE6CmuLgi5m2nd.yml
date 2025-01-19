@@ -26,30 +26,6 @@ system:
         items:
           - uuid: Compendium.sosly-5e-house-rules.classes.Item.ANo3Cd4qUWmO5KVW
             optional: false
-          - uuid: Compendium.sosly-5e-house-rules.extra-spells.Item.tuvL3QKQxlZhp5Py
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplIdentify00
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplUnseenServ
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplWeb0000000
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCounterspe
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplFireball00
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDimensionD
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPolymorph0
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj
-            optional: false
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplScrying000
-            optional: false
           - uuid: Compendium.sosly-5e-house-rules.classes.Item.5aVVmuSi5PsEgu1q
             optional: false
           - uuid: Compendium.sosly-5e-house-rules.classes.Item.pNA5Tb9NRwBMkBCT
@@ -446,6 +422,110 @@ system:
       title: Minor Arcanum
       hint: ''
       _id: IiS9reaGS54vOHJ5
+    - _id: znK2JYyPI9pIeHXK
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplIdentify00
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplUnseenServ
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.extra-spells.Item.tuvL3QKQxlZhp5Py
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplWeb0000000
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Patron Spells
+      hint: ''
+    - _id: AJgOijTjeiAAaPi6
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Patron Spells
+      hint: ''
+    - _id: WgmXL9NrP8gbUPC3
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCounterspe
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplFireball00
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Patron Spells
+      hint: ''
+    - _id: z5ulUfvOoLQwP9dv
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDimensionD
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplPolymorph0
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: Patron Spells
+      hint: ''
+    - _id: oOU6SH8Yurt2CC5c
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplScrying000
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: Patron Spells
+      hint: ''
   classIdentifier: warlock
   spellcasting:
     progression: none
@@ -465,7 +545,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1737050681409
-  modifiedTime: 1737053787634
+  modifiedTime: 1737268036895
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!inlE6CmuLgi5m2nd'
 
