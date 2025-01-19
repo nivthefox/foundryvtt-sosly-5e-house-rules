@@ -952,6 +952,7 @@ pages:
         - Compendium.sosly-5e-house-rules.extra-spells.Item.GkEp9bZ7OTqOI5uJ
         - Compendium.sosly-5e-house-rules.extra-spells.Item.9JNqraXhoWDTbwwF
         - Compendium.sosly-5e-house-rules.extra-spells.Item.ki6w8cxffH5Z5xsN
+        - Compendium.sosly-5e-house-rules.extra-spells.Item.1yldSZSng0mZ0Cy0
       unlinkedSpells: []
       identifier: sorcerer
     title:
@@ -979,7 +980,7 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: 1736912908680
-      modifiedTime: 1736916664837
+      modifiedTime: 1737247943454
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!1PWj3pEaMjRbBOF2.VfZ5mH2ZuyFq82Ga'
   - sort: 0
@@ -1099,6 +1100,7 @@ pages:
         - Compendium.sosly-5e-house-rules.extra-spells.Item.tuvL3QKQxlZhp5Py
         - Compendium.sosly-5e-house-rules.extra-spells.Item.MBqOUopImcxBljpT
         - Compendium.sosly-5e-house-rules.extra-spells.Item.SJbtyqVY3Hth8dE3
+        - Compendium.sosly-5e-house-rules.extra-spells.Item.1yldSZSng0mZ0Cy0
       unlinkedSpells: []
       identifier: warlock
     title:
@@ -1126,7 +1128,7 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: 1736912911047
-      modifiedTime: 1736916741586
+      modifiedTime: 1737247949302
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!1PWj3pEaMjRbBOF2.sSzagq8GvYXpfmfs'
   - sort: 0
@@ -1427,6 +1429,7 @@ pages:
         - Compendium.sosly-5e-house-rules.extra-spells.Item.GkEp9bZ7OTqOI5uJ
         - Compendium.sosly-5e-house-rules.extra-spells.Item.9JNqraXhoWDTbwwF
         - Compendium.sosly-5e-house-rules.extra-spells.Item.ki6w8cxffH5Z5xsN
+        - Compendium.sosly-5e-house-rules.extra-spells.Item.1yldSZSng0mZ0Cy0
       unlinkedSpells: []
       identifier: wizard
     title:
@@ -1454,7 +1457,7 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: 1736912912623
-      modifiedTime: 1736916875891
+      modifiedTime: 1737247952846
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!1PWj3pEaMjRbBOF2.6AnqLUowgdsqMFvz'
 folder: null
