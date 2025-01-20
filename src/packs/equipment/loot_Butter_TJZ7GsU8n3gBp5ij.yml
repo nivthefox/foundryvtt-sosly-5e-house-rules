@@ -1,0 +1,52 @@
+name: Butter
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+type: loot
+system:
+  description:
+    value: >-
+      <p>Cow, sheep, or goat's milk that has been churned into a portable and
+      tasty fat source.</p>
+    chat: ''
+  source:
+    custom: SoSly House Rules
+    book: ''
+    page: ''
+    license: ''
+    rules: '2024'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 5
+    denomination: cp
+  rarity: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+  identifier: butter
+flags: {}
+img: modules/sosly-5e-house-rules/public/equipment/trade/butter.webp
+effects: []
+folder: gwXTg0PqjgsekKLa
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737367784152
+  modifiedTime: 1737368142352
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: TJZ7GsU8n3gBp5ij
+sort: 0
+_key: '!items!TJZ7GsU8n3gBp5ij'
+

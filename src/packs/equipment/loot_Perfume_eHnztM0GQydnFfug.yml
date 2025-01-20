@@ -30,7 +30,7 @@ system:
   properties: []
   identifier: perfume
 effects: []
-folder: 3cicKh579e98xgvc
+folder: E3CeOTgPRJocNyBl
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -42,9 +42,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569512256
-  modifiedTime: 1736569641641
+  modifiedTime: 1737366930175
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: eHnztM0GQydnFfug
-sort: 300000
+sort: 100000
 _key: '!items!eHnztM0GQydnFfug'
 

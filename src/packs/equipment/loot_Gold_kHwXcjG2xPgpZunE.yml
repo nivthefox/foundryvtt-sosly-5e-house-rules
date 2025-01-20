@@ -42,7 +42,7 @@ system:
 flags: {}
 img: icons/commodities/metal/ingot-gold.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: IBWUlZ0pzL2534Wk
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.HHh7Ihuk8ToxJzQX
@@ -50,9 +50,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366159124
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: kHwXcjG2xPgpZunE
-sort: 0
+sort: 200000
 _key: '!items!kHwXcjG2xPgpZunE'
 

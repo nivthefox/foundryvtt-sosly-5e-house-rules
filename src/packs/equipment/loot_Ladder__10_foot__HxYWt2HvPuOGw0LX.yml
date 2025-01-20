@@ -32,7 +32,7 @@ system:
   properties: []
   identifier: ladder-10-foot
 effects: []
-folder: 3cicKh579e98xgvc
+folder: nTBbQlAMwoyia7Hn
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -44,9 +44,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569480376
-  modifiedTime: 1736569641641
+  modifiedTime: 1737366876250
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: HxYWt2HvPuOGw0LX
-sort: 3300000
+sort: 1500000
 _key: '!items!HxYWt2HvPuOGw0LX'
 

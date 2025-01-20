@@ -1,0 +1,46 @@
+folder: eiaAbtwT3po0VD4R
+name: Basil
+type: loot
+_id: dbFAuDOcwzG9xdUD
+img: icons/consumables/plants/basil-herb-green.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  identifier: basil
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 1
+    denomination: sp
+  rarity: ''
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737370183404
+  modifiedTime: 1737370239763
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!dbFAuDOcwzG9xdUD'
+

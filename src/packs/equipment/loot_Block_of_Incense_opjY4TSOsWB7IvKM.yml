@@ -32,7 +32,7 @@ system:
   properties: []
   identifier: block-of-incense
 effects: []
-folder: 3cicKh579e98xgvc
+folder: Eag2JAI3U8Mctg7e
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -44,9 +44,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569453576
-  modifiedTime: 1736569641641
+  modifiedTime: 1737367084489
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: opjY4TSOsWB7IvKM
-sort: 4300000
+sort: 100000
 _key: '!items!opjY4TSOsWB7IvKM'
 

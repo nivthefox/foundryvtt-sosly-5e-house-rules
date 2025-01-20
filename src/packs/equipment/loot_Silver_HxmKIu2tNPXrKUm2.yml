@@ -43,7 +43,7 @@ system:
 flags: {}
 img: icons/commodities/metal/ingot-stamped-silver.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: IBWUlZ0pzL2534Wk
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.9t5X9HG9ou6YMSdJ
@@ -51,9 +51,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366164173
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: HxmKIu2tNPXrKUm2
-sort: 0
+sort: 225000
 _key: '!items!HxmKIu2tNPXrKUm2'
 

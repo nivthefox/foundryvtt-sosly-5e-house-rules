@@ -41,7 +41,7 @@ system:
 flags: {}
 img: icons/commodities/metal/ingot-stamped-bronze.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: IBWUlZ0pzL2534Wk
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.aXWzDW0huOa0WuIO
@@ -49,9 +49,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366157509
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 9tIw29jFLSG5Ol6k
-sort: 0
+sort: 100000
 _key: '!items!9tIw29jFLSG5Ol6k'
 

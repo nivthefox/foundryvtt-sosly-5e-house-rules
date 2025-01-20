@@ -1,0 +1,77 @@
+name: Reliquary
+system:
+  description:
+    value: >-
+      <p><em><strong>Usage Requirement: </strong>Held</em></p><p>A
+      @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV]{Holy
+      Symbol} takes one of the forms in the Holy Symbol table and is bejeweled
+      or painted to channel divine magic. A Cleric or Paladin can use a Holy
+      Symbol as a Spellcasting Focus.</p>
+    chat: ''
+  price:
+    value: 5
+    denomination: gp
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 2
+    units: lb
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    magicalBonus: null
+    dex: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: trinket
+    baseItem: ''
+  properties: []
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: null
+  activities: {}
+  identifier: reliquary
+_id: phbhsyReliquaryh
+type: equipment
+folder: Eag2JAI3U8Mctg7e
+img: icons/containers/chest/chest-reinforced-steel-red.webp
+effects: []
+sort: 150000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737367141412
+  modifiedTime: 1737367148923
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!phbhsyReliquaryh'
+

@@ -36,7 +36,7 @@ system:
 flags: {}
 img: icons/consumables/food/soup-broth-bowl-wooden-yellow.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: NOOvFCZiOFpX7X6u
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.CrcfT5jwcJTPTsfQ
@@ -44,9 +44,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366136005
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 89sxC6q5F3fxVTcv
-sort: 0
+sort: 100000
 _key: '!items!89sxC6q5F3fxVTcv'
 

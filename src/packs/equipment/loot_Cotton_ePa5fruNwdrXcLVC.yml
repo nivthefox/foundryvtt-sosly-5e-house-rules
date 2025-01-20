@@ -40,7 +40,7 @@ system:
 flags: {}
 img: icons/sundries/flags/banner-worn-green.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: vDnGYImTKfkj7eq5
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.ZcAgZHJ1hhqbedLF
@@ -48,9 +48,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366175113
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: ePa5fruNwdrXcLVC
-sort: 0
+sort: 200000
 _key: '!items!ePa5fruNwdrXcLVC'
 

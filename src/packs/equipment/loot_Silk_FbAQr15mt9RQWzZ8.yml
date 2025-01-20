@@ -41,7 +41,7 @@ system:
 flags: {}
 img: icons/equipment/back/cloak-hooded-pink.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: vDnGYImTKfkj7eq5
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.jad5oFMDv21mPvJP
@@ -49,9 +49,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366178967
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: FbAQr15mt9RQWzZ8
-sort: 0
+sort: 125000
 _key: '!items!FbAQr15mt9RQWzZ8'
 

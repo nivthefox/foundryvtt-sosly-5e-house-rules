@@ -42,7 +42,7 @@ system:
 flags: {}
 img: icons/commodities/bones/hooves-cloven-brown.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: 5U5O92wdEFWXBXtw
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.P29EeDJQrJJXOIuK
@@ -50,9 +50,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366191080
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: bAJ4Isj8h3bzoubI
-sort: 0
+sort: 350000
 _key: '!items!bAJ4Isj8h3bzoubI'
 

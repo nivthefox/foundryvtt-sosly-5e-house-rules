@@ -135,7 +135,7 @@ system:
   attuned: false
   identifier: caltrops
 effects: []
-folder: 3cicKh579e98xgvc
+folder: KHwMyyWoS0oKKr2f
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -147,9 +147,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569609758
-  modifiedTime: 1736569641641
+  modifiedTime: 1737366901640
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: R5NiL5s4zqU5bK1S
-sort: 2100000
+sort: 100000
 _key: '!items!R5NiL5s4zqU5bK1S'
 

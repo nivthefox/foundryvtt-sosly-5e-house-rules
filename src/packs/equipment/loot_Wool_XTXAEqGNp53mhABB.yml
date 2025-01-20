@@ -1,0 +1,48 @@
+folder: vDnGYImTKfkj7eq5
+name: Wool
+type: loot
+_id: XTXAEqGNp53mhABB
+img: modules/sosly-5e-house-rules/public/equipment/trade/wool.webp
+system:
+  description:
+    value: >-
+      <p>A square yard of wool of average quality and weight. Used for all many
+      of items and clothing.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0.8
+    units: lb
+  price:
+    value: 3
+    denomination: cp
+  rarity: ''
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737368937185
+  modifiedTime: 1737369154856
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!XTXAEqGNp53mhABB'
+

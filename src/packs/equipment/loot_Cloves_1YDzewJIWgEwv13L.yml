@@ -40,7 +40,7 @@ system:
 flags: {}
 img: icons/consumables/food/berries-ration-round-red.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: RJ2b1tVMUZNb6URP
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.u753EokyA4vjksle
@@ -48,9 +48,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366106157
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 1YDzewJIWgEwv13L
-sort: 0
+sort: 200000
 _key: '!items!1YDzewJIWgEwv13L'
 

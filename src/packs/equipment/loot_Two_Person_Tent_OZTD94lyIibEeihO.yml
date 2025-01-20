@@ -30,7 +30,7 @@ system:
   properties: []
   identifier: two-person-tent
 effects: []
-folder: 3cicKh579e98xgvc
+folder: xN9vTfVOAKlvm5kY
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -42,9 +42,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569531062
-  modifiedTime: 1736569641641
+  modifiedTime: 1737367033732
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: OZTD94lyIibEeihO
-sort: 1900000
+sort: 800000
 _key: '!items!OZTD94lyIibEeihO'
 

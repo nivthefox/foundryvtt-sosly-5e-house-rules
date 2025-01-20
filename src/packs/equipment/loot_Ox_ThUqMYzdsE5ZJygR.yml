@@ -40,7 +40,7 @@ system:
 flags: {}
 img: icons/commodities/bones/horn-simple-grey.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: 5U5O92wdEFWXBXtw
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.WCbKUQcahzQQX0pL
@@ -48,9 +48,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366187937
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: ThUqMYzdsE5ZJygR
-sort: 0
+sort: 300000
 _key: '!items!ThUqMYzdsE5ZJygR'
 

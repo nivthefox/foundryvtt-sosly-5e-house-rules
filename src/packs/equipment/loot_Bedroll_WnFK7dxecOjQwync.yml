@@ -30,7 +30,7 @@ system:
   properties: []
   identifier: bedroll
 effects: []
-folder: 3cicKh579e98xgvc
+folder: xN9vTfVOAKlvm5kY
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -42,9 +42,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569450203
-  modifiedTime: 1736569641641
+  modifiedTime: 1737366758285
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: WnFK7dxecOjQwync
-sort: 4600000
+sort: 100000
 _key: '!items!WnFK7dxecOjQwync'
 

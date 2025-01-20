@@ -1,0 +1,46 @@
+folder: gwXTg0PqjgsekKLa
+name: Milk, 1 gallon
+type: loot
+_id: vZNlj9zmRdaENDZQ
+img: modules/sosly-5e-house-rules/public/equipment/trade/milk.webp
+system:
+  description:
+    value: <p>A gallon of milk from a cow, sheep, or goat.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 8
+    units: lb
+  price:
+    value: 1
+    denomination: sp
+  rarity: ''
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737368239414
+  modifiedTime: 1737368388674
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!vZNlj9zmRdaENDZQ'
+

@@ -111,7 +111,7 @@ system:
   attuned: false
   identifier: hempen-rope-50-ft
 effects: []
-folder: 3cicKh579e98xgvc
+folder: xN9vTfVOAKlvm5kY
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -127,9 +127,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569644963
-  modifiedTime: 1736569644963
+  modifiedTime: 1737367074467
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: zJevFZsytRroYtpQ
-sort: 0
+sort: 650000
 _key: '!items!zJevFZsytRroYtpQ'
 

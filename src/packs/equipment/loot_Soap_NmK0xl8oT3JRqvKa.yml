@@ -30,7 +30,7 @@ system:
   properties: []
   identifier: soap
 effects: []
-folder: 3cicKh579e98xgvc
+folder: E3CeOTgPRJocNyBl
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -42,9 +42,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569523576
-  modifiedTime: 1736569641641
+  modifiedTime: 1737367003613
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: NmK0xl8oT3JRqvKa
-sort: 1200000
+sort: 300000
 _key: '!items!NmK0xl8oT3JRqvKa'
 

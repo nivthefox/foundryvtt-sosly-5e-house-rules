@@ -1,0 +1,46 @@
+folder: NOOvFCZiOFpX7X6u
+name: Dried Fruits
+type: loot
+_id: Kx8voS8Ik9Hh7ylt
+img: icons/consumables/fruit/apricot-ripe-orange.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  identifier: dried-fruits
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 3
+    denomination: sp
+  rarity: ''
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737370383846
+  modifiedTime: 1737370465911
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!Kx8voS8Ik9Hh7ylt'
+

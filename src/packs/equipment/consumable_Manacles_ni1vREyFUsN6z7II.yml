@@ -175,7 +175,7 @@ system:
   attuned: false
   identifier: manacles
 effects: []
-folder: 3cicKh579e98xgvc
+folder: KHwMyyWoS0oKKr2f
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -187,9 +187,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569655770
-  modifiedTime: 1736569655770
+  modifiedTime: 1737366904473
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: ni1vREyFUsN6z7II
-sort: 0
+sort: 150000
 _key: '!items!ni1vREyFUsN6z7II'
 

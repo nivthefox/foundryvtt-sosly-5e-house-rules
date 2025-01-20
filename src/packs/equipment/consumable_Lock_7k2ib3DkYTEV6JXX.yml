@@ -173,7 +173,7 @@ system:
   attuned: false
   identifier: lock
 effects: []
-folder: 3cicKh579e98xgvc
+folder: KHwMyyWoS0oKKr2f
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -185,9 +185,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569654523
-  modifiedTime: 1736569654523
+  modifiedTime: 1737366903244
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 7k2ib3DkYTEV6JXX
-sort: 0
+sort: 200000
 _key: '!items!7k2ib3DkYTEV6JXX'
 

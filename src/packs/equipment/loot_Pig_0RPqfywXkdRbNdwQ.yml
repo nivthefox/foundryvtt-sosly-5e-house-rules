@@ -43,7 +43,7 @@ system:
 flags: {}
 img: icons/consumables/meat/hock-leg-pink-brown.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: 5U5O92wdEFWXBXtw
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.YJ2pBio6uEg5vhgN
@@ -51,9 +51,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366190309
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 0RPqfywXkdRbNdwQ
-sort: 0
+sort: 250000
 _key: '!items!0RPqfywXkdRbNdwQ'
 

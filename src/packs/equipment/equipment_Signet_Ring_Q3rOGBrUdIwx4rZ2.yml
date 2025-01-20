@@ -1,5 +1,5 @@
 name: Signet Ring
-type: loot
+type: equipment
 img: icons/equipment/finger/ring-cabochon-gold-orange.webp
 system:
   description:
@@ -9,11 +9,8 @@ system:
     chat: ''
   source:
     custom: ''
-    book: SRD 5.1
-    page: ''
-    license: CC-BY-4.0
-    rules: '2014'
     revision: 1
+    rules: '2024'
   quantity: 1
   weight:
     value: 0
@@ -21,18 +18,42 @@ system:
   price:
     value: 5
     denomination: gp
+  attunement: ''
+  equipped: false
   rarity: ''
   identified: true
-  type:
-    value: ''
-    subtype: ''
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: 0
   unidentified:
     description: ''
-  container: null
-  properties: []
+  type:
+    value: ring
+    baseItem: ''
+  activities: {}
   identifier: signet-ring
+  container: null
+  attuned: false
+  properties: []
 effects: []
-folder: 3cicKh579e98xgvc
+folder: E3CeOTgPRJocNyBl
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -44,9 +65,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569520680
-  modifiedTime: 1736569641641
+  modifiedTime: 1737366994437
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: Q3rOGBrUdIwx4rZ2
-sort: 900000
+sort: 200000
 _key: '!items!Q3rOGBrUdIwx4rZ2'
 

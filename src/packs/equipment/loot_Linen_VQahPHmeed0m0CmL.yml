@@ -42,7 +42,7 @@ system:
 flags: {}
 img: icons/sundries/flags/banner-worn-blue.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: vDnGYImTKfkj7eq5
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.Gh1JxTlM9aRGNrUH
@@ -50,9 +50,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366177300
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: VQahPHmeed0m0CmL
-sort: 0
+sort: 150000
 _key: '!items!VQahPHmeed0m0CmL'
 

@@ -150,7 +150,7 @@ system:
   attuned: false
   identifier: oil-flask
 effects: []
-folder: 3cicKh579e98xgvc
+folder: OgFpGRvKI0wJ9L9I
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -162,9 +162,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569659073
-  modifiedTime: 1736569659073
+  modifiedTime: 1737366913914
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: U11em1pcUqYkno6k
-sort: 0
+sort: 112500
 _key: '!items!U11em1pcUqYkno6k'
 

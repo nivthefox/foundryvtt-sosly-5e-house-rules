@@ -33,7 +33,7 @@ system:
   properties: []
   identifier: mess-kit
 effects: []
-folder: 3cicKh579e98xgvc
+folder: xN9vTfVOAKlvm5kY
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -45,9 +45,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569483063
-  modifiedTime: 1736569641641
+  modifiedTime: 1737366911225
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 5opU0u7bEXHbczIZ
-sort: 3600000
+sort: 300000
 _key: '!items!5opU0u7bEXHbczIZ'
 

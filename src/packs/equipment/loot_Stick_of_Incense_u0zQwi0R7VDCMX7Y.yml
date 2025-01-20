@@ -33,7 +33,7 @@ system:
   properties: []
   identifier: stick-of-incense
 effects: []
-folder: 3cicKh579e98xgvc
+folder: E3CeOTgPRJocNyBl
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -45,9 +45,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569527796
-  modifiedTime: 1736569641641
+  modifiedTime: 1737367016986
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: u0zQwi0R7VDCMX7Y
-sort: 1600000
+sort: 500000
 _key: '!items!u0zQwi0R7VDCMX7Y'
 

@@ -111,7 +111,7 @@ system:
   attuned: false
   identifier: lamp
 effects: []
-folder: 3cicKh579e98xgvc
+folder: OgFpGRvKI0wJ9L9I
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -123,9 +123,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736569652938
-  modifiedTime: 1736569652938
+  modifiedTime: 1737366877469
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: i5BpdmLwQUbICipZ
-sort: 0
+sort: 125000
 _key: '!items!i5BpdmLwQUbICipZ'
 

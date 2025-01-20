@@ -36,7 +36,7 @@ system:
 flags: {}
 img: icons/consumables/food/bowl-stew-brown.webp
 effects: []
-folder: IJudv26uooWF6FWv
+folder: RJ2b1tVMUZNb6URP
 _stats:
   duplicateSource: null
   compendiumSource: Compendium.dnd5e.tradegoods.Item.eDVTXE3qv28DwvPl
@@ -44,9 +44,9 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.1.2
   createdTime: 1736570165527
-  modifiedTime: 1736570165527
+  modifiedTime: 1737366123965
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: 0MZqTwzbnh8Qth9h
-sort: 0
+sort: 156250
 _key: '!items!0MZqTwzbnh8Qth9h'
 
