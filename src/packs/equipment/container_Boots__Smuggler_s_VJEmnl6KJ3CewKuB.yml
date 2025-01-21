@@ -1,0 +1,61 @@
+name: Boots, Smuggler's
+type: container
+img: icons/equipment/feet/boots-collared-leather-blue.webp
+system:
+  description:
+    value: >-
+      <p>These otherwise normal high boots have hinged heels that swing open to
+      reveal small storage spaces. Each can hold one or two small objects, such
+      as a vial of poison. In addition, the inside lining of the boot can be
+      removed to hide thin, flat objects like a map or slender dagger. It
+      requires a successful Search check (DC 20) to locate items hidden in the
+      boots.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 10
+    denomination: gp
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  properties: []
+  capacity:
+    type: weight
+    value: 0.5
+effects: []
+folder: Ck8hCzk0ztCrwX7U
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737426561840
+  modifiedTime: 1737426561893
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: VJEmnl6KJ3CewKuB
+sort: 300000
+_key: '!items!VJEmnl6KJ3CewKuB'
+
