@@ -314,7 +314,7 @@ function calculateNetWorth(container) {
             continue;
         }
 
-        netWorth += (item.system.price.valueInGP * item.system.quantity);
+        netWorth += ((item.system.price.valueInGP ?? 0) * item.system.quantity);
     }
 
     return netWorth;
