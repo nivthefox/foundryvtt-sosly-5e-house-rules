@@ -1,7 +1,9 @@
+// Breather
 .dnd5e2.sheet.actor .sheet-header .sheet-header-buttons {
     gap: 4px;
 }
 
+// Net Worth
 .dnd5e2 .inventory-element .middle .net-worth {
     display: flex;
     gap: 0.5rem;
@@ -16,4 +18,64 @@
 
 .dnd5e2 .inventory-element .middle .net-worth .fa-coins {
     color: var(--dnd5e-color-gold);
+}
+
+// Fix Styles
+.journal-page-content h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.dnd5e2 .items-section .items-header .item-controls,
+.dnd5e2 .items-section .item .item-controls {
+    padding: 0 1rem 0 0.25rem;
+    width: 75px;
+    justify-content: left;
+}
+
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .window-content::before,
+.dnd5e2.sheet.actor.character.dnd5e-theme-light .window-content::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+    //opacity: 0.75;
+    background: url(/systems/dnd5e/ui/official/banner-character.jpg) no-repeat top center / cover;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    mask-image: linear-gradient(to bottom, black, transparent);
+    z-index: -1;
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .window-content {
+    background: url('/systems/dnd5e/ui/parchment.jpg') repeat;
+    z-index: 0;
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-body {
+    background: none;
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header {
+    background: none;
+    position: relative;
+    z-index: 0;
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .document-name {
+    color: white;
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .class,
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .xp-label span,
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .xp-label input {
+    color: var(--dnd5e-color-card);
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header > .right > div:last-child .xp-bar {
+    background: var(--dnd5e-color-card);
+}
+
+:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header > .right > div:last-child .xp-bar::after {
+    background: var(--phb-red);
 }
