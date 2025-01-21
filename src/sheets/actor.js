@@ -14,22 +14,49 @@ export function registerSoSlyActor() {
     });
 
     Hooks.on('renderActorSheet5eCharacter2', (app, html, data) => {
-        const buttons = html.find('.sheet-header-buttons');
-        const button = document.createElement('button');
-        button.classList.add('breather-button');
-        button.classList.add('gold-button');
-        button.setAttribute('data-tooltip', 'sosly.breather.label');
-        button.setAttribute('aria-label', game.i18n.localize('sosly.breather.label'));
+        const el = html[0];
 
-        const icon = document.createElement('i');
-        icon.classList.add('fas', 'fa-face-exhaling');
+        // Add the breather button to the character sheet
+        {
+            const buttons = el.querySelector('.sheet-header-buttons');
+            const button = document.createElement('button');
+            button.classList.add('breather-button');
+            button.classList.add('gold-button');
+            button.setAttribute('data-tooltip', 'sosly.breather.label');
+            button.setAttribute('aria-label', game.i18n.localize('sosly.breather.label'));
 
-        button.appendChild(icon);
-        buttons.prepend(button);
+            const icon = document.createElement('i');
+            icon.classList.add('fas', 'fa-face-exhaling');
 
-        button.addEventListener('click', async event => {
-            await app.actor.breather(event);
-        });
+            button.appendChild(icon);
+            buttons.prepend(button);
+
+            button.addEventListener('click', async event => {
+                await app.actor.breather(event);
+            });
+        }
+
+        // Add networth tracking to the character sheet
+        {
+            const networth = app.actor.calculateNetWorth();
+            const currencies = el.querySelector('.tab.inventory .middle');
+
+            const networthEl = document.createElement('div');
+            networthEl.classList.add('net-worth');
+
+            const icon = document.createElement('i');
+            icon.classList.add('fas', 'fa-coins');
+            icon.setAttribute('data-tooltip', 'sosly.networth');
+            icon.setAttribute('aria-label', 'Net Worth');
+
+            const content = document.createElement('span');
+            content.textContent = networth.toLocaleString();
+
+            networthEl.appendChild(icon);
+            networthEl.appendChild(content);
+
+            currencies.appendChild(networthEl);
+        }
     });
 
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
@@ -97,6 +124,10 @@ function mixinPlayerCharacterSheet(Actor5e) {
             if (!config.dialog && config.autoHD) {
                 await this.autoSpendHitDice({threshold: config.autoHDThreshold});
             }
+        }
+
+        calculateNetWorth() {
+            return calculateNetWorth(this);
         }
 
         async _preUpdate(changed, options, userId) {
@@ -249,4 +280,42 @@ function prepareEncumbrance(rollData, { validateItem }={}) {
     };
     encumbrance.pct = Math.clamp((encumbrance.value * 100) / encumbrance.max, 0, 100);
     encumbrance.encumbered = encumbrance.value > encumbrance.heavilyEncumbered;
+}
+
+const coinValues = {
+    pp: 10.00,
+    gp: 1.00,
+    ep: 0.50,
+    sp: 0.1,
+    cp: 0.01
+};
+
+function countCoinValues(currency) {
+    let coins = 0;
+    for (const [key, value] of Object.entries(currency)) {
+        coins += value * coinValues[key];
+    }
+    return coins;
+}
+
+function calculateNetWorth(container) {
+    let netWorth = countCoinValues(container.system.currency);
+
+    if (container.items === undefined) {
+        return netWorth;
+    }
+
+    for (const item of container.items.values()) {
+        if (item.type === 'container') {
+            netWorth += calculateNetWorth(item);
+        }
+
+        if (item.system.price === undefined) {
+            continue;
+        }
+
+        netWorth += (item.system.price.valueInGP * item.system.quantity);
+    }
+
+    return netWorth;
 }

@@ -1,3 +1,19 @@
 .dnd5e2.sheet.actor .sheet-header .sheet-header-buttons {
     gap: 4px;
 }
+
+.dnd5e2 .inventory-element .middle .net-worth {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: var(--dnd5e-background-card);
+    border-radius: 4px;
+    box-shadow: 0 0 6px var(--dnd5e-shadow-45);
+    border: var(--dnd5e-border-gold);
+    padding: 0 0.875rem 0 0.5rem;
+    font-weight: bold;
+}
+
+.dnd5e2 .inventory-element .middle .net-worth .fa-coins {
+    color: var(--dnd5e-color-gold);
+}

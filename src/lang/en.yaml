@@ -6,3 +6,4 @@ sosly:
     hint: Take a breather? On a breather, you may spend remaining Hit Dice.
     select: Select Dice to Roll
     nohd: No Hit Dice remaining.
+  networth: Net Worth
