@@ -310,11 +310,11 @@ function calculateNetWorth(container) {
             netWorth += calculateNetWorth(item);
         }
 
-        if (item.system.price === undefined) {
-            continue;
+        if (item.system.price?.value !== undefined) {
+            const value = {};
+            value[item.system.price.denomination ?? 'gp'] = item.system.price.value;
+            netWorth += countCoinValues(value) * item.system.quantity;
         }
-
-        netWorth += ((item.system.price.valueInGP ?? 0) * item.system.quantity);
     }
 
     return netWorth;
