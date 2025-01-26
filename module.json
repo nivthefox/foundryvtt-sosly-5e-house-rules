@@ -2,7 +2,7 @@
   "id": "sosly-5e-house-rules",
   "title": "SoSly House Rules",
   "description": "House Rules for 5th Edition Dungeons and Dragons",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "authors": [
     {
       "name": "nivthefox",
@@ -21,7 +21,7 @@
         "type": "system",
         "compatibility": {
           "minimum": "4.1.2",
-          "verified": "4.1.2"
+          "verified": "4.2.0"
         }
       }
     ],
