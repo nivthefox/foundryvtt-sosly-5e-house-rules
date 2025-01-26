@@ -54,8 +54,8 @@ system:
     hp:
       value: 105
       max: 105
-      temp: 0
-      tempmax: 0
+      temp: null
+      tempmax: null
       formula: 10d12 + 40
     init:
       ability: ''
@@ -1024,6 +1024,136 @@ items:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!actors.items!qTxi4JTpchrbOvWa.wIsQw6ZxJv6bvIIA'
+  - name: Waterskin
+    type: consumable
+    img: icons/sundries/survival/wetskin-leather-purple.webp
+    system:
+      description:
+        value: >-
+          <p>A leather hide sewn into an enclosed skin which can contain up to 4
+          pints of liquid. It weighs 5 pounds when full; a pint of water is
+          approximately 1 pound.</p>
+        chat: ''
+      source:
+        custom: ''
+        book: SRD 5.1
+        page: ''
+        license: CC-BY-4.0
+        rules: '2014'
+        revision: 1
+      quantity: 1
+      weight:
+        value: 5
+        units: lb
+      price:
+        value: 2
+        denomination: sp
+      attunement: ''
+      rarity: ''
+      identified: true
+      uses:
+        max: '4'
+        recovery: []
+        autoDestroy: false
+        spent: 0
+      damage:
+        base:
+          number: null
+          denomination: null
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        replace: false
+      type:
+        value: food
+        subtype: ''
+      unidentified:
+        description: ''
+      container: null
+      properties: []
+      magicalBonus: null
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: utility
+          activation:
+            type: action
+            value: 1
+            condition: ''
+            override: false
+          consumption:
+            targets:
+              - type: itemUses
+                target: ''
+                value: '1'
+                scaling:
+                  mode: ''
+                  formula: ''
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            concentration: false
+            value: ''
+            units: ''
+            special: ''
+            override: false
+          effects: []
+          range:
+            units: touch
+            special: ''
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: ''
+              choice: false
+              special: ''
+            prompt: true
+            override: false
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          uses:
+            spent: 0
+            recovery: []
+          sort: 0
+      identifier: waterskin
+      attuned: false
+      equipped: false
+    effects: []
+    folder: n3J1VtIqh35tN3Kh
+    ownership:
+      default: 0
+      n9iY1vD5eGeaHb7l: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.sosly-5e-house-rules.equipment.Item.8eAIX2HjAi1MKtU9
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.2.2
+      createdTime: 1737919537757
+      modifiedTime: 1737919537757
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _id: hfRFXWyuYewmYAto
+    sort: 100000
+    _key: '!actors.items!qTxi4JTpchrbOvWa.hfRFXWyuYewmYAto'
 effects: []
 folder: xrEbyK8QCQfxulon
 ownership:
@@ -1037,9 +1167,9 @@ _stats:
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
-  systemVersion: 4.1.2
+  systemVersion: 4.2.2
   createdTime: 1737893408411
-  modifiedTime: 1737893413081
+  modifiedTime: 1737919541142
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _id: qTxi4JTpchrbOvWa
 sort: 100000

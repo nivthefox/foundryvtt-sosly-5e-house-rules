@@ -163,10 +163,22 @@ pages:
         Character Options &gt; Classes compendium, and is only provided here as
         a reference.</p><h2>Barbarian</h2><ul><li><p>Barbarians can spend 1 Hit
         Die during a breather in order to regain a use of their
-        @UUID[Compendium.world.classes.X1TlX1BgNOiuY15l]{Rage}.</p></li></ul><h2>Bard</h2><ul><li><p>Bards
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrbRage000000]{Rage}.</p></li></ul><h2>Bard</h2><ul><li><p>Bards
         can spend 1 Hit Die during a breather in order to regain a use of their
-        @UUID[Compendium.world.classes.DD4eOIDCHExBQcpG]{Bardic
-        Inspiration}.</p></li></ul><h2>Paladin</h2><ul><li
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdBardicInsp]{Bardic
+        Inspiration}.</p></li></ul><h2>Monk</h2><ul><li><p>Monks can spend 1 Hit
+        Die during a breather in order to regain half of their
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkMonksFocus]{Monk's
+        Focus}.</p></li><li style="box-sizing:border-box;user-select:text"><p
+        style="box-sizing:border-box;user-select:text;margin:0.5em 0px"><span
+        style="font-family:Signika, sans-serif">Monks can utilize their
+        Dexterity or Wisdom when determining the DC of their Monk's Discipline
+        abilities.</span></p></li><li
+        style="box-sizing:border-box;user-select:text"><p
+        style="box-sizing:border-box;user-select:text;margin:0.5em 0px"><span
+        style="font-family:Signika, sans-serif">Monks can still benefit from
+        most features while wearing light
+        armor.</span></p></li></ul><h2>Paladin</h2><ul><li
         style="box-sizing:border-box;user-select:text"><p
         style="box-sizing:border-box;user-select:text;margin:0.5em 0px"><span
         style="font-family:Signika, sans-serif">Paladins can spend 1 Hit Die
@@ -174,14 +186,14 @@ pages:
         Divinity.</span></p></li><li
         style="box-sizing:border-box;user-select:text"><p>Paladins can spend 1
         Hit Die during a breather in order to regain half of their
-        @UUID[Compendium.dnd5e.classfeatures.OdrvL3afwLOPeuYZ]{Lay on Hands}
-        pool.</p></li></ul><h2>Ranger</h2><ul><li><p>Ranger can spend 1 Hit Die
-        during a breather in order to regain a use of their
-        @UUID[Compendium.world.spells.ZcyDDSBXyJrqketu]{Hunter's
-        Mark}j.</p></li></ul><h2>Sorcerer</h2><ul><li><p>Sorcerers can spend 1
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbpdnLayOnHands]{Lay
+        on Hands} pool.</p></li></ul><h2>Ranger</h2><ul><li><p>Ranger can spend
+        1 Hit Die during a breather in order to regain a use of their
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrFavoredEne]{Favored
+        Enemy}.</p></li></ul><h2>Sorcerer</h2><ul><li><p>Sorcerers can spend 1
         Hit Die during a breather to regain half of their
-        @UUID[Compendium.world.classes.MJPvd0qH8XzTwkPR]{Sorcery
-        Points}.</p></li></ul>
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbscrFontOfMagi]{Font
+        of Magic}.</p></li></ul>
     video:
       controls: true
       volume: 0.5
@@ -197,8 +209,8 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1737918283529
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.5yjBbsB27TDuvQxn'
   - name: Resting
     type: text
