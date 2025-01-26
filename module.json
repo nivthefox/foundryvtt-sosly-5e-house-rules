@@ -193,6 +193,28 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "monsters",
+      "label": "Monsters",
+      "path": "packs/monsters",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "monster-features",
+      "label": "Monster Features",
+      "path": "packs/monster-features",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
     }
   ],
   "packFolders": [
@@ -200,17 +222,20 @@
       "name": "SoSly House Rules",
       "color": "#f9a61a",
       "sorting": "m",
-        "packs": [
-          "house-rules",
-          "classes",
-          "origins",
-          "feats",
-          "spells",
-          "extra-spells",
-          "auxiliaries",
-          "effect-tables",
-          "equipment"
-        ]
+      "packs": [
+        "house-rules",
+        "classes",
+        "origins",
+        "feats",
+        "monsters",
+        "monster-features",
+        "spells",
+        "extra-spells",
+        "auxiliaries",
+        "effect-tables",
+        "equipment"
+      ],
+      "folders": []
     }
   ],
   "documentTypes": {

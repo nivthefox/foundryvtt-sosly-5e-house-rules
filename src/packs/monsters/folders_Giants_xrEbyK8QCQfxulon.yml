@@ -1,0 +1,20 @@
+name: Giants
+sorting: a
+folder: null
+type: Actor
+_id: xrEbyK8QCQfxulon
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737893248194
+  modifiedTime: 1737893248194
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!folders!xrEbyK8QCQfxulon'
+

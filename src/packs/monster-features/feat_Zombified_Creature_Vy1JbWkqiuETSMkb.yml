@@ -1,6 +1,6 @@
-name: Skeletal Creature
+name: Zombified Creature
 type: feat
-img: icons/magic/death/skeleton-worn-skull-tan.webp
+img: icons/magic/death/blood-corruption-vomit-red.webp
 system:
   activities: {}
   uses:
@@ -9,29 +9,34 @@ system:
     max: ''
   description:
     value: >-
-      <p>Skeletons are the animated bones of the dead, mindless automatons that
-      obey the orders of their masters. A skeleton is seldom garbed in anything
-      more than the rotting remnants of any clothing or armor it was wearing
-      when slain.</p><p><em><strong>Type.</strong></em> The creature's type
-      changes to Undead</p><p><em><strong>Speed.</strong></em> Skeletons lose
-      any speeds other than their walking speed, unless it is their natural mode
-      of movement.</p><p><em><strong>Armor Class.</strong></em> The creature
-      loses any natural armor it had.</p><p><em><strong>Ability
-      Scores.</strong></em> Reduce the creature's Intelligence and Charisma
-      scores to 5.</p><p><em><strong>Saves.</strong></em> The skeleton is not
-      proficient in saving throws.</p><p><em><strong>Skills.</strong></em> The
-      skeletons is not proficient in skills.</p><p><em><strong>Damage
-      Vulnerabilities.</strong></em> The skeleton is vulnerable to Bludgeoning
-      damage.</p><p><em><strong>Damage Immunities</strong></em>. The skeleton
-      gains immunity to Poison.</p><p><em><strong>Condition
-      Immuntities.</strong></em> The skeleton gains immunity to the Exhausted
-      and Poisoned conditions.</p><p><em><strong>Senses.</strong></em> The
-      skeleton has Darkvision at 60 feet. It loses other abnormal
-      senses.</p><p><em><strong>Languages.</strong></em> The skeleton
-      understands the languages it knew in life, but can't
-      speak.</p><p><em><strong>Attacks.</strong></em> The skeleton retains any
-      natural weapon attacks it had (such as claws, bites, or tails), but loses
-      any supernatural or magical attacks, and it loses multiattack.</p>
+      <p>Zombies are corpses reanimated through dark and sinister
+      magic.</p><p><em><strong>Type.</strong></em> The creature's type changes
+      to Undead</p><p><em><strong>Ability Scores.</strong></em> Reduce the
+      creature's Intelligence to 3. Its Dexterity and Wisdom are reduced to 6.
+      Its Charisma is reduced to 5.</p><p><em><strong>Saving
+      Throws.</strong></em> The zombie is only proficient in Wisdom saving
+      throws.</p><p><em><strong>Skills.</strong></em> Zombies are not proficient
+      in skills.</p><p><em><strong>Damage Immunities.</strong></em> The zombie
+      gains immunity to Poison</p><p><em><strong>Condition
+      Immunities.</strong></em> The zombie gains immunity to the Poisoned
+      condition</p><p><em><strong>Senses.</strong></em> The zombie has
+      Darkvision at 60 feet. It loses other abnormal
+      senses.</p><p><em><strong>Languages.</strong></em> The Zombie understands
+      the languages it knew in life, but can't
+      speak.</p><p><em><strong>@UUID[Compendium.sosly-5e-house-rules.spells.Item.196jpYy8RZVpKIqG]{Undead
+      Fortitude}.</strong></em> If damage reduces the zombie to 0 hit points, it
+      must make a Constitution saving throw with a DC of 5 + the damage taken,
+      unless the damage is radiant or from a critical hit. On a success, the
+      zombie drops to 1 hit point instead.</p><p><em><strong>New Action:
+      @UUID[Compendium.sosly-5e-house-rules.spells.Item.d6HK5dJyr3oHCOUv]{Slam}.</strong></em>
+      The zombie gains a melee weapon attack which it is proficient in. It deals
+      damage based on its size (see Slam damage,
+      below)</p><p><em><strong>Attacks.</strong></em> The Zombie loses any
+      attacks which rely on magic or breath weapons, and
+      multiattack.</p><p><em><strong>Legendary Actions.</strong></em> The Zombie
+      loses all Legendary Actions (including Mythic Actions) and any Legendary
+      Resistances.</p><h3>Slam Damage</h3><table
+      class="center"><tbody><tr><td><p><strong>Size</strong></p></td><td><p><strong>Damage</strong></p></td></tr><tr><td><p>Tiny</p></td><td><p>1</p></td></tr><tr><td><p>Small</p></td><td><p>1d4</p></td></tr><tr><td><p>Medium</p></td><td><p>1d6</p></td></tr><tr><td><p>Large</p></td><td><p>1d8</p></td></tr><tr><td><p>Huge</p></td><td><p>1d10</p></td></tr><tr><td><p>Gargantuan</p></td><td><p>2d6</p></td></tr></tbody></table>
     chat: ''
   identifier: new-item
   source:
@@ -54,15 +59,23 @@ effects:
     changes:
       - key: system.abilities.int.value
         mode: 3
-        value: '5'
+        value: '3'
         priority: 20
       - key: system.abilities.cha.value
         mode: 3
         value: '5'
         priority: 20
+      - key: system.abilities.dex.value
+        mode: 3
+        value: '6'
+        priority: 20
+      - key: system.abilities.wis.value
+        mode: 3
+        value: '5'
+        priority: 20
     disabled: false
     duration:
-      startTime: 1248
+      startTime: 2028
       seconds: null
       combat: null
       rounds: null
@@ -70,7 +83,7 @@ effects:
       startRound: null
       startTurn: null
     description: ''
-    origin: Item.CjzfaokK0jBED4g0
+    origin: Item.TFBMOz9UsRGKiJa6
     tint: '#ffffff'
     transfer: true
     statuses: []
@@ -110,68 +123,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.HRcY5GO7Bzk31Z4K'
-  - name: Armor Class
-    img: icons/equipment/chest/breastplate-leather-brown-belted.webp
-    _id: h9Y18lRW0CZ5aEHS
-    type: base
-    system: {}
-    changes:
-      - key: system.attributes.ac.flat
-        mode: 3
-        value: '10'
-        priority: 20
-    disabled: false
-    duration:
-      startTime: 1092
-      seconds: null
-      combat: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
-    description: ''
-    origin: Item.CjzfaokK0jBED4g0
-    tint: '#ffffff'
-    transfer: true
-    statuses: []
-    sort: 0
-    flags:
-      dae:
-        specialDuration: []
-        enableCondition: ''
-        disableCondition: ''
-        showIcon: false
-        stackable: multi
-        durationExpression: ''
-      core:
-        overlay: false
-      ActiveAuras:
-        isAura: false
-        aura: None
-        nameOverride: ''
-        radius: ''
-        alignment: ''
-        type: ''
-        customCheck: ''
-        ignoreSelf: false
-        height: false
-        hidden: false
-        displayTemp: false
-        hostile: false
-        onlyOnce: false
-        wallsBlock: system
-        statuses: []
-    _stats:
-      compendiumSource: Actor.mNqb6qwMMvYeB29M.ActiveEffect.wQGloHT7MBn5DkSU
-      duplicateSource: null
-      coreVersion: '12.331'
-      systemId: dnd5e
-      systemVersion: 4.1.2
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.h9Y18lRW0CZ5aEHS'
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.HRcY5GO7Bzk31Z4K'
   - name: Movement
     img: icons/skills/movement/figure-running-gray.webp
     _id: kJTvOjNLs9s8JVzn
@@ -244,7 +196,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.kJTvOjNLs9s8JVzn'
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.kJTvOjNLs9s8JVzn'
   - name: Saves
     img: icons/skills/toxins/symbol-poison-drop-skull-green.webp
     _id: 27pu9vUXKs42MN0b
@@ -268,8 +220,8 @@ effects:
         value: '0'
         priority: 20
       - key: system.abilities.wis.proficient
-        mode: 3
-        value: '0'
+        mode: 5
+        value: '1'
         priority: 20
       - key: system.abilities.cha.proficient
         mode: 3
@@ -277,7 +229,7 @@ effects:
         priority: 20
     disabled: false
     duration:
-      startTime: 2340
+      startTime: 2652
       seconds: null
       combat: null
       rounds: null
@@ -285,7 +237,7 @@ effects:
       startRound: null
       startTurn: null
     description: ''
-    origin: Item.CjzfaokK0jBED4g0
+    origin: Item.TFBMOz9UsRGKiJa6
     tint: '#ffffff'
     transfer: true
     statuses: []
@@ -325,7 +277,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.27pu9vUXKs42MN0b'
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.27pu9vUXKs42MN0b'
   - name: Skills
     img: icons/sundries/books/book-face-black.webp
     _id: UJ6ipaV0P12gMEKc
@@ -425,8 +377,6 @@ effects:
         enableCondition: ''
         disableCondition: ''
         showIcon: false
-        stackable: multi
-        durationExpression: ''
       core:
         overlay: false
       ActiveAuras:
@@ -452,9 +402,9 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1737887107287
-      lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!0vA3UWKLURcdNPwU.UJ6ipaV0P12gMEKc'
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.UJ6ipaV0P12gMEKc'
   - name: Type
     img: icons/magic/unholy/hand-fire-skeleton-pink.webp
     _id: ibiXQv8kNxfOVYdy
@@ -467,11 +417,11 @@ effects:
         priority: 20
       - key: name
         mode: 5
-        value: Skeletal {}
+        value: Zombified {}
         priority: 20
     disabled: false
     duration:
-      startTime: 2028
+      startTime: 1872
       seconds: null
       combat: null
       rounds: null
@@ -479,7 +429,7 @@ effects:
       startRound: null
       startTurn: null
     description: ''
-    origin: Compendium.sosly-5e-house-rules.spells.Item.0vA3UWKLURcdNPwU
+    origin: Compendium.sosly-5e-house-rules.spells.Item.LU66U3A1CyhlSjTi
     tint: '#ffffff'
     transfer: true
     statuses: []
@@ -517,9 +467,9 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1737887105095
-      lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!0vA3UWKLURcdNPwU.ibiXQv8kNxfOVYdy'
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.ibiXQv8kNxfOVYdy'
   - name: Damage Vulnerabilities
     img: icons/skills/wounds/anatomy-bone-joint.webp
     origin: Item.CjzfaokK0jBED4g0
@@ -579,7 +529,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.V8il13LZCRGjB8IW'
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.V8il13LZCRGjB8IW'
   - name: Damage/Condition Immunities
     img: icons/magic/acid/dissolve-pool-bubbles.webp
     origin: Compendium.sosly-5e-house-rules.spells.Item.0vA3UWKLURcdNPwU
@@ -641,9 +591,9 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1736883845017
-      lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!0vA3UWKLURcdNPwU.Q1CraGoGrr6VSpVA'
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.Q1CraGoGrr6VSpVA'
   - name: Senses
     img: icons/magic/perception/eye-tendrils-web-purple.webp
     origin: Item.CjzfaokK0jBED4g0
@@ -703,22 +653,26 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.NHn6QmUINYGljxz8'
-folder: 80bcfTnNn6o7Y5dR
+    _key: '!items.effects!Vy1JbWkqiuETSMkb.NHn6QmUINYGljxz8'
+folder: 8kY3xMsmoUcfWyci
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
-flags: {}
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
 _stats:
   compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736883740999
-  modifiedTime: 1736885654051
+  createdTime: 1737887160387
+  modifiedTime: 1737887160387
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: 0vA3UWKLURcdNPwU
-sort: 200000
-_key: '!items!0vA3UWKLURcdNPwU'
+_id: Vy1JbWkqiuETSMkb
+sort: 0
+_key: '!items!Vy1JbWkqiuETSMkb'
 

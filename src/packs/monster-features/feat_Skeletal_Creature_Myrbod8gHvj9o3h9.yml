@@ -110,7 +110,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.HRcY5GO7Bzk31Z4K'
+    _key: '!items.effects!Myrbod8gHvj9o3h9.HRcY5GO7Bzk31Z4K'
   - name: Armor Class
     img: icons/equipment/chest/breastplate-leather-brown-belted.webp
     _id: h9Y18lRW0CZ5aEHS
@@ -171,7 +171,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.h9Y18lRW0CZ5aEHS'
+    _key: '!items.effects!Myrbod8gHvj9o3h9.h9Y18lRW0CZ5aEHS'
   - name: Movement
     img: icons/skills/movement/figure-running-gray.webp
     _id: kJTvOjNLs9s8JVzn
@@ -244,7 +244,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.kJTvOjNLs9s8JVzn'
+    _key: '!items.effects!Myrbod8gHvj9o3h9.kJTvOjNLs9s8JVzn'
   - name: Saves
     img: icons/skills/toxins/symbol-poison-drop-skull-green.webp
     _id: 27pu9vUXKs42MN0b
@@ -325,7 +325,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.27pu9vUXKs42MN0b'
+    _key: '!items.effects!Myrbod8gHvj9o3h9.27pu9vUXKs42MN0b'
   - name: Skills
     img: icons/sundries/books/book-face-black.webp
     _id: UJ6ipaV0P12gMEKc
@@ -452,9 +452,9 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1737887107287
-      lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!0vA3UWKLURcdNPwU.UJ6ipaV0P12gMEKc'
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Myrbod8gHvj9o3h9.UJ6ipaV0P12gMEKc'
   - name: Type
     img: icons/magic/unholy/hand-fire-skeleton-pink.webp
     _id: ibiXQv8kNxfOVYdy
@@ -517,9 +517,9 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1737887105095
-      lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!0vA3UWKLURcdNPwU.ibiXQv8kNxfOVYdy'
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Myrbod8gHvj9o3h9.ibiXQv8kNxfOVYdy'
   - name: Damage Vulnerabilities
     img: icons/skills/wounds/anatomy-bone-joint.webp
     origin: Item.CjzfaokK0jBED4g0
@@ -579,7 +579,7 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.V8il13LZCRGjB8IW'
+    _key: '!items.effects!Myrbod8gHvj9o3h9.V8il13LZCRGjB8IW'
   - name: Damage/Condition Immunities
     img: icons/magic/acid/dissolve-pool-bubbles.webp
     origin: Compendium.sosly-5e-house-rules.spells.Item.0vA3UWKLURcdNPwU
@@ -641,9 +641,9 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1736883845017
-      lastModifiedBy: n9iY1vD5eGeaHb7l
-    _key: '!items.effects!0vA3UWKLURcdNPwU.Q1CraGoGrr6VSpVA'
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!Myrbod8gHvj9o3h9.Q1CraGoGrr6VSpVA'
   - name: Senses
     img: icons/magic/perception/eye-tendrils-web-purple.webp
     origin: Item.CjzfaokK0jBED4g0
@@ -703,8 +703,8 @@ effects:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!items.effects!0vA3UWKLURcdNPwU.NHn6QmUINYGljxz8'
-folder: 80bcfTnNn6o7Y5dR
+    _key: '!items.effects!Myrbod8gHvj9o3h9.NHn6QmUINYGljxz8'
+folder: 8kY3xMsmoUcfWyci
 ownership:
   default: 0
   n9iY1vD5eGeaHb7l: 3
@@ -715,10 +715,10 @@ _stats:
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.1.2
-  createdTime: 1736883740999
-  modifiedTime: 1736885654051
+  createdTime: 1737887158989
+  modifiedTime: 1737887158989
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_id: 0vA3UWKLURcdNPwU
-sort: 200000
-_key: '!items!0vA3UWKLURcdNPwU'
+_id: Myrbod8gHvj9o3h9
+sort: 0
+_key: '!items!Myrbod8gHvj9o3h9'
 

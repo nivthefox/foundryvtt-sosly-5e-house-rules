@@ -415,9 +415,13 @@ effects:
         mode: 5
         value: undead
         priority: 20
+      - key: name
+        mode: 5
+        value: Zombified {}
+        priority: 20
     disabled: false
     duration:
-      startTime: 1560
+      startTime: 1872
       seconds: null
       combat: null
       rounds: null
@@ -425,7 +429,7 @@ effects:
       startRound: null
       startTurn: null
     description: ''
-    origin: Item.CjzfaokK0jBED4g0
+    origin: Compendium.sosly-5e-house-rules.spells.Item.LU66U3A1CyhlSjTi
     tint: '#ffffff'
     transfer: true
     statuses: []
@@ -463,8 +467,8 @@ effects:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1737887132608
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!items.effects!LU66U3A1CyhlSjTi.ibiXQv8kNxfOVYdy'
   - name: Damage Vulnerabilities
     img: icons/skills/wounds/anatomy-bone-joint.webp

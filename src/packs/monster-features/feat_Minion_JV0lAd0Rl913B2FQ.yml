@@ -1,0 +1,108 @@
+folder: 8kY3xMsmoUcfWyci
+name: Minion
+type: feat
+_id: JV0lAd0Rl913B2FQ
+img: icons/sundries/gaming/chess-pawn-white-pink.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>If the [[lookup @name lowercase]] takes damage from an attack or as the
+      result of a failed saving throw, their hit poitns are reduced to 0.
+      </p><p>If the [[lookup @name lowercase]] takes damage from another effect,
+      they die if the damage equals or exceeds their hit point maximum,
+      otherwise they take no damage.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: monster
+    subtype: ''
+  prerequisites:
+    level: null
+  properties: []
+  requirements: ''
+effects:
+  - name: Minion
+    img: icons/sundries/gaming/chess-pawn-white-pink.webp
+    origin: Compendium.sosly-5e-house-rules.monster-features.Item.JV0lAd0Rl913B2FQ
+    _id: yqycIEaIq56NxiV2
+    type: base
+    system: {}
+    changes:
+      - key: name
+        mode: 5
+        value: '{} Minion'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: 1737887496726
+      modifiedTime: 1737887511392
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!JV0lAd0Rl913B2FQ.yqycIEaIq56NxiV2'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1737887172762
+  modifiedTime: 1737887704018
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!JV0lAd0Rl913B2FQ'
+
