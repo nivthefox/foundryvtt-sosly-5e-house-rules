@@ -15,4 +15,9 @@ sosly:
   madness:
     label: Madness
     hint: Enables a madness counter for Player Characters.
+  capacity: Capacity
+  containers: Containers
+  inlineBags:
+    name: Inline Bags
+    hint: This will display your bags inline with your inventory, rather than in a separate section.
   networth: Net Worth

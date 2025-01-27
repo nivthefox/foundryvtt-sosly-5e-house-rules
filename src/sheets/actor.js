@@ -4,6 +4,14 @@ import {Breather} from '../breather/breather.js';
 export function registerSoSlyActor() {
     CONFIG.Actor.documentClass = mixinPlayerCharacterSheet(CONFIG.Actor.documentClass);
 
+    game.settings.register(module_id, 'inlineBags', {
+        name: 'sosly.inlineBags.name',
+        hint: 'sosly.inlineBags.hint',
+        type: Boolean,
+        default: false,
+        config: true,
+    });
+
     Hooks.on('updateItem', async (item, changes, options, id) => {
         if (changes.equipped !== undefined) {
             if (options.parent) {
@@ -13,7 +21,7 @@ export function registerSoSlyActor() {
     });
 
     // PCs
-    Hooks.on('renderActorSheet5eCharacter2', (app, html, data) => {
+    Hooks.on('renderActorSheet5eCharacter2', async (app, html, data) => {
         const el = html[0];
 
         // Add the breather button to the character sheet
@@ -155,6 +163,67 @@ export function registerSoSlyActor() {
 
             currencies.appendChild(networthEl);
         }
+
+        // Render inline bags
+        if (game.settings.get(module_id, 'inlineBags')) {
+            // add inline bag rendering
+            console.log('rendering inline bags');
+            const inventory = el.querySelector('.tab.inventory .inventory-list');
+            const editMode = el.classList.contains('editable');
+            const bags = app.actor.items.filter(item => item.type === 'container');
+
+            for (const bag of bags) {
+                bag.capacity = await bag.system.computeCapacity();
+                bag.totalWeight = (await bag.system.totalWeight).toNearest(0.1);
+                bag.isExpanded = bag.flags?.sosly?.expanded ?? false;
+                if (bag.system.attunement) {
+                    if (bag.system.attuned) {
+                        bag.attunement = {
+                            icon: 'fa-sun',
+                            cls: 'attuned',
+                            title: 'DND5E.AttunementAttuned'
+                        };
+                    } else {
+                        bag.attunement = {
+                            icon: 'fa-sun',
+                            cls: 'not-attuned',
+                            title: CONFIG.DND5E.attunementTypes[bag.system.attunement]
+                        };
+                    }
+                }
+
+                if ('equipped' in bag.system) {
+                    bag.equip = {
+                        applicable: true,
+                        cls: bag.system.equipped ? 'active' : '',
+                        title: `DND5E.${bag.system.equipped ? 'Equipped' : 'Unequipped'}`,
+                        disabled: !app.actor.owner
+                    };
+                }
+            }
+
+            const containers = {
+                label: 'sosly.containers',
+                items: bags,
+                owner: app.actor.isOwner,
+                editable: editMode,
+            };
+            console.log(containers);
+
+            const containersHTML = await renderTemplate(`modules/${module_id}/templates/container.hbs`, containers);
+            inventory.insertAdjacentHTML('beforeend', containersHTML);
+
+            // remove the default container section
+            console.log('removing container section');
+            el.querySelector('.tab.inventory .containers').remove();
+
+            // activate listeners for inline bags
+            const inlineBagActions = el.querySelectorAll('.inline-bag .item-action');
+            console.log(app.actor);
+            for (const action of inlineBagActions) {
+                // todo: add listeners for inline bag actions
+            }
+        }
     });
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
         actor.handleConcentrationRest();
@@ -239,8 +308,7 @@ function mixinPlayerCharacterSheet(Actor5e) {
             // Display a Dialog for rolling hit dice
             try {
                 foundry.utils.mergeObject(config, await Breather.breatherDialog({actor: this, canRoll: hd0 > 0}));
-            }
-            catch (err) {
+            } catch (err) {
                 return;
             }
 
@@ -323,17 +391,13 @@ function mixinPlayerCharacterSheet(Actor5e) {
 
                 if (!confirmation) {
                     const effect = await ActiveEffect.implementation.fromStatusEffect('unconscious');
-                    await ActiveEffect.implementation.create(effect, { parent: this, keepId: true});
+                    await ActiveEffect.implementation.create(effect, {parent: this, keepId: true});
                     return;
                 }
 
                 const effect = await ActiveEffect.implementation.fromStatusEffect('imperiled');
-                await ActiveEffect.implementation.create(effect, { parent: this, keepId: true});
-                await this.update({system: {
-                    attributes: {
-                        exhaustion: exhaustion + 1
-                    }
-                }});
+                await ActiveEffect.implementation.create(effect, {parent: this, keepId: true});
+                changed.system.attributes.exhaustion = exhaustion + 1;
 
                 const content = await renderTemplate(`modules/${module_id}/templates/Imperiled.hbs`, {
                     text: `${this.name} has gained a level of Exhaustion to remain conscious!`
