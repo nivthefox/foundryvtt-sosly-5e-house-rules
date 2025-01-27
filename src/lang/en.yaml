@@ -6,4 +6,9 @@ sosly:
     hint: Take a breather? On a breather, you may spend remaining Hit Dice.
     select: Select Dice to Roll
     nohd: No Hit Dice remaining.
+  capacity: Capacity
+  containers: Containers
+  inlineBags:
+    name: Inline Bags
+    hint: This will display your bags inline with your inventory, rather than in a separate section.
   networth: Net Worth
