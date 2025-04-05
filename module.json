@@ -25,21 +25,7 @@
         }
       }
     ],
-    "requires": [
-      {
-        "id": "dnd5e-spellpoints",
-        "type": "module",
-        "compatibility": {
-          "minimum": "2.4.22",
-          "verified": "2.4.22"
-        }
-      },
-      {
-        "id": "dae",
-        "type": "module",
-        "compatibility": {}
-      }
-    ],
+    "requires": [],
     "recommends": [
       {
         "id": "dnd5e-spellpoints",
