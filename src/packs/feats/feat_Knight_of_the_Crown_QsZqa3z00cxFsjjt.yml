@@ -1,0 +1,137 @@
+folder: BG041b2uqYGjRO4u
+name: Knight of the Crown
+type: feat
+_id: QsZqa3z00cxFsjjt
+img: modules/sosly-5e-house-rules/public/feats/Knight%20of%20the%20Crown.webp
+system:
+  activities:
+    NnZRSVfosdvrDLJV:
+      type: utility
+      _id: NnZRSVfosdvrDLJV
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+            value: '1'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: radius
+        affects:
+          choice: false
+          type: enemy
+          count: '1'
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+            type: recoverAll
+        max: '@prof'
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Commanding Rally
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You are a Knight of Solamnia aligned with the Order of the Crown, a
+      group that extols the virtues of cooperation, loyalty, and obedience. You
+      excel in group combat and gain these benefits:</p><p><strong>Ability Score
+      Increase.</strong> Increase your Strength, Dexterity, or Constitution
+      score by 1, to a maximum of 20.</p><p><strong>Commanding Rally.</strong>
+      As a bonus action, you can command one ally within 30 feet of yourself to
+      attack. If that ally can see or hear you, they can immediately make one
+      weapon attack as a reaction. If the attack hits, the ally can roll a d8
+      and add the number rolled as a bonus to the attack’s damage roll. You can
+      use this bonus action a number of times equal to your proficiency bonus,
+      and you regain all expended uses when you finish a long rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: EjIoleoz7ShCvPEW
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 20
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - int
+          - wis
+          - cha
+        points: 1
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 4
+    repeatable: false
+  properties: []
+  requirements: Squire of Solamnia Feat
+  type:
+    value: feat
+    subtype: general
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: 1743825788222
+  modifiedTime: 1743826000270
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!QsZqa3z00cxFsjjt'
+

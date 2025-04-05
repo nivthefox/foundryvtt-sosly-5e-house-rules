@@ -1,0 +1,63 @@
+folder: BG041b2uqYGjRO4u
+name: Adept of the Black Robes
+type: feat
+_id: HHLBBiiqClbfoXrH
+img: modules/sosly-5e-house-rules/public/feats/Adept%20of%20the%20Black%20Robes.jpg
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You chose the moon Nuitari to influence your magic, and your ambition
+      and loyalty to the Order of the Black Robes have been recognized, granting
+      you these benefits:</p><p><strong>Ambitious Magic.</strong> You learn one
+      2nd-level spell of your choice. The 2nd-level spell must be from the
+      enchantment or necromancy school of magic. You can cast this feat’s
+      2nd-level spell without a spell slot, and you must finish a long rest
+      before you can cast it in this way again. You can also cast this spell
+      using spell slots you have of the appropriate level. The spell’s
+      spellcasting ability is the one chosen when you gained the Initiate of
+      High Sorcery feat.</p><p><strong>Life Channel.</strong> You can channel
+      your life force into the power of your magic. When a creature you can see
+      within 60 feet of you fails a saving throw against a spell that deals
+      damage that you cast, you can expend a number of Hit Dice equal to the
+      level of the spell. Roll the expended Hit Dice and add them together. The
+      damage that the creature takes increases by an amount equal to that
+      total.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 4
+    repeatable: false
+  properties: []
+  requirements: Initiatie of High Sorcery (Nuitari) Feat
+  type:
+    value: feat
+    subtype: general
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: 1743824795217
+  modifiedTime: 1743825053788
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!HHLBBiiqClbfoXrH'
+
