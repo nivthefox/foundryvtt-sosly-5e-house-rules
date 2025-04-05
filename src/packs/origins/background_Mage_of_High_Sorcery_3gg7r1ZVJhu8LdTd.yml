@@ -1,0 +1,129 @@
+folder: oRFGTjr9Vqw2R5Pp
+name: Mage of High Sorcery
+type: background
+_id: 3gg7r1ZVJhu8LdTd
+img: >-
+  modules/sosly-5e-house-rules/public/backgrounds/Mage%20of%20High%20Sorcery.webp
+system:
+  description:
+    value: >-
+      <p><strong>Ability Scores:</strong> Intelligence, Wisdom,
+      Charisma</p><p><strong>Feat:</strong>
+      @UUID[Compendium.sosly-5e-house-rules.feats.Item.S946KbcC7Z8lTKEa]{Initiate
+      of High Sorcery}</p><p><strong>Skill Proficiencies:</strong> Arcana,
+      History</p><p><strong>Tool Proficiencies:</strong> Calligrapher's
+      Supplies</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) A
+      bottle of
+      @UUID[Compendium.dnd-players-handbook.equipment.vi0j4PYnO596a2L1]{Ink},
+      @UUID[Compendium.dnd-players-handbook.equipment.x9BzTUcsOj6K6OJE]{Ink
+      Pen},
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Traveler's
+      Clothes}, and 10 GP; or (B) 50 GP.</p><p>Your talent for magic came to the
+      attention of the Mages of High Sorcery, an organization of spellcasters
+      that studies magic and prevents its misuse. You’ve trained among the
+      Mages, but whether you’ll face the dangerous test required to become a
+      full member of the group remains to be determined. Your passion for
+      studying magic has likely already predisposed you toward one of the
+      organization’s three orders: the benevolent Order of the White Robes, the
+      balance-pursuing Order of the Red Robes, or the ruthless Order of the
+      Black Robes.</p><p>In the world of Krynn, many refer to the Mages of High
+      Sorcery as the Wizards of High Sorcery. The organization accepts more than
+      wizards, though, with sorcerers, warlocks, and other spellcasters included
+      among their ranks.</p><p></p>
+    chat: ''
+  identifier: mage-of-high-sorcery
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  advancement:
+    - _id: 5hLHlmqxzoAta0uf
+      type: AbilityScoreImprovement
+      configuration:
+        cap: null
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - con
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: Background Ability Score Improvement
+      hint: >-
+        Your background allows you to increase your Intelligence, Wisdom, and
+        Charisma scores; increase one of them by 2 and a different one by 1, or
+        increase all three by 1. None of these increases can raise a score above
+        20.
+    - _id: y4FZ4I6wU0F8DEjO
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - tool:art:calligrapher
+      value:
+        chosen: []
+      level: 0
+      title: Background Proficiencies
+      hint: >-
+        Your background grants you proficiency in Arcana and History. It also
+        grants you proficiency with Calligrapher's Supplies.
+    - _id: pLGiyOjTP7nwuwTl
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - languages:standard:common
+        choices:
+          - count: 2
+            pool:
+              - languages:standard:*
+      value:
+        chosen: []
+      level: 0
+      title: Choose Languages
+      hint: >-
+        Your character knows at least three languages: Common plus two languages
+        you roll or choose from the Standard Languages table.
+    - _id: tk8CFgIW7fXL0mlu
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.feats.Item.S946KbcC7Z8lTKEa
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Background Feat
+      hint: Your background grants you the Initiate of High Sorcery feat.
+  wealth: '50'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: 1743830715436
+  modifiedTime: 1743831154918
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!3gg7r1ZVJhu8LdTd'
+
