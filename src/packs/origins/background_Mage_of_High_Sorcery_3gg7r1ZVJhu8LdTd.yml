@@ -67,7 +67,9 @@ system:
       configuration:
         mode: default
         allowReplacements: false
-        grants: []
+        grants:
+          - skills:arc
+          - skills:his
         choices:
           - count: 1
             pool:
@@ -121,9 +123,9 @@ _stats:
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
-  systemVersion: 4.2.2
+  systemVersion: 4.3.8
   createdTime: 1743830715436
-  modifiedTime: 1743831154918
+  modifiedTime: 1743834782466
   lastModifiedBy: n9iY1vD5eGeaHb7l
 _key: '!items!3gg7r1ZVJhu8LdTd'
 
