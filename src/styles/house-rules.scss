@@ -79,3 +79,11 @@
 :is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header > .right > div:last-child .xp-bar::after {
     background: var(--phb-red);
 }
+
+th, td {
+    vertical-align: top;
+
+    &.nowrap {
+        white-space: nowrap;
+    }
+}

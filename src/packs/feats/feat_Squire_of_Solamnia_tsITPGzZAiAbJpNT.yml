@@ -1,0 +1,112 @@
+folder: fivVf9w4MWrcgBK2
+name: Squire of Solamnia
+type: feat
+_id: tsITPGzZAiAbJpNT
+img: modules/sosly-5e-house-rules/public/feats/Squire%20of%20Solamnia.png
+system:
+  activities:
+    Kd698mk70YKUcTCS:
+      type: utility
+      _id: Kd698mk70YKUcTCS
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+            value: '1'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+        max: '@prof'
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Precision Strike
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your training in the ways of the Knights of Solamnia grants you these
+      benefits:</p><p><strong>Mount Up.</strong> Mounting or dismounting costs
+      you only 5 feet of movement.</p><p><strong>Precise Strike.</strong> Once
+      per turn, when you make a weapon attack roll against a creature, you can
+      cause the attack roll to have advantage. If the attack hits, you roll a d8
+      and add the number rolled as a bonus to the attack’s damage roll. You can
+      use this benefit a number of times equal to your proficiency bonus, but a
+      use is expended only if the attack hits. You regain all expended uses when
+      you finish a long rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: >-
+    Dragonlance Campaign, Fighter or Paladin Class or Knight of Solamnia
+    Background
+  type:
+    value: feat
+    subtype: origin
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: 1743824352038
+  modifiedTime: 1743824733599
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!tsITPGzZAiAbJpNT'
+

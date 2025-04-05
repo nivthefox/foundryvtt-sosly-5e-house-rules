@@ -1,0 +1,68 @@
+folder: BG041b2uqYGjRO4u
+name: Divinely Favored
+type: feat
+_id: DiWaninPpOfTPHUa
+img: icons/magic/holy/saint-glass-portrait-halo.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>A god chose you to carry a spark of their power.</p><p>You learn one
+      cantrip of your choice from the cleric spell list and one 1st-level spell
+      based on the alignment of your character, as specified in the Alignment
+      Spells table below. You also learn the augury spell.</p><h3>Alignment
+      Spells</h3><table><thead><tr><th
+      class="nowrap"><p>Alignment</p></th><th><p>1st-Level
+      Spell</p></th></tr></thead><tbody><tr><td
+      class="nowrap"><p>Evil</p></td><td><p>Choose one 1st-level warlock
+      spell</p></td></tr><tr><td class="nowrap"><p>Good</p></td><td><p>Choose
+      one 1st-level cleric spell</p></td></tr><tr><td
+      class="nowrap"><p>Neutral</p></td><td><p>Choose one 1st-level druid
+      spell</p></td></tr></tbody></table><p>You can cast the chosen 1st-level
+      spell and the
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplAugury0000]{Augury}
+      spell without a spell slot, and you must finish a long rest before you can
+      cast either of these spells in this way again. You can also cast these
+      spells using spell slots you have of the appropriate level.</p><p>Your
+      spellcasting ability for this feat’s spells is Intelligence, Wisdom, or
+      Charisma (choose when you select this feat).</p><p>In addition, you can
+      use a holy symbol as a spellcasting focus for any spell you cast that uses
+      the spellcasting ability you choose when you select this feat.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: Dragonlance Campaign
+  type:
+    value: feat
+    subtype: general
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: 1743825302273
+  modifiedTime: 1743825473092
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!DiWaninPpOfTPHUa'
+

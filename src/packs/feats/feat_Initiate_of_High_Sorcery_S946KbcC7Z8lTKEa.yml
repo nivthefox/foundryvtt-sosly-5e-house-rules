@@ -1,0 +1,87 @@
+folder: fivVf9w4MWrcgBK2
+name: Initiate of High Sorcery
+type: feat
+_id: S946KbcC7Z8lTKEa
+img: modules/sosly-5e-house-rules/public/feats/Initiate%20of%20High%20Sorcery.jpg
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You’ve received training from magic-users affiliated with the Mages of
+      High Sorcery.</p><p>Choose one of the three moons of Krynn to influence
+      your magic: the black moon, Nuitari; the red moon, Lunitari; or the white
+      moon, Solinari. You learn one cantrip of your choice from the wizard spell
+      list and two 1st-level spells based on the moon you choose, as specified
+      in the Lunar Spells table.</p><h3>Lunar Spells</h3><table><thead><tr><th
+      class="nowrap"><p>Moon</p></th><th><p>1st-Level
+      Spell</p></th></tr></thead><tbody><tr><td
+      class="nowrap"><p>Nuitari</p></td><td><p>Choose two from
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDissonantW]{Dissonant
+      Whispers},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False
+      Life},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]{Hex},
+      and
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]{Ray of
+      Sickness}.</p></td></tr><tr><td
+      class="nowrap"><p>Lunitari,</p></td><td><p>Choose two from
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplColorSpray]{Color
+      Spray},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDisguiseSe]{Disguise
+      Self},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFeatherFal]{Feather
+      Fall}, and
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Longstrider}.</p></td></tr><tr><td
+      class="nowrap"><p>Solinari</p></td><td><p>Choose two from
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplComprehend]{Comprehend
+      Languages},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectEvil]{Detect
+      Evil and Good},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbEvilAndGoodPr]{Protection
+      from Evil and Good}, and
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShield0000]{Shield}.</p></td></tr></tbody></table><p>You
+      can cast each of the chosen 1st-level spells without a spell slot, and you
+      must finish a long rest before you can cast them in this way again. You
+      can also cast the spells using any spell slots you have.</p><p>Your
+      spellcasting ability for this feat’s spells is Intelligence, Wisdom, or
+      Charisma (choose when you select this feat).</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: >-
+    Dragonlance Campaign, Sorcerer or Wizard Class or Mage of High Sorcery
+    Origin
+  type:
+    value: feat
+    subtype: origin
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: 1743823151289
+  modifiedTime: 1743824241917
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!S946KbcC7Z8lTKEa'
+
