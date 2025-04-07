@@ -1,0 +1,127 @@
+name: Minotaur
+type: race
+img: modules/sosly-5e-house-rules/public/species/Minotaur.png
+system:
+  description:
+    value: >-
+      <p>The minotaurs of Krynn are a formidable warrior race who occupy the
+      islands of Mithas and Kothas in the Blood Sea. Standing over seven feet
+      tall with bullish features, curved horns, and fur ranging from red-brown
+      to black, these massive creatures endured centuries of enslavement by
+      ogres, dwarves, and the Istar Empire before claiming their independence
+      after the Cataclysm sank their former oppressors beneath the
+      ocean.</p><p>Driven by a belief in their destined dominance over Krynn,
+      minotaurs adhere to a harsh philosophy where the strong rule and the weak
+      perish. Their society is highly organized and militaristic, with warriors
+      wearing leather harnesses decorated with military insignia. Despite their
+      ruthless reputation and brutal laws, minotaurs are not mindless
+      killers—many display sophistication and thoughtfulness, and some will even
+      ally with forces of good when it serves their ambitious
+      purposes.RetryClaude can make mistakes. Please double-check
+      responses.</p><h3>Minotaur Traits</h3><p><em><strong>Creature
+      Type.</strong></em> Humanoid</p><p><em><strong>Size.</strong></em> Medium
+      (about 6-8 feet tall)</p><p><em><strong>Speed.</strong></em> 30
+      feet</p><p>As a Minotaur, you have the following special
+      traits.</p><p><em><strong>Horns.</strong></em> Your horns are natural
+      melee weapons, which you can use to make unarmed strikes. If you hit with
+      them, you deal piercing damage equal to 1d6 + your Strength modifier,
+      instead of the bludgeoning damage normal for an unarmed
+      strike.</p><p><em><strong>Goring Rush.</strong></em> Immediately after you
+      use the Dash action on your turn and move at least 20 feet, you can make
+      one melee attack with your horns as a bonus
+      action.</p><p><em><strong>Hammering Horns.</strong></em> Immediately after
+      you hit a creature with a melee attack as part of the Attack action on
+      your turn, you can use a bonus action to attempt to shove that target with
+      your horns. The target must be within 5 feet of you and no more than one
+      size larger than you. Unless it succeeds on a Strength saving throw
+      against a DC equal to 8 + your proficiency bonus + your Strength modifier,
+      you push it up to 10 feet away from you.</p><p><em><strong>Imposing
+      Presence.</strong></em> You have proficiency in one of the following
+      skills of your choice: Intimidation or Persuasion.</p><p></p>
+    chat: ''
+  identifier: minotaur
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: dLxv96vt2B2KOEe2
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      title: ''
+      hint: Medium (about 6-8 feet tall).
+      value: {}
+    - _id: BhF9SsF0VbA82wls
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.origins.Item.0NUIcMvdlGhDiowI
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.origins.Item.LuAt5UwTsamWQYWV
+          - optional: false
+            uuid: Compendium.sosly-5e-house-rules.origins.Item.48kWI399jJDNSqaK
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Minotaur Traits
+      hint: As a Minotaur, you have the following special traits.
+    - _id: ases5heatmu8xJjr
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:itm
+              - skills:per
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Imposing Presence
+      hint: >-
+        You have proficiency in one of the following skills of your choice:
+        Intimidation or Persuasion.
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: null
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+effects: []
+folder: ol4N2HrhCU1VjQjT
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009920965
+  modifiedTime: 1744009920984
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: EF5iCJ6YMBQgMxLf
+sort: 550000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!EF5iCJ6YMBQgMxLf'
+

@@ -1,0 +1,148 @@
+name: Light Shield
+type: equipment
+img: icons/equipment/shield/buckler-wooden-boss.webp
+system:
+  description:
+    value: >-
+      <p>Light shields increase your Armor Class by 1. You may throw this
+      shield, treating it as an improvised weapon that deals 1d6 bludgeoning
+      damage.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 4
+    units: lb
+  price:
+    value: 10
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: 1
+    dex: null
+    magicalBonus: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: null
+  type:
+    value: shield
+    baseItem: shield
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  activities:
+    0eFWvZ2yP8EOsPO6:
+      type: attack
+      _id: 0eFWvZ2yP8EOsPO6
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '20'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creatureOrObject
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+        ability: str
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: '6'
+            bonus: ''
+            types:
+              - bludgeoning
+      name: ''
+      img: ''
+      appliedEffects: []
+  attuned: false
+  identifier: shield
+effects: []
+folder: BYAiUVy9qa7cGEKH
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009928930
+  modifiedTime: 1744010073385
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: Syfkg1eNp8Mj4Abp
+sort: 100000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!Syfkg1eNp8Mj4Abp'
+

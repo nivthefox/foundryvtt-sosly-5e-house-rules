@@ -1,0 +1,145 @@
+name: Tower Shield
+type: equipment
+img: icons/equipment/shield/oval-wooden-boss-bronze.webp
+system:
+  description:
+    value: >-
+      <p>Tower shields share the properties of a
+      @UUID[Compendium.sosly-5e-house-rules.equipment.Item.ZxGFO467FiMVuPCu]{heavy
+      shield}. These shields cover the entire body and reduce your Speed by 10
+      feet. On your turn, you may use an object interaction to plant it in the
+      ground, gaining half cover (+2 bonus to AC, Dexterity saving throws, and
+      ability checks made to hide) and advantage on saving throws made to resist
+      being shoved or knocked prone and while you remain behind it. Unplanting a
+      tower shield requires a bonus action.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 25
+    units: lb
+  price:
+    value: 75
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: 2
+    dex: null
+    magicalBonus: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: null
+  type:
+    value: shield
+    baseItem: shield
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  activities: {}
+  attuned: false
+  identifier: shield
+effects:
+  - name: Tower Shield
+    img: icons/equipment/shield/oval-wooden-boss-bronze.webp
+    origin: Compendium.sosly-5e-house-rules.equipment.Item.AEgH0igJQDYG2krN
+    _id: A2CDb0AuHVr6MZSe
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 2
+        value: '-10'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: 1744010288011
+      modifiedTime: 1744010304754
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!AEgH0igJQDYG2krN.A2CDb0AuHVr6MZSe'
+folder: BYAiUVy9qa7cGEKH
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009947212
+  modifiedTime: 1744010275748
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: AEgH0igJQDYG2krN
+sort: 250000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!AEgH0igJQDYG2krN'
+

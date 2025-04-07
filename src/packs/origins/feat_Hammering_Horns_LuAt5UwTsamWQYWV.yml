@@ -1,0 +1,110 @@
+folder: 9HtobCecufL46Pio
+name: Hammering Horns
+type: feat
+_id: LuAt5UwTsamWQYWV
+img: icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp
+system:
+  activities:
+    bJzI936UFPTfKNTY:
+      type: save
+      _id: bJzI936UFPTfKNTY
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - str
+        dc:
+          calculation: str
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Immediately after you hit a creature with a melee attack as part of the
+      Attack action on your turn, you can use a bonus action to attempt to shove
+      that target with your horns. The target must be within 5 feet of you and
+      no more than one size larger than you. Unless it succeeds on a Strength
+      saving throw against a DC equal to 8 + your proficiency bonus + your
+      Strength modifier, you push it up to 10 feet away from you.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009434982
+  modifiedTime: 1744009499619
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!LuAt5UwTsamWQYWV'
+

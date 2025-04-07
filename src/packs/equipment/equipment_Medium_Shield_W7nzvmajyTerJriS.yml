@@ -1,0 +1,77 @@
+name: Medium Shield
+type: equipment
+img: icons/equipment/shield/round-wooden-boss-steel-brown.webp
+system:
+  description:
+    value: >-
+      <p>A shield is made from wood or metal and is carried in one hand.
+      Wielding a shield increases your Armor Class by 2. You can benefit from
+      only one shield at a time.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 8
+    units: lb
+  price:
+    value: 20
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: 2
+    dex: null
+    magicalBonus: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: null
+  type:
+    value: shield
+    baseItem: shield
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  activities: {}
+  attuned: false
+  identifier: shield
+effects: []
+folder: BYAiUVy9qa7cGEKH
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009930984
+  modifiedTime: 1744010086013
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: W7nzvmajyTerJriS
+sort: 200000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!W7nzvmajyTerJriS'
+

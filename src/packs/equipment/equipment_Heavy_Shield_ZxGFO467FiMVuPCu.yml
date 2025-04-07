@@ -1,0 +1,81 @@
+name: Heavy Shield
+type: equipment
+img: icons/equipment/shield/heater-steel-boss-red.webp
+system:
+  description:
+    value: >-
+      <p>A heavy shield increases your Armor Class by 2. Additionally, you have
+      advantage on Dexterity saving throws. When you take the Dodge action while
+      wielding a heavy shield, you may also take cover behind your shield,
+      gaining an additional +2 bonus to your Armor Class until the start of your
+      next turn. You have disadvantage on Dexterity (Acrobatics) and Dexterity
+      (Stealth) checks while wielding a heavy shield, and you cannot squeeze
+      through spaces smaller than your size category.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: SRD 5.1
+    page: ''
+    license: CC-BY-4.0
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 20
+    units: lb
+  price:
+    value: 35
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  armor:
+    value: 2
+    dex: null
+    magicalBonus: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: null
+  proficient: null
+  type:
+    value: shield
+    baseItem: shield
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  activities: {}
+  attuned: false
+  identifier: shield
+effects: []
+folder: BYAiUVy9qa7cGEKH
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009944238
+  modifiedTime: 1744010138724
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: ZxGFO467FiMVuPCu
+sort: 300000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!ZxGFO467FiMVuPCu'
+

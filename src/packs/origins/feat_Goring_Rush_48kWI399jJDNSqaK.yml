@@ -1,0 +1,54 @@
+folder: 9HtobCecufL46Pio
+name: Goring Rush
+type: feat
+_id: 48kWI399jJDNSqaK
+img: icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Immediately after you use the Dash action on your turn and move at
+      least 20 feet, you can make one melee attack with your horns as a bonus
+      action.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744009066267
+  modifiedTime: 1744009183292
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!48kWI399jJDNSqaK'
+
