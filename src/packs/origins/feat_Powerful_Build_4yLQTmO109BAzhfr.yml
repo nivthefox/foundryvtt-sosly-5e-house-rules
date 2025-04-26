@@ -1,0 +1,120 @@
+name: Powerful Build
+type: feat
+img: icons/magic/control/buff-strength-muscle-damage-orange.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You count as one size larger when determining your carrying capacity
+      and the weight you can push, drag, or lift.</p><section class="secret"
+      id="secret-7qaTRjmRe4PD41G3"><p><strong>Foundry Note</strong></p><p>This
+      feature includes an Active Effect which automatically upgrades your size
+      when determining carrying capacity.</p></section>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  properties:
+    - trait
+  requirements: ''
+  identifier: powerful-build
+  advancement: []
+  cover: null
+  crewed: false
+effects:
+  - name: Powerful Build
+    img: icons/magic/control/buff-strength-muscle-damage-orange.webp
+    _id: ge1u3EIFvsoj3jZu
+    type: base
+    system: {}
+    changes:
+      - key: flags.dnd5e.powerfulBuild
+        mode: 5
+        value: 'true'
+        priority: 50
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    origin: Item.DtDaz67N9tRAh2Nn
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!4yLQTmO109BAzhfr.ge1u3EIFvsoj3jZu'
+folder: rf0igJaxiW3drB9b
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745656072876
+  modifiedTime: 1745656072904
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 4yLQTmO109BAzhfr
+sort: 300000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!4yLQTmO109BAzhfr'
+

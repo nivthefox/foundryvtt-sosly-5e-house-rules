@@ -1,0 +1,115 @@
+name: Blubber
+type: feat
+img: icons/creatures/slimes/slime-movement-splashing-yellow.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You have resistance to cold damage. You are also accustomed to low
+      temperatures and automatically succeed on saving throws against the
+      effects of extreme cold. You are uncomfortable in warmer climates. In hot
+      climates, you have disadvantage on saving throws against exhaustion.</p>
+    chat: ''
+  identifier: blubber
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Blubber
+    img: icons/creatures/slimes/slime-movement-splashing-yellow.webp
+    origin: Item.5YnnAuD5W9L18kG3
+    _id: 7hCpJPcZ7mGOyFOC
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: cold
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!MQ5MIMHIO3kGmhnl.7hCpJPcZ7mGOyFOC'
+folder: rf0igJaxiW3drB9b
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745655895932
+  modifiedTime: 1745655895959
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: MQ5MIMHIO3kGmhnl
+sort: 200000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!MQ5MIMHIO3kGmhnl'
+
