@@ -1,0 +1,112 @@
+name: thanoi
+type: race
+img: modules/sosly-5e-house-rules/public/species/thanoi.webp
+system:
+  description:
+    value: >-
+      <p>The thanoi, or walrusfolk, are humanoid walrus hybrids inhabiting the
+      frozen southern region of Icereach. Standing up to 8 feet tall with bulky
+      bodies, thick protective hides, and tusks reaching 2 feet in length, these
+      surprisingly agile creatures live as nomadic tribes constantly migrating
+      across the barren landscape in search of hunting grounds. Their
+      communities travel with trained polar bears that serve as both
+      transportation for their mobile camps and war mounts in conflicts against
+      the region's human barbarians and white dragons.</p><p>Most thanoi
+      consider abundant food their greatest treasure, with some forgoing
+      material wealth to maintain closer connections with nature. They rarely
+      venture beyond Icereach, as warmer climates prove uncomfortable for their
+      arctic-adapted bodies. When thanoi do leave their homeland, it's typically
+      as traders or hunters who briefly visit Ansalon's southern shores before
+      quickly returning. The few who remain abroad longer often return with
+      tales of adventure that inspire younger generations, though these
+      well-traveled individuals frequently depart again, unable to readjust to
+      their isolated homeland after experiencing the wider world.RetryClaude can
+      make mistakes. Please double-check responses.</p><h3>Thanoi
+      Traits</h3><p><em><strong>Creature Type.</strong></em>
+      Humanoid</p><p><em><strong>Size.</strong></em> Medium (about 5-7 feet
+      tall)</p><p><em><strong>Speed.</strong></em> 30 feet</p><p>As a Thanoi,
+      you have the following special traits.</p><p><em><strong>Natural
+      Swimmer.</strong></em> You have a swim speed equal to your walking
+      speed.</p><p><em><strong>Blubber.</strong></em> You have resistance to
+      cold damage. You are also accustomed to low temperatures and automatically
+      succeed on saving throws against the effects of extreme cold. You are
+      uncomfortable in warmer climates. In hot climates, you have disadvantage
+      on saving throws against exhaustion.</p><p><em><strong>Hold
+      Breath.</strong></em> You can hold your breath for up to 10 minutes at a
+      time.</p><p><em><strong>Powerful Build.</strong></em> You count as one
+      size larger when determining your carrying capacity and the weight you can
+      push, drag, or lift.</p><p><em><strong>Tusks.</strong></em> You have tusks
+      that you can use to make unarmed strikes. When you hti with them, the
+      strike deals 1d6 + your Strength modifier piercing damage, instead of the
+      bludgeoning damage normal for an unarmed strike.</p><p></p>
+    chat: ''
+  identifier: thanoi
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: dLxv96vt2B2KOEe2
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      title: ''
+      hint: Medium (about 6-8 feet tall).
+      value: {}
+    - _id: BhF9SsF0VbA82wls
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.origins.Item.MQ5MIMHIO3kGmhnl
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.origins.Item.szj8O0rqBQu48GOQ
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.origins.Item.4yLQTmO109BAzhfr
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.origins.Item.xSKzNF0IRmlQyxaz
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Thanoi Traits
+      hint: As a thanoi, you have the following racial traits.
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: 30
+    walk: 30
+    units: ft
+    hover: false
+  senses:
+    darkvision: null
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+effects: []
+folder: ol4N2HrhCU1VjQjT
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745657038460
+  modifiedTime: 1745657038485
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: 7p0s7OGWXVIDLXen
+sort: 575000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+_key: '!items!7p0s7OGWXVIDLXen'
+
