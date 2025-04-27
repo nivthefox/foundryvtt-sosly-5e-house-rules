@@ -2,7 +2,14 @@ import { extractPack } from "@foundryvtt/foundryvtt-cli";
 import { promises as fs } from "fs";
 import path from "path";
 
-const MODULE_ID = process.cwd();
+// Get the MODULE_ID from command line arguments
+const args = process.argv.slice(2);
+if (args.length === 0) {
+    console.error("Error: MODULE_ID parameter is required");
+    process.exit(1);
+}
+
+const MODULE_ID = path.resolve(process.cwd(), "..", args[0]);
 const yaml = true;
 
 const packs = await fs.readdir("./packs");

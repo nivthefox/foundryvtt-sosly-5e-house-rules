@@ -18,9 +18,10 @@ pages:
         of their change.</p><h2>Content Changes</h2><p>Some spells, feats,
         sublcasses, and other specific forms of content may have changed. Always
         check the Society of Silliness compendia for content which may override
-        the default rules.</p><h2>Changelog</h2><p><strong>16th January
-        2024.</strong> Human's Resourceful trait has been
-        redesigned.</p><p><strong>11th January 2024. </strong>Implemented spell
+        the default rules.</p><h2>Changelog</h2><p><strong>27th April 2025.
+        </strong>Added rules for Custom Spell Creation.</p><p><strong>16th
+        January 2025.</strong> Human's Resourceful trait has been
+        redesigned.</p><p><strong>11th January 2025. </strong>Implemented spell
         changes directly in the associated compendia.</p><p><strong>3rd December
         2024.</strong> This document was created.</p>
     video:
@@ -38,7 +39,7 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: 1737060774264
+      modifiedTime: 1745795535391
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.uqU02nnI0FIkMVrv'
   - name: Losing Hit Points
@@ -629,7 +630,7 @@ pages:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!journal.pages!8MopJr18J312YX26.J751Y8kSKi332sk7'
-  - sort: 900000
+  - sort: 650000
     name: Species Changes
     type: text
     _id: Jrf2ThHLwZAOs1pA
@@ -658,9 +659,103 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: 1737060734727
-      modifiedTime: 1737060753137
+      modifiedTime: 1745795561841
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.Jrf2ThHLwZAOs1pA'
+  - name: Custom Spell Creation
+    type: text
+    sort: 425000
+    _id: 908RkuR365bsbfuP
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>As a spellcaster with a class feature that uses a spellbook—such as a
+        wizard—or as a character who can cast ritual spells, you may create your
+        own spells through dedicated arcane research. This section presents
+        rules for when you wish to modify existing spells or develop entirely
+        new magical formulas.</p><h2>Designing the Spell</h2><p>Before beginning
+        any research, you must first design your spell concept and consult with
+        your DM for approval. This initial step is crucial whether you’re
+        modifying an existing spell or creating something entirely
+        new.</p><p>When designing a spell, consider the
+        following:</p><p><strong>For Modified Spells.</strong> Your changes
+        should present a clear tradeoff compared to the original—perhaps trading
+        damage for range, duration for area of effect, or adding a secondary
+        effect at the cost of reduced primary potency. While the modified spell
+        should not be strictly superior to the original, minor improvements may
+        be permitted at your DM’s discretion, especially if they align with your
+        character’s specialization or narrative development.</p><p><strong>For
+        New Spells</strong>. Your creation must either exactly reproduce an
+        existing spell from the game (one you don’t already know) or follow the
+        rules for
+        @UUID[Compendium.dnd-dungeon-masters-guide.content.JournalEntry.dmgDmsToolbox000.JournalEntryPage.IIWDMn0sUtrnJFC2]{creating
+        a spell} in the Dungeon Master’s Guide. Consider how your spell fits
+        your character’s class, level, and the campaign setting.</p><p>Only
+        after your DM approves your spell design can you begin the actual
+        research process.</p><h2>Research Process</h2><p>Creating or modifying a
+        spell requires dedicated research time and arcane skill. You must spend
+        time studying magical theory, experimenting with arcane energies, and
+        gradually working toward a breakthrough.</p><p>For each 4-hour research
+        session, you make an Intelligence (Arcana) check. The DC for this check
+        equals 11 + twice the spell’s level. For example, creating a 3rd-level
+        spell requires checks against DC 17.</p><p>You must accumulate a certain
+        number of successes before reaching a threshold of failures. Each
+        success represents a breakthrough in understanding, while failures
+        represent setbacks and dead ends in your research. A natural 20 on this
+        check counts as two successes, while a natural 1 counts as two
+        failures.</p><p>If you accumulate the required number of failures before
+        achieving the necessary successes, your research reaches a dead end. You
+        must gain a level before you can research that spell again, and you must
+        start over from scratch.</p><h3>Modifying Existing
+        Spells</h3><p>Modifying a spell already in your spellbook requires (3 +
+        twice the spell’s level) successes before accumulating (3 + the spell’s
+        level) failures. For example, modifying a 2nd-level spell requires 7
+        successes before reaching 5 failures.</p><h3>Creating New
+        Spells</h3><p>Creating an entirely new spell—or recreating one you’ve
+        witnessed but don’t have in your spellbook—requires (3 + three times the
+        spell’s level) successes before accumulating (3 + the spell’s level)
+        failures. For instance, creating a 1st-level spell requires 6 successes
+        before reaching 4 failures.</p><p>New spells often prove less efficient
+        than their well-established counterparts; this reflects the experimental
+        nature of magical innovation. You may later refine your creation using
+        the spell modification rules once the base spell has been successfully
+        created.</p><h2>Recording the Spell</h2><p>Unlike traditional spell
+        copying, you record your research as you go, with each session
+        contributing to the final spell formula in your spellbook. Each 4-hour
+        research session costs you 10 gold pieces for materials such as rare
+        inks, experimental components, and testing apparatus, and uses
+        one-quarter of a page in your spellbook (always round up after your
+        research is complete).</p><p>These costs apply whether the session
+        results in success or failure. For example, if your research takes 16
+        sessions to complete, the total cost would be 64 hours of time, 160 gold
+        pieces, and 4 pages in your spellbook. Spells cannot take a partial
+        page.</p><p>No additional time or cost is required to “record” the spell
+        once research is complete; the final success represents your
+        breakthrough in completing a functional magical formula.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      n9iY1vD5eGeaHb7l: 3
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.sosly-5e-house-rules.house-rules.JournalEntry.ZIoHBN69UxLMUsI7.JournalEntryPage.908RkuR365bsbfuP
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1745795498537
+      modifiedTime: 1745795500670
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!journal.pages!8MopJr18J312YX26.908RkuR365bsbfuP'
 folder: null
 ownership:
   default: 0

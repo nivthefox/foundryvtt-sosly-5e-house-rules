@@ -1,0 +1,164 @@
+folder: afwO5hzi3Xtr8yBi
+name: Danse Macabre
+type: spell
+_id: 0DPF7FISD6KH7FHb
+img: modules/sosly-5e-house-rules/public/spells/danse-macabre.webp
+system:
+  activities:
+    qhGbm18deVrmbLqL:
+      type: summon
+      _id: qhGbm18deVrmbLqL
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - count: '5'
+          name: ''
+          _id: cMRG1E2FendJPkMo
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmSkeleton000000
+          level:
+            min: null
+            max: null
+        - count: '5'
+          name: ''
+          _id: m9B8rh6l35JKLS1F
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmZombie00000000
+          level:
+            min: null
+            max: null
+      summon:
+        prompt: true
+        mode: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Threads of dark power leap from your fingers to pierce up to five Small
+      or Medium corpses you can see within range. Each corpse immediately stands
+      up and becomes undead. You decide whether it is a zombie or a skeleton
+      (the statistics for zombies and skeletons are in the Monster Manual), and
+      it gains a bonus to its attack and damage rolls equal to your spellcasting
+      ability modifier.</p><p>You can use a bonus action to mentally command the
+      creatures you make with this spell, issuing the same command to all of
+      them. To receive the command, a creature must be within 60 feet of you.
+      You decide what action the creatures will take and where they will move
+      during their next turn, or you can issue a general command, such as to
+      guard a chamber or passageway against your foes. If you issue no commands,
+      the creatures do nothing except defend themselves against hostile
+      creatures. Once given an order, the creatures continue to follow it until
+      their task is complete.</p><p>The creatures are under your control until
+      the spell ends, after which they become inanimate once
+      more.</p><p><strong>At Higher Levels.</strong> When you cast this spell
+      using a spell slot of 6th level or higher, you animate up to two
+      additional corpses for each slot level above 5th.</p><p></p>
+    chat: ''
+  identifier: danse-macabre
+  source:
+    revision: 1
+    rules: '2024'
+    book: SoSly House Rules
+    page: ''
+    custom: ''
+    license: ''
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: hour
+    value: '8'
+  level: 5
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+  range:
+    units: ft
+    special: ''
+    value: '60'
+  school: nec
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: object
+      count: '5'
+      special: small or medium corpses
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745692573382
+  modifiedTime: 1745705088713
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!0DPF7FISD6KH7FHb'
+
