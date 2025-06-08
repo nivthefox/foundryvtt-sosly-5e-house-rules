@@ -530,7 +530,12 @@ pages:
         original spell and a second spell. As long as you are concentrating on
         two spells, you make Constitution saving throws to maintain
         concentration at disadvantage, and you must make a separate saving throw
-        for each spell you are concentrating on when you take damage.</p>
+        for each spell you are concentrating on when you take
+        damage.</p><h3>Concentrate [Action]</h3><p>If you take the
+        <strong>Concentrate</strong> action, you gain the following benefits:
+        until the start of your next turn, any concentration check you make has
+        Advantage.</p><p>You lose these benefits if you have the Incapacitated
+        condition or if your Intelligence is 3 or less.</p>
     video:
       controls: true
       volume: 0.5
@@ -546,8 +551,8 @@ pages:
       systemId: dnd5e
       systemVersion: 4.1.2
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1749363805750
+      lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.vbPPKl0oXpL7bs1e'
   - name: Character Creation
     type: text
