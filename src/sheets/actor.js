@@ -13,7 +13,55 @@ export function registerSoSlyActor() {
         }
     });
 
+    // PCs
     Hooks.on('renderActorSheet5eCharacter2', (app, html, data) => {
+        const el = html[0];
+
+        // Add the breather button to the character sheet
+        {
+            const buttons = el.querySelector('.sheet-header-buttons');
+            const button = document.createElement('button');
+            button.classList.add('breather-button');
+            button.classList.add('gold-button');
+            button.setAttribute('data-tooltip', 'sosly.breather.label');
+            button.setAttribute('aria-label', game.i18n.localize('sosly.breather.label'));
+
+            const icon = document.createElement('i');
+            icon.classList.add('fas', 'fa-face-exhaling');
+
+            button.appendChild(icon);
+            buttons.prepend(button);
+
+            button.addEventListener('click', async event => {
+                await app.actor.breather(event);
+            });
+        }
+
+        // Add networth tracking to the character sheet
+        {
+            const networth = app.actor.calculateNetWorth();
+            const currencies = el.querySelector('.tab.inventory .middle');
+
+            const networthEl = document.createElement('div');
+            networthEl.classList.add('net-worth');
+
+            const icon = document.createElement('i');
+            icon.classList.add('fas', 'fa-coins');
+            icon.setAttribute('data-tooltip', 'sosly.networth');
+            icon.setAttribute('aria-label', 'Net Worth');
+
+            const content = document.createElement('span');
+            content.textContent = networth.toLocaleString();
+
+            networthEl.appendChild(icon);
+            networthEl.appendChild(content);
+
+            currencies.appendChild(networthEl);
+        }
+    });
+
+    // NPCs
+    Hooks.on('renderActorSheet5eNPC2', (app, html, data) => {
         const el = html[0];
 
         // Add the breather button to the character sheet

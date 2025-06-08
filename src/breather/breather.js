@@ -48,7 +48,6 @@ export class Breather extends Dialog {
 
     activateListeners(html) {
         super.activateListeners(html);
-        console.log('here');
 
         const button = html.find('#roll-hd');
         button.click(this._onRollHitDie.bind(this));
