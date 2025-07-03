@@ -58,6 +58,15 @@ export function registerSoSlyActor() {
             currencies.appendChild(networthEl);
         }
     });
+    Hooks.on('preUpdateActor', async (actor, changed, options, userId) => {
+        if (actor.type === 'vehicle' || actor.type === 'group') {
+            return;
+        }
+
+        if (changed.system?.attributes?.hp?.value !== undefined) {
+            await actor.handleImperiled(changed, options, userId);
+        }
+    });
 
     // NPCs
     Hooks.on('renderActorSheet5eNPC2', (app, html, data) => {
@@ -105,7 +114,6 @@ export function registerSoSlyActor() {
             currencies.appendChild(networthEl);
         }
     });
-
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
         if (actor.type === 'vehicle' || actor.type === 'npc') {
             return;
@@ -135,13 +143,24 @@ export function registerSoSlyActor() {
         }
     });
 
-    Hooks.on('preUpdateActor', async (actor, changed, options, userId) => {
-        if (actor.type === 'vehicle' || actor.type === 'group') {
+    Hooks.on('dnd5e.combatRecovery', async (combatant, recoveries /** array **/) => {
+        if (!recoveries.includes('turnStart')) {
             return;
         }
 
-        if (changed.system?.attributes?.hp?.value !== undefined) {
-            await actor.handleImperiled(changed, options, userId);
+        const actor = game.actors.get(combatant.actorId);
+        if (!actor || actor.type !== 'npc') {
+            return;
+        }
+
+        if (actor.system?.resources?.legact?.max < 1) {
+            return;
+        }
+
+        const legact = actor.system.resources.legact;
+        if (legact.value < legact.max) {
+            await actor.update({'system.resources.legact.value': legact.max});
+            console.log(`SoSly: NPC ${actor.name} is recovering resources at the start of their turn.`);
         }
     });
 }
