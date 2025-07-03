@@ -1,4 +1,3 @@
-import {utils} from '../../../../systems/dnd5e/dnd5e.mjs';
 import {id as module_id} from '../../module.json';
 import {Breather} from '../breather/breather.js';
 
@@ -135,6 +134,16 @@ export function registerSoSlyActor() {
             await actor.updateEmbeddedDocuments('Item', updateItems, { isRest: true });
         }
     });
+
+    Hooks.on('preUpdateActor', async (actor, changed, options, userId) => {
+        if (actor.type === 'vehicle' || actor.type === 'group') {
+            return;
+        }
+
+        if (changed.system?.attributes?.hp?.value !== undefined) {
+            await actor.handleImperiled(changed, options, userId);
+        }
+    });
 }
 
 function mixinPlayerCharacterSheet(Actor5e) {
@@ -178,34 +187,18 @@ function mixinPlayerCharacterSheet(Actor5e) {
             return calculateNetWorth(this);
         }
 
-        async _preUpdate(changed, options, userId) {
-            await super._preUpdate(changed, options, userId);
-
-            if (this.type === 'vehicle' || this.type === 'group') {
-                return;
-            }
-
-            if (!this.system.attributes.hp.max || !changed.system?.attributes?.hp?.max) {
-                return;
-            }
-
-            if (changed.system?.attributes?.hp) {
-                await this.#handleImperiled(changed, options, userId);
-            }
-        }
-
         /**
          * Handle applying/removing the imperiled status.
          * @param {object} changed
          * @param {DocumentModificationContext} options
          * @param {User5e} user
-         * @returns {Promise<void>}
+         * @returns {Promise<object>}
          */
-        async #handleImperiled(changed, options, user) {
+        async handleImperiled(changed, options, user) {
             const hp = changed.system.attributes.hp;
             const exhaustion = this.system.attributes.exhaustion;
 
-            const existing = this.effects.get(utils.staticID('dnd5eimperiled'));
+            const existing = this.effects.get(dnd5e.utils.staticID('dnd5eimperiled'));
 
             if (hp.value > 0 && existing) {
                 await existing.delete();
@@ -226,10 +219,10 @@ function mixinPlayerCharacterSheet(Actor5e) {
             }
 
             if (!existing && exhaustion < 5) {
+                const confirmContent = game.i18n?.format('sosly.imperiled.confirmation', {exhaustion});
                 const confirmation = await Dialog.confirm({
                     title: 'Imperiled!',
-                    content: `Your character is imperiled!  You can gain a level of Exhaustion to remain conscious. You 
-                    currently have ${exhaustion} levels of exhaustion.  Do you want to do this?`,
+                    content: confirmContent
                 });
 
                 if (!confirmation) {
@@ -240,7 +233,11 @@ function mixinPlayerCharacterSheet(Actor5e) {
 
                 const effect = await ActiveEffect.implementation.fromStatusEffect('imperiled');
                 await ActiveEffect.implementation.create(effect, { parent: this, keepId: true});
-                changed.system.attributes.exhaustion = exhaustion + 1;
+                await this.update({system: {
+                    attributes: {
+                        exhaustion: exhaustion + 1
+                    }
+                }});
 
                 const content = await renderTemplate(`modules/${module_id}/templates/Imperiled.hbs`, {
                     text: `${this.name} has gained a level of Exhaustion to remain conscious!`
@@ -285,7 +282,7 @@ function prepareEncumbrance(rollData, { validateItem }={}) {
     if ( game.settings.get('dnd5e', 'currencyWeight') && currency ) {
         const numCoins = Object.values(currency).reduce((val, denom) => val + Math.max(denom, 0), 0);
         const currencyPerWeight = config.currencyPerWeight[unitSystem];
-        weight += utils.convertWeight(
+        weight += dnd5e.utils.convertWeight(
             numCoins / currencyPerWeight,
             config.baseUnits.default[unitSystem],
             baseUnits[unitSystem]
@@ -303,10 +300,10 @@ function prepareEncumbrance(rollData, { validateItem }={}) {
 
     const calculateThreshold = threshold => {
         let base = this.abilities.str?.value ?? 10;
-        const bonus = utils.simplifyBonus(encumbrance.bonuses?.[threshold], rollData)
-            + utils.simplifyBonus(encumbrance.bonuses?.overall, rollData);
-        let multiplier = utils.simplifyBonus(encumbrance.multipliers[threshold], rollData)
-            * utils.simplifyBonus(encumbrance.multipliers.overall, rollData);
+        const bonus = dnd5e.utils.simplifyBonus(encumbrance.bonuses?.[threshold], rollData)
+            + dnd5e.utils.simplifyBonus(encumbrance.bonuses?.overall, rollData);
+        let multiplier = dnd5e.utils.simplifyBonus(encumbrance.multipliers[threshold], rollData)
+            * dnd5e.utils.simplifyBonus(encumbrance.multipliers.overall, rollData);
         if ( threshold === 'maximum' ) maximumMultiplier = multiplier;
         if ( this.parent.type === 'vehicle' ) base = this.attributes.capacity.cargo;
         else multiplier *= (config.threshold[threshold]?.[unitSystem] ?? 1) * sizeMod;

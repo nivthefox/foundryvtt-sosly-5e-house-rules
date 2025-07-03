@@ -87,10 +87,10 @@ async function handleImperiled(combat, previous, next) {
         return;
     }
 
+    const confirmContent = game.i18n?.format('sosly.imperiled.confirmation', {exhaustion});
     const confirmation = await Dialog.confirm({
         title: 'Imperiled!',
-        content: `Your character is imperiled!  You can gain a level of Exhaustion to remain conscious. You currently 
-        have ${exhaustion} levels of exhaustion.  Do you want to do this?`,
+        content: confirmContent
     });
 
     if (!confirmation) {
