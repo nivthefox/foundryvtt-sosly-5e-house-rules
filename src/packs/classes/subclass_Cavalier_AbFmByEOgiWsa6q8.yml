@@ -1,0 +1,127 @@
+folder: jKsAGtmO91Be9pbt
+name: Cavalier
+type: subclass
+_id: AbFmByEOgiWsa6q8
+img: modules/sosly-5e-house-rules/public/subclasses/cavalier.webp
+system:
+  description:
+    value: >-
+      <p><em>Charge into the Fray Astride your Faithful
+      Steed</em></p><p>Cavaliers excel at mounted combat and battlefield
+      control, using superior positioning and mobility to dominate their foes.
+      These fighters forge unbreakable bonds with their mounts and learn to
+      fight as a unified force, whether charging enemy lines or maneuvering to
+      protect allies. Cavaliers also master techniques for controlling space and
+      marking enemies, making them formidable guardians even when fighting on
+      foot.</p>
+    chat: ''
+  identifier: cavalier
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: iOJiwiGB6GnDRivr
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.z7LC8RqL1r91wrnl
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.UL1CvsL4pi0z2oTu
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - _id: 6HDYaiAeaypX1d4t
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:ani
+              - skills:his
+              - skills:ins
+              - skills:prf
+              - skills:per
+              - languages:standard
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 3
+      title: Bonus Proficiency
+      hint: ''
+    - _id: VWXSKgYTdoPEEJUx
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.tAFExt6kV5mpdnQe
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 7
+      title: Subclass Features
+      hint: ''
+    - _id: IUFR4SpI2MIq3W2m
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.GWsvYBaXtSdqcsgC
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Subclass Features
+      hint: ''
+    - _id: sF3n1ZOmpFKWeFEe
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.wr4nBZ9lmsIrIsQQ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 15
+      title: Subclass Features
+      hint: ''
+    - _id: v5CqV51pREZNsr9s
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.BB8EVOcJvYw21UhI
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 18
+      title: Subclass Features
+      hint: ''
+  classIdentifier: fighter
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1751745797560
+  modifiedTime: 1751748880110
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!AbFmByEOgiWsa6q8'
+

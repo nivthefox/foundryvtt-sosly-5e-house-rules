@@ -1,0 +1,53 @@
+folder: jNnmUpSBKU1HV7lR
+name: Born to the Saddle
+type: feat
+_id: z7LC8RqL1r91wrnl
+img: icons/environment/creatures/horse-brown.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your mastery as a rider becomes apparent. You have advantage on saving
+      throws made to avoid falling off your mount. If you fall off your mount
+      and descend no more than 10 feet, you can land on your feet if you’re not
+      incapacitated.</p><p>Finally, mounting or dismounting a creature costs you
+      only 5 feet of movement, rather than half your speed.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1751746672266
+  modifiedTime: 1751747191458
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!z7LC8RqL1r91wrnl'
+

@@ -1,0 +1,231 @@
+folder: jNnmUpSBKU1HV7lR
+name: Unwavering Mark
+type: feat
+_id: UL1CvsL4pi0z2oTu
+img: icons/skills/melee/unarmed-punch-fist-blue.webp
+system:
+  activities:
+    mpybtentkEpwLrCY:
+      type: utility
+      _id: mpybtentkEpwLrCY
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you attack and hit a creature with a weapon
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: PR7ckGT1NRMtc3YY
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Mark
+      img: ''
+      appliedEffects:
+        - PR7ckGT1NRMtc3YY
+    2ycz2cYVbYUkXvHV:
+      type: utility
+      _id: 2ycz2cYVbYUkXvHV
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+            value: '1'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+            type: recoverAll
+        max: (max(1,@abilities.str.mod))
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Unwavering Attack
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can menace your foes, foiling their attacks and punishing them for
+      harming others. When you hit a creature with a melee weapon attack, you
+      can mark the creature until the end of your next turn. This effect ends
+      early if you are incapacitated or you die, or if someone else marks the
+      creature.</p><p>While it is within 5 feet of you, a creature marked by you
+      has disadvantage on any attack roll that doesn’t target you.</p><p>In
+      addition, if a creature marked by you deals damage to anyone other than
+      you, you can make a special melee weapon attack against the marked
+      creature as a bonus action on your next turn. You have advantage on the
+      attack roll, and if it hits, the attack’s weapon deals extra damage to the
+      target equal to half your fighter level.</p><p>Regardless of the number of
+      creatures you mark, you can make this special attack a number of times
+      equal to your Strength modifier (minimum of once), and you regain all
+      expended uses of it when you finish a long rest.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Unwavering Mark
+    img: icons/skills/melee/unarmed-punch-fist-blue.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.UL1CvsL4pi0z2oTu
+    transfer: false
+    _id: PR7ckGT1NRMtc3YY
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration:
+          - None
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1751747651058
+      modifiedTime: 1751747728202
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!items.effects!UL1CvsL4pi0z2oTu.PR7ckGT1NRMtc3YY'
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1751747038476
+  modifiedTime: 1751747918163
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!items!UL1CvsL4pi0z2oTu'
+
