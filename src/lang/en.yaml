@@ -6,6 +6,10 @@ sosly:
     hint: Take a breather? On a breather, you may spend remaining Hit Dice.
     select: Select Dice to Roll
     nohd: No Hit Dice remaining.
+  concentration:
+    title: Concentration
+    confirmation: Your character is concentrating on {spell}. Do you want to end concentration?
   imperiled:
+    title: Imperiled
     confirmation: Your character is imperiled!  You can gain a level of Exhaustion to remain conscious. You currently have {exhaustion} levels of exhaustion.  Do you want to do this?
   networth: Net Worth

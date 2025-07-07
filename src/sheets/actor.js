@@ -115,6 +115,8 @@ export function registerSoSlyActor() {
         }
     });
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
+        actor.handleConcentrationRest();
+
         if (actor.type === 'vehicle' || actor.type === 'npc') {
             return;
         }
@@ -142,8 +144,11 @@ export function registerSoSlyActor() {
             await actor.updateEmbeddedDocuments('Item', updateItems, { isRest: true });
         }
     });
+    Hooks.on('dnd5e.longRest', async (actor, data) => {
+        actor.handleConcentrationRest();
+    });
 
-    Hooks.on('dnd5e.combatRecovery', async (combatant, recoveries /** array **/) => {
+    Hooks.on('dnd5e.combatRecovery', async (combatant, recoveries) => {
         if (!recoveries.includes('turnStart')) {
             return;
         }
@@ -162,6 +167,10 @@ export function registerSoSlyActor() {
             await actor.update({'system.resources.legact.value': legact.max});
             console.log(`SoSly: NPC ${actor.name} is recovering resources at the start of their turn.`);
         }
+    });
+
+    Hooks.on('sosly.breather', async actor => {
+        actor.handleConcentrationRest();
     });
 }
 
@@ -207,6 +216,32 @@ function mixinPlayerCharacterSheet(Actor5e) {
         }
 
         /**
+         * Handle removing concentration effects when the actor takes a rest
+         * @returns {Promise<void>}
+         */
+        async handleConcentrationRest() {
+            const concentrating = this.effects.filter(effect => effect.statuses.has('concentrating'));
+
+            if (concentrating.size === 0) {
+                return;
+            }
+
+            for (const effect of concentrating) {
+                const confirmContent = game.i18n?.format('sosly.concentration.confirmation', {spell: effect.label.replace(/Concentrating:\s+/, '')});
+                const confirmation = await Dialog.confirm({
+                    title: game.i18n?.localize('sosly.concentration.title'),
+                    content: confirmContent
+                });
+
+                if (!confirmation) {
+                    return;
+                }
+
+                await effect.delete();
+            }
+        }
+
+        /**
          * Handle applying/removing the imperiled status.
          * @param {object} changed
          * @param {DocumentModificationContext} options
@@ -240,7 +275,7 @@ function mixinPlayerCharacterSheet(Actor5e) {
             if (!existing && exhaustion < 5) {
                 const confirmContent = game.i18n?.format('sosly.imperiled.confirmation', {exhaustion});
                 const confirmation = await Dialog.confirm({
-                    title: 'Imperiled!',
+                    title: game.i18n?.localize('sosly.imperiled.title'),
                     content: confirmContent
                 });
 
