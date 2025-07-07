@@ -1,0 +1,106 @@
+name: The Severed Lands
+_id: jvSlRmwwsV1xnFdl
+pages:
+  - sort: 100000
+    name: Blood Magic
+    type: text
+    _id: TxmxeO9FslJ1qIle
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>Variant Rule</em></p><p>When you cast a spell using a spell slot,
+        you must expend blood equal to 3 hit points per level of the spell slot
+        used. You can provide this blood in one of three
+        ways:</p><p><strong>Direct Sacrifice.</strong> Take necrotic damage
+        equal to the spell’s level × 1d6. This damage can’t be reduced or
+        prevented and counts as the blood cost for the
+        spell.</p><p><strong>Blood Vials.</strong> Expend stored blood from
+        vials. When you reduce a creature to 0 hit points, you can use a bonus
+        action to collect blood equal to the damage dealt by the killing blow
+        (maximum 30 hit points per vial). You can also fill vials during a rest
+        by taking necrotic damage. Blood loses potency over time—after each long
+        rest, halve the value of stored blood (round
+        down).</p><p><strong>Sacrificial Casting.</strong> When you reduce a
+        creature (other than a Construct, Undead, or Elemental) to 0 hit points
+        with a weapon attack or cantrip, you can immediately cast a spell with a
+        casting time of 1 action as part of the same action. The spell’s level
+        can’t exceed the creature’s Hit Dice.</p><h3>Madness</h3><p>Each time
+        you cast a spell using a spell slot through blood magic, you must make a
+        saving throw (DC = 10 + the spell’s level) using your Spellcasting
+        ability score.</p><p>On a failed save, you may choose to gain a point of
+        madness and suffer an effect on the Madness table (below), or you may
+        choose to gain a point of Exhaustion, instead.</p><p><strong>Blood
+        Surge.</strong> When you roll a natural 20 on your madness saving throw,
+        the spell doesn’t consume a spell slot.</p><p><strong>Hungry
+        Magic.</strong> When you roll a natural 1 on your madness saving throw,
+        the blood magic hungers for more—the spell consumes an additional spell
+        slot of the same level or lower (if available). If you do not have a
+        spell slot to fuel the hunger, you instead take an additional 1d6
+        psychic damage for every spell level of the original
+        spell.</p><p><strong>Recovery.</strong> When you finish a long rest,
+        reduce your madness points by an amount equal to your proficiency bonus.
+        This does not remove any lingering madness effects.</p><h4>Madness
+        Effects</h4><p><strong>Short-Term Madness.</strong> The character has
+        the Frightened, Incapacitated, or Stunned condition (chosen by the DM)
+        for the duration. This condition might be accompanied by alarming
+        behavior or hallucinations. These effects can be suppressed with the
+        calm emotions spell or removed by the lesser restoration
+        spell.</p><p><strong>Long-Term Madness.</strong> The character has
+        Disadvantage on all ability checks for a specific ability score (chosen
+        by the DM) for the duration, stemming from an unwillingness or inability
+        to exert a particular set of abilities. The character might feel
+        enervated and unable to exert much Strength, for example, or become so
+        suspicious of others that Charisma checks are more difficult. These
+        effects can be suppressed with the calm emotions spell or removed by the
+        lesser restoration spell.</p><p><strong>Indefinite Madness.</strong> An
+        indefinite effect is a long-term effect (see above) that lasts until
+        removed by a greater restoration spell. It can be suppressed by a calm
+        emotions spell.</p><h4>Madness</h4><table><tbody><tr><th><p>Madness
+        Points</p></th><th><p>Effect</p></th><th><p>Duration</p></th></tr><tr><td><p>1-2</p></td><td><p>Short-term</p></td><td><p>1d10
+        rounds<span style="font-family:ff-scala-sans-pro,
+        sans-serif">†</span></p></td></tr><tr><td><p>3-4</p></td><td><p>Short-term</p></td><td><p>1d10
+        minutes</p></td></tr><tr><td><p>5-6</p></td><td><p>Long-term</p></td><td><p>1d10
+        hours</p></td></tr><tr><td><p>7-8</p></td><td><p>Long-term</p></td><td><p>1d10
+        days</p></td></tr><tr><td><p>9+</p></td><td><p>Indefinite</p></td><td><p>Permanent</p></td></tr></tbody></table><p><span
+        style="font-family:ff-scala-sans-pro, sans-serif">† At the start of each
+        turn, you can repeat the saving throw to end the effect.</span></p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      n9iY1vD5eGeaHb7l: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1751849840232
+      modifiedTime: 1751850041382
+      lastModifiedBy: n9iY1vD5eGeaHb7l
+    _key: '!journal.pages!jvSlRmwwsV1xnFdl.TxmxeO9FslJ1qIle'
+folder: null
+sort: 0
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1751849834843
+  modifiedTime: 1751849834843
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_key: '!journal!jvSlRmwwsV1xnFdl'
+
