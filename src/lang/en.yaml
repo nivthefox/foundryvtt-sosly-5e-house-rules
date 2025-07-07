@@ -12,4 +12,7 @@ sosly:
   imperiled:
     title: Imperiled
     confirmation: Your character is imperiled!  You can gain a level of Exhaustion to remain conscious. You currently have {exhaustion} levels of exhaustion.  Do you want to do this?
+  madness:
+    label: Madness
+    hint: Enables a madness counter for Player Characters.
   networth: Net Worth

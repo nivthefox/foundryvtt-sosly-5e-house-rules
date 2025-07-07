@@ -87,3 +87,58 @@ th, td {
         white-space: nowrap;
     }
 }
+
+.dnd5e2.sheet:is(.actor) .sidebar {
+    margin-top: -3em;
+
+    .card {
+        margin-top: 5em;
+
+        .madness {
+            position: absolute;
+            right: 0;
+            top: -3em;
+            transform: translateZ(20px);
+
+            .badge {
+                background-image: url(/modules/sosly-5e-house-rules/public/ui/madness-badge.webp);
+                display: block;
+                height: 100px;
+                width: 100px;
+                cursor: pointer;
+                position: relative;
+
+                .value {
+                    background: transparent;
+                    border: none;
+                    display: table-cell;
+                    font-size: 14pt;
+                    padding-top: 1em;
+                    text-align: center;
+                    padding-right: 0.25em;
+                    height: 100px;
+                    width: 100px;
+
+                    &.hidden {
+                        display: none;
+                    }
+                }
+
+                .madness-input {
+                    position: absolute;
+                    border-radius: 50%;
+                    font-size: 14pt;
+                    height: 2em;
+                    width: 2em;
+                    text-align: center;
+                    left: 1.6em;
+                    top: 0.6em;
+
+                    &.hidden {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
