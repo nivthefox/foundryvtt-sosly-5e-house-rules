@@ -8,7 +8,7 @@ export class Breather extends Dialog {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            template: 'modules/sosly-5e-house-rules/templates/breather.hbs',
+            template: 'modules/sosly-5e-house-rules/templates/features/breather/breather.hbs',
             classes: ['sosly', 'dnd5e', 'dialog'],
             height: 'auto'
         });

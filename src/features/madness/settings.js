@@ -1,4 +1,8 @@
-export function registerSettings() {
+/**
+ * Madness Tracking Settings
+ */
+
+export function registerMadnessSettings() {
     game.settings.register('sosly-5e-house-rules', 'madness', {
         name: game.i18n.localize('sosly.madness.label'),
         hint: game.i18n.localize('sosly.madness.hint'),
