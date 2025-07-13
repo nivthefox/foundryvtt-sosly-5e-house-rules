@@ -8,7 +8,7 @@ import { handleCombatRecovery } from './combat-recovery';
 
 export function registerRestEnhancementsFeature() {
     console.log('SoSly 5e House Rules | Registering Rest Enhancements');
-    
+
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
         await handleShortRest(actor, data);
     });

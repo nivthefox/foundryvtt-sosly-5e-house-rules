@@ -7,6 +7,6 @@ import { removeIdentifyButton } from './remove-identify';
 
 export function registerItemIdentificationFeature() {
     console.log('SoSly 5e House Rules | Registering Item Identification');
-    
+
     removeIdentifyButton();
 }

@@ -8,7 +8,7 @@ import { registerMadnessHooks } from './ui';
 
 export function registerMadnessFeature() {
     console.log('SoSly 5e House Rules | Registering Madness Tracking');
-    
+
     registerMadnessSettings();
     registerMadnessHooks();
 }

@@ -28,7 +28,7 @@ function addMadnessTracking(app, el) {
     inputBox.type = 'text';
     inputBox.classList.add('madness-input', 'hidden');
     inputBox.value = app.actor.flags.sosly?.madness || 0;
-    
+
     labelEl.addEventListener('click', () => {
         // hide the label and show the input box
         labelEl.classList.add('hidden');
@@ -67,7 +67,7 @@ export function registerMadnessHooks() {
         addMadnessTracking(app, el);
     });
 
-    // NPCs 
+    // NPCs
     Hooks.on('renderActorSheet5eNPC2', (app, html, data) => {
         const el = html[0];
         addMadnessTracking(app, el);

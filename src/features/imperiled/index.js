@@ -9,9 +9,9 @@ import { handleImperiledUpdate } from './actor-updates';
 
 export function registerImperiledFeature() {
     console.log('SoSly 5e House Rules | Registering Imperiled Condition');
-    
+
     registerImperiledConditions();
-    
+
     Hooks.on('combatTurnChange', async (combat, previous, next) => {
         await handleImperiled(combat, previous, next);
     });
