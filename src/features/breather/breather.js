@@ -1,4 +1,4 @@
-const { DialogV2 } = foundry.applications.api;
+const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
 import {
     findBestHitDie,
@@ -6,72 +6,55 @@ import {
     formatHitDieOptions
 } from './calculations';
 
-export class Breather {
-    static async breatherDialog({actor} = {}) {
-        const context = Breather.#prepareContext(actor);
-        const templateContent = await renderTemplate('modules/sosly-5e-house-rules/templates/features/breather/breather.hbs', context);
-        return new Promise((resolve, reject) => {
-            const dialogOptions = {
-                window: {
-                    title: `${game.i18n.localize('sosly.breather.label')}: ${actor.name}`,
-                    minimizable: false,
-                    resizable: false
-                },
-                position: {
-                    width: 400,
-                    height: 'auto'
-                },
-                content: `<form id="breather-hd">${templateContent}</form>`,
-                modal: true,
-                buttons: [
-                    {
-                        action: 'rest',
-                        icon: 'fas fa-face-exhaling',
-                        label: game.i18n.localize('DND5E.REST.Label'),
-                        callback: (event, button, dialog) => {
-                            const formData = new FormDataExtended(button.form);
-                            resolve(formData.object);
-                        }
-                    },
-                    {
-                        action: 'cancel',
-                        icon: 'fas fa-times',
-                        label: game.i18n.localize('Cancel'),
-                        callback: () => reject()
-                    }
-                ],
-                render: html => {
-                    const rollHitDieHandler = async event => {
-                        event.preventDefault();
-                        const form = event.target.closest('form');
-                        const denom = form.elements.hd.value;
-                        await actor.rollHitDie({ denomination: denom });
-                        // Re-render the dialog content
-                        const newContext = Breather.#prepareContext(actor);
-                        const newContent = await renderTemplate('modules/sosly-5e-house-rules/templates/features/breather/breather.hbs', newContext);
-                        html.find('form').html(newContent);
-                        // Re-bind the event
-                        const newRollButton = html.find('#roll-hd');
-                        newRollButton.click(rollHitDieHandler);
-                    };
+class BreatherDialog extends HandlebarsApplicationMixin(ApplicationV2) {
+    static DEFAULT_OPTIONS = {
+        id: 'breather-dialog',
+        position: { width: 400, height: 'auto' },
+        window: {
+            minimizable: false,
+            resizable: false
+        },
+        actions: {
+            rest: BreatherDialog.rest,
+            cancel: BreatherDialog.cancel,
+            rollHitDie: BreatherDialog.rollHitDie
+        }
+    };
 
-                    const rollButton = html.find('#roll-hd');
-                    rollButton.click(rollHitDieHandler);
-                },
-                close: reject
-            };
+    static PARTS = {
+        form: {
+            template: 'modules/sosly-5e-house-rules/templates/features/breather/breather-form.hbs'
+        }
+    };
 
-            new DialogV2(dialogOptions).render({ force: true });
+    constructor(actor, resolve, reject) {
+        super({
+            window: {
+                title: `${game.i18n.localize('sosly.breather.label')}: ${actor.name}`
+            }
         });
+        this.actor = actor;
+        this.resolve = resolve;
+        this.reject = reject;
     }
 
+    async _preparePartContext(partId, context, options) {
+        context = await super._preparePartContext(partId, context, options);
+        
+        if (partId === 'form') {
+            const breatherContext = this.#prepareBreatherContext();
+            return foundry.utils.mergeObject(context, breatherContext);
+        }
+        
+        return context;
+    }
 
-    static #prepareContext(actor) {
+    #prepareBreatherContext() {
         const context = {};
-        context.isGroup = actor.type === 'group';
+        context.isGroup = this.actor.type === 'group';
 
-        if (actor.type === 'npc') {
-            const hd = actor.system.attributes.hd;
+        if (this.actor.type === 'npc') {
+            const hd = this.actor.system.attributes.hd;
             context.availableHD = { [`d${hd.denomination}`]: hd.value };
             context.canRoll = hd.value > 0;
             context.denomination = `d${hd.denomination}`;
@@ -81,13 +64,53 @@ export class Breather {
             }];
         }
 
-        else if (foundry.utils.hasProperty(actor, 'system.attributes.hd')) {
-            context.availableHD = actor.system.attributes.hd.bySize;
-            context.canRoll = canRollHitDice(context.availableHD);
+        else if (foundry.utils.hasProperty(this.actor, 'system.attributes.hd')) {
+            context.availableHD = this.actor.system.attributes.hd.bySize;
+            context.canRoll = this.actor.system.attributes.hd.value > 0;
             context.denomination = findBestHitDie(context.availableHD);
             context.hdOptions = formatHitDieOptions(context.availableHD, game.i18n.localize('DND5E.available'));
         }
 
         return context;
+    }
+
+    static async rest(event, target) {
+        // Create a chat message for the breather rest
+        const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+        const content = `<p><strong>${this.actor.name}</strong> takes a breather.</p>`;
+        
+        await ChatMessage.create({
+            speaker,
+            content,
+            type: CONST.CHAT_MESSAGE_TYPES.OTHER
+        });
+        
+        this.resolve({ completed: true });
+        this.close({ skipReject: true });
+    }
+
+    static async cancel(event, target) {
+        this.reject();
+        this.close();
+    }
+
+    static async rollHitDie(event, target) {
+        const form = target.closest('form');
+        const denom = form.elements.hd.value;
+        await this.actor.rollHitDie({ denomination: denom });
+        await this.render(false);
+    }
+
+    async close(options = {}) {
+        if (!options.skipReject) this.reject();
+        return super.close(options);
+    }
+}
+
+export class Breather {
+    static async breatherDialog({actor} = {}) {
+        return new Promise((resolve, reject) => {
+            new BreatherDialog(actor, resolve, reject).render({ force: true });
+        });
     }
 }

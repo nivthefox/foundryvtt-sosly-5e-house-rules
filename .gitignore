@@ -1,5 +1,6 @@
-/dist
-/node_modules/
-/packs/
 /.claude
+/dist
+/node_modules
+/packs
+/test-results
 /CLAUDE.md

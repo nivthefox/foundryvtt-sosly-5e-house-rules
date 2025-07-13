@@ -7,7 +7,7 @@
         <select name="hd">
             {{ selectOptions hdOptions selected=denomination }}
         </select>
-        <button type="button" id="roll-hd" {{#unless canRoll}}disabled{{/unless}}>
+        <button type="button" data-action="rollHitDie" {{#unless canRoll}}disabled{{/unless}}>
             <i class="fas fa-dice-d20"></i> {{ localize 'DND5E.Roll' }}
         </button>
     </div>

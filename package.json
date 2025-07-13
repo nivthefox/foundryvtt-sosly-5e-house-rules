@@ -9,6 +9,10 @@
         "compose:packs": "node ./tools/convert_ldb_to_yaml.mjs",
         "lint": "npm run lint:code",
         "lint:code": "npx eslint -c .eslintrc.json src/**/*.js",
+        "test": "npm run test:integration",
+        "test:integration": "playwright test",
+        "test:integration:headed": "playwright test --headed",
+        "test:integration:ui": "playwright test --ui",
         "watch": "npm-run-all --parallel watch:*",
         "watch:code": "npm-watch build:code",
         "watch:lint": "npm-watch lint:code",
@@ -74,6 +78,7 @@
     },
     "devDependencies": {
         "@foundryvtt/foundryvtt-cli": "^1.0.3",
+        "@playwright/test": "^1.54.1",
         "@rollup/plugin-alias": "^5.1.0",
         "@rollup/plugin-json": "^6.1.0",
         "@rollup/plugin-node-resolve": "^15.2.3",

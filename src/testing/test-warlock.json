@@ -1,0 +1,149 @@
+{
+  "name": "Warlock",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": { "value": 16, "proficient": 0 },
+      "dex": { "value": 14, "proficient": 0 },
+      "con": { "value": 15, "proficient": 1 },
+      "int": { "value": 12, "proficient": 0 },
+      "wis": { "value": 13, "proficient": 1 },
+      "cha": { "value": 10, "proficient": 0 }
+    },
+    "attributes": {
+      "hp": { "value": 45, "max": 50, "temp": 0, "tempmax": 0 },
+      "ac": { "flat": 16, "calc": "flat", "formula": "" },
+      "movement": { "walk": 30, "climb": 15, "swim": 15 },
+      "exhaustion": 0,
+      "hd": {
+        "d10": { "available": 3, "spent": 2 }
+      }
+    },
+    "details": {
+      "biography": { "value": "A test fighter for breather testing" },
+      "level": 5,
+      "xp": { "value": 6500 }
+    },
+    "traits": {
+      "size": "med",
+      "weaponProf": { "value": ["sim", "mar"] },
+      "armorProf": { "value": ["lgt", "med", "hvy", "shl"] }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 50,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "spells": {
+      "spell1": { "value": 0, "override": null, "max": 0 },
+      "spell2": { "value": 0, "override": null, "max": 0 },
+      "spell3": { "value": 0, "override": null, "max": 0 },
+      "spell4": { "value": 0, "override": null, "max": 0 },
+      "spell5": { "value": 0, "override": null, "max": 0 },
+      "spell6": { "value": 0, "override": null, "max": 0 },
+      "spell7": { "value": 0, "override": null, "max": 0 },
+      "spell8": { "value": 0, "override": null, "max": 0 },
+      "spell9": { "value": 0, "override": null, "max": 0 },
+      "pact": { "value": 0, "override": null, "max": 0, "level": 1 }
+    },
+    "bonuses": {
+      "mwak": { "attack": "", "damage": "" },
+      "rwak": { "attack": "", "damage": "" },
+      "msak": { "attack": "", "damage": "" },
+      "rsak": { "attack": "", "damage": "" },
+      "abilities": { "check": "", "save": "", "skill": "" },
+      "spell": { "dc": "" }
+    }
+  },
+  "items": [
+    {
+      "name": "Warlock",
+      "type": "class",
+      "img": "modules/dnd-players-handbook/assets/icons/classes/warlock.webp",
+      "system": {
+        "description": { "value": "Warlock class for testing" },
+        "levels": 5,
+        "hd": {
+          "value": 3,
+          "denomination": "d8",
+          "additional": ""
+        },
+        "saves": ["wis", "cha"],
+        "skills": {
+          "choices": [],
+          "number": 2,
+          "value": ["arc", "inv"]
+        },
+        "spellcasting": {
+          "progression": "pact",
+          "ability": "cha"
+        }
+      }
+    },
+    {
+      "name": "Longsword",
+      "type": "weapon",
+      "img": "icons/weapons/swords/sword-broad-steel.webp",
+      "system": {
+        "description": { "value": "A versatile longsword" },
+        "quantity": 1,
+        "weight": 3,
+        "price": { "value": 15, "denomination": "gp" },
+        "attunement": 0,
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "weaponType": "martialM",
+        "baseItem": "longsword",
+        "properties": ["ver"],
+        "proficient": 1,
+        "damage": {
+          "parts": [["1d8 + @mod", "slashing"]],
+          "versatile": "1d10 + @mod"
+        },
+        "range": { "value": null, "long": null, "units": "" },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "chatFlavor": "",
+        "critical": { "threshold": null, "damage": "" },
+        "formula": "",
+        "save": { "ability": "", "dc": null, "scaling": "spell" }
+      }
+    },
+    {
+      "name": "Chain Mail",
+      "type": "equipment",
+      "img": "icons/equipment/chest/breastplate-layered-steel.webp",
+      "system": {
+        "description": { "value": "Heavy armor made of interlinking metal rings" },
+        "quantity": 1,
+        "weight": 55,
+        "price": { "value": 75, "denomination": "gp" },
+        "attunement": 0,
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "type": {
+          "value": "heavy",
+          "baseItem": "chainmail"
+        },
+        "armor": {
+          "value": 16,
+          "dex": 0
+        },
+        "hp": { "value": 0, "max": 0, "dt": null, "conditions": "" },
+        "speed": { "value": null, "conditions": "" },
+        "strength": 13,
+        "stealth": true,
+        "proficient": 1
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "ownership": { "default": 0 }
+}
