@@ -3,4 +3,5 @@
 /node_modules
 /packs
 /test-results
+/playwright-report
 /CLAUDE.md
