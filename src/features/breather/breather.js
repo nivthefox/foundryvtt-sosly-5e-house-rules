@@ -35,8 +35,7 @@ export class Breather {
                     }
                 ],
                 render: html => {
-                    const rollButton = html.find('#roll-hd');
-                    rollButton.click(async event => {
+                    const rollHitDieHandler = async event => {
                         event.preventDefault();
                         const form = event.target.closest('form');
                         const denom = form.elements.hd.value;
@@ -47,8 +46,11 @@ export class Breather {
                         html.find('form').html(newContent);
                         // Re-bind the event
                         const newRollButton = html.find('#roll-hd');
-                        newRollButton.click(arguments.callee);
-                    });
+                        newRollButton.click(rollHitDieHandler);
+                    };
+
+                    const rollButton = html.find('#roll-hd');
+                    rollButton.click(rollHitDieHandler);
                 },
                 close: reject
             };
