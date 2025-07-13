@@ -1,29 +1,18 @@
-<form id="breather-hd" class="dialog-content" onsubmit="event.preventDefault();">
-    <p>{{ localize 'sosly.breather.hint' }}</p>
+<p>{{ localize 'sosly.breather.hint' }}</p>
 
-    {{#if availableHD}}
-    <div class="form-group">
-        <label>{{ localize 'sosly.breather.select' }}</label>
-        <div class="form-fields">
-            <select name="hd">
-                {{ selectOptions hdOptions selected=denomination }}
-            </select>
-            <button id="roll-hd" {{#unless canRoll}}disabled{{/unless}}>
-                <i class="fas fa-dice-d20"></i> {{ localize 'DND5E.Roll' }}
-            </button>
-        </div>
-        {{#unless canRoll}}
-            <p class="notes">{{ localize 'sosly.breather.nohd'}}</p>
-        {{/unless}}
+{{#if availableHD}}
+<div class="form-group">
+    <label>{{ localize 'sosly.breather.select' }}</label>
+    <div class="form-fields">
+        <select name="hd">
+            {{ selectOptions hdOptions selected=denomination }}
+        </select>
+        <button type="button" id="roll-hd" {{#unless canRoll}}disabled{{/unless}}>
+            <i class="fas fa-dice-d20"></i> {{ localize 'DND5E.Roll' }}
+        </button>
     </div>
-    {{/if}}
-
-    <div class="dialog-buttons">
-        {{#each buttons as |button id|}}
-            <button class="dialog-button" data-button="{{id}}">
-                {{{button.icon}}}
-                {{{button.label}}}
-            </button>
-        {{/each}}
-    </div>
-</form>
+    {{#unless canRoll}}
+        <p class="notes">{{ localize 'sosly.breather.nohd'}}</p>
+    {{/unless}}
+</div>
+{{/if}}

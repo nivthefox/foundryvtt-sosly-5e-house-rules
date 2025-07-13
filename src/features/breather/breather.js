@@ -1,25 +1,69 @@
-export class Breather extends Dialog {
-    constructor(actor, dialogData = {}, options = {}) {
-        super(dialogData, options);
+const { DialogV2 } = foundry.applications.api;
 
-        this.actor = actor;
-        this.denom = null;
-    }
+export class Breather {
+    static async breatherDialog({actor} = {}) {
+        const context = Breather.#prepareContext(actor);
+        const templateContent = await renderTemplate('modules/sosly-5e-house-rules/templates/features/breather/breather.hbs', context);
+        return new Promise((resolve, reject) => {
+            const dialogOptions = {
+                window: {
+                    title: `${game.i18n.localize('sosly.breather.label')}: ${actor.name}`,
+                    minimizable: false,
+                    resizable: false
+                },
+                position: {
+                    width: 400,
+                    height: 'auto'
+                },
+                content: `<form id="breather-hd">${templateContent}</form>`,
+                modal: true,
+                buttons: [
+                    {
+                        action: 'rest',
+                        icon: 'fas fa-face-exhaling',
+                        label: game.i18n.localize('DND5E.REST.Label'),
+                        callback: (event, button, dialog) => {
+                            const formData = new FormDataExtended(button.form);
+                            resolve(formData.object);
+                        }
+                    },
+                    {
+                        action: 'cancel',
+                        icon: 'fas fa-times',
+                        label: game.i18n.localize('Cancel'),
+                        callback: () => reject()
+                    }
+                ],
+                render: html => {
+                    const rollButton = html.find('#roll-hd');
+                    rollButton.click(async event => {
+                        event.preventDefault();
+                        const form = event.target.closest('form');
+                        const denom = form.elements.hd.value;
+                        await actor.rollHitDie({ denomination: denom });
+                        // Re-render the dialog content
+                        const newContext = Breather.#prepareContext(actor);
+                        const newContent = await renderTemplate('modules/sosly-5e-house-rules/templates/features/breather/breather.hbs', newContext);
+                        html.find('form').html(newContent);
+                        // Re-bind the event
+                        const newRollButton = html.find('#roll-hd');
+                        newRollButton.click(arguments.callee);
+                    });
+                },
+                close: reject
+            };
 
-    static get defaultOptions() {
-        return foundry.utils.mergeObject(super.defaultOptions, {
-            template: 'modules/sosly-5e-house-rules/templates/features/breather/breather.hbs',
-            classes: ['sosly', 'dnd5e', 'dialog'],
-            height: 'auto'
+            new DialogV2(dialogOptions).render({ force: true });
         });
     }
 
-    getData() {
-        const context = super.getData();
-        context.isGroup = this.actor.type === 'group';
 
-        if (this.actor.type === 'npc') {
-            const hd = this.actor.system.attributes.hd;
+    static #prepareContext(actor) {
+        const context = {};
+        context.isGroup = actor.type === 'group';
+
+        if (actor.type === 'npc') {
+            const hd = actor.system.attributes.hd;
             context.availableHD = { [`d${hd.denomination}`]: hd.value };
             context.canRoll = hd.value > 0;
             context.denomination = `d${hd.denomination}`;
@@ -29,14 +73,12 @@ export class Breather extends Dialog {
             }];
         }
 
-        else if (foundry.utils.hasProperty(this.actor, 'system.attributes.hd')) {
-            context.availableHD = this.actor.system.attributes.hd.bySize;
-            context.canRoll = this.actor.system.attributes.hd.value > 0;
+        else if (foundry.utils.hasProperty(actor, 'system.attributes.hd')) {
+            context.availableHD = actor.system.attributes.hd.bySize;
+            context.canRoll = actor.system.attributes.hd.value > 0;
 
             const dice = Object.entries(context.availableHD);
-            context.denomination = (context.availableHD[this.denom] > 0)
-                ? this.denom
-                : dice.find(([k, v]) => v > 0)?.[0];
+            context.denomination = dice.find(([k, v]) => v > 0)?.[0];
 
             context.hdOptions = Object.entries(context.availableHD).map(([value, number]) => ({
                 value, label: `${value} (${number} ${game.i18n.localize('DND5E.available')})`
@@ -44,45 +86,5 @@ export class Breather extends Dialog {
         }
 
         return context;
-    }
-
-    activateListeners(html) {
-        super.activateListeners(html);
-
-        const button = html.find('#roll-hd');
-        button.click(this._onRollHitDie.bind(this));
-    }
-
-    async _onRollHitDie(event) {
-        event.preventDefault();
-        const button = event.currentTarget;
-        this.denom = button.form.hd.value;
-        await this.actor.rollHitDie({ denomination: this.denom });
-        this.render();
-    }
-
-    static async breatherDialog({actor} = {}) {
-        return new Promise((resolve, reject) => {
-            const dialogue = new Breather(actor, {
-                title: `${game.i18n.localize('sosly.breather.label')}: ${actor.name}`,
-                buttons: {
-                    rest: {
-                        icon: '<i class="fas fa-face-exhaling"></i>',
-                        label: game.i18n.localize('DND5E.Rest'),
-                        callback: html => {
-                            const formData = new FormDataExtended(html.find('form')[0]);
-                            resolve(formData.object);
-                        }
-                    },
-                    cancel: {
-                        icon: '<i class="fas fa-times"></i>',
-                        label: game.i18n.localize('Cancel'),
-                        callback: reject
-                    }
-                },
-                close: reject
-            });
-            dialogue.render(true);
-        });
     }
 }
