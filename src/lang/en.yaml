@@ -2,17 +2,29 @@ sosly:
   conditions:
     Imperiled: Imperiled
   breather:
-    label: Breather
-    hint: Take a breather? On a breather, you may spend remaining Hit Dice.
+    label: Breathers
+    hint: Enables the breather rest system that allows spending Hit Dice for recovery without a full short rest.
+    title: Breather
+    confirmation: Take a breather? On a breather, you may spend remaining Hit Dice.
     select: Select Dice to Roll
     nohd: No Hit Dice remaining.
   concentration:
+    label: Concentration Management
+    hint: Automates concentration management during rests.
     title: Concentration
     confirmation: Your character is concentrating on {spell}. Do you want to end concentration?
   imperiled:
+    label: Imperiled Condition
+    hint: Enables the Imperiled condition that triggers when characters reach 0 hit points.
     title: Imperiled
     confirmation: Your character is imperiled!  You can gain a level of Exhaustion to remain conscious. You currently have {exhaustion} levels of exhaustion.  Do you want to do this?
   madness:
     label: Madness
     hint: Enables a madness counter for Player Characters.
+  rest-enhancements:
+    label: Gritty Rest Mechanics
+    hint: Enables gritty rest mechanics that change how short and long rests function.
+  encumbrance:
+    label: Equipped Encumbrance
+    hint: Equipped items count as half weight for encumbrance calculations.
   networth: Net Worth
