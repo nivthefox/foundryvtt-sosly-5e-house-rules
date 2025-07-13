@@ -11,15 +11,10 @@ export function registerEncumbranceFeature() {
 
     registerEncumbranceHooks();
 
-    // Use libWrapper to wrap the prepareDerivedData method
-    libWrapper.register('sosly-5e-house-rules', 'CONFIG.Actor.documentClass.prototype.prepareDerivedData', function(wrapped, ...args) {
-        // Call the original prepareDerivedData method
-        const result = wrapped(...args);
-
-        // Apply custom encumbrance calculations
-        const rollData = this.system.parent.getRollData({deterministic: true});
-        prepareEncumbrance.call(this.system, rollData);
-
-        return result;
-    }, 'WRAPPER');
+    // Use libWrapper to wrap the D&D 5e system's prepareEncumbrance method
+    // This is more targeted than wrapping prepareDerivedData
+    libWrapper.register('sosly-5e-house-rules', 'dnd5e.dataModels.actor.AttributesFields.prepareEncumbrance', function(wrapped, rollData, options = {}) {
+        // Apply our custom encumbrance calculations instead of the system's
+        prepareEncumbrance.call(this, rollData, options);
+    }, 'OVERRIDE');
 }
