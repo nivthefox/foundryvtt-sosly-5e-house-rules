@@ -3,6 +3,13 @@
  * Equipped items weigh half as much as carried items
  */
 
+import {
+    calculateItemWeight,
+    calculateCurrencyWeight,
+    calculateEncumbranceThreshold,
+    calculateEncumbrancePercentages
+} from './calculations';
+
 /**
  * Calculate encumbrance details for an Actor (for use in mixin).
  * Equipped items weigh half as much as carried items.
@@ -25,16 +32,16 @@ export function prepareEncumbrance(rollData, { validateItem } = {}) {
         .reduce((weight, item) => {
             const isEquipped = item.system.equipped;
             const itemWeight = (item.system.totalWeightIn?.(baseUnits[unitSystem]) ?? 0);
-            return weight + (isEquipped ? Math.ceil(itemWeight / 2) : itemWeight);
+            return weight + calculateItemWeight(itemWeight, isEquipped);
         }, 0);
 
     // [Optional] add Currency Weight (for non-transformed actors)
     const currency = this.currency;
     if (game.settings.get('dnd5e', 'currencyWeight') && currency) {
-        const numCoins = Object.values(currency).reduce((val, denom) => val + Math.max(denom, 0), 0);
         const currencyPerWeight = config.currencyPerWeight[unitSystem];
+        const currencyWeight = calculateCurrencyWeight(currency, currencyPerWeight);
         weight += dnd5e.utils.convertWeight(
-            numCoins / currencyPerWeight,
+            currencyWeight,
             config.baseUnits.default[unitSystem],
             baseUnits[unitSystem]
         );
@@ -58,7 +65,7 @@ export function prepareEncumbrance(rollData, { validateItem } = {}) {
         if (threshold === 'maximum') maximumMultiplier = multiplier;
         if (this.parent.type === 'vehicle') base = this.attributes.capacity.cargo;
         else multiplier *= (config.threshold[threshold]?.[unitSystem] ?? 1) * sizeMod;
-        return (base * multiplier).toNearest(0.1) + bonus;
+        return calculateEncumbranceThreshold(base, multiplier, bonus);
     };
 
     // Populate final Encumbrance values
@@ -70,10 +77,18 @@ export function prepareEncumbrance(rollData, { validateItem } = {}) {
     };
     encumbrance.max = encumbrance.thresholds.maximum;
     encumbrance.mod = (sizeMod * maximumMultiplier).toNearest(0.1);
+
+    const percentages = calculateEncumbrancePercentages(
+        encumbrance.value,
+        encumbrance.thresholds.encumbered,
+        encumbrance.thresholds.heavilyEncumbered,
+        encumbrance.max
+    );
+
     encumbrance.stops = {
-        encumbered: Math.clamp((encumbrance.thresholds.encumbered * 100) / encumbrance.max, 0, 100),
-        heavilyEncumbered: Math.clamp((encumbrance.thresholds.heavilyEncumbered * 100) / encumbrance.max, 0, 100)
+        encumbered: percentages.encumbered,
+        heavilyEncumbered: percentages.heavilyEncumbered
     };
-    encumbrance.pct = Math.clamp((encumbrance.value * 100) / encumbrance.max, 0, 100);
-    encumbrance.encumbered = encumbrance.value > encumbrance.heavilyEncumbered;
+    encumbrance.pct = percentages.current;
+    encumbrance.encumbered = encumbrance.value > encumbrance.thresholds.heavilyEncumbered;
 }

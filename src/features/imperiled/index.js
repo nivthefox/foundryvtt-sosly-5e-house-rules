@@ -7,12 +7,18 @@ import { registerImperiledSettings } from './settings';
 import { registerImperiledConditions } from './conditions';
 import { handleImperiled } from './combat';
 import { handleImperiledUpdate } from './actor-updates';
+import { registerImperiledTests } from './quench';
 
 export function registerImperiledFeature() {
     console.log('SoSly 5e House Rules | Registering Imperiled Condition');
 
     registerImperiledSettings();
     registerImperiledConditions();
+
+    // Register Quench tests if Quench module is available
+    if (game.modules.get('quench')?.active) {
+        registerImperiledTests();
+    }
 
     Hooks.on('combatTurnChange', async (combat, previous, next) => {
         if (game.settings.get('sosly-5e-house-rules', 'imperiled')) {

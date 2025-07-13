@@ -1,5 +1,11 @@
 const { DialogV2 } = foundry.applications.api;
 
+import {
+    findBestHitDie,
+    canRollHitDice,
+    formatHitDieOptions
+} from './calculations';
+
 export class Breather {
     static async breatherDialog({actor} = {}) {
         const context = Breather.#prepareContext(actor);
@@ -77,14 +83,9 @@ export class Breather {
 
         else if (foundry.utils.hasProperty(actor, 'system.attributes.hd')) {
             context.availableHD = actor.system.attributes.hd.bySize;
-            context.canRoll = actor.system.attributes.hd.value > 0;
-
-            const dice = Object.entries(context.availableHD);
-            context.denomination = dice.find(([k, v]) => v > 0)?.[0];
-
-            context.hdOptions = Object.entries(context.availableHD).map(([value, number]) => ({
-                value, label: `${value} (${number} ${game.i18n.localize('DND5E.available')})`
-            }));
+            context.canRoll = canRollHitDice(context.availableHD);
+            context.denomination = findBestHitDie(context.availableHD);
+            context.hdOptions = formatHitDieOptions(context.availableHD, game.i18n.localize('DND5E.available'));
         }
 
         return context;

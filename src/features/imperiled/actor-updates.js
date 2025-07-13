@@ -4,6 +4,12 @@
  */
 
 import {id as module_id} from '../../../module.json';
+import {
+    shouldOfferImperiledChoice,
+    shouldRemoveImperiled,
+    calculateImperiledExhaustion,
+    generateImperiledMessage
+} from './calculations';
 
 /**
  * Handle imperiled condition when actor is updated
@@ -26,11 +32,11 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
 
     const existing = actor.effects.get(dnd5e.utils.staticID('dnd5eimperiled'));
 
-    if (hp.value > 0 && existing) {
+    if (shouldRemoveImperiled(hp.value, !!existing)) {
         await existing.delete();
 
         const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-            text: `${actor.name} is no longer imperiled.`
+            text: generateImperiledMessage(actor.name, 'removed')
         });
         await ChatMessage.create({
             user: game.user.id,
@@ -44,7 +50,7 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
         return;
     }
 
-    if (!existing && exhaustion < 5) {
+    if (shouldOfferImperiledChoice(hp.value, exhaustion, !!existing)) {
         const confirmContent = game.i18n?.format('sosly.imperiled.confirmation', {exhaustion});
         const confirmation = await Dialog.confirm({
             title: game.i18n?.localize('sosly.imperiled.title'),
@@ -60,10 +66,10 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
         const effect = await ActiveEffect.implementation.fromStatusEffect('imperiled');
         await ActiveEffect.implementation.create(effect, { parent: actor, keepId: true});
 
-        await actor.update({'system.attributes.exhaustion': exhaustion + 1});
+        await actor.update({'system.attributes.exhaustion': calculateImperiledExhaustion(exhaustion)});
 
         const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-            text: `${actor.name} has gained a level of Exhaustion to remain conscious!`
+            text: generateImperiledMessage(actor.name, 'gained')
         });
         await ChatMessage.create({
             user: game.user.id,
