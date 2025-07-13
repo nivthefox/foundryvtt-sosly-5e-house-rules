@@ -1,4 +1,3 @@
-import {registerSoSlyActor} from "./sheets/actor";
 import {registerBreatherFeature} from './features/breather/index';
 import {registerNetworthFeature} from './features/networth/index';
 import {registerMadnessFeature} from './features/madness/index';
@@ -7,9 +6,10 @@ import {registerConcentrationFeature} from './features/concentration/index';
 import {registerRestEnhancementsFeature} from './features/rest-enhancements/index';
 import {registerToolsFeature} from './features/tools/index';
 import {registerItemIdentificationFeature} from './features/item-identification/index';
+import {registerEncumbranceFeature} from './features/encumbrance/index';
 
 Hooks.once('init', async () => {
-    registerSoSlyActor();
+    registerEncumbranceFeature();
     registerBreatherFeature();
     registerNetworthFeature();
     registerMadnessFeature();

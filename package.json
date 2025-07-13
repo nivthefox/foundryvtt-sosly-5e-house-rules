@@ -8,7 +8,7 @@
         "clean": "del-cli dist packs",
         "compose:packs": "node ./tools/convert_ldb_to_yaml.mjs",
         "lint": "npm run lint:code",
-        "lint:code": "npx eslint -c .eslintrc.json src/*/**.js",
+        "lint:code": "npx eslint -c .eslintrc.json src/**/*.js",
         "watch": "npm-run-all --parallel watch:*",
         "watch:code": "npm-watch build:code",
         "watch:lint": "npm-watch lint:code",
