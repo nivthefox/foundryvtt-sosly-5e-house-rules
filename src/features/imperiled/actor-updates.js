@@ -59,11 +59,8 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
 
         const effect = await ActiveEffect.implementation.fromStatusEffect('imperiled');
         await ActiveEffect.implementation.create(effect, { parent: actor, keepId: true});
-        await actor.update({system: {
-            attributes: {
-                exhaustion: exhaustion + 1
-            }
-        }});
+
+        await actor.update({'system.attributes.exhaustion': exhaustion + 1});
 
         const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
             text: `${actor.name} has gained a level of Exhaustion to remain conscious!`

@@ -64,14 +64,7 @@ export async function handleImperiled(combat, previous, next) {
         return;
     }
 
-    const change = {
-        system: {
-            attributes: {
-                exhaustion: exhaustion + 1
-            }
-        }
-    };
-    actor.update(change);
+    await actor.update({ 'system.attributes.exhaustion': exhaustion + 1 });
     const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
         text: `${actor.name} has gained a level of Exhaustion to remain conscious!`
     });
