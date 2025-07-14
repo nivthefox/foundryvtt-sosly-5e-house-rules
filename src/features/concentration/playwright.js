@@ -6,10 +6,9 @@ test.describe('Concentration Management', () => {
         await loginUser(page, 'Gamemaster');
     });
 
-
-    test('should prompt for concentration removal during rests', async ({ page }) => {
+    test('should prompt for concentration removal during short rest', async ({ page }) => {
         // Create test actor with spell slots
-        const actorId = await createActor(page, 'Concentration Test Actor', 'character', {
+        const actorId = await createActor(page, 'Concentration Short Rest Test', 'character', {
             system: {
                 attributes: {
                     hp: {
@@ -37,74 +36,134 @@ test.describe('Concentration Management', () => {
         await page.waitForSelector('.sheet.actor', { timeout: 5000 });
         const sheet = await page.locator('.sheet.actor');
 
-        // Short Rest
-        {
-            // Cast the spell and wait for the dialog to appear
-            await castConcentrationSpell(page, actorId);
+        // Cast the spell and wait for the dialog to appear
+        await castConcentrationSpell(page, actorId);
 
-            // Verify concentration effect is applied
-            expect(await hasConcentration(page, actorId)).toBe(true);
+        // Verify concentration effect is applied
+        expect(await hasConcentration(page, actorId)).toBe(true);
 
-            // Trigger breather
-            await sheet.locator('button.short-rest').click();
+        // Trigger short rest
+        await sheet.locator('button.short-rest').click();
 
-            // Wait for breather dialog to appear
-            await page.waitForSelector('dialog.short-rest', {timeout: 5000});
-            await page.click('dialog.short-rest button[name="rest"]');
-            await page.waitForSelector('dialog.short-rest', {state: 'detached'});
+        // Wait for short rest dialog to appear
+        await page.waitForSelector('dialog.short-rest', {timeout: 5000});
+        await page.click('dialog.short-rest button[name="rest"]');
+        await page.waitForSelector('dialog.short-rest', {state: 'detached'});
 
-            // End concentration
-            await endConcentration(page);
+        // End concentration
+        await endConcentration(page);
 
-            // Verify concentration effect is removed
-            expect(await hasConcentration(page, actorId)).toBe(false);
+        // Verify concentration effect is removed
+        expect(await hasConcentration(page, actorId)).toBe(false);
+    });
+
+    test('should prompt for concentration removal during long rest', async ({ page }) => {
+        // Create test actor with spell slots
+        const actorId = await createActor(page, 'Concentration Long Rest Test', 'character', {
+            system: {
+                attributes: {
+                    hp: {
+                        value: 10,
+                        max: 10,
+                    }
+                }
+            },
+        });
+
+        // Create concentration spell
+        await createSpell(page, actorId, 'Concentration Spell', {
+            system: {
+                level: 0,
+                properties: ['concentration']
+            }
+        });
+
+        // Open actor sheet
+        await page.evaluate(actorId => {
+            const actor = game.actors.get(actorId);
+            actor.sheet.render(true);
+        }, actorId);
+
+        await page.waitForSelector('.sheet.actor', { timeout: 5000 });
+        const sheet = await page.locator('.sheet.actor');
+
+        // Cast the spell and wait for the dialog to appear
+        await castConcentrationSpell(page, actorId);
+
+        // Verify concentration effect is applied
+        expect(await hasConcentration(page, actorId)).toBe(true);
+
+        // Trigger long rest
+        await sheet.locator('button.long-rest').click();
+
+        // Wait for long rest dialog to appear
+        await page.waitForSelector('dialog.long-rest', {timeout: 5000});
+        await page.click('dialog.long-rest button[name="rest"]');
+        await page.waitForSelector('dialog.long-rest', {state: 'detached'});
+
+        // End concentration
+        await endConcentration(page);
+
+        // Verify concentration effect is removed
+        expect(await hasConcentration(page, actorId)).toBe(false);
+    });
+
+    test('should prompt for concentration removal during breather', async ({ page }) => {
+        // Skip if breather is disabled
+        const breatherEnabled = await getModuleSetting(page, 'breather');
+        if (!breatherEnabled) {
+            test.skip();
+            return;
         }
 
-        // Long Rest
-        {
-            // Cast the spell and wait for the dialog to appear
-            await castConcentrationSpell(page, actorId);
+        // Create test actor with spell slots
+        const actorId = await createActor(page, 'Concentration Breather Test', 'character', {
+            system: {
+                attributes: {
+                    hp: {
+                        value: 10,
+                        max: 10,
+                    }
+                }
+            },
+        });
 
-            // Verify concentration effect is applied
-            expect(await hasConcentration(page, actorId)).toBe(true);
+        // Create concentration spell
+        await createSpell(page, actorId, 'Concentration Spell', {
+            system: {
+                level: 0,
+                properties: ['concentration']
+            }
+        });
 
-            // Trigger breather
-            await sheet.locator('button.long-rest').click();
+        // Open actor sheet
+        await page.evaluate(actorId => {
+            const actor = game.actors.get(actorId);
+            actor.sheet.render(true);
+        }, actorId);
 
-            // Wait for breather dialog to appear
-            await page.waitForSelector('dialog.long-rest', {timeout: 5000});
-            await page.click('dialog.long-rest button[name="rest"]');
-            await page.waitForSelector('dialog.long-rest', {state: 'detached'});
+        await page.waitForSelector('.sheet.actor', { timeout: 5000 });
+        const sheet = await page.locator('.sheet.actor');
 
-            // End concentration
-            await endConcentration(page);
+        // Cast the spell and wait for the dialog to appear
+        await castConcentrationSpell(page, actorId);
 
-            // Verify concentration effect is removed
-            expect(await hasConcentration(page, actorId)).toBe(false);
-        }
+        // Verify concentration effect is applied
+        expect(await hasConcentration(page, actorId)).toBe(true);
 
-        // Breather
-        if (await getModuleSetting(page, 'breather')) {
-            // Cast the spell and wait for the dialog to appear
-            await castConcentrationSpell(page, actorId);
+        // Trigger breather
+        await sheet.locator('button.breather-button').click();
 
-            // Verify concentration effect is applied
-            expect(await hasConcentration(page, actorId)).toBe(true);
+        // Wait for breather dialog to appear
+        await page.waitForSelector('div#breather-dialog', {timeout: 5000});
+        await page.click('div#breather-dialog button[data-action="rest"]');
+        await page.waitForSelector('div#breather-dialog', {state: 'detached'});
 
-            // Trigger breather
-            await sheet.locator('button.breather-button').click();
+        // End concentration
+        await endConcentration(page);
 
-            // Wait for breather dialog to appear
-            await page.waitForSelector('div#breather-dialog', {timeout: 5000});
-            await page.click('div#breather-dialog button[data-action="rest"]');
-            await page.waitForSelector('div#breather-dialog', {state: 'detached'});
-
-            // End concentration
-            await endConcentration(page);
-
-            // Verify concentration effect is removed
-            expect(await hasConcentration(page, actorId)).toBe(false);
-        }
+        // Verify concentration effect is removed
+        expect(await hasConcentration(page, actorId)).toBe(false);
     });
 });
 
