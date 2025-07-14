@@ -1,0 +1,102 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  playwright-tests:
+    machine:
+      image: ubuntu-2204:2023.10.1
+    resource_class: medium
+    
+    steps:
+      - checkout
+      
+      - node/install:
+          node-version: "20"
+      
+      - node/install-packages:
+          pkg-manager: npm
+          
+      - run:
+          name: Build module
+          command: npm run build
+          
+      - run:
+          name: Install Playwright browsers
+          command: npx playwright install chromium
+          
+      - run:
+          name: Start FoundryVTT with Docker Compose
+          command: |
+            # Set required environment variables for Docker Compose
+            export FOUNDRY_USERNAME="${FOUNDRY_USERNAME}"
+            export FOUNDRY_PASSWORD="${FOUNDRY_PASSWORD}"
+            export FOUNDRY_LICENSE_KEY="${FOUNDRY_LICENSE_KEY}"
+            
+            # Start the services
+            docker compose -f docker-compose.test.yml up -d
+          environment:
+            FOUNDRY_USERNAME: ${FOUNDRY_USERNAME}
+            FOUNDRY_PASSWORD: ${FOUNDRY_PASSWORD}
+            FOUNDRY_LICENSE_KEY: ${FOUNDRY_LICENSE_KEY}
+            
+      - run:
+          name: Wait for FoundryVTT to start
+          command: |
+            echo "Waiting for FoundryVTT to start..."
+            for i in {1..60}; do
+              if curl -f http://localhost:30000; then
+                echo "FoundryVTT is ready!"
+                break
+              fi
+              echo "Waiting... ($i/60)"
+              sleep 5
+            done
+            
+            # Give it a few more seconds to fully initialize
+            sleep 10
+            
+      - run:
+          name: Install sosly module
+          command: |
+            echo "Installing sosly module..."
+            docker compose -f docker-compose.test.yml cp ./ foundry:/data/Data/modules/sosly-5e-house-rules/
+            
+      - run:
+          name: Configure Foundry
+          command: node tools/setup_foundry.mjs
+          
+      - run:
+          name: Run integration tests
+          command: npm run test:integration
+          
+      - store_artifacts:
+          path: playwright-report
+          destination: playwright-report
+          
+      - store_artifacts:
+          path: test-results
+          destination: test-failures
+          
+      - run:
+          name: Docker logs on failure
+          command: docker compose -f docker-compose.test.yml logs
+          when: on_fail
+          
+      - run:
+          name: Stop containers
+          command: docker compose -f docker-compose.test.yml down
+          when: always
+
+workflows:
+  test:
+    jobs:
+      - playwright-tests:
+          context:
+            - foundry-credentials
+          filters:
+            branches:
+              only:
+                - main
+                - /pull\/.*/
