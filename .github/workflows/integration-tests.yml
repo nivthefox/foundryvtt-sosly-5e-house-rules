@@ -1,10 +1,11 @@
-name: Integration Tests
+# Disabled in favor of CircleCI due to resource constraints
+# name: Integration Tests
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 
 jobs:
   playwright-tests:

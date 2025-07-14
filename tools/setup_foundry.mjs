@@ -95,68 +95,7 @@ import { chromium } from '@playwright/test';
     await page.waitForSelector('li[data-package-id="quench"]', {timeout: 120000});
     console.log('   ✓ Dependencies installed');
 
-    // 6. Set up the world
-    console.log('6. Setting up the world...');
-    await page.click('h2[data-tab="worlds"]');
-    await page.waitForSelector('#worlds button[data-action="worldCreate"]', {timeout: 10000});
-    await page.click('#worlds button[data-action="worldCreate"]');
-    await page.waitForSelector('#world-config', {timeout: 10000});
-    await page.fill('#world-config input[name="title"]', 'Test World');
-    await page.selectOption('#world-config select[name="system"]', 'dnd5e');
-    await page.click('#world-config button[type="submit"]');
-    console.log('   ✓ World creation submitted');
-
-    // Wait for the world to be created
-    await page.waitForSelector('li[data-package-id="test-world"]', {timeout: 120000});
-    console.log('   ✓ World created successfully');
-
-    // 7. Start the world
-    await page.hover('li[data-package-id="test-world"]');
-    await page.click('li[data-package-id="test-world"] a.play');
-    console.log('7. Starting the world...');
-
-    await page.waitForSelector('#join-game', {timeout: 120000});
-    console.log('   ✓ World started successfully');
-
-    // 8. Login as GM
-    console.log('8. Logging in as GM...');
-    // Select the Gamemaster option from the dropdown
-    await page.selectOption('#join-game select[name="userid"]', { label: 'Gamemaster' });
-    await page.click('#join-game button[name="join"]');
-    console.log('   ✓ Logged in as GM');
-
-    // Close the tour
-    const loginTour = await page
-        .waitForSelector('aside.tour a[data-action="exit"]', {timeout: 30000})
-        .catch(() => false);
-    if (loginTour) {
-        await page.click('aside.tour a[data-action="exit"]');
-        console.log('   ✓ Tour dialog closed');
-    }
-
-    // 9. Enable modules
-    console.log('9. Enabling modules...');
-    await page.waitForSelector('#ui-right nav a[data-tab="settings"]', {timeout: 30000});
-    await page.click('#ui-right nav a[data-tab="settings"]');
-    console.log('   ✓ Settings tab opened');
-    await page.waitForSelector('#settings button[data-action="modules"]', {timeout: 10000});
-    await page.click('#settings button[data-action="modules"]');
-    console.log('   ✓ Module management opened');
-    await page.waitForSelector('#module-management', {timeout: 30000});
-    await page.check('#module-management input[name="lib-wrapper"]');
-    await page.check('#module-management input[name="quench"]');
-    await page.check('#module-management input[name="sosly-5e-house-rules"]');
-    await page.click('#module-management button[type="submit"]');
-    console.log('   ✓ Modules enabled');
-    await page.waitForSelector('#reload-world-confirm', {timeout: 30000});
-    await page.click('#reload-world-confirm button[data-action="yes"]');
-    console.log('   ✓ World reloading...');
-
-    // Wait for the world to reload
-    await page.waitForSelector('#ui-right', {timeout: 30000});
-    console.log('   ✓ World reloaded successfully');
-
-    // 10. Finalize setup
-    console.log('10. Finalizing setup...');
+    // 6. Initial setup complete - world will be provided separately
+    console.log('6. Initial setup complete. License verified, systems and dependencies installed.');
     await browser.close();
 })();

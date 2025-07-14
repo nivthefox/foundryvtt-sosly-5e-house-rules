@@ -39,9 +39,18 @@ export default defineConfig({
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',
 
+    /* Increase action timeout for CI */
+    actionTimeout: process.env.CI ? 15000 : 5000,
+
     launchOptions: {
         headless: true,
-        args: ['--enable-gpu', '--use-gl=egl'],
+        args: process.env.CI ? [
+            '--no-sandbox',
+            '--disable-dev-shm-usage', 
+            '--disable-gpu',
+            '--disable-web-security',
+            '--disable-features=VizDisplayCompositor'
+        ] : ['--enable-gpu', '--use-gl=egl'],
     }
   },
 
