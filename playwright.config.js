@@ -20,8 +20,8 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
 
-  workers: 4,
-  
+  workers: process.env.CI ? 1 : 3,
+
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   
@@ -40,7 +40,8 @@ export default defineConfig({
     screenshot: 'only-on-failure',
 
     launchOptions: {
-        args: process.env.CI ? [] : ['--enable-gpu', '--use-gl=egl'],
+        headless: true,
+        args: ['--enable-gpu', '--use-gl=egl'],
     }
   },
 
