@@ -1,10 +1,6 @@
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
-import {
-    findBestHitDie,
-    canRollHitDice,
-    formatHitDieOptions
-} from './calculations';
+import {findBestHitDie, formatHitDieOptions} from './calculations';
 
 class BreatherDialog extends HandlebarsApplicationMixin(ApplicationV2) {
     static DEFAULT_OPTIONS = {
@@ -40,12 +36,12 @@ class BreatherDialog extends HandlebarsApplicationMixin(ApplicationV2) {
 
     async _preparePartContext(partId, context, options) {
         context = await super._preparePartContext(partId, context, options);
-        
+
         if (partId === 'form') {
             const breatherContext = this.#prepareBreatherContext();
             return foundry.utils.mergeObject(context, breatherContext);
         }
-        
+
         return context;
     }
 
@@ -78,13 +74,13 @@ class BreatherDialog extends HandlebarsApplicationMixin(ApplicationV2) {
         // Create a chat message for the breather rest
         const speaker = ChatMessage.getSpeaker({ actor: this.actor });
         const content = `<p><strong>${this.actor.name}</strong> takes a breather.</p>`;
-        
+
         await ChatMessage.create({
             speaker,
             content,
             type: CONST.CHAT_MESSAGE_TYPES.OTHER
         });
-        
+
         this.resolve({ completed: true });
         this.close({ skipReject: true });
     }

@@ -38,16 +38,16 @@
       "cp": 0
     },
     "spells": {
-      "spell1": { "value": 0, "override": null, "max": 0 },
-      "spell2": { "value": 0, "override": null, "max": 0 },
-      "spell3": { "value": 0, "override": null, "max": 0 },
+      "spell1": { "value": 3, "override": null, "max": 3 },
+      "spell2": { "value": 2, "override": null, "max": 2 },
+      "spell3": { "value": 1, "override": null, "max": 1 },
       "spell4": { "value": 0, "override": null, "max": 0 },
       "spell5": { "value": 0, "override": null, "max": 0 },
       "spell6": { "value": 0, "override": null, "max": 0 },
       "spell7": { "value": 0, "override": null, "max": 0 },
       "spell8": { "value": 0, "override": null, "max": 0 },
       "spell9": { "value": 0, "override": null, "max": 0 },
-      "pact": { "value": 0, "override": null, "max": 0, "level": 1 }
+      "pact": { "value": 2, "override": null, "max": 2, "level": 3 }
     },
     "bonuses": {
       "mwak": { "attack": "", "damage": "" },

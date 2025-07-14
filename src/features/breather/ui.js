@@ -11,10 +11,6 @@ import { performBreather } from './rest-handler';
  * @param {HTMLElement} el - The sheet HTML element
  */
 function addBreatherButton(app, el) {
-    if (!game.settings.get('sosly-5e-house-rules', 'breather')) {
-        return;
-    }
-
     const buttons = el.querySelector('.sheet-header-buttons');
     if (!buttons) return;
 

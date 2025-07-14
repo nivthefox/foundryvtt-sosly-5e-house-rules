@@ -23,18 +23,13 @@ export async function performBreather(actor, config = {}) {
     const hd0 = foundry.utils.getProperty(actor, 'system.attributes.hd.value');
 
     // Display a Dialog for rolling hit dice
-    try {
-        foundry.utils.mergeObject(config, await Breather.breatherDialog({actor: actor, canRoll: hd0 > 0}));
-    }
-    catch (err) {
-        return;
-    }
+    await Breather.breatherDialog({actor: actor, canRoll: hd0 > 0});
 
     if (Hooks.call('sosly.breather', actor, config) === false) {
         return;
     }
 
-    if (!config.dialog && config.autoHD) {
-        await actor.autoSpendHitDice({threshold: config.autoHDThreshold});
-    }
+    // if (!config.dialog && config.autoHD) {
+    //     await actor.autoSpendHitDice({threshold: config.autoHDThreshold});
+    // }
 }

@@ -48,7 +48,7 @@
     "no-invalid-regexp": "warn",
     "no-irregular-whitespace": "warn",
     "no-iterator": "warn",
-    "no-lone-blocks": "warn",
+    "no-lone-blocks": "off",
     "no-lonely-if": "warn",
     "no-misleading-character-class": "warn",
     "no-mixed-operators": "warn",

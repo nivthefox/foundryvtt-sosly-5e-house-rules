@@ -16,6 +16,20 @@ export function registerBreatherTests() {
             context => {
                 const { describe, it, assert } = context;
 
+                describe('Settings Registration', function() {
+                    it('should register breather setting with correct properties', function() {
+                        const setting = game.settings.settings.get('sosly-5e-house-rules.breather');
+
+                        assert.isNotNull(setting, 'Breather setting should be registered');
+                        assert.equal(setting.scope, 'world', 'Setting should have world scope');
+                        assert.equal(setting.type, Boolean, 'Setting should be Boolean type');
+                        assert.equal(setting.default, true, 'Setting should default to true');
+                        assert.equal(setting.config, true, 'Setting should be configurable');
+                        assert.equal(setting.restricted, true, 'Setting should be restricted');
+                        assert.equal(setting.requiresReload, true, 'Setting should require reload');
+                    });
+                });
+
                 describe('findBestHitDie', function() {
                     it('should find first available hit die', function() {
                         const availableHD = { d6: 0, d8: 2, d10: 1, d12: 0 };

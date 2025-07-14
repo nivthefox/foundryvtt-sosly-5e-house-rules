@@ -2,5 +2,7 @@
 /dist
 /node_modules
 /packs
+/playwright-report
 /test-results
+/.playwright-state
 /CLAUDE.md

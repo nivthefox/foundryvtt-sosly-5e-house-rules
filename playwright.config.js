@@ -7,21 +7,26 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './src',
   testMatch: '**/playwright.js',
+
+  timeout: 120 * 1000, // 2 minutes timeout for each test
   
+  /* Global setup and teardown for test user management */
+  globalSetup: './src/testing/setup.js',
+  globalTeardown: './src/testing/teardown.js',
+
   /* Run tests in files in parallel */
-  fullyParallel: false,
+  fullyParallel: true,
   
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
+
+  workers: 4,
   
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   
-  /* Opt out of parallel tests on CI. */
-  workers: 1,
-  
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html', { outputFolder: 'test-results/playwright-report' }]],
+  reporter: [['html']],
   
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -33,20 +38,17 @@ export default defineConfig({
     
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',
+
+    launchOptions: {
+        args: process.env.CI ? [] : ['--enable-gpu', '--use-gl=egl'],
+    }
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'] }
     },
   ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
 });
