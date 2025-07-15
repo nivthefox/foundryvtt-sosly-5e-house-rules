@@ -19,22 +19,22 @@ export function registerImperiledTests() {
 
                 describe('shouldOfferImperiledChoice', function() {
                     it('should offer choice when at 0 HP, low exhaustion, no effect', function() {
-                        assert.equal(shouldOfferImperiledChoice(0, 2, false), true);
-                        assert.equal(shouldOfferImperiledChoice(-5, 4, false), true);
+                        assert.equal(shouldOfferImperiledChoice(0, 5, 2, false), true);
+                        assert.equal(shouldOfferImperiledChoice(-5, 5, 4, false), true);
                     });
 
                     it('should not offer choice when HP > 0', function() {
-                        assert.equal(shouldOfferImperiledChoice(1, 2, false), false);
-                        assert.equal(shouldOfferImperiledChoice(10, 0, false), false);
+                        assert.equal(shouldOfferImperiledChoice(1, 5, 2, false), false);
+                        assert.equal(shouldOfferImperiledChoice(10, 5, 0, false), false);
                     });
 
                     it('should not offer choice when exhaustion >= 5', function() {
-                        assert.equal(shouldOfferImperiledChoice(0, 5, false), false);
-                        assert.equal(shouldOfferImperiledChoice(-10, 6, false), false);
+                        assert.equal(shouldOfferImperiledChoice(0, 5, 5, false), false);
+                        assert.equal(shouldOfferImperiledChoice(-10, 5, 6, false), false);
                     });
 
                     it('should not offer choice when already imperiled', function() {
-                        assert.equal(shouldOfferImperiledChoice(0, 2, true), false);
+                        assert.equal(shouldOfferImperiledChoice(0, 5, 2, true), false);
                     });
                 });
 

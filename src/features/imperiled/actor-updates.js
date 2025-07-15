@@ -29,6 +29,7 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
 
     const hp = changed.system.attributes.hp;
     const exhaustion = actor.system.attributes.exhaustion;
+    const maxHP = actor.system.attributes.hp.max;
 
     const existing = actor.effects.get(dnd5e.utils.staticID('dnd5eimperiled'));
 
@@ -43,7 +44,7 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
         return;
     }
 
-    if (shouldOfferImperiledChoice(hp.value, exhaustion, !!existing)) {
+    if (shouldOfferImperiledChoice(hp.value, maxHP, exhaustion, !!existing)) {
         const confirmation = await showImperiledDialog(exhaustion);
 
         if (!confirmation) {
