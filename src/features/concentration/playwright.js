@@ -155,9 +155,9 @@ test.describe('Concentration Management', () => {
         await sheet.locator('button.breather-button').click();
 
         // Wait for breather dialog to appear
-        await page.waitForSelector('div#breather-dialog', {timeout: 5000});
-        await page.click('div#breather-dialog button[data-action="rest"]');
-        await page.waitForSelector('div#breather-dialog', {state: 'detached'});
+        await page.waitForSelector('dialog.breather', {timeout: 5000});
+        await page.click('dialog.breather button[name="rest"]');
+        await page.waitForSelector('dialog.breather', {state: 'detached'});
 
         // End concentration
         await endConcentration(page);

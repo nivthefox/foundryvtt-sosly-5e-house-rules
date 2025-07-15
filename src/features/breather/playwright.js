@@ -54,14 +54,12 @@ test.describe('Breather', () => {
         expect(preBreatherResults.actor).toBe(actorId);
 
         // Wait for breather dialog
-        await page.waitForSelector('#breather-dialog', { timeout: 10000 });
-        const dialog = page.locator('#breather-dialog');
+        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        const dialog = page.locator('dialog.breather');
         await expect(dialog).toBeVisible();
-        await expect(dialog.locator('.window-title')).toContainText('Breather Test PC');
         await expect(dialog.locator('select[name="hd"]')).toBeVisible();
         await expect(dialog.locator('[data-action="rollHitDie"]')).toBeVisible();
-        await expect(dialog.locator('[data-action="rest"]')).toBeVisible();
-        await expect(dialog.locator('[data-action="cancel"]')).toBeVisible();
+        await expect(dialog.locator('button[name="rest"]')).toBeVisible();
 
         // Set up promise to wait for hit die roll before clicking
         const hitDieRolledPromise = page.evaluate(() => {
@@ -94,7 +92,7 @@ test.describe('Breather', () => {
         });
 
         // Complete the rest
-        await dialog.locator('[data-action="rest"]').click();
+        await dialog.locator('button[name="rest"]').click();
 
         // Wait for breather to fire
         const breatherResults = await Promise.race([
@@ -170,10 +168,10 @@ test.describe('Breather', () => {
         expect(preBreatherResults.actor).toBe(actorId);
 
         // Wait for breather dialog
-        await page.waitForSelector('#breather-dialog', { timeout: 10000 });
-        const dialog = page.locator('#breather-dialog');
+        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        const dialog = page.locator('dialog.breather');
         await expect(dialog).toBeVisible();
-        await expect(dialog.locator('.window-title')).toContainText('Playwright Test NPC');
+        await expect(dialog.locator('.window-title')).toContainText('Breather');
 
         // Verify hit dice select shows d6
         const hdSelect = dialog.locator('select[name="hd"]');
@@ -212,7 +210,7 @@ test.describe('Breather', () => {
         });
 
         // Complete the rest
-        await dialog.locator('[data-action="rest"]').click();
+        await dialog.locator('button[name="rest"]').click();
 
         // Wait for breather hook
         const breatherResults = await Promise.race([

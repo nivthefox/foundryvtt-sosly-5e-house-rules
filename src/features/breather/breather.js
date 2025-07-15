@@ -7,15 +7,6 @@ class BreatherDialog extends BaseRestDialog {
         super(options);
     }
 
-    static get defaultOptions() {
-        return foundry.utils.mergeObject(super.defaultOptions, {
-            id: 'breather-dialog',
-            classes: ['dnd5e', 'dialog', 'rest'],
-            width: 400,
-            height: 'auto'
-        });
-    }
-
     static get PARTS() {
         return {
             ...super.PARTS,
@@ -46,6 +37,7 @@ class BreatherDialog extends BaseRestDialog {
                     name: 'rest',
                     type: 'submit'
                 }],
+                classes: ['breather'],
                 document: actor
             });
             app.addEventListener('close', () => app.rested ? resolve(app.config) : reject(), { once: true });
