@@ -189,13 +189,13 @@ async function castConcentrationSpell(page, actorId) {
 }
 
 async function endConcentration(page) {
-    await page.waitForSelector('div.app.dialog:has(.window-title:text("Concentration"))', {timeout: 5000});
+    await page.waitForSelector('dialog.rest-concentration', {timeout: 5000});
 
     // Verify concentration dialog content
-    const concentrationDialog = page.locator('div.app.dialog:has(.window-title:text("Concentration"))');
+    const concentrationDialog = page.locator('dialog.rest-concentration');
     await expect(concentrationDialog).toContainText('concentrating on Playwright Concentration Spell');
     await expect(concentrationDialog).toContainText('end concentration');
 
     // Confirm to end concentration
-    await page.click('div.app.dialog:has(.window-title:text("Concentration")) button[data-button="yes"]');
+    await page.click('dialog.rest-concentration button[data-action="yes"]');
 }

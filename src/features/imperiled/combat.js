@@ -3,7 +3,7 @@
  * Handles imperiled condition during combat turns
  */
 
-import {id as module_id} from '../../../module.json';
+import { showImperiledDialog, applyUnconscious, createImperiledChatMessage } from './ui';
 
 /**
  * Handle imperiled condition when combat turn changes
@@ -27,50 +27,17 @@ export async function handleImperiled(combat, previous, next) {
     }
 
     if (exhaustion >= 5) {
-        await existing.delete();
-        const effect = await ActiveEffect.implementation.fromStatusEffect('unconscious');
-        await ActiveEffect.implementation.create(effect, { parent: actor, keepId: true});
-
-        const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-            text: `${actor.name} falls unconscious and is no longer imperiled.`
-        });
-        await ChatMessage.create({
-            user: game.user.id,
-            speaker: {actor, alias: actor.name},
-            content
-        });
+        await applyUnconscious(actor, existing);
         return;
     }
 
-    const confirmContent = game.i18n?.format('sosly.imperiled.confirmation', {exhaustion});
-    const confirmation = await Dialog.confirm({
-        title: 'Imperiled!',
-        content: confirmContent
-    });
+    const confirmation = await showImperiledDialog(exhaustion);
 
     if (!confirmation) {
-        await existing.delete();
-        const effect = await ActiveEffect.implementation.fromStatusEffect('unconscious');
-        await ActiveEffect.implementation.create(effect, { parent: actor, keepId: true});
-
-        const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-            text: `${actor.name} falls unconscious and is no longer imperiled.`
-        });
-        await ChatMessage.create({
-            user: game.user.id,
-            speaker: {actor, alias: actor.name},
-            content
-        });
+        await applyUnconscious(actor, existing);
         return;
     }
 
     await actor.update({ 'system.attributes.exhaustion': exhaustion + 1 });
-    const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-        text: `${actor.name} has gained a level of Exhaustion to remain conscious!`
-    });
-    await ChatMessage.create({
-        user: game.user.id,
-        speaker: {actor, alias: actor.name},
-        content
-    });
+    await createImperiledChatMessage(actor, `${actor.name} has gained a level of Exhaustion to remain conscious!`);
 }

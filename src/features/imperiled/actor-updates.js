@@ -3,13 +3,13 @@
  * Manages imperiled condition when actor HP changes
  */
 
-import {id as module_id} from '../../../module.json';
 import {
     shouldOfferImperiledChoice,
     shouldRemoveImperiled,
     calculateImperiledExhaustion,
     generateImperiledMessage
 } from './calculations';
+import { showImperiledDialog, applyUnconscious, createImperiledChatMessage } from './ui';
 
 /**
  * Handle imperiled condition when actor is updated
@@ -35,14 +35,7 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
     if (shouldRemoveImperiled(hp.value, !!existing)) {
         await existing.delete();
 
-        const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-            text: generateImperiledMessage(actor.name, 'removed')
-        });
-        await ChatMessage.create({
-            user: game.user.id,
-            speaker: {actor: actor, alias: actor.name},
-            content
-        });
+        await createImperiledChatMessage(actor, generateImperiledMessage(actor.name, 'removed'));
         return;
     }
 
@@ -51,15 +44,10 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
     }
 
     if (shouldOfferImperiledChoice(hp.value, exhaustion, !!existing)) {
-        const confirmContent = game.i18n?.format('sosly.imperiled.confirmation', {exhaustion});
-        const confirmation = await Dialog.confirm({
-            title: game.i18n?.localize('sosly.imperiled.title'),
-            content: confirmContent
-        });
+        const confirmation = await showImperiledDialog(exhaustion);
 
         if (!confirmation) {
-            const effect = await ActiveEffect.implementation.fromStatusEffect('unconscious');
-            await ActiveEffect.implementation.create(effect, { parent: actor, keepId: true});
+            await applyUnconscious(actor, null, 'chose to fall unconscious');
             return;
         }
 
@@ -68,13 +56,6 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
 
         await actor.update({'system.attributes.exhaustion': calculateImperiledExhaustion(exhaustion)});
 
-        const content = await renderTemplate(`modules/${module_id}/templates/features/imperiled/Imperiled.hbs`, {
-            text: generateImperiledMessage(actor.name, 'gained')
-        });
-        await ChatMessage.create({
-            user: game.user.id,
-            speaker: {actor: actor, alias: actor.name},
-            content
-        });
+        await createImperiledChatMessage(actor, generateImperiledMessage(actor.name, 'gained'));
     }
 }

@@ -50,16 +50,16 @@ export function registerConcentrationTests() {
                             }
                         };
 
-                        // Mock Dialog.confirm to return true
-                        const originalConfirm = Dialog.confirm;
-                        Dialog.confirm = async () => true;
+                        // Mock DialogV2.confirm to return true
+                        const originalConfirm = foundry.applications.api.DialogV2.confirm;
+                        foundry.applications.api.DialogV2.confirm = async () => true;
 
                         await handleConcentrationRest(mockActor);
 
                         assert.isTrue(effectDeleted, 'Effect should be deleted when confirmed');
 
                         // Restore original Dialog.confirm
-                        Dialog.confirm = originalConfirm;
+                        foundry.applications.api.DialogV2.confirm = originalConfirm;
                     });
 
                     it('should not delete effect when user cancels confirmation', async function() {
@@ -79,16 +79,16 @@ export function registerConcentrationTests() {
                             }
                         };
 
-                        // Mock Dialog.confirm to return false
-                        const originalConfirm = Dialog.confirm;
-                        Dialog.confirm = async () => false;
+                        // Mock DialogV2.confirm to return false
+                        const originalConfirm = foundry.applications.api.DialogV2.confirm;
+                        foundry.applications.api.DialogV2.confirm = async () => false;
 
                         await handleConcentrationRest(mockActor);
 
                         assert.isFalse(effectDeleted, 'Effect should not be deleted when cancelled');
 
                         // Restore original Dialog.confirm
-                        Dialog.confirm = originalConfirm;
+                        foundry.applications.api.DialogV2.confirm = originalConfirm;
                     });
 
                     it('should extract spell name from concentration effect label', async function() {
@@ -108,9 +108,9 @@ export function registerConcentrationTests() {
                             }
                         };
 
-                        // Mock Dialog.confirm to capture content
-                        const originalConfirm = Dialog.confirm;
-                        Dialog.confirm = async options => {
+                        // Mock DialogV2.confirm to capture content
+                        const originalConfirm = foundry.applications.api.DialogV2.confirm;
+                        foundry.applications.api.DialogV2.confirm = async options => {
                             dialogContent = options.content;
                             return true;
                         };
@@ -131,7 +131,7 @@ export function registerConcentrationTests() {
                         assert.include(dialogContent, 'Shield of Faith', 'Dialog should contain extracted spell name');
 
                         // Restore original functions
-                        Dialog.confirm = originalConfirm;
+                        foundry.applications.api.DialogV2.confirm = originalConfirm;
                         if (game.i18n && originalFormat) {
                             game.i18n.format = originalFormat;
                         }
