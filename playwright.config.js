@@ -11,7 +11,6 @@ export default defineConfig({
   timeout: 120 * 1000, // 2 minutes timeout for each test
   
   /* Global setup and teardown for test user management */
-  globalSetup: './src/testing/setup.js',
   globalTeardown: './src/testing/teardown.js',
 
   /* Run tests in files in parallel */

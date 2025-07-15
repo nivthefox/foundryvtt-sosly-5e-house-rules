@@ -1,18 +1,28 @@
-<p>{{ localize 'sosly.breather.hint' }}</p>
-
-{{#if availableHD}}
-<div class="form-group">
-    <label>{{ localize 'sosly.breather.select' }}</label>
-    <div class="form-fields">
-        <select name="hd">
-            {{ selectOptions hdOptions selected=denomination }}
-        </select>
-        <button type="button" data-action="rollHitDie" {{#unless canRoll}}disabled{{/unless}}>
-            <i class="fas fa-dice-d20"></i> {{ localize 'DND5E.Roll' }}
-        </button>
+<section class="flexcol">
+    <div class="note info">
+        {{ localize 'sosly.breather.dialog.hint' }}
     </div>
-    {{#unless canRoll}}
-        <p class="notes">{{ localize 'sosly.breather.nohd'}}</p>
+
+    {{#unless isGroup}}
+    {{#if availableHD}}
+    {{#if canRoll}}
+    <fieldset>
+        <legend>{{ localize "DND5E.HitDice" }}</legend>
+        <div class="form-fields">
+            <select name="hd">
+                {{ selectOptions hdOptions selected=denomination }}
+            </select>
+            <button type="button" class="dice-button" data-action="rollHitDie" data-tooltip="DND5E.Roll"
+                    aria-label="{{ localize 'DND5E.Roll' }}">
+                <i class="fa-solid fa-dice-d20" inert></i>
+            </button>
+        </div>
+    </fieldset>
+    {{else}}
+    <div class="note warn">
+        {{ localize 'sosly.breather.nohd' }}
+    </div>
+    {{/if}}
+    {{/if}}
     {{/unless}}
-</div>
-{{/if}}
+</section>

@@ -7,7 +7,7 @@ import {cleanupTestActors, cleanupChatMessages, loginUser} from './foundry-helpe
  */
 export default async function globalTeardown(cfg) {
     console.log('Running global teardown...');
-    
+
     const browser = await chromium.launch();
     const context = await browser.newContext({
         baseURL: cfg.projects[0].use.baseURL,
@@ -16,12 +16,12 @@ export default async function globalTeardown(cfg) {
 
     // Login as the Gamemaster to perform cleanup
     await loginUser(page, 'Gamemaster');
-    
+
     // Clean up test actors and chat messages
     await cleanupTestActors(page);
     await cleanupChatMessages(page);
-    
+
     console.log('Global teardown complete');
-    
+
     await browser.close();
 }

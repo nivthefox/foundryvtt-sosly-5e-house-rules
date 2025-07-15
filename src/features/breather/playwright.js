@@ -127,7 +127,7 @@ test.describe('Breather', () => {
                     }
                 }
             }
-        })
+        });
 
         // Record initial HD spent
         const initialSpent = await page.evaluate(actorId => {
@@ -174,7 +174,7 @@ test.describe('Breather', () => {
         const dialog = page.locator('#breather-dialog');
         await expect(dialog).toBeVisible();
         await expect(dialog.locator('.window-title')).toContainText('Playwright Test NPC');
-        
+
         // Verify hit dice select shows d6
         const hdSelect = dialog.locator('select[name="hd"]');
         await expect(hdSelect).toBeVisible();
