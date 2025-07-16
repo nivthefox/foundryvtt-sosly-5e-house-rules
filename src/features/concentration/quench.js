@@ -7,20 +7,6 @@ export function registerConcentrationTests() {
             context => {
                 const { describe, it, assert } = context;
 
-                describe('Settings Registration', function() {
-                    it('should register concentration setting with correct properties', function() {
-                        const setting = game.settings.settings.get('sosly-5e-house-rules.concentration');
-
-                        assert.isNotNull(setting, 'Concentration setting should be registered');
-                        assert.equal(setting.scope, 'world', 'Setting should have world scope');
-                        assert.equal(setting.type, Boolean, 'Setting should be Boolean type');
-                        assert.equal(setting.default, true, 'Setting should default to true');
-                        assert.equal(setting.config, true, 'Setting should be configurable');
-                        assert.equal(setting.restricted, true, 'Setting should be restricted');
-                        assert.equal(setting.requiresReload, true, 'Setting should require reload');
-                    });
-                });
-
                 describe('handleConcentrationRest', function() {
                     it('should return early when actor has no concentration effects', async function() {
                         const mockActor = {

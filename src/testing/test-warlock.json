@@ -15,10 +15,7 @@
       "hp": { "value": 45, "max": 50, "temp": 0, "tempmax": 0 },
       "ac": { "flat": 16, "calc": "flat", "formula": "" },
       "movement": { "walk": 30, "climb": 15, "swim": 15 },
-      "exhaustion": 0,
-      "hd": {
-        "d10": { "available": 3, "spent": 2 }
-      }
+      "exhaustion": 0
     },
     "details": {
       "biography": { "value": "A test fighter for breather testing" },
@@ -69,7 +66,7 @@
         "hd": {
           "value": 3,
           "denomination": "d8",
-          "additional": ""
+          "spent": 0
         },
         "saves": ["wis", "cha"],
         "skills": {
