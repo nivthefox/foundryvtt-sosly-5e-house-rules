@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Breather Rest System Feature
  * Provides short rest alternatives for recovery
@@ -12,7 +14,7 @@ export function registerBreatherFeature() {
 
     registerBreatherSettings();
 
-    if (game.settings.get('sosly-5e-house-rules', 'breather')) {
+    if (game.settings.get(module_id, 'breather')) {
         BreatherUI.register();
     }
 

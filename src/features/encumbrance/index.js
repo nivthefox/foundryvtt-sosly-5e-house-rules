@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Encumbrance System Feature
  * Provides enhanced encumbrance calculations for actors using libWrapper
@@ -18,12 +20,12 @@ export function registerEncumbranceFeature() {
         registerEncumbranceTests();
     }
 
-    if (game.settings.get('sosly-5e-house-rules', 'encumbrance')) {
+    if (game.settings.get(module_id, 'encumbrance')) {
         registerEncumbranceHooks();
 
         // Use libWrapper to wrap the D&D 5e system's prepareEncumbrance method
         // This is more targeted than wrapping prepareDerivedData
-        libWrapper.register('sosly-5e-house-rules', 'dnd5e.dataModels.actor.AttributesFields.prepareEncumbrance', function(wrapped, rollData, options = {}) {
+        libWrapper.register(module_id, 'dnd5e.dataModels.actor.AttributesFields.prepareEncumbrance', function(wrapped, rollData, options = {}) {
             // Apply our custom encumbrance calculations instead of the system's
             prepareEncumbrance.call(this, rollData, options);
         }, 'OVERRIDE');

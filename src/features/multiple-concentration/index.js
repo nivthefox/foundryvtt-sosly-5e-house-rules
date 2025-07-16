@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Multiple Concentration Feature
  * Allows characters to concentrate on two spells simultaneously by expending a Hit Die
@@ -12,7 +14,7 @@ export function registerMultipleConcentrationFeature() {
 
     registerMultipleConcentrationSettings();
 
-    const isEnabled = game.settings.get('sosly-5e-house-rules', 'multipleConcentration');
+    const isEnabled = game.settings.get(module_id, 'multipleConcentration');
 
     // Always run setup to handle enable/disable state
     Hooks.once('setup', async () => {

@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Concentration Management Feature
  * Handles concentration spell management during rests
@@ -19,7 +21,7 @@ export function registerConcentrationFeature() {
     });
 
     // Also handle breather if that feature is enabled
-    if (game.settings.get('sosly-5e-house-rules', 'breather')) {
+    if (game.settings.get(module_id, 'breather')) {
         Hooks.on('sosly.breather', async actor => {
             await handleConcentrationRest(actor);
         });

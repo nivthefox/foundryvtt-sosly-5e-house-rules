@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Concentration Handler for Multiple Concentration
  * Handles HD expenditure when maintaining multiple concentrations
@@ -65,7 +67,7 @@ export function registerConcentrationHandler() {
         // Post chat message using template
         if (hdExpended || error) {
             const content = await renderTemplate(
-                'modules/sosly-5e-house-rules/templates/features/multiple-concentration/chat-message.hbs',
+                `modules/${module_id}/templates/features/multiple-concentration/chat-message.hbs`,
                 {
                     actor: actor.name,
                     die: hdExpended,

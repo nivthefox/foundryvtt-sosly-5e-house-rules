@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Imperiled Condition Feature
  * Manages the Imperiled condition and related mechanics
@@ -21,13 +23,13 @@ export function registerImperiledFeature() {
     }
 
     Hooks.on('combatTurnChange', async (combat, previous, next) => {
-        if (game.settings.get('sosly-5e-house-rules', 'imperiled')) {
+        if (game.settings.get(module_id, 'imperiled')) {
             await handleImperiled(combat, previous, next);
         }
     });
 
     Hooks.on('preUpdateActor', async (actor, changed, options, userId) => {
-        if (game.settings.get('sosly-5e-house-rules', 'imperiled')) {
+        if (game.settings.get(module_id, 'imperiled')) {
             await handleImperiledUpdate(actor, changed, options, userId);
         }
     });

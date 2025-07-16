@@ -1,4 +1,5 @@
 import {findBestHitDie, formatHitDieOptions} from './calculations';
+import {id as module_id} from '../../../module.json';
 
 const BaseRestDialog = dnd5e.applications.actor.BaseRestDialog;
 
@@ -11,7 +12,7 @@ class BreatherDialog extends BaseRestDialog {
         return {
             ...super.PARTS,
             content: {
-                template: 'modules/sosly-5e-house-rules/templates/features/breather/breather.hbs'
+                template: `modules/${module_id}/templates/features/breather/breather.hbs`
             }
         };
     }

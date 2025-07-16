@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Rest Enhancements Feature
  * Provides enhanced rest mechanics and recovery
@@ -19,13 +21,13 @@ export function registerRestEnhancementsFeature() {
     }
 
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
-        if (game.settings.get('sosly-5e-house-rules', 'rest-enhancements')) {
+        if (game.settings.get(module_id, 'rest-enhancements')) {
             await handleShortRest(actor, data);
         }
     });
 
     Hooks.on('dnd5e.combatRecovery', async (combatant, recoveries) => {
-        if (game.settings.get('sosly-5e-house-rules', 'rest-enhancements')) {
+        if (game.settings.get(module_id, 'rest-enhancements')) {
             await handleCombatRecovery(combatant, recoveries);
         }
     });

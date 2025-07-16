@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Madness Tracking UI Integration
  * Adds madness level tracking to character sheets
@@ -9,7 +11,7 @@
  * @param {HTMLElement} el - The sheet HTML element
  */
 function addMadnessTracking(app, el) {
-    if (!game.settings.get('sosly-5e-house-rules', 'madness')) {
+    if (!game.settings.get(module_id, 'madness')) {
         return;
     }
 

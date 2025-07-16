@@ -1,9 +1,11 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Custom Encumbrance Settings
  */
 
 export function registerEncumbranceSettings() {
-    game.settings.register('sosly-5e-house-rules', 'encumbrance', {
+    game.settings.register(module_id, 'encumbrance', {
         name: game.i18n.localize('sosly.encumbrance.label'),
         hint: game.i18n.localize('sosly.encumbrance.hint'),
         scope: 'world',
