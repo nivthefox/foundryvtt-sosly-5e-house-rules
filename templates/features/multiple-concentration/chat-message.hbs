@@ -1,0 +1,15 @@
+<div class="dnd5e2 chat-card">
+    <div class="card-header">
+        {{#if error}}
+            <i class="fas fa-exclamation-triangle"></i> 
+        {{/if}}
+        {{localize "sosly.concentration.multiple.label"}}
+    </div>
+    <div class="card-content">
+        {{#if error}}
+            <p class="notification error">{{error}}</p>
+        {{else}}
+            <p>{{localize "sosly.concentration.multiple.chatMessage" actor=actor die=die}}</p>
+        {{/if}}
+    </div>
+</div>

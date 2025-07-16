@@ -17,6 +17,12 @@ sosly:
     hint: Automates concentration management during rests.
     title: Concentration
     confirmation: Your character is concentrating on {spell}. Do you want to end concentration?
+    multiple:
+      label: Allow Multiple Concentration Spells
+      hint: When enabled, characters can concentrate on two spells simultaneously by expending a Hit Die.
+      option: "None (Spend 1 {die} HD)"
+      chatMessage: "{actor} expends a {die} Hit Die to maintain concentration on multiple spells!"
+      noHD: No Hit Dice available for multiple concentration.
   imperiled:
     label: Imperiled Condition
     hint: Enables the Imperiled condition that triggers when characters reach 0 hit points.
