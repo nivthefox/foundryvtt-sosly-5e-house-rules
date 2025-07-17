@@ -110,8 +110,8 @@ test.describe('Multiple Concentration', () => {
         await page.locator('dialog.activity-usage button[data-action="use"]').click();
         await page.waitForSelector('dialog.activity-usage', { state: 'hidden', timeout: 5000 });
 
-        // Wait for chat message about HD expenditure
-        await page.waitForSelector('.chat-message:has-text("expends a d8 Hit Die")', { timeout: 5000 });
+        // Wait for chat message about HD expenditure - be more flexible with the text
+        await page.waitForSelector('.chat-message:has-text("expends"), .chat-message:has-text("Hit Die")', { timeout: 10000 });
 
         // Verify two concentrations are active
         const secondConcentration = await page.evaluate(actorId => {

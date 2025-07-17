@@ -125,7 +125,7 @@ class BreatherUI extends BaseRestDialog {
         const rollButton = form.querySelector('[data-action="rollHitDie"]');
         if (rollButton) {
             const originalHandler = rollButton.onclick;
-            rollButton.onclick = async (event) => {
+            rollButton.onclick = async event => {
                 if (originalHandler) await originalHandler.call(this, event);
                 this.#validateFeatureSelection();
             };
@@ -168,8 +168,8 @@ class BreatherUI extends BaseRestDialog {
         if (selectedCount > availableHD) {
             // Show error and disable button
             if (validationMsg) {
-                validationMsg.textContent = game.i18n.localize('sosly.breather.error.insufficientHD') || 
-                    `Not enough Hit Dice. You need ${selectedCount} HD but only have ${availableHD}.`;
+                validationMsg.textContent = game.i18n.localize('sosly.breather.error.insufficientHD')
+                    || `Not enough Hit Dice. You need ${selectedCount} HD but only have ${availableHD}.`;
             }
             if (restButton) {
                 restButton.disabled = true;

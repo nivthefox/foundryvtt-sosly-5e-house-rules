@@ -131,6 +131,7 @@ export class Breather {
         }
 
         // Spend hit dice for each selected feature
+        // eslint-disable-next-line no-unused-vars
         for (const feature of selectedFeatures) {
             await this._spendHitDie(actor);
         }

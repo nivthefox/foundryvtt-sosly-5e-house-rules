@@ -54,7 +54,7 @@ test.describe('Breather', () => {
         expect(preBreatherResults.actor).toBe(actorId);
 
         // Wait for breather dialog
-        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        await page.waitForSelector('dialog.breather', { timeout: 5000 });
         const dialog = page.locator('dialog.breather');
         await expect(dialog).toBeVisible();
         await expect(dialog.locator('select[name="hd"]')).toBeVisible();
@@ -168,7 +168,7 @@ test.describe('Breather', () => {
         expect(preBreatherResults.actor).toBe(actorId);
 
         // Wait for breather dialog
-        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        await page.waitForSelector('dialog.breather', { timeout: 5000 });
         const dialog = page.locator('dialog.breather');
         await expect(dialog).toBeVisible();
         await expect(dialog.locator('.window-title')).toContainText('Breather');
@@ -249,42 +249,38 @@ test.describe('Breather', () => {
             }
         });
 
-        // Add multiclass with Bard and Paladin
+        // Add all classes and features in a single batch for better performance
         await page.evaluate(async actorId => {
             const actor = game.actors.get(actorId);
 
-            // Add Bard (d8)
-            await actor.createEmbeddedDocuments('Item', [{
-                name: 'Bard',
-                type: 'class',
-                system: {
-                    identifier: 'bard',
-                    levels: 3,
-                    hd: {
-                        denomination: 'd8',
-                        value: 3,
-                        spent: 0
-                    }
-                }
-            }]);
-
-            // Add Paladin (d10)
-            await actor.createEmbeddedDocuments('Item', [{
-                name: 'Paladin',
-                type: 'class',
-                system: {
-                    identifier: 'paladin',
-                    levels: 2,
-                    hd: {
-                        denomination: 'd10',
-                        value: 2,
-                        spent: 0
-                    }
-                }
-            }]);
-
-            // Add test features - one single recovery, one half recovery
+            // Create all items in one batch
             await actor.createEmbeddedDocuments('Item', [
+                {
+                    name: 'Bard',
+                    type: 'class',
+                    system: {
+                        identifier: 'bard',
+                        levels: 3,
+                        hd: {
+                            denomination: 'd8',
+                            value: 3,
+                            spent: 0
+                        }
+                    }
+                },
+                {
+                    name: 'Paladin',
+                    type: 'class',
+                    system: {
+                        identifier: 'paladin',
+                        levels: 2,
+                        hd: {
+                            denomination: 'd10',
+                            value: 2,
+                            spent: 0
+                        }
+                    }
+                },
                 {
                     name: 'Bardic Inspiration',  // Single recovery
                     type: 'feat',
@@ -321,8 +317,11 @@ test.describe('Breather', () => {
 
         // Test 1: Verify features appear in dialog
         await sheet.locator('.breather-button.gold-button').click();
-        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        await page.waitForSelector('dialog.breather', { timeout: 5000 });
         let dialog = page.locator('dialog.breather');
+
+        // Wait for dialog content to be fully loaded
+        await dialog.locator('form').waitFor({ state: 'visible' });
 
         // Verify features are shown as checkboxes
         const bardicBox = dialog.locator('dnd5e-checkbox[name="features.bardic-inspiration"]');
@@ -351,10 +350,10 @@ test.describe('Breather', () => {
             actorId => {
                 const actor = game.actors.get(actorId);
                 const bardic = actor.items.find(i => i.name === 'Bardic Inspiration');
-                return bardic.system.uses.spent === 2; // Expected value after recovery
+                return bardic?.system.uses.spent === 2; // Expected value after recovery
             },
             actorId,
-            { timeout: 5000 }
+            { timeout: 2000 }
         );
 
         // Verify feature recovered and HD spent
@@ -375,8 +374,9 @@ test.describe('Breather', () => {
 
         // Test 3: Half recovery type
         await sheet.locator('.breather-button.gold-button').click();
-        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        await page.waitForSelector('dialog.breather', { timeout: 5000 });
         dialog = page.locator('dialog.breather');
+        await dialog.locator('form').waitFor({ state: 'visible' });
 
         // Select half recovery feature
         await dialog.locator('dnd5e-checkbox[name="features.lay-on-hands"]').click();
@@ -390,10 +390,10 @@ test.describe('Breather', () => {
             actorId => {
                 const actor = game.actors.get(actorId);
                 const layOnHands = actor.items.find(i => i.name === 'Lay on Hands');
-                return layOnHands.system.uses.spent === 15; // Expected value after recovery
+                return layOnHands?.system.uses.spent === 15; // Expected value after recovery
             },
             actorId,
-            { timeout: 5000 }
+            { timeout: 2000 }
         );
 
         // Verify feature recovered and HD spent
@@ -432,8 +432,9 @@ test.describe('Breather', () => {
         }, actorId);
 
         await sheet.locator('.breather-button.gold-button').click();
-        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        await page.waitForSelector('dialog.breather', { timeout: 5000 });
         dialog = page.locator('dialog.breather');
+        await dialog.locator('form').waitFor({ state: 'visible' });
 
         // Try to select multiple features (would need 2 HD)
         await dialog.locator('dnd5e-checkbox[name="features.bardic-inspiration"]').click();
@@ -442,7 +443,7 @@ test.describe('Breather', () => {
         // Rest button should be disabled and error message visible
         const restButton = dialog.locator('button[name="rest"]');
         await expect(restButton).toBeDisabled();
-        
+
         // Check for validation error message in the dialog
         const errorMessage = dialog.locator('.feature-validation-error');
         await expect(errorMessage).toBeVisible();
@@ -466,8 +467,9 @@ test.describe('Breather', () => {
         }, actorId);
 
         await sheet.locator('.breather-button.gold-button').click();
-        await page.waitForSelector('dialog.breather', { timeout: 10000 });
+        await page.waitForSelector('dialog.breather', { timeout: 5000 });
         dialog = page.locator('dialog.breather');
+        await dialog.locator('form').waitFor({ state: 'visible' });
 
         // Bardic Inspiration should not be visible since it's at max
         const bardicNotVisible = dialog.locator('dnd5e-checkbox[name="features.bardic-inspiration"]');
