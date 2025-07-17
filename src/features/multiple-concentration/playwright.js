@@ -44,8 +44,8 @@ test.describe('Multiple Concentration', () => {
             actor.sheet.render(true);
         }, actorId);
 
-        await page.waitForSelector(`div.sheet`, { timeout: 5000 });
-        const sheet = page.locator(`div.sheet`);
+        await page.waitForSelector('div.sheet', { timeout: 5000 });
+        const sheet = page.locator('div.sheet');
 
         // Record initial state
         const initial = await page.evaluate(actorId => {

@@ -6,7 +6,7 @@ import {id as module_id} from '../../../module.json';
  */
 
 import {registerBreatherSettings} from './settings';
-import {BreatherUI} from './ui';
+import {Breather} from './breather';
 import {registerBreatherTests} from './quench';
 
 export function registerBreatherFeature() {
@@ -15,7 +15,7 @@ export function registerBreatherFeature() {
     registerBreatherSettings();
 
     if (game.settings.get(module_id, 'breather')) {
-        BreatherUI.register();
+        Breather.register();
     }
 
     // Register Quench tests if Quench module is available

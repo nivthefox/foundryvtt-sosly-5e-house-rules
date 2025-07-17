@@ -17,6 +17,16 @@
                 <i class="fa-solid fa-dice-d20" inert></i>
             </button>
         </div>
+        {{#if recoverableFeatures}}
+        {{#each recoverableFeatures as |feature|}}
+        <div class="form-group">
+            <label>{{feature.label}}</label>
+            <div class="form-fields">
+                <dnd5e-checkbox name="features.{{feature.key}}" data-feature-id="{{feature.id}}" tabindex="0"></dnd5e-checkbox>
+            </div>
+        </div>
+        {{/each}}
+        {{/if}}
     </fieldset>
     {{else}}
     <div class="note warn">

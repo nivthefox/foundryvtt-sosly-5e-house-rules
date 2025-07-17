@@ -12,6 +12,8 @@ sosly:
       hint: On a breather, you may spend remaining Hit Dice.
     select: Select Dice to Roll
     nohd: No Hit Dice remaining.
+    error:
+      insufficientHD: Not enough Hit Dice to recover selected features
   concentration:
     label: Concentration Management
     hint: Automates concentration management during rests.
