@@ -36,6 +36,20 @@ export function registerImperiledTests() {
                     it('should not offer choice when already imperiled', function() {
                         assert.equal(shouldOfferImperiledChoice(0, 5, 2, true), false);
                     });
+
+                    it('should not offer choice when unconscious', function() {
+                        assert.equal(shouldOfferImperiledChoice(0, 5, 2, false, true, false), false);
+                        assert.equal(shouldOfferImperiledChoice(-5, 5, 0, false, true, false), false);
+                    });
+
+                    it('should not offer choice when dead', function() {
+                        assert.equal(shouldOfferImperiledChoice(0, 5, 2, false, false, true), false);
+                        assert.equal(shouldOfferImperiledChoice(-10, 5, 1, false, false, true), false);
+                    });
+
+                    it('should not offer choice when both unconscious and dead', function() {
+                        assert.equal(shouldOfferImperiledChoice(0, 5, 2, false, true, true), false);
+                    });
                 });
 
                 describe('shouldRemoveImperiled', function() {

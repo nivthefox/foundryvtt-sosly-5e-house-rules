@@ -237,7 +237,7 @@ test.describe('Breather', () => {
             test.skip();
             return;
         }
-        
+
         // Create a simple character with one class
         const actorId = await createActor(page, 'Class Feature Test PC', 'character', {
             type: 'character',

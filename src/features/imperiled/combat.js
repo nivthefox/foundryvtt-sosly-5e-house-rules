@@ -21,8 +21,10 @@ export async function handleImperiled(combat, previous, next) {
 
     const exhaustion = actor.system.attributes.exhaustion;
     const existing = actor.effects.get(dnd5e.utils.staticID('dnd5eimperiled'));
+    const unconscious = actor.effects.get(dnd5e.utils.staticID('dnd5eunconscious'));
+    const dead = actor.effects.get(dnd5e.utils.staticID('dnd5edead'));
 
-    if (!existing) {
+    if (!existing || unconscious || dead) {
         return;
     }
 

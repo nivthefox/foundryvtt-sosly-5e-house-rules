@@ -9,10 +9,20 @@
  * @param {number} maxHP - Maximum hit points
  * @param {number} exhaustionLevel - Current exhaustion level
  * @param {boolean} hasImperiledEffect - Whether actor already has imperiled effect
+ * @param {boolean} hasUnconsciousEffect - Whether actor already has unconscious effect
+ * @param {boolean} hasDeadEffect - Whether actor already has dead effect
  * @returns {boolean} True if actor should be offered imperiled choice
  */
-export function shouldOfferImperiledChoice(currentHP, maxHP, exhaustionLevel, hasImperiledEffect) {
-    return maxHP > 0 && currentHP <= 0 && exhaustionLevel < 5 && !hasImperiledEffect;
+export function shouldOfferImperiledChoice(
+    currentHP,
+    maxHP,
+    exhaustionLevel,
+    hasImperiledEffect,
+    hasUnconsciousEffect = false,
+    hasDeadEffect = false
+) {
+    return maxHP > 0 && currentHP <= 0 && exhaustionLevel < 5
+           && !hasImperiledEffect && !hasUnconsciousEffect && !hasDeadEffect;
 }
 
 /**
