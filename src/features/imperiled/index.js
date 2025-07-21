@@ -28,7 +28,7 @@ export function registerImperiledFeature() {
         }
     });
 
-    Hooks.on('preUpdateActor', async (actor, changed, options, userId) => {
+    Hooks.on('updateActor', async (actor, changed, options, userId) => {
         if (game.settings.get(module_id, 'imperiled')) {
             await handleImperiledUpdate(actor, changed, options, userId);
         }
