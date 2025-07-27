@@ -19,6 +19,9 @@ import { showImperiledDialog, applyUnconscious, createImperiledChatMessage } fro
  * @param {string} userId - ID of user making the update
  */
 export async function handleImperiledUpdate(actor, changed, options, userId) {
+    // Only process for the user who triggered the update
+    if (game.user.id !== userId) return;
+    
     if (actor.type === 'vehicle' || actor.type === 'group') {
         return;
     }
