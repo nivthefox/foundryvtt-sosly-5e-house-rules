@@ -63,14 +63,8 @@ function addMadnessTracking(app, el) {
  * Register hooks for madness UI integration
  */
 export function registerMadnessHooks() {
-    // PCs
+    // PCs only
     Hooks.on('renderActorSheet5eCharacter2', (app, html, data) => {
-        const el = html[0];
-        addMadnessTracking(app, el);
-    });
-
-    // NPCs
-    Hooks.on('renderActorSheet5eNPC2', (app, html, data) => {
         const el = html[0];
         addMadnessTracking(app, el);
     });
