@@ -39,4 +39,7 @@ sosly:
   encumbrance:
     label: Equipped Encumbrance
     hint: Equipped items count as half weight for encumbrance calculations.
+  transformation-cleanup:
+    label: Automatic Transformation Cleanup
+    hint: Automatically removes temporary actors when PCs revert from transformed forms (Polymorph, Wild Shape, etc.), eliminating need for DM intervention.
   networth: Net Worth
