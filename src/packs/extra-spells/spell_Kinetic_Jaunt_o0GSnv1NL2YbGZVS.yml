@@ -1,0 +1,145 @@
+name: Kinetic Jaunt
+type: spell
+system:
+  source:
+    custom: ''
+    book: SCC
+    page: '37'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You magically empower your movement with
+      dance-like steps, giving yourself the following benefits for the
+      duration.</p><ul class="rd__list"><li class="rd__li ">Your walking speed
+      increases by 10 feet.</li><li class="rd__li ">You don't provoke
+      opportunity attacks.</li><li class="rd__li ">You can move through the
+      space of another creature, and it doesn't count as
+      &amp;Reference[rule=difficultterrain]{difficult terrain}. If you end your
+      turn in another creature's space, you are shunted to the last unoccupied
+      space you occupied, and you take [[/damage 1d8 type=force]]
+      damage.</li></ul></div>
+    chat: ''
+  level: 2
+  school: trs
+  properties:
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    WpyusfNtwJqsLtWF:
+      _id: WpyusfNtwJqsLtWF
+      type: damage
+      name: ''
+      activation:
+        type: ''
+        value: null
+        override: true
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - force
+            number: 1
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: kinetic-jaunt
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/skills/movement/feet-bladed-boots-fire.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: SCC
+    hash: kinetic%20jaunt_scc
+    propDroppable: spell
+    spellClassNames:
+      - Bard
+      - Sorcerer
+      - Wizard
+      - Artificer
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079501
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: o0GSnv1NL2YbGZVS
+sort: 1300000
+_key: '!items!o0GSnv1NL2YbGZVS'
+

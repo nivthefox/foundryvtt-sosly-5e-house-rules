@@ -1,0 +1,131 @@
+name: Intellect Fortress
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '107'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>For the duration, you or one willing
+      creature you can see within range has resistance to psychic damage, as
+      well as advantage on Intelligence, Wisdom, and Charisma saving
+      throws.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 4th level or higher, you can target one
+      additional creature for each slot level above 3rd. The creatures must be
+      within 30 feet of each other when you target them.</p></div></div>
+    chat: ''
+  level: 3
+  school: abj
+  properties:
+    - vocal
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: willing
+      choice: false
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    eaZLW7waG6mKn5Bq:
+      _id: eaZLW7waG6mKn5Bq
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: intellect-fortress
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/symbols/cog-shield-white-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: intellect%20fortress_tce
+    propDroppable: spell
+    spellClassNames:
+      - Artificer
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079632
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: q9B62P4ApiUoNLKS
+sort: 1500000
+_key: '!items!q9B62P4ApiUoNLKS'
+

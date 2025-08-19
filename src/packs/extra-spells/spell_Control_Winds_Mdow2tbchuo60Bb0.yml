@@ -1,0 +1,155 @@
+name: Control Winds
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '152'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You take control of the air in a 100-foot
+      cube that you can see within range. Choose one of the following effects
+      when you cast the spell. The effect lasts for the spell's duration, unless
+      you use your action on a later turn to switch to a different effect. You
+      can also use your action to temporarily halt the effect or to restart one
+      you've halted.</p><div data-roll-name-ancestor="Gusts" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Gusts.</span></span> A wind picks up within the
+      cube, continually blowing in a horizontal direction you designate. You
+      choose the intensity of the wind: calm, moderate, or strong. If the wind
+      is moderate or strong, ranged weapon attacks that pass through it or that
+      are made against targets within the cube have disadvantage on their attack
+      rolls. If the wind is strong, any creature moving against the wind must
+      spend 1 extra foot of movement for each foot moved.</p></div><div
+      data-roll-name-ancestor="Downdraft" class="rd__b  rd__b--3"><p><span
+      class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Downdraft.</span></span> You cause a sustained
+      blast of strong wind to blow downward from the top of the cube. Ranged
+      weapon attacks that pass through the cube or that are made against targets
+      within it have disadvantage on their attack rolls. A creature must make a
+      Strength saving throw if it flies into the cube for the first time on a
+      turn or starts its turn there flying. On a failed save, the creature is
+      knocked &amp;Reference[condition=prone].</p></div><div
+      data-roll-name-ancestor="Updraft" class="rd__b  rd__b--3"><p><span
+      class="rd__h rd__h--3" data-title-index="3"> <span
+      class="entry-title-inner">Updraft.</span></span> You cause a sustained
+      updraft within the cube, rising upward from the cube's bottom side.
+      Creatures that end a fall within the cube take only half damage from the
+      fall. When a creature in the cube makes a vertical jump, the creature can
+      jump up to 10 feet higher than normal.</p></div></div>
+    chat: ''
+  level: 5
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '100'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '300'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    ILf5KWNwPw9QvgH1:
+      _id: ILf5KWNwPw9QvgH1
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: control-winds
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/wind-weather-sailing-ship.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: control%20winds_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079860
+  modifiedTime: 1755560997893
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Mdow2tbchuo60Bb0
+sort: 100000
+_key: '!items!Mdow2tbchuo60Bb0'
+

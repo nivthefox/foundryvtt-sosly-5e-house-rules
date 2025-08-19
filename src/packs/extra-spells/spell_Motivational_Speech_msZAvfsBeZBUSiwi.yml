@@ -1,0 +1,150 @@
+name: Motivational Speech
+type: spell
+system:
+  source:
+    custom: ''
+    book: AI
+    page: '77'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p></p><div class="rd__quote"><p
+      class="rd__quote-line rd__quote-line--last">“<i>I once heard a
+      motivational speech by Jim and it was the worst ninety seconds of my life.
+      What does Omin see in him, anyway?</i>”</p><p><span class="rd__quote-by">—
+      Walnut Dankgrass</span></p></div><p></p><p>You address allies, staff, or
+      innocent bystanders to exhort and inspire them to greatness, whether they
+      have anything to get excited about or not. Choose up to five creatures
+      within range that can hear you. For the duration, each affected creature
+      gains 5 temporary hit points and has advantage on Wisdom saving throws. If
+      an affected creature is hit by an attack, it has advantage on the next
+      attack roll it makes. Once an affected creature loses the temporary hit
+      points granted by this spell, the spell ends for that
+      creature.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 4th level or higher, the temporary hit
+      points increase by 5 for each slot level above 3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: enc
+  properties:
+    - vocal
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '5'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: minute
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    VxFkLgMMaYg3JZhZ:
+      _id: VxFkLgMMaYg3JZhZ
+      type: damage
+      name: ''
+      activation:
+        type: ''
+        value: null
+        override: true
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '5'
+            scaling:
+              mode: whole
+              formula: '5'
+              number: 1
+            number: null
+            denomination: null
+      sort: 0
+  identifier: motivational-speech
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/sundries/flags/banner-flag-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: AI
+    hash: motivational%20speech_ai
+    propDroppable: spell
+    spellClassNames:
+      - Bard
+      - Cleric
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079325
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: msZAvfsBeZBUSiwi
+sort: 1800000
+_key: '!items!msZAvfsBeZBUSiwi'
+

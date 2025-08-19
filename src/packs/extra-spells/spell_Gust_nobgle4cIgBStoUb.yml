@@ -1,0 +1,135 @@
+name: Gust
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '157'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You seize the air and compel it to create
+      one of the following effects at a point you can see within range:</p><ul
+      class="rd__list"><li class="rd__li ">One Medium or smaller creature that
+      you choose must succeed on a Strength saving throw or be pushed up to 5
+      feet away from you.</li><li class="rd__li ">You create a small blast of
+      air capable of moving one object that is neither held nor carried and that
+      weighs no more than 5 pounds. The object is pushed up to 10 feet away from
+      you. It isn't pushed with enough force to cause damage.</li><li
+      class="rd__li ">You create a harmless sensory effect using air, such as
+      causing leaves to rustle, wind to slam shutters closed, or your clothing
+      to ripple in a breeze.</li></ul></div>
+    chat: ''
+  level: 0
+  school: trs
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: true
+  activities:
+    8105k2ohciSfPqlc:
+      _id: 8105k2ohciSfPqlc
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: gust
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/wind-stream-blue-gray.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: gust_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: MuV2dgu770kjzsTI
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080141
+  modifiedTime: 1755561196000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: nobgle4cIgBStoUb
+sort: 100196
+_key: '!items!nobgle4cIgBStoUb'
+

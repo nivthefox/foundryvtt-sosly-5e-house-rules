@@ -1,0 +1,129 @@
+name: Scatter
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '164'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>The air quivers around up to five
+      creatures of your choice that you can see within range. An unwilling
+      creature must succeed on a Wisdom saving throw to resist this spell. You
+      teleport each affected target to an unoccupied space that you can see
+      within 120 feet of you. That space must be on the ground or on a
+      floor.</p></div>
+    chat: ''
+  level: 6
+  school: con
+  properties:
+    - vocal
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '5'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    75hXknuhvm6lp0pl:
+      _id: 75hXknuhvm6lp0pl
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: scatter
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/consumables/eggs/egg-broken-spotted-white.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: scatter_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 7wGdbFMnZ0TThO0D
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080526
+  modifiedTime: 1755561420711
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: AJvgLziXJZLouay5
+sort: 100098
+_key: '!items!AJvgLziXJZLouay5'
+

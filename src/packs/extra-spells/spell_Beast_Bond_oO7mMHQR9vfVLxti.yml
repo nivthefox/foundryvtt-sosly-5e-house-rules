@@ -1,0 +1,131 @@
+name: Beast Bond
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '150'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You establish a telepathic link with one
+      beast you touch that is friendly to you or
+      &amp;Reference[condition=charmed] by you. The spell fails if the beast's
+      Intelligence score is 4 or higher. Until the spell ends, the link is
+      active while you and the beast are within line of sight of each other.
+      Through the link, the beast can understand your telepathic messages to it,
+      and it can telepathically communicate simple emotions and concepts back to
+      you. While the link is active, the beast gains advantage on attack rolls
+      against any creature within 5 feet of you that you can see.</p></div>
+    chat: ''
+  level: 1
+  school: div
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a bit of fur wrapped in a cloth
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    FJeUGmeoYuznHLos:
+      _id: FJeUGmeoYuznHLos
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: beast-bond
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/abilities/paw-glowing-yellow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: beast%20bond_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 5jrCohKawbl0mTbF
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079752
+  modifiedTime: 1755560868668
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: oO7mMHQR9vfVLxti
+sort: 106250
+_key: '!items!oO7mMHQR9vfVLxti'
+

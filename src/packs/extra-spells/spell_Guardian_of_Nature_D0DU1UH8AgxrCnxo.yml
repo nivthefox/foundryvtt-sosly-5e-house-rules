@@ -1,0 +1,155 @@
+name: Guardian of Nature
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '157'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A nature spirit answers your call and
+      transforms you into a powerful guardian. The transformation lasts until
+      the spell ends. You choose one of the following forms to assume: Primal
+      Beast or Great Tree.</p><div data-roll-name-ancestor="Primal Beast"
+      class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">Primal
+      Beast.</span></span> Bestial fur covers your body, your facial features
+      become feral, and you gain the following benefits:</p></div><ul
+      class="rd__list"><li class="rd__li ">Your walking speed increases by 10
+      feet.</li><li class="rd__li ">You gain &amp;Reference[rule=darkvision]
+      with a range of 120 feet.</li><li class="rd__li ">You make Strength-based
+      attack rolls with advantage.</li><li class="rd__li ">Your melee weapon
+      attacks deal an extra [[/damage 1d6 type=force]] damage on a
+      hit.</li></ul><div data-roll-name-ancestor="Great Tree" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Great Tree.</span></span> Your skin appears
+      barky, leaves sprout from your hair, and you gain the following
+      benefits:</p></div><ul class="rd__list"><li class="rd__li ">You gain 10
+      temporary hit points.</li><li class="rd__li ">You make Constitution saving
+      throws with advantage.</li><li class="rd__li ">You make Dexterity- and
+      Wisdom-based attack rolls with advantage.</li><li class="rd__li ">While
+      you are on the ground, the ground within 15 feet of you is
+      &amp;Reference[rule=difficultterrain]{difficult terrain} for your
+      enemies.</li></ul></div>
+    chat: ''
+  level: 4
+  school: trs
+  properties:
+    - vocal
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    Efpu3vm2GP7D3ZXz:
+      _id: Efpu3vm2GP7D3ZXz
+      type: damage
+      name: ''
+      activation:
+        type: ''
+        value: null
+        override: true
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - force
+            number: 1
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: guardian-of-nature
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/nature/root-vines-face-glow-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: guardian%20of%20nature_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: byymQDws2inuIbfK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080128
+  modifiedTime: 1755561190255
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: D0DU1UH8AgxrCnxo
+sort: 106250
+_key: '!items!D0DU1UH8AgxrCnxo'
+

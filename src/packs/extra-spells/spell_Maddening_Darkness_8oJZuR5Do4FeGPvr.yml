@@ -1,0 +1,146 @@
+name: Maddening Darkness
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '160'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Magical darkness spreads from a point you
+      choose within range to fill a 60-foot-radius sphere until the spell ends.
+      The darkness spreads around corners. A creature with
+      &amp;Reference[rule=darkvision] can't see through this darkness.
+      Non-magical light, as well as light created by spells of 8th level or
+      lower, can't illuminate the area.</p><p>Shrieks, gibbering, and mad
+      laughter can be heard within the sphere. Whenever a creature starts its
+      turn in the sphere, it must make a Wisdom saving throw, taking [[/damage
+      8d8 type=psychic]] damage on a failed save, or half as much damage on a
+      successful one.</p></div>
+    chat: ''
+  level: 8
+  school: evo
+  properties:
+    - vocal
+    - material
+    - concentration
+  materials:
+    value: a drop of pitch mixed with a drop of mercury
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: sphere
+      size: '60'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '150'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dXMZ2WDADsVsUDrN:
+      _id: dXMZ2WDADsVsUDrN
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 8
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: maddening-darkness
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/unholy/silhouette-robe-evil-glow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: maddening%20darkness_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: HytqgYOgaDbylMq9
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080332
+  modifiedTime: 1755561333989
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 8oJZuR5Do4FeGPvr
+sort: 125000
+_key: '!items!8oJZuR5Do4FeGPvr'
+

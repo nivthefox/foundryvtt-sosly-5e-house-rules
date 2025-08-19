@@ -1,0 +1,140 @@
+name: Distort Value
+type: spell
+system:
+  source:
+    custom: ''
+    book: AI
+    page: '75'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Do you need to squeeze a few more gold
+      pieces out of a merchant as you try to sell that weird octopus statue you
+      liberated from the chaos temple? Do you need to downplay the worth of some
+      magical assets when the tax collector stops by? Distort value has you
+      covered.</p><p>You cast this spell on an object no more than 1 foot on a
+      side, doubling the object's perceived value by adding illusory flourishes
+      or polish to it, or reducing its perceived value by half with the help of
+      illusory scratches, dents, and other unsightly features. Anyone examining
+      the object can ascertain its true value with a successful Intelligence
+      (&amp;Reference[skill=Investigation]) check against your spell save
+      DC.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 2nd level or higher, the maximum size of
+      the object increases by 1 foot for each slot level above
+      1st.</p></div></div>
+    chat: ''
+  level: 1
+  school: ill
+  properties:
+    - vocal
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: minute
+    value: 1
+    condition: ''
+  duration:
+    value: '8'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    96IrMkGIV6NVIkzY:
+      _id: 96IrMkGIV6NVIkzY
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: distort-value
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/commodities/currency/coins-leather-pouch-stone.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: AI
+    hash: distort%20value_ai
+    propDroppable: spell
+    spellClassNames:
+      - Bard
+      - Sorcerer
+      - Wizard
+      - Warlock
+effects: []
+folder: MuV2dgu770kjzsTI
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079239
+  modifiedTime: 1755560133990
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: zi23wxCPwVRBSgG1
+sort: 200000
+_key: '!items!zi23wxCPwVRBSgG1'
+

@@ -1,0 +1,150 @@
+name: Tasha's Caustic Brew
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '115'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A stream of acid emanates from you in a
+      line 30 feet long and 5 feet wide in a direction you choose. Each creature
+      in the line must succeed on a Dexterity saving throw or be covered in acid
+      for the spell's duration or until a creature uses its action to scrape or
+      wash the acid off itself or another creature. A creature covered in the
+      acid takes [[/damage 2d4 type=acid]] damage at start of each of its
+      turns.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 2nd level or higher, the damage increases
+      by [[/damage 2d4]] for each slot level above 1st.</p></div></div>
+    chat: ''
+  level: 1
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a bit of rotten food
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: line
+      size: '30'
+      width: '5'
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    Y7h59WZnAwlrj1EW:
+      _id: Y7h59WZnAwlrj1EW
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - acid
+            number: 2
+            denomination: 4
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 2
+            custom:
+              enabled: false
+      sort: 0
+  identifier: tashas-caustic-brew
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/skills/toxins/cauldron-bubbles-overflow-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: tasha's%20caustic%20brew_tce
+    propDroppable: spell
+    spellClassNames:
+      - Artificer
+effects: []
+folder: 5jrCohKawbl0mTbF
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079685
+  modifiedTime: 1755560717979
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: PX4y3Eqp6vb2fAJa
+sort: 125000
+_key: '!items!PX4y3Eqp6vb2fAJa'
+

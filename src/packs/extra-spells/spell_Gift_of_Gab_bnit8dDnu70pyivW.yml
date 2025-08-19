@@ -1,0 +1,138 @@
+name: Gift of Gab
+type: spell
+system:
+  source:
+    custom: ''
+    book: AI
+    page: '76'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p></p><div class="rd__quote"><p
+      class="rd__quote-line rd__quote-line--last">“<i>When I met Jim Darkmagic,
+      I wondered how he got anything done in that outfit. I have since learned
+      that most of his talents involve standing and talking. His outfit is
+      perfect for that.</i>”</p><p><span class="rd__quote-by">—
+      Môrgæn</span></p></div><p></p><p>Jim Darkmagic is said to have invented
+      this spell, originally calling it <i>I said what?!</i> Have you ever been
+      talking to the local monarch and accidentally mentioned how their son
+      looks like your favorite hog from when you were growing up on the family
+      farm? We've all been there! But rather than being beheaded for an honest
+      slip of the tongue, you can pretend it never happened—by ensuring that no
+      one knows it happened.</p><p>When you cast this spell, you skillfully
+      reshape the memories of listeners in your immediate area, so that each
+      creature of your choice within 5 feet of you forgets everything you said
+      within the last 6 seconds. Those creatures then remember that you actually
+      said the words you speak as the verbal component of the spell.</p></div>
+    chat: ''
+  level: 2
+  school: enc
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: reaction
+    value: 1
+    condition: which you take when you speak to another creature
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    UZRAEXSqkdxqYrYe:
+      _id: UZRAEXSqkdxqYrYe
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: gift-of-gab
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/mammals/humanoid-fox-cat-archer.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: AI
+    hash: gift%20of%20gab_ai
+    propDroppable: spell
+    spellClassNames:
+      - Bard
+      - Wizard
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079270
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: bnit8dDnu70pyivW
+sort: 1900000
+_key: '!items!bnit8dDnu70pyivW'
+

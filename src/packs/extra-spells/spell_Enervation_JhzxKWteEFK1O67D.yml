@@ -1,0 +1,299 @@
+name: Enervation
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '155'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A tendril of inky darkness reaches out
+      from you, touching a creature you can see within range to drain life from
+      it. The target must make a Dexterity saving throw. On a successful save,
+      the target takes [[/damage 2d8 type=necrotic]] damage, and the spell ends.
+      On a failed save, the target takes [[/damage 4d8 type=necrotic]] damage,
+      and until the spell ends, you can use your action on each of your turns to
+      automatically deal [[/damage 4d8 type=necrotic]] damage to the target. The
+      spell ends if you use your action to do anything else, if the target is
+      ever outside the spell's range, or if the target has
+      &amp;Reference[rule=totalcover]{total cover} from you.</p><p>Whenever the
+      spell deals damage to a target, you regain hit points equal to half the
+      amount of necrotic damage the target takes.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="At Higher Levels"
+      class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 6th
+      level or higher, the damage increases by [[/damage 1d8]] for each slot
+      level above 5th.</p></div></div>
+    chat: ''
+  level: 5
+  school: nec
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    8scy0RdCfajsR9gE:
+      _id: 8scy0RdCfajsR9gE
+      type: save
+      name: 'Save: 2d8 Necrotic Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - necrotic
+            number: 2
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    lkuHf7PJAWLuAbfX:
+      _id: lkuHf7PJAWLuAbfX
+      type: save
+      name: 'Save: 4d8 Necrotic Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - necrotic
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    X0Jzef2q1CmXfUF5:
+      _id: X0Jzef2q1CmXfUF5
+      type: save
+      name: 'Save: 4d8 Necrotic Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - necrotic
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    zNzp26eyIamed3a8:
+      _id: zNzp26eyIamed3a8
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      healing:
+        number: null
+        denomination: null
+        types: []
+        custom:
+          enabled: false
+        scaling:
+          number: 1
+      sort: 0
+  identifier: enervation
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/unholy/strike-body-life-soul-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: enervation_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080032
+  modifiedTime: 1755561144758
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: JhzxKWteEFK1O67D
+sort: 125000
+_key: '!items!JhzxKWteEFK1O67D'
+

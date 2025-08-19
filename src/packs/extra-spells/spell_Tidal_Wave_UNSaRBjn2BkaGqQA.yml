@@ -1,0 +1,146 @@
+name: Tidal Wave
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '168'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You conjure up a wave of water that
+      crashes down on an area within range. The area can be up to 30 feet long,
+      up to 10 feet wide, and up to 10 feet tall. Each creature in that area
+      must make a Dexterity saving throw. On a failed save, a creature takes
+      [[/damage 4d8 type=bludgeoning]] damage and is knocked
+      &amp;Reference[condition=prone]. On a successful save, a creature takes
+      half as much damage and isn't knocked &amp;Reference[condition=prone]. The
+      water then spreads out across the ground in all directions, extinguishing
+      unprotected flames in its area and within 30 feet of it, and then it
+      vanishes.</p></div>
+    chat: ''
+  level: 3
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a drop of water
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    Yv4IdDf0LyZToTLW:
+      _id: Yv4IdDf0LyZToTLW
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: tidal-wave
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/water/wave-water-rolling-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: tidal%20wave_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080754
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: UNSaRBjn2BkaGqQA
+sort: 500000
+_key: '!items!UNSaRBjn2BkaGqQA'
+

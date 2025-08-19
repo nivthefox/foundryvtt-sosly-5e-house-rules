@@ -1,0 +1,147 @@
+name: Frost Fingers
+type: spell
+system:
+  source:
+    custom: ''
+    book: IDRotF
+    page: '318'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Freezing cold blasts from your fingertips
+      in a 15-foot cone. Each creature in that area must make a Constitution
+      saving throw, taking [[/damage 2d8 type=cold]] damage on a failed save, or
+      half as much damage on a successful one.</p><p>The cold freezes nonmagical
+      liquids in the area that aren't being worn or carried.</p></div><div
+      class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="At Higher
+      Levels" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 2nd
+      level or higher, the damage increases by [[/damage 1d8]] for each slot
+      level above 1st.</p></div></div>
+    chat: ''
+  level: 1
+  school: evo
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cone
+      size: '15'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    sBIFarIdOvCcfkNz:
+      _id: sBIFarIdOvCcfkNz
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - cold
+            number: 2
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: frost-fingers
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/water/projectiles-ice-faceted-salvo-gray.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: IDRotF
+    hash: frost%20fingers_idrotf
+    propDroppable: spell
+    spellClassNames:
+      - Wizard
+effects: []
+folder: 5jrCohKawbl0mTbF
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079459
+  modifiedTime: 1755560425588
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: NyUNy2dmsLz8l1Gi
+sort: 200000
+_key: '!items!NyUNy2dmsLz8l1Gi'
+

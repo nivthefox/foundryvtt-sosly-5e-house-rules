@@ -1,0 +1,198 @@
+name: Holy Weapon
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '157'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You imbue a weapon you touch with holy
+      power. Until the spell ends, the weapon emits bright light in a 30-foot
+      radius and dim light for an additional 30 feet. In addition, weapon
+      attacks made with it deal an extra [[/damage 2d8 type=radiant]] damage on
+      a hit. If the weapon isn't already a magic weapon, it becomes one for the
+      duration.</p><p>As a bonus action on your turn, you can dismiss this spell
+      and cause the weapon to emit a burst of radiance. Each creature of your
+      choice that you can see within 30 feet of the weapon must make a
+      Constitution saving throw. On a failed save, a creature takes [[/damage
+      4d8 type=radiant]] damage, and it is &amp;Reference[condition=blinded] for
+      1 minute. On a successful save, a creature takes half as much damage and
+      isn't &amp;Reference[condition=blinded]. At the end of each of its turns,
+      a &amp;Reference[condition=blinded] creature can make a Constitution
+      saving throw, ending the effect on itself on a success.</p></div>
+    chat: ''
+  level: 5
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '30'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    EyfrMfyfMnNWQZf3:
+      _id: EyfrMfyfMnNWQZf3
+      type: save
+      name: 'Save: 4d8 Radiant Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - radiant
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    Ub4QWWggy4xj9kDs:
+      _id: Ub4QWWggy4xj9kDs
+      type: damage
+      name: 'Damage: 2d8 Radiant Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - radiant
+            number: 2
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: holy-weapon
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/weapons/swords/sword-gold-holy.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: holy%20weapon_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080171
+  modifiedTime: 1755561205612
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: ihFKJHQoYSK2AwZM
+sort: 106250
+_key: '!items!ihFKJHQoYSK2AwZM'
+

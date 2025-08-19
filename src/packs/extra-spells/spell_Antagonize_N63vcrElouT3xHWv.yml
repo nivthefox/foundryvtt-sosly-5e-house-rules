@@ -1,0 +1,151 @@
+name: Antagonize
+type: spell
+system:
+  source:
+    custom: ''
+    book: BMT
+    page: '50'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You whisper magical words that antagonize
+      one creature of your choice within range. The target must make a Wisdom
+      saving throw. On a failed save, the target takes [[/damage 4d4
+      type=psychic]] damage and must immediately use its reaction to make a
+      melee attack against another creature of your choice that you can see. If
+      the target can't make this attack (for example, because there is no one
+      within its reach or because its reaction is unavailable), the target
+      instead has disadvantage on the next attack roll it makes before the start
+      of your next turn. On a successful save, the target takes half as much
+      damage only.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 4th level or higher, the damage increases
+      by [[/damage 1d4]] for each slot level above 3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: enc
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a playing card depicting a rogue
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    2OjoGGHu3zJbjpkM:
+      _id: 2OjoGGHu3zJbjpkM
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 4
+            denomination: 4
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: antagonize
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/wind-vortex-swirl-purple.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: BMT
+    hash: antagonize_bmt
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079339
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: N63vcrElouT3xHWv
+sort: 1700000
+_key: '!items!N63vcrElouT3xHWv'
+

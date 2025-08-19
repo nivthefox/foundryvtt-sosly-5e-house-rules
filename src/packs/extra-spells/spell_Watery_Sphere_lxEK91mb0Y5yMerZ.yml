@@ -1,0 +1,152 @@
+name: Watery Sphere
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '170'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You conjure up a sphere of water with a
+      5-foot radius at a point you can see within range. The sphere can hover
+      but no more than 10 feet off the ground. The sphere remains for the
+      spell's duration.</p><p>Any creature in the sphere's space must make a
+      Strength saving throw. On a successful save, a creature is ejected from
+      that space to the nearest unoccupied space of the creature's choice
+      outside the sphere. A Huge or larger creature succeeds on the saving throw
+      automatically, and a Large or smaller creature can choose to fail it. On a
+      failed save, a creature is &amp;Reference[condition=restrained] by the
+      sphere and is engulfed by the water. At the end of each of its turns, a
+      &amp;Reference[condition=restrained] target can repeat the saving throw,
+      ending the effect on itself on a success.</p><p>The sphere can restrain as
+      many as four Medium or smaller creatures or one Large creature. If the
+      sphere restrains a creature that causes it to exceed this capacity, a
+      random creature that was already &amp;Reference[condition=restrained] by
+      the sphere falls out of it and lands &amp;Reference[condition=prone] in a
+      space within 5 feet of it.</p><p>As an action, you can move the sphere up
+      to 30 feet in a straight line. If it moves over a pit, a cliff, or other
+      drop-off, it safely descends until it is hovering 10 feet above the
+      ground. Any creature &amp;Reference[condition=restrained] by the sphere
+      moves with it. You can ram the sphere into creatures, forcing them to make
+      the saving throw.</p><p>When the spell ends, the sphere falls to the
+      ground and extinguishes all normal flames within 30 feet of it. Any
+      creature &amp;Reference[condition=restrained] by the sphere is knocked
+      &amp;Reference[condition=prone] in the space where it falls. The water
+      then vanishes.</p></div>
+    chat: ''
+  level: 4
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a droplet of water
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    cQFGY0UF9qPi9rHc:
+      _id: cQFGY0UF9qPi9rHc
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: watery-sphere
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/commodities/materials/glass-orb-teal.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: watery%20sphere_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: byymQDws2inuIbfK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080858
+  modifiedTime: 1755561581360
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: lxEK91mb0Y5yMerZ
+sort: 100196
+_key: '!items!lxEK91mb0Y5yMerZ'
+

@@ -1,0 +1,144 @@
+name: Sword Burst
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '115'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create a momentary circle of spectral
+      blades that sweep around you. All other creatures within 5 feet of you
+      must succeed on a Dexterity saving throw or take [[/damage 1d6
+      type=force]] damage.</p><p>This spell's damage increases by [[/damage
+      1d6]] when you reach 5th level ([[/damage 2d6]]), 11th level ([[/damage
+      3d6]]), and 17th level ([[/damage 4d6]]).</p></div>
+    chat: ''
+  level: 0
+  school: con
+  properties:
+    - vocal
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: true
+  activities:
+    N4X6qd3y1EQRWsRV:
+      _id: N4X6qd3y1EQRWsRV
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - force
+            number: 1
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: sword-burst
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/skills/ranged/daggers-thrown-salvo-teal.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: sword%20burst_tce
+    propDroppable: spell
+    spellClassNames:
+      - Artificer
+      - Sorcerer
+      - Warlock
+      - Wizard
+effects: []
+folder: MuV2dgu770kjzsTI
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079675
+  modifiedTime: 1755560711937
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Wd4pHBspsJz7qSKq
+sort: 103125
+_key: '!items!Wd4pHBspsJz7qSKq'
+

@@ -1,0 +1,134 @@
+name: Catnap
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '151'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You make a calming gesture, and up to
+      three willing creatures of your choice that you can see within range fall
+      &amp;Reference[condition=unconscious] for the spell's duration. The spell
+      ends on a target early if it takes damage or someone uses an action to
+      shake or slap it awake. If a target remains
+      &amp;Reference[condition=unconscious] for the full duration, that target
+      gains the benefit of a short rest, and it can't be affected by this spell
+      again until it finishes a long rest.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="At Higher Levels"
+      class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 4th
+      level or higher, you can target one additional willing creature for each
+      slot level above 3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: enc
+  properties:
+    - somatic
+    - material
+  materials:
+    value: a pinch of sand
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '3'
+      type: willing
+      choice: true
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    xk6k525yNvyV4Y9G:
+      _id: xk6k525yNvyV4Y9G
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: catnap
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/fog-gas-smoke-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: catnap_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079791
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: iWWoE8115AeLWcnN
+sort: 1200000
+_key: '!items!iWWoE8115AeLWcnN'
+

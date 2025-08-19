@@ -1,0 +1,164 @@
+name: Illusory Dragon
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '157'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>By gathering threads of shadow material
+      from the Shadowfell, you create a Huge shadowy dragon in an unoccupied
+      space that you can see within range. The illusion lasts for the spell's
+      duration and occupies its space, as if it were a creature.</p><p>When the
+      illusion appears, any of your enemies that can see it must succeed on a
+      Wisdom saving throw or become &amp;Reference[condition=frightened] of it
+      for 1 minute. If a &amp;Reference[condition=frightened] creature ends its
+      turn in a location where it doesn't have line of sight to the illusion, it
+      can repeat the saving throw, ending the effect on itself on a
+      success.</p><p>As a bonus action on your turn, you can move the illusion
+      up to 60 feet. At any point during its movement, you can cause it to
+      exhale a blast of energy in a 60-foot cone originating from its space.
+      When you create the dragon, choose a damage type: acid, cold, fire,
+      lightning, necrotic, or poison. Each creature in the cone must make an
+      Intelligence saving throw, taking [[/damage 7d6]] damage of the chosen
+      damage type on a failed save, or half as much damage on a successful
+      one.</p><p>The illusion is tangible because of the shadow stuff used to
+      create it, but attacks miss it automatically, it succeeds on all saving
+      throws, and it is immune to all damage and conditions. A creature that
+      uses an action to examine the dragon can determine that it is an illusion
+      by succeeding on an Intelligence (&amp;Reference[skill=Investigation])
+      check against your spell save DC. If a creature discerns the illusion for
+      what it is, the creature can see through it and has advantage on saving
+      throws against its breath.</p></div>
+    chat: ''
+  level: 8
+  school: ill
+  properties:
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cone
+      size: '60'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    VbbM0LlQxdhONCi5:
+      _id: VbbM0LlQxdhONCi5
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - acid
+              - cold
+              - fire
+              - lightning
+              - necrotic
+              - poison
+            number: 7
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: illusory-dragon
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/eyes/humanoid-single-purple-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: illusory%20dragon_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: HytqgYOgaDbylMq9
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080186
+  modifiedTime: 1755561219976
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: NJvl7JEHe2mio3ci
+sort: 200000
+_key: '!items!NJvl7JEHe2mio3ci'
+

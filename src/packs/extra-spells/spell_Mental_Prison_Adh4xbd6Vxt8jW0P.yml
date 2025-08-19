@@ -1,0 +1,254 @@
+name: Mental Prison
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '161'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You attempt to bind a creature within an
+      illusory cell that only it perceives. One creature you can see within
+      range must make an Intelligence saving throw. The target succeeds
+      automatically if it is immune to being &amp;Reference[condition=charmed].
+      On a successful save, the target takes [[/damage 5d10 type=psychic]]
+      damage, and the spell ends. On a failed save, the target takes [[/damage
+      5d10 type=psychic]] damage, and you make the area immediately around the
+      target's space appear dangerous to it in some way. You might cause the
+      target to perceive itself as being surrounded by fire, floating razors, or
+      hideous maws filled with dripping teeth. Whatever form the illusion takes,
+      the target can't see or hear anything beyond it and is
+      &amp;Reference[condition=restrained] for the spell's duration. If the
+      target is moved out of the illusion, makes a melee attack through it, or
+      reaches any part of its body through it, the target takes [[/damage 10d10
+      type=psychic]] damage, and the spell ends.</p></div>
+    chat: ''
+  level: 6
+  school: ill
+  properties:
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    NAIqw07THLuKJop5:
+      _id: NAIqw07THLuKJop5
+      type: save
+      name: 'Save: 5d10 Psychic Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - psychic
+            number: 5
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    XOzcXedrIKBZkJ9T:
+      _id: XOzcXedrIKBZkJ9T
+      type: save
+      name: 'Save: 5d10 Psychic Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - psychic
+            number: 5
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    UzC2536VywoZGc1C:
+      _id: UzC2536VywoZGc1C
+      type: save
+      name: 'Save: 10d10 Psychic Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - psychic
+            number: 10
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: mental-prison
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/perception/eye-ringed-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: mental%20prison_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 7wGdbFMnZ0TThO0D
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080413
+  modifiedTime: 1755561371934
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Adh4xbd6Vxt8jW0P
+sort: 100391
+_key: '!items!Adh4xbd6Vxt8jW0P'
+

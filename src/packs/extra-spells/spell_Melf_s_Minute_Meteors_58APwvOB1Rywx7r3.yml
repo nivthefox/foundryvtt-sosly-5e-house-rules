@@ -1,0 +1,153 @@
+name: Melf's Minute Meteors
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '161'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create six tiny meteors in your space.
+      They float in the air and orbit you for the spell's duration. When you
+      cast the spell—and as a bonus action on each of your turns thereafter—you
+      can expend one or two of the meteors, sending them streaking toward a
+      point or points you choose within 120 feet of you. Once a meteor reaches
+      its destination or impacts against a solid surface, the meteor explodes.
+      Each creature within 5 feet of the point where the meteor explodes must
+      make a Dexterity saving throw. A creature takes [[/damage 2d6 type=fire]]
+      damage on a failed save, or half as much damage on a successful
+      one.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 4th level or higher, the number of
+      meteors created increases by two for each slot level above
+      3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: niter, sulfur, and pine tar formed into a bead
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    GJDmp1FnSZh4ZHYT:
+      _id: GJDmp1FnSZh4ZHYT
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - fire
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: melfs-minute-meteors
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/earth/projectiles-stone-salvo-red.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: melf's%20minute%20meteors_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080399
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 58APwvOB1Rywx7r3
+sort: 700000
+_key: '!items!58APwvOB1Rywx7r3'
+

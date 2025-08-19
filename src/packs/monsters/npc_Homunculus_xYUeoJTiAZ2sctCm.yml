@@ -1,0 +1,878 @@
+name: Homunculus
+img: https://cdn.5e.tools/2024/img/bestiary/XMM/Homunculus.webp
+type: npc
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+system:
+  abilities:
+    str:
+      value: 4
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 15
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 14
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 10
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 10
+      proficient: 1
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 7
+      proficient: 1
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  attributes:
+    ac:
+      flat: null
+      calc: custom
+      formula: '@attributes.ac.armor + @attributes.ac.dex +1'
+    hp:
+      value: 4
+      max: 4
+      temp: 0
+      tempmax: 0
+      formula: 1d4 + 2
+    init:
+      ability: dex
+      bonus: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    movement:
+      burrow: null
+      climb: null
+      fly: 40
+      swim: null
+      walk: 20
+      units: ft
+      hover: false
+    spellcasting: ''
+    senses:
+      darkvision: 60
+      blindsight: 0
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spell:
+      level: 0
+    attunement:
+      max: 3
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 2
+    loyalty:
+      value: null
+    hd:
+      spent: 0
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+  details:
+    alignment: Neutral
+    biography:
+      value: >-
+        <div class="rd__b  rd__b--0"><p><i>Winged Servant Given Magical
+        Life</i></p><ul class="rd__list rd__list-hang-notitle"><li class="rd__li
+        "><p class="rd__p-list-item" data-roll-name-ancestor="Habitat:"><span
+        class="bold rd__list-item-name">Habitat:</span> <a
+        href="https://5e.tools/bestiary.html#blankhash,flstenvironment:any=1">Any</a></p></li><li
+        class="rd__li "><p class="rd__p-list-item"
+        data-roll-name-ancestor="Treasure:"><span class="bold
+        rd__list-item-name">Treasure:</span> None</p></li></ul><p>A mage can
+        create a cat-sized, obedient assistant called a homunculus through a
+        ritual that uses the mage's blood. Each homunculus shares a telepathic
+        bond with the mage who created it and loyally serves its creator. A
+        homunculus is reduced to inert material if its creator dies.</p><p>A
+        homunculus's appearance reflects its creator's tastes. Roll on or choose
+        a result from the Homunculus Features table to inspire a homunculus's
+        form.</p><table class="w-100 rd__table  stripe-odd-table"
+        data-roll-name-ancestor="Homunculus Features"><caption>Homunculus
+        Features</caption><thead><tr><th class="rd__th ve-col-2 ve-text-center "
+        data-rd-isroller="true">[[/r 1d8]]</th><th class="rd__th ve-col-10 "
+        data-rd-isroller="false">The Homunculus Has Features That
+        Are...</th></tr></thead><tbody><tr><td class="rd__th ve-col-2
+        ve-text-center " data-roll-min="1" data-roll-max="1">1</td><td
+        class="rd__th ve-col-10 ">Bat-like with tattered wings.</td></tr><tr><td
+        class="rd__th ve-col-2 ve-text-center " data-roll-min="2"
+        data-roll-max="2">2</td><td class="rd__th ve-col-10 ">Made of soft metal
+        and delicate gears.</td></tr><tr><td class="rd__th ve-col-2
+        ve-text-center " data-roll-min="3" data-roll-max="3">3</td><td
+        class="rd__th ve-col-10 ">Marked with its creator's
+        symbol.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+        data-roll-min="4" data-roll-max="4">4</td><td class="rd__th ve-col-10
+        ">Similar to those of a winged humanoid.</td></tr><tr><td class="rd__th
+        ve-col-2 ve-text-center " data-roll-min="5" data-roll-max="5">5</td><td
+        class="rd__th ve-col-10 ">Sprouting flowers and leaves.</td></tr><tr><td
+        class="rd__th ve-col-2 ve-text-center " data-roll-min="6"
+        data-roll-max="6">6</td><td class="rd__th ve-col-10 ">Suggestive of its
+        creator's appearance.</td></tr><tr><td class="rd__th ve-col-2
+        ve-text-center " data-roll-min="7" data-roll-max="7">7</td><td
+        class="rd__th ve-col-10 ">Underdeveloped and fleshy with beady
+        eyes.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+        data-roll-min="8" data-roll-max="8">8</td><td class="rd__th ve-col-10
+        ">Woven and patchwork, like a well-loved
+        toy.</td></tr></tbody></table></div>
+      public: ''
+    race: null
+    type:
+      value: construct
+      subtype: ''
+    cr: 0
+    habitat:
+      value:
+        - type: any
+      custom: ''
+    treasure:
+      value: []
+    ideal: ''
+    bond: ''
+    flaw: ''
+  skills:
+    acr:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ani:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    arc:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ath:
+      value: 0
+      ability: str
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    dec:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    his:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ins:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    itm:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    inv:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    med:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    nat:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    prc:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    prf:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    per:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    rel:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    slt:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ste:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    sur:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+  traits:
+    size: tiny
+    languages:
+      value:
+        - common
+      custom: understands Common plus one other language but can't speak
+      communication: {}
+    di:
+      value:
+        - poison
+      custom: ''
+      bypasses: []
+    dr:
+      value: []
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    ci:
+      value:
+        - charmed
+        - poisoned
+      custom: ''
+    dm:
+      amount: {}
+      bypasses: []
+    important: false
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  spells:
+    spell0:
+      value: 0
+      override: null
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+  resources:
+    legact:
+      value: 0
+      max: 0
+    legres:
+      value: 0
+      max: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    custom: ''
+    book: MM'25
+    page: '172'
+    license: ''
+    rules: '2024'
+    revision: 1
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  tools: {}
+prototypeToken:
+  displayName: 20
+  sight:
+    enabled: true
+    range: 60
+    visionMode: darkvision
+    saturation: -1
+    angle: 360
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    contrast: 0
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  detectionModes: []
+  name: Homunculus
+  texture:
+    src: assets/srd5e/img/bestiary/tokens/XMM/Homunculus.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  width: 0.5
+  height: 0.5
+  rotation: 0
+  ring:
+    enabled: true
+    colors:
+      ring: null
+      background: null
+    subject:
+      texture: >-
+        assets/srd5e/img/5etools-mirror-1/foundry-token-subjects/master/img/bestiary/token-subjects/XMM/Homunculus.webp
+      scale: 1
+    effects: 1
+  actorLink: false
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  hexagonalShape: 0
+  lockRotation: false
+  alpha: 1
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  occludable:
+    radius: 0
+flags:
+  plutonium:
+    page: bestiary.html
+    source: XMM
+    hash: homunculus_xmm
+  sosly:
+    originalConcentrationLimit: 1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755561065098
+  modifiedTime: 1755561066634
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+items:
+  - _id: 3UaFT17GXVv1Cvz6
+    name: Bite
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: MM'25
+        page: '172'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Attack Roll:</i> [[/r
+          1d20+4]]{+4}, reach 5 ft. <i>Hit:</i> 1 Piercing damage, and the
+          target is subjected to the following effect. <i>Constitution Saving
+          Throw:</i> DC <span class="rd__dc">12</span>. <i>Failure:</i> The
+          target has the &amp;Reference[condition=Poisoned] condition until the
+          end of the homunculus's next turn. <i>Failure by 5 or More:</i> The
+          target has the &amp;Reference[condition=Poisoned] condition for 1
+          minute. While &amp;Reference[condition=Poisoned], the target has the
+          &amp;Reference[condition=Unconscious] condition, which ends early if
+          the target takes any damage.</p></div>
+        chat: ''
+      range:
+        value: 5
+        long: null
+        units: ft
+        reach: null
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        SB0XHmcBWNkkFU54:
+          _id: SB0XHmcBWNkkFU54
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: true
+            type:
+              value: melee
+              classification: ''
+            ability: none
+            bonus: '4'
+            critical:
+              threshold: null
+          damage:
+            parts:
+              - types:
+                  - piercing
+                custom:
+                  enabled: true
+                  formula: '1'
+                scaling:
+                  mode: ''
+                  number: 1
+                number: null
+                denomination: null
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+        0IVbU0vVe8BEYtA2:
+          _id: 0IVbU0vVe8BEYtA2
+          type: save
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: '1'
+              type: ''
+              choice: false
+              special: ''
+            prompt: true
+            override: false
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '12'
+          damage:
+            onSave: none
+            parts: []
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+      identifier: ''
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: false
+      cover: null
+      crewed: false
+      ammunition: {}
+      armor:
+        value: null
+      damage:
+        base:
+          number: null
+          denomination: null
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          number: null
+          denomination: null
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      magicalBonus: null
+    ownership:
+      default: 0
+    img: icons/creatures/abilities/mouth-teeth-long-red.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: XMM
+        hash: bite_homunculus_xmm_xmm
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!xYUeoJTiAZ2sctCm.3UaFT17GXVv1Cvz6'
+  - _id: bhCN464GsVjkfJZf
+    name: Telepathic Bond
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: MM'25
+        page: '172'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>While the homunculus is on the same
+          plane of existence as its master, the two of them can communicate
+          telepathically with each other.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: ''
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+    ownership:
+      default: 0
+    img: icons/magic/control/energy-stream-link-blue.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: XMM
+        hash: telepathic%20bond_homunculus_xmm_xmm
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!xYUeoJTiAZ2sctCm.bhCN464GsVjkfJZf'
+effects: []
+folder: O3uUkSqCiVf6urgf
+_id: xYUeoJTiAZ2sctCm
+sort: 275000
+_key: '!actors!xYUeoJTiAZ2sctCm'
+

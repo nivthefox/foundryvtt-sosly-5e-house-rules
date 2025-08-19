@@ -1,0 +1,210 @@
+name: Storm Sphere
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '166'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A 20-foot-radius sphere of whirling air
+      springs into existence, centered on a point you choose within range. The
+      sphere remains for the spell's duration. Each creature in the sphere when
+      it appears or that ends its turn there must succeed on a Strength saving
+      throw or take [[/damage 2d6 type=bludgeoning]] damage. The sphere's space
+      is &amp;Reference[rule=difficultterrain]{difficult terrain}.</p><p>Until
+      the spell ends, you can use a bonus action on each of your turns to cause
+      a bolt of lightning to leap from the center of the sphere toward one
+      creature you choose within 60 feet of the center. Make a ranged spell
+      attack. You have advantage on the attack roll if the target is in the
+      sphere. On a hit, the target takes [[/damage 4d6 type=lightning]]
+      damage.</p><p>Creatures within 30 feet of the sphere have disadvantage on
+      Wisdom (&amp;Reference[skill=Perception]) checks made to
+      listen.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 5th level or higher, the damage for each
+      of its effects increases by [[/damage 1d6]] for each slot level above
+      4th.</p></div></div>
+    chat: ''
+  level: 4
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '150'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    W1sYaelapfelxOgm:
+      _id: W1sYaelapfelxOgm
+      type: attack
+      name: 'Attack: 4d6 Lightning Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+      damage:
+        critical: {}
+        includeBase: true
+        parts:
+          - types:
+              - lightning
+            number: 4
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    JEW6o2avR6cNS6Ir:
+      _id: JEW6o2avR6cNS6Ir
+      type: save
+      name: 'Save: 2d6 Bludgeoning Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: storm-sphere
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/commodities/gems/pearl-water.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: storm%20sphere_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: byymQDws2inuIbfK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080657
+  modifiedTime: 1755561486614
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: XZ5tLF93p6vDqa15
+sort: 100782
+_key: '!items!XZ5tLF93p6vDqa15'
+

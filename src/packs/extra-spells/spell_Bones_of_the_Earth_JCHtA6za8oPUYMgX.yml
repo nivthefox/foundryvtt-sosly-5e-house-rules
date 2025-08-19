@@ -1,0 +1,161 @@
+name: Bones of the Earth
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '150'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You cause up to six pillars of stone to
+      burst from places on the ground that you can see within range. Each pillar
+      is a cylinder that has a diameter of 5 feet and a height of up to 30 feet.
+      The ground where a pillar appears must be wide enough for its diameter,
+      and you can target the ground under a creature if that creature is Medium
+      or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit
+      points, a pillar crumbles into rubble, which creates an area of
+      &amp;Reference[rule=difficultterrain]{difficult terrain} with a 10-foot
+      radius that lasts until the rubble is cleared. Each 5-foot-diameter
+      portion of the area requires at least 1 minute to clear by hand.</p><p>If
+      a pillar is created under a creature, that creature must succeed on a
+      Dexterity saving throw or be lifted by the pillar. A creature can choose
+      to fail the save.</p><p>If a pillar is prevented from reaching its full
+      height because of a ceiling or other obstacle, a creature on the pillar
+      takes [[/damage 6d6 type=bludgeoning]] damage and is
+      &amp;Reference[condition=restrained], pinched between the pillar and the
+      obstacle. The &amp;Reference[condition=restrained] creature can use an
+      action to make a Strength or Dexterity check (the creature's choice)
+      against the spell's save DC. On a success, the creature is no longer
+      &amp;Reference[condition=restrained] and must either move off the pillar
+      or fall off it.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 7th level or higher, you can create two
+      additional pillars for each slot level above 6th.</p></div></div>
+    chat: ''
+  level: 6
+  school: trs
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '10'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    UCHfH58mZhH7Q4m0:
+      _id: UCHfH58mZhH7Q4m0
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 6
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: bones-of-the-earth
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/skills/movement/arrows-up-trio-red.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: bones%20of%20the%20earth_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 7wGdbFMnZ0TThO0D
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079765
+  modifiedTime: 1755560874954
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: JCHtA6za8oPUYMgX
+sort: 150000
+_key: '!items!JCHtA6za8oPUYMgX'
+

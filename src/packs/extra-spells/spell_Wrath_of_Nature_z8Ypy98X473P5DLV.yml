@@ -1,0 +1,211 @@
+name: Wrath of Nature
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '171'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You call out to the spirits of nature to
+      rouse them against your enemies. Choose a point you can see within range.
+      The spirits cause trees, rocks, and grasses in a 60-foot cube centered on
+      that point to become animated until the spell ends.</p><div
+      data-roll-name-ancestor="Grasses and Undergrowth" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Grasses and Undergrowth.</span></span> Any area
+      of ground in the cube that is covered by grass or undergrowth is
+      &amp;Reference[rule=difficultterrain]{difficult terrain} for your
+      enemies.</p></div><div data-roll-name-ancestor="Trees" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Trees.</span></span> At the start of each of
+      your turns, each of your enemies within 10 feet of any tree in the cube
+      must succeed on a Dexterity saving throw or take [[/damage 4d6
+      type=slashing]] damage from whipping branches.</p></div><div
+      data-roll-name-ancestor="Roots and Vines" class="rd__b  rd__b--3"><p><span
+      class="rd__h rd__h--3" data-title-index="3"> <span
+      class="entry-title-inner">Roots and Vines.</span></span> At the end of
+      each of your turns, one creature of your choice that is on the ground in
+      the cube must succeed on a Strength saving throw or become
+      &amp;Reference[condition=restrained] until the spell ends. A
+      &amp;Reference[condition=restrained] creature can use an action to make a
+      Strength (&amp;Reference[skill=Athletics]) check against your spell save
+      DC, ending the effect on itself on a success.</p></div><div
+      data-roll-name-ancestor="Rocks" class="rd__b  rd__b--3"><p><span
+      class="rd__h rd__h--3" data-title-index="4"> <span
+      class="entry-title-inner">Rocks.</span></span> As a bonus action on your
+      turn, you can cause a loose rock in the cube to launch at a creature you
+      can see in the cube. Make a ranged spell attack against the target. On a
+      hit, the target takes [[/damage 3d8]] nonmagical bludgeoning damage, and
+      it must succeed on a Strength saving throw or fall
+      &amp;Reference[condition=prone].</p></div></div>
+    chat: ''
+  level: 5
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    RsJtrLrywbgfVldb:
+      _id: RsJtrLrywbgfVldb
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+      damage:
+        critical: {}
+        includeBase: true
+        parts: []
+      sort: 0
+    nyCaRCwksaQkyBpe:
+      _id: nyCaRCwksaQkyBpe
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - slashing
+            number: 4
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: wrath-of-nature
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/fire/flame-burning-tree-face.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: wrath%20of%20nature_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080888
+  modifiedTime: 1755561589935
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: z8Ypy98X473P5DLV
+sort: 100049
+_key: '!items!z8Ypy98X473P5DLV'
+

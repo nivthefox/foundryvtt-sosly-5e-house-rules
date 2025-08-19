@@ -1,0 +1,148 @@
+name: Sickening Radiance
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '164'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Dim, greenish light spreads within a
+      30-foot-radius sphere centered on a point you choose within range. The
+      light spreads around corners, and it lasts until the spell
+      ends.</p><p>When a creature moves into the spell's area for the first time
+      on a turn or starts its turn there, that creature must succeed on a
+      Constitution saving throw or take [[/damage 4d10 type=radiant]] damage,
+      and it suffers one level of &amp;Reference[condition=exhaustion] and emits
+      a dim, greenish light in a 5-foot radius. This light makes it impossible
+      for the creature to benefit from being
+      &amp;Reference[condition=invisible]. The light and any levels of
+      &amp;Reference[condition=exhaustion] caused by this spell go away when the
+      spell ends.</p></div>
+    chat: ''
+  level: 4
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: sphere
+      size: '30'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    c5PvhpUumCuTecaS:
+      _id: c5PvhpUumCuTecaS
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - radiant
+            number: 4
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: sickening-radiance
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/air-burst-spiral-large-teal-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: sickening%20radiance_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: byymQDws2inuIbfK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080574
+  modifiedTime: 1755561450354
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: KpsilsvW9yCjb3pd
+sort: 101563
+_key: '!items!KpsilsvW9yCjb3pd'
+

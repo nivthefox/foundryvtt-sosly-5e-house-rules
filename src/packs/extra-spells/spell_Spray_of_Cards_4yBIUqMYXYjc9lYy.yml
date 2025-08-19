@@ -1,0 +1,147 @@
+name: Spray of Cards
+type: spell
+system:
+  source:
+    custom: ''
+    book: BMT
+    page: '50'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You spray a 15-foot cone of spectral
+      cards. Each creature in that area must make a Dexterity saving throw. On a
+      failed save, a creature takes [[/damage 2d10 type=force]] damage and has
+      the &amp;Reference[condition=blinded] condition until the end of its next
+      turn. On a successful save, a creature takes half as much damage
+      only.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 3rd level or higher, the damage increases
+      by [[/damage 1d10]] for each slot level above 2nd.</p></div></div>
+    chat: ''
+  level: 2
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a deck of cards
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cone
+      size: '15'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    9ntCgI86KR1ymcuI:
+      _id: 9ntCgI86KR1ymcuI
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - force
+            number: 2
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: spray-of-cards
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/unholy/silhouette-evil-horned-giant.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: BMT
+    hash: spray%20of%20cards_bmt
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079363
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 4yBIUqMYXYjc9lYy
+sort: 1800000
+_key: '!items!4yBIUqMYXYjc9lYy'
+

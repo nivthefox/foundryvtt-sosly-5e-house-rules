@@ -1,0 +1,136 @@
+name: Spirit Shroud
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '108'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You call forth spirits of the dead, which
+      flit around you for the spell's duration. The spirits are intangible and
+      invulnerable.</p><p>Until the spell ends, any attack you make deals
+      [[/damage 1d8]] extra damage when you hit a creature within 10 feet of
+      you. This damage is radiant, necrotic, or cold (your choice when you cast
+      the spell). Any creature that takes this damage can't regain hit points
+      until the start of your next turn.</p><p>In addition, any creature of your
+      choice that you can see that starts its turn within 10 feet of you has its
+      speed reduced by 10 feet until the start of your next turn.</p></div><div
+      class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="At Higher
+      Levels" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 4th
+      level or higher, the damage increases by [[/damage 1d8]] for every two
+      slot levels above 3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: nec
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      type: damage
+      damage:
+        parts: []
+        critical:
+          allow: false
+      _id: dnd5eactivity000
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+  identifier: spirit-shroud
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/unholy/silhouette-light-fire-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: spirit%20shroud_tce
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079653
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: D5KTtlAV8QJbHVlJ
+sort: 1400000
+_key: '!items!D5KTtlAV8QJbHVlJ'
+

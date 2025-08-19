@@ -1,0 +1,206 @@
+name: Maximilian's Earthen Grasp
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '161'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You choose a 5-foot-square unoccupied
+      space on the ground that you can see within range. A Medium hand made from
+      compacted soil rises there and reaches for one creature you can see within
+      5 feet of it. The target must make a Strength saving throw. On a failed
+      save, the target takes [[/damage 2d6 type=bludgeoning]] damage and is
+      &amp;Reference[condition=restrained] for the spell's duration.</p><p>As an
+      action, you can cause the hand to crush the
+      &amp;Reference[condition=restrained] target, which must make a Strength
+      saving throw. The target takes [[/damage 2d6 type=bludgeoning]] damage on
+      a failed save, or half as much damage on a successful one.</p><p>To break
+      out, the &amp;Reference[condition=restrained] target can use its action to
+      make a Strength check against your spell save DC. On a success, the target
+      escapes and is no longer &amp;Reference[condition=restrained] by the
+      hand.</p><p>As an action, you can cause the hand to reach for a different
+      creature or to move to a different unoccupied space within range. The hand
+      releases a &amp;Reference[condition=restrained] target if you do
+      either.</p></div>
+    chat: ''
+  level: 2
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a miniature hand sculpted from clay
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    5gBFJeWXRme211GJ:
+      _id: 5gBFJeWXRme211GJ
+      type: save
+      name: 'Save: 2d6 Bludgeoning Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    yJKxMoNYRBQ8fThK:
+      _id: yJKxMoNYRBQ8fThK
+      type: save
+      name: 'Save: 2d6 Bludgeoning Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: maximilians-earthen-grasp
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/earth/strike-fist-stone-light.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: maximilian's%20earthen%20grasp_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080386
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: JoiiFEAiR1YTazLS
+sort: 500000
+_key: '!items!JoiiFEAiR1YTazLS'
+

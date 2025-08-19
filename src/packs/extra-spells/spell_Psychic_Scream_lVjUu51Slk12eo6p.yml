@@ -1,0 +1,145 @@
+name: Psychic Scream
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '163'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You unleash the power of your mind to
+      blast the intellect of up to ten creatures of your choice that you can see
+      within range. Creatures that have an Intelligence score of 2 or lower are
+      unaffected.</p><p>Each target must make an Intelligence saving throw. On a
+      failed save, a target takes [[/damage 14d6 type=psychic]] damage and is
+      &amp;Reference[condition=stunned]. On a successful save, a target takes
+      half as much damage and isn't &amp;Reference[condition=stunned]. If a
+      target is killed by this damage, its head explodes, assuming it has
+      one.</p><p>A &amp;Reference[condition=stunned] target can make an
+      Intelligence saving throw at the end of each of its turns. On a successful
+      save, the stunning effect ends.</p></div>
+    chat: ''
+  level: 9
+  school: enc
+  properties:
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '10'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    Idi8GTWhwkHmtVPp:
+      _id: Idi8GTWhwkHmtVPp
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 14
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: psychic-scream
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/death/skull-humanoid-worn-teal.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: psychic%20scream_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: lpNPohVybJwzMMCn
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080503
+  modifiedTime: 1755561411350
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: lVjUu51Slk12eo6p
+sort: 125000
+_key: '!items!lVjUu51Slk12eo6p'
+

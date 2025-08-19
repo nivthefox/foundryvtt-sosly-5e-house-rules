@@ -1,0 +1,137 @@
+name: Enemies Abound
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '155'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You reach into the mind of one creature
+      you can see and force it to make an Intelligence saving throw. A creature
+      automatically succeeds if it is immune to being
+      &amp;Reference[condition=frightened]. On a failed save, the target loses
+      the ability to distinguish friend from foe, regarding all creatures it can
+      see as enemies until the spell ends. Each time the target takes damage, it
+      can repeat the saving throw, ending the effect on itself on a
+      success.</p><p>Whenever the affected creature chooses another creature as
+      a target, it must choose the target at random from among the creatures it
+      can see within range of the attack, spell, or other ability it's using. If
+      an enemy provokes an opportunity attack from the affected creature, the
+      creature must make that attack if it is able to.</p></div>
+    chat: ''
+  level: 3
+  school: enc
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    LVJwelkZpXPOT5Kh:
+      _id: LVJwelkZpXPOT5Kh
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: enemies-abound
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/control/energy-stream-link-spiral-white.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: enemies%20abound_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080014
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: ECoXO5XmddeMD7mr
+sort: 1100000
+_key: '!items!ECoXO5XmddeMD7mr'
+

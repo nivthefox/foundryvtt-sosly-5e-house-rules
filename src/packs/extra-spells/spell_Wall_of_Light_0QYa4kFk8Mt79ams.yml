@@ -1,0 +1,291 @@
+name: Wall of Light
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '170'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A shimmering wall of bright light appears
+      at a point you choose within range. The wall appears in any orientation
+      you choose: horizontally, vertically, or diagonally. It can be free
+      floating, or it can rest on a solid surface. The wall can be up to 60 feet
+      long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but
+      creatures and objects can pass through it. It emits bright light out to
+      120 feet and dim light for an additional 120 feet.</p><p>When the wall
+      appears, each creature in its area must make a Constitution saving throw.
+      On a failed save, a creature takes [[/damage 4d8 type=radiant]] damage,
+      and it is &amp;Reference[condition=blinded] for 1 minute. On a successful
+      save, it takes half as much damage and isn't
+      &amp;Reference[condition=blinded]. A &amp;Reference[condition=blinded]
+      creature can make a Constitution saving throw at the end of each of its
+      turns, ending the effect on itself on a success.</p><p>A creature that
+      ends its turn in the wall's area takes [[/damage 4d8 type=radiant]]
+      damage.</p><p>Until the spell ends, you can use an action to launch a beam
+      of radiance from the wall at one creature you can see within 60 feet of
+      it. Make a ranged spell attack. On a hit, the target takes [[/damage 4d8
+      type=radiant]] damage. Whether you hit or miss, reduce the length of the
+      wall by 10 feet. If the wall's length drops to 0 feet, the spell
+      ends.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 6th level or higher, the damage increases
+      by [[/damage 1d8]] for each slot level above 5th.</p></div></div>
+    chat: ''
+  level: 5
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a hand mirror
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    RIXXDIUj5EWCYspS:
+      _id: RIXXDIUj5EWCYspS
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+      damage:
+        critical: {}
+        includeBase: true
+        parts: []
+      sort: 0
+    fRekneC70VXoXOlW:
+      _id: fRekneC70VXoXOlW
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+    DewPJcntJaTIiGF6:
+      _id: DewPJcntJaTIiGF6
+      type: damage
+      name: 'Damage: 4d8 Radiant Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - radiant
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    S5yXWXHb9V6ZB0s8:
+      _id: S5yXWXHb9V6ZB0s8
+      type: damage
+      name: 'Damage: 4d8 Radiant Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - radiant
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: wall-of-light
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/movement/trail-streak-zigzag-yellow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: wall%20of%20light_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080802
+  modifiedTime: 1755561560876
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 0QYa4kFk8Mt79ams
+sort: 100098
+_key: '!items!0QYa4kFk8Mt79ams'
+

@@ -1,0 +1,146 @@
+name: Ashardalon's Stride
+type: spell
+system:
+  source:
+    custom: ''
+    book: FTD
+    page: '19'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>The billowing flames of a dragon blast
+      from your feet, granting you explosive speed. For the duration, your speed
+      increases by 20 feet and moving doesn't provoke opportunity
+      attacks.</p><p>When you move within 5 feet of a creature or an object that
+      isn't being worn or carried, it takes [[/damage 1d6 type=fire]] damage
+      from your trail of heat. A creature or object can take this damage only
+      once during a turn.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 4th level or higher, increase your speed
+      by 5 feet for each spell slot level above 3rd. The spell deals an
+      additional [[/damage 1d6]] fire damage for each slot level above
+      3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    CeK5hBr2Utj3nIsO:
+      _id: CeK5hBr2Utj3nIsO
+      type: damage
+      name: ''
+      activation:
+        type: ''
+        value: null
+        override: true
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - fire
+            number: 1
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: ashardalons-stride
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/fire/projectile-bolt-zigzag-orange.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: FTD
+    hash: ashardalon's%20stride_ftd
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079375
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: mi4Kc7rKbRYMbGHq
+sort: 1600000
+_key: '!items!mi4Kc7rKbRYMbGHq'
+

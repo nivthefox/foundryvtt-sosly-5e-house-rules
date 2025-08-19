@@ -1,0 +1,153 @@
+name: Nathair's Mischief
+type: spell
+system:
+  source:
+    custom: ''
+    book: FTD
+    page: '20'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You fill a 20-foot cube you can see within
+      range with fey and draconic magic. Roll on the Mischievous Surge table to
+      determine the magical effect produced, and roll again at the start of each
+      of your turns until the spell ends. You can move the cube up to 10 feet
+      before you roll.</p><table class="w-100 rd__table  stripe-odd-table"
+      data-roll-name-ancestor="Mischievous Surge"><caption>Mischievous
+      Surge</caption><thead><tr><th class="rd__th ve-col-2 ve-text-center "
+      data-rd-isroller="true">[[/r d4]]</th><th class="rd__th ve-col-10 "
+      data-rd-isroller="false">Effect</th></tr></thead><tbody><tr><td
+      class="rd__th ve-col-2 ve-text-center " data-roll-min="1"
+      data-roll-max="1">1</td><td class="rd__th ve-col-10 ">The smell of apple
+      pie fills the air, and each creature in the cube must succeed on a Wisdom
+      saving throw or become &amp;Reference[condition=charmed] by you until the
+      start of your next turn.</td></tr><tr><td class="rd__th ve-col-2
+      ve-text-center " data-roll-min="2" data-roll-max="2">2</td><td
+      class="rd__th ve-col-10 ">Bouquets of flowers appear all around, and each
+      creature in the cube must succeed on a Dexterity saving throw or be
+      &amp;Reference[condition=blinded] until the start of your next turn as the
+      flowers spray water in their faces.</td></tr><tr><td class="rd__th
+      ve-col-2 ve-text-center " data-roll-min="3" data-roll-max="3">3</td><td
+      class="rd__th ve-col-10 ">Each creature in the cube must succeed on a
+      Wisdom saving throw or begin giggling until the start of your next turn. A
+      giggling creature is &amp;Reference[condition=incapacitated] and uses all
+      its movement to move in a random direction.</td></tr><tr><td class="rd__th
+      ve-col-2 ve-text-center " data-roll-min="4" data-roll-max="4">4</td><td
+      class="rd__th ve-col-10 ">Drops of molasses hover in the cube, making it
+      &amp;Reference[rule=difficultterrain]{difficult terrain} until the start
+      of your next turn.</td></tr></tbody></table></div>
+    chat: ''
+  level: 2
+  school: ill
+  properties:
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a piece of crust from an apple pie
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '20'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    sB4ra51IPuZy9GOE:
+      _id: sB4ra51IPuZy9GOE
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: nathairs-mischief
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/light/orb-hands-humanoid-yellow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: FTD
+    hash: nathair's%20mischief_ftd
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079407
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Mggk4BUO2fQDAmkt
+sort: 1700000
+_key: '!items!Mggk4BUO2fQDAmkt'
+

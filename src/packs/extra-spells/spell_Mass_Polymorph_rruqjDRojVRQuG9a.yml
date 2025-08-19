@@ -1,0 +1,148 @@
+name: Mass Polymorph
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '160'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You transform up to ten creatures of your
+      choice that you can see within range. An unwilling target must succeed on
+      a Wisdom saving throw to resist the transformation. An unwilling
+      shapechanger automatically succeeds on the save.</p><p>Each target assumes
+      a beast form of your choice, and you can choose the same form or different
+      ones for each target. The new form can be <a
+      href="https://5e.tools/bestiary.html#blankhash,flsttype:beast=1,flstmiscellaneous:swarm=2">any
+      beast</a> you have seen whose challenge rating is equal to or less than
+      the target's (or half the target's level, if the target doesn't have a
+      challenge rating). The target's game statistics, including mental ability
+      scores, are replaced by the statistics of the chosen beast, but the target
+      retains its hit points, alignment, and personality.</p><p>Each target
+      gains a number of temporary hit points equal to the hit points of its new
+      form. These temporary hit points can't be replaced by temporary hit points
+      from another source. A target reverts to its normal form when it has no
+      more temporary hit points or it dies. If the spell ends before then, the
+      creature loses all its temporary hit points and reverts to its normal
+      form.</p><p>The creature is limited in the actions it can perform by the
+      nature of its new form. It can't speak, cast spells, or do anything else
+      that requires hands or speech.</p><p>The target's gear melds into the new
+      form. The target can't activate, use, wield, or otherwise benefit from any
+      of its equipment.</p></div>
+    chat: ''
+  level: 9
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a caterpillar cocoon
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '10'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    A4a13GHjYwAKTGFq:
+      _id: A4a13GHjYwAKTGFq
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: mass-polymorph
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/mammals/ox-buffalo-horned-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: mass%20polymorph_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: lpNPohVybJwzMMCn
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080371
+  modifiedTime: 1755561353858
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: rruqjDRojVRQuG9a
+sort: 150000
+_key: '!items!rruqjDRojVRQuG9a'
+

@@ -1,0 +1,173 @@
+name: Summon Shadowspawn
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '113'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You call forth a shadowy spirit. It
+      manifests in an unoccupied space that you can see within range. This
+      corporeal form uses the @creature[Shadow Spirit|TCE] stat block. When you
+      cast the spell, choose an emotion: Fury, Despair, or Fear. The creature
+      resembles a misshapen biped marked by the chosen emotion, which determines
+      certain traits in its stat block. The creature disappears when it drops to
+      0 hit points or when the spell ends.</p><p>The creature is an ally to you
+      and your companions. In combat, the creature shares your initiative count,
+      but it takes its turn immediately after yours. It obeys your verbal
+      commands (no action required by you). If you don't issue any, it takes the
+      @action[Dodge] action and uses its move to avoid danger.</p></div><div
+      class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="At Higher
+      Levels" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 4th
+      level or higher, use the higher level wherever the spell's level appears
+      in the stat block.</p></div></div>
+    chat: ''
+  level: 3
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: tears inside a gem worth at least 300 gp
+    consumed: false
+    cost: 300
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      type: summon
+      profiles:
+        - name: Fury
+          uuid: Compendium.sosly-5e-house-rules.monsters.Actor.aLZw1R8YNseec3X4
+          _id: QPfznT9uKmn0Lb1i
+          level:
+            min: null
+            max: null
+          types: []
+        - name: Despair
+          uuid: Compendium.sosly-5e-house-rules.monsters.Actor.aLZw1R8YNseec3X4
+          _id: 9mFjtDNB8EItl8BI
+          level:
+            min: null
+            max: null
+          types: []
+        - name: Fear
+          uuid: Compendium.sosly-5e-house-rules.monsters.Actor.aLZw1R8YNseec3X4
+          _id: TWY2x5cH0sd4bjOB
+          level:
+            min: null
+            max: null
+          types: []
+      bonuses:
+        ac: '@item.level'
+        hp: (@item.level - 3) * 15
+        attackDamage: '@item.level'
+      match:
+        attacks: true
+        saves: true
+        proficiency: false
+      _id: dnd5eactivity000
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      creatureSizes: []
+      creatureTypes: []
+      summon:
+        prompt: true
+  identifier: summon-shadowspawn
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/unholy/demon-horned-winged-laughing.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: summon%20shadowspawn_tce
+    propDroppable: spell
+    spellClassNames: []
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079661
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: HuZodjKkWWMI3aid
+sort: 1300000
+_key: '!items!HuZodjKkWWMI3aid'
+

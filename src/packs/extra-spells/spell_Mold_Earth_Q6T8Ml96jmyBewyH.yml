@@ -1,0 +1,135 @@
+name: Mold Earth
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '162'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You choose a portion of dirt or stone that
+      you can see within range and that fits within a 5-foot cube. You
+      manipulate it in one of the following ways:</p><ul class="rd__list"><li
+      class="rd__li ">If you target an area of loose earth, you can
+      instantaneously excavate it, move it along the ground, and deposit it up
+      to 5 feet away. This movement doesn't involve enough force to cause
+      damage.</li><li class="rd__li ">You cause shapes, colors, or both to
+      appear on the dirt or stone, spelling out words, creating images, or
+      shaping patterns. The changes last for 1 hour.</li><li class="rd__li ">If
+      the dirt or stone you target is on the ground, you cause it to become
+      &amp;Reference[rule=difficultterrain]{difficult terrain}. Alternatively,
+      you can cause the ground to become normal terrain if it is already
+      &amp;Reference[rule=difficultterrain]{difficult terrain}. This change
+      lasts for 1 hour.</li></ul><p>If you cast this spell multiple times, you
+      can have no more than two of its non-instantaneous effects active at a
+      time, and you can dismiss such an effect as an action.</p></div>
+    chat: ''
+  level: 0
+  school: trs
+  properties:
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: true
+  activities:
+    08BroWP7evt561Rl:
+      _id: 08BroWP7evt561Rl
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: mold-earth
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/earth/barrier-stone-brown-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: mold%20earth_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: MuV2dgu770kjzsTI
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080442
+  modifiedTime: 1755561382274
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Q6T8Ml96jmyBewyH
+sort: 100025
+_key: '!items!Q6T8Ml96jmyBewyH'
+

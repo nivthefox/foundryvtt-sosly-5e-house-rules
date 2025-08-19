@@ -1,0 +1,159 @@
+name: Whirlwind
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '171'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A whirlwind howls down to a point that you
+      can see on the ground within range. The whirlwind is a 10-foot-radius,
+      30-foot-high cylinder centered on that point. Until the spell ends, you
+      can use your action to move the whirlwind up to 30 feet in any direction
+      along the ground. The whirlwind sucks up any Medium or smaller objects
+      that aren't secured to anything and that aren't worn or carried by
+      anyone.</p><p>A creature must make a Dexterity saving throw the first time
+      on a turn that it enters the whirlwind or that the whirlwind enters its
+      space, including when the whirlwind first appears. A creature takes
+      [[/damage 10d6 type=bludgeoning]] damage on a failed save, or half as much
+      damage on a successful one. In addition, a Large or smaller creature that
+      fails the save must succeed on a Strength saving throw or become
+      &amp;Reference[condition=restrained] in the whirlwind until the spell
+      ends. When a creature starts its turn &amp;Reference[condition=restrained]
+      by the whirlwind, the creature is pulled 5 feet higher inside it, unless
+      the creature is at the top. A &amp;Reference[condition=restrained]
+      creature moves with the whirlwind and falls when the spell ends, unless
+      the creature has some means to stay aloft.</p><p>A
+      &amp;Reference[condition=restrained] creature can use an action to make a
+      Strength or Dexterity check against your spell save DC. If successful, the
+      creature is no longer &amp;Reference[condition=restrained] by the
+      whirlwind and is hurled [[/r 3d6 * 10]]{3d6 × 10} feet away from it in a
+      random direction.</p></div>
+    chat: ''
+  level: 7
+  school: evo
+  properties:
+    - vocal
+    - material
+    - concentration
+  materials:
+    value: a piece of straw
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cylinder
+      size: '10'
+      width: ''
+      height: '30'
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '300'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    GKnvdTLxbl4S2YbX:
+      _id: GKnvdTLxbl4S2YbX
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+            number: 10
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: whirlwind
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/wind-tornado-funnel-blue-grey.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: whirlwind_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: FnusyF1ChrzTQBIQ
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080873
+  modifiedTime: 1755561585671
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: nWb89XjmVOPCRHGd
+sort: 106250
+_key: '!items!nWb89XjmVOPCRHGd'
+

@@ -1,0 +1,161 @@
+name: Green-Flame Blade
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '107'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You brandish the weapon used in the
+      spell's casting and make a melee attack with it against one creature
+      within 5 feet of you. On a hit, the target suffers the weapon attack's
+      normal effects, and you can cause green fire to leap from the target to a
+      different creature of your choice that you can see within 5 feet of it.
+      The second creature takes fire damage equal to your spellcasting ability
+      modifier.</p><p>This spell's damage increases when you reach certain
+      levels. At 5th level, the melee attack deals an extra [[/damage 1d8
+      type=fire]] damage to the target on a hit, and the fire damage to the
+      second creature increases to [[/damage 1d8]] + your spellcasting ability
+      modifier. Both damage rolls increase by [[/damage 1d8]] at 11th level
+      ([[/damage 2d8]] and [[/damage 2d8]]) and 17th level ([[/damage 3d8]] and
+      [[/damage 3d8]]).</p></div>
+    chat: ''
+  level: 0
+  school: evo
+  properties:
+    - somatic
+    - material
+  materials:
+    value: a melee weapon worth at least 1 sp
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: '1'
+      type: creature
+      choice: true
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: true
+  activities:
+    dnd5eactivity000:
+      type: damage
+      target:
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+        template:
+          units: ''
+          contiguous: false
+        prompt: true
+        override: false
+      damage:
+        parts:
+          - custom:
+              enabled: true
+              formula: >-
+                (floor(((@details.level + @attributes.spell.level) + 1) /
+                6))d8[on hit]
+            types:
+              - fire
+            number: null
+            denomination: null
+            scaling:
+              number: 1
+          - custom:
+              enabled: true
+              formula: >-
+                @mod + (floor(((@details.level + @attributes.spell.level) + 1) /
+                6))d8[splash]
+            types:
+              - fire
+            number: null
+            denomination: null
+            scaling:
+              number: 1
+        critical:
+          allow: false
+      _id: dnd5eactivity000
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+  identifier: green-flame-blade
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/weapons/swords/greatsword-evil-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: green-flame%20blade_tce
+    propDroppable: spell
+    spellClassNames:
+      - Artificer
+      - Sorcerer
+      - Warlock
+      - Wizard
+effects: []
+folder: MuV2dgu770kjzsTI
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079615
+  modifiedTime: 1755560576200
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: IxJ4Wf6m2Vh81K7X
+sort: 112500
+_key: '!items!IxJ4Wf6m2Vh81K7X'
+

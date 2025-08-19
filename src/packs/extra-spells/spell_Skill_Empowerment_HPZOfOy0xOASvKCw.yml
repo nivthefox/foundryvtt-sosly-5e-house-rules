@@ -1,0 +1,128 @@
+name: Skill Empowerment
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '165'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Your magic deepens a creature's
+      understanding of its own talent. You touch one willing creature and give
+      it expertise in one skill of your choice; until the spell ends, the
+      creature doubles its proficiency bonus for ability checks it makes that
+      use the chosen skill.</p><p>You must choose a skill in which the target is
+      proficient and that isn't already benefiting from an effect, such as
+      Expertise, that doubles its proficiency bonus.</p></div>
+    chat: ''
+  level: 5
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    j5cqCL5LrYQo9GKb:
+      _id: j5cqCL5LrYQo9GKb
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: skill-empowerment
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/control/buff-luck-fortune-green-gold.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: skill%20empowerment_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080587
+  modifiedTime: 1755561456632
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: HPZOfOy0xOASvKCw
+sort: 100391
+_key: '!items!HPZOfOy0xOASvKCw'
+

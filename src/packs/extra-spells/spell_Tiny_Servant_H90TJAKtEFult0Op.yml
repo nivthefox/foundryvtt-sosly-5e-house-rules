@@ -1,0 +1,148 @@
+name: Tiny Servant
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '168'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You touch one Tiny, nonmagical object that
+      isn't attached to another object or a surface and isn't being carried by
+      another creature. The target animates and sprouts little arms and legs,
+      becoming a creature under your control until the spell ends or the
+      creature drops to 0 hit points. See the @creature[tiny servant|xge|stat
+      block] for its statistics.</p><p>As a bonus action, you can mentally
+      command the creature if it is within 120 feet of you. (If you control
+      multiple creatures with this spell, you can command any or all of them at
+      the same time, issuing the same command to each one.) You decide what
+      action the creature will take and where it will move during its next turn,
+      or you can issue a simple, general command, such as to fetch a key, stand
+      watch, or stack some books. If you issue no commands, the servant does
+      nothing other than defend itself against hostile creatures. Once given an
+      order, the servant continues to follow that order until its task is
+      complete.</p><p>When the creature drops to 0 hit points, it reverts to its
+      original form, and any remaining damage carries over to that
+      form.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="At Higher Levels" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">At Higher Levels.</span></span> When you cast
+      this spell using a spell slot of 4th level or higher, you can animate two
+      additional objects for each slot level above 3rd.</p></div></div>
+    chat: ''
+  level: 3
+  school: trs
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: minute
+    value: 1
+    condition: ''
+  duration:
+    value: '8'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    bBmhITKtOK0RGLiV:
+      _id: bBmhITKtOK0RGLiV
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      bonuses: {}
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+      profiles: []
+      summon:
+        prompt: true
+  identifier: tiny-servant
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/air/wind-tornado-spiral-brown.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: tiny%20servant_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080765
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: H90TJAKtEFult0Op
+sort: 400000
+_key: '!items!H90TJAKtEFult0Op'
+

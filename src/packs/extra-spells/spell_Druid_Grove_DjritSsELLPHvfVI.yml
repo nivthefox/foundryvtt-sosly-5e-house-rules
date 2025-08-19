@@ -1,0 +1,181 @@
+name: Druid Grove
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '154'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You invoke the spirits of nature to
+      protect an area outdoors or underground. The area can be as small as a
+      30-foot cube or as large as a 90-foot cube. Buildings and other structures
+      are excluded from the affected area. If you cast this spell in the same
+      area every day for a year, the spell lasts until dispelled.</p><p>The
+      spell creates the following effects within the area. When you cast this
+      spell, you can specify creatures as friends who are immune to the effects.
+      You can also specify a password that, when spoken aloud, makes the speaker
+      immune to these effects.</p><p>The entire warded area radiates magic. A
+      @spell[dispel magic] cast on the area, if successful, removes only one of
+      the following effects, not the entire area. That spell's caster chooses
+      which effect to end. Only when all its effects are gone is this spell
+      dispelled.</p><div data-roll-name-ancestor="Solid Fog" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Solid Fog.</span></span> You can fill any number
+      of 5-foot squares on the ground with thick fog, making them heavily
+      obscured. The fog reaches 10 feet high. In addition, every foot of
+      movement through the fog costs 2 extra feet. To a creature immune to this
+      effect, the fog obscures nothing and looks like soft mist, with motes of
+      green light floating in the air.</p></div><div
+      data-roll-name-ancestor="Grasping Undergrowth" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Grasping Undergrowth.</span></span> You can fill
+      any number of 5-foot squares on the ground that aren't filled with fog
+      with grasping weeds and vines, as if they were affected by an
+      @spell[entangle] spell. To a creature immune to this effect, the weeds and
+      vines feel soft and reshape themselves to serve as temporary seats or
+      beds.</p></div><div data-roll-name-ancestor="Grove Guardians"
+      class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="3"> <span class="entry-title-inner">Grove
+      Guardians.</span></span> You can animate up to four trees in the area,
+      causing them to uproot themselves from the ground. These trees have the
+      same statistics as an @creature[awakened tree], which appears in the
+      Monster Manual, except they can't speak, and their bark is covered with
+      druidic symbols. If any creature not immune to this effect enters the
+      warded area, the grove guardians fight until they have driven off or slain
+      the intruders. The grove guardians also obey your spoken commands (no
+      action required by you) that you issue while in the area. If you don't
+      give them commands and no intruders are present, the grove guardians do
+      nothing. The grove guardians can't leave the warded area. When the spell
+      ends, the magic animating them disappears, and the trees take root again
+      if possible.</p></div><div data-roll-name-ancestor="Additional Spell
+      Effect" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="4"> <span class="entry-title-inner">Additional Spell
+      Effect.</span></span> You can place your choice of one of the following
+      magical effects within the warded area:</p></div><ul class="rd__list"><li
+      class="rd__li ">A constant @spell[gust of wind] in two locations of your
+      choice</li><li class="rd__li ">@spell[Spike growth] in one location of
+      your choice</li><li class="rd__li ">@spell[Wind wall] in two locations of
+      your choice</li></ul><p>To a creature immune to this effect, the winds are
+      a fragrant, gentle breeze, and the area of @spell[spike growth] is
+      harmless.</p></div>
+    chat: ''
+  level: 6
+  school: abj
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: >-
+      mistletoe, which the spell consumes, that was harvested with a golden
+      sickle under the light of a full moon
+    consumed: true
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '30'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: minute
+    value: 10
+    condition: ''
+  duration:
+    value: '24'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    CyWoZ0mkoyWnhWav:
+      _id: CyWoZ0mkoyWnhWav
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      bonuses: {}
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+      profiles: []
+      summon:
+        prompt: true
+  identifier: druid-grove
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/nature/plant-sproutdirt-green.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: druid%20grove_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 7wGdbFMnZ0TThO0D
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079940
+  modifiedTime: 1755561112026
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: DjritSsELLPHvfVI
+sort: 112500
+_key: '!items!DjritSsELLPHvfVI'
+

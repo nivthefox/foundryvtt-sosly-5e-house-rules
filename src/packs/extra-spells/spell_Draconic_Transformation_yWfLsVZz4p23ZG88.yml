@@ -1,0 +1,159 @@
+name: Draconic Transformation
+type: spell
+system:
+  source:
+    custom: ''
+    book: FTD
+    page: '19'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>With a roar, you draw on the magic of
+      dragons to transform yourself, taking on draconic features. You gain the
+      following benefits until the spell ends:</p><ul class="rd__list
+      rd__list-hang-notitle"><li class="rd__li "><p class="rd__p-list-item"
+      data-roll-name-ancestor="Blindsight"><span class="bold
+      rd__list-item-name">Blindsight.</span> You have
+      &amp;Reference[rule=blindsight] with a range of 30 feet. Within that
+      range, you can effectively see anything that isn't behind
+      &amp;Reference[rule=totalcover]{total cover}, even if you're
+      &amp;Reference[condition=blinded] or in darkness. Moreover, you can see an
+      &amp;Reference[condition=invisible] creature, unless the creature
+      successfully hides from you.</p></li><li class="rd__li "><p
+      class="rd__p-list-item" data-roll-name-ancestor="Breath Weapon"><span
+      class="bold rd__list-item-name">Breath Weapon.</span> When you cast this
+      spell, and as a bonus action on subsequent turns for the duration, you can
+      exhale shimmering energy in a 60-foot cone. Each creature in that area
+      must make a Dexterity saving throw, taking [[/damage 6d8 type=force]]
+      damage on a failed save, or half as much damage on a successful
+      one.</p></li><li class="rd__li "><p class="rd__p-list-item"
+      data-roll-name-ancestor="Wings"><span class="bold
+      rd__list-item-name">Wings.</span> Incorporeal wings sprout from your back,
+      giving you a flying speed of 60 feet.</p></li></ul></div>
+    chat: ''
+  level: 7
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a statuette of a dragon, worth at least 500 gp
+    consumed: false
+    cost: 500
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    NInIh6OqedmCA7Ue:
+      _id: NInIh6OqedmCA7Ue
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - force
+            number: 6
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: draconic-transformation
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/abilities/dragon-fire-breath-orange.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: FTD
+    hash: draconic%20transformation_ftd
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: FnusyF1ChrzTQBIQ
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079384
+  modifiedTime: 1755560345730
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: yWfLsVZz4p23ZG88
+sort: 100000
+_key: '!items!yWfLsVZz4p23ZG88'
+

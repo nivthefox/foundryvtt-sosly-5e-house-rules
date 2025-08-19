@@ -1,0 +1,1133 @@
+name: Shadow Spirit
+img: https://cdn.5e.tools/2024/img/bestiary/TCE/Summon%20Shadowspawn.webp
+type: npc
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+system:
+  abilities:
+    str:
+      value: 13
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 16
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 15
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 4
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 10
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 16
+      proficient: 0
+      bonuses:
+        check: ''
+        save: '0'
+      max: null
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  attributes:
+    ac:
+      flat: null
+      calc: custom
+      formula: '@attributes.ac.armor + @attributes.ac.dex -2'
+    hp:
+      value: 35
+      max: 35
+      temp: null
+      tempmax: null
+      formula: ''
+    init:
+      ability: dex
+      bonus: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    movement:
+      burrow: null
+      climb: null
+      fly: null
+      swim: null
+      walk: 40
+      units: ft
+      hover: false
+    spellcasting: ''
+    senses:
+      darkvision: 120
+      blindsight: 0
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spell:
+      level: 0
+    attunement:
+      max: 3
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 2
+    loyalty:
+      value: null
+    hd:
+      spent: 0
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+  details:
+    alignment: Unaligned
+    biography:
+      value: ''
+      public: ''
+    race: null
+    type:
+      value: monstrosity
+      subtype: ''
+    cr: null
+    habitat:
+      value: []
+      custom: ''
+    treasure:
+      value: []
+    ideal: ''
+    bond: ''
+    flaw: ''
+  skills:
+    acr:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ani:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    arc:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ath:
+      value: 0
+      ability: str
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    dec:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    his:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ins:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    itm:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    inv:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    med:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    nat:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    prc:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    prf:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    per:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    rel:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    slt:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ste:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    sur:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+  traits:
+    size: med
+    languages:
+      value:
+        - common
+      custom: understands the languages you speak
+      communication: {}
+    di:
+      value: []
+      custom: ''
+      bypasses: []
+    dr:
+      value:
+        - necrotic
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    ci:
+      value:
+        - frightened
+      custom: ''
+    dm:
+      amount: {}
+      bypasses: []
+    important: false
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  spells:
+    spell0:
+      value: 0
+      override: null
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+  resources:
+    legact:
+      value: 0
+      max: 0
+    legres:
+      value: 0
+      max: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    custom: ''
+    book: TCoE
+    page: '114'
+    license: ''
+    rules: '2014'
+    revision: 1
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  tools: {}
+prototypeToken:
+  displayName: 20
+  sight:
+    enabled: true
+    range: 120
+    visionMode: darkvision
+    saturation: -1
+    angle: 360
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    contrast: 0
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  detectionModes: []
+  name: Shadow Spirit
+  texture:
+    src: assets/srd5e/img/bestiary/tokens/TCE/Shadow Spirit.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  width: 1
+  height: 1
+  rotation: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  actorLink: false
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  hexagonalShape: 0
+  lockRotation: false
+  alpha: 1
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  occludable:
+    radius: 0
+flags:
+  plutonium:
+    page: bestiary.html
+    source: TCE
+    hash: shadow%20spirit_tce
+  sosly:
+    originalConcentrationLimit: 1
+  dnd5e-sheet-notes:
+    version: 1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560655549
+  modifiedTime: 1755560661391
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+items:
+  - _id: 6peuu7oPWyzbOaps
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: TCoE
+        page: '114'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The spirit makes a number of attacks
+          equal to half this spell's level (rounded down).</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        WqSM8KJXAZS6fk5D:
+          _id: WqSM8KJXAZS6fk5D
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+      identifier: ''
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+    ownership:
+      default: 0
+    img: icons/skills/melee/strike-weapons-orange.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: TCE
+        hash: multiattack_shadow%20spirit_tce_tce
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!aLZw1R8YNseec3X4.6peuu7oPWyzbOaps'
+  - _id: JSHaXlJjLoQVsKys
+    name: Chilling Rend
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: TCoE
+        page: '114'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> [[/r 1d20
+          + @srd5e.userchar.spellAttackRanged]]{your spell attack modifier} to
+          hit, reach 5 ft., one target. <i>Hit:</i> [[/damage 1d12 + 3 +
+          3]]{1d12 + 3 + the spell's level} cold damage.</p></div>
+        chat: ''
+      range:
+        value: 5
+        long: null
+        units: ft
+        reach: null
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        AbbhS4buY88EQ5AV:
+          _id: AbbhS4buY88EQ5AV
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: true
+            type:
+              value: melee
+              classification: ''
+            ability: none
+            bonus: + @srd5e.userchar.spellAttackRanged
+            critical:
+              threshold: null
+          damage:
+            parts:
+              - types:
+                  - cold
+                number: 1
+                denomination: 12
+                bonus: 3 + 3
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+      identifier: ''
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: false
+      cover: null
+      crewed: false
+      ammunition: {}
+      armor:
+        value: null
+      damage:
+        base:
+          number: null
+          denomination: null
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          number: null
+          denomination: null
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      magicalBonus: null
+    ownership:
+      default: 0
+    img: modules/plutonium/media/icon/sword-brandish.svg
+    flags:
+      plutonium:
+        page: monsterAction
+        source: TCE
+        hash: chilling%20rend_shadow%20spirit_tce_tce
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!aLZw1R8YNseec3X4.JSHaXlJjLoQVsKys'
+  - _id: wY7s8RrbI3KZYUkI
+    name: Dreadful Scream
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: TCoE
+        page: '114'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The spirit screams. Each creature
+          within 30 feet of it must succeed on a Wisdom saving throw against
+          your spell save DC or be &amp;Reference[condition=frightened] for 1
+          minute. The &amp;Reference[condition=frightened] creature can repeat
+          the saving throw at the end of each of its turns, ending the effect on
+          itself on a success.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        DpPsPq1VGCntU6Sm:
+          _id: DpPsPq1VGCntU6Sm
+          type: save
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: ''
+              formula: '@srd5e.userchar.spellSaveDc'
+          damage:
+            onSave: none
+            parts: []
+          sort: 0
+      identifier: ''
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+    ownership:
+      default: 0
+    img: modules/plutonium/media/icon/mailed-fist.svg
+    flags:
+      plutonium:
+        page: monsterAction
+        source: TCE
+        hash: dreadful%20scream%20(1%2fday)_shadow%20spirit_tce_tce
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!aLZw1R8YNseec3X4.wY7s8RrbI3KZYUkI'
+  - _id: Bef7CCutBa51RlC1
+    name: Terror Frenzy (Fury Only)
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: TCoE
+        page: '114'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The spirit has advantage on attack
+          rolls against &amp;Reference[condition=frightened]
+          creatures.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: ''
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+    ownership:
+      default: 0
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: TCE
+        hash: terror%20frenzy%20(fury%20only)_shadow%20spirit_tce_tce
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!aLZw1R8YNseec3X4.Bef7CCutBa51RlC1'
+  - _id: aKJnTzczYbZ7sOAY
+    name: Weight of Sorrow (Despair Only)
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: TCoE
+        page: '114'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Any creature, other than you, that
+          starts its turn within 5 feet of the spirit has its speed reduced by
+          20 feet until the start of that creature's next turn.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: ''
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+    ownership:
+      default: 0
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: TCE
+        hash: weight%20of%20sorrow%20(despair%20only)_shadow%20spirit_tce_tce
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!aLZw1R8YNseec3X4.aKJnTzczYbZ7sOAY'
+  - _id: Hx9P4SElxpGrmscT
+    name: Shadow Stealth (Fear Only)
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: TCoE
+        page: '114'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>While in dim light or darkness, the
+          spirit takes the Hide action.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        XpRe8sZPZs9aYKlk:
+          _id: XpRe8sZPZs9aYKlk
+          type: utility
+          activation:
+            type: bonus
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+      identifier: ''
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+    ownership:
+      default: 0
+    img: icons/magic/air/wind-stream-blue-gray.webp
+    flags:
+      plutonium:
+        page: monsterBonus
+        source: TCE
+        hash: shadow%20stealth%20(fear%20only)_shadow%20spirit_tce_tce
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    folder: null
+    sort: 0
+    _key: '!actors.items!aLZw1R8YNseec3X4.Hx9P4SElxpGrmscT'
+effects: []
+folder: O3uUkSqCiVf6urgf
+_id: aLZw1R8YNseec3X4
+sort: 150000
+_key: '!actors!aLZw1R8YNseec3X4'
+

@@ -1,0 +1,132 @@
+name: Silvery Barbs
+type: spell
+system:
+  source:
+    custom: ''
+    book: SCC
+    page: '38'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You magically distract the triggering
+      creature and turn its momentary uncertainty into encouragement for another
+      creature. The triggering creature must reroll the [[/r d20]] and use the
+      lower roll.</p><p>You can then choose a different creature you can see
+      within range (you can choose yourself). The chosen creature has advantage
+      on the next attack roll, ability check, or saving throw it makes within 1
+      minute. A creature can be empowered by only one use of this spell at a
+      time.</p></div>
+    chat: ''
+  level: 1
+  school: enc
+  properties:
+    - vocal
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: reaction
+    value: 1
+    condition: >-
+      which you take when a creature you can see within 60 feet of yourself
+      succeeds on an attack roll, an ability check, or a saving throw
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    PAKyc4xvACgTXm5h:
+      _id: PAKyc4xvACgTXm5h
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: silvery-barbs
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/control/energy-stream-link-white.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: SCC
+    hash: silvery%20barbs_scc
+    propDroppable: spell
+    spellClassNames:
+      - Bard
+      - Sorcerer
+      - Wizard
+effects: []
+folder: 5jrCohKawbl0mTbF
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079510
+  modifiedTime: 1755561724435
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: b2KOyMz8KAcwBCa1
+sort: 150000
+_key: '!items!b2KOyMz8KAcwBCa1'
+

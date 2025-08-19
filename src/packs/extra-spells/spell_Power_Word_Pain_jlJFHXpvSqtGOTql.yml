@@ -1,0 +1,136 @@
+name: Power Word Pain
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '163'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You speak a word of power that causes
+      waves of intense pain to assail one creature you can see within range. If
+      the target has 100 hit points or fewer, it is subject to crippling pain.
+      Otherwise, the spell has no effect on it. A target is also unaffected if
+      it is immune to being &amp;Reference[condition=charmed].</p><p>While the
+      target is affected by crippling pain, any speed it has can be no higher
+      than 10 feet. The target also has disadvantage on attack rolls, ability
+      checks, and saving throws, other than Constitution saving throws. Finally,
+      if the target tries to cast a spell, it must first succeed on a
+      Constitution saving throw, or the casting fails and the spell is
+      wasted.</p><p>A target suffering this pain can make a Constitution saving
+      throw at the end of each of its turns. On a successful save, the pain
+      ends.</p></div>
+    chat: ''
+  level: 7
+  school: enc
+  properties:
+    - vocal
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    E33vrrwpHb4B6YPe:
+      _id: E33vrrwpHb4B6YPe
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: power-word-pain
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/control/voodoo-doll-pain-damage-yellow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: power%20word%20pain_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: FnusyF1ChrzTQBIQ
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080467
+  modifiedTime: 1755561396473
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: jlJFHXpvSqtGOTql
+sort: 125000
+_key: '!items!jlJFHXpvSqtGOTql'
+

@@ -1,0 +1,129 @@
+name: Borrowed Knowledge
+type: spell
+system:
+  source:
+    custom: ''
+    book: SCC
+    page: '37'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You draw on knowledge from spirits of the
+      past. Choose one skill in which you lack proficiency. For the spell's
+      duration, you have proficiency in the chosen skill. The spell ends early
+      if you cast it again.</p></div>
+    chat: ''
+  level: 2
+  school: div
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a book worth at least 25 gp
+    consumed: false
+    cost: 25
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    r2jN1U7visWEQC4I:
+      _id: r2jN1U7visWEQC4I
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: borrowed-knowledge
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/perception/third-eye-blue-red.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: SCC
+    hash: borrowed%20knowledge_scc
+    propDroppable: spell
+    spellClassNames:
+      - Bard
+      - Cleric
+      - Warlock
+      - Wizard
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079491
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: LVCInGS0D9OGfYij
+sort: 1400000
+_key: '!items!LVCInGS0D9OGfYij'
+

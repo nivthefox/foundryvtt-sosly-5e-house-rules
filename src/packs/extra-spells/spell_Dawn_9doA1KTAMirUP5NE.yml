@@ -1,0 +1,146 @@
+name: Dawn
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '153'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>The light of dawn shines down on a
+      location you specify within range. Until the spell ends, a 30-foot-radius,
+      40-foot-high cylinder of bright light glimmers there. This light is
+      sunlight.</p><p>When the cylinder appears, each creature in it must make a
+      Constitution saving throw, taking [[/damage 4d10 type=radiant]] damage on
+      a failed save, or half as much damage on a successful one. A creature must
+      also make this saving throw whenever it ends its turn in the
+      cylinder.</p><p>If you're within 60 feet of the cylinder, you can move it
+      up to 60 feet as a bonus action on your turn.</p></div>
+    chat: ''
+  level: 5
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a sunburst pendant worth at least 100 gp
+    consumed: false
+    cost: 100
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cylinder
+      size: '30'
+      width: ''
+      height: '40'
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    HF3mIn0BbgsVr0qC:
+      _id: HF3mIn0BbgsVr0qC
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - radiant
+            number: 4
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: dawn
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/nature/symbol-sun-yellow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: dawn_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079926
+  modifiedTime: 1755561107257
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 9doA1KTAMirUP5NE
+sort: 150000
+_key: '!items!9doA1KTAMirUP5NE'
+

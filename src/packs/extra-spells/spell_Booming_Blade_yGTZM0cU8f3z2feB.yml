@@ -1,0 +1,149 @@
+name: Booming Blade
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '106'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You brandish the weapon used in the
+      spell's casting and make a melee attack with it against one creature
+      within 5 feet of you. On a hit, the target suffers the weapon attack's
+      normal effects and then becomes sheathed in booming energy until the start
+      of your next turn. If the target willingly moves 5 feet or more before
+      then, the target takes [[/damage 1d8 type=thunder]] damage, and the spell
+      ends.</p><p>This spell's damage increases when you reach certain levels.
+      At 5th level, the melee attack deals an extra [[/damage 1d8 type=thunder]]
+      damage to the target on a hit, and the damage the target takes for moving
+      increases to [[/damage 2d8]]. Both damage rolls increase by 1d8 at 11th
+      level ([[/damage 2d8]] and [[/damage 3d8]]) and again at 17th level
+      ([[/damage 3d8]] and [[/damage 4d8]]).</p></div>
+    chat: ''
+  level: 0
+  school: evo
+  properties:
+    - somatic
+    - material
+  materials:
+    value: a melee weapon worth at least 1 sp
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: round
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: true
+  activities:
+    dnd5eactivity000:
+      type: damage
+      target:
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+        template:
+          units: ''
+          contiguous: false
+        prompt: true
+        override: false
+      damage:
+        parts:
+          - custom:
+              enabled: true
+              formula: >-
+                (floor(((@details.level + @attributes.spell.level) + 1) /
+                6))d8[on hit]
+            types:
+              - thunder
+            number: null
+            denomination: null
+            scaling:
+              number: 1
+        critical:
+          allow: false
+      _id: dnd5eactivity000
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+  identifier: booming-blade
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/skills/melee/strike-sword-slashing-red.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: booming%20blade_tce
+    propDroppable: spell
+    spellClassNames:
+      - Artificer
+      - Sorcerer
+      - Warlock
+      - Wizard
+effects: []
+folder: MuV2dgu770kjzsTI
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079575
+  modifiedTime: 1755560564125
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: yGTZM0cU8f3z2feB
+sort: 125000
+_key: '!items!yGTZM0cU8f3z2feB'
+

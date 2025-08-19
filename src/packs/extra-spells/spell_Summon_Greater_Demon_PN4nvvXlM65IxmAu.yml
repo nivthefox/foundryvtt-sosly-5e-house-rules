@@ -1,0 +1,238 @@
+name: Summon Greater Demon
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '166'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You utter foul words, summoning one demon
+      from the chaos of the Abyss. You choose the demon's type, which must be <a
+      href="https://5e.tools/bestiary.html#blankhash,flstchallenge%20rating:min=&amp;0~max=&amp;5,flsttag:demon=1,flstmiscellaneous:swarm=2">one
+      of challenge rating 5 or lower</a>, such as a @creature[shadow demon] or a
+      @creature[barlgura]. The demon appears in an unoccupied space you can see
+      within range, and the demon disappears when it drops to 0 hit points or
+      when the spell ends.</p><p>Roll initiative for the demon, which has its
+      own turns. When you summon it and on each of your turns thereafter, you
+      can issue a verbal command to it (requiring no action on your part),
+      telling it what it must do on its next turn. If you issue no command, it
+      spends its turn attacking any creature within reach that has attacked
+      it.</p><p>At the end of each of the demon's turns, it makes a Charisma
+      saving throw. The demon has disadvantage on this saving throw if you say
+      its true name. On a failed save, the demon continues to obey you. On a
+      successful save, your control of the demon ends for the rest of the
+      duration, and the demon spends its turns pursuing and attacking the
+      nearest non-demons to the best of its ability. If you stop
+      @status[concentration||concentrating] on the spell before it reaches its
+      full duration, an uncontrolled demon doesn't disappear for [[/r 1d6]]
+      rounds if it still has hit points.</p><p>As part of casting the spell, you
+      can form a circle on the ground with the blood used as a material
+      component. The circle is large enough to encompass your space. While the
+      spell lasts, the summoned demon can't cross the circle or harm it, and it
+      can't target anyone within it. Using the material component in this manner
+      consumes it when the spell ends.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="At Higher Levels"
+      class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 5th
+      level or higher, the challenge rating increases by 1 for each slot level
+      above 4th.</p></div></div>
+    chat: ''
+  level: 4
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a vial of blood from a humanoid killed within the past 24 hours
+    consumed: true
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    8v7rfGUkpjvrfKzT:
+      _id: 8v7rfGUkpjvrfKzT
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '1'
+            scaling:
+              mode: whole
+              formula: '1'
+              number: 1
+            number: null
+            denomination: null
+      sort: 0
+    9cj0euAXvx7TH2Ki:
+      _id: 9cj0euAXvx7TH2Ki
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - count: '1'
+          cr: '5'
+          name: ''
+          _id: 0GY2bXm7bHLjoHsc
+          uuid: ''
+          types:
+            - fiend
+          level:
+            min: null
+            max: null
+      summon:
+        prompt: true
+        mode: cr
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: summon-greater-demon
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/creatures/unholy/demon-horned-winged-laughing.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: summon%20greater%20demon_xge
+    propDroppable: spell
+    spellClassNames: []
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+effects: []
+folder: byymQDws2inuIbfK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080676
+  modifiedTime: 1755561510625
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: PN4nvvXlM65IxmAu
+sort: 100391
+_key: '!items!PN4nvvXlM65IxmAu'
+

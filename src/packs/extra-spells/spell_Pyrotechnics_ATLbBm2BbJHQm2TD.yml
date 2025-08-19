@@ -1,0 +1,139 @@
+name: Pyrotechnics
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '163'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Choose an area of nonmagical flame that
+      you can see and that fits within a 5-foot cube within range. You can
+      extinguish the fire in that area, and you create either fireworks or smoke
+      when you do so.</p><div data-roll-name-ancestor="Fireworks" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Fireworks.</span></span> The target explodes
+      with a dazzling display of colors. Each creature within 10 feet of the
+      target must succeed on a Constitution saving throw or become
+      &amp;Reference[condition=blinded] until the end of your next
+      turn.</p></div><div data-roll-name-ancestor="Smoke" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Smoke.</span></span> Thick black smoke spreads
+      out from the target in a 20-foot radius, moving around corners. The area
+      of the smoke is heavily obscured. The smoke persists for 1 minute or until
+      a strong wind disperses it.</p></div></div>
+    chat: ''
+  level: 2
+  school: trs
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    ZzTB74atFYkZ1VjB:
+      _id: ZzTB74atFYkZ1VjB
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: pyrotechnics
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/fire/projectile-feathers-embers-gold.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: pyrotechnics_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: ttLxR8zhjacqYg04
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080516
+  modifiedTime: 1755561470718
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: ATLbBm2BbJHQm2TD
+sort: 400000
+_key: '!items!ATLbBm2BbJHQm2TD'
+

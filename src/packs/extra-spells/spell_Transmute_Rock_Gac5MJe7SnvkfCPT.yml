@@ -1,0 +1,208 @@
+name: Transmute Rock
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '169'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You choose an area of stone or mud that
+      you can see that fits within a 40-foot cube and is within range, and
+      choose one of the following effects.</p><div
+      data-roll-name-ancestor="Transmute Rock to Mud" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Transmute Rock to Mud.</span></span> Nonmagical
+      rock of any sort in the area becomes an equal volume of thick, flowing mud
+      that remains for the spell's duration.</p></div><p>The ground in the
+      spell's area becomes muddy enough that creatures can sink into it. Each
+      foot that a creature moves through the mud costs 4 feet of movement, and
+      any creature on the ground when you cast the spell must make a Strength
+      saving throw. A creature must also make the saving throw when it moves
+      into the area for the first time on a turn or ends its turn there. On a
+      failed save, a creature sinks into the mud and is
+      &amp;Reference[condition=restrained], though it can use an action to end
+      the &amp;Reference[condition=restrained] condition on itself by pulling
+      itself free of the mud.</p><p>If you cast the spell on a ceiling, the mud
+      falls. Any creature under the mud when it falls must make a Dexterity
+      saving throw. A creature takes [[/damage 4d8 type=bludgeoning]] damage on
+      a failed save, or half as much damage on a successful one.</p><div
+      data-roll-name-ancestor="Transmute Mud to Rock" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Transmute Mud to Rock.</span></span> Nonmagical
+      mud or quicksand in the area no more than 10 feet deep transforms into
+      soft stone for the spell's duration. Any creature in the mud when it
+      transforms must make a Dexterity saving throw. On a successful save, a
+      creature is shunted safely to the surface in an unoccupied space. On a
+      failed save, a creature becomes &amp;Reference[condition=restrained] by
+      the rock. A &amp;Reference[condition=restrained] creature, or another
+      creature within reach, can use an action to try to break the rock by
+      succeeding on a [[/save ability=str dc=20]] check or by dealing damage to
+      it. The rock has AC 15 and 25 hit points, and it is immune to poison and
+      psychic damage.</p></div></div>
+    chat: ''
+  level: 5
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: clay and water
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '40'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: perm
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    3U598ps8UtCOO8p0:
+      _id: 3U598ps8UtCOO8p0
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+            number: 4
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    GEEmCXdmxGoX3LAo:
+      _id: GEEmCXdmxGoX3LAo
+      type: check
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      check:
+        ability: str
+        associated: []
+        dc:
+          calculation: ''
+          formula: '20'
+      sort: 0
+  identifier: transmute-rock
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/symbols/runes-carved-stone-red.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: transmute%20rock_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: WOxChhm5EGQXdxlP
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080782
+  modifiedTime: 1755561556025
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Gac5MJe7SnvkfCPT
+sort: 100196
+_key: '!items!Gac5MJe7SnvkfCPT'
+

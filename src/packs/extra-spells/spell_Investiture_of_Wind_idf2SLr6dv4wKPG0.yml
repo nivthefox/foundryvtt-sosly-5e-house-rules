@@ -1,0 +1,148 @@
+name: Investiture of Wind
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '160'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Until the spell ends, wind whirls around
+      you, and you gain the following benefits:</p><ul class="rd__list"><li
+      class="rd__li ">Ranged weapon attacks made against you have disadvantage
+      on the attack roll.</li><li class="rd__li ">You gain a flying speed of 60
+      feet. If you are still flying when the spell ends, you fall, unless you
+      can somehow prevent it.</li><li class="rd__li ">You can use your action to
+      create a 15-foot cube of swirling wind centered on a point you can see
+      within 60 feet of you. Each creature in that area must make a Constitution
+      saving throw. A creature takes [[/damage 2d10 type=bludgeoning]] damage on
+      a failed save, or half as much damage on a successful one. If a Large or
+      smaller creature fails the save, that creature is also pushed up to 10
+      feet away from the center of the cube.</li></ul></div>
+    chat: ''
+  level: 6
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    wzJuXBdq3gLe4zZx:
+      _id: wzJuXBdq3gLe4zZx
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+            number: 2
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: investiture-of-wind
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/skills/trades/music-singing-voice-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: investiture%20of%20wind_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 7wGdbFMnZ0TThO0D
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080280
+  modifiedTime: 1755561317841
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: idf2SLr6dv4wKPG0
+sort: 100782
+_key: '!items!idf2SLr6dv4wKPG0'
+

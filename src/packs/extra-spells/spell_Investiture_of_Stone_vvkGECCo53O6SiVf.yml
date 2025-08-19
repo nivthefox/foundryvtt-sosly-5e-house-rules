@@ -1,0 +1,140 @@
+name: Investiture of Stone
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '159'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Until the spell ends, bits of rock spread
+      across your body, and you gain the following benefits:</p><ul
+      class="rd__list"><li class="rd__li ">You have resistance to bludgeoning,
+      piercing, and slashing damage from nonmagical attacks.</li><li
+      class="rd__li ">You can use your action to create a small earthquake on
+      the ground in a 15-foot radius centered on you. Other creatures on that
+      ground must succeed on a Dexterity saving throw or be knocked
+      &amp;Reference[condition=prone].</li><li class="rd__li ">You can move
+      across &amp;Reference[rule=difficultterrain]{difficult terrain} made of
+      earth or stone without spending extra movement. You can move through solid
+      earth or stone as if it was air and without destabilizing it, but you
+      can't end your movement there. If you do so, you are ejected to the
+      nearest unoccupied space, this spell ends, and you are
+      &amp;Reference[condition=stunned] until the end of your next
+      turn.</li></ul></div>
+    chat: ''
+  level: 6
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: self
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    W9bzojVmAkjC4q8B:
+      _id: W9bzojVmAkjC4q8B
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      sort: 0
+  identifier: investiture-of-stone
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/earth/construct-stone-long-arms.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: investiture%20of%20stone_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 7wGdbFMnZ0TThO0D
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080267
+  modifiedTime: 1755561314859
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: vvkGECCo53O6SiVf
+sort: 101563
+_key: '!items!vvkGECCo53O6SiVf'
+

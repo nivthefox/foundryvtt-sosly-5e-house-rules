@@ -1,0 +1,155 @@
+name: Spirit of Death
+type: spell
+system:
+  source:
+    custom: ''
+    book: BMT
+    page: '50'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You call forth a spirit that embodies
+      death. The spirit manifests in an unoccupied space you can see within
+      range and uses the @creature[reaper spirit|BMT] stat block. The spirit
+      disappears when it is reduced to 0 hit points or when the spell
+      ends.</p><p>The spirit is an ally to you and your companions. In combat,
+      the spirit shares your initiative count and takes its turn immediately
+      after yours. It obeys your verbal commands (no action required by you). If
+      you don't issue the spirit any commands, it takes the @action[Dodge]
+      action and uses its movement to avoid danger.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="At Higher Levels"
+      class="rd__b  rd__b--3"><p><span class="entry-title-inner">At Higher
+      Levels.</span> When you cast this spell using a spell slot of 5th level or
+      higher, use the higher level wherever the spell's level appears in the
+      reaper spirit stat block.</p></div></div>
+    chat: ''
+  level: 4
+  school: nec
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: >-
+      a gilded playing card worth at least 400 gp and depicting an avatar of
+      death
+    consumed: false
+    cost: 400
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      type: summon
+      profiles:
+        - name: Reaper Spirit
+          uuid: Compendium.sosly-5e-house-rules.monsters.Actor.ZZnUpraD0WjcDEGM
+          _id: P8yKdDMOOFrHmKsU
+          level:
+            min: null
+            max: null
+          types: []
+      _id: dnd5eactivity000
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      bonuses: {}
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+      summon:
+        prompt: true
+  identifier: spirit-of-death
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/unholy/hand-fire-skeleton-pink.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: BMT
+    hash: spirit%20of%20death_bmt
+    propDroppable: spell
+    spellClassNames: []
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+effects: []
+folder: byymQDws2inuIbfK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079351
+  modifiedTime: 1755560295437
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: tXKnclxqIcMnmRXE
+sort: 100000
+_key: '!items!tXKnclxqIcMnmRXE'
+

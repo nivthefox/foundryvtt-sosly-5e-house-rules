@@ -1,0 +1,259 @@
+name: Blade of Disaster
+type: spell
+system:
+  source:
+    custom: ''
+    book: TCoE
+    page: '106'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create a blade-shaped planar rift
+      about 3 feet long in an unoccupied space you can see within range. The
+      blade lasts for the duration. When you cast this spell, you can make up to
+      two melee spell attacks with the blade, each one against a creature, loose
+      object, or structure within 5 feet of the blade. On a hit, the target
+      takes [[/damage 4d12 type=force]] damage. This attack scores a critical
+      hit if the number on the [[/r d20]] is 18 or higher. On a critical hit,
+      the blade deals an extra [[/damage 8d12 type=force]] damage (for a total
+      of [[/damage 12d12 type=force]] damage).</p><p>As a bonus action on your
+      turn, you can move the blade up to 30 feet to an unoccupied space you can
+      see and then make up to two melee spell attacks with it again.</p><p>The
+      blade can harmlessly pass through any barrier, including a @spell[wall of
+      force].</p></div>
+    chat: ''
+  level: 9
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    MbBhtpkupfUT34LW:
+      _id: MbBhtpkupfUT34LW
+      type: attack
+      name: 'Attack: 4d12 Force Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+      damage:
+        critical: {}
+        includeBase: true
+        parts:
+          - types:
+              - force
+            number: 4
+            denomination: 12
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    CYbClq7sZWvA9BnU:
+      _id: CYbClq7sZWvA9BnU
+      type: attack
+      name: 'Attack: 8d12 Force Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+      damage:
+        critical: {}
+        includeBase: true
+        parts:
+          - types:
+              - force
+            number: 8
+            denomination: 12
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+    jU8fxFZK7wLm24wC:
+      _id: jU8fxFZK7wLm24wC
+      type: attack
+      name: 'Attack: 12d12 Force Damage'
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+      damage:
+        critical: {}
+        includeBase: true
+        parts:
+          - types:
+              - force
+            number: 12
+            denomination: 12
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: blade-of-disaster
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/weapons/swords/sword-broad-serrated-blue.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: TCE
+    hash: blade%20of%20disaster_tce
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: lpNPohVybJwzMMCn
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079549
+  modifiedTime: 1755560543785
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 5iXt38NwLTtpF47b
+sort: 100000
+_key: '!items!5iXt38NwLTtpF47b'
+

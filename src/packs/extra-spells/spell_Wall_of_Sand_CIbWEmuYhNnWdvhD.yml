@@ -1,0 +1,128 @@
+name: Wall of Sand
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '170'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create a wall of swirling sand on the
+      ground at a point you can see within range. You can make the wall up to 30
+      feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell
+      ends. It blocks line of sight but not movement. A creature is
+      &amp;Reference[condition=blinded] while in the wall's space and must spend
+      3 feet of movement for every 1 foot it moves there.</p></div>
+    chat: ''
+  level: 3
+  school: evo
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  materials:
+    value: a handful of sand
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: true
+      type: wall
+      size: '30'
+      width: '10'
+      height: '10'
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '10'
+    units: minute
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    yk6ywYEIjT9UDFzi:
+      _id: yk6ywYEIjT9UDFzi
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: wall-of-sand
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/earth/projectile-stone-landslide.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: wall%20of%20sand_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: TgEK9ycA9vq1aS9U
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560080820
+  modifiedTime: 1755561571826
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: CIbWEmuYhNnWdvhD
+sort: 300000
+_key: '!items!CIbWEmuYhNnWdvhD'
+

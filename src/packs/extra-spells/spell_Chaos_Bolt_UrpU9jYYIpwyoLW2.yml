@@ -1,0 +1,198 @@
+name: Chaos Bolt
+type: spell
+system:
+  source:
+    custom: ''
+    book: XGE
+    page: '151'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You hurl an undulating, warbling mass of
+      chaotic energy at one creature in range. Make a ranged spell attack
+      against the target. On a hit, the target takes [[/damage 2d8 + 1d6]]
+      damage. Choose one of the [[/r d8]]s. The number rolled on that die
+      determines the attack's damage type, as shown below.</p><table
+      class="w-100 rd__table  stripe-odd-table" data-roll-name-ancestor="Chaos
+      Bolt"><caption>Chaos Bolt</caption><thead><tr><th class="rd__th ve-col-2
+      ve-text-center " data-rd-isroller="true">[[/r d8]]</th><th class="rd__th
+      ve-col-10 " data-rd-isroller="false">Damage
+      Type</th></tr></thead><tbody><tr><td class="rd__th ve-col-2 ve-text-center
+      " data-roll-min="1" data-roll-max="1">1</td><td class="rd__th ve-col-10
+      ">Acid</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="2" data-roll-max="2">2</td><td class="rd__th ve-col-10
+      ">Cold</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="3" data-roll-max="3">3</td><td class="rd__th ve-col-10
+      ">Fire</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="4" data-roll-max="4">4</td><td class="rd__th ve-col-10
+      ">Force</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="5" data-roll-max="5">5</td><td class="rd__th ve-col-10
+      ">Lightning</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="6" data-roll-max="6">6</td><td class="rd__th ve-col-10
+      ">Poison</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="7" data-roll-max="7">7</td><td class="rd__th ve-col-10
+      ">Psychic</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+      data-roll-min="8" data-roll-max="8">8</td><td class="rd__th ve-col-10
+      ">Thunder</td></tr></tbody></table><p>If you roll the same number on both
+      [[/r d8]]s, the chaotic energy leaps from the target to a different
+      creature of your choice within 30 feet of it. Make a new attack roll
+      against the new target, and make a new damage roll, which could cause the
+      chaotic energy to leap again.</p><p>A creature can be targeted only once
+      by each casting of this spell.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="At Higher Levels"
+      class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">At Higher
+      Levels.</span></span> When you cast this spell using a spell slot of 2nd
+      level or higher, each target takes [[/damage 1d6]] extra damage of the
+      type rolled for each slot level above 1st.</p></div></div>
+    chat: ''
+  level: 1
+  school: evo
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    vnLyRzC9s0iBauzx:
+      _id: vnLyRzC9s0iBauzx
+      type: attack
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+      damage:
+        critical: {}
+        includeBase: true
+        parts:
+          - types:
+              - acid
+              - cold
+              - fire
+              - force
+              - lightning
+              - poison
+              - psychic
+              - thunder
+            number: 2
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+          - types:
+              - acid
+              - cold
+              - fire
+              - force
+              - lightning
+              - poison
+              - psychic
+              - thunder
+            number: 1
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: chaos-bolt
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+img: icons/magic/unholy/projectile-smoke-trail-pink.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XGE
+    hash: chaos%20bolt_xge
+    propDroppable: spell
+    spellClassNames: []
+effects: []
+folder: 5jrCohKawbl0mTbF
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755560079833
+  modifiedTime: 1755560965231
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: UrpU9jYYIpwyoLW2
+sort: 100391
+_key: '!items!UrpU9jYYIpwyoLW2'
+
