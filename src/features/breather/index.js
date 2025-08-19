@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 /**
  * Breather Rest System Feature
@@ -10,7 +11,7 @@ import {Breather} from './breather';
 import {registerBreatherTests} from './quench';
 
 export function registerBreatherFeature() {
-    console.log('SoSly 5e House Rules | Registering Breather Rest System');
+    logger.info('Registering Breather Rest System');
 
     registerBreatherSettings();
 

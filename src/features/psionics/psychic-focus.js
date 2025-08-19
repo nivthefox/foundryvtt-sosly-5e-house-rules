@@ -1,3 +1,5 @@
+import {logger} from '../../utils/logger';
+
 function isPsychicFocusActivity(activity) {
     const item = activity.item;
 
@@ -12,7 +14,7 @@ async function managePsychicFocusEffects(activity) {
     const actor = activity.actor;
     if (!actor) return;
 
-    console.log('SoSly Psionics | Managing effects for actor:', actor.name);
+    logger.info(`Managing effects for actor: ${actor.name}`);
 
     const currentItem = activity.item;
     const currentItemId = currentItem.id;
@@ -22,7 +24,7 @@ async function managePsychicFocusEffects(activity) {
         item.type === 'feat' && item.system.type?.value === 'discipline'
     );
 
-    console.log('SoSly Psionics | Found', psionicDisciplines.length, 'psionic disciplines');
+    logger.info(`Found ${psionicDisciplines.length} psionic disciplines`);
 
     // Find the Psychic Focus effect on each discipline
     const allPsychicFocusEffects = [];
@@ -38,12 +40,12 @@ async function managePsychicFocusEffects(activity) {
                 discipline: discipline,
                 isCurrent: discipline.id === currentItemId
             });
-            console.log('SoSly Psionics | Found effect on', discipline.name, 'disabled:', disciplineFocusEffect.disabled);
+            logger.info(`Found effect on ${discipline.name}, disabled: ${disciplineFocusEffect.disabled}`);
         }
     }
 
     if (allPsychicFocusEffects.length === 0) {
-        console.log('SoSly Psionics | No Psychic Focus effects found');
+        logger.info('No Psychic Focus effects found');
         return;
     }
 
@@ -58,7 +60,7 @@ async function managePsychicFocusEffects(activity) {
         if (!data.effect.disabled) {
             await data.effect.update({ disabled: true });
             deactivatedEffects.push(data.discipline.name);
-            console.log('SoSly Psionics | Disabled effect for', data.discipline.name);
+            logger.info(`Disabled effect for ${data.discipline.name}`);
         }
     }
 
@@ -66,7 +68,7 @@ async function managePsychicFocusEffects(activity) {
     if (currentDisciplineData && currentDisciplineData.effect.disabled) {
         await currentDisciplineData.effect.update({ disabled: false });
         activatedEffects.push(currentDisciplineData.discipline.name);
-        console.log('SoSly Psionics | Enabled effect for', currentDisciplineData.discipline.name);
+        logger.info(`Enabled effect for ${currentDisciplineData.discipline.name}`);
     }
 
     // Show notifications
@@ -78,15 +80,15 @@ async function managePsychicFocusEffects(activity) {
 }
 
 function onPreActivityConsumption(activity, usageConfig, messageConfig) {
-    console.log('SoSly Psionics | Hook fired for activity:', activity.name, 'on item:', activity.item.name);
-    console.log('SoSly Psionics | Item type:', activity.item.type, 'system type:', activity.item.system.type);
+    logger.info(`Hook fired for activity: ${activity.name} on item: ${activity.item.name}`);
+    logger.info(`Item type: ${activity.item.type}, system type: ${activity.item.system.type}`);
 
     if (!isPsychicFocusActivity(activity)) {
-        console.log('SoSly Psionics | Not a psychic focus activity');
+        logger.info('Not a psychic focus activity');
         return true;
     }
 
-    console.log('SoSly Psionics | Processing psychic focus activity:', activity.name);
+    logger.info(`Processing psychic focus activity: ${activity.name}`);
     managePsychicFocusEffects(activity);
 
     return true;

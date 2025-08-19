@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 /**
  * Multiple Concentration Feature
@@ -10,7 +11,7 @@ import { registerDialogModification } from './dialog-modifier';
 import { registerConcentrationHandler } from './handler';
 
 export function registerMultipleConcentrationFeature() {
-    console.log('SoSly 5e House Rules | Registering Multiple Concentration');
+    logger.info('Registering Multiple Concentration');
 
     registerMultipleConcentrationSettings();
 
@@ -18,7 +19,7 @@ export function registerMultipleConcentrationFeature() {
 
     // Always run setup to handle enable/disable state
     Hooks.once('setup', async () => {
-        console.log('SoSly 5e House Rules | Checking concentration limits for multiple concentration');
+        logger.info('Checking concentration limits for multiple concentration');
 
         if (isEnabled) {
             // Setting concentration limits to 2

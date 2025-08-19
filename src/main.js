@@ -1,3 +1,4 @@
+import {logger} from './utils/logger';
 import {registerBreatherFeature} from './features/breather/index';
 import {registerNetworthFeature} from './features/networth/index';
 import {registerMadnessFeature} from './features/madness/index';
@@ -24,5 +25,5 @@ Hooks.once('init', async () => {
     registerItemIdentificationFeature();
     registerTransformationCleanupFeature();
     registerPsionicsFeature();
-    console.log('SoSly 5e House Rules | Initialized');
+    logger.info('Initialized');
 });

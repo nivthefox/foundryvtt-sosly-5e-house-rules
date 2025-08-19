@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 export function handleTransformationCleanup(actor, options) {
     if (!game.settings.get(module_id, 'transformation-cleanup')) return;
@@ -29,10 +30,10 @@ export function handleTransformationCleanup(actor, options) {
 
             if (existingActors.length > 0) {
                 await Actor.implementation.deleteDocuments(existingActors);
-                console.log(`SoSly 5e House Rules | Transformation Cleanup: Deleted ${existingActors.length} temporary actor(s)`);
+                logger.info(`Transformation Cleanup: Deleted ${existingActors.length} temporary actor(s)`);
             }
         } catch (error) {
-            console.warn('SoSly 5e House Rules | Transformation Cleanup: Failed to delete temporary actors', error);
+            logger.warn(`Transformation Cleanup: Failed to delete temporary actors - ${error}`);
         }
     }, 500);
 }

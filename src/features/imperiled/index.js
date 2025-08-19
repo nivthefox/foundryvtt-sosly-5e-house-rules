@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 /**
  * Imperiled Condition Feature
@@ -12,7 +13,7 @@ import { handleImperiledUpdate } from './actor-updates';
 import { registerImperiledTests } from './quench';
 
 export function registerImperiledFeature() {
-    console.log('SoSly 5e House Rules | Registering Imperiled Condition');
+    logger.info('Registering Imperiled Condition');
 
     registerImperiledSettings();
     registerImperiledConditions();

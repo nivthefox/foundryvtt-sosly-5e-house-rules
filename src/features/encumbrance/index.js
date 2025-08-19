@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 /**
  * Encumbrance System Feature
@@ -11,7 +12,7 @@ import { registerEncumbranceHooks } from './hooks.js';
 import { registerEncumbranceTests } from './quench';
 
 export function registerEncumbranceFeature() {
-    console.log('SoSly 5e House Rules | Registering Encumbrance System (libWrapper)');
+    logger.info('Registering Encumbrance System (libWrapper)');
 
     registerEncumbranceSettings();
 

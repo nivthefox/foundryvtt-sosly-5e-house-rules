@@ -1,3 +1,5 @@
+import {logger} from '../../utils/logger';
+
 /**
  * Combat Recovery Enhancements
  * Handles NPC resource recovery during combat
@@ -25,6 +27,6 @@ export async function handleCombatRecovery(combatant, recoveries) {
     const legact = actor.system.resources.legact;
     if (legact.value < legact.max) {
         await actor.update({'system.resources.legact.value': legact.max});
-        console.log(`SoSly: NPC ${actor.name} is recovering resources at the start of their turn.`);
+        logger.info(`NPC ${actor.name} is recovering resources at the start of their turn`);
     }
 }

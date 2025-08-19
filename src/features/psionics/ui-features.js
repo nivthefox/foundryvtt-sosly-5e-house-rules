@@ -1,3 +1,5 @@
+import {logger} from '../../utils/logger';
+
 function isPsionicDiscipline(item) {
     return item.type === 'feat' && item.system.type?.value === 'discipline';
 }
@@ -38,7 +40,7 @@ async function createPsionicDisciplinesSection(html) {
 
         return $section;
     } catch (error) {
-        console.warn('Failed to create Psionic Disciplines section:', error);
+        logger.warn(`Failed to create Psionic Disciplines section: ${error}`);
         return null;
     }
 }
