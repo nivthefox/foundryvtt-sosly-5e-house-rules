@@ -1,3 +1,5 @@
+import {logger} from '../../utils/logger';
+
 /**
  * Net Worth Calculator Feature
  * Calculates and displays actor wealth and item values
@@ -8,7 +10,7 @@ import { registerNetworthHooks } from './ui';
 import { registerNetworthTests } from './quench';
 
 export function registerNetworthFeature() {
-    console.log('SoSly 5e House Rules | Registering Net Worth Calculator');
+    logger.info('Registering Net Worth Calculator');
 
     registerNetworthHooks();
 

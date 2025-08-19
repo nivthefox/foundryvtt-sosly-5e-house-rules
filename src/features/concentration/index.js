@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 /**
  * Concentration Management Feature
@@ -9,7 +10,7 @@ import { handleConcentrationRest } from './rest-handler';
 import { registerConcentrationTests } from './quench';
 
 export function registerConcentrationFeature() {
-    console.log('SoSly 5e House Rules | Registering Concentration Management');
+    logger.info('Registering Concentration Management');
 
     // Always register rest concentration handlers
     Hooks.on('dnd5e.shortRest', async (actor, data) => {

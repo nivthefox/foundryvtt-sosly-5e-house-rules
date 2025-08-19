@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import {logger} from '../../utils/logger';
 
 /**
  * Rest Enhancements Feature
@@ -11,7 +12,7 @@ import { handleCombatRecovery } from './combat-recovery';
 import { registerRestEnhancementsTests } from './quench';
 
 export function registerRestEnhancementsFeature() {
-    console.log('SoSly 5e House Rules | Registering Rest Enhancements');
+    logger.info('Registering Rest Enhancements');
 
     registerRestEnhancementsSettings();
 

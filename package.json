@@ -1,6 +1,5 @@
 {
     "type": "module",
-    "types": "src/types.js",
     "scripts": {
         "build": "npm run lint:code && npm run build:code && npm run build:styles",
         "build:code": "npx rollup --config rollup.config.mjs",
