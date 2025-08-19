@@ -1,0 +1,248 @@
+folder: m2PtsowjwBvhRcVY
+name: Psionic Restoration
+type: feat
+_id: 5YwOUF6z4qPAQve7
+img: icons/magic/life/crosses-trio-red.webp
+system:
+  activities:
+    vktyqCTVRzA223bu:
+      type: utility
+      _id: vktyqCTVRzA223bu
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: OTiQLb1zahILKHMF
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+    JoObT1ECivRocYU1:
+      type: utility
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: B3eV1PJy22tPnKw8
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      _id: JoObT1ECivRocYU1
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to cure wounds and restore health to yourself
+      and others.</p><p><strong>Psychic Focus.</strong> While focused on this
+      discipline, you can use a bonus action to touch a creature that has 0 hit
+      points and stabilize it.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: imm
+effects:
+  - name: Psionic Restoration
+    img: icons/magic/life/crosses-trio-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.5YwOUF6z4qPAQve7
+    transfer: true
+    _id: OTiQLb1zahILKHMF
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!5YwOUF6z4qPAQve7.OTiQLb1zahILKHMF'
+  - name: Stabilized
+    img: systems/dnd5e/icons/svg/trait-damage-vulnerabilities.svg
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.5YwOUF6z4qPAQve7
+    transfer: false
+    _id: B3eV1PJy22tPnKw8
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses:
+            - stable
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580682616
+      modifiedTime: 1755580828096
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!5YwOUF6z4qPAQve7.B3eV1PJy22tPnKw8'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.W7d2T6uUQTdsBOM2
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.AokCrMoOzaU1sjC3
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.oVqo341xLWvSthDc
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.e8DHlMndjRq3LzRb
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!5YwOUF6z4qPAQve7'
+

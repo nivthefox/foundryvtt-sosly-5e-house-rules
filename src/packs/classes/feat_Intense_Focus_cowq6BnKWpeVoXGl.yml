@@ -1,0 +1,61 @@
+name: Intense Focus
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/control/silhouette-hold-beam-blue.webp
+system:
+  description:
+    value: >-
+      <p>When you manifest multiple abilities using psionic mastery, you can
+      continue to concentrate on each of those effects. Using this ability to
+      concentrate on an effect ends any effect you were already concentrating
+      on, and if you begin concentrating on a new effect, the effects you are
+      concentrating on from this ability end. When you take damage, you only
+      make one concentration throw for any effects you are concentrating on with
+      this ability, and if you fail you lose concentration on all of these
+      effects.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 18
+    repeatable: false
+  properties:
+    - trait
+  requirements: Psionicist
+  activities: {}
+  enchant: {}
+  identifier: preserve-life
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755579643200
+  modifiedTime: 1755579643227
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: cowq6BnKWpeVoXGl
+sort: 550000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!cowq6BnKWpeVoXGl'
+

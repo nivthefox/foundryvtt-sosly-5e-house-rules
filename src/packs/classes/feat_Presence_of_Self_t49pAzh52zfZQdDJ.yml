@@ -1,0 +1,51 @@
+name: Presence of Self
+type: feat
+img: icons/magic/light/hand-sparks-glow-yellow.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Even the simplest psionic technique requires a deep understanding of
+      yourself. You have advantage on Charisma saving throws while you are not
+      charmed, frightened, or incapacitated.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 2
+    repeatable: false
+  properties:
+    - trait
+  requirements: Psionicist
+  identifier: gnomish-cunning
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+folder: TYsKSnhFRembzGDC
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755576901968
+  modifiedTime: 1755576943942
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: t49pAzh52zfZQdDJ
+sort: 300000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!t49pAzh52zfZQdDJ'
+

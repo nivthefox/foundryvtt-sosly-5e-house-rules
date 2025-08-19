@@ -1,0 +1,71 @@
+name: Power Points
+type: feat
+img: modules/dnd5e-spellpoints/img/mana-icon.webp
+system:
+  description:
+    value: >-
+      <p>You have an internal reservoir of energy that can be devoted to psionic
+      disciplines you know. This energy is represented by power points. Each
+      discipline describes effects you can create with it by spending a certain
+      number of power points. A talent requires no power points.</p><p>The
+      number of power points you have is based on your psionicist level, as
+      shown in the Power Points column of the Psionicist Features table. The
+      number shown for your level is your Power Point maximum. You regain all
+      expended power points when you finish a long rest.</p><p></p>
+    chat: ''
+  source:
+    book: SRD 5.1
+    page: '5'
+    custom: Spell Points
+    license: ''
+    revision: 1
+    rules: '2024'
+  cover: null
+  crewed: false
+  uses:
+    max: '@scale.psionicist.power-points'
+    recovery:
+      - period: sr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: sp
+  properties:
+    - mgc
+  requirements: ''
+  activities: {}
+  identifier: spell-points
+  advancement: []
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+effects: []
+folder: TYsKSnhFRembzGDC
+flags:
+  core: {}
+  spellpoints:
+    override: false
+    config: {}
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    migratedUses: 1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755576550899
+  modifiedTime: 1755576778971
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: yXFJ10Lf7yDyu5OM
+sort: 100000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!yXFJ10Lf7yDyu5OM'
+

@@ -1,0 +1,56 @@
+name: Telepathy
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/defensive/illusion-evasion-echo-purple.webp
+system:
+  description:
+    value: >-
+      <p>You can telepathically speak to any creature you can see within 60 feet
+      of you. You don’t need to share a language with the creature for it to
+      understand your telepathic messages, but the creature must be able to
+      understand at least one language or be telepathic itself.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: telepathic-speech
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755576681868
+  modifiedTime: 1755576707457
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: lSAKYAgutGMJ4lFN
+sort: 150000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!lSAKYAgutGMJ4lFN'
+

@@ -1,0 +1,52 @@
+name: Improved telepathy
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/defensive/illusion-evasion-echo-purple.webp
+system:
+  description:
+    value: <p>The range of your telepathy increases to 120 feet.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 13
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: telepathic-speech
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755579338821
+  modifiedTime: 1755579504762
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: OhO2jPfLxLINxXzt
+sort: 250000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!OhO2jPfLxLINxXzt'
+

@@ -1,0 +1,121 @@
+folder: zLDylBwEWWuq3B0v
+name: Restore Vigor
+type: spell
+_id: e8DHlMndjRq3LzRb
+img: icons/magic/life/heart-hand-gold-green-light.webp
+system:
+  activities:
+    a5nTACU2UUHpfvtF:
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: false
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+      _id: a5nTACU2UUHpfvtF
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can touch one creature and choose one of the following: remove any
+      reductions to one of its ability scores, remove one effect that reduces
+      its hit point maximum, or reduce its exhaustion level by one.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: touch
+    special: ''
+  school: imm
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755582871004
+  modifiedTime: 1755582983368
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!e8DHlMndjRq3LzRb'
+

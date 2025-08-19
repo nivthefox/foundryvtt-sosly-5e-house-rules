@@ -1,0 +1,9 @@
+<div class="items-section card" data-type="discipline">
+    <div class="items-header header">
+        <h3 class="item-name">{{label}}</h3>
+        {{#each categories}}
+        <div class="item-header {{classes}}">{{#if label}}{{localize label}}{{/if}}</div>
+        {{/each}}
+    </div>
+    <ol class="item-list unlist"></ol>
+</div>

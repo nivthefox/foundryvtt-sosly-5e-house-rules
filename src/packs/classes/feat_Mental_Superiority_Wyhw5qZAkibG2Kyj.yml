@@ -1,0 +1,117 @@
+name: Mental Superiority
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/control/hypnosis-mesmerism-eye.webp
+system:
+  description:
+    value: >-
+      <p>When you gain a psionic focus, choose one of the following options. You
+      retain this benefit until you change your psionic focus
+      again.</p><p><strong>Psionic Strike.</strong> Once on each of your turns
+      when you hit a creature with an attack roll using a weapon, you can cause
+      the target to take an extra 1d8 Psychic damage.</p><p><strong>Potent
+      Psionics.</strong> Add your Intelligence modifier to the damgae you deal
+      with a talent.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+    repeatable: false
+  properties:
+    - trait
+  requirements: Psionicist
+  activities:
+    hqARAt8iKyEjqDqj:
+      type: damage
+      _id: hqARAt8iKyEjqDqj
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you hit a creature with an attack roll using a weapon
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery:
+          - period: turn
+            type: recoverAll
+        max: '1'
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.psionicist.psionic-strike'
+            number: null
+            denomination: 0
+            bonus: ''
+            types:
+              - psychic
+            scaling:
+              number: 1
+      name: Psionic Strike
+  enchant: {}
+  identifier: preserve-life
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755578015110
+  modifiedTime: 1755578112244
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: Wyhw5qZAkibG2Kyj
+sort: 500000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!Wyhw5qZAkibG2Kyj'
+

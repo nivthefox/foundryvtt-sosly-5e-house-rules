@@ -33,17 +33,33 @@
           "minimum": "1.0.0.0",
           "verified": "1.12.6.0"
         }
-      }
-    ],
-    "recommends": [
+      },
       {
         "id": "dnd5e-spellpoints",
         "type": "module",
         "compatibility": {
           "minimum": "2.4.22",
-          "verified": "2.4.22"
+          "verified": "2.5.02"
         }
       },
+      {
+        "id": "items-with-spells-5e",
+        "type": "module",
+        "compatibility": {
+          "minimum": "13.0.2",
+          "verified": "13.0.2"
+        }
+      },
+      {
+        "id": "ActiveAuras",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.12.3",
+          "verified": "0.12.3"
+        }
+      }
+    ],
+    "recommends": [
       {
         "id": "dae",
         "type": "module",
@@ -190,6 +206,17 @@
       }
     },
     {
+      "name": "psionics",
+      "label": "Psionics",
+      "path": "packs/psionics",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "monsters",
       "label": "Monsters",
       "path": "packs/monsters",
@@ -205,11 +232,11 @@
       "label": "Monster Features",
       "path": "packs/monster-features",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     }
   ],
   "packFolders": [
