@@ -33,6 +33,12 @@ sosly:
   madness:
     label: Madness
     hint: Enables a madness counter for Player Characters.
+    max:
+      label: Maximum Madness
+      hint: The maximum madness level a character can reach (1-20).
+    config:
+      title: Madness Configuration
+    invalid: Invalid madness value entered.
   rest-enhancements:
     label: Gritty Rest Mechanics
     hint: Enables gritty rest mechanics that change how short and long rests function.

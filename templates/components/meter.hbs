@@ -1,0 +1,22 @@
+<div class="meter-group">
+    <div class="label roboto-condensed-upper">
+        <span>{{label}}</span>
+        {{#if editable}}
+        <a class="config-button" data-action="config" data-tooltip="Configure {{label}}" aria-label="Configure {{label}}">
+            <i class="fas fa-cog"></i>
+        </a>
+        {{/if}}
+    </div>
+    <div class="meter {{cssClass}} progress{{#if isOverflow}} overflow{{/if}}" role="meter" aria-valuemin="0" aria-valuenow="{{valueNow}}" aria-valuemax="{{valueMax}}" style="--bar-percentage: {{percentage}}%">
+        {{#each thresholds}}
+        <div class="threshold-tick" style="left: {{percentage}}%" data-threshold="{{value}}"></div>
+        {{/each}}
+        <div class="label">
+            <span class="value">{{valueNow}}</span>
+            {{#unless allowOverflow}}
+            <span class="separator">/</span>
+            <span class="max">{{valueMax}}</span>
+            {{/unless}}
+        </div>
+    </div>
+</div>

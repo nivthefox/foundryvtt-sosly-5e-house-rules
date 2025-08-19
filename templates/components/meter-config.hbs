@@ -1,0 +1,16 @@
+<fieldset>
+    <div class="form-group">
+        <label>{{ label }}</label>
+        <div class="form-fields">
+            <button type="button" class="unbutton control-button middle" data-action="decrease" aria-label="Decrease">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="number" name="value" value="{{ value }}" min="0" max="{{ max }}" step="1">
+            <button type="button" class="unbutton control-button middle" data-action="increase" aria-label="Increase">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <span class="separator">/</span>
+            <span class="max">{{ max }}</span>
+        </div>
+    </div>
+</fieldset>
