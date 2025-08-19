@@ -1,0 +1,94 @@
+name: Sense Thoughts
+type: feat
+img: icons/skills/social/diplomacy-handshake-yellow.webp
+system:
+  activities:
+    XRwWMWE88dzXeH1W:
+      type: utility
+      _id: XRwWMWE88dzXeH1W
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you can sense the presence of thoughts within the range
+      of your telepathy that belong to creatures that know languages or are
+      telepathic. You don’t read the thoughts and you cannot pinpoint a
+      creature’s location, but you know that a thinking creature is
+      present.</p><p>This ability is blocked by 1 foot of stone, dirt, or wood;
+      1 inch of metal; or a thin sheet of lead.</p><p></p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 2
+    repeatable: false
+  properties:
+    - trait
+  requirements: Psionicist
+  identifier: gnomish-cunning
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+folder: TYsKSnhFRembzGDC
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755577106272
+  modifiedTime: 1755577106297
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: f0BG87dR04BSLjoF
+sort: 125000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!f0BG87dR04BSLjoF'
+

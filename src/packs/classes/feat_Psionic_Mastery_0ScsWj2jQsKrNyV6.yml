@@ -1,0 +1,61 @@
+name: Psionic Mastery
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/perception/orb-crystal-ball-scrying.webp
+system:
+  description:
+    value: >-
+      <p>Your mastery of psionic energy allows you to push your mind beyond its
+      normal limmits. On your turn, you can manifest any number of discipline
+      abilities with a single action, as long as their total point cost is 9 or
+      less.</p><p>You can use this feature once, and regain all expended uses
+      when you finish a long rest. You gain additional uses when you reach
+      certain Psionicist levels, as shown in the Psionic Mastery column of the
+      Psionicist Features table.</p><p></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: '@scale.psionicist.psionic-mastery'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 11
+    repeatable: false
+  properties: []
+  requirements: Psionicist
+  activities: {}
+  enchant: {}
+  identifier: preserve-life
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755579273102
+  modifiedTime: 1755579516468
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: 0ScsWj2jQsKrNyV6
+sort: 350000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!0ScsWj2jQsKrNyV6'
+

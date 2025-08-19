@@ -1,0 +1,88 @@
+name: Psionics
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/perception/third-eye-blue-red.webp
+system:
+  description:
+    value: >-
+      <p>As a student of psionics, you can master and use psionic talents and
+      disciplines, the rules for which appear at the end of this document.
+      Psionics is a special form of magic use, distinct from
+      spellcasting.</p><p><em><strong>Talents.</strong></em> You know two
+      talents of your choice. Whenever you gain a Psionicist level, you can
+      replace one of your talents from this feature with another talent of your
+      choice.</p><p>When you reach Psionicist levels 4 and 10, you learn another
+      talent of your choice, as shown in the Talents column of the Psionicist
+      Features table.</p><p><em><strong>Disciplines.</strong></em> A psionic
+      discipline is a rigid set of mental exercises that allows a psionicist to
+      manifest psionic power. At 1st level, you know two psionic disciplines of
+      your choice. Whenever you gain a Psionicist level, you can replace one of
+      your disciplines with another discipline of your choice.</p><p>The number
+      of disciplines you know increases as you gain Psionicist levels, as shown
+      in the Disciplines column of the Psionicist Features
+      table.</p><p><em><strong>Power Points.</strong></em> You have an internal
+      reservoir of energy that can be devoted to psionic disciplines you know.
+      This energy is represented by power points. Each discipline describes
+      effects you can create with it by spending a certain number of power
+      points. A talent requires no power points.</p><p>The number of power
+      points you have is based on your psionicist level, as shown in the Power
+      Points column of the Psionicist Features table. The number shown for your
+      level is your Power Point maximum. You regain all expended power points
+      when you finish a long rest.</p><p><em><strong>Power Limit.</strong></em>
+      Though you have access to a potent amount of psionic energy, it takes
+      training and practice to channel that energy. There is a limit on the
+      number of power points you can spend to activate a psionic discipline. The
+      limit is based on your psionicist level, as shown in the Power Limit
+      column of the Psionicist Features table.</p><p><em><strong>Psychic
+      Focus.</strong></em> You can focus psionic energy on one of your
+      disciplines to draw ongoing benefits from it. As a bonus action, you can
+      choose oen of your disciplines an dgain its psychic focus benefit, which
+      is detailed in that disciplien’s description. The benefit lasts until you
+      are incapacitated or until you use another bonus action to choose a
+      different focus benefit.</p><p>You can have only one psychic focus benefit
+      at a time, and using the psychic focus of one discipline doesn’t limit
+      your ability to use other disciplines.</p><p><em><strong>Psionics
+      Ability.</strong></em> Intelligence is your manifestation ability for your
+      psionic talents and disciplines.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+    repeatable: false
+  properties: []
+  requirements: Psionicist
+  activities: {}
+  enchant: {}
+  identifier: spellcasting
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755576566685
+  modifiedTime: 1755576660449
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: KLGa6BYKmy55iIvk
+sort: 200000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!KLGa6BYKmy55iIvk'
+

@@ -1,0 +1,117 @@
+folder: vm5zlYPjNSzsvAqq
+name: Order of the Avatar
+type: subclass
+_id: kyRtGpIsXT0sHcWM
+img: modules/sosly-5e-house-rules/public/subclasses/avatar.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Master Emotions to Command Hearts and
+      Minds</p></blockquote><p>Psionicists of the Order of the Avatar delve into
+      the world of emotion, mastering their inner life to such an extent that
+      they can manipulate and amplify the emotions of others with the same ease
+      that an artist shapes clay. Known as Avatars, these psionicists vary from
+      tyrants to inspiring leaders who are loved by their
+      followers.</p><p>Avatars can bring out extreme emotions in the people
+      around them. For their allies, they can lend hope, ferocity, and courage,
+      transforming a fighting band into a deadly, unified force. For their
+      enemies, they bring fear, disgust, and trepidation that can make even the
+      most hardened veteran act like a shaky rookie.</p>
+    chat: ''
+  identifier: avatar
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: ItemChoice
+      _id: j6kjoa9s7VRfSytu
+      configuration:
+        allowDrops: true
+        choices:
+          '3':
+            count: 2
+            replacement: false
+        pool: []
+        spell: null
+        type: feat
+        restriction:
+          type: discipline
+          subtype: ava
+      value:
+        added: {}
+        replaced: {}
+      title: Bonus Disciplines
+      hint: ''
+    - _id: bW7chouU8WIVH0Le
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - armor:med
+          - armor:shl
+        choices: []
+      level: 3
+      title: ''
+      value:
+        chosen: []
+      hint: ''
+    - type: ItemGrant
+      _id: l3v9eN3MmGurI5Zs
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.DguBGTuw7F4TNk7t
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: t11z7UhZFzeTX4nT
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.9aQPTH1LiOpZcKmf
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: qruOgCPmmtbz6AeM
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.gwvYnnPciyMRJfDR
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: psionicist
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755585996702
+  modifiedTime: 1755592593536
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!kyRtGpIsXT0sHcWM'
+

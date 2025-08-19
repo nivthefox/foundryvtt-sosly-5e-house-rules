@@ -1,0 +1,57 @@
+name: Improved Psionic Mastery
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/perception/orb-crystal-ball-scrying.webp
+system:
+  description:
+    value: >-
+      <p>Your psionic mastery improves. On your turn, you can manifest any
+      number of discipline abilities with a single action, as long as their
+      total point cost is 11 or less.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 15
+    repeatable: false
+  properties: []
+  requirements: Psionicist
+  activities: {}
+  enchant: {}
+  identifier: preserve-life
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755579567352
+  modifiedTime: 1755579567378
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: QQvnYJMi1iWf0eXa
+sort: 112500
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!QQvnYJMi1iWf0eXa'
+

@@ -1,0 +1,63 @@
+name: Psionic Body
+type: feat
+folder: TYsKSnhFRembzGDC
+img: icons/magic/control/silhouette-grow-shrink-tan.webp
+system:
+  description:
+    value: >-
+      <p>Your mastery of psionic power causes your mind to transcend the body.
+      Your physical form is infused with psionic energy. You gain the following
+      benefits:</p><ul><li><p>Resistance to bludgeoning, piercing, and slashing
+      damage.</p></li><li><p>You no longer age.</p></li><li><p>Immunity to
+      disease, poison damage, and the poisoned condition.</p></li><li><p>If you
+      die, roll a d20. On a 10 or higher, you discorporate with 0 hit points,
+      instead of dying, and you fall unconscious. You and your gear disappear.
+      You appear at a spot of your choice within 1d3 days later on the plane of
+      existence where you died, having gained the benefits of a long
+      rest.</p></li></ul>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 20
+    repeatable: false
+  properties:
+    - trait
+  requirements: Psionicist
+  activities: {}
+  enchant: {}
+  identifier: preserve-life
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755579752661
+  modifiedTime: 1755579752688
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: fp5n8b6L9oFhRlPj
+sort: 575000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!fp5n8b6L9oFhRlPj'
+

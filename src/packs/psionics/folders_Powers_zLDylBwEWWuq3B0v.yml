@@ -1,8 +1,10 @@
-name: Sorcerer
+name: Powers
 sorting: a
 folder: null
 type: Item
+_id: zLDylBwEWWuq3B0v
 description: ''
+sort: 0
 color: null
 flags: {}
 _stats:
@@ -10,11 +12,9 @@ _stats:
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
-  systemVersion: 4.1.2
-  createdTime: 1736548922795
-  modifiedTime: 1755570156355
+  systemVersion: 4.4.4
+  createdTime: 1755580395210
+  modifiedTime: 1755580395210
   lastModifiedBy: NbCXvDXaYhqPCRFb
-_id: 2B3ZPqDz4gMjvekQ
-sort: 100000
-_key: '!folders!2B3ZPqDz4gMjvekQ'
+_key: '!folders!zLDylBwEWWuq3B0v'
 

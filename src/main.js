@@ -9,6 +9,7 @@ import {registerToolsFeature} from './features/tools/index';
 import {registerItemIdentificationFeature} from './features/item-identification/index';
 import {registerEncumbranceFeature} from './features/encumbrance/index';
 import {registerTransformationCleanupFeature} from './features/transformation-cleanup/index';
+import {registerPsionicsFeature} from './features/psionics/index.js';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -22,5 +23,6 @@ Hooks.once('init', async () => {
     registerToolsFeature();
     registerItemIdentificationFeature();
     registerTransformationCleanupFeature();
+    registerPsionicsFeature();
     console.log('SoSly 5e House Rules | Initialized');
 });
