@@ -1,0 +1,6 @@
+// Madness feature-specific meter styling
+
+.dnd5e2.sheet.actor .meter.madness.progress::before {
+    background: linear-gradient(to right, #5c3a00 0%, #b8860b 100%);
+    border-inline-end: var(--border-width) solid #6b4500;
+}

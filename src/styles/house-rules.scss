@@ -1,154 +1,19 @@
-// Breather
-.dnd5e2.sheet.actor .sheet-header .sheet-header-buttons {
-    gap: 4px;
-}
+// SoSly 5e House Rules Stylesheet
+// Main entry point - uses all modular styles
 
+// Base styles and utilities
+@use 'base';
 
-// Net Worth
-.dnd5e2 .inventory-element .middle .net-worth {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    background: var(--dnd5e-background-card);
-    border-radius: 4px;
-    box-shadow: 0 0 6px var(--dnd5e-shadow-45);
-    border: var(--dnd5e-border-gold);
-    padding: 0 0.875rem 0 0.5rem;
-    font-weight: bold;
-}
+// Theme-specific styles
+@use 'theme';
 
-.dnd5e2 .inventory-element .middle .net-worth .fa-coins {
-    color: var(--dnd5e-color-gold);
-}
+// Reusable components
+@use 'components/meter';
 
-// Fix Styles
-.journal-page-content h4 {
-    font-weight: bold;
-    font-size: 1.1em;
-}
-.dnd5e2 .items-section .items-header .item-controls,
-.dnd5e2 .items-section .item .item-controls {
-    padding: 0 1rem 0 0.25rem;
-    width: 75px;
-    justify-content: left;
-}
+// Feature-specific styles
+@use 'features/breather';
+@use 'features/madness';
+@use 'features/networth';
 
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .window-content::before,
-.dnd5e2.sheet.actor.character.dnd5e-theme-light .window-content::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 300px;
-    border-radius: 5px 5px 0 0;
-    //opacity: 0.75;
-    background: url(/systems/dnd5e/ui/official/banner-character.jpg) no-repeat top center / cover;
-    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
-    mask-image: linear-gradient(to bottom, black, transparent);
-    z-index: -1;
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .window-content {
-    background: url('/systems/dnd5e/ui/parchment.jpg') repeat;
-    z-index: 0;
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-body {
-    background: none;
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header {
-    background: none;
-    position: relative;
-    z-index: 0;
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .document-name {
-    color: white;
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .class,
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .xp-label span,
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header .xp-label input {
-    color: var(--dnd5e-color-card);
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header > .right > div:last-child .xp-bar {
-    background: var(--dnd5e-color-card);
-}
-
-:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header > .right > div:last-child .xp-bar::after {
-    background: var(--phb-red);
-}
-
-th, td {
-    vertical-align: top;
-
-    &.nowrap {
-        white-space: nowrap;
-    }
-}
-
-// Madness meter styling
-.dnd5e2.sheet.actor .meter.madness.progress::before {
-    background: linear-gradient(to right, #5c3a00 0%, #b8860b 100%);
-    border-inline-end: var(--border-width) solid #6b4500;
-}
-
-.dnd5e2.sheet.actor .meter.madness {
-    height: 25px;
-    font-size: var(--font-size-14);
-    position: relative;
-}
-
-// Threshold tick marks
-.dnd5e2.sheet.actor .meter .threshold-tick {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    pointer-events: none;
-    
-    &::before {
-        content: attr(data-threshold);
-        position: absolute;
-        top: -18px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 10px;
-        font-weight: bold;
-        color: var(--dnd5e-color-text);
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-        white-space: nowrap;
-    }
-}
-
-
-.breather fieldset .form-group label {
-    min-width: 70%;
-}
-
-.breather .feature-validation-error {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    background-color: rgba(255, 0, 0, 0.1);
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    color: #8b0000;
-    padding: 0.5rem;
-    border-radius: 4px;
-    font-weight: 600;
-    
-    &::before {
-        content: "⚠ ";
-        font-size: 1.2em;
-    }
-    
-    .dnd5e-theme-dark & {
-        background-color: rgba(255, 100, 100, 0.15);
-        border-color: rgba(255, 100, 100, 0.5);
-        color: #ff6b6b;
-    }
-}
+// System fixes and overrides
+@use 'fixes';

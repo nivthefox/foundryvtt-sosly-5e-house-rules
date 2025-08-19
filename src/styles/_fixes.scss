@@ -1,0 +1,13 @@
+// General fixes and overrides for D&D5e system
+
+.journal-page-content h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.dnd5e2 .items-section .items-header .item-controls,
+.dnd5e2 .items-section .item .item-controls {
+    padding: 0 1rem 0 0.25rem;
+    width: 75px;
+    justify-content: left;
+}

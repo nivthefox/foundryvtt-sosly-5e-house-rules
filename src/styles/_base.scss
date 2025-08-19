@@ -1,0 +1,9 @@
+// Base styles and shared utilities
+
+th, td {
+    vertical-align: top;
+
+    &.nowrap {
+        white-space: nowrap;
+    }
+}
