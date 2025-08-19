@@ -11,6 +11,7 @@ import {registerItemIdentificationFeature} from './features/item-identification/
 import {registerEncumbranceFeature} from './features/encumbrance/index';
 import {registerTransformationCleanupFeature} from './features/transformation-cleanup/index';
 import {registerPsionicsFeature} from './features/psionics/index.js';
+import {registerSeveredLandsBloodMagicFeature} from './features/severed-lands-blood-magic/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -25,5 +26,6 @@ Hooks.once('init', async () => {
     registerItemIdentificationFeature();
     registerTransformationCleanupFeature();
     registerPsionicsFeature();
+    registerSeveredLandsBloodMagicFeature();
     logger.info('Initialized');
 });
