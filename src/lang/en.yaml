@@ -49,3 +49,24 @@ sosly:
     label: Automatic Transformation Cleanup
     hint: Automatically removes temporary actors when PCs revert from transformed forms (Polymorph, Wild Shape, etc.), eliminating need for DM intervention.
   networth: Net Worth
+  severedLandsBloodMagic:
+    label: Severed Lands Blood Magic
+    hint: Automates blood magic mechanics including madness saves, blood surge, and hungry magic. Requires Madness feature to be enabled.
+    save:
+      title: Blood Magic Madness Save
+      content: Make a {ability} save (DC {dc}) to resist madness from blood magic.
+    consequence:
+      title: Blood Magic Consequence
+      choose: "Choose your consequence:"
+      madness: Gain Madness
+      exhaustion: Gain Exhaustion
+    bloodSurge: "{actor} experiences a Blood Surge! The spell slot is not consumed."
+    hungryMagic:
+      slot: "{actor}'s magic hungers for more! An additional level {level} spell slot is consumed."
+      damage: "{actor}'s magic hungers but finds no fuel! They take {damage} psychic damage."
+    recovery: "{actor} recovers from madness (reduced by {profBonus}, now at {current} madness)"
+    dmSelect:
+      title: Select Madness Effect
+      short-term: Short-term Madness
+      long-term: Long-term Madness
+      indefinite: Indefinite Madness
