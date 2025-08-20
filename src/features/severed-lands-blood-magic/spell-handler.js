@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+import { logger } from '../../utils/logger';
 import { showMadnessSaveDialog, showConsequenceDialog } from './madness-dialog';
 import { createMadnessChatMessage } from './chat-handler';
 
@@ -6,66 +7,91 @@ import { createMadnessChatMessage } from './chat-handler';
  * Handle spell slot consumption for blood magic
  */
 export function registerSpellHandler() {
-    Hooks.on('dnd5e.activityConsumption', async (activity, usageConfig, messageConfig, updates) => {
-        if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
-            return;
-        }
-
-        if (!game.settings.get(module_id, 'madness')) {
-            return;
-        }
-
-        const actor = activity.actor;
-        if (!actor || actor.type !== 'character') {
-            return;
-        }
-
-        // Check if this activity belongs to a spell and consumes spell slots
-        const item = activity.item;
-        const isSpell = item?.type === 'spell';
-        const consumesSpellSlot = activity.consumption?.spellSlot === true;
-
-        if (!isSpell || !consumesSpellSlot) {
-            return;
-        }
-
-        const spellLevel = item.system.level;
-
-        try {
-            const saveResult = await showMadnessSaveDialog(actor, spellLevel);
-            if (!saveResult) {
-                return;
-            }
-
-            const rollTotal = saveResult.total;
-            const dc = 10 + spellLevel;
-
-            // Check for natural 20 (Blood Surge)
-            if (saveResult.dice[0]?.results[0]?.result === 20) {
-                await handleBloodSurge(actor, spellLevel);
-                return;
-            }
-
-            // Check for natural 1 (Hungry Magic)
-            if (saveResult.dice[0]?.results[0]?.result === 1) {
-                await handleHungryMagic(actor, spellLevel);
-            }
-
-            // Check if save failed
-            if (rollTotal < dc) {
-                const choice = await showConsequenceDialog();
-
-                if (choice === 'madness') {
-                    await handleMadnessConsequence(actor);
-                } else if (choice === 'exhaustion') {
-                    await handleExhaustionConsequence(actor);
-                }
-            }
-
-        } catch (error) {
-            console.error('Severed Lands Blood Magic | Error processing spell consumption:', error);
-        }
+    // Use postActivityConsumption to check what was actually consumed
+    Hooks.on('dnd5e.postActivityConsumption', async (activity, usageConfig, messageConfig, updates) => {
+        logger.info('Blood Magic: postActivityConsumption hook triggered');
+        await handleBloodMagic(activity, usageConfig, messageConfig, updates);
     });
+}
+
+async function handleBloodMagic(activity, usageConfig, messageConfig, updates) {
+
+    if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
+        logger.info('Blood Magic: Feature disabled');
+        return;
+    }
+
+    if (!game.settings.get(module_id, 'madness')) {
+        logger.info('Blood Magic: Madness feature disabled');
+        return;
+    }
+
+    const actor = activity.actor;
+    if (!actor || actor.type !== 'character') {
+        logger.info('Blood Magic: Not a character actor');
+        return;
+    }
+
+    // Check if this activity belongs to a spell and isn't a cantrip
+    const item = activity.item;
+    const isSpell = item?.type === 'spell';
+    const isCantrip = item?.system?.level === 0;
+
+    if (!isSpell || isCantrip) {
+        logger.info('Blood Magic: Not a leveled spell');
+        return;
+    }
+
+    // Check if spell slots were actually consumed by examining the nested updates object
+    const actorUpdates = updates?.actor?.system?.spells;
+    const spellSlotConsumed = actorUpdates && Object.keys(actorUpdates).some(key =>
+        key.startsWith('spell') && actorUpdates[key]?.value !== undefined
+    );
+
+    logger.info('Blood Magic: Spell slot consumed:', spellSlotConsumed);
+    logger.info('Blood Magic: Actor spell updates:', actorUpdates);
+
+    if (!spellSlotConsumed) {
+        logger.info('Blood Magic: No spell slot was consumed');
+        return;
+    }
+
+    const spellLevel = item.system.level;
+
+    try {
+        const saveResult = await showMadnessSaveDialog(actor, spellLevel);
+        if (!saveResult) {
+            return;
+        }
+
+        const rollTotal = saveResult.total;
+        const dc = 10 + spellLevel;
+
+        // Check for natural 20 (Blood Surge)
+        if (saveResult.dice[0]?.results[0]?.result === 20) {
+            await handleBloodSurge(actor, spellLevel);
+            return;
+        }
+
+        // Check for natural 1 (Hungry Magic)
+        if (saveResult.dice[0]?.results[0]?.result === 1) {
+            await handleHungryMagic(actor, spellLevel);
+        }
+
+        // Check if save failed
+        if (rollTotal < dc) {
+            const choice = await showConsequenceDialog();
+
+            if (choice === 'madness') {
+                await handleMadnessConsequence(actor);
+            } else if (choice === 'exhaustion') {
+                await handleExhaustionConsequence(actor);
+            }
+        }
+
+    } catch (error) {
+        logger.error('Error processing spell consumption:', error);
+    }
 }
 
 /**
@@ -98,8 +124,8 @@ async function handleBloodSurge(actor, spellLevel) {
 async function handleHungryMagic(actor, spellLevel) {
     let slotConsumed = false;
 
-    // Try to consume a slot of the same level or lower
-    for (let level = spellLevel; level >= 1; level--) {
+    // Try to consume a slot starting from the lowest level available
+    for (let level = 1; level <= spellLevel; level++) {
         const slotLevel = `spell${level}`;
         const currentSlots = actor.system.spells[slotLevel]?.value || 0;
 

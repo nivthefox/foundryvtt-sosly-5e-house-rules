@@ -2,8 +2,8 @@
  * Centralized logging utility for SoSly House Rules module
  */
 export const logger = {
-    debug: msg => console.debug(`SoSly House Rules | ${msg}`),
-    info: msg => console.info(`SoSly House Rules | ${msg}`),
-    warn: msg => console.warn(`SoSly House Rules | ${msg}`),
-    error: msg => console.error(`SoSly House Rules | ${msg}`)
+    debug: (...args) => console.debug('SoSly House Rules |', ...args),
+    info: (...args) => console.info('SoSly House Rules |', ...args),
+    warn: (...args) => console.warn('SoSly House Rules |', ...args),
+    error: (...args) => console.error('SoSly House Rules |', ...args)
 };
