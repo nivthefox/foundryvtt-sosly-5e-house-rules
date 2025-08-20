@@ -2,6 +2,7 @@
  * Quench unit tests for Breather Calculations and Class Features
  */
 
+import {id as module_id} from '../../../module.json';
 import {
     findBestHitDie,
     calculateTotalHitDice,
@@ -23,7 +24,7 @@ export function registerBreatherTests() {
 
                 describe('Settings Registration', function() {
                     it('should register breather setting with correct properties', function() {
-                        const setting = game.settings.settings.get('sosly-5e-house-rules.breather');
+                        const setting = game.settings.settings.get(`${module_id}.breather`);
 
                         assert.isNotNull(setting, 'Breather setting should be registered');
                         assert.equal(setting.scope, 'world', 'Setting should have world scope');

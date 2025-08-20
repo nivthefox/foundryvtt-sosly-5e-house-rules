@@ -1,3 +1,4 @@
+import {id as module_id} from '../../../module.json';
 import {logger} from '../../utils/logger';
 
 function isPsionicDiscipline(item) {
@@ -19,7 +20,7 @@ async function createPsionicDisciplinesSection(html) {
 
     try {
         const sectionHtml = await renderTemplate(
-            'modules/sosly-5e-house-rules/templates/features/psionics/disciplines-section.hbs',
+            `modules/${module_id}/templates/features/psionics/disciplines-section.hbs`,
             sectionData
         );
 
