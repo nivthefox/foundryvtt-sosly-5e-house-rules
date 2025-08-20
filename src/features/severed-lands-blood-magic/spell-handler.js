@@ -87,7 +87,7 @@ async function handleBloodMagic(activity, usageConfig, messageConfig, updates) {
             const choice = await showConsequenceDialog();
 
             if (choice === 'madness') {
-                await handleMadnessConsequence(actor);
+                await handleMadnessConsequence(actor, spellLevel);
             } else if (choice === 'exhaustion') {
                 await handleExhaustionConsequence(actor);
             }
@@ -184,7 +184,7 @@ async function handleHungryMagic(actor, spellLevel) {
 /**
  * Handle madness consequence
  */
-async function handleMadnessConsequence(actor) {
+async function handleMadnessConsequence(actor, spellLevel) {
     const currentMadness = actor.flags?.sosly?.madness ?? 0;
     const newMadness = currentMadness + 1;
 
@@ -193,7 +193,7 @@ async function handleMadnessConsequence(actor) {
     });
 
     // Always create chat message with button for GM to select madness effect
-    await createMadnessChatMessage(actor, newMadness);
+    await createMadnessChatMessage(actor, newMadness, spellLevel);
 }
 
 /**
