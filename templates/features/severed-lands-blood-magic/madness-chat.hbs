@@ -1,0 +1,16 @@
+<div class="dnd5e2 chat-card">
+    <section class="card-header description">
+        <header class="summary">
+            <img class="gold-icon" src="icons/svg/terror.svg" alt="Blood Magic Madness">
+            <div class="name-stacked">
+                <span class="title">Blood Magic Madness</span>
+            </div>
+        </header>
+        <section class="details card-content">
+            <p><strong>{{actorName}}</strong> gains 1 madness point (now at {{madnessLevel}} madness).</p>
+            <button type="button" class="dialog-button" data-action="selectMadness" data-actor-uuid="{{actorUuid}}" data-madness-level="{{madnessLevel}}" data-tooltip="GM: Select appropriate madness effect for this character">
+                <i class="fas fa-brain"></i> Select Madness Effect
+            </button>
+        </section>
+    </section>
+</div>

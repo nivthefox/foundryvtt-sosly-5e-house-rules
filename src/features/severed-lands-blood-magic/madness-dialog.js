@@ -67,29 +67,42 @@ export async function showConsequenceDialog() {
  * Show DM madness selection dialog
  */
 export async function showDMMadnessDialog(madnessPoints) {
-    let effectType; let duration;
+    let effectType; let duration; let durationFormula;
 
     if (madnessPoints <= 2) {
         effectType = 'short-term';
         duration = '1d10 rounds';
+        durationFormula = '1d10';
     } else if (madnessPoints <= 4) {
         effectType = 'short-term';
         duration = '1d10 minutes';
+        durationFormula = '1d10';
     } else if (madnessPoints <= 6) {
         effectType = 'long-term';
         duration = '1d10 hours';
+        durationFormula = '1d10';
     } else if (madnessPoints <= 8) {
         effectType = 'long-term';
         duration = '1d10 days';
+        durationFormula = '1d10';
     } else {
         effectType = 'indefinite';
         duration = 'Permanent';
+        durationFormula = null;
+    }
+
+    // Roll duration now
+    let durationRoll = null;
+    if (durationFormula) {
+        const roll = new Roll(durationFormula);
+        await roll.evaluate();
+        durationRoll = roll.total;
     }
 
     const shortTermOptions = [
-        { value: 'frightened', label: 'Frightened' },
-        { value: 'incapacitated', label: 'Incapacitated' },
-        { value: 'stunned', label: 'Stunned' }
+        { value: 'frightened', label: 'Frightened', description: 'Character is frightened of a creature or situation' },
+        { value: 'incapacitated', label: 'Incapacitated', description: 'Character is overwhelmed and cannot take actions' },
+        { value: 'stunned', label: 'Stunned', description: 'Character is stunned by horrifying visions' }
     ];
 
     const abilityOptions = Object.entries(CONFIG.DND5E.abilities).map(([key, config]) => ({
@@ -102,7 +115,7 @@ export async function showDMMadnessDialog(madnessPoints) {
 
     if (effectType === 'short-term') {
         conditionOptions = shortTermOptions.map(opt =>
-            `<option value="${opt.value}">${opt.label}</option>`
+            `<option value="${opt.value}">${opt.label} - ${opt.description}</option>`
         ).join('');
     } else if (effectType === 'long-term') {
         abilitySelect = abilityOptions.map(opt =>
@@ -110,10 +123,13 @@ export async function showDMMadnessDialog(madnessPoints) {
         ).join('');
     }
 
+    const durationText = durationRoll ? `${duration} (rolled: ${durationRoll})` : duration;
+
     const content = `
         <div>
+            <p><strong>Madness Level:</strong> ${madnessPoints}</p>
             <p><strong>Effect Type:</strong> ${game.i18n.localize(`sosly.severedLandsBloodMagic.dmSelect.${effectType}`)}</p>
-            <p><strong>Duration:</strong> ${duration}</p>
+            <p><strong>Duration:</strong> ${durationText}</p>
             
             ${effectType === 'short-term' ? `
                 <div class="form-group">
@@ -131,8 +147,29 @@ export async function showDMMadnessDialog(madnessPoints) {
             
             <div class="form-group">
                 <label>Effect Name:</label>
-                <input type="text" name="effectName" placeholder="Custom madness effect name" />
+                <input type="text" name="effectName" id="effectName" placeholder="Custom madness effect name" value="Madness: ${effectType === 'short-term' ? 'Frightened' : effectType === 'long-term' ? 'Ability Impaired' : 'Indefinite'}" />
             </div>
+            
+            <script>
+                // Update effect name when condition/ability changes
+                document.querySelector('select[name="condition"]')?.addEventListener('change', function() {
+                    const effectNameInput = document.getElementById('effectName');
+                    const condition = this.value;
+                    if (condition && effectNameInput) {
+                        const capitalizedCondition = condition.charAt(0).toUpperCase() + condition.slice(1);
+                        effectNameInput.value = 'Madness: ' + capitalizedCondition;
+                    }
+                });
+                
+                document.querySelector('select[name="ability"]')?.addEventListener('change', function() {
+                    const effectNameInput = document.getElementById('effectName');
+                    const ability = this.value;
+                    if (ability && effectNameInput) {
+                        const abilityLabel = this.options[this.selectedIndex].text;
+                        effectNameInput.value = 'Madness: ' + abilityLabel + ' Impaired';
+                    }
+                });
+            </script>
         </div>
     `;
 
@@ -144,23 +181,24 @@ export async function showDMMadnessDialog(madnessPoints) {
         buttons: [
             {
                 action: 'ok',
-                label: 'OK',
+                label: 'Create Effect',
                 default: true,
                 callback: (event, button, dialog) => {
                     const formData = new FormData(dialog.querySelector('form'));
                     return {
                         effectType,
                         duration,
+                        durationRoll,
                         condition: formData.get('condition'),
                         ability: formData.get('ability'),
-                        effectName: formData.get('effectName') || `${effectType} Madness`
+                        effectName: formData.get('effectName') || `Madness: ${effectType}`
                     };
                 }
             },
             {
                 action: 'cancel',
                 label: 'Cancel',
-                callback: () => null
+                callback: () => false
             }
         ]
     });

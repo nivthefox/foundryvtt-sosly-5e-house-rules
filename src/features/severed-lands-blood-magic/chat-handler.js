@@ -1,0 +1,68 @@
+import {id as module_id} from '../../../module.json';
+import { showDMMadnessDialog } from './madness-dialog';
+import { createMadnessEffect } from './effects';
+
+/**
+ * Handle chat button clicks for madness selection
+ */
+export function registerChatHandler() {
+    Hooks.on('renderChatMessage', (message, html) => {
+        // Only attach listeners to our madness chat cards
+        const madnessButton = html.find('[data-action="selectMadness"]');
+        if (madnessButton.length === 0) return;
+
+        madnessButton.on('click', async event => {
+            event.preventDefault();
+
+            // Only allow GM to click the button
+            if (!game.user.isGM) {
+                ui.notifications.warn('Only the GM can select madness effects.');
+                return;
+            }
+
+            const button = event.currentTarget;
+            const actorUuid = button.dataset.actorUuid;
+            const madnessLevel = parseInt(button.dataset.madnessLevel);
+
+            try {
+                const actor = await fromUuid(actorUuid);
+                if (!actor) {
+                    ui.notifications.error('Could not find the actor.');
+                    return;
+                }
+
+                // Show the DM madness selection dialog
+                const effectData = await showDMMadnessDialog(madnessLevel);
+
+                if (effectData && effectData !== null && effectData !== false) {
+                    await createMadnessEffect(actor, effectData);
+
+                    // Disable the button after use
+                    button.disabled = true;
+                    button.textContent = 'Effect Applied';
+                    button.classList.add('disabled');
+                }
+            } catch (error) {
+                console.error('Severed Lands Blood Magic | Error handling madness selection:', error);
+                ui.notifications.error('Failed to apply madness effect.');
+            }
+        });
+    });
+}
+
+/**
+ * Create madness chat message with button
+ */
+export async function createMadnessChatMessage(actor, madnessLevel) {
+    const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-chat.hbs`, {
+        actorName: actor.name,
+        actorUuid: actor.uuid,
+        madnessLevel: madnessLevel
+    });
+
+    await ChatMessage.create({
+        content: content,
+        speaker: ChatMessage.getSpeaker({ actor }),
+        whisper: game.users.filter(u => u.isGM).map(u => u.id)
+    });
+}
