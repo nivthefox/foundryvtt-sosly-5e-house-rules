@@ -149,27 +149,6 @@ export async function showDMMadnessDialog(madnessPoints) {
                 <label>Effect Name:</label>
                 <input type="text" name="effectName" id="effectName" placeholder="Custom madness effect name" value="Madness: ${effectType === 'short-term' ? 'Frightened' : effectType === 'long-term' ? 'Ability Impaired' : 'Indefinite'}" />
             </div>
-            
-            <script>
-                // Update effect name when condition/ability changes
-                document.querySelector('select[name="condition"]')?.addEventListener('change', function() {
-                    const effectNameInput = document.getElementById('effectName');
-                    const condition = this.value;
-                    if (condition && effectNameInput) {
-                        const capitalizedCondition = condition.charAt(0).toUpperCase() + condition.slice(1);
-                        effectNameInput.value = 'Madness: ' + capitalizedCondition;
-                    }
-                });
-                
-                document.querySelector('select[name="ability"]')?.addEventListener('change', function() {
-                    const effectNameInput = document.getElementById('effectName');
-                    const ability = this.value;
-                    if (ability && effectNameInput) {
-                        const abilityLabel = this.options[this.selectedIndex].text;
-                        effectNameInput.value = 'Madness: ' + abilityLabel + ' Impaired';
-                    }
-                });
-            </script>
         </div>
     `;
 
@@ -200,7 +179,33 @@ export async function showDMMadnessDialog(madnessPoints) {
                 label: 'Cancel',
                 callback: () => false
             }
-        ]
+        ],
+        render: (event, dialog) => {
+            // Set up event listeners after dialog renders
+            const conditionSelect = dialog.querySelector('select[name="condition"]');
+            const abilitySelect = dialog.querySelector('select[name="ability"]');
+            const effectNameInput = dialog.querySelector('#effectName');
+
+            if (conditionSelect && effectNameInput) {
+                conditionSelect.addEventListener('change', function() {
+                    const condition = this.value;
+                    if (condition) {
+                        const capitalizedCondition = condition.charAt(0).toUpperCase() + condition.slice(1);
+                        effectNameInput.value = `Madness: ${capitalizedCondition}`;
+                    }
+                });
+            }
+
+            if (abilitySelect && effectNameInput) {
+                abilitySelect.addEventListener('change', function() {
+                    const ability = this.value;
+                    if (ability) {
+                        const abilityLabel = this.options[this.selectedIndex].text;
+                        effectNameInput.value = `Madness: ${abilityLabel} Impaired`;
+                    }
+                });
+            }
+        }
     });
 
     return result;
