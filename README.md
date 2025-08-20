@@ -1,12 +1,32 @@
-[![Check Actions Status](https://github.com/nivthefox/foundryvtt-aide/workflows/checks/badge.svg)](https://github.com/nivthefox/foundryvtt-aide/actions)
-[![Downloads](https://img.shields.io/github/downloads/nivthefox/foundryvtt-aide/latest/module.zip)](https://github.com/nivthefox/foundryvtt-aide/releases/latest)
-[![Forge Install %](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Ffoundryvtt-aide&colorB=4aa94a)](https://forge-vtt.com/bazaar#package=foundryvtt-aide)
-[![Foundry Hub Endorsements](https://img.shields.io/endpoint?logoColor=white&url=https%3A%2F%2Fwww.foundryvtt-hub.com%2Fwp-json%2Fhubapi%2Fv1%2Fpackage%2Ffoundryvtt-aide%2Fshield%2Fendorsements)](https://www.foundryvtt-hub.com/package/foundryvtt-aide/)
-[![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/nivthefox/foundryvtt-aide/main/module.json)](https://foundryvtt.com/)
+[![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/nivthefox/foundryvtt-sosly-5e-house-rules/main/module.json)](https://foundryvtt.com/)
 
-# AIde
-AIde brings powerful AI capabilities to your Foundry VTT environment, enabling semantic search and intelligent assistance across your game content.
+# SoSly House Rules
+House Rules for 5th Edition Dungeons and Dragons in FoundryVTT.
 
-## Beta Version
-This module is currently in beta. Please report any issues you encounter on the 
-[GitHub Issues](https://github.com/nivthefox/foundryvtt-aide/issues) page.
+This module provides custom house rules, conditions, classes, spells, equipment, and other content for D&D 5e campaigns.
+
+## Requirements
+- **Foundry VTT:** v12+
+- **System:** D&D 5e v4.1.2+
+- **Dependencies:**
+  - lib-wrapper v1.0.0.0+
+  - dnd5e-spellpoints v2.4.22+
+  - items-with-spells-5e v13.0.2+
+  - ActiveAuras v0.12.2+
+
+## Features
+- Custom house rules and mechanics
+- New character classes and origins
+- Additional spells and psionics
+- Custom equipment and feats
+- Monsters and monster features
+- Effect tables for various mechanics
+
+## Installation
+Install via Foundry's module browser or use this manifest URL:
+```
+https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/latest/download/module.json
+```
+
+## Issues
+Report bugs and feature requests on [GitHub Issues](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/issues).
