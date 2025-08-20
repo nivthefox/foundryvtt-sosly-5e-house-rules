@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Madness Save Dialog for Blood Magic
  */
@@ -11,7 +13,7 @@ export async function showMadnessSaveDialog(actor, spellLevel) {
         dc: dc
     });
 
-    const renderedContent = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-dialog.hbs`, {
+    const renderedContent = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-save-dialog.hbs`, {
         content
     });
 
@@ -38,7 +40,7 @@ export async function showConsequenceDialog() {
     const madnessLabel = game.i18n.localize('sosly.severedLandsBloodMagic.consequence.madness');
     const exhaustionLabel = game.i18n.localize('sosly.severedLandsBloodMagic.consequence.exhaustion');
 
-    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/consequence-choice-dialog.hbs`, {
+    const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/consequence-choice-dialog.hbs`, {
         message: game.i18n.localize('sosly.severedLandsBloodMagic.consequence.choose')
     });
 
@@ -69,7 +71,9 @@ export async function showConsequenceDialog() {
  * Show DM madness selection dialog
  */
 export async function showDMMadnessDialog(madnessPoints) {
-    let effectType; let duration; let durationFormula;
+    let effectType;
+    let duration;
+    let durationFormula;
 
     if (madnessPoints <= 2) {
         effectType = 'short-term';
@@ -126,7 +130,7 @@ export async function showDMMadnessDialog(madnessPoints) {
         defaultEffectName: `Madness: ${effectType === 'short-term' ? 'Frightened' : effectType === 'long-term' ? 'Ability Impaired' : 'Indefinite'}`
     };
 
-    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/dm-madness-selection-dialog.hbs`, templateData);
+    const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/dm-madness-selection-dialog.hbs`, templateData);
 
     const result = await foundry.applications.api.DialogV2.wait({
         window: {

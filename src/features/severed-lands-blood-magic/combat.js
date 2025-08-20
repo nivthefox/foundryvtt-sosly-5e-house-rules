@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Handle combat turn changes for madness save re-attempts
  */
@@ -11,7 +13,7 @@ async function showMadnessSaveRetryDialog(actor, effect) {
     const spellcastingAbility = actor.system.attributes.spellcasting || 'int';
     const abilityLabel = CONFIG.DND5E.abilities[spellcastingAbility]?.label || 'Intelligence';
 
-    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-prompt.hbs`, {
+    const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-save-prompt.hbs`, {
         actorName: actor.name,
         effectName: effect.name,
         abilityLabel,
@@ -34,7 +36,7 @@ async function showMadnessSaveRetryDialog(actor, effect) {
     if (result.total >= dc) {
         await effect.delete();
 
-        const successContent = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-success.hbs`, {
+        const successContent = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-save-success.hbs`, {
             actorName: actor.name,
             effectName: effect.name
         });
@@ -44,7 +46,7 @@ async function showMadnessSaveRetryDialog(actor, effect) {
             speaker: ChatMessage.getSpeaker({ actor })
         });
     } else {
-        const failureContent = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-failure.hbs`, {
+        const failureContent = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-save-failure.hbs`, {
             actorName: actor.name,
             effectName: effect.name
         });
