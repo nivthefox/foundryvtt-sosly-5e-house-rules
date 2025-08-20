@@ -1,3 +1,7 @@
+[![Checks](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/workflows/checks/badge.svg)](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/actions)
+[![Latest Release](https://img.shields.io/github/v/release/nivthefox/foundryvtt-sosly-5e-house-rules)](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/latest)
+[![License](https://img.shields.io/github/license/nivthefox/foundryvtt-sosly-5e-house-rules)](LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/nivthefox/foundryvtt-sosly-5e-house-rules)](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/issues)
 [![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/nivthefox/foundryvtt-sosly-5e-house-rules/main/module.json)](https://foundryvtt.com/)
 
 # SoSly House Rules
