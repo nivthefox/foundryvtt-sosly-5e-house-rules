@@ -3,6 +3,8 @@
  * Creates meter HTML elements for character sheet integration with built-in configuration
  */
 
+import {id as module_id} from '../../../module.json';
+
 const DocumentSheet5e = dnd5e.applications.api.DocumentSheet5e;
 
 /**
@@ -30,7 +32,7 @@ class MeterConfig extends DocumentSheet5e {
     /** @override */
     static PARTS = {
         form: {
-            template: 'modules/sosly-5e-house-rules/templates/components/meter-config.hbs'
+            template: `modules/${module_id}/templates/components/meter-config.hbs`
         }
     };
 
@@ -143,7 +145,7 @@ export async function createMeter({label, valueNow, valueMax, cssClass,
         allowOverflow
     };
 
-    const html = await renderTemplate('modules/sosly-5e-house-rules/templates/components/meter.hbs', templateData);
+    const html = await renderTemplate(`modules/${module_id}/templates/components/meter.hbs`, templateData);
 
     // If editable, set up the config button handler
     if (editable && document && property) {
