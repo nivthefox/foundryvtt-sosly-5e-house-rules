@@ -1,0 +1,32 @@
+<div>
+    <p><strong>Madness Level:</strong> {{madnessPoints}}</p>
+    <p><strong>Effect Type:</strong> {{effectTypeLabel}}</p>
+    <p><strong>Duration:</strong> {{durationText}}</p>
+    
+    {{#if isShortTerm}}
+        <div class="form-group">
+            <label>Condition Type:</label>
+            <select name="condition">
+                {{#each conditionOptions}}
+                    <option value="{{value}}">{{label}} - {{description}}</option>
+                {{/each}}
+            </select>
+        </div>
+    {{/if}}
+    
+    {{#if isLongTerm}}
+        <div class="form-group">
+            <label>Ability (Disadvantage):</label>
+            <select name="ability">
+                {{#each abilityOptions}}
+                    <option value="{{value}}">{{label}}</option>
+                {{/each}}
+            </select>
+        </div>
+    {{/if}}
+    
+    <div class="form-group">
+        <label>Effect Name:</label>
+        <input type="text" name="effectName" id="effectName" placeholder="Custom madness effect name" value="{{defaultEffectName}}" />
+    </div>
+</div>

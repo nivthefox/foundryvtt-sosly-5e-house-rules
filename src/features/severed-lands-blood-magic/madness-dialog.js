@@ -11,11 +11,15 @@ export async function showMadnessSaveDialog(actor, spellLevel) {
         dc: dc
     });
 
+    const renderedContent = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-dialog.hbs`, {
+        content
+    });
+
     const confirmed = await foundry.applications.api.DialogV2.confirm({
         window: {
             title: game.i18n.localize('sosly.severedLandsBloodMagic.save.title'),
         },
-        content: `<p>${content}</p>`
+        content: renderedContent
     });
 
     if (!confirmed) {
@@ -34,11 +38,9 @@ export async function showConsequenceDialog() {
     const madnessLabel = game.i18n.localize('sosly.severedLandsBloodMagic.consequence.madness');
     const exhaustionLabel = game.i18n.localize('sosly.severedLandsBloodMagic.consequence.exhaustion');
 
-    const content = `
-        <div style="text-align: center; margin: 20px 0;">
-            <p>${game.i18n.localize('sosly.severedLandsBloodMagic.consequence.choose')}</p>
-        </div>
-    `;
+    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/consequence-choice-dialog.hbs`, {
+        message: game.i18n.localize('sosly.severedLandsBloodMagic.consequence.choose')
+    });
 
     const result = await foundry.applications.api.DialogV2.wait({
         window: {
@@ -110,47 +112,21 @@ export async function showDMMadnessDialog(madnessPoints) {
         label: config.label
     }));
 
-    let conditionOptions = '';
-    let abilitySelect = '';
-
-    if (effectType === 'short-term') {
-        conditionOptions = shortTermOptions.map(opt =>
-            `<option value="${opt.value}">${opt.label} - ${opt.description}</option>`
-        ).join('');
-    } else if (effectType === 'long-term') {
-        abilitySelect = abilityOptions.map(opt =>
-            `<option value="${opt.value}">${opt.label}</option>`
-        ).join('');
-    }
 
     const durationText = durationRoll ? `${duration} (rolled: ${durationRoll})` : duration;
 
-    const content = `
-        <div>
-            <p><strong>Madness Level:</strong> ${madnessPoints}</p>
-            <p><strong>Effect Type:</strong> ${game.i18n.localize(`sosly.severedLandsBloodMagic.dmSelect.${effectType}`)}</p>
-            <p><strong>Duration:</strong> ${durationText}</p>
-            
-            ${effectType === 'short-term' ? `
-                <div class="form-group">
-                    <label>Condition Type:</label>
-                    <select name="condition">${conditionOptions}</select>
-                </div>
-            ` : ''}
-            
-            ${effectType === 'long-term' ? `
-                <div class="form-group">
-                    <label>Ability (Disadvantage):</label>
-                    <select name="ability">${abilitySelect}</select>
-                </div>
-            ` : ''}
-            
-            <div class="form-group">
-                <label>Effect Name:</label>
-                <input type="text" name="effectName" id="effectName" placeholder="Custom madness effect name" value="Madness: ${effectType === 'short-term' ? 'Frightened' : effectType === 'long-term' ? 'Ability Impaired' : 'Indefinite'}" />
-            </div>
-        </div>
-    `;
+    const templateData = {
+        madnessPoints,
+        effectTypeLabel: game.i18n.localize(`sosly.severedLandsBloodMagic.dmSelect.${effectType}`),
+        durationText,
+        isShortTerm: effectType === 'short-term',
+        isLongTerm: effectType === 'long-term',
+        conditionOptions: effectType === 'short-term' ? shortTermOptions : null,
+        abilityOptions: effectType === 'long-term' ? abilityOptions : null,
+        defaultEffectName: `Madness: ${effectType === 'short-term' ? 'Frightened' : effectType === 'long-term' ? 'Ability Impaired' : 'Indefinite'}`
+    };
+
+    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/dm-madness-selection-dialog.hbs`, templateData);
 
     const result = await foundry.applications.api.DialogV2.wait({
         window: {

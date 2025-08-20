@@ -207,8 +207,13 @@ async function handleExhaustionConsequence(actor) {
         'system.attributes.exhaustion': newExhaustion
     });
 
+    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/exhaustion-gained.hbs`, {
+        actorName: actor.name,
+        exhaustionLevel: newExhaustion
+    });
+
     ChatMessage.create({
-        content: `<p><strong>${actor.name}</strong> gains 1 level of exhaustion (now at ${newExhaustion}).</p>`,
+        content,
         speaker: ChatMessage.getSpeaker({ actor })
     });
 }
