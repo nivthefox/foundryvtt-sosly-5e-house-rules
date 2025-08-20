@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import {id as module_id} from '../../../module.json';
 
 test.describe('Transformation Cleanup Feature', () => {
 
@@ -45,12 +46,12 @@ test.describe('Transformation Cleanup Feature', () => {
     });
 
     test('cleanup handler processes character actors', async ({ page }) => {
-        await page.evaluate(() => {
-            game.settings.set('sosly-5e-house-rules', 'transformation-cleanup', true);
-        });
+        await page.evaluate(moduleId => {
+            game.settings.set(moduleId, 'transformation-cleanup', true);
+        }, module_id);
 
-        const result = await page.evaluate(async () => {
-            const { handleTransformationCleanup } = await import('/modules/sosly-5e-house-rules/src/features/transformation-cleanup/handler.js');
+        const result = await page.evaluate(async moduleId => {
+            const { handleTransformationCleanup } = await import(`/modules/${moduleId}/src/features/transformation-cleanup/handler.js`);
 
             const mockActor = {
                 type: 'character',
@@ -72,18 +73,18 @@ test.describe('Transformation Cleanup Feature', () => {
             }
 
             return { called };
-        });
+        }, module_id);
 
         expect(result.called).toBe(true);
     });
 
     test('cleanup handler ignores NPC actors', async ({ page }) => {
-        await page.evaluate(() => {
-            game.settings.set('sosly-5e-house-rules', 'transformation-cleanup', true);
-        });
+        await page.evaluate(moduleId => {
+            game.settings.set(moduleId, 'transformation-cleanup', true);
+        }, module_id);
 
-        const result = await page.evaluate(async () => {
-            const { handleTransformationCleanup } = await import('/modules/sosly-5e-house-rules/src/features/transformation-cleanup/handler.js');
+        const result = await page.evaluate(async moduleId => {
+            const { handleTransformationCleanup } = await import(`/modules/${moduleId}/src/features/transformation-cleanup/handler.js`);
 
             const mockActor = {
                 type: 'npc',
@@ -94,18 +95,18 @@ test.describe('Transformation Cleanup Feature', () => {
 
             handleTransformationCleanup(mockActor, {});
             return true;
-        });
+        }, module_id);
 
         expect(result).toBe(true);
     });
 
     test('cleanup handler respects setting state', async ({ page }) => {
-        await page.evaluate(() => {
-            game.settings.set('sosly-5e-house-rules', 'transformation-cleanup', false);
-        });
+        await page.evaluate(moduleId => {
+            game.settings.set(moduleId, 'transformation-cleanup', false);
+        }, module_id);
 
-        const result = await page.evaluate(async () => {
-            const { handleTransformationCleanup } = await import('/modules/sosly-5e-house-rules/src/features/transformation-cleanup/handler.js');
+        const result = await page.evaluate(async moduleId => {
+            const { handleTransformationCleanup } = await import(`/modules/${moduleId}/src/features/transformation-cleanup/handler.js`);
 
             const mockActor = {
                 type: 'character',
@@ -116,7 +117,7 @@ test.describe('Transformation Cleanup Feature', () => {
 
             handleTransformationCleanup(mockActor, {});
             return true;
-        });
+        }, module_id);
 
         expect(result).toBe(true);
     });

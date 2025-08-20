@@ -3,6 +3,7 @@
  */
 
 import {expect} from '@playwright/test';
+import {id as module_id} from '../module.json';
 
 /**
  * Clean up all chat messages in the FoundryVTT game
@@ -114,9 +115,9 @@ export async function damageActor(page, actorId, damage) {
  * @param {string} settingKey
  */
 export async function getModuleSetting(page, settingKey) {
-    return await page.evaluate(key => {
-        return game?.settings.get('sosly-5e-house-rules', key);
-    }, settingKey);
+    return await page.evaluate(({ key, moduleId }) => {
+        return game?.settings.get(moduleId, key);
+    }, { key: settingKey, moduleId: module_id });
 }
 
 /**
@@ -178,9 +179,9 @@ export async function loginUser(page, username) {
     await page.waitForFunction(() => window.game?.ready === true, { timeout: 30000 });
 
     // Wait for our module to be active
-    await page.waitForFunction(() => {
-        return game?.modules.get('sosly-5e-house-rules')?.active;
-    }, { timeout: 30000 });
+    await page.waitForFunction(moduleId => {
+        return game?.modules.get(moduleId)?.active;
+    }, module_id, { timeout: 30000 });
 
     // Verify that you are logged in as expected user
     const currentUser = await page.evaluate(() => game?.user?.name);
@@ -213,7 +214,7 @@ export async function logoutUser(page) {
  * @param {any} value
  */
 export async function setModuleSetting(page, settingKey, value) {
-    return await page.evaluate(async ({ key, val }) => {
-        return await game?.settings.set('sosly-5e-house-rules', key, val);
-    }, { key: settingKey, val: value });
+    return await page.evaluate(async ({ key, val, moduleId }) => {
+        return await game?.settings.set(moduleId, key, val);
+    }, { key: settingKey, val: value, moduleId: module_id });
 }
