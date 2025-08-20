@@ -1,0 +1,16 @@
+<div class="dnd5e2 chat-card">
+    <section class="card-header description">
+        <header class="summary">
+            <img class="gold-icon" src="icons/magic/symbols/runes-star-magenta.webp" alt="Blood Surge">
+            <div class="name-stacked">
+                <span class="title">Blood Surge</span>
+            </div>
+        </header>
+        <section class="details card-content">
+            <div class="effect-details">
+                <p><strong>{{actorName}}</strong> rolled a natural 20 on their Blood Magic save!</p>
+                <p class="surge-effect"><strong>Blood Surge:</strong> {{#if slotRecovered}}Spell slot recovered!{{else}}Already at maximum spell slots{{/if}}</p>
+            </div>
+        </section>
+    </section>
+</div>
