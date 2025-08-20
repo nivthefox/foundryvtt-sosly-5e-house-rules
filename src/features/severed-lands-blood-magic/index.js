@@ -6,6 +6,7 @@
 import { registerSeveredLandsBloodMagicSettings } from './settings';
 import { registerSpellHandler } from './spell-handler';
 import { registerRecoveryHandler } from './recovery';
+import { registerChatHandler } from './chat-handler';
 
 export function registerSeveredLandsBloodMagicFeature() {
     console.log('SoSly 5e House Rules | Registering Severed Lands Blood Magic');
@@ -13,4 +14,5 @@ export function registerSeveredLandsBloodMagicFeature() {
     registerSeveredLandsBloodMagicSettings();
     registerSpellHandler();
     registerRecoveryHandler();
+    registerChatHandler();
 }

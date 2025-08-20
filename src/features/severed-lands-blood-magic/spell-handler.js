@@ -1,43 +1,22 @@
 import {id as module_id} from '../../../module.json';
-import { showMadnessSaveDialog, showConsequenceDialog, showDMMadnessDialog } from './madness-dialog';
-import { createMadnessEffect } from './effects';
+import { showMadnessSaveDialog, showConsequenceDialog } from './madness-dialog';
+import { createMadnessChatMessage } from './chat-handler';
 
 /**
  * Handle spell slot consumption for blood magic
  */
 export function registerSpellHandler() {
-    console.log('SoSly 5e House Rules | Blood Magic: Registering spell handler hooks');
-    
-    // Also try preActivityConsumption hook
-    Hooks.on('dnd5e.preActivityConsumption', async (activity, usageConfig, messageConfig) => {
-        console.log('SoSly 5e House Rules | Blood Magic: preActivityConsumption hook triggered', {
-            activity,
-            usageConfig,
-            messageConfig
-        });
-    });
-    
     Hooks.on('dnd5e.activityConsumption', async (activity, usageConfig, messageConfig, updates) => {
-        console.log('SoSly 5e House Rules | Blood Magic: activityConsumption hook triggered', {
-            activity,
-            usageConfig,
-            messageConfig,
-            updates
-        });
-
         if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
-            console.log('SoSly 5e House Rules | Blood Magic: Feature disabled');
             return;
         }
 
         if (!game.settings.get(module_id, 'madness')) {
-            console.log('SoSly 5e House Rules | Blood Magic: Madness feature disabled');
             return;
         }
 
         const actor = activity.actor;
         if (!actor || actor.type !== 'character') {
-            console.log('SoSly 5e House Rules | Blood Magic: Not a character actor', actor);
             return;
         }
 
@@ -45,14 +24,8 @@ export function registerSpellHandler() {
         const item = activity.item;
         const isSpell = item?.type === 'spell';
         const consumesSpellSlot = activity.consumption?.spellSlot === true;
-        
-        console.log('SoSly 5e House Rules | Blood Magic: Item type:', item?.type);
-        console.log('SoSly 5e House Rules | Blood Magic: Is spell:', isSpell);
-        console.log('SoSly 5e House Rules | Blood Magic: Consumes spell slot:', consumesSpellSlot);
-        console.log('SoSly 5e House Rules | Blood Magic: Item level:', item?.system?.level);
 
         if (!isSpell || !consumesSpellSlot) {
-            console.log('SoSly 5e House Rules | Blood Magic: Not a spell slot consuming spell activity');
             return;
         }
 
@@ -186,19 +159,8 @@ async function handleMadnessConsequence(actor) {
         'flags.sosly.madness': newMadness
     });
 
-    // Only show DM dialog if user is GM
-    if (game.user.isGM) {
-        const effectData = await showDMMadnessDialog(newMadness);
-        if (effectData) {
-            await createMadnessEffect(actor, effectData);
-        }
-    } else {
-        // Notify GM to handle madness effect
-        ChatMessage.create({
-            content: `<p><strong>${actor.name}</strong> gained 1 madness point (now at ${newMadness}). GM should create appropriate madness effect.</p>`,
-            whisper: ChatMessage.getWhisperRecipients('GM')
-        });
-    }
+    // Always create chat message with button for GM to select madness effect
+    await createMadnessChatMessage(actor, newMadness);
 }
 
 /**

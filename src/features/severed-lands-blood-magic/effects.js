@@ -2,91 +2,80 @@
  * Create madness effects based on blood magic
  */
 export async function createMadnessEffect(actor, effectData) {
-    const { effectType, duration, condition, ability, effectName } = effectData;
+    const { effectType, duration, condition, ability, effectName, durationRoll } = effectData;
 
     let changes = [];
     let flags = {};
     let durationData = {};
+    let statuses = [];
+    let icon = 'icons/svg/terror.svg';
 
-    // Set up duration
+    // Set up duration based on rolled value
     if (effectType === 'short-term') {
         if (duration === '1d10 rounds') {
-            const roll = new Roll('1d10');
-            await roll.evaluate();
             durationData = {
-                rounds: roll.total,
+                rounds: durationRoll,
+                combat: game.combat?.id || null,
                 turns: null
             };
             flags['sosly.canRepeatSave'] = true;
-        } else {
-            const roll = new Roll('1d10');
-            await roll.evaluate();
+        } else if (duration === '1d10 minutes') {
             durationData = {
-                seconds: roll.total * 60
+                seconds: durationRoll * 60
             };
         }
     } else if (effectType === 'long-term') {
-        const isDays = duration.includes('days');
-        const roll = new Roll('1d10');
-        await roll.evaluate();
-
-        durationData = {
-            seconds: roll.total * (isDays ? 86400 : 3600)
-        };
+        if (duration === '1d10 hours') {
+            durationData = {
+                seconds: durationRoll * 3600
+            };
+        } else if (duration === '1d10 days') {
+            durationData = {
+                seconds: durationRoll * 86400
+            };
+        }
     }
+    // Indefinite madness has no duration
 
-    // Set up effect changes
+    // Set up effect changes and statuses
     if (effectType === 'short-term' && condition) {
-        flags['core.statusId'] = condition;
+        statuses.push(condition);
 
         switch (condition) {
             case 'frightened':
-                changes.push({
-                    key: 'system.bonuses.abilities.save',
-                    mode: 2,
-                    value: '-2'
-                });
+                icon = 'icons/magic/control/fear-fright-monster-purple-blue.webp';
                 break;
             case 'incapacitated':
-                changes.push({
-                    key: 'system.attributes.movement.all',
-                    mode: 4,
-                    value: '0'
-                });
+                icon = 'icons/svg/paralysis.svg';
                 break;
             case 'stunned':
-                changes.push({
-                    key: 'system.attributes.movement.all',
-                    mode: 4,
-                    value: '0'
-                });
-                changes.push({
-                    key: 'system.bonuses.abilities.save',
-                    mode: 2,
-                    value: '-4'
-                });
+                icon = 'icons/svg/daze.svg';
                 break;
         }
     } else if (effectType === 'long-term' && ability) {
         changes.push({
             key: `flags.dnd5e.disadvantage.ability.check.${ability}`,
-            mode: 4,
+            mode: 5,
             value: '1'
         });
         changes.push({
             key: `flags.dnd5e.disadvantage.ability.save.${ability}`,
-            mode: 4,
+            mode: 5,
             value: '1'
         });
+        icon = 'icons/magic/control/debuff-energy-hold-levitate-yellow.webp';
+    } else if (effectType === 'indefinite') {
+        icon = 'icons/magic/control/hypnosis-mesmerism-eye.webp';
     }
 
     const effectConfig = {
         name: effectName,
-        icon: 'icons/svg/terror.svg',
+        icon: icon,
         origin: actor.uuid,
         disabled: false,
         duration: durationData,
         changes: changes,
+        statuses: statuses,
         flags: flags
     };
 
