@@ -4,7 +4,7 @@ import {id as module_id} from '../../../module.json';
  * Create madness effects based on blood magic
  */
 export async function createMadnessEffect(actor, effectData) {
-    const { effectType, duration, condition, ability, effectName, durationRoll } = effectData;
+    const { effectType, duration, condition, ability, effectName, durationRoll, spellLevel = 1 } = effectData;
 
     let changes = [];
     let flags = {};
@@ -21,6 +21,7 @@ export async function createMadnessEffect(actor, effectData) {
                 turns: null
             };
             flags['sosly.canRepeatSave'] = true;
+            flags['sosly.spellLevel'] = spellLevel;
         } else if (duration === '1d10 minutes') {
             durationData = {
                 seconds: durationRoll * 60

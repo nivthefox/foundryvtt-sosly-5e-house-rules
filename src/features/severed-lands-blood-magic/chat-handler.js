@@ -23,6 +23,7 @@ export function registerChatHandler() {
             const button = event.currentTarget;
             const actorUuid = button.dataset.actorUuid;
             const madnessLevel = parseInt(button.dataset.madnessLevel);
+            const spellLevel = parseInt(button.dataset.spellLevel) || 1;
 
             try {
                 const actor = await fromUuid(actorUuid);
@@ -35,6 +36,7 @@ export function registerChatHandler() {
                 const effectData = await showDMMadnessDialog(madnessLevel);
 
                 if (effectData && effectData !== null && effectData !== false) {
+                    effectData.spellLevel = spellLevel;
                     await createMadnessEffect(actor, effectData);
 
                     // Update the chat message to remove the button permanently
@@ -57,11 +59,12 @@ export function registerChatHandler() {
 /**
  * Create madness chat message with button
  */
-export async function createMadnessChatMessage(actor, madnessLevel) {
+export async function createMadnessChatMessage(actor, madnessLevel, spellLevel = 1) {
     const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-chat.hbs`, {
         actorName: actor.name,
         actorUuid: actor.uuid,
-        madnessLevel: madnessLevel
+        madnessLevel: madnessLevel,
+        spellLevel: spellLevel
     });
 
     await ChatMessage.create({
