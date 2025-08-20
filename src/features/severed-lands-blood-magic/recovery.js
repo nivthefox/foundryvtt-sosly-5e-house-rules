@@ -35,8 +35,12 @@ export function registerRecoveryHandler() {
             current: newMadness
         });
 
+        const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-recovery.hbs`, {
+            message
+        });
+
         ChatMessage.create({
-            content: `<p>${message}</p>`,
+            content,
             speaker: ChatMessage.getSpeaker({ actor })
         });
     });

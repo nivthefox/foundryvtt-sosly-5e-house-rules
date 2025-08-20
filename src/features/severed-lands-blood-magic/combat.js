@@ -11,14 +11,12 @@ async function showMadnessSaveRetryDialog(actor, effect) {
     const spellcastingAbility = actor.system.attributes.spellcasting || 'int';
     const abilityLabel = CONFIG.DND5E.abilities[spellcastingAbility]?.label || 'Intelligence';
 
-    const content = `
-        <div class="dnd5e2 dialog-content">
-            <p><strong>${actor.name}</strong> has a madness effect that allows a save re-attempt:</p>
-            <p><em>${effect.name}</em></p>
-            <hr>
-            <p>Would you like to attempt a <strong>${abilityLabel} save (DC ${dc})</strong> to end this effect?</p>
-        </div>
-    `;
+    const content = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-prompt.hbs`, {
+        actorName: actor.name,
+        effectName: effect.name,
+        abilityLabel,
+        dc
+    });
 
     const confirmed = await foundry.applications.api.DialogV2.confirm({
         window: {
@@ -36,44 +34,20 @@ async function showMadnessSaveRetryDialog(actor, effect) {
     if (result.total >= dc) {
         await effect.delete();
 
-        const successContent = `
-            <div class="dnd5e2 chat-card">
-                <section class="card-header description">
-                    <header class="summary">
-                        <img class="gold-icon" src="icons/magic/control/fear-fright-white.webp" alt="Save Success">
-                        <div class="name-stacked">
-                            <span class="title">Madness Save Success</span>
-                        </div>
-                    </header>
-                    <section class="details card-content">
-                        <p><strong>${actor.name}</strong> successfully saves against the madness effect!</p>
-                        <p><em>${effect.name}</em> has been removed.</p>
-                    </section>
-                </section>
-            </div>
-        `;
+        const successContent = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-success.hbs`, {
+            actorName: actor.name,
+            effectName: effect.name
+        });
 
         ChatMessage.create({
             content: successContent,
             speaker: ChatMessage.getSpeaker({ actor })
         });
     } else {
-        const failureContent = `
-            <div class="dnd5e2 chat-card">
-                <section class="card-header description">
-                    <header class="summary">
-                        <img class="gold-icon" src="icons/magic/control/fear-fright-monster-purple-blue.webp" alt="Save Failure">
-                        <div class="name-stacked">
-                            <span class="title">Madness Save Failed</span>
-                        </div>
-                    </header>
-                    <section class="details card-content">
-                        <p><strong>${actor.name}</strong> fails the save against the madness effect.</p>
-                        <p><em>${effect.name}</em> continues.</p>
-                    </section>
-                </section>
-            </div>
-        `;
+        const failureContent = await renderTemplate(`modules/${game.modules.get('sosly-5e-house-rules').id}/templates/features/severed-lands-blood-magic/madness-save-failure.hbs`, {
+            actorName: actor.name,
+            effectName: effect.name
+        });
 
         ChatMessage.create({
             content: failureContent,
@@ -100,7 +74,7 @@ export async function handleMadnessCombatTurn(combat, previous, next) {
     if (game.user.isGM) {
         return;
     }
-    
+
     if (!actor.isOwner) {
         return;
     }
