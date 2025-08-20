@@ -1,0 +1,21 @@
+<div class="dnd5e2 chat-card">
+    <section class="card-header description">
+        <header class="summary">
+            <img class="gold-icon" src="{{effectIcon}}" alt="Madness Effect">
+            <div class="name-stacked">
+                <span class="title">{{effectType}} Madness Effect</span>
+            </div>
+        </header>
+        <section class="details card-content">
+            <div class="effect-details">
+                <p class="effect-name"><strong>{{actorName}}</strong> gains a madness effect: <em>{{effectName}}</em></p>
+                {{#if duration}}
+                <p class="effect-duration"><strong>Duration:</strong> {{duration}}</p>
+                {{/if}}
+                {{#if canRepeatSave}}
+                <p class="save-reminder"><i class="fas fa-dice-d20"></i> <em>Can repeat save at start of each turn</em></p>
+                {{/if}}
+            </div>
+        </section>
+    </section>
+</div>

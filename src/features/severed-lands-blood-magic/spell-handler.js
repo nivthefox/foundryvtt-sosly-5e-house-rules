@@ -67,19 +67,23 @@ async function handleBloodMagic(activity, usageConfig, messageConfig, updates) {
         const rollTotal = saveResult.total;
         const dc = 10 + spellLevel;
 
+        // Get the actual die result that was used (handles advantage/disadvantage correctly)
+        logger.info('Blood Magic: Full saveResult object:', saveResult);
+        const usedResult = saveResult.dice[0]?.results?.find(result => result.active);
+        const naturalRoll = usedResult?.result;
+
         // Check for natural 20 (Blood Surge)
-        if (saveResult.dice[0]?.results[0]?.result === 20) {
+        if (naturalRoll === 20) {
             await handleBloodSurge(actor, spellLevel);
             return;
         }
 
-        // Check for natural 1 (Hungry Magic)
-        if (saveResult.dice[0]?.results[0]?.result === 1) {
-            await handleHungryMagic(actor, spellLevel);
-        }
-
         // Check if save failed
         if (rollTotal < dc) {
+            // Check for natural 1 (Hungry Magic) - only on failed saves
+            if (naturalRoll === 1) {
+                await handleHungryMagic(actor, spellLevel);
+            }
             const choice = await showConsequenceDialog();
 
             if (choice === 'madness') {
@@ -102,18 +106,21 @@ async function handleBloodSurge(actor, spellLevel) {
     const currentSlots = actor.system.spells[slotLevel]?.value || 0;
     const maxSlots = actor.system.spells[slotLevel]?.max || 0;
 
+    let slotRecovered = false;
     if (currentSlots < maxSlots) {
         await actor.update({
             [`system.spells.${slotLevel}.value`]: currentSlots + 1
         });
+        slotRecovered = true;
     }
 
-    const message = game.i18n.format('sosly.severedLandsBloodMagic.bloodSurge', {
-        actor: actor.name
+    const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/blood-surge.hbs`, {
+        actorName: actor.name,
+        slotRecovered: slotRecovered
     });
 
     ChatMessage.create({
-        content: `<p>${message}</p>`,
+        content: content,
         speaker: ChatMessage.getSpeaker({ actor })
     });
 }
@@ -134,13 +141,13 @@ async function handleHungryMagic(actor, spellLevel) {
                 [`system.spells.${slotLevel}.value`]: currentSlots - 1
             });
 
-            const message = game.i18n.format('sosly.severedLandsBloodMagic.hungryMagic.slot', {
-                actor: actor.name,
+            const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/hungry-magic-slot.hbs`, {
+                actorName: actor.name,
                 level: level
             });
 
             ChatMessage.create({
-                content: `<p>${message}</p>`,
+                content: content,
                 speaker: ChatMessage.getSpeaker({ actor })
             });
 
@@ -161,13 +168,13 @@ async function handleHungryMagic(actor, spellLevel) {
             'system.attributes.hp.value': Math.max(0, currentHP - damage)
         });
 
-        const message = game.i18n.format('sosly.severedLandsBloodMagic.hungryMagic.damage', {
-            actor: actor.name,
+        const content = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/hungry-magic-damage.hbs`, {
+            actorName: actor.name,
             damage: damage
         });
 
         ChatMessage.create({
-            content: `<p>${message}</p>`,
+            content: content,
             speaker: ChatMessage.getSpeaker({ actor }),
             rolls: [damageRoll]
         });

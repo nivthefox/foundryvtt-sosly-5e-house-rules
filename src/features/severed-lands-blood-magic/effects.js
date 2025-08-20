@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 /**
  * Create madness effects based on blood magic
  */
@@ -81,10 +83,32 @@ export async function createMadnessEffect(actor, effectData) {
 
     const effect = await actor.createEmbeddedDocuments('ActiveEffect', [effectConfig]);
 
-    let chatContent = `<p><strong>${actor.name}</strong> gains a madness effect: <em>${effectName}</em></p>`;
-    if (effectType === 'short-term' && flags['sosly.canRepeatSave']) {
-        chatContent += '<p><em>Can repeat save at start of each turn</em></p>';
+    // Create enhanced chat message for the madness effect
+    let durationText = '';
+    if (effectType === 'short-term') {
+        if (duration === '1d10 rounds') {
+            durationText = `${durationRoll} rounds`;
+        } else if (duration === '1d10 minutes') {
+            durationText = `${durationRoll} minutes`;
+        }
+    } else if (effectType === 'long-term') {
+        if (duration === '1d10 hours') {
+            durationText = `${durationRoll} hours`;
+        } else if (duration === '1d10 days') {
+            durationText = `${durationRoll} days`;
+        }
+    } else if (effectType === 'indefinite') {
+        durationText = 'Indefinite';
     }
+
+    const chatContent = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-effect-applied.hbs`, {
+        actorName: actor.name,
+        effectName: effectName,
+        effectType: effectType.charAt(0).toUpperCase() + effectType.slice(1),
+        effectIcon: icon,
+        duration: durationText,
+        canRepeatSave: effectType === 'short-term' && flags['sosly.canRepeatSave']
+    });
 
     ChatMessage.create({
         content: chatContent,

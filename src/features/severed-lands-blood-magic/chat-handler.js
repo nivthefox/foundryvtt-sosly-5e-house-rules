@@ -37,10 +37,14 @@ export function registerChatHandler() {
                 if (effectData && effectData !== null && effectData !== false) {
                     await createMadnessEffect(actor, effectData);
 
-                    // Disable the button after use
-                    button.disabled = true;
-                    button.textContent = 'Effect Applied';
-                    button.classList.add('disabled');
+                    // Update the chat message to remove the button permanently
+                    const messageContent = await renderTemplate(`modules/${module_id}/templates/features/severed-lands-blood-magic/madness-chat-completed.hbs`, {
+                        actorName: actor.name,
+                        madnessLevel: madnessLevel,
+                        effectName: effectData.effectName
+                    });
+
+                    await message.update({ content: messageContent });
                 }
             } catch (error) {
                 console.error('Severed Lands Blood Magic | Error handling madness selection:', error);
