@@ -1,4 +1,18 @@
 export class LocationSheet extends ActorSheet {
+    static MODES = {
+        PLAY: 1,
+        EDIT: 2
+    };
+
+    constructor(object, options) {
+        super(object, options);
+        this._mode = this.constructor.MODES.PLAY;
+    }
+
+    get isEditable() {
+        return this.document.isOwner && (this._mode === this.constructor.MODES.EDIT);
+    }
+
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ['dnd5e2', 'sheet', 'actor', 'location', 'standard-form', 'vertical-tabs'],
@@ -29,6 +43,8 @@ export class LocationSheet extends ActorSheet {
 
         context.system = system;
         context.source = source.system;
+        context.editable = this.isEditable;
+        context.owner = this.document.isOwner;
 
         context.inventory = this._prepareItems(context, 'inventory');
         context.features = this._prepareItems(context, 'features');
@@ -48,7 +64,8 @@ export class LocationSheet extends ActorSheet {
                 selected: system.details.type === key
             }));
 
-        context.enrichedDescription = await TextEditor.enrichHTML(system.details.description, {
+        const description = system.details.description || '<p/>';
+        context.enrichedDescription = await TextEditor.enrichHTML(description, {
             secrets: this.document.isOwner,
             documents: true,
             links: true,
@@ -171,5 +188,84 @@ export class LocationSheet extends ActorSheet {
         }
 
         return super._onDrop(event);
+    }
+
+    async _renderOuter() {
+        const html = await super._renderOuter();
+        const htmlElement = html[0] || html;
+        const header = htmlElement.querySelector('.window-header');
+        
+        if (!header) {
+            return html;
+        }
+        
+        if (this.document.isOwner) {
+            const toggle = document.createElement("slide-toggle");
+            toggle.checked = this._mode === this.constructor.MODES.EDIT;
+            toggle.classList.add("mode-slider");
+            toggle.dataset.tooltip = "DND5E.SheetModeEdit";
+            toggle.setAttribute("aria-label", game.i18n.localize("DND5E.SheetModeEdit"));
+            toggle.addEventListener("change", this._onChangeSheetMode.bind(this));
+            toggle.addEventListener("dblclick", event => event.stopPropagation());
+            header.insertAdjacentElement("afterbegin", toggle);
+        }
+
+        const elements = document.createElement("div");
+        elements.classList.add("header-elements");
+        elements.innerHTML = `
+            <div class="source-book">
+                <a class="config-button" data-action="source" data-tooltip="DND5E.SOURCE.Action.Configure"
+                   aria-label="${game.i18n.localize("DND5E.SOURCE.Action.Configure")}" hidden="">
+                    <i class="fas fa-cog"></i>
+                </a>
+                <span></span>
+            </div>
+        `;
+        htmlElement.querySelector(".window-title")?.insertAdjacentElement("afterend", elements);
+
+        const warningsBtn = document.createElement("a");
+        warningsBtn.classList.add("pseudo-header-button", "preparation-warnings");
+        warningsBtn.dataset.tooltip = "Warnings";
+        warningsBtn.setAttribute("aria-label", "Warnings");
+        warningsBtn.setAttribute("hidden", "");
+        warningsBtn.innerHTML = '<i class="fas fa-triangle-exclamation"></i>';
+        const firstButton = header.querySelector(".header-button");
+        firstButton?.insertAdjacentElement("beforebegin", warningsBtn);
+
+        const idLink = header.querySelector(".document-id-link");
+        if (idLink) {
+            firstButton?.insertAdjacentElement("beforebegin", idLink);
+            idLink.classList.add("pseudo-header-button");
+            idLink.dataset.tooltipDirection = "DOWN";
+        }
+        header.querySelectorAll(".header-button").forEach(btn => {
+            const label = btn.querySelector(":scope > i").nextSibling;
+            if (label && label.textContent.trim()) {
+                btn.dataset.tooltip = label.textContent.trim();
+                btn.setAttribute("aria-label", label.textContent.trim());
+                btn.addEventListener("dblclick", event => event.stopPropagation());
+                label.remove();
+            }
+        });
+
+        return html;
+    }
+
+    async _render(force, options) {
+        await super._render(force, options);
+        
+        const nav = this.element[0].querySelector('.sheet-navigation');
+        const windowHeader = this.element[0].querySelector('.window-header');
+        if (nav && windowHeader && nav.parentNode.classList.contains('window-content')) {
+            this.element[0].insertBefore(nav, windowHeader);
+        }
+    }
+
+    async _onChangeSheetMode(event) {
+        const { MODES } = this.constructor;
+        const toggle = event.currentTarget;
+        this._mode = toggle.checked ? MODES.EDIT : MODES.PLAY;
+        await this.submit();
+        this.render();
     }
 }

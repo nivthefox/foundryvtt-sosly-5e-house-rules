@@ -1,5 +1,102 @@
-.dnd5e2.sheet.actor.location .window-content {
-    background: url(/systems/dnd5e/ui/texture1.webp) no-repeat top center / auto 770px,
-        var(--dnd5e-color-parchment) url(/systems/dnd5e/ui/texture2.webp)
-        no-repeat bottom center / auto 704px;
+.dnd5e2.sheet.actor.location {
+    --dnd5e-sheet-header-height: 68px;
+    --dnd5e-sheet-sidebar-width: 180px;
+
+    .window-content {
+        background: url(/systems/dnd5e/ui/texture1.webp) no-repeat top center / auto 770px,
+            var(--dnd5e-color-parchment) url(/systems/dnd5e/ui/texture2.webp)
+            no-repeat bottom center / auto 704px;
+    }
+
+    .sheet-header {
+        gap: 12px;
+        padding: 38px 12px 0;
+        align-items: stretch;
+
+        > .left { 
+            flex: 0 0 var(--dnd5e-sheet-sidebar-width); 
+        }
+
+        input {
+            --input-background-color: var(--dnd5e-background-5);
+            background: var(--input-background-color);
+        }
+
+        .portrait {
+            position: relative;
+
+            &:not(.token) {
+                border-radius: 100%;
+                border: 1px solid var(--dnd5e-color-black);
+            }
+
+            > img, > video {
+                width: var(--dnd5e-sheet-sidebar-width);
+                height: var(--dnd5e-sheet-sidebar-width);
+                border-radius: 100%;
+                border: 6px solid var(--dnd5e-color-gold);
+                box-shadow: 0 0 6px var(--dnd5e-color-black);
+                overflow: hidden;
+                object-fit: cover;
+                object-position: top;
+                margin: 0;
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .stats {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 8px;
+            margin-top: -10px;
+
+            > .top {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                > .left {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .document-name {
+                        font-size: var(--font-size-28);
+                        font-family: var(--dnd5e-font-modesto);
+                        font-weight: bold;
+                    }
+
+                    .labels {
+                        display: flex;
+                        gap: 4px;
+                        font-family: var(--dnd5e-font-roboto-condensed);
+
+                        > li:not(:last-child)::after {
+                            content: " •";
+                            margin-left: 4px;
+                        }
+
+                        span:empty {
+                            display: none;
+                        }
+                    }
+                }
+
+                > .right {
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+
+            > .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    }
 }
