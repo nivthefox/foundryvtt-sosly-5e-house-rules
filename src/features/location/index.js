@@ -17,12 +17,12 @@ export function registerLocationFeature() {
         [typeLocation]: LocationData
     });
 
-    CONFIG.Actor.typeLabels.location = 'SOSLY.location.actorType';
+    CONFIG.Actor.typeLabels.location = 'sosly.location.actorType';
 
     Actors.registerSheet(moduleID, LocationSheet, {
         types: [typeLocation],
         makeDefault: true,
-        label: 'SOSLY.location.sheet'
+        label: 'sosly.location.sheet'
     });
 }
 

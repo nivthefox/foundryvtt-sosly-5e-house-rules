@@ -10,29 +10,21 @@
             {{!-- Name, Location, and Basic Info --}}
             <div class="header-details flexcol">
                 <h1 class="charname">
-                    <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'SOSLY.location.name.placeholder'}}" />
+                    <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'sosly.location.name.placeholder'}}" />
                 </h1>
                 
                 <div class="location-info">
                     <div class="form-group">
-                        <label>{{localize 'SOSLY.location.parentLocation'}}</label>
-                        <input name="system.location" type="text" value="{{system.location}}" placeholder="{{localize 'SOSLY.location.parentLocationPlaceholder'}}" />
+                        <label>{{localize 'sosly.location.parentLocation'}}</label>
+                        <input name="system.location" type="text" value="{{system.location}}" placeholder="{{localize 'sosly.location.parentLocationPlaceholder'}}" />
                     </div>
                 </div>
 
                 <div class="location-attributes">
                     <div class="form-group">
-                        <label>{{localize 'SOSLY.location.locationType.label'}}</label>
+                        <label>{{localize 'sosly.location.locationType.label'}}</label>
                         <select name="system.details.type">
                             {{#each typeChoices}}
-                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
-                            {{/each}}
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>{{localize 'SOSLY.location.size.label'}}</label>
-                        <select name="system.details.size">
-                            {{#each sizeChoices}}
                             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
                             {{/each}}
                         </select>
@@ -65,7 +57,7 @@
             </div>
 
             <div class="inventory-section">
-                <h4>{{localize 'SOSLY.location.tabs.inventory'}}</h4>
+                <h4>{{localize 'sosly.location.tabs.inventory'}}</h4>
                 <ol class="inventory-list">
                     {{#each inventory as |item|}}
                     <li class="item" data-item-id="{{item.id}}">
@@ -92,7 +84,7 @@
                     </li>
                     {{else}}
                     <li class="item empty">
-                        <span class="empty-note">{{localize 'SOSLY.location.inventory.empty'}}</span>
+                        <span class="empty-note">{{localize 'sosly.location.inventory.empty'}}</span>
                     </li>
                     {{/each}}
                 </ol>
@@ -102,7 +94,7 @@
         {{!-- Features Tab --}}
         <div class="tab features flexcol" data-tab="features">
             <div class="features-section">
-                <h4>{{localize 'SOSLY.location.tabs.features'}}</h4>
+                <h4>{{localize 'sosly.location.tabs.features'}}</h4>
                 <ol class="features-list">
                     {{#each features as |item|}}
                     <li class="item" data-item-id="{{item.id}}">
@@ -127,7 +119,7 @@
                     </li>
                     {{else}}
                     <li class="item empty">
-                        <span class="empty-note">{{localize 'SOSLY.location.features.empty'}}</span>
+                        <span class="empty-note">{{localize 'sosly.location.features.empty'}}</span>
                     </li>
                     {{/each}}
                 </ol>
@@ -138,7 +130,7 @@
         {{!-- Details Tab --}}
         <div class="tab details flexcol" data-tab="details">
             <div class="details-section">
-                <h4>{{localize 'SOSLY.location.tabs.details'}}</h4>
+                <h4>{{localize 'sosly.location.tabs.details'}}</h4>
                 <div class="editor">
                     {{editor enrichedDescription target="system.details.description" button=true owner=owner editable=editable}}
                 </div>

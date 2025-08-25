@@ -31,9 +31,9 @@ export class LocationSheet extends ActorSheet {
         context.source = source.system;
 
         context.tabs = [
-            {id: 'inventory', label: game.i18n.localize('SOSLY.location.tabs.inventory')},
-            {id: 'features', label: game.i18n.localize('SOSLY.location.tabs.features')},
-            {id: 'details', label: game.i18n.localize('SOSLY.location.tabs.details')}
+            {id: 'inventory', label: game.i18n.localize('sosly.location.tabs.inventory')},
+            {id: 'features', label: game.i18n.localize('sosly.location.tabs.features')},
+            {id: 'details', label: game.i18n.localize('sosly.location.tabs.details')}
         ];
 
         context.inventory = this._prepareItems(context, 'inventory');
@@ -46,13 +46,6 @@ export class LocationSheet extends ActorSheet {
             sp: game.i18n.localize('DND5E.CurrencySP'),
             cp: game.i18n.localize('DND5E.CurrencyCP')
         };
-
-        context.sizeChoices = Object.entries(system.schema.fields.details.fields.size.choices)
-            .map(([key, label]) => ({
-                value: key,
-                label: game.i18n.localize(label),
-                selected: system.details.size === key
-            }));
 
         context.typeChoices = Object.entries(system.schema.fields.details.fields.type.choices)
             .map(([key, label]) => ({
@@ -158,8 +151,8 @@ export class LocationSheet extends ActorSheet {
         }
 
         const confirmed = await foundry.applications.api.DialogV2.confirm({
-            window: {title: game.i18n.localize('SOSLY.location.deleteItem.title')},
-            content: game.i18n.format('SOSLY.location.deleteItem.content', {name: item.name}),
+            window: {title: game.i18n.localize('sosly.location.deleteItem.title')},
+            content: game.i18n.format('sosly.location.deleteItem.content', {name: item.name}),
             modal: true
         });
 

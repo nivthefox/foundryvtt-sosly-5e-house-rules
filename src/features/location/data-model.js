@@ -5,44 +5,30 @@ export class LocationData extends foundry.abstract.TypeDataModel {
             location: new fields.StringField({
                 required: false,
                 blank: true,
-                label: 'SOSLY.location.parentLocation'
+                label: 'sosly.location.parentLocation'
             }),
 
             details: new fields.SchemaField({
                 description: new fields.HTMLField({
                     required: false,
                     blank: true,
-                    label: 'SOSLY.location.description'
-                }),
-                size: new fields.StringField({
-                    required: false,
-                    blank: true,
-                    choices: {
-                        tiny: 'SOSLY.location.size.tiny',
-                        small: 'SOSLY.location.size.small',
-                        medium: 'SOSLY.location.size.medium',
-                        large: 'SOSLY.location.size.large',
-                        huge: 'SOSLY.location.size.huge',
-                        gargantuan: 'SOSLY.location.size.gargantuan'
-                    },
-                    initial: 'medium',
-                    label: 'SOSLY.location.size.label'
+                    label: 'sosly.location.description'
                 }),
                 type: new fields.StringField({
                     required: false,
                     blank: true,
                     choices: {
-                        building: 'SOSLY.location.locationType.building',
-                        room: 'SOSLY.location.locationType.room',
-                        outdoor: 'SOSLY.location.locationType.outdoor',
-                        dungeon: 'SOSLY.location.locationType.dungeon',
-                        settlement: 'SOSLY.location.locationType.settlement',
-                        region: 'SOSLY.location.locationType.region',
-                        plane: 'SOSLY.location.locationType.plane',
-                        other: 'SOSLY.location.locationType.other'
+                        building: 'sosly.location.locationType.building',
+                        room: 'sosly.location.locationType.room',
+                        outdoor: 'sosly.location.locationType.outdoor',
+                        dungeon: 'sosly.location.locationType.dungeon',
+                        settlement: 'sosly.location.locationType.settlement',
+                        region: 'sosly.location.locationType.region',
+                        plane: 'sosly.location.locationType.plane',
+                        other: 'sosly.location.locationType.other'
                     },
                     initial: 'building',
-                    label: 'SOSLY.location.locationType.label'
+                    label: 'sosly.location.locationType.label'
                 })
             }),
 
@@ -93,20 +79,20 @@ export class LocationData extends foundry.abstract.TypeDataModel {
                 new fields.SchemaField({
                     id: new fields.DocumentIdField({
                         required: true,
-                        label: 'SOSLY.location.present.actorId'
+                        label: 'sosly.location.present.actorId'
                     }),
                     name: new fields.StringField({
                         required: false,
                         blank: true,
-                        label: 'SOSLY.location.present.actorName'
+                        label: 'sosly.location.present.actorName'
                     }),
                     type: new fields.StringField({
                         required: false,
                         blank: true,
-                        label: 'SOSLY.location.present.actorType'
+                        label: 'sosly.location.present.actorType'
                     })
                 }), {
-                    label: 'SOSLY.location.present.actors'
+                    label: 'sosly.location.present.actors'
                 }
             )
         };

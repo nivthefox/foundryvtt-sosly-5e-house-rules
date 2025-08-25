@@ -64,14 +64,6 @@ sosly:
     parentLocation: Parent Location
     parentLocationPlaceholder: Region, City, Building...
     description: Description
-    size:
-      label: Size
-      tiny: Tiny
-      small: Small
-      medium: Medium
-      large: Large
-      huge: Huge
-      gargantuan: Gargantuan
     locationType:
       label: Type
       building: Building
