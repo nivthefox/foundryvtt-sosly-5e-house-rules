@@ -1,13 +1,13 @@
 export class LocationSheet extends ActorSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ['dnd5e', 'sheet', 'actor', 'location'],
+            classes: ['dnd5e2', 'sheet', 'actor', 'location', 'standard-form'],
             width: 720,
             height: 680,
             resizable: true,
             tabs: [
                 {
-                    navSelector: '.tabs',
+                    navSelector: '.sheet-navigation',
                     contentSelector: '.sheet-body',
                     initial: 'inventory'
                 }
