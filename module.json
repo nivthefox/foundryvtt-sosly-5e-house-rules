@@ -262,6 +262,13 @@
     }
   ],
   "documentTypes": {
+    "Actor": {
+      "location": {
+        "htmlFields": [
+          "details.description"
+        ]
+      }
+    },
     "JournalEntryPage": {
       "class": {
         "htmlFields": [

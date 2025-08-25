@@ -10,6 +10,7 @@ import {registerToolsFeature} from './features/tools/index';
 import {registerItemIdentificationFeature} from './features/item-identification/index';
 import {registerEncumbranceFeature} from './features/encumbrance/index';
 import {registerTransformationCleanupFeature} from './features/transformation-cleanup/index';
+import {registerLocationFeature} from './features/location/index';
 import {registerPsionicsFeature} from './features/psionics/index.js';
 import {registerSeveredLandsBloodMagicFeature} from './features/severed-lands-blood-magic/index';
 
@@ -25,6 +26,7 @@ Hooks.once('init', async () => {
     registerToolsFeature();
     registerItemIdentificationFeature();
     registerTransformationCleanupFeature();
+    registerLocationFeature();
     registerPsionicsFeature();
     registerSeveredLandsBloodMagicFeature();
     logger.info('Initialized');

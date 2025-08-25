@@ -1,3 +1,8 @@
+TYPES:
+  Actor:
+    sosly-5e-house-rules:
+      location: Location
+
 sosly:
   conditions:
     Imperiled: Imperiled
@@ -49,6 +54,58 @@ sosly:
     label: Automatic Transformation Cleanup
     hint: Automatically removes temporary actors when PCs revert from transformed forms (Polymorph, Wild Shape, etc.), eliminating need for DM intervention.
   networth: Net Worth
+  location:
+    label: Location Actor Subtype
+    hint: Enables location actors that can track inventory, features, present actors, and descriptions.
+    actorType: Location
+    sheet: Location Sheet
+    name:
+      placeholder: Location Name
+    parentLocation: Parent Location
+    parentLocationPlaceholder: Region, City, Building...
+    description: Description
+    size:
+      label: Size
+      tiny: Tiny
+      small: Small
+      medium: Medium
+      large: Large
+      huge: Huge
+      gargantuan: Gargantuan
+    locationType:
+      label: Type
+      building: Building
+      room: Room
+      outdoor: Outdoor Area
+      dungeon: Dungeon
+      settlement: Settlement
+      region: Region
+      plane: Plane of Existence
+      other: Other
+    tabs:
+      inventory: Inventory
+      features: Features
+      present: Present
+      details: Details
+    inventory:
+      empty: No items in this location's inventory.
+    features:
+      empty: This location has no special features.
+    present:
+      empty: No one is currently present at this location.
+      actors: Present Actors
+      dropHint: Drop actors here to mark them as present
+      dropActors: Drop Actors Here
+    deleteItem:
+      title: Delete Item
+      content: Are you sure you want to delete {name}?
+    removeActor:
+      title: Remove Actor
+      content: Remove this actor from the location?
+      button: Remove from Location
+    viewActor: View Actor Sheet
+    error:
+      cannotAddSelf: Cannot add location to itself
   severedLandsBloodMagic:
     label: Severed Lands Blood Magic
     hint: Automates blood magic mechanics including madness saves, blood surge, and hungry magic. Requires Madness feature to be enabled.

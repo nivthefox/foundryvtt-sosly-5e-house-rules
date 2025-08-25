@@ -1,0 +1,148 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <section class="header-fields">
+            {{!-- Profile Image --}}
+            <div class="profile">
+                <img class="profile-img" src="{{actor.img}}" data-tooltip="{{actor.name}}" data-action="editImage" data-edit="img"/>
+            </div>
+
+            {{!-- Name, Location, and Basic Info --}}
+            <div class="header-details flexcol">
+                <h1 class="charname">
+                    <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'SOSLY.location.name.placeholder'}}" />
+                </h1>
+                
+                <div class="location-info">
+                    <div class="form-group">
+                        <label>{{localize 'SOSLY.location.parentLocation'}}</label>
+                        <input name="system.location" type="text" value="{{system.location}}" placeholder="{{localize 'SOSLY.location.parentLocationPlaceholder'}}" />
+                    </div>
+                </div>
+
+                <div class="location-attributes">
+                    <div class="form-group">
+                        <label>{{localize 'SOSLY.location.locationType.label'}}</label>
+                        <select name="system.details.type">
+                            {{#each typeChoices}}
+                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>{{localize 'SOSLY.location.size.label'}}</label>
+                        <select name="system.details.size">
+                            {{#each sizeChoices}}
+                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    {{!-- Sheet Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        {{#each tabs as |tab|}}
+        <a class="item {{tab.cssClass}}" data-tab="{{tab.id}}" data-tooltip="{{tab.label}}">{{tab.label}}</a>
+        {{/each}}
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        
+        {{!-- Inventory Tab --}}
+        <div class="tab inventory flexcol {{#if (eq tabs.0.id "inventory")}}active{{/if}}" data-tab="inventory">
+            <div class="currency flexrow">
+                <h4>{{localize 'DND5E.Currency'}}</h4>
+                {{#each currencyLabels as |label denomination|}}
+                <label class="denomination {{denomination}}">
+                    <span>{{label}}</span>
+                    <input name="system.currency.{{denomination}}" type="number" value="{{lookup ../system.currency denomination}}" min="0" step="1" />
+                </label>
+                {{/each}}
+            </div>
+
+            <div class="inventory-section">
+                <h4>{{localize 'SOSLY.location.tabs.inventory'}}</h4>
+                <ol class="inventory-list">
+                    {{#each inventory as |item|}}
+                    <li class="item" data-item-id="{{item.id}}">
+                        <div class="item-image">
+                            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+                        </div>
+                        <h4 class="item-name flexrow">
+                            <span>{{item.name}}</span>
+                            {{#if item.isStack}}
+                            <span class="item-quantity">×{{item.quantity}}</span>
+                            {{/if}}
+                        </h4>
+                        <div class="item-controls">
+                            {{#if item.hasUses}}
+                            <span class="item-uses">{{item.uses.value}}/{{item.uses.max}}</span>
+                            {{/if}}
+                            <a class="item-control item-edit" title="{{localize 'DND5E.ItemEdit'}}" data-action="editItem">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a class="item-control item-delete" title="{{localize 'DND5E.ItemDelete'}}" data-action="deleteItem">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </li>
+                    {{else}}
+                    <li class="item empty">
+                        <span class="empty-note">{{localize 'SOSLY.location.inventory.empty'}}</span>
+                    </li>
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+
+        {{!-- Features Tab --}}
+        <div class="tab features flexcol" data-tab="features">
+            <div class="features-section">
+                <h4>{{localize 'SOSLY.location.tabs.features'}}</h4>
+                <ol class="features-list">
+                    {{#each features as |item|}}
+                    <li class="item" data-item-id="{{item.id}}">
+                        <div class="item-image">
+                            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+                        </div>
+                        <h4 class="item-name">{{item.name}}</h4>
+                        <div class="item-controls">
+                            {{#if item.hasUses}}
+                            <span class="item-uses">{{item.uses.value}}/{{item.uses.max}}</span>
+                            {{/if}}
+                            <a class="item-control item-roll" title="{{localize 'DND5E.ItemRoll'}}" data-action="rollItem">
+                                <i class="fas fa-dice-d20"></i>
+                            </a>
+                            <a class="item-control item-edit" title="{{localize 'DND5E.ItemEdit'}}" data-action="editItem">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a class="item-control item-delete" title="{{localize 'DND5E.ItemDelete'}}" data-action="deleteItem">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </li>
+                    {{else}}
+                    <li class="item empty">
+                        <span class="empty-note">{{localize 'SOSLY.location.features.empty'}}</span>
+                    </li>
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+
+
+        {{!-- Details Tab --}}
+        <div class="tab details flexcol" data-tab="details">
+            <div class="details-section">
+                <h4>{{localize 'SOSLY.location.tabs.details'}}</h4>
+                <div class="editor">
+                    {{editor enrichedDescription target="system.details.description" button=true owner=owner editable=editable}}
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
