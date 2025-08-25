@@ -1,7 +1,7 @@
 export class LocationSheet extends ActorSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ['dnd5e2', 'sheet', 'actor', 'location', 'standard-form'],
+            classes: ['dnd5e2', 'sheet', 'actor', 'location', 'standard-form', 'vertical-tabs'],
             width: 720,
             height: 680,
             resizable: true,
@@ -29,12 +29,6 @@ export class LocationSheet extends ActorSheet {
 
         context.system = system;
         context.source = source.system;
-
-        context.tabs = [
-            {id: 'inventory', label: game.i18n.localize('sosly.location.tabs.inventory')},
-            {id: 'features', label: game.i18n.localize('sosly.location.tabs.features')},
-            {id: 'details', label: game.i18n.localize('sosly.location.tabs.details')}
-        ];
 
         context.inventory = this._prepareItems(context, 'inventory');
         context.features = this._prepareItems(context, 'features');
