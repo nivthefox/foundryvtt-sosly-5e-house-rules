@@ -4,6 +4,12 @@ export class LocationSheet extends ActorSheet {
         EDIT: 2
     };
 
+    static TABS = [
+        { tab: "inventory", label: "sosly.location.tabs.inventory", svg: "backpack" },
+        { tab: "features", label: "sosly.location.tabs.features", icon: "fas fa-list" },
+        { tab: "details", label: "sosly.location.tabs.details", icon: "fas fa-feather" }
+    ];
+
     constructor(object, options) {
         super(object, options);
         this._mode = this.constructor.MODES.PLAY;
@@ -21,8 +27,8 @@ export class LocationSheet extends ActorSheet {
             resizable: true,
             tabs: [
                 {
-                    navSelector: '.sheet-navigation',
-                    contentSelector: '.sheet-body',
+                    navSelector: '.tabs',
+                    contentSelector: '.tab-body',
                     initial: 'inventory'
                 }
             ],
@@ -254,9 +260,10 @@ export class LocationSheet extends ActorSheet {
     async _render(force, options) {
         await super._render(force, options);
         
-        const nav = this.element[0].querySelector('.sheet-navigation');
+        const nav = this.element[0].querySelector('.tabs');
         const windowHeader = this.element[0].querySelector('.window-header');
-        if (nav && windowHeader && nav.parentNode.classList.contains('window-content')) {
+        if (nav && windowHeader) {
+            nav.remove();
             this.element[0].insertBefore(nav, windowHeader);
         }
     }
@@ -267,5 +274,14 @@ export class LocationSheet extends ActorSheet {
         this._mode = toggle.checked ? MODES.EDIT : MODES.PLAY;
         await this.submit();
         this.render();
+    }
+
+    _onChangeTab(event, tabs, active) {
+        super._onChangeTab(event, tabs, active);
+        const form = this.element[0].querySelector('form');
+        if (form) {
+            form.className = form.className.replace(/\btab-\w+/g, '');
+            form.classList.add(`tab-${active}`);
+        }
     }
 }
