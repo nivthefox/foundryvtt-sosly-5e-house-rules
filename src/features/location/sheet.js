@@ -148,29 +148,52 @@ export class LocationSheet extends ActorSheet {
 
 
     _prepareItemContext(item, context) {
-        // Generate subtitle based on item type
+        // Generate subtitle based on item type - with error handling
         let subtitle = '';
-        if (item.type === 'weapon') {
-            subtitle = `${game.i18n.localize('DND5E.ItemTypeWeapon')}`;
-            if (item.system.weaponType) {
-                subtitle += ` (${game.i18n.localize(CONFIG.DND5E.weaponTypes[item.system.weaponType])})`;
+        try {
+            if (item.type === 'weapon') {
+                subtitle = game.i18n.localize('DND5E.ItemTypeWeapon') || 'Weapon';
+                if (item.system.weaponType && CONFIG.DND5E.weaponTypes?.[item.system.weaponType]) {
+                    const weaponTypeLabel = CONFIG.DND5E.weaponTypes[item.system.weaponType];
+                    if (typeof weaponTypeLabel === 'string') {
+                        subtitle += ` (${game.i18n.localize(weaponTypeLabel) || weaponTypeLabel})`;
+                    }
+                }
+            } else if (item.type === 'equipment') {
+                subtitle = game.i18n.localize('DND5E.ItemTypeEquipment') || 'Equipment';
+                if (item.system.type?.value && CONFIG.DND5E.equipmentTypes?.[item.system.type.value]) {
+                    const equipTypeLabel = CONFIG.DND5E.equipmentTypes[item.system.type.value];
+                    if (typeof equipTypeLabel === 'string') {
+                        subtitle += ` (${game.i18n.localize(equipTypeLabel) || equipTypeLabel})`;
+                    }
+                }
+            } else if (item.type === 'consumable') {
+                subtitle = game.i18n.localize('DND5E.ItemTypeConsumable') || 'Consumable';
+                if (item.system.type?.value && CONFIG.DND5E.consumableTypes?.[item.system.type.value]) {
+                    const consumableTypeLabel = CONFIG.DND5E.consumableTypes[item.system.type.value];
+                    if (typeof consumableTypeLabel === 'string') {
+                        subtitle += ` (${game.i18n.localize(consumableTypeLabel) || consumableTypeLabel})`;
+                    }
+                }
+            } else if (item.type === 'tool') {
+                subtitle = game.i18n.localize('DND5E.ItemTypeTool') || 'Tool';
+            } else if (item.type === 'loot') {
+                subtitle = game.i18n.localize('DND5E.ItemTypeLoot') || 'Loot';
+            } else {
+                // Fallback for unknown types
+                subtitle = item.type.charAt(0).toUpperCase() + item.type.slice(1);
+                try {
+                    const localized = game.i18n.localize(`DND5E.ItemType${item.type.charAt(0).toUpperCase() + item.type.slice(1)}`);
+                    if (localized && !localized.startsWith('DND5E.ItemType')) {
+                        subtitle = localized;
+                    }
+                } catch (e) {
+                    // Use fallback
+                }
             }
-        } else if (item.type === 'equipment') {
-            subtitle = game.i18n.localize('DND5E.ItemTypeEquipment');
-            if (item.system.type?.value) {
-                subtitle += ` (${game.i18n.localize(CONFIG.DND5E.equipmentTypes[item.system.type.value])})`;
-            }
-        } else if (item.type === 'consumable') {
-            subtitle = game.i18n.localize('DND5E.ItemTypeConsumable');
-            if (item.system.type?.value) {
-                subtitle += ` (${game.i18n.localize(CONFIG.DND5E.consumableTypes[item.system.type.value])})`;
-            }
-        } else if (item.type === 'tool') {
-            subtitle = game.i18n.localize('DND5E.ItemTypeTool');
-        } else if (item.type === 'loot') {
-            subtitle = game.i18n.localize('DND5E.ItemTypeLoot');
-        } else {
-            subtitle = game.i18n.localize(`DND5E.ItemType${item.type.titleCase()}`);
+        } catch (error) {
+            console.error('Error preparing item subtitle for', item.name, error);
+            subtitle = item.type || 'Item';
         }
 
         return {
@@ -186,7 +209,10 @@ export class LocationSheet extends ActorSheet {
             hasUses: item.system.uses?.max > 0,
             isStack: item.system.quantity > 1,
             quantity: item.system.quantity,
-            uses: item.system.uses
+            uses: {
+                value: item.system.uses?.value ?? item.system.uses?.max ?? 0,
+                max: item.system.uses?.max ?? 0
+            }
         };
     }
 
@@ -501,12 +527,14 @@ export class LocationSheet extends ActorSheet {
                 // Use D&D 5e's built-in chat data which includes all the right properties
                 const chatData = await item.getChatData({ secrets: this.document.isOwner });
                 
-                // Filter out negative status properties that aren't relevant for location sheets
+                // Filter out negative status properties and malformed properties
                 const filteredProperties = chatData.properties?.filter(prop => {
                     const propLower = prop.toLowerCase();
                     return !propLower.includes('not equipped') && 
                            !propLower.includes('not proficient') && 
-                           !propLower.includes('unequipped');
+                           !propLower.includes('unequipped') &&
+                           !propLower.includes('undefined') &&
+                           prop.trim().length > 0;
                 }) || [];
 
                 // Only expand if there's either a description or properties to show
