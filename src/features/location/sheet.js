@@ -206,14 +206,16 @@ export class LocationSheet extends ActorSheet {
         form.ondragover = this._onDragOver.bind(this);
 
         // Item interactions should work in both modes
-        console.log('Setting up event listeners');
-        const itemElements = html.find('[data-action]');
-        console.log('Found action elements:', itemElements.length, itemElements);
-
         html.on('click', '[data-action]', this._onItemAction.bind(this));
         html.on('click', '[data-toggle-description]', this._onToggleDescription.bind(this));
-        html.on('click', '[data-context-menu]', this._onContextMenu.bind(this));
-        html.on('contextmenu', '.item', this._onContextMenu.bind(this));
+        html.on('click', '[data-action="increase"]', this._onQuantityChange.bind(this));
+        html.on('click', '[data-action="decrease"]', this._onQuantityChange.bind(this));
+
+        // Set up context menu for items
+        new dnd5e.applications.ContextMenu5e(html[0], '.item', [], {
+            onOpen: this._onOpenContextMenu.bind(this),
+            jQuery: true
+        });
 
         if (!this.isEditable) {
             return;
@@ -222,8 +224,6 @@ export class LocationSheet extends ActorSheet {
         html.on('change', '[data-field]', this._onChangeField.bind(this));
         html.on('click', '[data-action="editItem"]', this._onEditItem.bind(this));
         html.on('click', '[data-action="deleteItem"]', this._onDeleteItem.bind(this));
-        html.on('click', '[data-action="increase"]', this._onQuantityChange.bind(this));
-        html.on('click', '[data-action="decrease"]', this._onQuantityChange.bind(this));
     }
 
     async _onChangeField(event) {
@@ -415,44 +415,72 @@ export class LocationSheet extends ActorSheet {
         }
     }
 
-    _onContextMenu(event) {
-        event.preventDefault();
-        const itemId = event.currentTarget.closest('.item').dataset.itemId;
-        const item = this.document.items.get(itemId);
-
+    _onOpenContextMenu(element) {
+        const item = this.document.items.get(element.closest('[data-item-id]')?.dataset.itemId);
         if (!item) {
             return;
         }
 
-        // Create context menu options
-        const contextOptions = [];
+        ui.context.menuItems = this._getContextOptions(item, element);
+        Hooks.call('dnd5e.getItemContextOptions', item, ui.context.menuItems);
+    }
 
-        contextOptions.push({
-            name: game.i18n.localize('DND5E.ItemEdit'),
-            icon: '<i class="fas fa-edit"></i>',
-            callback: () => item.sheet.render(true)
-        });
+    _getContextOptions(item, element) {
+        const compendiumLocked = item.collection?.locked;
 
-        if (this.isEditable) {
-            contextOptions.push({
-                name: game.i18n.localize('DND5E.ItemDelete'),
-                icon: '<i class="fas fa-trash"></i>',
-                callback: () => item.delete()
-            });
+        const options = [
+            {
+                name: 'DND5E.ItemView',
+                icon: '<i class="fas fa-eye"></i>',
+                callback: li => this._onAction(li[0], 'view')
+            },
+            {
+                name: 'DND5E.ContextMenuActionEdit',
+                icon: "<i class='fas fa-edit fa-fw'></i>",
+                condition: () => item.isOwner && !compendiumLocked,
+                callback: li => this._onAction(li[0], 'edit')
+            },
+            {
+                name: 'DND5E.ContextMenuActionDuplicate',
+                icon: "<i class='fas fa-copy fa-fw'></i>",
+                condition: () => item.canDuplicate && item.isOwner && !compendiumLocked,
+                callback: li => this._onAction(li[0], 'duplicate')
+            },
+            {
+                name: 'DND5E.ContextMenuActionDelete',
+                icon: "<i class='fas fa-trash fa-fw'></i>",
+                condition: () => item.canDelete && item.isOwner && !compendiumLocked,
+                callback: li => this._onAction(li[0], 'delete')
+            },
+            {
+                name: 'DND5E.DisplayCard',
+                icon: '<i class="fas fa-message"></i>',
+                callback: () => item.displayCard()
+            }
+        ];
+
+        return options;
+    }
+
+    async _onAction(target, action, { event } = {}) {
+        const { itemId } = target.closest('[data-item-id]')?.dataset ?? {};
+        const item = this.document.items.get(itemId);
+        if (!item) {
+            return;
         }
 
-        if (item.system.uses?.max > 0) {
-            contextOptions.push({
-                name: game.i18n.localize('DND5E.ItemUse'),
-                icon: '<i class="fas fa-fist-raised"></i>',
-                callback: () => item.use()
-            });
-        }
+        switch (action) {
+            case 'delete':
+                return item.deleteDialog();
+            case 'duplicate':
+                return item.clone({ name: game.i18n.format('DOCUMENT.CopyOf', { name: item.name }) }, { save: true });
+            case 'edit':
+                return item.sheet.render(true);
+            case 'view':
+                return item.sheet.render(true);
+            default:
 
-        // Create a new ContextMenu instance
-        new ContextMenu(this.element, '.item', contextOptions, {
-            eventName: 'contextmenu'
-        });
+        }
     }
 
     async _onDrop(event) {
