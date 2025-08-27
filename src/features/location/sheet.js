@@ -13,6 +13,7 @@ export class LocationSheet extends ActorSheet {
     constructor(object, options) {
         super(object, options);
         this._mode = this.constructor.MODES.PLAY;
+        this._expanded = new Set();
     }
 
     get isEditable() {
@@ -390,29 +391,15 @@ export class LocationSheet extends ActorSheet {
 
     _onToggleDescription(event) {
         event.preventDefault();
-        const item = event.currentTarget.closest('.item');
-        const description = item.querySelector('.item-description');
-        const icon = event.currentTarget.querySelector('i');
-
-        if (description.style.display === 'none' || !description.style.display) {
-            description.style.display = 'block';
-            icon.classList.remove('fa-expand');
-            icon.classList.add('fa-compress');
-
-            // Load the item description if not already loaded
-            const wrapper = description.querySelector('.wrapper');
-            if (!wrapper.innerHTML.trim()) {
-                const itemId = item.dataset.itemId;
-                const itemDoc = this.document.items.get(itemId);
-                if (itemDoc) {
-                    wrapper.innerHTML = itemDoc.system.description?.value || '';
-                }
-            }
-        } else {
-            description.style.display = 'none';
-            icon.classList.remove('fa-compress');
-            icon.classList.add('fa-expand');
+        const target = event.currentTarget;
+        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+        
+        if (!item) {
+            return;
         }
+
+        return this._onExpand(target, item);
     }
 
     _onOpenContextMenu(element) {
@@ -456,6 +443,11 @@ export class LocationSheet extends ActorSheet {
                 name: 'DND5E.DisplayCard',
                 icon: '<i class="fas fa-message"></i>',
                 callback: () => item.displayCard()
+            },
+            {
+                name: this._expanded.has(item.id) ? 'DND5E.Collapse' : 'DND5E.Expand',
+                icon: this._expanded.has(item.id) ? '<i class="fas fa-compress fa-fw"></i>' : '<i class="fas fa-expand fa-fw"></i>',
+                callback: li => this._onAction(li[0], 'expand')
             }
         ];
 
@@ -478,8 +470,68 @@ export class LocationSheet extends ActorSheet {
                 return item.sheet.render(true);
             case 'view':
                 return item.sheet.render(true);
+            case 'expand':
+                return this._onExpand(target, item);
             default:
+                return;
+        }
+    }
 
+    async _onExpand(target, item) {
+        const li = target.closest('[data-item-id]');
+        const expandIcon = li.querySelector('[data-toggle-description] i');
+        const wrapper = li.querySelector('.item-description .wrapper');
+        
+        if (this._expanded.has(item.id)) {
+            // Remove the summary and collapse
+            const summary = wrapper?.querySelector('.item-summary');
+            if (summary) {
+                $(summary).slideUp(200, () => summary.remove());
+            }
+            li.classList.add('collapsed');
+            this._expanded.delete(item.id);
+            
+            // Update the expand button icon
+            if (expandIcon) {
+                expandIcon.classList.remove('fa-compress');
+                expandIcon.classList.add('fa-expand');
+            }
+        } else {
+            if (wrapper) {
+                // Use D&D 5e's built-in chat data which includes all the right properties
+                const chatData = await item.getChatData({ secrets: this.document.isOwner });
+                
+                // Filter out negative status properties that aren't relevant for location sheets
+                const filteredProperties = chatData.properties?.filter(prop => {
+                    const propLower = prop.toLowerCase();
+                    return !propLower.includes('not equipped') && 
+                           !propLower.includes('not proficient') && 
+                           !propLower.includes('unequipped');
+                }) || [];
+
+                // Only expand if there's either a description or properties to show
+                if (chatData.description || filteredProperties.length > 0) {
+                    const propertiesHTML = filteredProperties.length > 0 ? 
+                        `<div class="item-properties pills">${filteredProperties.map(prop => `<span class="tag pill transparent pill-xs">${prop}</span>`).join('')}</div>` : '';
+
+                    const summaryHTML = `<div class="item-summary">
+                                        ${chatData.description || ''}
+                                    
+                                        ${propertiesHTML}
+                                    </div>`;
+                    const summary = $(summaryHTML);
+                    $(wrapper).append(summary.hide());
+                    summary.slideDown(200);
+                    li.classList.remove('collapsed');
+                    this._expanded.add(item.id);
+                    
+                    // Update the expand button icon
+                    if (expandIcon) {
+                        expandIcon.classList.remove('fa-expand');
+                        expandIcon.classList.add('fa-compress');
+                    }
+                }
+            }
         }
     }
 
