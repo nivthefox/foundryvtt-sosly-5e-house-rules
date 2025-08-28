@@ -48,4 +48,10 @@ export function registerNetworthHooks() {
         const el = html[0];
         addNetworthDisplay(app, el);
     });
+
+    // Locations
+    Hooks.on('renderLocationSheet', (app, html, data) => {
+        const el = html[0];
+        addNetworthDisplay(app, el);
+    });
 }
