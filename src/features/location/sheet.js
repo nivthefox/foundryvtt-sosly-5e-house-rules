@@ -22,7 +22,7 @@ export class LocationSheet extends ActorSheet {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ['dnd5e2', 'sheet', 'actor', 'location', 'standard-form', 'vertical-tabs'],
+            classes: ['dnd5e2', 'sheet', 'actor', 'location', 'vertical-tabs'],
             width: 720,
             height: 680,
             minWidth: 600,
