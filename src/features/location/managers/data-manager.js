@@ -140,12 +140,16 @@ export class LocationDataManager {
 
     prepareTypeChoices(context) {
         const system = this.document.system;
-        context.typeChoices = Object.entries(system.schema.fields.details.fields.type.choices)
-            .map(([key, label]) => ({
-                value: key,
-                label: game.i18n.localize(label),
-                selected: system.details.type === key
-            }));
+        const typeChoices = system.schema.fields.details.fields.type.choices;
+
+        context.locationTypeChoices = Object.entries(typeChoices).reduce((choices, [key, label]) => {
+            choices[key] = game.i18n.localize(label);
+            return choices;
+        }, {});
+
+        context.locationTypeLabel = system.details.type
+            ? game.i18n.localize(typeChoices[system.details.type])
+            : '';
     }
 
     async prepareDescription(context) {

@@ -30,8 +30,7 @@
         }
 
         input {
-            --input-background-color: var(--dnd5e-background-5);
-            background: var(--input-background-color);
+            background: var(--dnd5e-background-5);
         }
 
         .portrait {
@@ -81,13 +80,21 @@
                         gap: 4px;
                         font-family: var(--dnd5e-font-roboto-condensed);
 
-                        > li:not(:last-child)::after {
-                            content: " •";
-                            margin-left: 4px;
+                        li:has(> span) + li:has(> span)::before {
+                            content: "•";
                         }
 
-                        span:empty {
+                        li:has(> span:empty) {
                             display: none;
+                        }
+
+                        input, select {
+                            font-family: inherit;
+                            font-size: inherit;
+                        }
+
+                        select {
+                            background: var(--dnd5e-background-5);
                         }
                     }
                 }
@@ -312,6 +319,21 @@
                     flex: 1;
                 }
             }
+        }
+    }
+
+    .editable {
+        .sheet-header .stats .labels li {
+            display: grid;
+            flex: 1;
+        }
+
+        .sheet-header .stats .labels .creature-type span {
+            padding-left: 4px;
+            border: 1px solid var(--dnd5e-background-5);
+            height: var(--form-field-height);
+            display: flex;
+            align-items: center;
         }
     }
 }

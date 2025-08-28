@@ -20,6 +20,33 @@
                         <li class="creature-type">
                             <span>Location</span>
                         </li>
+                        {{#if system.location}}
+                        <li class="parent-location">
+                            {{#if editable}}
+                            <input type="text" name="system.location" value="{{source.location}}" placeholder="Parent Location">
+                            {{else}}
+                            <span>{{system.location}}</span>
+                            {{/if}}
+                        </li>
+                        {{else}}
+                        {{#if editable}}
+                        <li class="parent-location">
+                            <input type="text" name="system.location" value="{{source.location}}" placeholder="Parent Location">
+                        </li>
+                        {{/if}}
+                        {{/if}}
+                        <li class="location-type">
+                            {{#if editable}}
+                            <select class="unselect" name="system.details.type">
+                                <option value=""></option>
+                                {{#each locationTypeChoices}}
+                                <option value="{{@key}}" {{#if (eq @key ../source.details.type)}}selected{{/if}}>{{this}}</option>
+                                {{/each}}
+                            </select>
+                            {{else}}
+                            <span>{{locationTypeLabel}}</span>
+                            {{/if}}
+                        </li>
                     </ul>
                 </div>
 
@@ -236,30 +263,6 @@
             <div class="details-section">
                 <h4>{{localize 'sosly.location.tabs.details'}}</h4>
                 
-                {{!-- Location Properties --}}
-                <div class="location-properties">
-                    <div class="form-group">
-                        <label>{{localize 'sosly.location.parentLocation'}}</label>
-                        {{#if editable}}
-                            <input name="system.location" type="text" value="{{system.location}}" placeholder="{{localize 'sosly.location.parentLocationPlaceholder'}}" />
-                        {{else}}
-                            <span class="value">{{system.location}}</span>
-                        {{/if}}
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>{{localize 'sosly.location.locationType.label'}}</label>
-                        {{#if editable}}
-                            <select name="system.details.type">
-                                {{#each typeChoices}}
-                                <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
-                                {{/each}}
-                            </select>
-                        {{else}}
-                            <span class="value">{{#each typeChoices}}{{#if selected}}{{label}}{{/if}}{{/each}}</span>
-                        {{/if}}
-                    </div>
-                </div>
                 
                 {{!-- Description Editor --}}
                 <div class="editor">
