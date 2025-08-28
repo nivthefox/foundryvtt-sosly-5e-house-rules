@@ -37,15 +37,9 @@
         .portrait {
             position: relative;
 
-            &:not(.token) {
-                border-radius: 100%;
-                border: 1px solid var(--dnd5e-color-black);
-            }
-
             > img, > video {
                 width: var(--dnd5e-sheet-sidebar-width);
                 height: var(--dnd5e-sheet-sidebar-width);
-                border-radius: 100%;
                 border: 6px solid var(--dnd5e-color-gold);
                 box-shadow: 0 0 6px var(--dnd5e-color-black);
                 overflow: hidden;
