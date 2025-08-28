@@ -25,7 +25,10 @@ export class LocationSheet extends ActorSheet {
             classes: ['dnd5e2', 'sheet', 'actor', 'location', 'standard-form', 'vertical-tabs'],
             width: 720,
             height: 680,
+            minWidth: 600,
+            minHeight: 500,
             resizable: true,
+            scrollY: ['.sheet-body', '.tab.active', '.inventory-list'],
             tabs: [
                 {
                     navSelector: '.tabs',
@@ -98,7 +101,8 @@ export class LocationSheet extends ActorSheet {
         const items = [];
 
         for (const item of this.document.items.values()) {
-            if (item.type === 'feat' || item.system.equipped) {
+            // Location sheets only show actual feats, not equipped items
+            if (item.type === 'feat') {
                 items.push(this._prepareItemContext(item, context));
             }
         }
@@ -123,8 +127,8 @@ export class LocationSheet extends ActorSheet {
         // Handle empty items collection and populate inventory
         if (this.document.items?.size > 0) {
             for (const item of this.document.items.values()) {
-                // Only show items that are not in containers and not equipped feats
-                if (item.type !== 'feat' && !item.system?.equipped && !item.system?.container) {
+                // Show all items except feats and items in containers
+                if (item.type !== 'feat' && !item.system?.container) {
                     const preparedItem = await this._prepareItemContext(item, context);
                     if (inventory[item.type]) {
                         inventory[item.type].items.push(preparedItem);
@@ -283,7 +287,7 @@ export class LocationSheet extends ActorSheet {
         if (event.target.matches('[data-item-id] > .item-row')) {
             return this._onDragItem(event);
         }
-        
+
         // Fall back to default behavior
         return super._onDragStart?.(event);
     }
@@ -299,10 +303,9 @@ export class LocationSheet extends ActorSheet {
     async _onDropItem(event, data) {
         // Items can be dropped in both play and edit modes
         const item = await Item.implementation.fromDropData(data);
-        const itemData = item.toObject();
 
         if (this.document.uuid === item.parent?.uuid) {
-            return this._onSortItem(event, itemData);
+            return this._onSortItem(event, item.toObject());
         }
 
         return this._onDropItemCreate(item, event);
@@ -339,7 +342,7 @@ export class LocationSheet extends ActorSheet {
                 return this._onDropSingleItem(item, event);
             }
         });
-        
+
         return dnd5e.documents.Item5e.createDocuments(toCreate, { parent: this.document, keepId: true });
     }
 
@@ -358,6 +361,7 @@ export class LocationSheet extends ActorSheet {
 
         return itemData;
     }
+
 
     _onDropStackConsumables(itemData, { container = null } = {}) {
         const droppedSourceId = itemData._stats?.compendiumSource ?? itemData.flags.core?.sourceId;
@@ -526,7 +530,7 @@ export class LocationSheet extends ActorSheet {
     _onContextMenuClick(event) {
         event.preventDefault();
         event.stopPropagation();
-        
+
         // Trigger a right-click context menu event on the item
         const itemElement = event.target.closest('[data-item-id]');
         if (itemElement) {

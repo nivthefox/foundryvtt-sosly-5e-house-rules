@@ -1,11 +1,15 @@
 .dnd5e2.sheet.actor.location {
     --dnd5e-sheet-header-height: 68px;
     --dnd5e-sheet-sidebar-width: 180px;
+    
+    min-width: 600px;
+    min-height: 500px;
 
     .window-content {
         background: url(/systems/dnd5e/ui/texture1.webp) no-repeat top center / auto 770px,
             var(--dnd5e-color-parchment) url(/systems/dnd5e/ui/texture2.webp)
             no-repeat bottom center / auto 704px;
+        overflow-y: hidden;
     }
 
     .sheet-header {
@@ -101,6 +105,9 @@
     }
 
     .sheet-body {
+        flex: 1;
+        overflow: hidden;
+
         .main-content {
             --sidebar-padding: 8px;
             --sidebar-size: calc(var(--dnd5e-sheet-sidebar-width) + var(--sidebar-padding));
@@ -108,7 +115,7 @@
             display: flex;
             position: absolute;
             width: 100%;
-            min-height: 100%;
+            height: 100%;
 
             .tab-body {
                 flex: 1;
@@ -119,11 +126,22 @@
                     flex: 1;
                     padding: 8px 4px 8px 16px;
                     gap: 8px;
+                    overflow-y: auto;
+                    scrollbar-width: thin;
                 }
             }
 
             .inventory-element {
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                overflow-y: hidden;
+                
+                .inventory-list {
+                    flex: 1;
+                    overflow-y: auto;
+                    scrollbar-width: thin;
+                }
             }
         }
     }
