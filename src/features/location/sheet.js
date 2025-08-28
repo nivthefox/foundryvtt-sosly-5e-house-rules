@@ -243,12 +243,14 @@ export class LocationSheet extends ActorSheet {
         const form = html[0];
         form.ondrop = this._onDrop.bind(this);
         form.ondragover = this._onDragOver.bind(this);
+        form.ondragstart = this._onDragStart.bind(this);
 
         // Item interactions should work in both modes
         html.on('click', '[data-action]', this._onItemAction.bind(this));
         html.on('click', '[data-toggle-description]', this._onToggleDescription.bind(this));
         html.on('click', '[data-action="increase"]', this._onQuantityChange.bind(this));
         html.on('click', '[data-action="decrease"]', this._onQuantityChange.bind(this));
+        html.on('click', '[data-context-menu]', this._onContextMenuClick.bind(this));
 
         // Set up context menu for items
         new dnd5e.applications.ContextMenu5e(html[0], '.item', [], {
@@ -275,6 +277,24 @@ export class LocationSheet extends ActorSheet {
         await this.document.update(updates);
     }
 
+
+    _onDragStart(event) {
+        // Handle item dragging
+        if (event.target.matches('[data-item-id] > .item-row')) {
+            return this._onDragItem(event);
+        }
+        
+        // Fall back to default behavior
+        return super._onDragStart?.(event);
+    }
+
+    _onDragItem(event) {
+        const { itemId } = event.target.closest('[data-item-id]').dataset;
+        const item = this.document.items.get(itemId);
+        if (item) {
+            event.dataTransfer.setData('text/plain', JSON.stringify(item.toDragData()));
+        }
+    }
 
     async _onDropItem(event, data) {
         // Items can be dropped in both play and edit modes
@@ -501,6 +521,26 @@ export class LocationSheet extends ActorSheet {
         }
 
         return this._onExpand(target, item);
+    }
+
+    _onContextMenuClick(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        // Trigger a right-click context menu event on the item
+        const itemElement = event.target.closest('[data-item-id]');
+        if (itemElement) {
+            // Use a slight delay to ensure the click event is fully processed first
+            setTimeout(() => {
+                itemElement.dispatchEvent(new PointerEvent('contextmenu', {
+                    bubbles: true,
+                    cancelable: true,
+                    clientX: event.clientX,
+                    clientY: event.clientY,
+                    button: 2
+                }));
+            }, 10);
+        }
     }
 
     _onOpenContextMenu(element) {
