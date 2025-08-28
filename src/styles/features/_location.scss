@@ -303,6 +303,11 @@
                     }
                 }
 
+                // Hide empty sections automatically when items are moved during grouping
+                .items-section:not(:has(.item)) {
+                    display: none;
+                }
+
                 .inventory-list {
                     flex: 1;
                 }

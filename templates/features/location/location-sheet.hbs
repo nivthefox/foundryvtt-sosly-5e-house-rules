@@ -62,7 +62,7 @@
 
                     <section class="items-list inventory-list" data-item-list="inventory">
                         {{#each inventory as |section|}}
-                        {{#if section.items.length}}
+                        {{#if (or section.items.length (eq section.dataset.type "all"))}}
                         <div class="items-section card" data-type="{{section.dataset.type}}">
                             <div class="items-header header">
                                 <h3 class="item-name">{{localize section.label}}</h3>
@@ -171,7 +171,7 @@
                             </ol>
                         </div>
                         {{else}}
-                        <div class="items-section card" data-type="{{section.dataset.type}}" hidden="">
+                        <div class="items-section card" data-type="{{section.dataset.type}}" {{#unless (eq section.dataset.type "all")}}hidden=""{{/unless}}>
                             <div class="items-header header">
                                 <h3 class="item-name">{{localize section.label}}</h3>
                                 <div class="item-header item-price">Price</div>

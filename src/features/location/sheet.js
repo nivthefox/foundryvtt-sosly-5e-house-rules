@@ -358,7 +358,7 @@ export class LocationSheet extends ActorSheet {
         });
     }
 
-_onSortItem(event, itemData) {
+    _onSortItem(event, itemData) {
         // Handle item sorting within the sheet
         const source = this.document.items.get(itemData._id);
         if (!source) {

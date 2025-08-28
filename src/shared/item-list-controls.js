@@ -84,7 +84,7 @@ export class ItemListControls {
                 </li>
                 <li>
                     <button type="button" class="unbutton filter-control active interface-only" data-action="group"
-                            data-tooltip="Group by Category" aria-label="Group by Category">
+                            data-tooltip="DND5E.GroupToggle" aria-label="${game.i18n.localize('DND5E.GroupToggle')}">
                         <i class="fas fa-layer-group"></i>
                     </button>
                 </li>
@@ -120,9 +120,11 @@ export class ItemListControls {
         controls.sort?.addEventListener('click', this._onToggleSort.bind(this));
         controls.group?.addEventListener('click', this._onToggleGroup.bind(this));
 
-        // Initialize sorting
+        // Initialize sorting and grouping
         this._initSorting();
+        this._initGrouping();
         this._applySorting();
+        this._applyGrouping();
     }
 
     // All the event handlers and methods - exact copies from Location sheet
@@ -183,9 +185,16 @@ export class ItemListControls {
         this._applySorting();
     }
 
-    _onToggleGroup() {
-        // TODO: Implement group functionality
-        console.log('Group button clicked - functionality not implemented yet');
+    async _onToggleGroup() {
+        const flag = `sheetPrefs.location.tabs.${this.target}.group`;
+        const currentValue = game.user.getFlag('dnd5e', flag);
+        const newValue = currentValue === false; // Toggle: undefined/true becomes false, false becomes true
+
+        await game.user.setFlag('dnd5e', flag, newValue);
+
+        // Update visual state
+        this._initGrouping();
+        this._applyGrouping();
     }
 
     _initSorting() {
@@ -260,6 +269,65 @@ export class ItemListControls {
             const shouldShow = filteredItems.some(item => item.id === itemId);
             element.style.display = shouldShow ? '' : 'none';
         });
+    }
+
+    /**
+     * Get the current grouping preference
+     * @returns {boolean}
+     */
+    get grouping() {
+        const flag = `sheetPrefs.location.tabs.${this.target}.group`;
+        return game.user.getFlag('dnd5e', flag) !== false; // Default to grouped (true)
+    }
+
+    /**
+     * Initialize the grouping button state
+     * @private
+     */
+    _initGrouping() {
+        const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
+        const groupControl = searchElement?.querySelector('[data-action="group"]');
+        if (groupControl) {
+            groupControl.classList.toggle('active', this.grouping);
+        }
+    }
+
+    /**
+     * Apply grouping by moving items between sections based on group state
+     * @private
+     */
+    _applyGrouping() {
+        const inventoryList = this.sheet.element[0]?.querySelector(`[data-item-list="${this.target}"]`);
+        if (!inventoryList) {
+            return;
+        }
+
+        const grouped = this.grouping;
+        const sections = {};
+
+        // Build map of section types to their containers
+        inventoryList.querySelectorAll('.items-section').forEach(section => {
+            const type = section.dataset.type;
+            const itemList = section.querySelector('.item-list');
+            if (type && itemList) {
+                sections[type] = itemList;
+            }
+        });
+
+        // Move items between sections based on grouping state
+        inventoryList.querySelectorAll('.item').forEach(item => {
+            const { grouped: groupedType, ungrouped: ungroupedType } = item.dataset;
+            const targetType = grouped ? groupedType : ungroupedType;
+            const targetSection = sections[targetType];
+
+            if (targetSection) {
+                targetSection.appendChild(item);
+            }
+        });
+
+        // Apply filters and sorting after regrouping
+        this._applyFilters();
+        this._applySorting();
     }
 
     _filterItems(items, filters) {
