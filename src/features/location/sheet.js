@@ -1,3 +1,5 @@
+import {ItemListControls} from '../../shared/item-list-controls.js';
+
 export class LocationSheet extends ActorSheet {
     static MODES = {
         PLAY: 1,
@@ -14,6 +16,7 @@ export class LocationSheet extends ActorSheet {
         super(object, options);
         this._mode = this.constructor.MODES.PLAY;
         this._expanded = new Set();
+        this.itemListControls = new ItemListControls(this, 'inventory');
     }
 
     get isEditable() {
@@ -37,7 +40,7 @@ export class LocationSheet extends ActorSheet {
                 }
             ],
             dragDrop: [
-                {dragSelector: '[data-drag]', dropSelector: null}
+                {dragSelector: '.item', dropSelector: null}
             ]
         });
     }
@@ -58,6 +61,9 @@ export class LocationSheet extends ActorSheet {
 
         context.features = this._prepareFeatures(context);
         await this._prepareItems(context);
+
+        // Add the filters property back to getData context
+        context.filters = this.itemListControls._filters;
 
         context.currencyLabels = {
             pp: game.i18n.localize('DND5E.CurrencyPP'),
@@ -183,7 +189,8 @@ export class LocationSheet extends ActorSheet {
                 value: item.system.uses?.value ?? item.system.uses?.max ?? 0,
                 max: item.system.uses?.max ?? 0
             },
-            capacity
+            capacity,
+            sort: item.sort || 0
         };
     }
 
@@ -195,9 +202,9 @@ export class LocationSheet extends ActorSheet {
         html.find('[data-action="currency"]').prop('disabled', false);
         html.find('input[name^="system.currency"]').prop('disabled', false);
 
+
         // Currency manager should always be available
         html.on('click', '[data-action="currency"]', this._onManageCurrency.bind(this));
-
 
         // Enable drag and drop for the sheet
         const form = html[0];
@@ -226,6 +233,13 @@ export class LocationSheet extends ActorSheet {
             html.find('.create-child').prop('disabled', false);
         }
 
+        // Initialize search controls
+        const placeholder = html.find('.item-list-controls-placeholder[data-for="inventory"]')[0];
+        if (placeholder) {
+            const searchControls = this.itemListControls.buildSearchControls();
+            placeholder.replaceWith(searchControls);
+            this.itemListControls.initializeSearchControls(searchControls);
+        }
 
         if (!this.isEditable) {
             return;
@@ -327,7 +341,6 @@ export class LocationSheet extends ActorSheet {
         return itemData;
     }
 
-
     _onDropStackConsumables(itemData, { container = null } = {}) {
         const droppedSourceId = itemData._stats?.compendiumSource ?? itemData.flags.core?.sourceId;
         if (itemData.type !== 'consumable' || !droppedSourceId) {
@@ -345,7 +358,7 @@ export class LocationSheet extends ActorSheet {
         });
     }
 
-    _onSortItem(event, itemData) {
+_onSortItem(event, itemData) {
         // Handle item sorting within the sheet
         const source = this.document.items.get(itemData._id);
         if (!source) {
@@ -370,7 +383,13 @@ export class LocationSheet extends ActorSheet {
             siblings: this.document.items.filter(i => i.id !== source.id)
         });
 
-        return this.document.updateEmbeddedDocuments('Item', sortUpdates);
+        // The sortUpdates needs to have _id fields for each update
+        const updateData = sortUpdates.map(update => ({
+            _id: update.target.id,
+            sort: update.update.sort
+        }));
+
+        return this.document.updateEmbeddedDocuments('Item', updateData);
     }
 
     async _onEditItem(event) {
@@ -451,11 +470,6 @@ export class LocationSheet extends ActorSheet {
         }
     }
 
-    _onManageCurrency(event) {
-        event.preventDefault();
-        new dnd5e.applications.CurrencyManager({ document: this.document }).render({ force: true });
-    }
-
     async _onQuantityChange(event) {
         event.preventDefault();
         const button = event.currentTarget;
@@ -477,19 +491,6 @@ export class LocationSheet extends ActorSheet {
 
         input.value = newValue;
         return item.update({ 'system.quantity': newValue });
-    }
-
-    _onToggleDescription(event) {
-        event.preventDefault();
-        const target = event.currentTarget;
-        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
-        const item = this.document.items.get(itemId);
-
-        if (!item) {
-            return;
-        }
-
-        return this._onExpand(target, item);
     }
 
     _onContextMenuClick(event) {
@@ -583,7 +584,14 @@ export class LocationSheet extends ActorSheet {
             case 'expand':
                 return this._onExpand(target, item);
             default:
+        }
+    }
 
+    async _onToggleDescription(event) {
+        const button = event.currentTarget;
+        const item = this.document.items.get(button.closest('.item').dataset.itemId);
+        if (item) {
+            return this._onExpand(button, item);
         }
     }
 
@@ -643,6 +651,11 @@ export class LocationSheet extends ActorSheet {
                 }
             }
         }
+    }
+
+    _onManageCurrency(event) {
+        event.preventDefault();
+        new dnd5e.applications.CurrencyManager({ document: this.document }).render({ force: true });
     }
 
     async _onDrop(event) {
@@ -770,7 +783,9 @@ export class LocationSheet extends ActorSheet {
 
     _onChangeTab(event, tabs, active) {
         super._onChangeTab(event, tabs, active);
-        const form = this.element[0].querySelector('form');
+
+        // Update the form class to match the active tab for styling
+        const form = this.form;
         if (form) {
             form.className = form.className.replace(/\btab-\w+/g, '');
             form.classList.add(`tab-${active}`);
