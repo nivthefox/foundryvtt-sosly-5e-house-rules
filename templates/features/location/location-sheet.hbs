@@ -187,7 +187,7 @@
                     </section>
 
                     <div class="bottom">
-                        <button type="button" class="create-child gold-button" aria-label="Create Item" {{#unless @root.editable}}disabled=""{{/unless}}>
+                        <button type="button" class="create-child gold-button" aria-label="Create Item" {{#if (eq owner true)}}{{else}}disabled=""{{/if}}>
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>

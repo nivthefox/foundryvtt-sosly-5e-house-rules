@@ -243,6 +243,7 @@ export class LocationSheet extends ActorSheet {
         // Currency manager should always be available
         html.on('click', '[data-action="currency"]', this._onManageCurrency.bind(this));
 
+
         // Enable drag and drop for the sheet
         const form = html[0];
         form.ondrop = this._onDrop.bind(this);
@@ -261,6 +262,16 @@ export class LocationSheet extends ActorSheet {
             onOpen: this._onOpenContextMenu.bind(this),
             jQuery: true
         });
+
+        // Create child button (works in both editable and non-editable modes)
+        html.find('.create-child').on('click', this._onCreateChild.bind(this));
+        
+        // WORKAROUND: Force enable create button for owners
+        // Template conditional appears to be overridden by D&D 5e system behavior
+        if (this.document.isOwner) {
+            html.find('.create-child').prop('disabled', false);
+        }
+
 
         if (!this.isEditable) {
             return;
@@ -693,6 +704,34 @@ export class LocationSheet extends ActorSheet {
     _onDragOver(event) {
         event.preventDefault();
         event.dataTransfer.dropEffect = 'move';
+    }
+
+    _onCreateChild(event) {
+        const activeTab = this._tabs?.[0]?.active ?? this.options.tabs[0].initial;
+
+        if (activeTab === 'features') {
+            return Item.implementation.createDialog({}, {
+                parent: this.document,
+                pack: this.document.pack,
+                types: ['feat']
+            });
+        }
+
+        // For inventory tab, allow all inventory item types
+        if (activeTab === 'inventory') {
+            const inventoryTypes = ['weapon', 'equipment', 'consumable', 'tool', 'container', 'loot'];
+            return Item.implementation.createDialog({}, {
+                parent: this.document,
+                pack: this.document.pack,
+                types: inventoryTypes
+            });
+        }
+
+        // Default to general item creation
+        return Item.implementation.createDialog({}, {
+            parent: this.document,
+            pack: this.document.pack
+        });
     }
 
     async _renderOuter() {
