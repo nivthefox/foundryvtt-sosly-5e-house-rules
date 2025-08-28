@@ -83,6 +83,10 @@ export class LocationSheet extends ActorSheet {
             this.itemListControls.initializeSearchControls(searchControls);
         }
 
+        if (this._mode === this.constructor.MODES.PLAY) {
+            html.find('.portrait').on('click', this._onShowPortrait.bind(this));
+        }
+
         if (!this.isEditable) {
             return;
         }
@@ -113,6 +117,19 @@ export class LocationSheet extends ActorSheet {
     _onManageCurrency(event) {
         event.preventDefault();
         new dnd5e.applications.CurrencyManager({ document: this.document }).render({ force: true });
+    }
+
+    _onShowPortrait() {
+        const img = this.document.img;
+        if (game.release.generation < 13) {
+            new ImagePopout(img, { title: this.document.name, uuid: this.document.uuid }).render(true);
+        } else {
+            new foundry.applications.apps.ImagePopout({
+                src: img,
+                uuid: this.document.uuid,
+                window: { title: this.document.name }
+            }).render({ force: true });
+        }
     }
 
     async _onDrop(event) {
