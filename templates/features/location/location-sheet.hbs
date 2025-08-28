@@ -66,10 +66,14 @@
                         <div class="items-section card" data-type="{{section.dataset.type}}">
                             <div class="items-header header">
                                 <h3 class="item-name">{{localize section.label}}</h3>
+                                {{#if (eq section.dataset.type "container")}}
+                                <div class="item-header item-capacity">Capacity</div>
+                                {{else}}
                                 <div class="item-header item-price">Price</div>
                                 <div class="item-header item-weight">Weight</div>
                                 <div class="item-header item-quantity">Quantity</div>
                                 <div class="item-header item-uses">Charges</div>
+                                {{/if}}
                                 <div class="item-header item-controls"></div>
                             </div>
 
@@ -88,6 +92,22 @@
                                             <div class="tags"></div>
                                         </div>
 
+                                        {{#if (eq item.type "container")}}
+                                        <div class="item-detail item-capacity">
+                                            {{#if item.capacity}}
+                                            <div class="meter progress" role="meter" aria-valuemin="0" aria-valuenow="{{item.capacity.pct}}"
+                                                 aria-valuetext="{{item.capacity.value}}" aria-valuemax="{{item.capacity.max}}"
+                                                 style="--bar-percentage: {{item.capacity.pct}}%">
+                                                <div class="label">
+                                                    <i class="fas fa-weight-hanging"></i>
+                                                    <span class="value">{{item.capacity.value}}</span>
+                                                    <span class="separator">&sol;</span>
+                                                    <span class="max">{{item.capacity.max}}</span>
+                                                </div>
+                                            </div>
+                                            {{/if}}
+                                        </div>
+                                        {{else}}
                                         <div class="item-detail item-price {{#unless item.system.price.value}}empty{{/unless}}">
                                             {{#if item.system.price.value}}
                                             {{item.system.price.value}}
@@ -120,6 +140,7 @@
                                             {{item.uses.value}}/{{item.uses.max}}
                                             {{/if}}
                                         </div>
+                                        {{/if}}
 
                                         <div class="item-detail item-controls">
                                             {{#if @root.editable}}

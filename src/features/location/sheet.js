@@ -54,7 +54,7 @@ export class LocationSheet extends ActorSheet {
         context.owner = this.document.isOwner;
 
         context.features = this._prepareFeatures(context);
-        this._prepareItems(context);
+        await this._prepareItems(context);
 
         context.currencyLabels = {
             pp: game.i18n.localize('DND5E.CurrencyPP'),
@@ -106,7 +106,7 @@ export class LocationSheet extends ActorSheet {
         return items.sort((a, b) => a.sort - b.sort);
     }
 
-    _prepareItems(context) {
+    async _prepareItems(context) {
         const inventory = {};
         const inventoryTypes = Object.entries(CONFIG.Item?.dataModels || {})
             .filter(([, model]) => model.metadata?.inventoryItem)
@@ -123,8 +123,9 @@ export class LocationSheet extends ActorSheet {
         // Handle empty items collection and populate inventory
         if (this.document.items?.size > 0) {
             for (const item of this.document.items.values()) {
-                if (item.type !== 'feat' && !item.system?.equipped) {
-                    const preparedItem = this._prepareItemContext(item, context);
+                // Only show items that are not in containers and not equipped feats
+                if (item.type !== 'feat' && !item.system?.equipped && !item.system?.container) {
+                    const preparedItem = await this._prepareItemContext(item, context);
                     if (inventory[item.type]) {
                         inventory[item.type].items.push(preparedItem);
                     }
@@ -147,7 +148,7 @@ export class LocationSheet extends ActorSheet {
     }
 
 
-    _prepareItemContext(item, context) {
+    async _prepareItemContext(item, context) {
         // Generate subtitle based on item type - with error handling
         let subtitle = '';
         try {
@@ -196,6 +197,16 @@ export class LocationSheet extends ActorSheet {
             subtitle = item.type || 'Item';
         }
 
+        // Compute capacity for containers
+        let capacity = null;
+        if (item.type === 'container') {
+            try {
+                capacity = await item.system.computeCapacity();
+            } catch (error) {
+                console.error('Error computing container capacity for', item.name, error);
+            }
+        }
+
         return {
             id: item.id,
             name: item.name,
@@ -212,7 +223,8 @@ export class LocationSheet extends ActorSheet {
             uses: {
                 value: item.system.uses?.value ?? item.system.uses?.max ?? 0,
                 max: item.system.uses?.max ?? 0
-            }
+            },
+            capacity
         };
     }
 
@@ -273,12 +285,75 @@ export class LocationSheet extends ActorSheet {
             return this._onSortItem(event, itemData);
         }
 
-        return this._onDropItemCreate(itemData);
+        return this._onDropItemCreate(item, event);
     }
 
-    async _onDropItemCreate(itemData) {
-        const items = itemData instanceof Array ? itemData : [itemData];
-        return this.document.createEmbeddedDocuments('Item', items);
+    async _onDropItemCreate(itemData, event) {
+        let items = itemData instanceof Array ? itemData : [itemData];
+
+        // DON'T convert Documents to objects - createWithContents needs the Documents to access contents!
+        // Only convert to filter properly
+        const itemsForFiltering = items.map(item => {
+            if (item instanceof foundry.abstract.Document) {
+                return item.toObject();
+            }
+            return item;
+        });
+
+        // Filter out items already in containers to avoid creating duplicates
+        const containers = new Set(itemsForFiltering.filter(i => i.type === 'container').map(i => i._id));
+        const filteredItems = [];
+        for (let i = 0; i < items.length; i++) {
+            const itemData = itemsForFiltering[i];
+            if (!containers.has(itemData.system.container)) {
+                filteredItems.push(items[i]); // Keep the original Document
+            }
+        }
+
+        // Use D&D 5e's createWithContents to properly handle container contents
+        const toCreate = await dnd5e.documents.Item5e.createWithContents(filteredItems, {
+            transformFirst: item => {
+                if (item instanceof foundry.abstract.Document) {
+                    item = item.toObject();
+                }
+                return this._onDropSingleItem(item, event);
+            }
+        });
+        
+        return dnd5e.documents.Item5e.createDocuments(toCreate, { parent: this.document, keepId: true });
+    }
+
+    async _onDropSingleItem(itemData, event) {
+        // Create a Consumable spell scroll on the Inventory tab
+        if (itemData.type === 'spell') {
+            const scroll = await dnd5e.documents.Item5e.createScrollFromSpell(itemData);
+            return scroll?.toObject?.() ?? false;
+        }
+
+        // Stack identical consumables when possible
+        const result = this._onDropStackConsumables(itemData);
+        if (result) {
+            return false; // Item was stacked, don't create new one
+        }
+
+        return itemData;
+    }
+
+    _onDropStackConsumables(itemData, { container = null } = {}) {
+        const droppedSourceId = itemData._stats?.compendiumSource ?? itemData.flags.core?.sourceId;
+        if (itemData.type !== 'consumable' || !droppedSourceId) {
+            return null;
+        }
+
+        const similarItem = this.document.sourcedItems?.get(droppedSourceId)
+            ?.filter(i => (i.system.container === container) && (i.name === itemData.name))?.first();
+        if (!similarItem) {
+            return null;
+        }
+
+        return similarItem.update({
+            'system.quantity': similarItem.system.quantity + Math.max(itemData.system.quantity, 1)
+        });
     }
 
     _onSortItem(event, itemData) {
@@ -420,7 +495,7 @@ export class LocationSheet extends ActorSheet {
         const target = event.currentTarget;
         const itemId = target.closest('[data-item-id]')?.dataset.itemId;
         const item = this.document.items.get(itemId);
-        
+
         if (!item) {
             return;
         }
@@ -499,7 +574,7 @@ export class LocationSheet extends ActorSheet {
             case 'expand':
                 return this._onExpand(target, item);
             default:
-                return;
+
         }
     }
 
@@ -507,7 +582,7 @@ export class LocationSheet extends ActorSheet {
         const li = target.closest('[data-item-id]');
         const expandIcon = li.querySelector('[data-toggle-description] i');
         const wrapper = li.querySelector('.item-description .wrapper');
-        
+
         if (this._expanded.has(item.id)) {
             // Remove the summary and collapse
             const summary = wrapper?.querySelector('.item-summary');
@@ -516,48 +591,46 @@ export class LocationSheet extends ActorSheet {
             }
             li.classList.add('collapsed');
             this._expanded.delete(item.id);
-            
+
             // Update the expand button icon
             if (expandIcon) {
                 expandIcon.classList.remove('fa-compress');
                 expandIcon.classList.add('fa-expand');
             }
-        } else {
-            if (wrapper) {
-                // Use D&D 5e's built-in chat data which includes all the right properties
-                const chatData = await item.getChatData({ secrets: this.document.isOwner });
-                
-                // Filter out negative status properties and malformed properties
-                const filteredProperties = chatData.properties?.filter(prop => {
-                    const propLower = prop.toLowerCase();
-                    return !propLower.includes('not equipped') && 
-                           !propLower.includes('not proficient') && 
-                           !propLower.includes('unequipped') &&
-                           !propLower.includes('undefined') &&
-                           prop.trim().length > 0;
-                }) || [];
+        } else if (wrapper) {
+            // Use D&D 5e's built-in chat data which includes all the right properties
+            const chatData = await item.getChatData({ secrets: this.document.isOwner });
 
-                // Only expand if there's either a description or properties to show
-                if (chatData.description || filteredProperties.length > 0) {
-                    const propertiesHTML = filteredProperties.length > 0 ? 
-                        `<div class="item-properties pills">${filteredProperties.map(prop => `<span class="tag pill transparent pill-xs">${prop}</span>`).join('')}</div>` : '';
+            // Filter out negative status properties and malformed properties
+            const filteredProperties = chatData.properties?.filter(prop => {
+                const propLower = prop.toLowerCase();
+                return !propLower.includes('not equipped')
+                           && !propLower.includes('not proficient')
+                           && !propLower.includes('unequipped')
+                           && !propLower.includes('undefined')
+                           && prop.trim().length > 0;
+            }) || [];
 
-                    const summaryHTML = `<div class="item-summary">
+            // Only expand if there's either a description or properties to show
+            if (chatData.description || filteredProperties.length > 0) {
+                const propertiesHTML = filteredProperties.length > 0
+                    ? `<div class="item-properties pills">${filteredProperties.map(prop => `<span class="tag pill transparent pill-xs">${prop}</span>`).join('')}</div>` : '';
+
+                const summaryHTML = `<div class="item-summary">
                                         ${chatData.description || ''}
                                     
                                         ${propertiesHTML}
                                     </div>`;
-                    const summary = $(summaryHTML);
-                    $(wrapper).append(summary.hide());
-                    summary.slideDown(200);
-                    li.classList.remove('collapsed');
-                    this._expanded.add(item.id);
-                    
-                    // Update the expand button icon
-                    if (expandIcon) {
-                        expandIcon.classList.remove('fa-expand');
-                        expandIcon.classList.add('fa-compress');
-                    }
+                const summary = $(summaryHTML);
+                $(wrapper).append(summary.hide());
+                summary.slideDown(200);
+                li.classList.remove('collapsed');
+                this._expanded.add(item.id);
+
+                // Update the expand button icon
+                if (expandIcon) {
+                    expandIcon.classList.remove('fa-expand');
+                    expandIcon.classList.add('fa-compress');
                 }
             }
         }
