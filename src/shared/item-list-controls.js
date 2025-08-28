@@ -1,18 +1,12 @@
-/**
- * Reusable Item List Controls Utility
- * Extracted from Location sheet implementation - exact copy of existing behavior
- */
 export class ItemListControls {
     constructor(sheet, target = 'inventory') {
         this.sheet = sheet;
         this.target = target;
 
-        // Initialize filter state - exact copy of Location sheet
         this._filters = {
             [target]: { name: '', properties: new Set() }
         };
 
-        // Sort modes - exact copy of Location sheet
         this._sortModes = {
             m: {
                 icon: 'fa-arrow-down-short-wide',
@@ -32,9 +26,6 @@ export class ItemListControls {
         return game.user.getFlag('dnd5e', flag) || 'm';
     }
 
-    /**
-     * Build search controls HTML - exact copy of Location sheet method
-     */
     buildSearchControls() {
         const search = document.createElement('search');
         search.setAttribute('aria-label', 'Search inventory');
@@ -94,9 +85,6 @@ export class ItemListControls {
         return search;
     }
 
-    /**
-     * Initialize search controls - exact copy of Location sheet method
-     */
     initializeSearchControls(searchElement) {
         if (!searchElement) {
             return;
@@ -120,14 +108,12 @@ export class ItemListControls {
         controls.sort?.addEventListener('click', this._onToggleSort.bind(this));
         controls.group?.addEventListener('click', this._onToggleGroup.bind(this));
 
-        // Initialize sorting and grouping
         this._initSorting();
         this._initGrouping();
         this._applySorting();
         this._applyGrouping();
     }
 
-    // All the event handlers and methods - exact copies from Location sheet
     _onToggleFilterItem(event) {
         const target = event.currentTarget;
         const { properties } = this._filters[this.target];
@@ -170,7 +156,6 @@ export class ItemListControls {
 
         await game.user.setFlag('dnd5e', flag, newMode);
 
-        // Update the icon immediately without re-rendering
         const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
         const sortControl = searchElement?.querySelector('[data-action="sort"]');
         const iconElement = sortControl?.querySelector('i');
@@ -188,11 +173,10 @@ export class ItemListControls {
     async _onToggleGroup() {
         const flag = `sheetPrefs.location.tabs.${this.target}.group`;
         const currentValue = game.user.getFlag('dnd5e', flag);
-        const newValue = currentValue === false; // Toggle: undefined/true becomes false, false becomes true
+        const newValue = currentValue === false;
 
         await game.user.setFlag('dnd5e', flag, newValue);
 
-        // Update visual state
         this._initGrouping();
         this._applyGrouping();
     }
@@ -224,7 +208,6 @@ export class ItemListControls {
             return;
         }
 
-        // Sort within each section, just like D&D 5e does
         const sections = inventoryList.querySelectorAll('.items-section .item-list');
         const { comparator } = this._sortModes[this.sortMode];
 
@@ -247,10 +230,8 @@ export class ItemListControls {
                 });
             });
 
-            // Sort items within this section (display only, don't modify data)
             items.sort(comparator);
 
-            // Reorder DOM elements within the section
             section.replaceChildren(...items.map(({ element }) => element));
         });
     }
@@ -271,19 +252,11 @@ export class ItemListControls {
         });
     }
 
-    /**
-     * Get the current grouping preference
-     * @returns {boolean}
-     */
     get grouping() {
         const flag = `sheetPrefs.location.tabs.${this.target}.group`;
-        return game.user.getFlag('dnd5e', flag) !== false; // Default to grouped (true)
+        return game.user.getFlag('dnd5e', flag) !== false;
     }
 
-    /**
-     * Initialize the grouping button state
-     * @private
-     */
     _initGrouping() {
         const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
         const groupControl = searchElement?.querySelector('[data-action="group"]');
@@ -292,10 +265,6 @@ export class ItemListControls {
         }
     }
 
-    /**
-     * Apply grouping by moving items between sections based on group state
-     * @private
-     */
     _applyGrouping() {
         const inventoryList = this.sheet.element[0]?.querySelector(`[data-item-list="${this.target}"]`);
         if (!inventoryList) {
@@ -305,7 +274,6 @@ export class ItemListControls {
         const grouped = this.grouping;
         const sections = {};
 
-        // Build map of section types to their containers
         inventoryList.querySelectorAll('.items-section').forEach(section => {
             const type = section.dataset.type;
             const itemList = section.querySelector('.item-list');
@@ -314,7 +282,6 @@ export class ItemListControls {
             }
         });
 
-        // Move items between sections based on grouping state
         inventoryList.querySelectorAll('.item').forEach(item => {
             const { grouped: groupedType, ungrouped: ungroupedType } = item.dataset;
             const targetType = grouped ? groupedType : ungroupedType;
@@ -325,7 +292,6 @@ export class ItemListControls {
             }
         });
 
-        // Apply filters and sorting after regrouping
         this._applyFilters();
         this._applySorting();
     }

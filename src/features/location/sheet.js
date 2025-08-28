@@ -62,7 +62,6 @@ export class LocationSheet extends ActorSheet {
         context.features = this._prepareFeatures(context);
         await this._prepareItems(context);
 
-        // Add the filters property back to getData context
         context.filters = this.itemListControls._filters;
 
         context.currencyLabels = {
@@ -73,7 +72,6 @@ export class LocationSheet extends ActorSheet {
             cp: game.i18n.localize('DND5E.CurrencyCP')
         };
 
-        // Ensure currency values default to 0
         if (!context.system.currency) {
             context.system.currency = {};
         }
@@ -107,10 +105,10 @@ export class LocationSheet extends ActorSheet {
         const items = [];
 
         for (const item of this.document.items.values()) {
-            // Location sheets only show actual feats, not equipped items
-            if (item.type === 'feat') {
-                items.push(this._prepareItemContext(item, context));
+            if (item.type !== 'feat') {
+                continue;
             }
+            items.push(this._prepareItemContext(item, context));
         }
 
         return items.sort((a, b) => a.sort - b.sort);
@@ -130,23 +128,25 @@ export class LocationSheet extends ActorSheet {
             };
         }
 
-        // Handle empty items collection and populate inventory
-        if (this.document.items?.size > 0) {
-            for (const item of this.document.items.values()) {
-                // Show all items except feats and items in containers
-                if (item.type !== 'feat' && !item.system?.container) {
-                    const preparedItem = await this._prepareItemContext(item, context);
-                    if (inventory[item.type]) {
-                        inventory[item.type].items.push(preparedItem);
-                    }
-                }
+        if (!this.document.items?.size) {
+            context.inventory = Object.values(inventory);
+            context.inventory.push({ label: 'DND5E.Contents', items: [], dataset: { type: 'all' } });
+            return;
+        }
+
+        for (const item of this.document.items.values()) {
+            if (item.type === 'feat' || item.system?.container) {
+                continue;
+            }
+            const preparedItem = await this._prepareItemContext(item, context);
+            if (inventory[item.type]) {
+                inventory[item.type].items.push(preparedItem);
             }
         }
 
         context.inventory = Object.values(inventory);
         context.inventory.push({ label: 'DND5E.Contents', items: [], dataset: { type: 'all' } });
 
-        // Add categories for inventory sections
         context.inventory.forEach(section => {
             section.categories = [
                 { activityPartial: 'dnd5e.activity-column-price' },
@@ -159,10 +159,8 @@ export class LocationSheet extends ActorSheet {
 
 
     async _prepareItemContext(item, context) {
-        // Generate subtitle using the same format as the NPC sheet
         const subtitle = [item.system.type?.label, item.isActive ? item.labels.activation : null].filterJoin(' &bull; ');
 
-        // Compute capacity for containers
         let capacity = null;
         if (item.type === 'container') {
             try {
@@ -198,42 +196,33 @@ export class LocationSheet extends ActorSheet {
     activateListeners(html) {
         super.activateListeners(html);
 
-        // Currency should always be interactive - force enable
         html.find('[data-action="currency"]').prop('disabled', false);
         html.find('input[name^="system.currency"]').prop('disabled', false);
 
 
-        // Currency manager should always be available
         html.on('click', '[data-action="currency"]', this._onManageCurrency.bind(this));
 
-        // Enable drag and drop for the sheet
         const form = html[0];
         form.ondrop = this._onDrop.bind(this);
         form.ondragover = this._onDragOver.bind(this);
         form.ondragstart = this._onDragStart.bind(this);
 
-        // Item interactions should work in both modes
         html.on('click', '[data-action]', this._onItemAction.bind(this));
         html.on('click', '[data-toggle-description]', this._onToggleDescription.bind(this));
         html.on('click', '[data-action="increase"]', this._onQuantityChange.bind(this));
         html.on('click', '[data-action="decrease"]', this._onQuantityChange.bind(this));
         html.on('click', '[data-context-menu]', this._onContextMenuClick.bind(this));
 
-        // Set up context menu for items
         new dnd5e.applications.ContextMenu5e(html[0], '.item', [], {
             onOpen: this._onOpenContextMenu.bind(this),
             jQuery: true
         });
 
-        // Create child button (works in both editable and non-editable modes)
         html.find('.create-child').on('click', this._onCreateChild.bind(this));
-        // WORKAROUND: Force enable create button for owners
-        // Template conditional appears to be overridden by D&D 5e system behavior
         if (this.document.isOwner) {
             html.find('.create-child').prop('disabled', false);
         }
 
-        // Initialize search controls
         const placeholder = html.find('.item-list-controls-placeholder[data-for="inventory"]')[0];
         if (placeholder) {
             const searchControls = this.itemListControls.buildSearchControls();
@@ -262,12 +251,10 @@ export class LocationSheet extends ActorSheet {
 
 
     _onDragStart(event) {
-        // Handle item dragging
         if (event.target.matches('[data-item-id] > .item-row')) {
             return this._onDragItem(event);
         }
 
-        // Fall back to default behavior
         return super._onDragStart?.(event);
     }
 
@@ -280,7 +267,6 @@ export class LocationSheet extends ActorSheet {
     }
 
     async _onDropItem(event, data) {
-        // Items can be dropped in both play and edit modes
         const item = await Item.implementation.fromDropData(data);
 
         if (this.document.uuid === item.parent?.uuid) {
@@ -293,8 +279,6 @@ export class LocationSheet extends ActorSheet {
     async _onDropItemCreate(itemData, event) {
         let items = itemData instanceof Array ? itemData : [itemData];
 
-        // DON'T convert Documents to objects - createWithContents needs the Documents to access contents!
-        // Only convert to filter properly
         const itemsForFiltering = items.map(item => {
             if (item instanceof foundry.abstract.Document) {
                 return item.toObject();
@@ -302,17 +286,15 @@ export class LocationSheet extends ActorSheet {
             return item;
         });
 
-        // Filter out items already in containers to avoid creating duplicates
         const containers = new Set(itemsForFiltering.filter(i => i.type === 'container').map(i => i._id));
         const filteredItems = [];
         for (let i = 0; i < items.length; i++) {
             const itemData = itemsForFiltering[i];
             if (!containers.has(itemData.system.container)) {
-                filteredItems.push(items[i]); // Keep the original Document
+                filteredItems.push(items[i]);
             }
         }
 
-        // Use D&D 5e's createWithContents to properly handle container contents
         const toCreate = await dnd5e.documents.Item5e.createWithContents(filteredItems, {
             transformFirst: item => {
                 if (item instanceof foundry.abstract.Document) {
@@ -326,16 +308,14 @@ export class LocationSheet extends ActorSheet {
     }
 
     async _onDropSingleItem(itemData, event) {
-        // Create a Consumable spell scroll on the Inventory tab
         if (itemData.type === 'spell') {
             const scroll = await dnd5e.documents.Item5e.createScrollFromSpell(itemData);
             return scroll?.toObject?.() ?? false;
         }
 
-        // Stack identical consumables when possible
         const result = this._onDropStackConsumables(itemData);
         if (result) {
-            return false; // Item was stacked, don't create new one
+            return false;
         }
 
         return itemData;
@@ -359,13 +339,11 @@ export class LocationSheet extends ActorSheet {
     }
 
     _onSortItem(event, itemData) {
-        // Handle item sorting within the sheet
         const source = this.document.items.get(itemData._id);
         if (!source) {
             return;
         }
 
-        // Get the drop target
         const dropTarget = event.target.closest('.item');
         if (!dropTarget) {
             return;
@@ -377,13 +355,11 @@ export class LocationSheet extends ActorSheet {
             return;
         }
 
-        // Perform the sort
         const sortUpdates = SortingHelpers.performIntegerSort(source, {
             target,
             siblings: this.document.items.filter(i => i.id !== source.id)
         });
 
-        // The sortUpdates needs to have _id fields for each update
         const updateData = sortUpdates.map(update => ({
             _id: update.target.id,
             sort: update.update.sort
@@ -419,7 +395,6 @@ export class LocationSheet extends ActorSheet {
     }
 
     _onItemAction(event) {
-        console.log('_onItemAction called', event);
         if (event.target.closest('select')) {
             return;
         }
@@ -430,32 +405,22 @@ export class LocationSheet extends ActorSheet {
         const action = event.currentTarget.dataset.action;
         const item = this.document.items.get(itemId);
 
-        console.log('Item action:', { itemId, action, item });
-        console.log('Available item methods:', item ? Object.getOwnPropertyNames(item) : 'no item');
 
         if (!item) {
-            console.warn('No item found for ID:', itemId);
             return;
         }
 
         switch (action) {
             case 'use':
-                console.log('Trying to use item:', item.name);
-                // Try different methods to display item to chat
                 if (typeof item.displayCard === 'function') {
-                    console.log('Using displayCard');
                     return item.displayCard();
                 }
                 if (typeof item.roll === 'function') {
-                    console.log('Using roll');
                     return item.roll();
                 }
                 if (typeof item.use === 'function') {
-                    console.log('Using use');
                     return item.use();
                 }
-                // Fallback to opening the sheet
-                console.log('Fallback to sheet');
                 return item.sheet.render(true);
             case 'edit':
             case 'editItem':
@@ -497,10 +462,8 @@ export class LocationSheet extends ActorSheet {
         event.preventDefault();
         event.stopPropagation();
 
-        // Trigger a right-click context menu event on the item
         const itemElement = event.target.closest('[data-item-id]');
         if (itemElement) {
-            // Use a slight delay to ensure the click event is fully processed first
             setTimeout(() => {
                 itemElement.dispatchEvent(new PointerEvent('contextmenu', {
                     bubbles: true,
@@ -601,7 +564,6 @@ export class LocationSheet extends ActorSheet {
         const wrapper = li.querySelector('.item-description .wrapper');
 
         if (this._expanded.has(item.id)) {
-            // Remove the summary and collapse
             const summary = wrapper?.querySelector('.item-summary');
             if (summary) {
                 $(summary).slideUp(200, () => summary.remove());
@@ -609,47 +571,48 @@ export class LocationSheet extends ActorSheet {
             li.classList.add('collapsed');
             this._expanded.delete(item.id);
 
-            // Update the expand button icon
             if (expandIcon) {
                 expandIcon.classList.remove('fa-compress');
                 expandIcon.classList.add('fa-expand');
             }
-        } else if (wrapper) {
-            // Use D&D 5e's built-in chat data which includes all the right properties
-            const chatData = await item.getChatData({ secrets: this.document.isOwner });
+            return;
+        }
 
-            // Filter out negative status properties and malformed properties
-            const filteredProperties = chatData.properties?.filter(prop => {
-                const propLower = prop.toLowerCase();
-                return !propLower.includes('not equipped')
-                           && !propLower.includes('not proficient')
-                           && !propLower.includes('unequipped')
-                           && !propLower.includes('undefined')
-                           && prop.trim().length > 0;
-            }) || [];
+        if (!wrapper) {
+            return;
+        }
 
-            // Only expand if there's either a description or properties to show
-            if (chatData.description || filteredProperties.length > 0) {
-                const propertiesHTML = filteredProperties.length > 0
-                    ? `<div class="item-properties pills">${filteredProperties.map(prop => `<span class="tag pill transparent pill-xs">${prop}</span>`).join('')}</div>` : '';
+        const chatData = await item.getChatData({ secrets: this.document.isOwner });
+        const filteredProperties = chatData.properties?.filter(prop => {
+            const propLower = prop.toLowerCase();
+            return !propLower.includes('not equipped')
+                       && !propLower.includes('not proficient')
+                       && !propLower.includes('unequipped')
+                       && !propLower.includes('undefined')
+                       && prop.trim().length > 0;
+        }) || [];
 
-                const summaryHTML = `<div class="item-summary">
-                                        ${chatData.description || ''}
-                                    
-                                        ${propertiesHTML}
-                                    </div>`;
-                const summary = $(summaryHTML);
-                $(wrapper).append(summary.hide());
-                summary.slideDown(200);
-                li.classList.remove('collapsed');
-                this._expanded.add(item.id);
+        if (!chatData.description && filteredProperties.length === 0) {
+            return;
+        }
 
-                // Update the expand button icon
-                if (expandIcon) {
-                    expandIcon.classList.remove('fa-expand');
-                    expandIcon.classList.add('fa-compress');
-                }
-            }
+        const propertiesHTML = filteredProperties.length > 0
+            ? `<div class="item-properties pills">${filteredProperties.map(prop => `<span class="tag pill transparent pill-xs">${prop}</span>`).join('')}</div>` : '';
+
+        const summaryHTML = `<div class="item-summary">
+                                ${chatData.description || ''}
+                            
+                                ${propertiesHTML}
+                            </div>`;
+        const summary = $(summaryHTML);
+        $(wrapper).append(summary.hide());
+        summary.slideDown(200);
+        li.classList.remove('collapsed');
+        this._expanded.add(item.id);
+
+        if (expandIcon) {
+            expandIcon.classList.remove('fa-expand');
+            expandIcon.classList.add('fa-compress');
         }
     }
 
@@ -684,7 +647,6 @@ export class LocationSheet extends ActorSheet {
             });
         }
 
-        // For inventory tab, allow all inventory item types
         if (activeTab === 'inventory') {
             const inventoryTypes = ['weapon', 'equipment', 'consumable', 'tool', 'container', 'loot'];
             return Item.implementation.createDialog({}, {
@@ -694,7 +656,6 @@ export class LocationSheet extends ActorSheet {
             });
         }
 
-        // Default to general item creation
         return Item.implementation.createDialog({}, {
             parent: this.document,
             pack: this.document.pack
