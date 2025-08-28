@@ -28,7 +28,7 @@ export class LocationSheet extends ActorSheet {
             minWidth: 600,
             minHeight: 500,
             resizable: true,
-            scrollY: ['.sheet-body', '.tab.active', '.inventory-list'],
+            scrollY: ['.sheet-body'],
             tabs: [
                 {
                     navSelector: '.tabs',
