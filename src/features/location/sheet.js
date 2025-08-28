@@ -153,53 +153,8 @@ export class LocationSheet extends ActorSheet {
 
 
     async _prepareItemContext(item, context) {
-        // Generate subtitle based on item type - with error handling
-        let subtitle = '';
-        try {
-            if (item.type === 'weapon') {
-                subtitle = game.i18n.localize('DND5E.ItemTypeWeapon') || 'Weapon';
-                if (item.system.weaponType && CONFIG.DND5E.weaponTypes?.[item.system.weaponType]) {
-                    const weaponTypeLabel = CONFIG.DND5E.weaponTypes[item.system.weaponType];
-                    if (typeof weaponTypeLabel === 'string') {
-                        subtitle += ` (${game.i18n.localize(weaponTypeLabel) || weaponTypeLabel})`;
-                    }
-                }
-            } else if (item.type === 'equipment') {
-                subtitle = game.i18n.localize('DND5E.ItemTypeEquipment') || 'Equipment';
-                if (item.system.type?.value && CONFIG.DND5E.equipmentTypes?.[item.system.type.value]) {
-                    const equipTypeLabel = CONFIG.DND5E.equipmentTypes[item.system.type.value];
-                    if (typeof equipTypeLabel === 'string') {
-                        subtitle += ` (${game.i18n.localize(equipTypeLabel) || equipTypeLabel})`;
-                    }
-                }
-            } else if (item.type === 'consumable') {
-                subtitle = game.i18n.localize('DND5E.ItemTypeConsumable') || 'Consumable';
-                if (item.system.type?.value && CONFIG.DND5E.consumableTypes?.[item.system.type.value]) {
-                    const consumableTypeLabel = CONFIG.DND5E.consumableTypes[item.system.type.value];
-                    if (typeof consumableTypeLabel === 'string') {
-                        subtitle += ` (${game.i18n.localize(consumableTypeLabel) || consumableTypeLabel})`;
-                    }
-                }
-            } else if (item.type === 'tool') {
-                subtitle = game.i18n.localize('DND5E.ItemTypeTool') || 'Tool';
-            } else if (item.type === 'loot') {
-                subtitle = game.i18n.localize('DND5E.ItemTypeLoot') || 'Loot';
-            } else {
-                // Fallback for unknown types
-                subtitle = item.type.charAt(0).toUpperCase() + item.type.slice(1);
-                try {
-                    const localized = game.i18n.localize(`DND5E.ItemType${item.type.charAt(0).toUpperCase() + item.type.slice(1)}`);
-                    if (localized && !localized.startsWith('DND5E.ItemType')) {
-                        subtitle = localized;
-                    }
-                } catch (e) {
-                    // Use fallback
-                }
-            }
-        } catch (error) {
-            console.error('Error preparing item subtitle for', item.name, error);
-            subtitle = item.type || 'Item';
-        }
+        // Generate subtitle using the same format as the NPC sheet
+        const subtitle = [item.system.type?.label, item.isActive ? item.labels.activation : null].filterJoin(' &bull; ');
 
         // Compute capacity for containers
         let capacity = null;
@@ -265,7 +220,6 @@ export class LocationSheet extends ActorSheet {
 
         // Create child button (works in both editable and non-editable modes)
         html.find('.create-child').on('click', this._onCreateChild.bind(this));
-        
         // WORKAROUND: Force enable create button for owners
         // Template conditional appears to be overridden by D&D 5e system behavior
         if (this.document.isOwner) {
