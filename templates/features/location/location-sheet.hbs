@@ -108,7 +108,7 @@
                                 {{#each section.items as |item|}}
                                 <li class="item collapsible collapsed" data-item-id="{{item.id}}" data-entry-id="{{item.id}}" data-item-name="{{item.name}}" data-item-sort="{{item.sort}}" data-ungrouped="all" data-grouped="{{../dataset.type}}" data-uuid="Actor.{{../../../actor._id}}.Item.{{item.id}}">
                                     <div class="item-row" draggable="true">
-                                        <div class="item-name item-action item-tooltip rollable" role="button" data-action="use" aria-label="{{item.name}}" data-tooltip-class="dnd5e2 dnd5e-tooltip item-tooltip" data-tooltip-direction="LEFT">
+                                        <div class="item-name item-action item-tooltip rollable" role="button" data-action="{{#if (eq item.type 'container')}}editItem{{else}}use{{/if}}" aria-label="{{item.name}}" data-tooltip-class="dnd5e2 dnd5e-tooltip item-tooltip" data-tooltip-direction="LEFT">
                                             <img class="item-image gold-icon" src="{{item.img}}" alt="{{item.name}}" draggable="false">
                                             <div class="name name-stacked">
                                                 <span class="title">{{item.name}}</span>
