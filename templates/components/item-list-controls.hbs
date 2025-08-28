@@ -1,0 +1,53 @@
+{{!-- 
+  Reusable Item List Controls - inner content only
+--}}
+
+<input type="text" class="interface-only" placeholder="Search inventory">
+<ul class="unlist controls">
+    <li>
+        <button type="button" class="unbutton filter-control interface-only" data-action="clear"
+                data-tooltip="DND5E.FilterClear" aria-label="{{localize 'DND5E.FilterClear'}}">
+            <i class="fas fa-xmark"></i>
+        </button>
+    </li>
+    <li class="dropdown">
+        <button type="button" class="unbutton filter-control filter interface-only" data-action="filter"
+                aria-label="{{localize 'DND5E.Filter'}}">
+            <i class="fas fa-filter"></i>
+        </button>
+        <ul class="filter-list unlist">
+            <li>
+                <button type="button" class="filter-item interface-only" data-filter="action">
+                    {{localize 'DND5E.Action'}}
+                </button>
+            </li>
+            <li>
+                <button type="button" class="filter-item interface-only" data-filter="bonus">
+                    {{localize 'DND5E.BonusAction'}}
+                </button>
+            </li>
+            <li>
+                <button type="button" class="filter-item interface-only" data-filter="reaction">
+                    {{localize 'DND5E.Reaction'}}
+                </button>
+            </li>
+            <li>
+                <button type="button" class="filter-item interface-only" data-filter="magical">
+                Magical
+                </button>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <button type="button" class="unbutton filter-control active interface-only" data-action="sort"
+                data-tooltip="SIDEBAR.SortModeManual" aria-label="{{localize 'SIDEBAR.SortModeManual'}}">
+            <i class="fas fa-arrow-down-short-wide"></i>
+        </button>
+    </li>
+    <li>
+        <button type="button" class="unbutton filter-control active interface-only" data-action="group"
+                data-tooltip="DND5E.GroupToggle" aria-label="{{localize 'DND5E.GroupToggle'}}">
+            <i class="fas fa-layer-group"></i>
+        </button>
+    </li>
+</ul>

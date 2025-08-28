@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../module.json';
+
 export class ItemListControls {
     constructor(sheet, target = 'inventory') {
         this.sheet = sheet;
@@ -26,61 +28,17 @@ export class ItemListControls {
         return game.user.getFlag('dnd5e', flag) || 'm';
     }
 
-    buildSearchControls() {
+    async buildSearchControls() {
+        const templateData = {
+            target: this.target
+        };
+
+        const html = await renderTemplate(`modules/${module_id}/templates/components/item-list-controls.hbs`, templateData);
+
         const search = document.createElement('search');
         search.setAttribute('aria-label', 'Search inventory');
         search.setAttribute('data-for', this.target);
-        search.innerHTML = `
-            <input type="text" class="interface-only" placeholder="Search inventory">
-            <ul class="unlist controls">
-                <li>
-                    <button type="button" class="unbutton filter-control interface-only" data-action="clear"
-                            data-tooltip="DND5E.FilterClear" aria-label="${game.i18n.localize('DND5E.FilterClear')}">
-                        <i class="fas fa-xmark"></i>
-                    </button>
-                </li>
-                <li class="dropdown">
-                    <button type="button" class="unbutton filter-control filter interface-only" data-action="filter"
-                            aria-label="${game.i18n.localize('DND5E.Filter')}">
-                        <i class="fas fa-filter"></i>
-                    </button>
-                    <ul class="filter-list unlist">
-                        <li>
-                            <button type="button" class="filter-item interface-only" data-filter="action">
-                                ${game.i18n.localize('DND5E.Action')}
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="filter-item interface-only" data-filter="bonus">
-                                ${game.i18n.localize('DND5E.BonusAction')}
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="filter-item interface-only" data-filter="reaction">
-                                ${game.i18n.localize('DND5E.Reaction')}
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="filter-item interface-only" data-filter="magical">
-                                Magical
-                            </button>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <button type="button" class="unbutton filter-control active interface-only" data-action="sort"
-                            data-tooltip="SIDEBAR.SortModeManual" aria-label="${game.i18n.localize('SIDEBAR.SortModeManual')}">
-                        <i class="fas fa-arrow-down-short-wide"></i>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="unbutton filter-control active interface-only" data-action="group"
-                            data-tooltip="DND5E.GroupToggle" aria-label="${game.i18n.localize('DND5E.GroupToggle')}">
-                        <i class="fas fa-layer-group"></i>
-                    </button>
-                </li>
-            </ul>
-        `;
+        search.innerHTML = html;
 
         return search;
     }

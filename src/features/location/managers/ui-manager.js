@@ -1,3 +1,5 @@
+import {id as module_id} from '../../../../module.json';
+
 export class LocationUIManager {
     constructor(sheet) {
         this.sheet = sheet;
@@ -17,7 +19,7 @@ export class LocationUIManager {
         }
 
         this.addModeToggle(header);
-        this.addHeaderElements(htmlElement);
+        await this.addHeaderElements(htmlElement);
         this.addWarningsButton(header);
         this.setupHeaderButtons(header);
 
@@ -39,18 +41,13 @@ export class LocationUIManager {
         header.insertAdjacentElement('afterbegin', toggle);
     }
 
-    addHeaderElements(htmlElement) {
+    async addHeaderElements(htmlElement) {
+        const html = await renderTemplate(`modules/${module_id}/templates/features/location/header-elements.hbs`, {});
+
         const elements = document.createElement('div');
         elements.classList.add('header-elements');
-        elements.innerHTML = `
-            <div class="source-book">
-                <a class="config-button" data-action="source" data-tooltip="DND5E.SOURCE.Action.Configure"
-                   aria-label="${game.i18n.localize('DND5E.SOURCE.Action.Configure')}" hidden="">
-                    <i class="fas fa-cog"></i>
-                </a>
-                <span></span>
-            </div>
-        `;
+        elements.innerHTML = html;
+
         htmlElement.querySelector('.window-title')?.insertAdjacentElement('afterend', elements);
     }
 

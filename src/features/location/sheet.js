@@ -1,4 +1,4 @@
-import {ItemListControls} from '../../shared/item-list-controls.js';
+import {ItemListControls} from '../../components/item-list-controls/item-list-controls.js';
 import {LocationItemManager} from './managers/item-manager.js';
 import {LocationDataManager} from './managers/data-manager.js';
 import {LocationUIManager} from './managers/ui-manager.js';
@@ -74,12 +74,7 @@ export class LocationSheet extends ActorSheet {
 
         this.managers.items.activateListeners(html);
 
-        const placeholder = html.find('.item-list-controls-placeholder[data-for="inventory"]')[0];
-        if (placeholder) {
-            const searchControls = this.itemListControls.buildSearchControls();
-            placeholder.replaceWith(searchControls);
-            this.itemListControls.initializeSearchControls(searchControls);
-        }
+        this._setupSearchControls(html);
 
         if (this._mode === this.constructor.MODES.PLAY) {
             html.find('.portrait').on('click', this._onShowPortrait.bind(this));
@@ -94,6 +89,15 @@ export class LocationSheet extends ActorSheet {
         }
 
         html.on('change', '[data-field]', this._onChangeField.bind(this));
+    }
+
+    async _setupSearchControls(html) {
+        const placeholder = html.find('.item-list-controls-placeholder[data-for="inventory"]')[0];
+        if (placeholder) {
+            const searchControls = await this.itemListControls.buildSearchControls();
+            placeholder.replaceWith(searchControls);
+            this.itemListControls.initializeSearchControls(searchControls);
+        }
     }
 
     async _onChangeField(event) {
