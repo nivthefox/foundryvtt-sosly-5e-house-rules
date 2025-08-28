@@ -54,6 +54,24 @@ export function canRemainConscious(exhaustionLevel) {
 }
 
 /**
+ * Determine if imperiled mechanics should apply to this actor
+ * @param {string} actorType - Type of actor ('character', 'npc', etc.)
+ * @param {boolean} isLinkedToken - Whether the actor has linked tokens
+ * @returns {boolean} True if imperiled mechanics should apply
+ */
+export function shouldApplyImperiled(actorType, isLinkedToken) {
+    if (actorType === 'vehicle' || actorType === 'group') {
+        return false;
+    }
+
+    if (actorType === 'npc' && !isLinkedToken) {
+        return false;
+    }
+
+    return true;
+}
+
+/**
  * Generate status message for imperiled state change
  * @param {string} actorName - Name of the actor
  * @param {string} action - Type of action ('gained', 'removed')

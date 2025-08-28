@@ -7,7 +7,8 @@ import {
     shouldOfferImperiledChoice,
     shouldRemoveImperiled,
     calculateImperiledExhaustion,
-    generateImperiledMessage
+    generateImperiledMessage,
+    shouldApplyImperiled
 } from './calculations';
 import { showImperiledDialog, applyUnconscious, createImperiledChatMessage } from './ui';
 
@@ -22,7 +23,7 @@ export async function handleImperiledUpdate(actor, changed, options, userId) {
     // Only process for the user who triggered the update
     if (game.user.id !== userId) return;
 
-    if (actor.type === 'vehicle' || actor.type === 'group') {
+    if (!shouldApplyImperiled(actor.type, actor.prototypeToken.actorLink)) {
         return;
     }
 

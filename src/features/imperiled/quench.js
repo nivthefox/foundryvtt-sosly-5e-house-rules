@@ -7,7 +7,8 @@ import {
     shouldRemoveImperiled,
     calculateImperiledExhaustion,
     canRemainConscious,
-    generateImperiledMessage
+    generateImperiledMessage,
+    shouldApplyImperiled
 } from './calculations';
 
 export function registerImperiledTests() {
@@ -121,6 +122,31 @@ export function registerImperiledTests() {
                     it('should handle empty names', function() {
                         const result = generateImperiledMessage('', 'gained');
                         assert.equal(result, ' has gained a level of Exhaustion to remain conscious!');
+                    });
+                });
+
+                describe('shouldApplyImperiled', function() {
+                    it('should apply to character actors', function() {
+                        assert.equal(shouldApplyImperiled('character', true), true);
+                        assert.equal(shouldApplyImperiled('character', false), true);
+                    });
+
+                    it('should apply to NPCs with linked tokens', function() {
+                        assert.equal(shouldApplyImperiled('npc', true), true);
+                    });
+
+                    it('should not apply to NPCs with unlinked tokens', function() {
+                        assert.equal(shouldApplyImperiled('npc', false), false);
+                    });
+
+                    it('should not apply to vehicle actors', function() {
+                        assert.equal(shouldApplyImperiled('vehicle', true), false);
+                        assert.equal(shouldApplyImperiled('vehicle', false), false);
+                    });
+
+                    it('should not apply to group actors', function() {
+                        assert.equal(shouldApplyImperiled('group', true), false);
+                        assert.equal(shouldApplyImperiled('group', false), false);
                     });
                 });
             },
