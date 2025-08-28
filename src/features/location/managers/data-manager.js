@@ -120,22 +120,21 @@ export class LocationDataManager {
     }
 
     prepareCurrencyLabels(context) {
-        context.currencyLabels = {
-            pp: game.i18n.localize('DND5E.CurrencyPP'),
-            gp: game.i18n.localize('DND5E.CurrencyGP'),
-            ep: game.i18n.localize('DND5E.CurrencyEP'),
-            sp: game.i18n.localize('DND5E.CurrencySP'),
-            cp: game.i18n.localize('DND5E.CurrencyCP')
-        };
+        context.currencyLabels = {};
+
+        for (const denomination of Object.keys(CONFIG.DND5E.currencies)) {
+            const config = CONFIG.DND5E.currencies[denomination];
+            context.currencyLabels[denomination] = game.i18n.localize(config.label);
+        }
 
         if (!context.system.currency) {
             context.system.currency = {};
         }
-        ['pp', 'gp', 'ep', 'sp', 'cp'].forEach(denomination => {
+        for (const denomination of Object.keys(CONFIG.DND5E.currencies)) {
             if (context.system.currency[denomination] === undefined) {
                 context.system.currency[denomination] = 0;
             }
-        });
+        }
     }
 
     prepareTypeChoices(context) {

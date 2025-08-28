@@ -78,7 +78,7 @@
                         {{#each currencyLabels as |label denomination|}}
                         <label aria-label="{{label}}">
                             <i class="currency {{denomination}}" data-tooltip="{{label}}"></i>
-                            <input type="text" class="uninput" name="system.currency.{{denomination}}" value="{{lookup @root.system.currency denomination}}" data-dtype="Number" inputmode="numeric" pattern="[0-9+=\-]*">
+                            <input type="text" class="uninput" name="system.currency.{{denomination}}" value="{{lookup @root.system.currency denomination}}" data-field="system.currency.{{denomination}}" data-dtype="Number" inputmode="numeric" pattern="[0-9+=\-]*">
                         </label>
                         {{/each}}
                     </section>

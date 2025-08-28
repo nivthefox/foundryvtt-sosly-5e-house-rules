@@ -1,3 +1,5 @@
+const { MappingField } = dnd5e.dataModels.fields;
+
 export class LocationData extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         const fields = foundry.data.fields;
@@ -32,47 +34,16 @@ export class LocationData extends foundry.abstract.TypeDataModel {
                 })
             }),
 
-            currency: new fields.SchemaField({
-                pp: new fields.NumberField({
-                    required: true,
-                    nullable: false,
-                    integer: true,
-                    initial: 0,
-                    min: 0,
-                    label: 'DND5E.CurrencyPP'
-                }),
-                gp: new fields.NumberField({
-                    required: true,
-                    nullable: false,
-                    integer: true,
-                    initial: 0,
-                    min: 0,
-                    label: 'DND5E.CurrencyGP'
-                }),
-                ep: new fields.NumberField({
-                    required: true,
-                    nullable: false,
-                    integer: true,
-                    initial: 0,
-                    min: 0,
-                    label: 'DND5E.CurrencyEP'
-                }),
-                sp: new fields.NumberField({
-                    required: true,
-                    nullable: false,
-                    integer: true,
-                    initial: 0,
-                    min: 0,
-                    label: 'DND5E.CurrencySP'
-                }),
-                cp: new fields.NumberField({
-                    required: true,
-                    nullable: false,
-                    integer: true,
-                    initial: 0,
-                    min: 0,
-                    label: 'DND5E.CurrencyCP'
-                })
+            currency: new MappingField(new fields.NumberField({
+                required: true,
+                nullable: false,
+                integer: true,
+                min: 0,
+                initial: 0
+            }), {
+                initialKeys: CONFIG.DND5E.currencies,
+                initialKeysOnly: true,
+                label: 'DND5E.Currency'
             }),
 
             present: new fields.ArrayField(
@@ -122,9 +93,11 @@ export class LocationData extends foundry.abstract.TypeDataModel {
     }
 
     prepareCurrencyValue() {
-        const currency = this.currency;
-        this.totalValue = (currency.pp * 10) + currency.gp + (currency.ep * 0.5)
-            + (currency.sp * 0.1) + (currency.cp * 0.01);
+        this.totalValue = 0;
+        for (const [denomination, amount] of Object.entries(this.currency)) {
+            const conversion = CONFIG.DND5E.currencies[denomination]?.conversion ?? 1;
+            this.totalValue += amount / conversion;
+        }
     }
 
     async addActor(actorId) {

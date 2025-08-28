@@ -87,6 +87,10 @@ export class LocationSheet extends ActorSheet {
             html.find('.portrait').on('click', this._onShowPortrait.bind(this));
         }
 
+        if (this.document.isOwner) {
+            html.on('change', 'input[data-field^="system.currency"]', this._onChangeField.bind(this));
+        }
+
         if (!this.isEditable) {
             return;
         }
