@@ -10,9 +10,7 @@ export class LocationSheet extends ActorSheet {
     };
 
     static TABS = [
-        { tab: 'inventory', label: 'sosly.location.tabs.inventory', svg: 'backpack' },
-        { tab: 'features', label: 'sosly.location.tabs.features', icon: 'fas fa-list' },
-        { tab: 'details', label: 'sosly.location.tabs.details', icon: 'fas fa-feather' }
+        { tab: 'inventory', label: 'sosly.location.tabs.inventory', svg: 'backpack' }
     ];
 
     constructor(object, options) {

@@ -17,30 +17,16 @@ export class LocationDataManager {
         context.editable = this.sheet.isEditable;
         context.owner = this.document.isOwner;
 
-        context.features = this.prepareFeatures(context);
         await this.prepareItems(context);
 
         context.filters = this.sheet.itemListControls._filters;
 
         this.prepareCurrencyLabels(context);
         this.prepareTypeChoices(context);
-        await this.prepareDescription(context);
 
         return context;
     }
 
-    prepareFeatures(context) {
-        const items = [];
-
-        for (const item of this.document.items.values()) {
-            if (item.type !== 'feat') {
-                continue;
-            }
-            items.push(this.prepareItemContext(item, context));
-        }
-
-        return items.sort((a, b) => a.sort - b.sort);
-    }
 
     async prepareItems(context) {
         const inventory = {};
@@ -151,16 +137,4 @@ export class LocationDataManager {
             : '';
     }
 
-    async prepareDescription(context) {
-        const system = this.document.system;
-        const description = system.details.description || '<p/>';
-        context.enrichedDescription = await TextEditor.enrichHTML(description, {
-            secrets: this.document.isOwner,
-            documents: true,
-            links: true,
-            rolls: true,
-            rollData: context.rollData,
-            async: true
-        });
-    }
 }

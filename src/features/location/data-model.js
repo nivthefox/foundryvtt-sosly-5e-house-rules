@@ -11,11 +11,6 @@ export class LocationData extends foundry.abstract.TypeDataModel {
             }),
 
             details: new fields.SchemaField({
-                description: new fields.HTMLField({
-                    required: false,
-                    blank: true,
-                    label: 'sosly.location.description'
-                }),
                 type: new fields.StringField({
                     required: false,
                     blank: true,
