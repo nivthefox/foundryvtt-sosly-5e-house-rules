@@ -17,11 +17,21 @@ export class LocationItemManager {
     }
 
     activateListeners(html) {
-        html.on('click', '[data-action]', this.onItemAction.bind(this));
         html.on('click', '[data-toggle-description]', this.onToggleDescription.bind(this));
         html.on('click', '[data-action="increase"]', this.onQuantityChange.bind(this));
         html.on('click', '[data-action="decrease"]', this.onQuantityChange.bind(this));
         html.on('click', '[data-context-menu]', this.onContextMenuClick.bind(this));
+
+        html.on('click', '[data-action="editItem"]', event => {
+            event.stopImmediatePropagation();
+            this.onEditItem(event);
+        });
+        html.on('click', '[data-action="deleteItem"]', event => {
+            event.stopImmediatePropagation();
+            this.onDeleteItem(event);
+        });
+
+        html.on('click', '[data-action]', this.onItemAction.bind(this));
 
         new dnd5e.applications.ContextMenu5e(html[0], '.item', [], {
             onOpen: this.onOpenContextMenu.bind(this),
@@ -32,13 +42,6 @@ export class LocationItemManager {
         if (this.document.isOwner) {
             html.find('.create-child').prop('disabled', false);
         }
-
-        if (!this.isEditable) {
-            return;
-        }
-
-        html.on('click', '[data-action="editItem"]', this.onEditItem.bind(this));
-        html.on('click', '[data-action="deleteItem"]', this.onDeleteItem.bind(this));
     }
 
     onDragStart(event) {
@@ -133,7 +136,7 @@ export class LocationItemManager {
             itemData.system.container = containerId;
         }
 
-        const result = this.onDropStackConsumables(itemData, { container: containerId });
+        const result = await this.onDropStackConsumables(itemData, { container: containerId });
         if (result) {
             return false;
         }
@@ -242,12 +245,10 @@ export class LocationItemManager {
                 }
                 return item.sheet.render(true);
             case 'edit':
-            case 'editItem':
                 return item.sheet.render(true);
             case 'view':
                 return item.sheet.render(true);
             case 'delete':
-            case 'deleteItem':
                 return item.delete();
             default:
                 return item.sheet.render(true);
