@@ -6,9 +6,6 @@
     min-height: 500px;
 
     .window-content {
-        background: url(/systems/dnd5e/ui/texture1.webp) no-repeat top center / auto 770px,
-            var(--dnd5e-color-parchment) url(/systems/dnd5e/ui/texture2.webp)
-            no-repeat bottom center / auto 704px;
         overflow-y: hidden;
         height: 100%;
     }
@@ -334,6 +331,17 @@
             height: var(--form-field-height);
             display: flex;
             align-items: center;
+        }
+    }
+
+}
+
+:is(.dnd5e-theme-light, .theme-light) {
+    .dnd5e2.sheet.actor.location {
+        .window-content {
+            background: url(/systems/dnd5e/ui/texture1.webp) no-repeat top center / auto 770px,
+                var(--dnd5e-color-parchment) url(/systems/dnd5e/ui/texture2.webp)
+                no-repeat bottom center / auto 704px;
         }
     }
 }
