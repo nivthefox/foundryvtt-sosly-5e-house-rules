@@ -153,6 +153,10 @@ export class LocationSheet extends ActorSheet {
         event.dataTransfer.dropEffect = 'move';
     }
 
+    async _onDropStackConsumables(itemData, options = {}) {
+        return this.managers.items.onDropStackConsumables(itemData, options);
+    }
+
 
     async _renderOuter() {
         return await this.managers.ui.renderOuter();

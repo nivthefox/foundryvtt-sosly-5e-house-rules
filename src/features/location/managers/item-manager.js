@@ -58,15 +58,41 @@ export class LocationItemManager {
 
     async onDropItem(event, data) {
         const item = await Item.implementation.fromDropData(data);
+        if (!item) {
+            return false;
+        }
 
-        if (this.document.uuid === item.parent?.uuid) {
+        const dropTarget = event.target.closest('[data-item-id]');
+        const targetId = dropTarget?.dataset.itemId;
+        const targetItem = targetId ? this.document.items.get(targetId) : null;
+        let containerId = null;
+
+        if (targetItem?.type === 'container' && targetItem.id !== item.id) {
+            containerId = targetItem.id;
+        }
+
+        const parentContainers = await this.getParentContainers(containerId);
+        if (containerId && (item.id === containerId || parentContainers.includes(item.id))) {
+            ui.notifications.error('DND5E.ContainerRecursiveError', { localize: true });
+            return false;
+        }
+
+        if (item.parent?.id !== this.document.id) {
+            return this.onDropItemCreate(item, event, containerId);
+        }
+
+        if (item.system.container !== containerId) {
+            return item.update({'system.container': containerId});
+        }
+
+        if (!containerId && dropTarget) {
             return this.onSortItem(event, item.toObject());
         }
 
-        return this.onDropItemCreate(item, event);
+        return false;
     }
 
-    async onDropItemCreate(itemData, event) {
+    async onDropItemCreate(itemData, event, containerId = null) {
         let items = itemData instanceof Array ? itemData : [itemData];
 
         const itemsForFiltering = items.map(item => {
@@ -90,20 +116,24 @@ export class LocationItemManager {
                 if (item instanceof foundry.abstract.Document) {
                     item = item.toObject();
                 }
-                return this.onDropSingleItem(item, event);
+                return this.onDropSingleItem(item, event, containerId);
             }
         });
 
         return dnd5e.documents.Item5e.createDocuments(toCreate, { parent: this.document, keepId: true });
     }
 
-    async onDropSingleItem(itemData, event) {
+    async onDropSingleItem(itemData, event, containerId = null) {
         if (itemData.type === 'spell') {
             const scroll = await dnd5e.documents.Item5e.createScrollFromSpell(itemData);
             return scroll?.toObject?.() ?? false;
         }
 
-        const result = this.onDropStackConsumables(itemData);
+        if (containerId) {
+            itemData.system.container = containerId;
+        }
+
+        const result = this.onDropStackConsumables(itemData, { container: containerId });
         if (result) {
             return false;
         }
@@ -403,6 +433,30 @@ export class LocationItemManager {
             expandIcon.classList.remove('fa-expand');
             expandIcon.classList.add('fa-compress');
         }
+    }
+
+    async getParentContainers(containerId) {
+        if (!containerId) {
+            return [];
+        }
+
+        const containers = [];
+        let currentId = containerId;
+
+        while (currentId) {
+            const container = this.document.items.get(currentId);
+            if (!container) {
+                break;
+            }
+            containers.push(currentId);
+            currentId = container.system.container;
+
+            if (containers.includes(currentId)) {
+                break;
+            }
+        }
+
+        return containers;
     }
 
     onCreateChild(event) {

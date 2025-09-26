@@ -49,7 +49,7 @@ export class LocationDataManager {
         }
 
         for (const item of this.document.items.values()) {
-            if (item.type === 'feat' || item.system?.container) {
+            if (item.type === 'feat' || item.system.container) {
                 continue;
             }
             const preparedItem = await this.prepareItemContext(item, context);
