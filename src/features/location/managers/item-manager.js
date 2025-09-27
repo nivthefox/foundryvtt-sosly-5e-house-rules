@@ -65,7 +65,12 @@ export class LocationItemManager {
             return false;
         }
 
-        const dropTarget = event.target.closest('[data-item-id]');
+        let dropTarget = event.target.closest('[data-item-id]');
+
+        if (!dropTarget) {
+            const elementAtCursor = document.elementFromPoint(event.clientX, event.clientY);
+            dropTarget = elementAtCursor?.closest('[data-item-id]');
+        }
         const targetId = dropTarget?.dataset.itemId;
         const targetItem = targetId ? this.document.items.get(targetId) : null;
         let containerId = null;

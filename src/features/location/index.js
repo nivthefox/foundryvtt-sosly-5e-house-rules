@@ -34,18 +34,22 @@ Hooks.on('dnd5e.dropItemSheetData', (containerItem, sheet, data) => {
     if (containerItem.parent?.type !== 'sosly-5e-house-rules.location') {
         return;
     }
-    
+
     const processAsync = async () => {
         const droppedItem = await Item.implementation.fromDropData(data);
         if (!droppedItem) {
             return;
         }
-        
+
         if (droppedItem.parent?.id === containerItem.parent?.id) {
             await droppedItem.update({'system.container': containerItem.id});
+        } else {
+            const itemData = droppedItem.toObject();
+            itemData.system.container = containerItem.id;
+            await Item.create(itemData, { parent: containerItem.parent });
         }
     };
-    
+
     processAsync();
     return false;
 });
