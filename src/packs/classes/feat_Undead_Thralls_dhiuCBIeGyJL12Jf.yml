@@ -1,0 +1,68 @@
+folder: 4GsHzdIuGW1iamXh
+name: Undead Thralls
+type: feat
+_id: dhiuCBIeGyJL12Jf
+img: icons/magic/death/blood-corruption-vomit-red.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You always have
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateDea]{Animate
+      Dead} prepared and can cast it once without expending a spell slot. 
+      Whenever you start casting the spell, you can modify it so that the
+      spell's effective level is increased by 1.</p><p>In addition, whenever you
+      cast a Necromancy spell using a spell slot that creatures or summons an
+      Undead, the Undead gains the benefits below.</p><p><em><strong>Undead
+      Fortitude.</strong></em> The Undead's Hit Point maximum and current Hit
+      points increase by a number equal to the level of the spell slot used plus
+      your Intelligence modifier for the duration of the
+      spell.</p><p><em><strong>Withering Strike.</strong></em> Whenever the
+      Udnead hits a creature with an attack roll, the Undead deals extra
+      Necrotic damage equal to your intelligence modifier (minimum of 1 Necrotic
+      damage).</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAnimateDea
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758968807174
+  modifiedTime: 1758968966552
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!dhiuCBIeGyJL12Jf'
+

@@ -1,0 +1,109 @@
+folder: 4GsHzdIuGW1iamXh
+name: Harvest Undead
+type: feat
+_id: 4TJUSFTcyQudcmtt
+img: icons/magic/death/skeleton-skull-soul-blue.webp
+system:
+  activities:
+    E7UxNbA64sAToIk9:
+      type: heal
+      _id: E7UxNbA64sAToIk9
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: Immediately after you become Bloodied
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: ''
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@classes.wizard.levels'
+        scaling:
+          number: 1
+        bonus: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You have learned more secrets about the nuances of life and death.
+      Immediately after you become Bloodied but aren't killed outright from
+      taking damage, you can take a Reaction to reduce an Undead creature under
+      your control that you can see to 0 Hit Points. You then immediately regain
+      a number of Hit Points equal to your Wizard level.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 10
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758969109493
+  modifiedTime: 1758969284195
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!4TJUSFTcyQudcmtt'
+

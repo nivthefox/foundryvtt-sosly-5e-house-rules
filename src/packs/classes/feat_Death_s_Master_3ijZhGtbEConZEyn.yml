@@ -1,0 +1,185 @@
+folder: 4GsHzdIuGW1iamXh
+name: Death's Master
+type: feat
+_id: 3ijZhGtbEConZEyn
+img: icons/magic/death/skull-flames-white-blue.webp
+system:
+  activities:
+    dMHl9fScAYWxmbKQ:
+      type: heal
+      _id: dMHl9fScAYWxmbKQ
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: Undead you have created or summoned
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: ''
+        types:
+          - temphp
+        custom:
+          enabled: true
+          formula: '@classes.wizard.levels'
+        scaling:
+          number: 1
+        bonus: ''
+      name: Bolster Undead
+      img: ''
+      appliedEffects: []
+    zEQ5Bp5yUrIabUjR:
+      type: save
+      _id: zEQ5Bp5yUrIabUjR
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When an Undead creature you can see is reudced to 0 Hit Points.
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: spellSlots
+            value: '1'
+            target: '5'
+            scaling:
+              mode: level
+              formula: '1'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: Undead you can see
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: Extinguish Undead
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Abstruse rituals within your spellbook allow you mastery over forces of
+      death. While holding your spellbook, you gain the following
+      benefits.</p><p><em><strong>Bolster Undead.</strong></em> As a Bonus
+      Action, choose any number of Undead you have created or summoned with a
+      Necromancy spell that are within 60 feet of you. Those Undead each gain
+      Temporary Hit Points equal to your Wizard level. Once an Undead gains
+      Temporary Hit Points from this feature, it can't gain them in this way
+      again for the next 24 hours.</p><p><em><strong>Extinguish
+      Undead.</strong></em> When an Undead creature you can see is reduced to 0
+      Hit Points, you can cause it to explode with necrotic energy. Roll a
+      number of d6s equal to half the creature's unexpended Hit Dice (round up,
+      minimum of 1d6) and add them together. Each creature in a 10-foot
+      Emanation originating from the Undead makes a Dexterity saving throw. On a
+      failed save, a target takes Necrotic damage equal to the number rolled and
+      can't take Reactions until the start of its next turn. On a successful
+      save, a target takes half as much damage only. When you use this feature
+      to explode an Undead creature you don't control, you must take a Reaction
+      and expend a level 5+ spell slot to do so.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 14
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758969304576
+  modifiedTime: 1758969714437
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!3ijZhGtbEConZEyn'
+

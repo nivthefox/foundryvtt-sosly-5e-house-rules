@@ -1,0 +1,59 @@
+folder: BOB46dnus3HOVDs3
+name: Alter Memories
+type: feat
+_id: vOQexfZLGDoykytU
+img: icons/magic/control/hypnosis-mesmerism-eye-tan.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can reliably enchant creatures and alter their memories. You always
+      have the
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplModifyMemo]{Modify
+      Memory} spell prepared. When you cast the spell, you can target a second
+      creature with it if that creature is within range of the spell.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 14
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplModifyMemo
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758970707604
+  modifiedTime: 1758970822841
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!vOQexfZLGDoykytU'
+

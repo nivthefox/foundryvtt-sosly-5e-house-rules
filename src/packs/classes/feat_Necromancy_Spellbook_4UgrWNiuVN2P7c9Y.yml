@@ -1,0 +1,125 @@
+folder: 4GsHzdIuGW1iamXh
+name: Necromancy Spellbook
+type: feat
+_id: 4UgrWNiuVN2P7c9Y
+img: icons/sundries/books/book-face-black.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>The necromantic secrets in your spellbook grant you additional powers.
+      You gain the following benefits.</p><p><em><strong>Necrotic
+      Resistance.</strong></em> You have Resistance to Necrotic
+      Damage.</p><p><em><strong>Grim Harvest.</strong></em> When you cast a
+      Necromancy spell using a spell slot, you can choose an Undead creature you
+      can see within 60 feet of yourself to regain a number of Hit Points equal
+      to the level of the spell slot expended plus your Wizard
+      level.</p><p><em><strong>Undead Familiar.</strong></em> The
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{find
+      familiar} spell appears in your spellbook. When you cast the spell, you
+      choose one of the normal forms for your familiar or one of the following
+      special forms:
+      @UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobSkeleton00]{Skeleton}
+      or
+      @UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]{Zombie}.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Necromancy Spellbook
+    img: icons/sundries/books/book-face-black.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.4UgrWNiuVN2P7c9Y
+    _id: BJmAxYmXP5MKIHxD
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: necrotic
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1758968585655
+      modifiedTime: 1758968621955
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!4UgrWNiuVN2P7c9Y.BJmAxYmXP5MKIHxD'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758968399513
+  modifiedTime: 1758968675333
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!4UgrWNiuVN2P7c9Y'
+

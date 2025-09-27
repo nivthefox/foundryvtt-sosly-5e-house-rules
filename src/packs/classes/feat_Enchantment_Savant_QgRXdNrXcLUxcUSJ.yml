@@ -1,0 +1,57 @@
+name: Enchantment Savant
+type: feat
+folder: BOB46dnus3HOVDs3
+img: icons/magic/control/control-influence-puppet.webp
+system:
+  description:
+    value: >-
+      <p>Choose two Wizard spells from the
+      @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Enchantment
+      school} (change the Grouping mode to "School" for easier selection), each
+      of which must be no higher than level 2, and add them to your spellbook
+      for free.</p><p>In addition, whenever you gain access to a new level of
+      spell slots in this class, you can add one Wizard spell from the
+      Enchantment school to your spellbook for free. The chosen spell must be of
+      a level for which you have spell slots.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: evocation-savant
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758969925416
+  modifiedTime: 1758969962223
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: QgRXdNrXcLUxcUSJ
+sort: 100000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!QgRXdNrXcLUxcUSJ'
+

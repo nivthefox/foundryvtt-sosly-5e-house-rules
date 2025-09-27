@@ -1,0 +1,116 @@
+folder: BOB46dnus3HOVDs3
+name: Instinctive Charm
+type: feat
+_id: WlRg3a0DEZ8m9Hhm
+img: icons/magic/control/modfiy-luck-fortune-brown.webp
+system:
+  activities:
+    NAYDBpSKijnpxhfN:
+      type: save
+      _id: NAYDBpSKijnpxhfN
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: When you are hit with an attack roll
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+            type: recoverAll
+        max: '1'
+      damage:
+        parts: []
+        onSave: none
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When a creature within 30 feet of you hits you with an attack roll, you
+      can take a Reaction to force the attacker to make a Wisdom saving throw
+      against your spell save DC. On a failed save, the attack misses instead,
+      and if there is another creature within range of the attack other than the
+      attacker, the attacker targets that creature with the triggering attack,
+      using the same attack roll. If multiple creatures are within the attack's
+      range, you choose which one to target.</p><p>Once you use this Reaction,
+      you can't do so again until you finish a Long Rest. You can also restore
+      your use of it by casting an Enchantment spell with a spell slot.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 10
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758970534485
+  modifiedTime: 1758970696242
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!WlRg3a0DEZ8m9Hhm'
+

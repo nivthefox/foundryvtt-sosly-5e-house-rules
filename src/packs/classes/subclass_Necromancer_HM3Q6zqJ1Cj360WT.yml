@@ -1,0 +1,95 @@
+name: Necromancer
+type: subclass
+folder: mRs4pH8L6XDM78RQ
+img: modules/dnd-players-handbook/assets/icons/classes/diviner.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Command the Powers of Death and
+      Undeath</p></blockquote><p>You explore the cosmic forces of life, death,
+      and undeath. As a Necromancer, you learn to manipulate the energy that
+      animates all creatures. As you progress, you learn to use magic to drain
+      the life force from a creature and transform its vital energy into magical
+      power. Many see Necromancers as menacing or villainous, though not all
+      Necromancers are evil. Nevertheless, the manipulation of life and death is
+      considered taboo in many societies.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  identifier: necromancer
+  classIdentifier: wizard
+  advancement:
+    - _id: NElqwo5qeP2KjewN
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.4UgrWNiuVN2P7c9Y
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.osbpm3JzT1asK2WB
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+    - _id: MnGUHDUfl1pqbwJK
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.dhiuCBIeGyJL12Jf
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.q4NwuXaMC43fP1pe
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+    - _id: vyrvNKiCAYyJcR9l
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.4TJUSFTcyQudcmtt
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Subclass Features
+    - _id: GeBj8GgEaEGUkxxL
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.3ijZhGtbEConZEyn
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758969738734
+  modifiedTime: 1758970896023
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: HM3Q6zqJ1Cj360WT
+sort: 100000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!HM3Q6zqJ1Cj360WT'
+

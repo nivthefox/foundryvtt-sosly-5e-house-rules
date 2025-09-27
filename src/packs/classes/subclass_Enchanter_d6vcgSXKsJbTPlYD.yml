@@ -1,0 +1,116 @@
+name: Enchanter
+type: subclass
+folder: mRs4pH8L6XDM78RQ
+img: modules/dnd-players-handbook/assets/icons/classes/abjurer.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Entrance and Beguil Others</p></blockquote><p>Your magic
+      clouds or captivates minds. Some Enchanters use their abilities to
+      encourage peace and soften cruelty, while others use their mind-altering
+      magic for selfish ends. Many Enchanters fall somewhere in between.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  identifier: enchanter
+  classIdentifier: wizard
+  advancement:
+    - _id: NElqwo5qeP2KjewN
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.C5FVXCFH5vDWAra4
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.QgRXdNrXcLUxcUSJ
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.JlwI0PkQtSm0Wrmb
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+    - _id: MnGUHDUfl1pqbwJK
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.XImOM3BMwdGAKUUT
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+    - _id: vyrvNKiCAYyJcR9l
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.WlRg3a0DEZ8m9Hhm
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Subclass Features
+    - _id: GeBj8GgEaEGUkxxL
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.vOQexfZLGDoykytU
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+    - type: Trait
+      _id: SoO7YAbTzWRt2tdJ
+      configuration:
+        allowReplacements: true
+        choices:
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:itm
+              - skills:per
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 3
+      title: Enchanting Conversationalist
+      hint: >-
+        You gain proficiency in one of the following skills of your choice:
+        Deception, Intimidation, or Persuasion.
+
+
+        In addition, when you make an ability check with the chosen skill, you
+        gain a bonus to the check equal to your Intelligence modifier (minimum
+        of +1).
+      icon: icons/magic/control/mouth-smile-deception-purple.webp
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1758969911981
+  modifiedTime: 1758971059862
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: d6vcgSXKsJbTPlYD
+sort: 200000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!d6vcgSXKsJbTPlYD'
+
