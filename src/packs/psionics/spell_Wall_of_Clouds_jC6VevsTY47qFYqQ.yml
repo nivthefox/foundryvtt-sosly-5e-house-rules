@@ -62,7 +62,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You create a wall of clouds, at least one portion of which must be within 60 feet of you. The wall is 60 feet long, 15 feet high, and 1 foot thick. The wall lasts until your concentration ends. Creatures can pass through it without hindrance, but the wall blocks vision.</p>
+      <p>You create a wall of clouds, at least one portion of which must be
+      within 60 feet of you. The wall is 60 feet long, 15 feet high, and 1 foot
+      thick. The wall lasts until your concentration ends. Creatures can pass
+      through it without hindrance, but the wall blocks vision.</p>
     chat: ''
   identifier: wall-of-clouds
   source:
@@ -123,3 +126,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!jC6VevsTY47qFYqQ'
+

@@ -536,7 +536,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You manifest long claws for an instant and make a melee discipline attack against one creature within 5 feet of you. On a hit, this attack deals 1d10 slashing damage per psi point spent.</p>
+      <p>You manifest long claws for an instant and make a melee discipline
+      attack against one creature within 5 feet of you. On a hit, this attack
+      deals 1d10 slashing damage per psi point spent.</p>
     chat: ''
   identifier: bestial-claws
   source:
@@ -593,3 +595,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!a0PlhKHpIol9eKms'
+

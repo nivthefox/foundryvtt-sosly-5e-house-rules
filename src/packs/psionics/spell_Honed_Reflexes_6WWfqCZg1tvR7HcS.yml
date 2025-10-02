@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when an attack roll is made against you by an attacker you can see'
+        condition: when an attack roll is made against you by an attacker you can see
       consumption:
         scaling:
           allowed: false
@@ -63,8 +63,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If you do so, you use the new roll.</p>
-      <p><!-- TODO: Review implementation - disadvantage must be manually applied by DM or player --></p>
+      <p>As a reaction, you can impose disadvantage on an attack roll against
+      you if you can see the attacker. If you do so, you use the new roll.</p>
+      <p><!-- TODO: Review implementation - disadvantage must be manually
+      applied by DM or player --></p>
     chat: ''
   identifier: honed-reflexes
   source:
@@ -73,7 +75,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when an attack roll is made against you by an attacker you can see'
+    condition: when an attack roll is made against you by an attacker you can see
   duration:
     units: inst
   level: 99
@@ -118,3 +120,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!6WWfqCZg1tvR7HcS'
+

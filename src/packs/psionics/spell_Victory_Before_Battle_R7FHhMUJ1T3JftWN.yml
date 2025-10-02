@@ -13,7 +13,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'when you roll initiative'
+        condition: when you roll initiative
       consumption:
         scaling:
           allowed: false
@@ -67,8 +67,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>When you roll initiative, you can use this ability to grant yourself and up to five creatures of your choice within 60 feet of you a +10 bonus to initiative.</p>
-      <p><!-- TODO: Review implementation - The +10 initiative bonus must be applied to yourself and up to 5 chosen creatures. This may require manual application of the effect to each target. --></p>
+      <p>When you roll initiative, you can use this ability to grant yourself
+      and up to five creatures of your choice within 60 feet of you a +10 bonus
+      to initiative.</p> <p><!-- TODO: Review implementation - The +10
+      initiative bonus must be applied to yourself and up to 5 chosen creatures.
+      This may require manual application of the effect to each target. --></p>
     chat: ''
   identifier: victory-before-battle
   source:
@@ -77,7 +80,7 @@ system:
   activation:
     type: special
     value: null
-    condition: 'when you roll initiative'
+    condition: when you roll initiative
   duration:
     units: inst
   level: 99
@@ -173,3 +176,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!R7FHhMUJ1T3JftWN'
+

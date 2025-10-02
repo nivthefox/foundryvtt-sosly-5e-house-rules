@@ -375,13 +375,24 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you can charge a weapon you're holding with elemental energy. Choose acid, cold, fire, lightning, or thunder. The next time you hit with it before the end of your turn, it deals an extra 1d8 damage per psi point you spend of the chosen type instead of its normal type for the attack. The target takes an extra 1d8 damage per psi point you spend of the same type dealt by the weapon, and suffers an additional effect depending on the chosen damage type.</p>
-      <p><strong>Acid:</strong> The target takes 1d4 acid damage at the end of its next turn.</p>
-      <p><strong>Cold:</strong> The target's speed is reduced by half until the end of your next turn.</p>
-      <p><strong>Fire:</strong> Each creature of your choice within 5 feet of the target takes fire damage equal to your psionic ability modifier.</p>
-      <p><strong>Lightning:</strong> The target can't take reactions until the start of your next turn.</p>
-      <p><strong>Thunder:</strong> The target is pushed 5 feet away from you.</p>
-      <p><!-- TODO: Review implementation of elemental damage effects - these special effects (acid DoT, cold speed reduction, fire splash, lightning reaction denial, thunder push) are described in activity names but not mechanically implemented. --></p>
+      <p>As a bonus action, you can charge a weapon you're holding with
+      elemental energy. Choose acid, cold, fire, lightning, or thunder. The next
+      time you hit with it before the end of your turn, it deals an extra 1d8
+      damage per psi point you spend of the chosen type instead of its normal
+      type for the attack. The target takes an extra 1d8 damage per psi point
+      you spend of the same type dealt by the weapon, and suffers an additional
+      effect depending on the chosen damage type.</p> <p><strong>Acid:</strong>
+      The target takes 1d4 acid damage at the end of its next turn.</p>
+      <p><strong>Cold:</strong> The target's speed is reduced by half until the
+      end of your next turn.</p> <p><strong>Fire:</strong> Each creature of your
+      choice within 5 feet of the target takes fire damage equal to your psionic
+      ability modifier.</p> <p><strong>Lightning:</strong> The target can't take
+      reactions until the start of your next turn.</p>
+      <p><strong>Thunder:</strong> The target is pushed 5 feet away from
+      you.</p> <p><!-- TODO: Review implementation of elemental damage effects -
+      these special effects (acid DoT, cold speed reduction, fire splash,
+      lightning reaction denial, thunder push) are described in activity names
+      but not mechanically implemented. --></p>
     chat: ''
   identifier: new-item
   source:
@@ -435,3 +446,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!B8n2Wf4HfbLPSa1y'
+

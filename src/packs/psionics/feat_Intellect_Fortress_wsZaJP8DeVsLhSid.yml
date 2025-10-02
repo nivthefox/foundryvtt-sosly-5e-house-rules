@@ -59,8 +59,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You create psychic defenses to shield your mind and those of your allies.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you gain resistance to psychic damage.</p>
+      <p>You create psychic defenses to shield your mind and those of your
+      allies.</p> <p><strong>Psychic Focus.</strong> While focused on this
+      discipline, you gain resistance to psychic damage.</p>
     chat: ''
   identifier: intellect-fortress
   source:
@@ -151,3 +152,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!wsZaJP8DeVsLhSid'
+

@@ -65,7 +65,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you gain a +5 bonus to Strength checks until the end of your next turn.</p>
+      <p>As a bonus action, you gain a +5 bonus to Strength checks until the end
+      of your next turn.</p>
     chat: ''
   identifier: feat-of-strength
   source:
@@ -123,7 +124,8 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You gain a +5 bonus to Strength checks until the end of your next turn.</p>
+      <p>You gain a +5 bonus to Strength checks until the end of your next
+      turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -169,3 +171,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!2wvDi7me7iZZ0b74'
+

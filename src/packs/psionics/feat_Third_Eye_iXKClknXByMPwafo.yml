@@ -61,7 +61,9 @@ system:
     value: >-
       <p>You use your psionic powers to enhance your vision and perception.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have darkvision with a range of 60 feet. If you already have darkvision with that range or greater, increase its range by 10 feet.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      have darkvision with a range of 60 feet. If you already have darkvision
+      with that range or greater, increase its range by 10 feet.</p>
     chat: ''
   identifier: third-eye
   source:
@@ -102,9 +104,13 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>While focused on this discipline, you have darkvision with a range of 60 feet. If you already have darkvision with that range or greater, increase its range by 10 feet.</p>
+      <p>While focused on this discipline, you have darkvision with a range of
+      60 feet. If you already have darkvision with that range or greater,
+      increase its range by 10 feet.</p>
 
-      <p><!-- TODO: Review implementation - if character already has darkvision 60+ ft, user must manually adjust to +10 ft instead of setting to 60 ft --></p>
+      <p><!-- TODO: Review implementation - if character already has darkvision
+      60+ ft, user must manually adjust to +10 ft instead of setting to 60 ft
+      --></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -156,3 +162,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!iXKClknXByMPwafo'
+

@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -65,7 +65,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -117,7 +117,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -169,7 +169,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -221,7 +221,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -273,7 +273,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -325,7 +325,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+        condition: when you make an Intelligence, Wisdom, or Charisma saving throw
       consumption:
         scaling:
           allowed: false
@@ -375,8 +375,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction when you make an Intelligence, a Wisdom, or a Charisma saving throw, you gain a +1 bonus to that saving throw for each psi point you spend on this ability. You can use this ability after rolling the die but before suffering the results.</p>
-      <p><!-- TODO: Review implementation - bonus must be applied manually to the saving throw --></p>
+      <p>As a reaction when you make an Intelligence, a Wisdom, or a Charisma
+      saving throw, you gain a +1 bonus to that saving throw for each psi point
+      you spend on this ability. You can use this ability after rolling the die
+      but before suffering the results.</p> <p><!-- TODO: Review implementation
+      - bonus must be applied manually to the saving throw --></p>
     chat: ''
   identifier: psychic-parry
   source:
@@ -385,7 +388,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+    condition: when you make an Intelligence, Wisdom, or Charisma saving throw
   duration:
     units: inst
   level: 99
@@ -430,3 +433,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!bIidw9gGZmb3eVFR'
+

@@ -65,8 +65,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction, you gain advantage on saving throws against being charmed, and magical scrying sensors can't read your thoughts.</p>
-      <p><!-- TODO: Review implementation - advantage on saves vs charmed must be applied manually, scrying sensor protection is descriptive only --></p>
+      <p>As a reaction, you gain advantage on saving throws against being
+      charmed, and magical scrying sensors can't read your thoughts.</p> <p><!--
+      TODO: Review implementation - advantage on saves vs charmed must be
+      applied manually, scrying sensor protection is descriptive only --></p>
     chat: ''
   identifier: thought-shield
   source:
@@ -120,8 +122,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You have advantage on saving throws against being charmed, and magical scrying sensors can't read your thoughts.</p>
-      <p><em>Note: Advantage on saves against charmed must be applied manually.</em></p>
+      <p>You have advantage on saving throws against being charmed, and magical
+      scrying sensors can't read your thoughts.</p> <p><em>Note: Advantage on
+      saves against charmed must be applied manually.</em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -167,3 +170,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!QPdcji3APyWOgKBw'
+

@@ -64,9 +64,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you gain advantage on Wisdom checks for 1 minute.</p>
+      <p>As a bonus action, you gain advantage on Wisdom checks for 1
+      minute.</p>
 
-      <p><!-- TODO: Review implementation - advantage on Wisdom checks must be applied manually by the user --></p>
+      <p><!-- TODO: Review implementation - advantage on Wisdom checks must be
+      applied manually by the user --></p>
     chat: ''
   identifier: unwavering-eye
   source:
@@ -120,7 +122,8 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>As a bonus action, you gain advantage on Wisdom checks for 1 minute.</p>
+      <p>As a bonus action, you gain advantage on Wisdom checks for 1
+      minute.</p>
     statuses: []
     tint: '#ffffff'
     sort: 0
@@ -166,3 +169,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!ZIsqIDWGo8S367i4'
+

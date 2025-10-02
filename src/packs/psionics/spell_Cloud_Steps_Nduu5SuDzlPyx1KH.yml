@@ -368,7 +368,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You conjure forth clouds to create a solid, translucent staircase that lasts until your concentration ends. The stairs form a spiral that fills a 10-foot-by-10-foot area and reaches upward 20 feet per psi point spent.</p>
+      <p>You conjure forth clouds to create a solid, translucent staircase that
+      lasts until your concentration ends. The stairs form a spiral that fills a
+      10-foot-by-10-foot area and reaches upward 20 feet per psi point
+      spent.</p>
     chat: ''
   identifier: cloud-steps
   source:
@@ -427,3 +430,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!Nduu5SuDzlPyx1KH'
+

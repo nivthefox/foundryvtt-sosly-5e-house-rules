@@ -459,13 +459,23 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you project your consciousness into the Astral Plane as a ghostly, astral version of yourself.</p>
+      <p>As an action, you project your consciousness into the Astral Plane as a
+      ghostly, astral version of yourself.</p>
 
-      <p>You mentally receive visual information from your astral form, which has normal vision and darkvision out to 30 feet. Your astral form has the same speed and Armor Class, is you, and is destroyed if it takes any amount of damage. It can move through other creatures unhindered and is unaffected by difficult terrain.</p>
+      <p>You mentally receive visual information from your astral form, which
+      has normal vision and darkvision out to 30 feet. Your astral form has the
+      same speed and Armor Class, is you, and is destroyed if it takes any
+      amount of damage. It can move through other creatures unhindered and is
+      unaffected by difficult terrain.</p>
 
-      <p>At the end of your turn, your astral form erupts and you return to your physical body. Each creature within 5 feet of your astral form must succeed on a Dexterity saving throw. On a failed save, a creature takes 1d6 necrotic damage per psi point spent.</p>
+      <p>At the end of your turn, your astral form erupts and you return to your
+      physical body. Each creature within 5 feet of your astral form must
+      succeed on a Dexterity saving throw. On a failed save, a creature takes
+      1d6 necrotic damage per psi point spent.</p>
 
-      <p><em><!-- TODO: Review implementation of astral form movement and positioning - requires manual control of where the astral form ends its turn --></em></p>
+      <p><em><!-- TODO: Review implementation of astral form movement and
+      positioning - requires manual control of where the astral form ends its
+      turn --></em></p>
     chat: ''
   identifier: umbral-shock
   source:
@@ -522,3 +532,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!dtDd15VNdi9acCp5'
+

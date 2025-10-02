@@ -65,9 +65,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, your body becomes like a misty cloud until your concentration ends. In this form, you gain resistance to bludgeoning, piercing, and slashing damage, and you can't take actions other than the Dash action. You can pass through openings that are no more than 1 inch wide without squeezing.</p>
+      <p>As an action, your body becomes like a misty cloud until your
+      concentration ends. In this form, you gain resistance to bludgeoning,
+      piercing, and slashing damage, and you can't take actions other than the
+      Dash action. You can pass through openings that are no more than 1 inch
+      wide without squeezing.</p>
 
-      <p><!-- TODO: Review implementation of action restriction (Dash only) and ability to pass through narrow openings - these may require manual handling --></p>
+      <p><!-- TODO: Review implementation of action restriction (Dash only) and
+      ability to pass through narrow openings - these may require manual
+      handling --></p>
     chat: ''
   identifier: misty-form
   source:
@@ -133,7 +139,12 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>Your body becomes like a misty cloud. You gain resistance to bludgeoning, piercing, and slashing damage. You can only take the Dash action, and you can pass through openings no more than 1 inch wide without squeezing.</p><p><!-- TODO: Action restriction and narrow passage mechanics may require manual handling --></p>'
+    description: >-
+      <p>Your body becomes like a misty cloud. You gain resistance to
+      bludgeoning, piercing, and slashing damage. You can only take the Dash
+      action, and you can pass through openings no more than 1 inch wide without
+      squeezing.</p><p><!-- TODO: Action restriction and narrow passage
+      mechanics may require manual handling --></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -179,3 +190,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!kCdlzBEGzj8HHjLR'
+

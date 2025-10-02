@@ -75,7 +75,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You exhale a cloud of poison in a 90-foot cone. Each creature in the line must make a Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much on a successful one.</p>
+      <p>You exhale a cloud of poison in a 90-foot cone. Each creature in the
+      line must make a Constitution saving throw, taking 10d6 poison damage on a
+      failed save, or half as much on a successful one.</p>
     chat: ''
   identifier: breath-of-the-green-dragon
   source:
@@ -132,3 +134,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!LCeXxPryFT2eRNem'
+

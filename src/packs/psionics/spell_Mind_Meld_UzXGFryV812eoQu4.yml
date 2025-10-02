@@ -60,8 +60,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you can communicate telepathically with one creature you can see within 120 feet of you. The target must have an Intelligence score of at least 2, otherwise this talent fails and the action is wasted.</p>
-      <p>You don't need to share a language with the target for it to understand your telepathic utterances, and it understands you even if it lacks a language. You can allow the target to respond to you telepathically, but it must understand at least one language in order to communicate this way. Alternatively, you can gain access to one memory of the target's choice, gaining perfect recall of one thing it saw or did. This communication can occur until the end of the current turn.</p>
+      <p>As a bonus action, you can communicate telepathically with one creature
+      you can see within 120 feet of you. The target must have an Intelligence
+      score of at least 2, otherwise this talent fails and the action is
+      wasted.</p> <p>You don't need to share a language with the target for it
+      to understand your telepathic utterances, and it understands you even if
+      it lacks a language. You can allow the target to respond to you
+      telepathically, but it must understand at least one language in order to
+      communicate this way. Alternatively, you can gain access to one memory of
+      the target's choice, gaining perfect recall of one thing it saw or did.
+      This communication can occur until the end of the current turn.</p>
     chat: ''
   identifier: mind-meld
   source:
@@ -119,3 +127,4 @@ _stats:
   modifiedTime: 1738454400000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!UzXGFryV812eoQu4'
+

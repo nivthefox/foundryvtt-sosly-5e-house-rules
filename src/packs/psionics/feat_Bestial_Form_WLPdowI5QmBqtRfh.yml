@@ -59,7 +59,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield the power of your mind to take on bestial forms and characteristics.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Wisdom (Animal Handling) checks.</p>
+      <p>You wield the power of your mind to take on bestial forms and
+      characteristics.</p><p><strong>Psychic Focus.</strong> While focused on
+      this discipline, you have advantage on Wisdom (Animal Handling)
+      checks.</p>
     chat: ''
   identifier: bestial-form
   source:
@@ -99,7 +102,10 @@ effects:
       <p>You have advantage on Wisdom (Animal Handling) checks.</p>
 
 
-      <!-- TODO: Review implementation of advantage on Animal Handling checks - this may require manual selection or DM adjudication as FoundryVTT does not have a straightforward way to apply advantage to specific skill checks via active effects -->
+      <!-- TODO: Review implementation of advantage on Animal Handling checks -
+      this may require manual selection or DM adjudication as FoundryVTT does
+      not have a straightforward way to apply advantage to specific skill checks
+      via active effects -->
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -149,3 +155,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!WLPdowI5QmBqtRfh'
+

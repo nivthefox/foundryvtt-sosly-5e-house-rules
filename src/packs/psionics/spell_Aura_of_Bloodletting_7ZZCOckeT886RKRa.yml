@@ -64,8 +64,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you unleash an aura of rage. Until your concentration ends, you and any creature within 60 feet of you has advantage on melee attack rolls.</p>
-      <!-- TODO: Review implementation - Advantage on melee attack rolls may require manual application or special Active Auras configuration -->
+      <p>As a bonus action, you unleash an aura of rage. Until your
+      concentration ends, you and any creature within 60 feet of you has
+      advantage on melee attack rolls.</p> <!-- TODO: Review implementation -
+      Advantage on melee attack rolls may require manual application or special
+      Active Auras configuration -->
     chat: ''
   identifier: aura-of-bloodletting
   source:
@@ -120,7 +123,8 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You and any creature within 60 feet of the caster has advantage on melee attack rolls.</p>
+      <p>You and any creature within 60 feet of the caster has advantage on
+      melee attack rolls.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -182,3 +186,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!7ZZCOckeT886RKRa'
+

@@ -290,8 +290,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You cloak yourself from sight. You can target one additional creature for every additional psi point you spend on this ability. The added targets must be visible to you and within 60 feet of you.</p>
-      <p>Each target turns invisible and remains so until your concentration ends or until immediately after it targets, damages, or otherwise affects any creature with an attack, a spell, or another ability.</p>
+      <p>You cloak yourself from sight. You can target one additional creature
+      for every additional psi point you spend on this ability. The added
+      targets must be visible to you and within 60 feet of you.</p> <p>Each
+      target turns invisible and remains so until your concentration ends or
+      until immediately after it targets, damages, or otherwise affects any
+      creature with an attack, a spell, or another ability.</p>
     chat: ''
   identifier: step-from-sight
   source:
@@ -348,7 +352,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You remain invisible until your concentration ends or until immediately after you target, damage, or otherwise affect any creature with an attack, a spell, or another ability.</p>
+      <p>You remain invisible until your concentration ends or until immediately
+      after you target, damage, or otherwise affect any creature with an attack,
+      a spell, or another ability.</p>
     tint: '#ffffff'
     statuses:
       - invisible
@@ -395,3 +401,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!gMOymWItTMoaIgNT'
+

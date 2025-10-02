@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'When you hit a creature with a melee weapon attack'
+        condition: When you hit a creature with a melee weapon attack
       consumption:
         scaling:
           allowed: false
@@ -66,10 +66,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>When you hit a creature with a melee weapon attack, you can shatter the target's defense against a damage type. The target loses its resistance to one damage type of your choice until the end of your next turn.</p>
+      <p>When you hit a creature with a melee weapon attack, you can shatter the
+      target's defense against a damage type. The target loses its resistance to
+      one damage type of your choice until the end of your next turn.</p>
 
 
-      <p><em><!-- TODO: Review implementation of resistance removal - this mechanic may require manual adjudication or specific Active Effect configuration to remove resistance to a chosen damage type --></em></p>
+      <p><em><!-- TODO: Review implementation of resistance removal - this
+      mechanic may require manual adjudication or specific Active Effect
+      configuration to remove resistance to a chosen damage type --></em></p>
     chat: ''
   identifier: shattering-strike
   source:
@@ -78,7 +82,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'When you hit a creature with a melee weapon attack'
+    condition: When you hit a creature with a melee weapon attack
   duration:
     units: turn
     value: '1'
@@ -126,3 +130,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!s60Mz5htxv9markV'
+

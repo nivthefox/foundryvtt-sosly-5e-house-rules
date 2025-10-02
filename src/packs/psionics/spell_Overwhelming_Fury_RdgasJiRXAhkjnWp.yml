@@ -71,7 +71,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you flood rage into one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw, or it can use its actions only to make melee attacks until your concentration ends. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+      <p>As an action, you flood rage into one creature you can see within 60
+      feet of you. The target must succeed on a Charisma saving throw, or it can
+      use its actions only to make melee attacks until your concentration ends.
+      It can repeat the saving throw at the end of each of its turns, ending the
+      effect on itself on a success.</p>
     chat: ''
   identifier: overwhelming-fury
   source:
@@ -129,7 +133,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You can use your actions only to make melee attacks. You can repeat the saving throw at the end of each of your turns, ending the effect on yourself on a success.</p>
+      <p>You can use your actions only to make melee attacks. You can repeat the
+      saving throw at the end of each of your turns, ending the effect on
+      yourself on a success.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -176,3 +182,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!RdgasJiRXAhkjnWp'
+

@@ -66,7 +66,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, choose up to three allies you can see within 60 feet of you (you can choose yourself in place of one of the allies). Until your concentration ends, each target can roll a d4 when rolling damage for a melee weapon attack and add the number rolled to the damage roll.</p>
+      <p>As a bonus action, choose up to three allies you can see within 60 feet
+      of you (you can choose yourself in place of one of the allies). Until your
+      concentration ends, each target can roll a d4 when rolling damage for a
+      melee weapon attack and add the number rolled to the damage roll.</p>
     chat: ''
   identifier: incite-fury
   source:
@@ -128,7 +131,8 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You can roll a d4 when rolling damage for a melee weapon attack and add the number rolled to the damage roll.</p>
+      <p>You can roll a d4 when rolling damage for a melee weapon attack and add
+      the number rolled to the damage roll.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -174,3 +178,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!p5BKbHkhKKUvps6T'
+

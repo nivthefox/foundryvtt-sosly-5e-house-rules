@@ -206,7 +206,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You exhale a wave of acid in a 60-foot line that is 5 feet wide. Each creature in the line must make a Constitution saving throw, taking 6d6 acid damage on a failed save, or half as much on a successful one. You can increase the damage by 1d6 per additional psi point spent on it.</p>
+      <p>You exhale a wave of acid in a 60-foot line that is 5 feet wide. Each
+      creature in the line must make a Constitution saving throw, taking 6d6
+      acid damage on a failed save, or half as much on a successful one. You can
+      increase the damage by 1d6 per additional psi point spent on it.</p>
     chat: ''
   identifier: breath-of-the-black-dragon
   source:
@@ -264,3 +267,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!K5jxuZhTq5VIg5Ra'
+

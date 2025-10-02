@@ -62,10 +62,23 @@ system:
     max: ''
   description:
     value: >-
-      <p>Meditating for 10 minutes, you choose a discipline effect with a psi point cost of 5 or lower that has an activation time of 1 action, and that can target you. You use that effect—called the contingent effect—as part of using psionic contingency, spending psi points for both, but the contingent effect doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you use the two effects. For example, a wind form might stipulate that wind form comes into effect when you jump.</p>
-      <p>The contingent effect takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then psionic contingency ends.</p>
-      <p>The contingent effect takes effect only on you, even if it can normally target others. You can use only one psionic contingency at a time. If you use this effect again, the effect of another psionic contingency effect on you ends. Until it is triggered or otherwise ended, contingency remains for 10 days.</p>
-      <p><!-- TODO: Review implementation of contingent effect storage and triggering mechanics. This requires manual tracking and application of the stored effect. --></p>
+      <p>Meditating for 10 minutes, you choose a discipline effect with a psi
+      point cost of 5 or lower that has an activation time of 1 action, and that
+      can target you. You use that effect—called the contingent effect—as part
+      of using psionic contingency, spending psi points for both, but the
+      contingent effect doesn't come into effect. Instead, it takes effect when
+      a certain circumstance occurs. You describe that circumstance when you use
+      the two effects. For example, a wind form might stipulate that wind form
+      comes into effect when you jump.</p> <p>The contingent effect takes effect
+      immediately after the circumstance is met for the first time, whether or
+      not you want it to, and then psionic contingency ends.</p> <p>The
+      contingent effect takes effect only on you, even if it can normally target
+      others. You can use only one psionic contingency at a time. If you use
+      this effect again, the effect of another psionic contingency effect on you
+      ends. Until it is triggered or otherwise ended, contingency remains for 10
+      days.</p> <p><!-- TODO: Review implementation of contingent effect storage
+      and triggering mechanics. This requires manual tracking and application of
+      the stored effect. --></p>
     chat: ''
   identifier: psionic-contingency
   source:
@@ -122,3 +135,4 @@ _stats:
   modifiedTime: 1755600000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!4G5m1VTFv3xPbGr3'
+

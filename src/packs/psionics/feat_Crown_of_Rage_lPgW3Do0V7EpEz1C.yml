@@ -59,7 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to control the aggressive impulses of others, turning their rage against their allies or causing them to attack without regard for their own safety.</p><p><strong>Psychic Focus.</strong> While you are focused on this discipline, any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage.</p>
+      <p>You wield psionic energy to control the aggressive impulses of others,
+      turning their rage against their allies or causing them to attack without
+      regard for their own safety.</p><p><strong>Psychic Focus.</strong> While
+      you are focused on this discipline, any enemy within 5 feet of you that
+      makes a melee attack roll against creatures other than you does so with
+      disadvantage.</p>
     chat: ''
   identifier: crown-of-rage
   source:
@@ -95,7 +100,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>Any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage.</p>'
+    description: >-
+      <p>Any enemy within 5 feet of you that makes a melee attack roll against
+      creatures other than you does so with disadvantage.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -147,3 +154,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!lPgW3Do0V7EpEz1C'
+

@@ -71,8 +71,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you can touch one creature and give it resistance to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your concentration ends.</p>
-      <p><!-- TODO: Review implementation - user must manually choose the appropriate resistance effect matching the chosen damage type --></p>
+      <p>As an action, you can touch one creature and give it resistance to
+      acid, cold, fire, lightning, or thunder damage (your choice), which lasts
+      until your concentration ends.</p> <p><!-- TODO: Review implementation -
+      user must manually choose the appropriate resistance effect matching the
+      chosen damage type --></p>
     chat: ''
   identifier: energy-adaptation
   source:
@@ -370,3 +373,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!IUQxNoQSzOMhFSnT'
+

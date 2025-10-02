@@ -491,7 +491,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You let loose a line of lightning that is 60 feet long and 5 feet wide. Each creature in the line must make a Dexterity saving throw, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one. You can then teleport to an unoccupied space touched by the line.</p><p>You can increase this ability's damage by 1d6 per additional psi point spent on it.</p>
+      <p>You let loose a line of lightning that is 60 feet long and 5 feet wide.
+      Each creature in the line must make a Dexterity saving throw, taking 6d6
+      lightning damage on a failed save, or half as much damage on a successful
+      one. You can then teleport to an unoccupied space touched by the
+      line.</p><p>You can increase this ability's damage by 1d6 per additional
+      psi point spent on it.</p>
     chat: ''
   identifier: lightning-leap
   source:
@@ -549,3 +554,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!NoWPzjpCNAsKDaZN'
+

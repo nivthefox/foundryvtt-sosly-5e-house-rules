@@ -59,9 +59,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>You cause people to see you as an utterly horrifying creature, inspiring disgust and fear.</p>
-      <p><strong>Psychic Focus.</strong> While you are focused on this discipline, the area in a 5-foot radius around you is difficult terrain for any enemy that isn't immune to being frightened.</p>
-      <!-- TODO: Review implementation of difficult terrain aura - The difficult terrain effect around the user is described in the psychic focus description but is not implemented via active effects. This requires manual enforcement or module support for aura effects. -->
+      <p>You cause people to see you as an utterly horrifying creature,
+      inspiring disgust and fear.</p> <p><strong>Psychic Focus.</strong> While
+      you are focused on this discipline, the area in a 5-foot radius around you
+      is difficult terrain for any enemy that isn't immune to being
+      frightened.</p> <!-- TODO: Review implementation of difficult terrain aura
+      - The difficult terrain effect around the user is described in the psychic
+      focus description but is not implemented via active effects. This requires
+      manual enforcement or module support for aura effects. -->
     chat: ''
   identifier: crown-of-disgust
   source:
@@ -149,3 +154,4 @@ _stats:
   modifiedTime: 1755586570663
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!VoSreroCg00TV3p0'
+

@@ -173,15 +173,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose any creature, object, or psionic effect within 120 feet. Any psionic effect on the target with a psi point cost equal to or less than the amount of psi points you spent ends. For each effect of a higher cost on the target, make an ability check using your psionic ability. Consult the table below to determine the DC.</p>
-      <table>
-      <thead><tr><th>Psi Point Cost</th><th>DC</th></tr></thead>
-      <tbody>
-      <tr><td>6</td><td>14</td></tr>
-      <tr><td>7</td><td>15</td></tr>
-      </tbody>
-      </table>
-      <p><!-- TODO: Review implementation of automatic dispel vs. ability check mechanics. Currently configured as ability check activity; may need manual application for automatic dispel portion. --></p>
+      <p>As an action, choose any creature, object, or psionic effect within 120
+      feet. Any psionic effect on the target with a psi point cost equal to or
+      less than the amount of psi points you spent ends. For each effect of a
+      higher cost on the target, make an ability check using your psionic
+      ability. Consult the table below to determine the DC.</p> <table>
+      <thead><tr><th>Psi Point Cost</th><th>DC</th></tr></thead> <tbody>
+      <tr><td>6</td><td>14</td></tr> <tr><td>7</td><td>15</td></tr> </tbody>
+      </table> <p><!-- TODO: Review implementation of automatic dispel vs.
+      ability check mechanics. Currently configured as ability check activity;
+      may need manual application for automatic dispel portion. --></p>
     chat: ''
   identifier: dispel-psionics
   source:
@@ -238,3 +239,4 @@ _stats:
   modifiedTime: 1755600000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!DzOQz5u9Kh8xJBuY'
+

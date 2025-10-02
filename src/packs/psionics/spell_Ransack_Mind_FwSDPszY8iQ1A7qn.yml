@@ -13,7 +13,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'After concentrating for the full duration'
+        condition: After concentrating for the full duration
       consumption:
         scaling:
           allowed: false
@@ -66,11 +66,17 @@ system:
     max: ''
   description:
     value: >-
-      <p>While you concentrate on this ability, you probe one creature's mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability's full duration, the target must make three Intelligence saving throws, and you learn information from it based on the number of saving throws it fails.</p>
-      <p>With one failed saving throw, you learn its key memories from the past 12 hours.</p>
-      <p>With two failed saving throws, you learn its key memories from the past 24 hours.</p>
-      <p>With three failed saving throws, you learn its key memories from the past 48 hours.</p>
-      <p><!-- TODO: Review implementation of three separate saving throws mechanic and memory extraction - this is a complex interaction that may need GM adjudication --></p>
+      <p>While you concentrate on this ability, you probe one creature's mind.
+      The creature must remain within 30 feet of you, and you must be able to
+      see it. If you reach the ability's full duration, the target must make
+      three Intelligence saving throws, and you learn information from it based
+      on the number of saving throws it fails.</p> <p>With one failed saving
+      throw, you learn its key memories from the past 12 hours.</p> <p>With two
+      failed saving throws, you learn its key memories from the past 24
+      hours.</p> <p>With three failed saving throws, you learn its key memories
+      from the past 48 hours.</p> <p><!-- TODO: Review implementation of three
+      separate saving throws mechanic and memory extraction - this is a complex
+      interaction that may need GM adjudication --></p>
     chat: ''
   identifier: ransack-mind
   source:
@@ -129,3 +135,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!FwSDPszY8iQ1A7qn'
+

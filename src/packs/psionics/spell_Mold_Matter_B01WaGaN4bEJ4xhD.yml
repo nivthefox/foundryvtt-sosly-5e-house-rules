@@ -63,7 +63,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>Over the course of 1 hour, you convert up to 10 cubic feet of material of one sort into a product that is composed of the same material. If working with a mineral, you convert 1 cubic foot of material instead.</p>
+      <p>Over the course of 1 hour, you convert up to 10 cubic feet of material
+      of one sort into a product that is composed of the same material. If
+      working with a mineral, you convert 1 cubic foot of material instead.</p>
     chat: ''
   identifier: mold-matter
   source:
@@ -118,3 +120,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!B01WaGaN4bEJ4xhD'
+

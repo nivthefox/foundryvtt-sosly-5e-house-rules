@@ -438,7 +438,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you imbue one ranged weapon you hold with psionic power. The next attack you make with it that hits before the end of the current turn deals an extra 1d10 psychic damage per psi point spent.</p>
+      <p>As a bonus action, you imbue one ranged weapon you hold with psionic
+      power. The next attack you make with it that hits before the end of the
+      current turn deals an extra 1d10 psychic damage per psi point spent.</p>
     chat: ''
   identifier: speed-dart
   source:
@@ -492,3 +494,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!xeafxTAy772RG6o1'
+

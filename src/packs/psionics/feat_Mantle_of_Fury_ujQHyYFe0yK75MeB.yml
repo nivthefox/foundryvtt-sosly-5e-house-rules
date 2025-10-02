@@ -60,8 +60,10 @@ system:
   description:
     value: >-
       <p>You wield your rage as a weapon, instilling fury in your allies and
-      overwhelming your enemies.</p><p><strong>Psychic Focus.</strong> While focused on this
-      discipline in combat, you and any ally who starts their turn within 10 feet of you gains a 5-foot increase to their walking speed during that turn.</p>
+      overwhelming your enemies.</p><p><strong>Psychic Focus.</strong> While
+      focused on this discipline in combat, you and any ally who starts their
+      turn within 10 feet of you gains a 5-foot increase to their walking speed
+      during that turn.</p>
     chat: ''
   identifier: mantle-of-fury
   source:
@@ -98,8 +100,11 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>While focused on this discipline in combat, you and any ally who starts their turn within 10 feet of you gains a 5-foot increase to their walking speed during that turn.</p>
-      <!-- TODO: Review implementation - Speed bonus applies at start of turn within 10 feet, may require Active Auras configuration -->
+      <p>While focused on this discipline in combat, you and any ally who starts
+      their turn within 10 feet of you gains a 5-foot increase to their walking
+      speed during that turn.</p> <!-- TODO: Review implementation - Speed bonus
+      applies at start of turn within 10 feet, may require Active Auras
+      configuration -->
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -167,3 +172,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!ujQHyYFe0yK75MeB'
+

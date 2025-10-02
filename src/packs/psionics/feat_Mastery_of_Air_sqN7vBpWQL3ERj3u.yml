@@ -61,7 +61,8 @@ system:
     value: >-
       <p>You wield psionic energy to control the air around you.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you take no falling damage, and you ignore difficult terrain when walking.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      take no falling damage, and you ignore difficult terrain when walking.</p>
     chat: ''
   identifier: mastery-of-air
   source:
@@ -97,7 +98,12 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>While you maintain psychic focus on this discipline, you take no falling damage and ignore difficult terrain when walking.</p><p><!-- TODO: Review implementation - these effects (immunity to falling damage and ignoring difficult terrain) may require manual configuration or automation support that is not currently configured --></p>'
+    description: >-
+      <p>While you maintain psychic focus on this discipline, you take no
+      falling damage and ignore difficult terrain when walking.</p><p><!-- TODO:
+      Review implementation - these effects (immunity to falling damage and
+      ignoring difficult terrain) may require manual configuration or automation
+      support that is not currently configured --></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -151,3 +157,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!sqN7vBpWQL3ERj3u'
+

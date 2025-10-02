@@ -65,8 +65,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you attune your mind to the psychic imprint of all language. For 1 hour, you gain the ability to understand any language you hear or attempt to read. In addition, when you speak, all creatures that can understand a language understand what you say, regardless of what language you use.</p>
-      <p><!-- TODO: Review implementation - language understanding and universal speech comprehension need manual application --></p>
+      <p>As an action, you attune your mind to the psychic imprint of all
+      language. For 1 hour, you gain the ability to understand any language you
+      hear or attempt to read. In addition, when you speak, all creatures that
+      can understand a language understand what you say, regardless of what
+      language you use.</p> <p><!-- TODO: Review implementation - language
+      understanding and universal speech comprehension need manual application
+      --></p>
     chat: ''
   identifier: psychic-speech
   source:
@@ -119,7 +124,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'You understand any language you hear or read. When you speak, all creatures that understand a language comprehend you, regardless of language.'
+    description: >-
+      You understand any language you hear or read. When you speak, all
+      creatures that understand a language comprehend you, regardless of
+      language.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -165,3 +173,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!dDKDr7qHa0XxOaH2'
+

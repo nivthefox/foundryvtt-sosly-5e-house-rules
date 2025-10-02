@@ -65,7 +65,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you radiate a distracting mirth until your concentration ends. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the Perception and Investigation skills.</p>
+      <p>As a bonus action, you radiate a distracting mirth until your
+      concentration ends. Each creature within 60 feet of you that can see you
+      suffers disadvantage on any checks using the Perception and Investigation
+      skills.</p>
     chat: ''
   identifier: aura-of-jubilation
   source:
@@ -119,7 +122,13 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You radiate a distracting mirth. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the Perception and Investigation skills.</p><p><!-- TODO: Review implementation - The disadvantage on Perception and Investigation checks requires manual application as it affects creatures within 60 feet that can see the caster. --></p>'
+    description: >-
+      <p>You radiate a distracting mirth. Each creature within 60 feet of you
+      that can see you suffers disadvantage on any checks using the Perception
+      and Investigation skills.</p><p><!-- TODO: Review implementation - The
+      disadvantage on Perception and Investigation checks requires manual
+      application as it affects creatures within 60 feet that can see the
+      caster. --></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -165,3 +174,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!pMly2dMyTbOWjIqo'
+

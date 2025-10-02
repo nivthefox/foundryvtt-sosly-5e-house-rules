@@ -66,8 +66,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you or a creature you touch ignores the effects of extreme heat or cold (but not cold or fire damage) for the next hour.</p>
-      <p><!-- TODO: Review implementation - ignoring extreme heat/cold environmental effects must be tracked manually --></p>
+      <p>As an action, you or a creature you touch ignores the effects of
+      extreme heat or cold (but not cold or fire damage) for the next hour.</p>
+      <p><!-- TODO: Review implementation - ignoring extreme heat/cold
+      environmental effects must be tracked manually --></p>
     chat: ''
   identifier: environmental-adaptation
   source:
@@ -124,3 +126,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!GflqEGGkgWMVeKyX'
+

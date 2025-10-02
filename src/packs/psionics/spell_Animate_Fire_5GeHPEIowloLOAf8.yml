@@ -1,13 +1,13 @@
 folder: zLDylBwEWWuq3B0v
-name: Rolling Flame
+name: Animate Fire
 type: spell
-_id: DPMRyYkdLKo1aXBR
-img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
+_id: 5GeHPEIowloLOAf8
+img: icons/magic/fire/elemental-fire-humanoid.webp
 system:
   activities:
-    SvJCjxcgtZVGcc3K:
-      type: utility
-      _id: SvJCjxcgtZVGcc3K
+    S4r77v6kcC7azvkI:
+      type: summon
+      _id: S4r77v6kcC7azvkI
       sort: 0
       activation:
         type: action
@@ -19,7 +19,7 @@ system:
         spellSlot: false
         targets:
           - type: itemUses
-            value: '3'
+            value: '7'
             target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
             scaling:
               mode: ''
@@ -40,15 +40,36 @@ system:
         affects:
           choice: false
         override: false
-      roll:
-        prompt: false
-        visible: false
-        name: ''
-        formula: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        proficiency: false
+        attacks: false
+        saves: false
+      profiles:
+        - count: ''
+          name: Fire Elemental
+          _id: phbmobFireElemen
+          uuid: Compendium.dnd-players-handbook.actors.Actor.phbmobFireElemen
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        identifier: ''
+        mode: ''
+        prompt: true
       uses:
         spent: 0
         recovery: []
-      name: 3 Psi Points
+      name: 7 Psi Points
       img: ''
       appliedEffects: []
   uses:
@@ -57,11 +78,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You create fire in a 20-foot-by-20-foot cube within 5 feet of you. The fire lasts until your concentration ends. Any creature in that area when you use this ability and any creature that ends its turn there takes 5 fire damage.</p>
-
-      <p><!-- TODO: Review implementation of area fire damage. This requires automated damage at end of turn, which may need active effects or manual tracking. --></p>
+      <p>You cause a fire elemental to appear in an unoccupied space you can see
+      within range. The elemental lasts until your concentration ends, and it
+      obeys your verbal commands. In combat, roll for its initiative, and choose
+      its behavior during its turns. When this effect ends, the elemental
+      disappears. See the <em>Monster Manual</em> for its stat block.</p>
     chat: ''
-  identifier: rolling-flame
+  identifier: animate-fire
   source:
     revision: 1
     rules: '2024'
@@ -71,7 +94,7 @@ system:
     condition: ''
   duration:
     value: '1'
-    units: minute
+    units: hour
   level: 99
   materials:
     value: ''
@@ -85,18 +108,18 @@ system:
     - concentration
   range:
     units: ft
-    value: '5'
+    value: '120'
     special: ''
   school: wuj
   target:
     template:
       contiguous: false
       units: ft
-      type: cube
-      size: '20'
+      type: ''
     affects:
       choice: false
-      type: ''
+      type: space
+      count: '1'
       special: ''
 effects: []
 sort: 0
@@ -117,4 +140,5 @@ _stats:
   createdTime: null
   modifiedTime: null
   lastModifiedBy: NbCXvDXaYhqPCRFb
-_key: '!items!DPMRyYkdLKo1aXBR'
+_key: '!items!5GeHPEIowloLOAf8'
+

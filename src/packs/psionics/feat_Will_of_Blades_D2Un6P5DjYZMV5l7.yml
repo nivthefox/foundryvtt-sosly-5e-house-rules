@@ -13,7 +13,9 @@ system:
         type: special
         value: null
         override: false
-        condition: 'After scoring a critical hit or reducing a creature to 0 HP with a melee weapon'
+        condition: >-
+          After scoring a critical hit or reducing a creature to 0 HP with a
+          melee weapon
       consumption:
         scaling:
           allowed: false
@@ -59,7 +61,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to enhance your melee weapon strikes with devastating precision and power.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, whenever you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you gain advantage on the next melee weapon attack you make before the end of your next turn.</p>
+      <p>You wield psionic energy to enhance your melee weapon strikes with
+      devastating precision and power.</p><p><strong>Psychic Focus.</strong>
+      While focused on this discipline, whenever you score a critical hit with a
+      melee weapon or reduce a creature to 0 hit points with one, you gain
+      advantage on the next melee weapon attack you make before the end of your
+      next turn.</p>
     chat: ''
   identifier: will-of-blades
   source:
@@ -96,10 +103,13 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Whenever you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you gain advantage on the next melee weapon attack you make before the end of your next turn.</p>
+      <p>Whenever you score a critical hit with a melee weapon or reduce a
+      creature to 0 hit points with one, you gain advantage on the next melee
+      weapon attack you make before the end of your next turn.</p>
 
 
-      <p><em><!-- TODO: Review implementation of conditional advantage - this may require manual application or DM adjudication --></em></p>
+      <p><em><!-- TODO: Review implementation of conditional advantage - this
+      may require manual application or DM adjudication --></em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -151,3 +161,4 @@ _stats:
   modifiedTime: 1755586570663
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!D2Un6P5DjYZMV5l7'
+

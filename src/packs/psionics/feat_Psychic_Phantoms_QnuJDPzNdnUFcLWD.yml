@@ -59,9 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your power reaches into a creature's mind and causes it to perceive a terrifying phantom.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Charisma (Deception) checks.</p>
-      <p><!-- TODO: Review implementation of advantage on Charisma (Deception) checks for psychic focus. This may require manual tracking or custom active effects. --></p>
+      <p>Your power reaches into a creature's mind and causes it to perceive a
+      terrifying phantom.</p> <p><strong>Psychic Focus.</strong> While focused
+      on this discipline, you have advantage on Charisma (Deception) checks.</p>
+      <p><!-- TODO: Review implementation of advantage on Charisma (Deception)
+      checks for psychic focus. This may require manual tracking or custom
+      active effects. --></p>
     chat: ''
   identifier: psychic-phantoms
   source:
@@ -149,3 +152,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!QnuJDPzNdnUFcLWD'
+

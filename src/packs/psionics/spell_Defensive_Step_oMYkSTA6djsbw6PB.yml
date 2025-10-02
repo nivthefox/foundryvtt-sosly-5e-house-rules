@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -64,8 +64,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>When you are hit by an attack, you can use your reaction to gain a +4 bonus to AC against that attack, possibly turning it into a miss. You then teleport up to 10 feet to an unoccupied space you can see.</p>
-      <p><!-- TODO: Review implementation - teleportation is manual --></p>
+      <p>When you are hit by an attack, you can use your reaction to gain a +4
+      bonus to AC against that attack, possibly turning it into a miss. You then
+      teleport up to 10 feet to an unoccupied space you can see.</p> <p><!--
+      TODO: Review implementation - teleportation is manual --></p>
     chat: ''
   identifier: defensive-step
   source:
@@ -74,7 +76,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when you are hit by an attack'
+    condition: when you are hit by an attack
   duration:
     units: inst
   level: 99
@@ -167,3 +169,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!oMYkSTA6djsbw6PB'
+

@@ -87,7 +87,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you cause a water elemental to appear in an unoccupied space you can see within 120 feet of you. The elemental lasts until your concentration ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the <em>Monster Manual</em> for its stat block.</p>
+      <p>As an action, you cause a water elemental to appear in an unoccupied
+      space you can see within 120 feet of you. The elemental lasts until your
+      concentration ends, and it obeys your verbal commands. In combat, roll for
+      its initiative, and choose its behavior during its turns. When this effect
+      ends, the elemental disappears. See the <em>Monster Manual</em> for its
+      stat block.</p>
     chat: ''
   identifier: animate-water
   source:
@@ -146,3 +151,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!U10JbI78YBzXDJ7a'
+

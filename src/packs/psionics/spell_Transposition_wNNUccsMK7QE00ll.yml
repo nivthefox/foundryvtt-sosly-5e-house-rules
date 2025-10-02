@@ -13,7 +13,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -65,8 +65,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>If you haven't moved yet on your turn, choose an ally you can see within 60 feet of you. As a bonus action, you and that creature teleport, swapping places, and your speed is reduced to 0 until the end of the turn. This ability fails and is wasted if either of you can't fit in the destination space.</p>
-      <p><!-- TODO: Review implementation - teleportation swap is manual, speed reduction must be tracked by player --></p>
+      <p>If you haven't moved yet on your turn, choose an ally you can see
+      within 60 feet of you. As a bonus action, you and that creature teleport,
+      swapping places, and your speed is reduced to 0 until the end of the turn.
+      This ability fails and is wasted if either of you can't fit in the
+      destination space.</p> <p><!-- TODO: Review implementation - teleportation
+      swap is manual, speed reduction must be tracked by player --></p>
     chat: ''
   identifier: transposition
   source:
@@ -75,7 +79,7 @@ system:
   activation:
     type: bonus
     value: null
-    condition: "if you haven't moved yet on your turn"
+    condition: if you haven't moved yet on your turn
   duration:
     units: inst
   level: 99
@@ -122,3 +126,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!wNNUccsMK7QE00ll'
+

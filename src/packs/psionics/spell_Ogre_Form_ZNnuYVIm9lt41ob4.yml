@@ -121,9 +121,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you gain 10 temporary hit points. In addition, until your concentration ends, your melee weapon attacks deal an extra 1d4 bludgeoning damage on a hit, and your reach increases by 5 feet. If you're smaller than Large, you also become Large for the duration.</p>
+      <p>As a bonus action, you gain 10 temporary hit points. In addition, until
+      your concentration ends, your melee weapon attacks deal an extra 1d4
+      bludgeoning damage on a hit, and your reach increases by 5 feet. If you're
+      smaller than Large, you also become Large for the duration.</p>
 
-      <!-- TODO: Review implementation - Size increase to Large and +1d4 bludgeoning damage to melee weapons must be applied manually. The active effect serves as a reminder. -->
+      <!-- TODO: Review implementation - Size increase to Large and +1d4
+      bludgeoning damage to melee weapons must be applied manually. The active
+      effect serves as a reminder. -->
     chat: ''
   identifier: ogre-form
   source:
@@ -177,9 +182,8 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: >-
-      <p>Until your concentration ends:</p>
-      <ul>
+    description: |-
+      <p>Until your concentration ends:</p> <ul>
         <li>Your melee weapon attacks deal an extra 1d4 bludgeoning damage</li>
         <li>Your reach increases by 5 feet</li>
         <li>If you're smaller than Large, you become Large</li>
@@ -229,3 +233,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!ZNnuYVIm9lt41ob4'
+

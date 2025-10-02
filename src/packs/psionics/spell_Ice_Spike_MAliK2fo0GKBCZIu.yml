@@ -459,7 +459,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you hurl a mote of ice at one creature you can see within 120 feet of you. The target must make a Dexterity saving throw. On a failed save, the target takes 1d8 cold damage per psi point spent and has its speed halved until the start of your next turn. On a successful save, the target takes half as much damage.</p>
+      <p>As an action, you hurl a mote of ice at one creature you can see within
+      120 feet of you. The target must make a Dexterity saving throw. On a
+      failed save, the target takes 1d8 cold damage per psi point spent and has
+      its speed halved until the start of your next turn. On a successful save,
+      the target takes half as much damage.</p>
 
       <!-- TODO: Review implementation of speed halved effect -->
     chat: ''
@@ -518,3 +522,4 @@ _stats:
   modifiedTime: 1755582354017
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!MAliK2fo0GKBCZIu'
+

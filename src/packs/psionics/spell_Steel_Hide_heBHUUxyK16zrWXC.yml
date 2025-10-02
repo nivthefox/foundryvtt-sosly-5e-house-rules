@@ -64,7 +64,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage until the end of your next turn.</p>
+      <p>As a bonus action, you gain resistance to bludgeoning, piercing, and
+      slashing damage until the end of your next turn.</p>
     chat: ''
   identifier: steel-hide
   source:
@@ -128,7 +129,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You have resistance to bludgeoning, piercing, and slashing damage until the end of your next turn.</p>'
+    description: >-
+      <p>You have resistance to bludgeoning, piercing, and slashing damage until
+      the end of your next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -174,3 +177,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!heBHUUxyK16zrWXC'
+

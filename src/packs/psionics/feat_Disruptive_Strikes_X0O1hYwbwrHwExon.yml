@@ -59,11 +59,17 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to disrupt your foes' concentration and mental focus with devastating strikes.</p>
+      <p>You wield psionic energy to disrupt your foes' concentration and mental
+      focus with devastating strikes.</p>
 
-      <p><strong>Psychic Focus.</strong> While focusing on this discipline, targets hit by your melee weapon attacks have disadvantage on any Constitution saving throws made to maintain concentration.</p>
+      <p><strong>Psychic Focus.</strong> While focusing on this discipline,
+      targets hit by your melee weapon attacks have disadvantage on any
+      Constitution saving throws made to maintain concentration.</p>
 
-      <p><em><!-- TODO: Review implementation - The psychic focus effect is a passive reminder; FoundryVTT cannot automatically impose disadvantage on concentration saves for targets hit by melee weapon attacks. This must be applied manually by the DM or player. --></em></p>
+      <p><em><!-- TODO: Review implementation - The psychic focus effect is a
+      passive reminder; FoundryVTT cannot automatically impose disadvantage on
+      concentration saves for targets hit by melee weapon attacks. This must be
+      applied manually by the DM or player. --></em></p>
     chat: ''
   identifier: disruptive-strikes
   source:
@@ -99,7 +105,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>Targets hit by your melee weapon attacks have disadvantage on any Constitution saving throws made to maintain concentration.</p>'
+    description: >-
+      <p>Targets hit by your melee weapon attacks have disadvantage on any
+      Constitution saving throws made to maintain concentration.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -150,3 +158,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!X0O1hYwbwrHwExon'
+

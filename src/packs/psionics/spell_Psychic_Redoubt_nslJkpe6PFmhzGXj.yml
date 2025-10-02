@@ -45,7 +45,7 @@ system:
           choice: false
           type: creature
           count: ''
-          special: 'any number of creatures within 30 feet'
+          special: any number of creatures within 30 feet
         override: false
         prompt: true
       uses:
@@ -66,8 +66,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create a field of protective psychic energy. Choose any number of creatures within 30 feet of you. Until your concentration ends, each target has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
-      <p><!-- TODO: Review implementation - advantage on saves must be applied manually --></p>
+      <p>As an action, you create a field of protective psychic energy. Choose
+      any number of creatures within 30 feet of you. Until your concentration
+      ends, each target has resistance to psychic damage and advantage on
+      Intelligence, Wisdom, and Charisma saving throws.</p> <p><!-- TODO: Review
+      implementation - advantage on saves must be applied manually --></p>
     chat: ''
   identifier: psychic-redoubt
   source:
@@ -105,7 +108,7 @@ system:
       choice: false
       type: creature
       count: ''
-      special: 'any number of creatures within 30 feet'
+      special: any number of creatures within 30 feet
 effects:
   - name: Psychic Redoubt
     img: icons/magic/defensive/shield-barrier-glowing-pentagon-blue.webp
@@ -129,8 +132,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You have resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
-      <p><em>Note: Advantage on saves must be applied manually.</em></p>
+      <p>You have resistance to psychic damage and advantage on Intelligence,
+      Wisdom, and Charisma saving throws.</p> <p><em>Note: Advantage on saves
+      must be applied manually.</em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -176,3 +180,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!nslJkpe6PFmhzGXj'
+

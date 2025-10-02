@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'When you end your turn and did not move during it'
+        condition: When you end your turn and did not move during it
       consumption:
         scaling:
           allowed: false
@@ -62,7 +62,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to command and coordinate your allies, enhancing their tactical capabilities.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, when you end your turn and didn't move during it, you can use your reaction to allow one ally you can see within 30 feet of you to move up to half their speed, following a path of your choice. To move in this way, the ally mustn't be incapacitated.</p>
+      <p>You wield psionic energy to command and coordinate your allies,
+      enhancing their tactical capabilities.</p><p><strong>Psychic
+      Focus.</strong> While focused on this discipline, when you end your turn
+      and didn't move during it, you can use your reaction to allow one ally you
+      can see within 30 feet of you to move up to half their speed, following a
+      path of your choice. To move in this way, the ally mustn't be
+      incapacitated.</p>
     chat: ''
   identifier: mantle-of-command
   source:
@@ -151,3 +157,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!bMUPrpjj9yGWd86V'
+

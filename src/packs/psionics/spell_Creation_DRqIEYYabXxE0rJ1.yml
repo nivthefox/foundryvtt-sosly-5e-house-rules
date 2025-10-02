@@ -30,7 +30,7 @@ system:
         units: spec
         concentration: false
         override: false
-        special: 'See description'
+        special: See description
       effects: []
       range:
         units: ft
@@ -46,7 +46,7 @@ system:
           choice: false
           type: space
           count: ''
-          special: '5-foot cube'
+          special: 5-foot cube
         override: false
         prompt: true
       uses:
@@ -67,9 +67,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>Over the course of 1 minute, you pull wisps of ectoplasm from the Ethereal Plane to create a nonliving object of vegetable matter within 30 feet: soft goods, rope, wood, or something similar. You can also use this power to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p>
+      <p>Over the course of 1 minute, you pull wisps of ectoplasm from the
+      Ethereal Plane to create a nonliving object of vegetable matter within 30
+      feet: soft goods, rope, wood, or something similar. You can also use this
+      power to create mineral objects such as stone, crystal, or metal. The
+      object created must be no larger than a 5-foot cube, and the object must
+      be of a form and material that you have seen before.</p>
 
-      <p>The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.</p>
+      <p>The duration depends on the object's material. If the object is
+      composed of multiple materials, use the shortest duration.</p>
 
       <table>
         <thead>
@@ -102,7 +108,8 @@ system:
         </tbody>
       </table>
 
-      <p>Using any material created by this power as another power or spell's material component causes that power or spell to fail.</p>
+      <p>Using any material created by this power as another power or spell's
+      material component causes that power or spell to fail.</p>
     chat: ''
   identifier: creation
   source:
@@ -114,7 +121,7 @@ system:
     condition: ''
   duration:
     units: spec
-    special: 'See description'
+    special: See description
   level: 99
   materials:
     value: ''
@@ -139,7 +146,7 @@ system:
       choice: false
       type: space
       count: ''
-      special: '5-foot cube'
+      special: 5-foot cube
 effects: []
 sort: 0
 ownership:
@@ -160,3 +167,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!DRqIEYYabXxE0rJ1'
+

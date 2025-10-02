@@ -59,7 +59,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to harden your body against damage.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you gain a +1 bonus to AC.</p>
+      <p>You wield psionic energy to harden your body against
+      damage.</p><p><strong>Psychic Focus.</strong> While focused on this
+      discipline, you gain a +1 bonus to AC.</p>
     chat: ''
   identifier: iron-durability
   source:
@@ -99,7 +101,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>While focused on this discipline, you gain a +1 bonus to AC.</p>'
+    description: <p>While focused on this discipline, you gain a +1 bonus to AC.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -150,3 +152,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!iViJpgcqD8Jflqqr'
+

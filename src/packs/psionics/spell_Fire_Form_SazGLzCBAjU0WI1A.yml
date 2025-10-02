@@ -1,16 +1,16 @@
 folder: zLDylBwEWWuq3B0v
-name: Animate Fire
+name: Fire Form
 type: spell
-_id: 5GeHPEIowloLOAf8
-img: icons/magic/fire/elemental-fire-humanoid.webp
+_id: SazGLzCBAjU0WI1A
+img: icons/magic/fire/barrier-wall-explosion-orange.webp
 system:
   activities:
-    S4r77v6kcC7azvkI:
-      type: summon
-      _id: S4r77v6kcC7azvkI
+    qWNkHQ8M3L6yJm2y:
+      type: utility
+      _id: qWNkHQ8M3L6yJm2y
       sort: 0
       activation:
-        type: action
+        type: bonus
         value: null
         override: false
       consumption:
@@ -19,7 +19,7 @@ system:
         spellSlot: false
         targets:
           - type: itemUses
-            value: '7'
+            value: '5'
             target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
             scaling:
               mode: ''
@@ -40,36 +40,15 @@ system:
         affects:
           choice: false
         override: false
-      bonuses:
-        ac: ''
-        hd: ''
-        hp: ''
-        attackDamage: ''
-        saveDamage: ''
-        healing: ''
-      creatureSizes: []
-      creatureTypes: []
-      match:
-        proficiency: false
-        attacks: false
-        saves: false
-      profiles:
-        - count: ''
-          name: Fire Elemental
-          _id: phbmobFireElemen
-          uuid: Compendium.dnd-players-handbook.actors.Actor.phbmobFireElemen
-          level:
-            min: null
-            max: null
-          types: []
-      summon:
-        identifier: ''
-        mode: ''
-        prompt: true
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
       uses:
         spent: 0
         recovery: []
-      name: 7 Psi Points
+      name: 5 Psi Points
       img: ''
       appliedEffects: []
   uses:
@@ -78,19 +57,24 @@ system:
     max: ''
   description:
     value: >-
-      <p>You cause a fire elemental to appear in an unoccupied space you can see within range. The elemental lasts until your concentration ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the <em>Monster Manual</em> for its stat block.</p>
+      <p>You become wreathed in flames until your concentration ends. Any
+      creature that end its turn within 5 feet of you takes 3d6 fire damage.</p>
+
+      <p><!-- TODO: Review implementation of aura damage. This requires
+      automated damage when creatures end turn within 5 feet, which may need
+      active effects or manual tracking. --></p>
     chat: ''
-  identifier: animate-fire
+  identifier: fire-form
   source:
     revision: 1
     rules: '2024'
   activation:
-    type: action
+    type: bonus
     value: null
     condition: ''
   duration:
     value: '1'
-    units: hour
+    units: minute
   level: 99
   materials:
     value: ''
@@ -103,8 +87,7 @@ system:
   properties:
     - concentration
   range:
-    units: ft
-    value: '120'
+    units: self
     special: ''
   school: wuj
   target:
@@ -114,8 +97,7 @@ system:
       type: ''
     affects:
       choice: false
-      type: space
-      count: '1'
+      type: ''
       special: ''
 effects: []
 sort: 0
@@ -136,4 +118,5 @@ _stats:
   createdTime: null
   modifiedTime: null
   lastModifiedBy: NbCXvDXaYhqPCRFb
-_key: '!items!5GeHPEIowloLOAf8'
+_key: '!items!SazGLzCBAjU0WI1A'
+

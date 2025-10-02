@@ -67,8 +67,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create an invisible, intangible teleportation anchor in a 5-foot cube you can see within 120 feet of you. For the next 8 hours, whenever you use this discipline to teleport, you can instead teleport to the anchor, even if you can't see it, but it must be within range of the teleportation ability.</p>
-      <p><!-- TODO: Review implementation - teleporting to anchor must be done manually --></p>
+      <p>As an action, you create an invisible, intangible teleportation anchor
+      in a 5-foot cube you can see within 120 feet of you. For the next 8 hours,
+      whenever you use this discipline to teleport, you can instead teleport to
+      the anchor, even if you can't see it, but it must be within range of the
+      teleportation ability.</p> <p><!-- TODO: Review implementation -
+      teleporting to anchor must be done manually --></p>
     chat: ''
   identifier: nomadic-anchor
   source:
@@ -126,3 +130,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!X0MG5uiNaC12xXh9'
+

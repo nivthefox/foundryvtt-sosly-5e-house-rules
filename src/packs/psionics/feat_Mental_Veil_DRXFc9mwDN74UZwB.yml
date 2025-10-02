@@ -59,8 +59,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to shield your mind from detection and influence.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, other creatures have disadvantage on Wisdom (Insight) checks against you.</p>
+      <p>You wield psionic energy to shield your mind from detection and
+      influence.</p> <p><strong>Psychic Focus.</strong> While focused on this
+      discipline, other creatures have disadvantage on Wisdom (Insight) checks
+      against you.</p>
     chat: ''
   identifier: mental-veil
   source:
@@ -97,8 +99,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Other creatures have disadvantage on Wisdom (Insight) checks against you.</p>
-      <p><em>Note: This is a passive effect that must be applied manually by the GM.</em></p>
+      <p>Other creatures have disadvantage on Wisdom (Insight) checks against
+      you.</p> <p><em>Note: This is a passive effect that must be applied
+      manually by the GM.</em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -149,3 +152,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!DRXFc9mwDN74UZwB'
+

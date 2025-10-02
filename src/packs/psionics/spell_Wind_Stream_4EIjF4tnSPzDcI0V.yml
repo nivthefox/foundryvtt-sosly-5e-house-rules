@@ -494,7 +494,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create a line of focused air that is 30 feet long and 5 feet wide. Each creature in that area must make a Strength saving throw, taking 1d8 bludgeoning damage per psi point spent and being knocked prone on a failed save, or half as much damage on a successful one.</p>
+      <p>As an action, you create a line of focused air that is 30 feet long and
+      5 feet wide. Each creature in that area must make a Strength saving throw,
+      taking 1d8 bludgeoning damage per psi point spent and being knocked prone
+      on a failed save, or half as much damage on a successful one.</p>
     chat: ''
   identifier: wind-stream
   source:
@@ -548,7 +551,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You are knocked prone by the wind.</p>'
+    description: <p>You are knocked prone by the wind.</p>
     tint: '#ffffff'
     statuses:
       - prone
@@ -595,3 +598,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!4EIjF4tnSPzDcI0V'
+

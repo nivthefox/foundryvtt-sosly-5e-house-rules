@@ -452,7 +452,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create a poison spray that targets one creature you can see within 30 feet of you. The target must make a Constitution saving throw. On a failed save, it takes 1d6 poison damage per psi point spent and is poisoned until the end of your next turn. On a successful save, the target takes half as much damage and isn't poisoned.</p>
+      <p>As an action, you create a poison spray that targets one creature you
+      can see within 30 feet of you. The target must make a Constitution saving
+      throw. On a failed save, it takes 1d6 poison damage per psi point spent
+      and is poisoned until the end of your next turn. On a successful save, the
+      target takes half as much damage and isn't poisoned.</p>
     chat: ''
   identifier: venom-strike
   source:
@@ -507,8 +511,7 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: >-
-      <p>You are poisoned until the end of the caster's next turn.</p>
+    description: <p>You are poisoned until the end of the caster's next turn.</p>
     tint: '#ffffff'
     statuses:
       - poisoned
@@ -555,3 +558,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!fIYOehqlUSxF9WRG'
+

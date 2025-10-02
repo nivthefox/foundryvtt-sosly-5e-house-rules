@@ -218,9 +218,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You cause razor-sharp crystals to rain down upon a point you can see within 300 feet. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes 10d4 slashing damage on a failed save, or half as much damage on a successful one.</p>
-      <p>Crystal shards turn the effect's area into difficult terrain until the end of your next turn.</p>
-      <p>The damage increases by 1d4 for each additional psi point spent on it.</p>
+      <p>You cause razor-sharp crystals to rain down upon a point you can see
+      within 300 feet. Each creature in a 20-foot-radius, 40-foot-high cylinder
+      centered on that point must make a Dexterity saving throw. A creature
+      takes 10d4 slashing damage on a failed save, or half as much damage on a
+      successful one.</p> <p>Crystal shards turn the effect's area into
+      difficult terrain until the end of your next turn.</p> <p>The damage
+      increases by 1d4 for each additional psi point spent on it.</p>
     chat: ''
   identifier: hail-of-crystals
   source:
@@ -278,3 +282,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!8cB3NqDEsFByvPOH'
+

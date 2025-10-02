@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when an attacker you can see makes an attack roll against you'
+        condition: when an attacker you can see makes an attack roll against you
       consumption:
         scaling:
           allowed: false
@@ -74,8 +74,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes 2d10 psychic damage.</p>
-      <p><!-- TODO: Review implementation - disadvantage on attack roll must be applied manually --></p>
+      <p>As a reaction, you can impose disadvantage on an attack roll against
+      you if you can see the attacker. If the attack still hits you, the
+      attacker takes 2d10 psychic damage.</p> <p><!-- TODO: Review
+      implementation - disadvantage on attack roll must be applied manually
+      --></p>
     chat: ''
   identifier: psychic-backlash
   source:
@@ -84,7 +87,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when an attacker you can see makes an attack roll against you'
+    condition: when an attacker you can see makes an attack roll against you
   duration:
     units: inst
   level: 99
@@ -131,3 +134,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!yf2C6XKYb95xAr5G'
+

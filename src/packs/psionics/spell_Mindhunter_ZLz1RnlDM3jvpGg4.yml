@@ -68,8 +68,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you designate a target you can see within 90 feet as your quarry. For the duration, you deal an extra 1d6 psychic damage to the target whenever you hit it with an attack, and the target has disadvantage on Wisdom (Perception) checks made to detect you. If the target drops to 0 hit points before this effect ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.</p>
-      <p><!-- TODO: Review implementation - the extra 1d6 psychic damage and disadvantage on Perception must be manually applied by the DM/player. Consider adding effect changes if DAE can support this mechanic. --></p>
+      <p>As a bonus action, you designate a target you can see within 90 feet as
+      your quarry. For the duration, you deal an extra 1d6 psychic damage to the
+      target whenever you hit it with an attack, and the target has disadvantage
+      on Wisdom (Perception) checks made to detect you. If the target drops to 0
+      hit points before this effect ends, you can use a bonus action on a
+      subsequent turn of yours to mark a new creature.</p> <p><!-- TODO: Review
+      implementation - the extra 1d6 psychic damage and disadvantage on
+      Perception must be manually applied by the DM/player. Consider adding
+      effect changes if DAE can support this mechanic. --></p>
     chat: ''
   identifier: mindhunter
   source:
@@ -126,7 +133,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>Marked as quarry. You deal an extra 1d6 psychic damage when you hit this creature, and it has disadvantage on Wisdom (Perception) checks made to detect you.</p>'
+    description: >-
+      <p>Marked as quarry. You deal an extra 1d6 psychic damage when you hit
+      this creature, and it has disadvantage on Wisdom (Perception) checks made
+      to detect you.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -172,3 +182,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!ZLz1RnlDM3jvpGg4'
+

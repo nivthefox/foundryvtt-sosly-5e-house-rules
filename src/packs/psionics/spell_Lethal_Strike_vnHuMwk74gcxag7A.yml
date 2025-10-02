@@ -53,7 +53,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '1d10[psychic]'
+        formula: 1d10[psychic]
       name: 1 Psi Point
       img: ''
       appliedEffects: []
@@ -105,7 +105,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '2d10[psychic]'
+        formula: 2d10[psychic]
       name: 2 Psi Points
       img: ''
       appliedEffects: []
@@ -157,7 +157,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '3d10[psychic]'
+        formula: 3d10[psychic]
       name: 3 Psi Points
       img: ''
       appliedEffects: []
@@ -209,7 +209,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '4d10[psychic]'
+        formula: 4d10[psychic]
       name: 4 Psi Points
       img: ''
       appliedEffects: []
@@ -261,7 +261,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '5d10[psychic]'
+        formula: 5d10[psychic]
       name: 5 Psi Points
       img: ''
       appliedEffects: []
@@ -313,7 +313,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '6d10[psychic]'
+        formula: 6d10[psychic]
       name: 6 Psi Points
       img: ''
       appliedEffects: []
@@ -365,7 +365,7 @@ system:
         prompt: false
         visible: false
         name: Bonus Psychic Damage
-        formula: '7d10[psychic]'
+        formula: 7d10[psychic]
       name: 7 Psi Points
       img: ''
       appliedEffects: []
@@ -375,9 +375,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you imbue a weapon you're holding or your unarmed strike with psychic energy. The next time you hit with it before the end of your turn, it deals an extra 1d10 psychic damage per psi point spent.</p>
+      <p>As a bonus action, you imbue a weapon you're holding or your unarmed
+      strike with psychic energy. The next time you hit with it before the end
+      of your turn, it deals an extra 1d10 psychic damage per psi point
+      spent.</p>
 
-      <p><em><!-- TODO: Review implementation of damage bonus on next hit - requires manual application --></em></p>
+      <p><em><!-- TODO: Review implementation of damage bonus on next hit -
+      requires manual application --></em></p>
     chat: ''
   identifier: lethal-strike
   source:
@@ -431,3 +435,4 @@ _stats:
   modifiedTime: 1755600000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!vnHuMwk74gcxag7A'
+

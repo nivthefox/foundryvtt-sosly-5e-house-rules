@@ -65,8 +65,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, your body disappears as you project your mind to a different location on the same plane of existence. Choose a location you have seen before. Your senses and your <em>Wandering Eye</em> (if present) move to that location. While there, your astral form has normal vision and darkvision out to 60 feet, but can't see anything more than 60 feet away from the eye, except that the eye can pass through solid objects but can't end its movement in one. If you do so, the effect immediately ends.</p>
-      <p><!-- TODO: Review implementation - astral projection and body disappearance require DM narration and manual handling --></p>
+      <p>As an action, your body disappears as you project your mind to a
+      different location on the same plane of existence. Choose a location you
+      have seen before. Your senses and your <em>Wandering Eye</em> (if present)
+      move to that location. While there, your astral form has normal vision and
+      darkvision out to 60 feet, but can't see anything more than 60 feet away
+      from the eye, except that the eye can pass through solid objects but can't
+      end its movement in one. If you do so, the effect immediately ends.</p>
+      <p><!-- TODO: Review implementation - astral projection and body
+      disappearance require DM narration and manual handling --></p>
     chat: ''
   identifier: phasing-eye
   source:
@@ -120,7 +127,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'Your body has disappeared and your senses have moved to another location you have seen. Your astral form can see with normal vision and darkvision 60 ft, and can pass through solid objects.'
+    description: >-
+      Your body has disappeared and your senses have moved to another location
+      you have seen. Your astral form can see with normal vision and darkvision
+      60 ft, and can pass through solid objects.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -166,3 +176,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!xFSKVA3HiuzCvvDv'
+

@@ -59,8 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>Metapsionics allows you to perceive and manipulate psionic energy itself. This discipline gives you insight into the nature of psionics and allows you to detect, dispel, and prepare contingent psionic effects.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Intelligence (Arcana) checks made to identify psionic effects.</p>
+      <p>Metapsionics allows you to perceive and manipulate psionic energy
+      itself. This discipline gives you insight into the nature of psionics and
+      allows you to detect, dispel, and prepare contingent psionic effects.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      have advantage on Intelligence (Arcana) checks made to identify psionic
+      effects.</p>
     chat: ''
   identifier: metapsionics
   source:
@@ -147,3 +151,4 @@ _stats:
   modifiedTime: 1755600000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!tcg7B5reOo0taxnN'
+

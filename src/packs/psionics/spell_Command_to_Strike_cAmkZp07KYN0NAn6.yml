@@ -66,7 +66,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose one ally you can see within 60 feet of you. That ally can use their reaction to immediately take the Attack action. You choose the targets.</p>
+      <p>As an action, choose one ally you can see within 60 feet of you. That
+      ally can use their reaction to immediately take the Attack action. You
+      choose the targets.</p>
     chat: ''
   identifier: command-to-strike
   source:
@@ -123,3 +125,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!cAmkZp07KYN0NAn6'
+

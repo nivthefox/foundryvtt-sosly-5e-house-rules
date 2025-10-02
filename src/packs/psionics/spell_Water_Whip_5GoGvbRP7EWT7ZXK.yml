@@ -356,8 +356,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you unleash a jet of water in a line that is 60 feet long and 5 feet wide. Each creature in the line must make a Strength saving throw, taking 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, you can move each target that fails its saving throw to any unoccupied space touching the line. You can increase this ability's damage by 1d6 per additional psi point spent on it.</p>
-      <p><!-- TODO: Review implementation - forced movement (move to unoccupied space touching the line) is descriptive only and requires manual GM/player coordination --></p>
+      <p>As an action, you unleash a jet of water in a line that is 60 feet long
+      and 5 feet wide. Each creature in the line must make a Strength saving
+      throw, taking 3d6 bludgeoning damage on a failed save, or half as much
+      damage on a successful one. In addition, you can move each target that
+      fails its saving throw to any unoccupied space touching the line. You can
+      increase this ability's damage by 1d6 per additional psi point spent on
+      it.</p> <p><!-- TODO: Review implementation - forced movement (move to
+      unoccupied space touching the line) is descriptive only and requires
+      manual GM/player coordination --></p>
     chat: ''
   identifier: water-whip
   source:
@@ -416,3 +423,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!5GoGvbRP7EWT7ZXK'
+

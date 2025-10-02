@@ -86,10 +86,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, make a melee weapon attack against a creature within reach, striking the target's lifeforce directly. On a hit, the target takes 8d10 necrotic damage in place of the attack's normal effect. If a creature is slain in this way, it cannot be restored to life by any means.</p>
+      <p>As an action, make a melee weapon attack against a creature within
+      reach, striking the target's lifeforce directly. On a hit, the target
+      takes 8d10 necrotic damage in place of the attack's normal effect. If a
+      creature is slain in this way, it cannot be restored to life by any
+      means.</p>
 
 
-      <p><em><!-- TODO: Review implementation of "cannot be restored to life by any means" - this permanent effect may require special tracking or notation --></em></p>
+      <p><em><!-- TODO: Review implementation of "cannot be restored to life by
+      any means" - this permanent effect may require special tracking or
+      notation --></em></p>
     chat: ''
   identifier: strike-the-soul
   source:
@@ -145,3 +151,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!56xi7coYCRFs2sc9'
+

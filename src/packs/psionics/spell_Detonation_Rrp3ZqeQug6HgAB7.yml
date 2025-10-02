@@ -326,7 +326,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You create a fiery explosion at a point you can see within range. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw, taking 7d6 fire damage and being knocked prone on a failed save, or half as much damage on a successful one. You can increase this effect's damage by 1d6 per each additional psi point spent on it.</p>
+      <p>You create a fiery explosion at a point you can see within range. Each
+      creature in a 20-foot-radius sphere centered on that point must make a
+      Constitution saving throw, taking 7d6 fire damage and being knocked prone
+      on a failed save, or half as much damage on a successful one. You can
+      increase this effect's damage by 1d6 per each additional psi point spent
+      on it.</p>
     chat: ''
   identifier: detonation
   source:
@@ -428,3 +433,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!Rrp3ZqeQug6HgAB7'
+

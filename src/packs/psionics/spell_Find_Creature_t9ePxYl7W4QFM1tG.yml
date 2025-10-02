@@ -65,8 +65,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>You cast your mind about for information about a specific creature. If you concentrate for this option's full duration, you then gain a general understanding of the creature's current location. You learn the region, city, town, village, or district where it is, pinpointing an area between 1 and 3 miles on a side (DM's choice). If the creature is on another plane of existence, you instead learn which plane.</p>
-      <p><!-- TODO: Review implementation - requires DM adjudication of location information after concentration ends --></p>
+      <p>You cast your mind about for information about a specific creature. If
+      you concentrate for this option's full duration, you then gain a general
+      understanding of the creature's current location. You learn the region,
+      city, town, village, or district where it is, pinpointing an area between
+      1 and 3 miles on a side (DM's choice). If the creature is on another plane
+      of existence, you instead learn which plane.</p> <p><!-- TODO: Review
+      implementation - requires DM adjudication of location information after
+      concentration ends --></p>
     chat: ''
   identifier: find-creature
   source:
@@ -120,7 +126,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'Concentrating to locate a specific creature. After the full hour, you learn its general location.'
+    description: >-
+      Concentrating to locate a specific creature. After the full hour, you
+      learn its general location.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -166,3 +174,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!t9ePxYl7W4QFM1tG'
+

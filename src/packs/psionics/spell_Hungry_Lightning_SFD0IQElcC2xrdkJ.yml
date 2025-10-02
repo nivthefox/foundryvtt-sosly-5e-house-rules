@@ -438,7 +438,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>You lash out at one creature you can see within 60 feet of you with tendrils of lightning. The target must make a Dexterity saving throw, with disadvantage if it's wearing heavy armor. The target takes 1d8 lightning damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
+      <p>You lash out at one creature you can see within 60 feet of you with
+      tendrils of lightning. The target must make a Dexterity saving throw, with
+      disadvantage if it's wearing heavy armor. The target takes 1d8 lightning
+      damage per psi point spent on a failed save, or half as much damage on a
+      successful one.</p>
     chat: ''
   identifier: hungry-lightning
   source:
@@ -497,3 +501,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!SFD0IQElcC2xrdkJ'
+

@@ -157,7 +157,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you unleash the raw energy of creation to annihilate your foes. Creatures within a 30-foot-radius sphere centered on a point you can see within 120 feet must succeed on a Dexterity saving throw or take 1d6 each of acid, fire, cold, necrotic, radiant, lightning, thunder, and force damage. On a successful save, a creature takes half as much damage.</p>
+      <p>As an action, you unleash the raw energy of creation to annihilate your
+      foes. Creatures within a 30-foot-radius sphere centered on a point you can
+      see within 120 feet must succeed on a Dexterity saving throw or take 1d6
+      each of acid, fire, cold, necrotic, radiant, lightning, thunder, and force
+      damage. On a successful save, a creature takes half as much damage.</p>
     chat: ''
   identifier: ultrablast
   source:
@@ -214,3 +218,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!7fkAXSKCLOPNigeN'
+

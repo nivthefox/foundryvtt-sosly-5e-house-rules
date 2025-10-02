@@ -72,9 +72,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you target one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or you choose the creature's actions and movement on its turns until your concentration ends. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being charmed.</p>
+      <p>As an action, you target one creature you can see within 60 feet of
+      you. The target must succeed on an Intelligence saving throw, or you
+      choose the creature's actions and movement on its turns until your
+      concentration ends. At the end of each of its turns, it can repeat the
+      saving throw, ending the effect on itself on a success. A creature is
+      immune to this ability if it is immune to being charmed.</p>
 
-      <p><em><!-- TODO: Review implementation of full domination control and charm immunity check - requires manual application --></em></p>
+      <p><em><!-- TODO: Review implementation of full domination control and
+      charm immunity check - requires manual application --></em></p>
     chat: ''
   identifier: psychic-domination
   source:
@@ -132,7 +138,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You choose the creature's actions and movement on its turns until your concentration ends. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success.</p>
+      <p>You choose the creature's actions and movement on its turns until your
+      concentration ends. At the end of each of its turns, it can repeat the
+      saving throw, ending the effect on itself on a success.</p>
     tint: '#ffffff'
     statuses:
       - charmed
@@ -180,3 +188,4 @@ _stats:
   modifiedTime: 1755600000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!kDaYHMkGH3C3g9w3'
+

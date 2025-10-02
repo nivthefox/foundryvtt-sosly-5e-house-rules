@@ -61,9 +61,9 @@ system:
     value: >-
       <p>You focus your psionic energy on courage and bravery, projecting an
       aura that fortifies your allies against fear.</p><p><strong>Psychic
-      Focus.</strong> While focused on this discipline, you and allies within
-      10 feet of you who can see you have advantage on saving throws against
-      being frightened.</p>
+      Focus.</strong> While focused on this discipline, you and allies within 10
+      feet of you who can see you have advantage on saving throws against being
+      frightened.</p>
     chat: ''
   identifier: new-item
   source:
@@ -104,7 +104,11 @@ effects:
       who can see you have advantage on saving throws against being
       frightened.</p>
 
-      <!-- TODO: Review implementation - FoundryVTT may not automatically grant advantage on saving throws against frightened. This effect serves as a reminder of the psychic focus benefit. Consider using Active Auras or similar module for automatic advantage application, or apply manually during play. -->
+      <!-- TODO: Review implementation - FoundryVTT may not automatically grant
+      advantage on saving throws against frightened. This effect serves as a
+      reminder of the psychic focus benefit. Consider using Active Auras or
+      similar module for automatic advantage application, or apply manually
+      during play. -->
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -155,3 +159,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!1KyvnJfVCPUndhV2'
+

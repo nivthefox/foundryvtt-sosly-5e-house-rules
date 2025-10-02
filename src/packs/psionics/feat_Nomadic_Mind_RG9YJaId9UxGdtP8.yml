@@ -59,9 +59,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You have mastered the art of using psionics to alter your perceptions and awareness.</p>
-      <p><strong>Psychic Focus.</strong> Whenever you focus on this discipline, you choose one skill or tool and have proficiency with it until your focus ends. Alternatively, you gain the ability to read and write one language until your focus ends.</p>
-      <p><!-- TODO: Review implementation - psychic focus proficiency/language benefit requires manual selection and application --></p>
+      <p>You have mastered the art of using psionics to alter your perceptions
+      and awareness.</p> <p><strong>Psychic Focus.</strong> Whenever you focus
+      on this discipline, you choose one skill or tool and have proficiency with
+      it until your focus ends. Alternatively, you gain the ability to read and
+      write one language until your focus ends.</p> <p><!-- TODO: Review
+      implementation - psychic focus proficiency/language benefit requires
+      manual selection and application --></p>
     chat: ''
   identifier: nomadic-mind
   source:
@@ -97,7 +101,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'You have proficiency with one chosen skill or tool, or can read and write one chosen language.'
+    description: >-
+      You have proficiency with one chosen skill or tool, or can read and write
+      one chosen language.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -151,3 +157,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!RG9YJaId9UxGdtP8'
+

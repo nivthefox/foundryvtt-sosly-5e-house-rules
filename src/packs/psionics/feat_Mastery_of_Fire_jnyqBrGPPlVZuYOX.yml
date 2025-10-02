@@ -59,9 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield the power of flame, shaping it to burn your foes or defend yourself and allies.</p>
+      <p>You wield the power of flame, shaping it to burn your foes or defend
+      yourself and allies.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you gain resistance to fire damage, and you gain a +2 bonus to rolls for fire damage.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      gain resistance to fire damage, and you gain a +2 bonus to rolls for fire
+      damage.</p>
     chat: ''
   identifier: mastery-of-fire
   source:
@@ -102,9 +105,11 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You gain resistance to fire damage, and you gain a +2 bonus to rolls for fire damage.</p>
+      <p>You gain resistance to fire damage, and you gain a +2 bonus to rolls
+      for fire damage.</p>
 
-      <p><!-- TODO: Review implementation of +2 fire damage bonus. This may require additional active effect changes or manual tracking. --></p>
+      <p><!-- TODO: Review implementation of +2 fire damage bonus. This may
+      require additional active effect changes or manual tracking. --></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -157,3 +162,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!jnyqBrGPPlVZuYOX'
+

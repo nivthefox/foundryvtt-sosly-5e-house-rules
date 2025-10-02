@@ -59,11 +59,18 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield telekinetic energy to manipulate and move objects and creatures with your mind.</p>
+      <p>You wield telekinetic energy to manipulate and move objects and
+      creatures with your mind.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Strength checks.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      have advantage on Strength checks.</p>
 
-      <p><em><!-- TODO: Review implementation of Psychic Focus - FoundryVTT does not have a built-in way to grant advantage on all Strength checks (including ability checks, saving throws, and skill checks). The effect is configured as a visual reminder, but players/DMs must manually apply advantage when making Strength-based rolls. Consider using a module like DAE or Midi-QOL for automated advantage application. --></em></p>
+      <p><em><!-- TODO: Review implementation of Psychic Focus - FoundryVTT does
+      not have a built-in way to grant advantage on all Strength checks
+      (including ability checks, saving throws, and skill checks). The effect is
+      configured as a visual reminder, but players/DMs must manually apply
+      advantage when making Strength-based rolls. Consider using a module like
+      DAE or Midi-QOL for automated advantage application. --></em></p>
     chat: ''
   identifier: mastery-of-force
   source:
@@ -99,7 +106,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>While focused on this discipline, you have advantage on Strength checks.</p>'
+    description: >-
+      <p>While focused on this discipline, you have advantage on Strength
+      checks.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -152,3 +161,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!LXxS4N2epQdqAIdV'
+

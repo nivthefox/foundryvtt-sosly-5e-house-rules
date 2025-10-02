@@ -236,17 +236,31 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you fire a thin ray of destructive energy from your pointing finger to a target that you can see within 60 feet. The target can be a creature, an object, or a creation of magical force, such as the wall created by <em>wall of force</em>.</p>
+      <p>As an action, you fire a thin ray of destructive energy from your
+      pointing finger to a target that you can see within 60 feet. The target
+      can be a creature, an object, or a creation of magical force, such as the
+      wall created by <em>wall of force</em>.</p>
 
-      <p>On a hit, the target takes 5d6+ 10 force damage. If this damage reduces the target to 0 hit points, it is unmade.</p>
+      <p>On a hit, the target takes 5d6+ 10 force damage. If this damage reduces
+      the target to 0 hit points, it is unmade.</p>
 
-      <p>An unmade creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a <em>true resurrection</em> or a <em>wish</em> spell.</p>
+      <p>An unmade creature and everything it is wearing and carrying, except
+      magic items, are reduced to a pile of fine gray dust. The creature can be
+      restored to life only by means of a <em>true resurrection</em> or a
+      <em>wish</em> spell.</p>
 
-      <p>This effect automatically unmakes a Large or smaller nonmagical object or creation of magical force. If the target is a Huge or larger object or creation of force, this effect unmakes a 10-foot-cube portion of it. A magic item is unaffected by this power.</p>
+      <p>This effect automatically unmakes a Large or smaller nonmagical object
+      or creation of magical force. If the target is a Huge or larger object or
+      creation of force, this effect unmakes a 10-foot-cube portion of it. A
+      magic item is unaffected by this power.</p>
 
-      <p>The damage increases by 1d6+ 1 for each additional psi point spent on it.</p>
+      <p>The damage increases by 1d6+ 1 for each additional psi point spent on
+      it.</p>
 
-      <!-- TODO: Review implementation of unmake effect - When a creature is reduced to 0 hit points by this power, it should be unmade (special death effect). This must be tracked manually by the DM. Objects and force effects are automatically unmade on hit. -->
+      <!-- TODO: Review implementation of unmake effect - When a creature is
+      reduced to 0 hit points by this power, it should be unmade (special death
+      effect). This must be tracked manually by the DM. Objects and force
+      effects are automatically unmade on hit. -->
     chat: ''
   identifier: unmake
   source:
@@ -303,3 +317,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!MHvAO0eHOUjZnHDu'
+

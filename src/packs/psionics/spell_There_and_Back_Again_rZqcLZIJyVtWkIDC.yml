@@ -63,8 +63,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you teleport up to 20 feet to an unoccupied space you can see and then move up to half your speed. At the end of your turn, you can teleport back to the spot you occupied before teleporting, unless it is now occupied or on a different plane of existence.</p>
-      <p><!-- TODO: Review implementation - teleportation and return teleport are manual, movement must be tracked by player --></p>
+      <p>As a bonus action, you teleport up to 20 feet to an unoccupied space
+      you can see and then move up to half your speed. At the end of your turn,
+      you can teleport back to the spot you occupied before teleporting, unless
+      it is now occupied or on a different plane of existence.</p> <p><!-- TODO:
+      Review implementation - teleportation and return teleport are manual,
+      movement must be tracked by player --></p>
     chat: ''
   identifier: there-and-back-again
   source:
@@ -118,3 +122,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!rZqcLZIJyVtWkIDC'
+

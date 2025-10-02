@@ -389,10 +389,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you attempt to maim your target. The next time you hit with a melee weapon attack before the end of your next turn, it deals an extra 1d6 damage per psi point you spend of the same type dealt by the weapon, and the target's speed is reduced by 10 feet until end of your next turn.</p>
+      <p>As a bonus action, you attempt to maim your target. The next time you
+      hit with a melee weapon attack before the end of your next turn, it deals
+      an extra 1d6 damage per psi point you spend of the same type dealt by the
+      weapon, and the target's speed is reduced by 10 feet until end of your
+      next turn.</p>
 
 
-      <p><em><!-- TODO: Review implementation of damage type matching - "deals an extra 1d6 damage per psi point you spend of the same type dealt by the weapon" - may require manual damage type selection --></em></p>
+      <p><em><!-- TODO: Review implementation of damage type matching - "deals
+      an extra 1d6 damage per psi point you spend of the same type dealt by the
+      weapon" - may require manual damage type selection --></em></p>
     chat: ''
   identifier: maiming-strike
   source:
@@ -450,7 +456,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +1d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +1d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -500,7 +508,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +2d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +2d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -550,7 +560,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +3d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +3d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -600,7 +612,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +4d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +4d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -650,7 +664,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +5d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +5d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -700,7 +716,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +6d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +6d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -750,7 +768,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>Your next melee weapon attack deals +7d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+      <p>Your next melee weapon attack deals +7d6 damage of the same type as the
+      weapon, and the target's speed is reduced by 10 feet until the end of your
+      next turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -797,3 +817,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!FPIEFqGvEXrkyyBi'
+

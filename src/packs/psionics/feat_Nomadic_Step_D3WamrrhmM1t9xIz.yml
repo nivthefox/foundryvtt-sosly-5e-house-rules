@@ -13,7 +13,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'after you teleport on your turn'
+        condition: after you teleport on your turn
       consumption:
         scaling:
           allowed: false
@@ -60,8 +60,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to teleport across the battlefield and manipulate space.</p>
-      <p><strong>Psychic Focus.</strong> After you teleport on your turn while focused on this discipline, your walking speed increases by 10 feet until the end of the turn, as you are propelled by the magic of your teleportation.</p>
+      <p>You wield psionic energy to teleport across the battlefield and
+      manipulate space.</p> <p><strong>Psychic Focus.</strong> After you
+      teleport on your turn while focused on this discipline, your walking speed
+      increases by 10 feet until the end of the turn, as you are propelled by
+      the magic of your teleportation.</p>
     chat: ''
   identifier: nomadic-step
   source:
@@ -154,3 +157,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!D3WamrrhmM1t9xIz'
+

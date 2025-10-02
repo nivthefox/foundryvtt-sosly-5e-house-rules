@@ -65,8 +65,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you and up to six willing creatures of your choice that you can see within 60 feet of you teleport up to 1 mile to a spot you can see. If there isn't an open space for all the targets to occupy at the arrival point, this ability fails and is wasted.</p>
-      <p><!-- TODO: Review implementation - group teleportation is manual --></p>
+      <p>As an action, you and up to six willing creatures of your choice that
+      you can see within 60 feet of you teleport up to 1 mile to a spot you can
+      see. If there isn't an open space for all the targets to occupy at the
+      arrival point, this ability fails and is wasted.</p> <p><!-- TODO: Review
+      implementation - group teleportation is manual --></p>
     chat: ''
   identifier: phantom-caravan
   source:
@@ -122,3 +125,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!nfgjTsK3KuYj6eGF'
+

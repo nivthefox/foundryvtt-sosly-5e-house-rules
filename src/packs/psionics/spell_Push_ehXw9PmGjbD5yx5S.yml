@@ -501,9 +501,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose one creature you can see within 60 feet of you. The target must make a Strength saving throw. On a failed save, it takes 1d8 force damage per psi point spent and is pushed up to 5 feet per point spent in a straight line away from you. On a successful save, it takes half as much damage.</p>
+      <p>As an action, choose one creature you can see within 60 feet of you.
+      The target must make a Strength saving throw. On a failed save, it takes
+      1d8 force damage per psi point spent and is pushed up to 5 feet per point
+      spent in a straight line away from you. On a successful save, it takes
+      half as much damage.</p>
 
-      <p><em><!-- TODO: Review implementation of push mechanic - The forced movement (5 feet per psi point spent) must be applied manually by the DM, as FoundryVTT does not automatically handle forced movement distances. --></em></p>
+      <p><em><!-- TODO: Review implementation of push mechanic - The forced
+      movement (5 feet per psi point spent) must be applied manually by the DM,
+      as FoundryVTT does not automatically handle forced movement distances.
+      --></em></p>
     chat: ''
   identifier: push
   source:
@@ -560,3 +567,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!ehXw9PmGjbD5yx5S'
+

@@ -86,9 +86,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you cause an air elemental to appear in an unoccupied space you can see within 120 feet of you. The elemental lasts until your concentration ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the <em>Monster Manual</em> for its stat block.</p>
+      <p>As an action, you cause an air elemental to appear in an unoccupied
+      space you can see within 120 feet of you. The elemental lasts until your
+      concentration ends, and it obeys your verbal commands. In combat, roll for
+      its initiative, and choose its behavior during its turns. When this effect
+      ends, the elemental disappears. See the <em>Monster Manual</em> for its
+      stat block.</p>
 
-      <p><!-- TODO: Review implementation - the air elemental profile UUID needs to be configured to reference the correct actor from the Monster Manual or dnd5e system compendium --></p>
+      <p><!-- TODO: Review implementation - the air elemental profile UUID needs
+      to be configured to reference the correct actor from the Monster Manual or
+      dnd5e system compendium --></p>
     chat: ''
   identifier: animate-air
   source:
@@ -146,3 +153,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!L7HWgZeN0eCl6w9A'
+

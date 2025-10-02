@@ -59,9 +59,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to enhance your thrown weapon attacks with spectral force.</p>
+      <p>You wield psionic energy to enhance your thrown weapon attacks with
+      spectral force.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, when you throw a weapon, you may have it return to your hand after the attack is resolved. If using the Soul Knife class feature, your soul knife doesn't dissipate when thrown.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, when
+      you throw a weapon, you may have it return to your hand after the attack
+      is resolved. If using the Soul Knife class feature, your soul knife
+      doesn't dissipate when thrown.</p>
     chat: ''
   identifier: spectral-throw
   source:
@@ -148,3 +152,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!tvmuB3WJxgB44xSu'
+

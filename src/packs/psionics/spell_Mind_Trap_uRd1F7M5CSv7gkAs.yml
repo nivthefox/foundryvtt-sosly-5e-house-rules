@@ -67,7 +67,9 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'When you become aware of an attempt to remotely view you, detect your thoughts, or charm you'
+        condition: >-
+          When you become aware of an attempt to remotely view you, detect your
+          thoughts, or charm you
       consumption:
         scaling:
           allowed: false
@@ -84,7 +86,7 @@ system:
       range:
         units: special
         override: false
-        special: 'the source of the effect'
+        special: the source of the effect
       target:
         template:
           contiguous: false
@@ -127,8 +129,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create a mental trap for any who would attempt to detect, influence, or read your mind with magic. For the duration, you are aware of any attempts to remotely view you, detect your thoughts, or charm you by the source. As a reaction when you become aware of an attempt, you can spring the mind trap on the source of the effect. The target must succeed on a Wisdom saving throw or take 10d10 psychic damage and be stunned until the end of its next turn. On a successful save, the target takes half as much damage.</p>
-      <p><!-- TODO: Review implementation - awareness of mental intrusion is descriptive only and requires GM coordination --></p>
+      <p>As an action, you create a mental trap for any who would attempt to
+      detect, influence, or read your mind with magic. For the duration, you are
+      aware of any attempts to remotely view you, detect your thoughts, or charm
+      you by the source. As a reaction when you become aware of an attempt, you
+      can spring the mind trap on the source of the effect. The target must
+      succeed on a Wisdom saving throw or take 10d10 psychic damage and be
+      stunned until the end of its next turn. On a successful save, the target
+      takes half as much damage.</p> <p><!-- TODO: Review implementation -
+      awareness of mental intrusion is descriptive only and requires GM
+      coordination --></p>
     chat: ''
   identifier: mind-trap
   source:
@@ -182,8 +192,10 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You are aware of any attempts to remotely view you, detect your thoughts, or charm you. You can spring the mind trap as a reaction.</p>
-      <p><em>Note: GM must inform you when mental intrusion attempts are made.</em></p>
+      <p>You are aware of any attempts to remotely view you, detect your
+      thoughts, or charm you. You can spring the mind trap as a reaction.</p>
+      <p><em>Note: GM must inform you when mental intrusion attempts are
+      made.</em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -275,3 +287,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!uRd1F7M5CSv7gkAs'
+

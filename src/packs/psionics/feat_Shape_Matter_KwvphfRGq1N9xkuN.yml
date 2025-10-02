@@ -41,7 +41,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'nonmagical object no larger than 1-foot cube'
+          special: nonmagical object no larger than 1-foot cube
         override: false
         prompt: true
       uses:
@@ -64,7 +64,11 @@ system:
     value: >-
       <p>You wield psionic energy to manipulate and reshape matter.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you can use an action to temporarily reshape one nonmagical object – no larger than 1-foot cube – into another nonmagical object of similar size and mass and of equal or lesser value. This effect lasts for 1 minute, and the object glows with a faint purple light.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      can use an action to temporarily reshape one nonmagical object – no larger
+      than 1-foot cube – into another nonmagical object of similar size and mass
+      and of equal or lesser value. This effect lasts for 1 minute, and the
+      object glows with a faint purple light.</p>
     chat: ''
   identifier: shape-matter
   source:
@@ -100,7 +104,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>The object glows with a faint purple light.</p>'
+    description: <p>The object glows with a faint purple light.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -151,3 +155,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!KwvphfRGq1N9xkuN'
+

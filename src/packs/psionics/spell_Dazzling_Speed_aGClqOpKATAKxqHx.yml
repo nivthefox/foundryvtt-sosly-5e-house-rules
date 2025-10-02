@@ -382,8 +382,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you can use your incredible speed to distract your target from future attacks. The next time you hit with a melee weapon attack before the end of the current turn, it deals an extra 1d6 damage per psi point spent of the same type dealt by the weapon, and the target has disadvantage on the next attack roll it makes before the start of your next turn.</p>
-      <p><!-- TODO: Review implementation - damage is manually added to weapon attack, disadvantage is manually applied --></p>
+      <p>As a bonus action, you can use your incredible speed to distract your
+      target from future attacks. The next time you hit with a melee weapon
+      attack before the end of the current turn, it deals an extra 1d6 damage
+      per psi point spent of the same type dealt by the weapon, and the target
+      has disadvantage on the next attack roll it makes before the start of your
+      next turn.</p> <p><!-- TODO: Review implementation - damage is manually
+      added to weapon attack, disadvantage is manually applied --></p>
     chat: ''
   identifier: dazzling-speed
   source:
@@ -438,3 +443,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!aGClqOpKATAKxqHx'
+

@@ -65,7 +65,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you gain resistance to bludgeoning, piercing, or slashing damage (your choice), which lasts until your concentration ends.</p><p><em>Note: After activating this power, manually apply the appropriate damage resistance effect based on your choice.</em></p>
+      <p>As an action, you gain resistance to bludgeoning, piercing, or slashing
+      damage (your choice), which lasts until your concentration
+      ends.</p><p><em>Note: After activating this power, manually apply the
+      appropriate damage resistance effect based on your choice.</em></p>
     chat: ''
   identifier: iron-resistance
   source:
@@ -123,7 +126,11 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You have resistance to bludgeoning damage while you maintain concentration.</p><p><em>Note: This is the bludgeoning variant. You can manually edit this effect to change the damage type to piercing or slashing based on your choice.</em></p>'
+    description: >-
+      <p>You have resistance to bludgeoning damage while you maintain
+      concentration.</p><p><em>Note: This is the bludgeoning variant. You can
+      manually edit this effect to change the damage type to piercing or
+      slashing based on your choice.</em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -169,3 +176,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!jqPIjqi4BWbpQSBt'
+

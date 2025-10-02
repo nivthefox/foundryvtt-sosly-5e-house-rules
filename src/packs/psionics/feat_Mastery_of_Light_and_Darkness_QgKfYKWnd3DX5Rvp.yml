@@ -59,9 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield the powers of light and darkness, manipulating shadows and radiance to confound your foes and protect your allies.</p>
+      <p>You wield the powers of light and darkness, manipulating shadows and
+      radiance to confound your foes and protect your allies.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline,
+      natural and magical darkness within 30 feet of you has no effect on your
+      vision.</p>
     chat: ''
   identifier: new-item
   source:
@@ -97,7 +100,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: <p>Natural and magical darkness within 30 feet of you has no effect on your vision.</p>
+    description: >-
+      <p>Natural and magical darkness within 30 feet of you has no effect on
+      your vision.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -149,3 +154,4 @@ _stats:
   modifiedTime: 1738440000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!QgKfYKWnd3DX5Rvp'
+

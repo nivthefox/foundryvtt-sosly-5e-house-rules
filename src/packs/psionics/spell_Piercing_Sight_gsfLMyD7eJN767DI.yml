@@ -63,9 +63,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you gain the ability to see through objects that are up to 1 foot thick within 30 feet of you. This sight lasts until your concentration ends.</p>
+      <p>As a bonus action, you gain the ability to see through objects that are
+      up to 1 foot thick within 30 feet of you. This sight lasts until your
+      concentration ends.</p>
 
-      <p><!-- TODO: Review implementation - ability to see through objects must be applied manually by user/GM --></p>
+      <p><!-- TODO: Review implementation - ability to see through objects must
+      be applied manually by user/GM --></p>
     chat: ''
   identifier: piercing-sight
   source:
@@ -122,3 +125,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!gsfLMyD7eJN767DI'
+

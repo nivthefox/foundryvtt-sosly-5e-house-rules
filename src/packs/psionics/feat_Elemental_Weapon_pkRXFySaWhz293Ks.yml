@@ -59,9 +59,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>You channel elemental energy through your weapons, imbuing them with destructive power.</p>
-      <p><strong>Psychic Focus.</strong> Whenever you focus on this discipline, choose one weapon you're holding or your unarmed strike, and choose acid, cold, fire, lightning, or thunder. When you attack with it while focused on this discipline, it deals damage of the chosen type equal to your psionic ability modifier, but you don't add your Strength or Dexterity modifier to the weapon's damage rolls.</p>
-      <p><!-- TODO: Review implementation of psychic focus - the damage type change and modifier replacement is described but not mechanically implemented. User will need to manually apply these changes. --></p>
+      <p>You channel elemental energy through your weapons, imbuing them with
+      destructive power.</p> <p><strong>Psychic Focus.</strong> Whenever you
+      focus on this discipline, choose one weapon you're holding or your unarmed
+      strike, and choose acid, cold, fire, lightning, or thunder. When you
+      attack with it while focused on this discipline, it deals damage of the
+      chosen type equal to your psionic ability modifier, but you don't add your
+      Strength or Dexterity modifier to the weapon's damage rolls.</p> <p><!--
+      TODO: Review implementation of psychic focus - the damage type change and
+      modifier replacement is described but not mechanically implemented. User
+      will need to manually apply these changes. --></p>
     chat: ''
   identifier: new-item
   source:
@@ -147,3 +154,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!pkRXFySaWhz293Ks'
+

@@ -64,7 +64,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you gain truesight with a radius of 30 feet, which lasts until your concentration ends.</p>
+      <p>As a bonus action, you gain truesight with a radius of 30 feet, which
+      lasts until your concentration ends.</p>
     chat: ''
   identifier: truesight
   source:
@@ -124,7 +125,8 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>As a bonus action, you gain truesight with a radius of 30 feet, which lasts until your concentration ends.</p>
+      <p>As a bonus action, you gain truesight with a radius of 30 feet, which
+      lasts until your concentration ends.</p>
     statuses: []
     tint: '#ffffff'
     sort: 0
@@ -170,3 +172,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!DKbaaU7nS9oc9BxB'
+

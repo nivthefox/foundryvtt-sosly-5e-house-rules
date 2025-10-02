@@ -13,7 +13,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -65,7 +65,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -117,7 +117,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -169,7 +169,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -221,7 +221,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -273,7 +273,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -325,7 +325,7 @@ system:
         type: special
         value: null
         override: false
-        condition: 'As part of your move on your turn'
+        condition: As part of your move on your turn
       consumption:
         scaling:
           allowed: false
@@ -375,7 +375,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As part of your move on your turn, you can fly up to 20 feet for each psi point spent. If you end this flight in the air, you fall unless something else holds you aloft.</p>
+      <p>As part of your move on your turn, you can fly up to 20 feet for each
+      psi point spent. If you end this flight in the air, you fall unless
+      something else holds you aloft.</p>
     chat: ''
   identifier: wind-step
   source:
@@ -384,7 +386,7 @@ system:
   activation:
     type: special
     value: null
-    condition: 'As part of your move on your turn'
+    condition: As part of your move on your turn
   duration:
     units: inst
   level: 99
@@ -429,3 +431,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!rh26gvNmpM1r7fRe'
+

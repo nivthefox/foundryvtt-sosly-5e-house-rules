@@ -438,8 +438,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, one creature you can see within 60 feet of you must make a Charisma saving throw. On a failed save, it takes 1d8 psychic damage per psi point spent, and it can't take reactions until the start of its next turn. On a successful save, it takes half as much damage.</p>
-      <p><!-- TODO: Review implementation of "can't take reactions" mechanic - this may require an effect or active effect configuration --></p>
+      <p>As an action, one creature you can see within 60 feet of you must make
+      a Charisma saving throw. On a failed save, it takes 1d8 psychic damage per
+      psi point spent, and it can't take reactions until the start of its next
+      turn. On a successful save, it takes half as much damage.</p> <p><!--
+      TODO: Review implementation of "can't take reactions" mechanic - this may
+      require an effect or active effect configuration --></p>
     chat: ''
   identifier: crowned-in-sorrow
   source:
@@ -496,3 +500,4 @@ _stats:
   modifiedTime: 1755582354017
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!nBzgZ3RfFoYWe9Zm'
+

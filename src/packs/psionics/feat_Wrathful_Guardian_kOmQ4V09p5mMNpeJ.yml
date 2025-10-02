@@ -13,7 +13,9 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when a creature you can see attacks a target other than you that is within 5 feet of you'
+        condition: >-
+          when a creature you can see attacks a target other than you that is
+          within 5 feet of you
       consumption:
         scaling:
           allowed: false
@@ -61,9 +63,13 @@ system:
     value: >-
       <p>You channel your anger and wrath into powerful offensive abilities.</p>
 
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, when a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to take the attack instead.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, when
+      a creature you can see attacks a target other than you that is within 5
+      feet of you, you can use your reaction to take the attack instead.</p>
 
-      <!-- TODO: Review implementation of psychic focus reaction - "take the attack instead" - this redirects an attack to yourself, which may require manual adjudication by the DM or automated redirection -->
+      <!-- TODO: Review implementation of psychic focus reaction - "take the
+      attack instead" - this redirects an attack to yourself, which may require
+      manual adjudication by the DM or automated redirection -->
     chat: ''
   identifier: wrathful-guardian
   source:
@@ -100,7 +106,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to take the attack instead.</p>
+      <p>When a creature you can see attacks a target other than you that is
+      within 5 feet of you, you can use your reaction to take the attack
+      instead.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -151,3 +159,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!kOmQ4V09p5mMNpeJ'
+

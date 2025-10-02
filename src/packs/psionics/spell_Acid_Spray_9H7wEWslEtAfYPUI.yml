@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you take piercing or slashing damage'
+        condition: when you take piercing or slashing damage
       consumption:
         scaling:
           allowed: false
@@ -75,7 +75,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction when you take piercing or slashing damage, you cause acid to spray from your wound; each creature within 5 feet of you takes 2d6 acid damage.</p>
+      <p>As a reaction when you take piercing or slashing damage, you cause acid
+      to spray from your wound; each creature within 5 feet of you takes 2d6
+      acid damage.</p>
     chat: ''
   identifier: acid-spray
   source:
@@ -84,7 +86,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when you take piercing or slashing damage'
+    condition: when you take piercing or slashing damage
   duration:
     units: inst
   level: 99
@@ -132,3 +134,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!9H7wEWslEtAfYPUI'
+

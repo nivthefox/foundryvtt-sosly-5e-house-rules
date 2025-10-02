@@ -59,8 +59,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your psionic energy flows with the currents and tides of water, granting you mastery over this versatile element.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have a swimming speed equal to your walking speed, and you can breathe underwater.</p>
+      <p>Your psionic energy flows with the currents and tides of water,
+      granting you mastery over this versatile element.</p> <p><strong>Psychic
+      Focus.</strong> While focused on this discipline, you have a swimming
+      speed equal to your walking speed, and you can breathe underwater.</p>
     chat: ''
   identifier: mastery-of-water
   source:
@@ -96,7 +98,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You have a swimming speed equal to your walking speed, and you can breathe underwater.</p>'
+    description: >-
+      <p>You have a swimming speed equal to your walking speed, and you can
+      breathe underwater.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -150,3 +154,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!mkVawTDgqvjOj8u9'
+

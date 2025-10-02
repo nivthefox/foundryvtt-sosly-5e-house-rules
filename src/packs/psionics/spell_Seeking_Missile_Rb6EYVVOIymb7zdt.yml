@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you miss with a ranged weapon attack'
+        condition: when you miss with a ranged weapon attack
       consumption:
         scaling:
           allowed: false
@@ -63,8 +63,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction when you miss with a ranged weapon attack, you can repeat the attack roll against the same target.</p>
-      <p><!-- TODO: Review implementation - the system cannot automatically repeat the attack roll; the user must manually make a new attack roll --></p>
+      <p>As a reaction when you miss with a ranged weapon attack, you can repeat
+      the attack roll against the same target.</p> <p><!-- TODO: Review
+      implementation - the system cannot automatically repeat the attack roll;
+      the user must manually make a new attack roll --></p>
     chat: ''
   identifier: seeking-missile
   source:
@@ -73,7 +75,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when you miss with a ranged weapon attack'
+    condition: when you miss with a ranged weapon attack
   duration:
     units: inst
   level: 99
@@ -118,3 +120,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!Rb6EYVVOIymb7zdt'
+

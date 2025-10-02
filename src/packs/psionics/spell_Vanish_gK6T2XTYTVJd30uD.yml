@@ -65,8 +65,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible for up to 1 minute or until you attack or cast a spell.</p>
-      <p><!-- TODO: Review implementation - the teleportation must be done manually by the player (move token on map). The invisibility effect will be applied but will need to be manually removed when the character attacks or casts a spell. --></p>
+      <p>As an action, you turn invisible and teleport up to 60 feet to an
+      unoccupied space you can see. You remain invisible for up to 1 minute or
+      until you attack or cast a spell.</p> <p><!-- TODO: Review implementation
+      - the teleportation must be done manually by the player (move token on
+      map). The invisibility effect will be applied but will need to be manually
+      removed when the character attacks or casts a spell. --></p>
     chat: ''
   identifier: vanish
   source:
@@ -119,7 +123,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You are invisible until you attack or cast a spell, or until 1 minute passes.</p>'
+    description: >-
+      <p>You are invisible until you attack or cast a spell, or until 1 minute
+      passes.</p>
     tint: '#ffffff'
     statuses:
       - invisible
@@ -167,3 +173,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!gK6T2XTYTVJd30uD'
+

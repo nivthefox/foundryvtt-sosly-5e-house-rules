@@ -173,8 +173,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You enter a deep contemplation. If you concentrate for this option's full duration, you then gain proficiency with up to three of the following skills (one skill for every 2 psi points spent): Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, and Survival. The benefit lasts for 1 hour, no concentration required.</p>
-      <p><!-- TODO: Review implementation - proficiency effects need to be manually applied after concentration ends and last 1 hour --></p>
+      <p>You enter a deep contemplation. If you concentrate for this option's
+      full duration, you then gain proficiency with up to three of the following
+      skills (one skill for every 2 psi points spent): Animal Handling, Arcana,
+      History, Medicine, Nature, Performance, Religion, and Survival. The
+      benefit lasts for 1 hour, no concentration required.</p> <p><!-- TODO:
+      Review implementation - proficiency effects need to be manually applied
+      after concentration ends and last 1 hour --></p>
     chat: ''
   identifier: wandering-mind
   source:
@@ -228,7 +233,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'Gain proficiency in 1 skill after concentrating for the full 10 minutes: Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, or Survival. Lasts 1 hour after concentration ends.'
+    description: >-
+      Gain proficiency in 1 skill after concentrating for the full 10 minutes:
+      Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion,
+      or Survival. Lasts 1 hour after concentration ends.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -272,7 +280,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'Gain proficiency in 2 skills after concentrating for the full 10 minutes: Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, or Survival. Lasts 1 hour after concentration ends.'
+    description: >-
+      Gain proficiency in 2 skills after concentrating for the full 10 minutes:
+      Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion,
+      or Survival. Lasts 1 hour after concentration ends.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -316,7 +327,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: 'Gain proficiency in 3 skills after concentrating for the full 10 minutes: Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, or Survival. Lasts 1 hour after concentration ends.'
+    description: >-
+      Gain proficiency in 3 skills after concentrating for the full 10 minutes:
+      Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion,
+      or Survival. Lasts 1 hour after concentration ends.
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -362,3 +376,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!rVvRBZZXy8OY5moo'
+

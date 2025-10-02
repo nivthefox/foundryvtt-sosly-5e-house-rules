@@ -61,8 +61,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you cloak your presence from the minds of other creatures. You become invisible for 1 hour.</p>
-      <p>This effect ends immediately if you attack, use a power, or cast a spell.</p>
+      <p>As an action, you cloak your presence from the minds of other
+      creatures. You become invisible for 1 hour.</p> <p>This effect ends
+      immediately if you attack, use a power, or cast a spell.</p>
     chat: ''
   identifier: cloud-mind
   source:
@@ -119,7 +120,8 @@ effects:
     system: {}
     changes: []
     description: >-
-      <p>This effect ends immediately if you attack, use a power, or cast a spell.</p>
+      <p>This effect ends immediately if you attack, use a power, or cast a
+      spell.</p>
     tint: '#ffffff'
     transfer: false
     statuses:
@@ -154,3 +156,4 @@ _stats:
   modifiedTime: 1755586570663
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!zU5fPytSbgZa9M9E'
+

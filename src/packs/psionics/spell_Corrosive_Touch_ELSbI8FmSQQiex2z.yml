@@ -445,7 +445,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you deliver a touch of acid to one creature within your reach. The target must make a Dexterity saving throw, taking 1d10 acid damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
+      <p>As an action, you deliver a touch of acid to one creature within your
+      reach. The target must make a Dexterity saving throw, taking 1d10 acid
+      damage per psi point spent on a failed save, or half as much damage on a
+      successful one.</p>
     chat: ''
   identifier: corrosive-touch
   source:
@@ -501,3 +504,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!ELSbI8FmSQQiex2z'
+

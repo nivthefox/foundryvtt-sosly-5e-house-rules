@@ -65,8 +65,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target can immediately use its reaction to move up to its speed in a straight line toward its nearest enemy.</p>
-      <!-- TODO: Review implementation - This effect allows creatures to move using their reaction, which may require manual application in Foundry -->
+      <p>As a bonus action, choose up to three creatures you can see within 60
+      feet of you. Each target can immediately use its reaction to move up to
+      its speed in a straight line toward its nearest enemy.</p> <!-- TODO:
+      Review implementation - This effect allows creatures to move using their
+      reaction, which may require manual application in Foundry -->
     chat: ''
   identifier: mindless-charge
   source:
@@ -123,3 +126,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!pNVCGOD20SgcLRz1'
+

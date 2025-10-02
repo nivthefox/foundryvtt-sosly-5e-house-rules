@@ -480,9 +480,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>When you hit a target with a ranged weapon attack with a thrown weapon, you can activate this ability as a bonus action. The target must succeed on a Strength saving throw or be knocked 10 feet away from you per psi point spent. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes 1d6 bludgeoning damage per psi point spent.</p>
+      <p>When you hit a target with a ranged weapon attack with a thrown weapon,
+      you can activate this ability as a bonus action. The target must succeed
+      on a Strength saving throw or be knocked 10 feet away from you per psi
+      point spent. The target moves in a straight line. If it hits an object,
+      this movement immediately ends and the target takes 1d6 bludgeoning damage
+      per psi point spent.</p>
 
-      <p><!-- TODO: Review implementation of knockback/pushed mechanic - the "10 feet away per psi point" and "if hits object" conditional damage may require manual adjudication or active effects --></p>
+      <p><!-- TODO: Review implementation of knockback/pushed mechanic - the "10
+      feet away per psi point" and "if hits object" conditional damage may
+      require manual adjudication or active effects --></p>
     chat: ''
   identifier: forceful-throw
   source:
@@ -538,3 +545,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!sikhhZoGMKHFLUM7'
+

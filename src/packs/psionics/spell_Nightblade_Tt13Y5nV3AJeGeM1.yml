@@ -75,8 +75,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you throw a shadowy blade that travels in a line 100 feet long and 5 feet wide. Each creature in the line must make a Constitution saving throw. A creature takes 8d6 necrotic damage and its speed is reduced by 10 feet on a failed save, or half as much damage and no additional effect on a successful one.</p>
-      <p><!-- TODO: Review implementation of speed reduction - this may require an effect or active effect configuration to apply the -10 ft speed penalty on failed saves --></p>
+      <p>As an action, you throw a shadowy blade that travels in a line 100 feet
+      long and 5 feet wide. Each creature in the line must make a Constitution
+      saving throw. A creature takes 8d6 necrotic damage and its speed is
+      reduced by 10 feet on a failed save, or half as much damage and no
+      additional effect on a successful one.</p> <p><!-- TODO: Review
+      implementation of speed reduction - this may require an effect or active
+      effect configuration to apply the -10 ft speed penalty on failed saves
+      --></p>
     chat: ''
   identifier: nightblade
   source:
@@ -134,3 +140,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!Tt13Y5nV3AJeGeM1'
+

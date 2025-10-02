@@ -64,8 +64,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose acid, cold, fire, lightning, or thunder. For the duration, one or more weapons you are wielding deal damage of the chosen type instead of their normal type. You can change your selection as an action.</p>
-      <p><!-- TODO: Review implementation of damage type conversion - this effect changes weapon damage types but is not mechanically implemented. User will need to manually apply the damage type change. --></p>
+      <p>As an action, choose acid, cold, fire, lightning, or thunder. For the
+      duration, one or more weapons you are wielding deal damage of the chosen
+      type instead of their normal type. You can change your selection as an
+      action.</p> <p><!-- TODO: Review implementation of damage type conversion
+      - this effect changes weapon damage types but is not mechanically
+      implemented. User will need to manually apply the damage type change.
+      --></p>
     chat: ''
   identifier: new-item
   source:
@@ -120,3 +125,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!XdQJkjtyqPZR54ih'
+

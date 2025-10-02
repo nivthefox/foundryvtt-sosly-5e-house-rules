@@ -59,7 +59,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your mastery over the weather allows you to command lightning, wind, and rain.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have resistance to lightning and thunder damage.</p>
+      <p>Your mastery over the weather allows you to command lightning, wind,
+      and rain.</p><p><strong>Psychic Focus.</strong> While focused on this
+      discipline, you have resistance to lightning and thunder damage.</p>
     chat: ''
   identifier: mastery-of-weather
   source:
@@ -157,3 +159,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!8oUq3w41Zzx2EazH'
+

@@ -59,9 +59,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to enhance your ranged weapon attacks with deadly precision.</p>
-      <p><strong>Psychic Focus.</strong> While you are focused on this discipline, any attack roll you make for a ranged weapon attack ignores disadvantage. If disadvantage would normally apply to the roll, that roll also can't benefit from advantage.</p>
-      <p><!-- TODO: Review implementation - the psychic focus effect is a passive reminder; FoundryVTT cannot automatically negate disadvantage on ranged weapon attacks --></p>
+      <p>You wield psionic energy to enhance your ranged weapon attacks with
+      deadly precision.</p> <p><strong>Psychic Focus.</strong> While you are
+      focused on this discipline, any attack roll you make for a ranged weapon
+      attack ignores disadvantage. If disadvantage would normally apply to the
+      roll, that roll also can't benefit from advantage.</p> <p><!-- TODO:
+      Review implementation - the psychic focus effect is a passive reminder;
+      FoundryVTT cannot automatically negate disadvantage on ranged weapon
+      attacks --></p>
     chat: ''
   identifier: nomadic-arrow
   source:
@@ -97,7 +102,10 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>Any attack roll you make for a ranged weapon attack ignores disadvantage. If disadvantage would normally apply to the roll, that roll also cannot benefit from advantage.</p>'
+    description: >-
+      <p>Any attack roll you make for a ranged weapon attack ignores
+      disadvantage. If disadvantage would normally apply to the roll, that roll
+      also cannot benefit from advantage.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -148,3 +156,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!LqAhkVMHTmmJct7n'
+

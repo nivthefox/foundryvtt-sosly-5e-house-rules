@@ -445,9 +445,15 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create a spike of pitch black negative energy for each psi point spent. Each spike hits a creature of your choice that you can see within 120 feet. A spike deals 1d4+1 necrotic damage to its target, and it can't regain hit points until the start of your next turn.</p>
-      <p>The spikes all strike simultaneously and you can direct them to hit one creature or several.</p>
-      <p><em><!-- TODO: Review implementation of healing prevention - The healing prevention effect should last until the start of your next turn. The effect may need manual application or active effect configuration. --></em></p>
+      <p>As an action, you create a spike of pitch black negative energy for
+      each psi point spent. Each spike hits a creature of your choice that you
+      can see within 120 feet. A spike deals 1d4+1 necrotic damage to its
+      target, and it can't regain hit points until the start of your next
+      turn.</p> <p>The spikes all strike simultaneously and you can direct them
+      to hit one creature or several.</p> <p><em><!-- TODO: Review
+      implementation of healing prevention - The healing prevention effect
+      should last until the start of your next turn. The effect may need manual
+      application or active effect configuration. --></em></p>
     chat: ''
   identifier: void-spikes
   source:
@@ -503,7 +509,8 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You can't regain hit points until the start of the attacker's next turn.</p>
+      <p>You can't regain hit points until the start of the attacker's next
+      turn.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -549,3 +556,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!t0Y7WfSMZQpJDPlx'
+

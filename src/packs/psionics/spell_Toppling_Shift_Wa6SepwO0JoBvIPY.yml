@@ -71,7 +71,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you shift to an incredibly small size and then suddenly return to normal, sending an opponent flying. Choose one creature you can see within 5 feet of you. It must succeed on a Strength saving throw or be knocked prone.</p>
+      <p>As a bonus action, you shift to an incredibly small size and then
+      suddenly return to normal, sending an opponent flying. Choose one creature
+      you can see within 5 feet of you. It must succeed on a Strength saving
+      throw or be knocked prone.</p>
     chat: ''
   identifier: toppling-shift
   source:
@@ -126,7 +129,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You are knocked prone.</p>'
+    description: <p>You are knocked prone.</p>
     tint: '#ffffff'
     statuses:
       - prone
@@ -173,3 +176,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!Wa6SepwO0JoBvIPY'
+

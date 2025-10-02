@@ -74,8 +74,17 @@ system:
     max: ''
   description:
     value: >-
-      <p>You cause a creature to regard all other beings as horrid, alien entities. As an action, choose one creature you can see within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes 5d6 psychic damage, and until your concentration ends, it takes 1d6 psychic damage per creature within 5 feet of it at the end of each of its turns. On a successful save, the target takes only half the initial damage and suffers none of the other effects.</p>
-      <!-- TODO: Review implementation of ongoing damage per nearby creature - The ongoing "1d6 psychic damage per creature within 5 feet" effect at the end of each turn is not implemented via active effects and requires manual tracking or custom automation. -->
+      <p>You cause a creature to regard all other beings as horrid, alien
+      entities. As an action, choose one creature you can see within 60 feet of
+      you. The target must make a Wisdom saving throw. On a failed save, it
+      takes 5d6 psychic damage, and until your concentration ends, it takes 1d6
+      psychic damage per creature within 5 feet of it at the end of each of its
+      turns. On a successful save, the target takes only half the initial damage
+      and suffers none of the other effects.</p> <!-- TODO: Review
+      implementation of ongoing damage per nearby creature - The ongoing "1d6
+      psychic damage per creature within 5 feet" effect at the end of each turn
+      is not implemented via active effects and requires manual tracking or
+      custom automation. -->
     chat: ''
   identifier: visions-of-disgust
   source:
@@ -135,3 +144,4 @@ _stats:
   modifiedTime: 1755586570663
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!jF5V6qihsaj8x17t'
+

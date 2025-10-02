@@ -68,8 +68,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose one creature you can see within 120 feet of you. That creature must make a Wisdom saving throw. On a failed save, you and that creature teleport, swapping places. This ability fails and is wasted if either of you can't fit in the destination space.</p>
-      <p><!-- TODO: Review implementation - teleportation swap is manual --></p>
+      <p>As an action, choose one creature you can see within 120 feet of you.
+      That creature must make a Wisdom saving throw. On a failed save, you and
+      that creature teleport, swapping places. This ability fails and is wasted
+      if either of you can't fit in the destination space.</p> <p><!-- TODO:
+      Review implementation - teleportation swap is manual --></p>
     chat: ''
   identifier: baleful-transposition
   source:
@@ -125,3 +128,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!UXtdnoRZxiu0Q3Xt'
+

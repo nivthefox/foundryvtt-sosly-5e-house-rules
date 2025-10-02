@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are missed by a melee attack'
+        condition: when you are missed by a melee attack
       consumption:
         scaling:
           allowed: false
@@ -59,8 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to manipulate your incredible speed and reflexes.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you can use a reaction when you are missed by a melee attack to move up to 5 feet. This movement doesn't provoke opportunity attacks.</p>
-      <p><!-- TODO: Review implementation - movement is manual, does not automatically prevent opportunity attacks --></p>
+      <p>You wield psionic energy to manipulate your incredible speed and
+      reflexes.</p><p><strong>Psychic Focus.</strong> While focused on this
+      discipline, you can use a reaction when you are missed by a melee attack
+      to move up to 5 feet. This movement doesn't provoke opportunity
+      attacks.</p> <p><!-- TODO: Review implementation - movement is manual,
+      does not automatically prevent opportunity attacks --></p>
     chat: ''
   identifier: alacrity
   source:
@@ -147,3 +151,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!wNFRVu4HWBepuSBu'
+

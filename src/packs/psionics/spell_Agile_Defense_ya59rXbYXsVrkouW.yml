@@ -65,7 +65,8 @@ system:
     value: >-
       <p>As a bonus action, you take the Dodge action.</p>
 
-      <p><em>You must manually use the Dodge action after activating this power.</em></p>
+      <p><em>You must manually use the Dodge action after activating this
+      power.</em></p>
     chat: ''
   identifier: new-item
   source:
@@ -119,3 +120,4 @@ _stats:
   modifiedTime: 1755582354017
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!ya59rXbYXsVrkouW'
+

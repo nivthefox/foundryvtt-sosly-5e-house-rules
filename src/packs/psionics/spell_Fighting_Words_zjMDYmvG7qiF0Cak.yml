@@ -13,7 +13,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'After spending 1 minute conversing with a creature'
+        condition: After spending 1 minute conversing with a creature
       consumption:
         scaling:
           allowed: false
@@ -66,7 +66,22 @@ system:
     max: ''
   description:
     value: >-
-      <p>If you spend 1 minute conversing with a creature, you can attempt to leave a simmering violence in its mind. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw to resist feeling violent urges against one creature you describe to it or name. The save automatically succeeds if the target is immune to being charmed. On a failed save, the target attacks the chosen creature if it sees that creature before your concentration ends, using weapons or spells against a creature it was already hostile toward or unarmed strikes against an ally or a creature it was neutral toward. Once the fight starts, it continues to attack for 5 rounds before this effect ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage from any creature other than the one it has been incited against. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.</p><p><!-- TODO: Review implementation of complex conditional attack behavior and 5-round combat duration --></p>
+      <p>If you spend 1 minute conversing with a creature, you can attempt to
+      leave a simmering violence in its mind. At the end of the minute, you can
+      use an action to force the creature to make a Wisdom saving throw to
+      resist feeling violent urges against one creature you describe to it or
+      name. The save automatically succeeds if the target is immune to being
+      charmed. On a failed save, the target attacks the chosen creature if it
+      sees that creature before your concentration ends, using weapons or spells
+      against a creature it was already hostile toward or unarmed strikes
+      against an ally or a creature it was neutral toward. Once the fight
+      starts, it continues to attack for 5 rounds before this effect ends. This
+      effect immediately ends if the target or any ally it can see is attacked
+      or takes damage from any creature other than the one it has been incited
+      against. On a successful save, the creature is unaffected and has no
+      inkling of your attempt to bend its will.</p><p><!-- TODO: Review
+      implementation of complex conditional attack behavior and 5-round combat
+      duration --></p>
     chat: ''
   identifier: fighting-words
   source:
@@ -75,7 +90,7 @@ system:
   activation:
     type: action
     value: null
-    condition: 'After spending 1 minute conversing with a creature'
+    condition: After spending 1 minute conversing with a creature
   duration:
     units: minute
     value: '10'
@@ -124,3 +139,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!zjMDYmvG7qiF0Cak'
+

@@ -59,8 +59,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to enhance your predatory instincts and hunting capabilities.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Wisdom (Survival) skills you make to track any creature you dealt damage to in the last 24 hours.</p>
+      <p>You wield psionic energy to enhance your predatory instincts and
+      hunting capabilities.</p> <p><strong>Psychic Focus.</strong> While focused
+      on this discipline, you have advantage on Wisdom (Survival) skills you
+      make to track any creature you dealt damage to in the last 24 hours.</p>
     chat: ''
   identifier: predation
   source:
@@ -96,7 +98,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You have advantage on Wisdom (Survival) checks made to track any creature you dealt damage to in the last 24 hours.</p>'
+    description: >-
+      <p>You have advantage on Wisdom (Survival) checks made to track any
+      creature you dealt damage to in the last 24 hours.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -148,3 +152,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!K78LpRYKu7Rj8Mmj'
+

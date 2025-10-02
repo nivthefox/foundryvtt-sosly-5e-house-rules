@@ -59,9 +59,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>You manipulate matter on a microscopic level, allowing you to shrink yourself and others.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Dexterity (Stealth) checks.</p>
-      <p><em><!-- TODO: Review implementation of advantage on Dexterity (Stealth) checks for psychic focus. This may require manual tracking or custom active effects. --></em></p>
+      <p>You manipulate matter on a microscopic level, allowing you to shrink
+      yourself and others.</p> <p><strong>Psychic Focus.</strong> While focused
+      on this discipline, you have advantage on Dexterity (Stealth) checks.</p>
+      <p><em><!-- TODO: Review implementation of advantage on Dexterity
+      (Stealth) checks for psychic focus. This may require manual tracking or
+      custom active effects. --></em></p>
     chat: ''
   identifier: diminution
   source:
@@ -149,3 +152,4 @@ _stats:
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!CpViLhb4zmQV0O1n'
+

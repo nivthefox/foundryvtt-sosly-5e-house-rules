@@ -1,16 +1,16 @@
 folder: zLDylBwEWWuq3B0v
-name: Fire Form
+name: Rolling Flame
 type: spell
-_id: SazGLzCBAjU0WI1A
-img: icons/magic/fire/barrier-wall-explosion-orange.webp
+_id: DPMRyYkdLKo1aXBR
+img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
 system:
   activities:
-    qWNkHQ8M3L6yJm2y:
+    SvJCjxcgtZVGcc3K:
       type: utility
-      _id: qWNkHQ8M3L6yJm2y
+      _id: SvJCjxcgtZVGcc3K
       sort: 0
       activation:
-        type: bonus
+        type: action
         value: null
         override: false
       consumption:
@@ -19,7 +19,7 @@ system:
         spellSlot: false
         targets:
           - type: itemUses
-            value: '5'
+            value: '3'
             target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
             scaling:
               mode: ''
@@ -48,7 +48,7 @@ system:
       uses:
         spent: 0
         recovery: []
-      name: 5 Psi Points
+      name: 3 Psi Points
       img: ''
       appliedEffects: []
   uses:
@@ -57,16 +57,21 @@ system:
     max: ''
   description:
     value: >-
-      <p>You become wreathed in flames until your concentration ends. Any creature that end its turn within 5 feet of you takes 3d6 fire damage.</p>
+      <p>You create fire in a 20-foot-by-20-foot cube within 5 feet of you. The
+      fire lasts until your concentration ends. Any creature in that area when
+      you use this ability and any creature that ends its turn there takes 5
+      fire damage.</p>
 
-      <p><!-- TODO: Review implementation of aura damage. This requires automated damage when creatures end turn within 5 feet, which may need active effects or manual tracking. --></p>
+      <p><!-- TODO: Review implementation of area fire damage. This requires
+      automated damage at end of turn, which may need active effects or manual
+      tracking. --></p>
     chat: ''
-  identifier: fire-form
+  identifier: rolling-flame
   source:
     revision: 1
     rules: '2024'
   activation:
-    type: bonus
+    type: action
     value: null
     condition: ''
   duration:
@@ -84,14 +89,16 @@ system:
   properties:
     - concentration
   range:
-    units: self
+    units: ft
+    value: '5'
     special: ''
   school: wuj
   target:
     template:
       contiguous: false
       units: ft
-      type: ''
+      type: cube
+      size: '20'
     affects:
       choice: false
       type: ''
@@ -115,4 +122,5 @@ _stats:
   createdTime: null
   modifiedTime: null
   lastModifiedBy: NbCXvDXaYhqPCRFb
-_key: '!items!SazGLzCBAjU0WI1A'
+_key: '!items!DPMRyYkdLKo1aXBR'
+

@@ -13,7 +13,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -65,7 +65,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -117,7 +117,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -169,7 +169,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -221,7 +221,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -273,7 +273,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -325,7 +325,7 @@ system:
         type: bonus
         value: null
         override: false
-        condition: "if you haven't moved yet on your turn"
+        condition: if you haven't moved yet on your turn
       consumption:
         scaling:
           allowed: false
@@ -375,8 +375,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>If you haven't moved yet on your turn, you take a bonus action to teleport up to 20 feet per psi point spent to an unoccupied space you can see, and your speed is reduced to 0 until the end of the turn.</p>
-      <p><!-- TODO: Review implementation - teleportation is manual, speed reduction must be tracked by player --></p>
+      <p>If you haven't moved yet on your turn, you take a bonus action to
+      teleport up to 20 feet per psi point spent to an unoccupied space you can
+      see, and your speed is reduced to 0 until the end of the turn.</p> <p><!--
+      TODO: Review implementation - teleportation is manual, speed reduction
+      must be tracked by player --></p>
     chat: ''
   identifier: step-of-a-dozen-paces
   source:
@@ -385,7 +388,7 @@ system:
   activation:
     type: bonus
     value: null
-    condition: "if you haven't moved yet on your turn"
+    condition: if you haven't moved yet on your turn
   duration:
     units: inst
   level: 99
@@ -430,3 +433,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!pwGVQju4JygiQP5b'
+

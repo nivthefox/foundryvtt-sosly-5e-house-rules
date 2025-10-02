@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you take acid, cold, fire, lightning, or thunder damage'
+        condition: when you take acid, cold, fire, lightning, or thunder damage
       consumption:
         scaling:
           allowed: false
@@ -68,8 +68,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to damage of that type—including the triggering damage—until the end of your next turn.</p>
-      <p><!-- TODO: Review implementation - user must manually choose the appropriate resistance effect matching the damage type taken --></p>
+      <p>When you take acid, cold, fire, lightning, or thunder damage, you can
+      use your reaction to gain resistance to damage of that type—including the
+      triggering damage—until the end of your next turn.</p> <p><!-- TODO:
+      Review implementation - user must manually choose the appropriate
+      resistance effect matching the damage type taken --></p>
     chat: ''
   identifier: adaptive-shield
   source:
@@ -78,7 +81,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when you take acid, cold, fire, lightning, or thunder damage'
+    condition: when you take acid, cold, fire, lightning, or thunder damage
   duration:
     units: turn
     value: '1'
@@ -364,3 +367,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!zQ9xK0FdAbn27Hjz'
+

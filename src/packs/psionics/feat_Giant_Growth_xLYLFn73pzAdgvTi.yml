@@ -59,9 +59,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>You infuse yourself with psionic energy to grow to tremendous size, bolstering your strength and stature.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, your reach increases by 5 feet.</p>
+      <p>You infuse yourself with psionic energy to grow to tremendous size,
+      bolstering your strength and stature.</p><p><strong>Psychic
+      Focus.</strong> While focused on this discipline, your reach increases by
+      5 feet.</p>
 
-      <!-- TODO: Review implementation - Reach increase must be applied manually. The psychic focus effect serves as a reminder. -->
+      <!-- TODO: Review implementation - Reach increase must be applied
+      manually. The psychic focus effect serves as a reminder. -->
     chat: ''
   identifier: giant-growth
   source:
@@ -97,8 +101,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: >-
-      <p>While focused on this discipline, your reach increases by 5 feet.</p>
+    description: <p>While focused on this discipline, your reach increases by 5 feet.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -148,3 +151,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!xLYLFn73pzAdgvTi'
+

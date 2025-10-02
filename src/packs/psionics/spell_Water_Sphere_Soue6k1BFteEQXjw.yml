@@ -72,8 +72,17 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you cause a sphere of water to form around a creature. Choose one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it becomes trapped in the sphere of water until your concentration ends. While the target is trapped, its speed is halved, it suffers disadvantage on attack rolls, and it can't see anything more than 10 feet away from it. However, attack rolls against it also suffer disadvantage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
-      <p><!-- TODO: Review implementation - disadvantage on attack rolls by and against the target requires manual tracking, as does vision limitation to 10 feet --></p>
+      <p>As an action, you cause a sphere of water to form around a creature.
+      Choose one creature you can see within 60 feet of you. The target must
+      make a Dexterity saving throw. On a failed save, it becomes trapped in the
+      sphere of water until your concentration ends. While the target is
+      trapped, its speed is halved, it suffers disadvantage on attack rolls, and
+      it can't see anything more than 10 feet away from it. However, attack
+      rolls against it also suffer disadvantage. The target can repeat the
+      saving throw at the end of each of its turns, ending the effect on itself
+      on a success.</p> <p><!-- TODO: Review implementation - disadvantage on
+      attack rolls by and against the target requires manual tracking, as does
+      vision limitation to 10 feet --></p>
     chat: ''
   identifier: water-sphere
   source:
@@ -131,8 +140,12 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You are trapped in a sphere of water. Your speed is halved, you have disadvantage on attack rolls, and you can't see anything more than 10 feet away from you. However, attack rolls against you also have disadvantage.</p>
-      <p><strong>Repeat Save:</strong> You can repeat the Dexterity saving throw at the end of each of your turns, ending the effect on a success.</p>
+      <p>You are trapped in a sphere of water. Your speed is halved, you have
+      disadvantage on attack rolls, and you can't see anything more than 10 feet
+      away from you. However, attack rolls against you also have
+      disadvantage.</p> <p><strong>Repeat Save:</strong> You can repeat the
+      Dexterity saving throw at the end of each of your turns, ending the effect
+      on a success.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -179,3 +192,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!Soue6k1BFteEQXjw'
+

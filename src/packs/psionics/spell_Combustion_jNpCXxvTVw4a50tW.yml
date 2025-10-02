@@ -438,9 +438,17 @@ system:
     max: ''
   description:
     value: >-
-      <p>Choose one creature or object you can see within range. The target must make a Constitution save. On a failed save, the target takes 1d10 fire damage per psi point spent, and it catches on fire, taking 1d6 fire damage at the end of each of its turns until your concentration ends or until it or a creature adjacent to it extinguishes the flames with an action. On a successful save, the target takes half as much damage and doesn't catch on fire.</p>
+      <p>Choose one creature or object you can see within range. The target must
+      make a Constitution save. On a failed save, the target takes 1d10 fire
+      damage per psi point spent, and it catches on fire, taking 1d6 fire damage
+      at the end of each of its turns until your concentration ends or until it
+      or a creature adjacent to it extinguishes the flames with an action. On a
+      successful save, the target takes half as much damage and doesn't catch on
+      fire.</p>
 
-      <p><!-- TODO: Review implementation of ongoing fire damage (1d6 at end of turn). This may require an active effect with special duration or manual tracking. --></p>
+      <p><!-- TODO: Review implementation of ongoing fire damage (1d6 at end of
+      turn). This may require an active effect with special duration or manual
+      tracking. --></p>
     chat: ''
   identifier: combustion
   source:
@@ -499,3 +507,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!jNpCXxvTVw4a50tW'
+

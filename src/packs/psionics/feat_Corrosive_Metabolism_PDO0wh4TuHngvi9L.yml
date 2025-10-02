@@ -59,7 +59,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your control over acids and toxins enhances your physiology.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have resistance to acid and poison damage.</p>
+      <p>Your control over acids and toxins enhances your
+      physiology.</p><p><strong>Psychic Focus.</strong> While focused on this
+      discipline, you have resistance to acid and poison damage.</p>
     chat: ''
   identifier: corrosive-metabolism
   source:
@@ -156,3 +158,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!PDO0wh4TuHngvi9L'
+

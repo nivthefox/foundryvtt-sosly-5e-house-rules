@@ -71,8 +71,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you can touch one creature and give it immunity to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your concentration ends.</p>
-      <p><!-- TODO: Review implementation - user must manually choose the appropriate immunity effect matching the chosen damage type --></p>
+      <p>As an action, you can touch one creature and give it immunity to acid,
+      cold, fire, lightning, or thunder damage (your choice), which lasts until
+      your concentration ends.</p> <p><!-- TODO: Review implementation - user
+      must manually choose the appropriate immunity effect matching the chosen
+      damage type --></p>
     chat: ''
   identifier: energy-immunity
   source:
@@ -370,3 +373,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!7ajIB3nSITVYe2Xn'
+

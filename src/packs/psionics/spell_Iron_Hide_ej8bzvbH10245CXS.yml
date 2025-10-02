@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -66,7 +66,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -119,7 +119,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -172,7 +172,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -225,7 +225,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -278,7 +278,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -331,7 +331,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'when you are hit by an attack'
+        condition: when you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -382,7 +382,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a reaction when you are hit by an attack, you gain a +1 bonus to AC for each psi point you spend on this ability. The bonus lasts until the end of your next turn. This bonus applies against the triggering attack.</p>
+      <p>As a reaction when you are hit by an attack, you gain a +1 bonus to AC
+      for each psi point you spend on this ability. The bonus lasts until the
+      end of your next turn. This bonus applies against the triggering
+      attack.</p>
     chat: ''
   identifier: iron-hide
   source:
@@ -391,7 +394,7 @@ system:
   activation:
     type: reaction
     value: null
-    condition: 'when you are hit by an attack'
+    condition: when you are hit by an attack
   duration:
     units: turn
   level: 99
@@ -438,7 +441,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +1 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +1 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -486,7 +491,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +2 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +2 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -534,7 +541,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +3 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +3 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -582,7 +591,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +4 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +4 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -630,7 +641,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +5 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +5 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -678,7 +691,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +6 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +6 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -726,7 +741,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>You gain a +7 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    description: >-
+      <p>You gain a +7 bonus to AC until the end of your next turn. This bonus
+      applies against the triggering attack.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -772,3 +789,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!ej8bzvbH10245CXS'
+

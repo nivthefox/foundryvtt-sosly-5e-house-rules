@@ -529,9 +529,16 @@ system:
     max: ''
   description:
     value: >-
-      <p>You channel your anger into your touch, delivering a devastating blast. As an action, make a melee discipline attack against a creature you can reach. If the target damaged you since the end of your last turn, you have advantage on the attack roll. On a hit, the creature takes 1d8 force damage per psi point spent.</p>
+      <p>You channel your anger into your touch, delivering a devastating blast.
+      As an action, make a melee discipline attack against a creature you can
+      reach. If the target damaged you since the end of your last turn, you have
+      advantage on the attack roll. On a hit, the creature takes 1d8 force
+      damage per psi point spent.</p>
 
-      <!-- TODO: Review implementation of conditional advantage mechanic - "If the target damaged you since the end of your last turn, you have advantage on the attack roll" - this may require manual selection or DM adjudication -->
+      <!-- TODO: Review implementation of conditional advantage mechanic - "If
+      the target damaged you since the end of your last turn, you have advantage
+      on the attack roll" - this may require manual selection or DM adjudication
+      -->
     chat: ''
   identifier: hammer
   source:
@@ -587,3 +594,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!ccv1YXlYLLCu0nn1'
+

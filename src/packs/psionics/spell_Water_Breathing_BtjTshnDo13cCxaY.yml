@@ -68,7 +68,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you grant yourself and up to ten willing creatures you can see within 60 feet of you the ability to breathe underwater for the next 24 hours.</p>
+      <p>As an action, you grant yourself and up to ten willing creatures you
+      can see within 60 feet of you the ability to breathe underwater for the
+      next 24 hours.</p>
     chat: ''
   identifier: water-breathing
   source:
@@ -124,7 +126,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You can breathe underwater.</p>'
+    description: <p>You can breathe underwater.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -170,3 +172,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!BtjTshnDo13cCxaY'
+

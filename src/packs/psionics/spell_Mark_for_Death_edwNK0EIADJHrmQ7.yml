@@ -68,8 +68,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you study the target, making note of weak points. The next hit you score against the target before the end of your next turn is a critical hit.</p>
-      <p><!-- TODO: Review implementation of automatic critical hit - this mechanic may require manual application by the player/DM, as FoundryVTT does not natively support "next hit is a critical" effects. Consider using the effect as a reminder. --></p>
+      <p>As an action, you study the target, making note of weak points. The
+      next hit you score against the target before the end of your next turn is
+      a critical hit.</p> <p><!-- TODO: Review implementation of automatic
+      critical hit - this mechanic may require manual application by the
+      player/DM, as FoundryVTT does not natively support "next hit is a
+      critical" effects. Consider using the effect as a reminder. --></p>
     chat: ''
   identifier: mark-for-death
   source:
@@ -125,7 +129,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: '<p>Marked for death. The next hit against this creature is a critical hit.</p>'
+    description: >-
+      <p>Marked for death. The next hit against this creature is a critical
+      hit.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -172,3 +178,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!edwNK0EIADJHrmQ7'
+

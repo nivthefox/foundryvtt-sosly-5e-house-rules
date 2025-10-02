@@ -60,8 +60,12 @@ system:
   description:
     value: >-
       <p>Your body gains the ability to adapt to hostile environments.</p>
-      <p><strong>Psychic Focus.</strong> While focused on this discipline, you don't need to eat, breathe, or sleep. To gain the benefits of a long rest, you can spend all 8 hours engaged in light activity, rather than sleeping during any of it.</p>
-      <p><!-- TODO: Review implementation - the psychic focus benefits (no eat/breathe/sleep, light activity for long rest) must be tracked manually --></p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      don't need to eat, breathe, or sleep. To gain the benefits of a long rest,
+      you can spend all 8 hours engaged in light activity, rather than sleeping
+      during any of it.</p> <p><!-- TODO: Review implementation - the psychic
+      focus benefits (no eat/breathe/sleep, light activity for long rest) must
+      be tracked manually --></p>
     chat: ''
   identifier: adaptive-body
   source:
@@ -98,7 +102,9 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>While focused on this discipline, you don't need to eat, breathe, or sleep. To gain the benefits of a long rest, you can spend all 8 hours engaged in light activity, rather than sleeping during any of it.</p>
+      <p>While focused on this discipline, you don't need to eat, breathe, or
+      sleep. To gain the benefits of a long rest, you can spend all 8 hours
+      engaged in light activity, rather than sleeping during any of it.</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -150,3 +156,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!q2PJ6YS2WJFbCzcf'
+

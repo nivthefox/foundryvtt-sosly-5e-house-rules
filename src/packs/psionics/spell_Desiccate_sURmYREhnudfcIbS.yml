@@ -480,7 +480,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose one creature you can see within 60 feet of you. The target must make a Constitution saving throw, taking 1d10 necrotic damage per psi point spent on this ability, or half as much damage on a successful one.</p>
+      <p>As an action, choose one creature you can see within 60 feet of you.
+      The target must make a Constitution saving throw, taking 1d10 necrotic
+      damage per psi point spent on this ability, or half as much damage on a
+      successful one.</p>
     chat: ''
   identifier: desiccate
   source:
@@ -537,3 +540,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!sURmYREhnudfcIbS'
+

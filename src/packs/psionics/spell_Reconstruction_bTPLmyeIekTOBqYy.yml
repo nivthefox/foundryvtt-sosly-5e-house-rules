@@ -41,7 +41,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -98,7 +98,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -156,7 +156,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -214,7 +214,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -272,7 +272,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -330,7 +330,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -388,7 +388,7 @@ system:
           choice: false
           type: object
           count: '1'
-          special: 'construct or object'
+          special: construct or object
         override: false
         prompt: true
       uses:
@@ -417,7 +417,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you can touch a construct or object and reknit its structure to repair damage it has taken. The construct or object regains 5 hit points per psi point you spend.</p>
+      <p>As an action, you can touch a construct or object and reknit its
+      structure to repair damage it has taken. The construct or object regains 5
+      hit points per psi point you spend.</p>
     chat: ''
   identifier: reconstruction
   source:
@@ -452,7 +454,7 @@ system:
       choice: false
       type: object
       count: '1'
-      special: 'construct or object'
+      special: construct or object
 effects: []
 sort: 0
 ownership:
@@ -473,3 +475,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!bTPLmyeIekTOBqYy'
+

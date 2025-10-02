@@ -494,9 +494,18 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you create a floating crystal charged with psychic energy in an unoccupied space of your choice within 60 feet. The crystal lasts for 1 minute. Any creature that ends its turn within 5 feet of the crystal must make a Wisdom saving throw. The creature takes 1d6 psychic damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
-      <p>As a bonus action, you can move the crystal up to 30 feet. If you ram the crystal into a creature, that creature must make the saving throw against the crystal's damage, and the crystal stops moving this turn.</p>
-      <p><!-- TODO: Review implementation - Movement and ramming of the crystal as a bonus action must be handled manually. Damage occurs at end of creature's turn within 5 feet, which requires manual tracking or DM intervention. --></p>
+      <p>As an action, you create a floating crystal charged with psychic energy
+      in an unoccupied space of your choice within 60 feet. The crystal lasts
+      for 1 minute. Any creature that ends its turn within 5 feet of the crystal
+      must make a Wisdom saving throw. The creature takes 1d6 psychic damage per
+      psi point spent on a failed save, or half as much damage on a successful
+      one.</p> <p>As a bonus action, you can move the crystal up to 30 feet. If
+      you ram the crystal into a creature, that creature must make the saving
+      throw against the crystal's damage, and the crystal stops moving this
+      turn.</p> <p><!-- TODO: Review implementation - Movement and ramming of
+      the crystal as a bonus action must be handled manually. Damage occurs at
+      end of creature's turn within 5 feet, which requires manual tracking or DM
+      intervention. --></p>
     chat: ''
   identifier: baleful-crystal
   source:
@@ -555,3 +564,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!4OCRR2WkEcvAsdUr'
+

@@ -65,8 +65,12 @@ system:
     max: ''
   description:
     value: >-
-      <p>As a bonus action, you imbue a ranged weapon with a limited sentience. Until your concentration ends, you can make an extra attack with the weapon at the start of each of your turns (no action required). If it is a thrown weapon, it returns to your grasp after each attack.</p>
-      <p><!-- TODO: Review implementation - the extra attack must be manually made by the user at the start of their turn --></p>
+      <p>As a bonus action, you imbue a ranged weapon with a limited sentience.
+      Until your concentration ends, you can make an extra attack with the
+      weapon at the start of each of your turns (no action required). If it is a
+      thrown weapon, it returns to your grasp after each attack.</p> <p><!--
+      TODO: Review implementation - the extra attack must be manually made by
+      the user at the start of their turn --></p>
     chat: ''
   identifier: faithful-archer
   source:
@@ -120,7 +124,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: '<p>You can make an extra attack with the imbued ranged weapon at the start of each of your turns (no action required).</p>'
+    description: >-
+      <p>You can make an extra attack with the imbued ranged weapon at the start
+      of each of your turns (no action required).</p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -166,3 +172,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!RMe4qYU0wOe95eoD'
+

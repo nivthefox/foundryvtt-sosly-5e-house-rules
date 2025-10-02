@@ -438,8 +438,13 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and suffers disadvantage on its next Wisdom saving throw before the end of your next turn. On a successful save, it takes half as much damage.</p>
-      <p><!-- TODO: Review implementation of "disadvantage on next Wisdom saving throw" mechanic - this may require an effect or active effect configuration --></p>
+      <p>As an action, choose one creature you can see within 60 feet of you.
+      The target must make an Intelligence saving throw. On a failed save, it
+      takes 1d10 psychic damage per psi point spent and suffers disadvantage on
+      its next Wisdom saving throw before the end of your next turn. On a
+      successful save, it takes half as much damage.</p> <p><!-- TODO: Review
+      implementation of "disadvantage on next Wisdom saving throw" mechanic -
+      this may require an effect or active effect configuration --></p>
     chat: ''
   identifier: hammer-of-inquisition
   source:
@@ -496,3 +501,4 @@ _stats:
   modifiedTime: 1755590000000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!P7zsxw4eohXcvJ1F'
+

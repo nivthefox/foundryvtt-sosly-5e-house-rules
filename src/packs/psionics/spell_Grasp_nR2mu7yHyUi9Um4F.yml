@@ -85,7 +85,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -155,7 +155,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -225,7 +225,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -295,7 +295,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -365,7 +365,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -435,7 +435,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -505,7 +505,7 @@ system:
         type: action
         value: null
         override: false
-        condition: 'While target is grappled'
+        condition: While target is grappled
       consumption:
         scaling:
           allowed: false
@@ -573,22 +573,34 @@ system:
     max: ''
   description:
     value: >-
-      <p>You attempt to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Strength saving throw or take 2d6 bludgeoning damage and be grappled by you until your concentration ends or until the target leaves your reach, which is 60 feet for this grapple.</p>
+      <p>You attempt to grasp a creature in telekinetic energy and hold it
+      captive. As an action, choose one creature you can see within 60 feet of
+      you. The target must succeed on a Strength saving throw or take 2d6
+      bludgeoning damage and be grappled by you until your concentration ends or
+      until the target leaves your reach, which is 60 feet for this grapple.</p>
 
-      <p>The grappled target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your psionic ability plus your proficiency bonus. When a target attempts to escape in this way, you can spend psi points to boost your check, abiding by your psi limit. You gain a +1 bonus per psi point spent.</p>
+      <p>The grappled target can escape by succeeding on a Strength (Athletics)
+      or Dexterity (Acrobatics) check contested by your psionic ability plus
+      your proficiency bonus. When a target attempts to escape in this way, you
+      can spend psi points to boost your check, abiding by your psi limit. You
+      gain a +1 bonus per psi point spent.</p>
 
-      <p>While a target is grappled in this manner, you create one of the following effects as an action:</p>
-      <ul>
+      <p>While a target is grappled in this manner, you create one of the
+      following effects as an action:</p> <ul>
         <li><strong>Crush (1-7 psi):</strong> The target takes 1d6 bludgeoning damage per psi point spent.</li>
         <li><strong>Move (1-7 psi):</strong> You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends.</li>
       </ul>
 
-      <p><em><!-- TODO: Review implementation of Grasp power - This is a complex power with the following manual elements:
-      1. The grappled condition must be manually applied on failed save, and the effect should be linked to concentration
-      2. The contested check for escape (Athletics/Acrobatics vs psionic ability + proficiency + psi point bonus) requires manual adjudication
-      3. The Move option (5 feet per psi point) requires manual positioning of the creature
-      4. The ability to hold creatures in the air and cause falling damage when grapple ends must be tracked manually
-      This power may benefit from custom automation or active effects if available. --></em></p>
+      <p><em><!-- TODO: Review implementation of Grasp power - This is a complex
+      power with the following manual elements: 1. The grappled condition must
+      be manually applied on failed save, and the effect should be linked to
+      concentration 2. The contested check for escape (Athletics/Acrobatics vs
+      psionic ability + proficiency + psi point bonus) requires manual
+      adjudication 3. The Move option (5 feet per psi point) requires manual
+      positioning of the creature 4. The ability to hold creatures in the air
+      and cause falling damage when grapple ends must be tracked manually This
+      power may benefit from custom automation or active effects if available.
+      --></em></p>
     chat: ''
   identifier: grasp
   source:
@@ -646,7 +658,11 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You are grappled by telekinetic energy. Your reach for this grapple is 60 feet. You can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by the grappler's psionic ability modifier plus proficiency bonus (plus any psi points they spend for a +1 bonus each).</p>
+      <p>You are grappled by telekinetic energy. Your reach for this grapple is
+      60 feet. You can escape by succeeding on a Strength (Athletics) or
+      Dexterity (Acrobatics) check contested by the grappler's psionic ability
+      modifier plus proficiency bonus (plus any psi points they spend for a +1
+      bonus each).</p>
     tint: '#ffffff'
     statuses:
       - grappled
@@ -693,3 +709,4 @@ _stats:
   modifiedTime: 1727740800000
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!nR2mu7yHyUi9Um4F'
+

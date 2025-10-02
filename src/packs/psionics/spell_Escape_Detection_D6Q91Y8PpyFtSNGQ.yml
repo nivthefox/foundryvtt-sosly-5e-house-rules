@@ -65,8 +65,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>As an action, you hide yourself from divination magic. For the duration, you can't be targeted by any divination magic or perceived through magical scrying sensors.</p>
-      <p><!-- TODO: Review implementation - divination immunity is descriptive only and may need GM enforcement --></p>
+      <p>As an action, you hide yourself from divination magic. For the
+      duration, you can't be targeted by any divination magic or perceived
+      through magical scrying sensors.</p> <p><!-- TODO: Review implementation -
+      divination immunity is descriptive only and may need GM enforcement
+      --></p>
     chat: ''
   identifier: escape-detection
   source:
@@ -120,8 +123,10 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You are hidden from divination magic. You can't be targeted by any divination magic or perceived through magical scrying sensors.</p>
-      <p><em>Note: This is a descriptive effect and may need GM enforcement.</em></p>
+      <p>You are hidden from divination magic. You can't be targeted by any
+      divination magic or perceived through magical scrying sensors.</p>
+      <p><em>Note: This is a descriptive effect and may need GM
+      enforcement.</em></p>
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -167,3 +172,4 @@ _stats:
   modifiedTime: null
   lastModifiedBy: null
 _key: '!items!D6Q91Y8PpyFtSNGQ'
+
