@@ -1,0 +1,432 @@
+folder: zLDylBwEWWuq3B0v
+name: Psychic Parry
+type: spell
+_id: bIidw9gGZmb3eVFR
+img: icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp
+system:
+  activities:
+    GicIT1a4LDEoO9rK:
+      type: utility
+      _id: GicIT1a4LDEoO9rK
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 1 Psi Point (+1)
+      img: ''
+      appliedEffects: []
+    oTxn20jG513W34YM:
+      type: utility
+      _id: oTxn20jG513W34YM
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points (+2)
+      img: ''
+      appliedEffects: []
+    GEsVVWENb85RkTI3:
+      type: utility
+      _id: GEsVVWENb85RkTI3
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points (+3)
+      img: ''
+      appliedEffects: []
+    fRDiD7hXId6Y3ImT:
+      type: utility
+      _id: fRDiD7hXId6Y3ImT
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 4 Psi Points (+4)
+      img: ''
+      appliedEffects: []
+    Mb4QFRRY7pYc5htD:
+      type: utility
+      _id: Mb4QFRRY7pYc5htD
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points (+5)
+      img: ''
+      appliedEffects: []
+    zbdPvkCTpg2DnbA5:
+      type: utility
+      _id: zbdPvkCTpg2DnbA5
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points (+6)
+      img: ''
+      appliedEffects: []
+    0wtlggaw6lFdfuM4:
+      type: utility
+      _id: 0wtlggaw6lFdfuM4
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points (+7)
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a reaction when you make an Intelligence, a Wisdom, or a Charisma saving throw, you gain a +1 bonus to that saving throw for each psi point you spend on this ability. You can use this ability after rolling the die but before suffering the results.</p>
+      <p><!-- TODO: Review implementation - bonus must be applied manually to the saving throw --></p>
+    chat: ''
+  identifier: psychic-parry
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when you make an Intelligence, Wisdom, or Charisma saving throw'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!bIidw9gGZmb3eVFR'

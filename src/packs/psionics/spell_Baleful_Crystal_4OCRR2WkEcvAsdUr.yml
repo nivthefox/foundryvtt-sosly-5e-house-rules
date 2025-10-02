@@ -1,0 +1,557 @@
+folder: zLDylBwEWWuq3B0v
+name: Baleful Crystal
+type: spell
+_id: 4OCRR2WkEcvAsdUr
+img: icons/magic/symbols/runes-star-pentagon-purple.webp
+system:
+  activities:
+    8NdPBavpJdWlHu5B:
+      type: save
+      _id: 8NdPBavpJdWlHu5B
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 1
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    WXKlBOPqBpmApEdY:
+      type: save
+      _id: WXKlBOPqBpmApEdY
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    wMJEIReiP0OxNfnD:
+      type: save
+      _id: wMJEIReiP0OxNfnD
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 3
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+    cCpJZiBTPAT5xh24:
+      type: save
+      _id: cCpJZiBTPAT5xh24
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 4
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    WFArlyMIF8Fq4lan:
+      type: save
+      _id: WFArlyMIF8Fq4lan
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 5
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+    mA2bwmvHAmQNeIjO:
+      type: save
+      _id: mA2bwmvHAmQNeIjO
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 6
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+    HByi9Tc6r9K4YXUk:
+      type: save
+      _id: HByi9Tc6r9K4YXUk
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 7
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you create a floating crystal charged with psychic energy in an unoccupied space of your choice within 60 feet. The crystal lasts for 1 minute. Any creature that ends its turn within 5 feet of the crystal must make a Wisdom saving throw. The creature takes 1d6 psychic damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
+      <p>As a bonus action, you can move the crystal up to 30 feet. If you ram the crystal into a creature, that creature must make the saving throw against the crystal's damage, and the crystal stops moving this turn.</p>
+      <p><!-- TODO: Review implementation - Movement and ramming of the crystal as a bonus action must be handled manually. Damage occurs at end of creature's turn within 5 feet, which requires manual tracking or DM intervention. --></p>
+    chat: ''
+  identifier: baleful-crystal
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: space
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!4OCRR2WkEcvAsdUr'

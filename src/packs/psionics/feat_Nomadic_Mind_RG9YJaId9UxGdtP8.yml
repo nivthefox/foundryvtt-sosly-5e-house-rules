@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Nomadic Mind
+type: feat
+_id: RG9YJaId9UxGdtP8
+img: icons/magic/perception/third-eye-blue-red.webp
+system:
+  activities:
+    b9E5ZK4hNbGxOElF:
+      type: utility
+      _id: b9E5ZK4hNbGxOElF
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: CH3qptni8cwA5HLB
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You have mastered the art of using psionics to alter your perceptions and awareness.</p>
+      <p><strong>Psychic Focus.</strong> Whenever you focus on this discipline, you choose one skill or tool and have proficiency with it until your focus ends. Alternatively, you gain the ability to read and write one language until your focus ends.</p>
+      <p><!-- TODO: Review implementation - psychic focus proficiency/language benefit requires manual selection and application --></p>
+    chat: ''
+  identifier: nomadic-mind
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: nom
+effects:
+  - name: Nomadic Mind
+    img: icons/magic/perception/third-eye-blue-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.RG9YJaId9UxGdtP8
+    transfer: true
+    _id: CH3qptni8cwA5HLB
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: 'You have proficiency with one chosen skill or tool, or can read and write one chosen language.'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!RG9YJaId9UxGdtP8.CH3qptni8cwA5HLB'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.rVvRBZZXy8OY5moo
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.t9ePxYl7W4QFM1tG
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.wwr4pztuBvkidllk
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.dDKDr7qHa0XxOaH2
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.5VB1E7tAMqJcPTLe
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.xFSKVA3HiuzCvvDv
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!RG9YJaId9UxGdtP8'

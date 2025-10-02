@@ -1,0 +1,122 @@
+folder: qirdYeQL7WmxiOku
+name: Blind Spot
+type: spell
+_id: 8Hzd3bRgW18jkugT
+img: icons/magic/control/debuff-chains-ethereal-pink.webp
+system:
+  activities:
+    I4VkMKT5VOfo86JW:
+      type: save
+      _id: I4VkMKT5VOfo86JW
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '120'
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: ''
+        parts: []
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn.</p>
+    chat: ''
+  identifier: blind-spot
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: turn
+    value: '1'
+  level: 0
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '120'
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1738454400000
+  modifiedTime: 1738454400000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!8Hzd3bRgW18jkugT'

@@ -1,0 +1,149 @@
+folder: m2PtsowjwBvhRcVY
+name: Elemental Weapon
+type: feat
+_id: pkRXFySaWhz293Ks
+img: icons/weapons/swords/sword-guard-bronze.webp
+system:
+  activities:
+    ifUsrUid6KCMA1rm:
+      type: utility
+      _id: ifUsrUid6KCMA1rm
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: KKlDO4Jgh3jTtmkL
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You channel elemental energy through your weapons, imbuing them with destructive power.</p>
+      <p><strong>Psychic Focus.</strong> Whenever you focus on this discipline, choose one weapon you're holding or your unarmed strike, and choose acid, cold, fire, lightning, or thunder. When you attack with it while focused on this discipline, it deals damage of the chosen type equal to your psionic ability modifier, but you don't add your Strength or Dexterity modifier to the weapon's damage rolls.</p>
+      <p><!-- TODO: Review implementation of psychic focus - the damage type change and modifier replacement is described but not mechanically implemented. User will need to manually apply these changes. --></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: sok
+effects:
+  - name: Elemental Weapon
+    img: icons/weapons/swords/sword-guard-bronze.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.pkRXFySaWhz293Ks
+    transfer: true
+    _id: KKlDO4Jgh3jTtmkL
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!pkRXFySaWhz293Ks.KKlDO4Jgh3jTtmkL'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.B8n2Wf4HfbLPSa1y
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.XdQJkjtyqPZR54ih
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!pkRXFySaWhz293Ks'

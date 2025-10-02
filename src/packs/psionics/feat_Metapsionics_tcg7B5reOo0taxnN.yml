@@ -1,0 +1,149 @@
+folder: m2PtsowjwBvhRcVY
+name: Metapsionics
+type: feat
+_id: tcg7B5reOo0taxnN
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  activities:
+    DfeDMDAGyIX4knvS:
+      type: utility
+      _id: DfeDMDAGyIX4knvS
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: tgWykX4kHJSYNhsg
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Metapsionics allows you to perceive and manipulate psionic energy itself. This discipline gives you insight into the nature of psionics and allows you to detect, dispel, and prepare contingent psionic effects.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Intelligence (Arcana) checks made to identify psionic effects.</p>
+    chat: ''
+  identifier: metapsionics
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Metapsionics
+    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.tcg7B5reOo0taxnN
+    transfer: true
+    _id: tgWykX4kHJSYNhsg
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755600000000
+      modifiedTime: 1755600000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!tcg7B5reOo0taxnN.tgWykX4kHJSYNhsg'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.41QCZrkxbRfk8uVn
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.DzOQz5u9Kh8xJBuY
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.4G5m1VTFv3xPbGr3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!tcg7B5reOo0taxnN'

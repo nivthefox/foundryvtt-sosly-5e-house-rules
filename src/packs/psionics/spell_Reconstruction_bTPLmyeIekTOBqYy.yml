@@ -1,0 +1,475 @@
+folder: zLDylBwEWWuq3B0v
+name: Reconstruction
+type: spell
+_id: bTPLmyeIekTOBqYy
+img: icons/magic/control/buff-flight-wings-runes-purple.webp
+system:
+  activities:
+    xSFZMDPzRh4id7pP:
+      type: heal
+      _id: xSFZMDPzRh4id7pP
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '5'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    jQZsQ04oY3RnxIIg:
+      type: heal
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '10'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 2 Psi Points
+      _id: jQZsQ04oY3RnxIIg
+      img: ''
+      appliedEffects: []
+    1M4cSuTHf3D6D5bs:
+      type: heal
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '15'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 3 Psi Points
+      _id: 1M4cSuTHf3D6D5bs
+      img: ''
+      appliedEffects: []
+    iyyD09XKFO2P9jTK:
+      type: heal
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '20'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 4 Psi Points
+      _id: iyyD09XKFO2P9jTK
+      img: ''
+      appliedEffects: []
+    6cFXpZwMoatYyuuU:
+      type: heal
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '25'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 5 Psi Points
+      _id: 6cFXpZwMoatYyuuU
+      img: ''
+      appliedEffects: []
+    RXvU7aqWDO85j7v6:
+      type: heal
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '30'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 6 Psi Points
+      _id: RXvU7aqWDO85j7v6
+      img: ''
+      appliedEffects: []
+    Cy3zSBV3jnPs7O3A:
+      type: heal
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: touch
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'construct or object'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '35'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      name: 7 Psi Points
+      _id: Cy3zSBV3jnPs7O3A
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you can touch a construct or object and reknit its structure to repair damage it has taken. The construct or object regains 5 hit points per psi point you spend.</p>
+    chat: ''
+  identifier: reconstruction
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: touch
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: object
+      count: '1'
+      special: 'construct or object'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!bTPLmyeIekTOBqYy'

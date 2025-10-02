@@ -1,0 +1,386 @@
+folder: zLDylBwEWWuq3B0v
+name: Move
+type: spell
+_id: eaKd4Ka031nPU8f8
+img: icons/magic/movement/trail-streak-zigzag-yellow.webp
+system:
+  activities:
+    dllmGgErCBmKDdiV:
+      type: utility
+      _id: dllmGgErCBmKDdiV
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points (25 lbs, 2d6 damage)
+      img: ''
+      appliedEffects: []
+    O73bCBbm7tSEnRJp:
+      type: utility
+      _id: O73bCBbm7tSEnRJp
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points (50 lbs, 4d6 damage)
+      img: ''
+      appliedEffects: []
+    LPOUH2AvioHo5nN4:
+      type: utility
+      _id: LPOUH2AvioHo5nN4
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points (250 lbs, 6d6 damage)
+      img: ''
+      appliedEffects: []
+    tmTdqzipGt3UlI8x:
+      type: utility
+      _id: tmTdqzipGt3UlI8x
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points (500 lbs, 7d6 damage)
+      img: ''
+      appliedEffects: []
+    lvBAw5bLEMOqM3lU:
+      type: utility
+      _id: lvBAw5bLEMOqM3lU
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points (1,000 lbs, 8d6 damage)
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Choose one object you can see within 60 feet of you that isn't being worn or carried by another creature and that isn't secured in place. It can't be larger than 20 feet on a side, and its maximum weight depends on the psi points spent on this ability.</p>
+
+      <p>As an action, you move the object up to 60 feet, and you must keep the object within sight during this movement. If the object ends this movement in the air, it falls. If the object would fall on a creature, the creature must succeed on a DC 10 Dexterity saving throw or take bludgeoning damage as listed below.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Psi Spent</th>
+            <th>Maximum Weight</th>
+            <th>Bludgeoning Damage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>25 lbs.</td>
+            <td>2d6</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>50 lbs.</td>
+            <td>4d6</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>250 lbs.</td>
+            <td>6d6</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>500 lbs.</td>
+            <td>7d6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1,000 lbs.</td>
+            <td>8d6</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><em><!-- TODO: Review implementation of object movement and falling damage mechanics - The object movement (up to 60 feet) and the DC 10 Dexterity save for falling damage must be handled manually by the DM, as FoundryVTT's activity system does not automatically apply object telekinesis or calculate falling object damage. The weight limits and damage values are provided in the table above for reference. --></em></p>
+    chat: ''
+  identifier: move
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: object
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!eaKd4Ka031nPU8f8'

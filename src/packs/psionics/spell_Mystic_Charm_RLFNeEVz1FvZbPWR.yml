@@ -1,0 +1,120 @@
+folder: qirdYeQL7WmxiOku
+name: Mystic Charm
+type: spell
+_id: RLFNeEVz1FvZbPWR
+img: icons/magic/control/hypnosis-mesmerism-eye.webp
+system:
+  activities:
+    es44fOpaXoFsFa0b:
+      type: save
+      _id: es44fOpaXoFsFa0b
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '120'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: humanoid
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn.</p>
+    chat: ''
+  identifier: mystic-charm
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 0
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '120'
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+      type: humanoid
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!RLFNeEVz1FvZbPWR'

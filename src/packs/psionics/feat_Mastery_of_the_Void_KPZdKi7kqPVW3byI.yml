@@ -1,0 +1,203 @@
+folder: m2PtsowjwBvhRcVY
+name: Mastery of the Void
+type: feat
+_id: KPZdKi7kqPVW3byI
+img: icons/magic/unholy/orb-energy-pink.webp
+system:
+  activities:
+    zppPlVyJAbi1EBU5:
+      type: utility
+      _id: zppPlVyJAbi1EBU5
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 0HXabCdmKHNsi6PG
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      appliedEffects: []
+    KpKr8u6ATtEoifKU:
+      type: utility
+      _id: KpKr8u6ATtEoifKU
+      sort: 1
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        value: '1'
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Detect Aberrations
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield power over the void, channeling negative energy and psychic destruction.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, as an action, you can spend 1 psi point to learn the location of any aberration within 60 feet of you that is not behind total cover. This effect lasts until the end of your next turn.</p>
+    chat: ''
+  identifier: mastery-of-the-void
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Mastery of the Void
+    img: icons/magic/unholy/orb-energy-pink.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.KPZdKi7kqPVW3byI
+    transfer: true
+    _id: 0HXabCdmKHNsi6PG
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!KPZdKi7kqPVW3byI.0HXabCdmKHNsi6PG'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.t0Y7WfSMZQpJDPlx
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.2rRAP5wmz9MSLg73
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.KYOsfIiN09p3dTuD
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.6l8NAt96RLgPAm9e
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!KPZdKi7kqPVW3byI'

@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Deceive Senses
+type: feat
+_id: JnbYMpraOvsRbx9F
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  activities:
+    lQlKEBGdUv8DCIfY:
+      type: utility
+      _id: lQlKEBGdUv8DCIfY
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: 1
+        concentration: false
+        override: false
+      effects:
+        - _id: i4WbIlv7MjcqAwCF
+      range:
+        units: ft
+        value: 90
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to deceive the senses and create illusions in the minds of others.</p>
+      <p><strong>Psychic Focus.</strong> While focusing on this discipline, you can use your action to choose a point within 90 feet of you that you can see. For 1 minute, or until you dismiss this effect as a bonus action on your turn, your voice seems to originate from that point.</p>
+    chat: ''
+  identifier: deceive-senses
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Deceive Senses
+    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.JnbYMpraOvsRbx9F
+    transfer: true
+    _id: i4WbIlv7MjcqAwCF
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your voice seems to originate from a point within 90 feet of you that you can see. This effect lasts for 1 minute, or until you dismiss it as a bonus action on your turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!JnbYMpraOvsRbx9F.i4WbIlv7MjcqAwCF'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.SI25NbTAlwd5PkfC
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.W2axZ3Ap7Mv4fImY
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.zU5fPytSbgZa9M9E
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.K6VpttT4flDTspQG
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!JnbYMpraOvsRbx9F'

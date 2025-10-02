@@ -1,0 +1,150 @@
+folder: m2PtsowjwBvhRcVY
+name: Spectral Throw
+type: feat
+_id: tvmuB3WJxgB44xSu
+img: icons/weapons/thrown/dagger-ringed-white.webp
+system:
+  activities:
+    U38L4Y1K30ygsP8Z:
+      type: utility
+      _id: U38L4Y1K30ygsP8Z
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: rIXGocah4vlid27O
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to enhance your thrown weapon attacks with spectral force.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, when you throw a weapon, you may have it return to your hand after the attack is resolved. If using the Soul Knife class feature, your soul knife doesn't dissipate when thrown.</p>
+    chat: ''
+  identifier: spectral-throw
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: sok
+effects:
+  - name: Spectral Throw
+    img: icons/weapons/thrown/dagger-ringed-white.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.tvmuB3WJxgB44xSu
+    transfer: true
+    _id: rIXGocah4vlid27O
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!tvmuB3WJxgB44xSu.rIXGocah4vlid27O'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.sikhhZoGMKHFLUM7
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.PkuaK2fyd41d4MuX
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.kTHgH87WgawB85V6
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!tvmuB3WJxgB44xSu'

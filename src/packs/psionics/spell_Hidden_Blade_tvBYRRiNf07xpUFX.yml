@@ -1,0 +1,116 @@
+folder: qirdYeQL7WmxiOku
+name: Hidden Blade
+type: spell
+_id: tvBYRRiNf07xpUFX
+img: icons/weapons/swords/sword-guard-steel.webp
+system:
+  activities:
+    N0CgmjF7dMoqX3cJ:
+      type: utility
+      _id: N0CgmjF7dMoqX3cJ
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Hidden Blade
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you cause one simple or martial melee weapon you are holding to dissolve into your body. This process is harmless to you and the weapon. Until the weapon reappears, it is inaccessible, as are any of its properties. You can have only one weapon at a time affected in this way.</p>
+      <p>You can summon the weapon to your hand as a bonus action. It reappears in your space if you are unconscious or dead.</p>
+    chat: ''
+  identifier: hidden-blade
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: inst
+    value: ''
+  level: 0
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+      type: self
+      count: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!tvBYRRiNf07xpUFX'

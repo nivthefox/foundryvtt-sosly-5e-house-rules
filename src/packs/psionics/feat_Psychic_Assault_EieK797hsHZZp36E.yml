@@ -1,0 +1,151 @@
+folder: m2PtsowjwBvhRcVY
+name: Psychic Assault
+type: feat
+_id: EieK797hsHZZp36E
+img: icons/magic/light/projectile-beams-salvo-pink.webp
+system:
+  activities:
+    nbNZdtrTtdm5c7xh:
+      type: utility
+      _id: nbNZdtrTtdm5c7xh
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: l8ioFfPVkyfdLRND
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You channel psionic energy in the most direct manner, using telepathic power to straight-up attack your foe's mind.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you gain a +2 bonus to damage rolls with psionic talents that deal psychic damage.</p>
+      <!-- TODO: Review implementation of psychic focus bonus - The +2 bonus to psychic damage from psionic talents may need to be manually applied or implemented via a different active effect configuration. -->
+    chat: ''
+  identifier: psychic-assault
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Psychic Assault Focus
+    img: icons/magic/light/projectile-beams-salvo-pink.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.EieK797hsHZZp36E
+    transfer: true
+    _id: l8ioFfPVkyfdLRND
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!EieK797hsHZZp36E.l8ioFfPVkyfdLRND'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.y4ns3xn95Po8BlJC
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.g0OI9Gwb6D8Ps3cv
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.EziKcwXJiyoc4G8B
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Z21dDoFaxs0gVwSK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!EieK797hsHZZp36E'

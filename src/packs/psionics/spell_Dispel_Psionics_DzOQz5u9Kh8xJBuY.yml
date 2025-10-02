@@ -1,0 +1,240 @@
+folder: zLDylBwEWWuq3B0v
+name: Dispel Psionics
+type: spell
+_id: DzOQz5u9Kh8xJBuY
+img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
+system:
+  activities:
+    tr1kPstgok5frWZF:
+      type: check
+      _id: tr1kPstgok5frWZF
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      check:
+        ability: spellcasting
+        associated: []
+        dc:
+          calculation: ''
+          formula: ''
+      name: 5 Power Points
+      img: ''
+      appliedEffects: []
+    dZIPHvIOW7UIvOn8:
+      type: check
+      _id: dZIPHvIOW7UIvOn8
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      check:
+        ability: spellcasting
+        associated: []
+        dc:
+          calculation: ''
+          formula: ''
+      name: 6 Power Points
+      img: ''
+      appliedEffects: []
+    pH7pMuFYJk3svWC3:
+      type: check
+      _id: pH7pMuFYJk3svWC3
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      check:
+        ability: spellcasting
+        associated: []
+        dc:
+          calculation: ''
+          formula: ''
+      name: 7 Power Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, choose any creature, object, or psionic effect within 120 feet. Any psionic effect on the target with a psi point cost equal to or less than the amount of psi points you spent ends. For each effect of a higher cost on the target, make an ability check using your psionic ability. Consult the table below to determine the DC.</p>
+      <table>
+      <thead><tr><th>Psi Point Cost</th><th>DC</th></tr></thead>
+      <tbody>
+      <tr><td>6</td><td>14</td></tr>
+      <tr><td>7</td><td>15</td></tr>
+      </tbody>
+      </table>
+      <p><!-- TODO: Review implementation of automatic dispel vs. ability check mechanics. Currently configured as ability check activity; may need manual application for automatic dispel portion. --></p>
+    chat: ''
+  identifier: dispel-psionics
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    special: ''
+    value: '120'
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!DzOQz5u9Kh8xJBuY'

@@ -1,0 +1,152 @@
+folder: m2PtsowjwBvhRcVY
+name: Crystalline Manifestations
+type: feat
+_id: 0NqBjg19q9yMsww4
+img: icons/magic/symbols/runes-star-pentagon-blue.webp
+system:
+  activities:
+    OAzK2s7hIJDCG3za:
+      type: utility
+      _id: OAzK2s7hIJDCG3za
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Yxwa6LORt2uA2pAU
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to manifest crystalline forms with deadly precision.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you deal 1 additional damage with the <em>crystal burst</em> talent and effects from this discipline.</p>
+    chat: ''
+  identifier: crystalline-manifestations
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Crystalline Manifestations
+    img: icons/magic/symbols/runes-star-pentagon-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.0NqBjg19q9yMsww4
+    transfer: true
+    _id: Yxwa6LORt2uA2pAU
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>While focused on this discipline, you deal 1 additional damage with the <em>crystal burst</em> talent and effects from this discipline.</p>
+      <p><!-- TODO: Review implementation - The +1 damage bonus to crystal burst talent and discipline effects may require manual application or active effect configuration. --></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!0NqBjg19q9yMsww4.Yxwa6LORt2uA2pAU'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.emlIHBYixaiy5tRu
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.4OCRR2WkEcvAsdUr
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Bhi7y7cdVHhcQh5r
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.8cB3NqDEsFByvPOH
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!0NqBjg19q9yMsww4'

@@ -1,0 +1,397 @@
+folder: zLDylBwEWWuq3B0v
+name: Step from Sight
+type: spell
+_id: gMOymWItTMoaIgNT
+img: icons/magic/perception/shadow-stealth-eyes-purple.webp
+system:
+  activities:
+    oSNAL880gt2Aelah:
+      type: utility
+      _id: oSNAL880gt2Aelah
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: LQ6qF48GxZmjfrxT
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points (1 target)
+      img: ''
+      appliedEffects: []
+    eBAmKIFLvG9IKsw0:
+      type: utility
+      _id: eBAmKIFLvG9IKsw0
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: LQ6qF48GxZmjfrxT
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: 60
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '2'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 4 Psi Points (2 targets)
+      img: ''
+      appliedEffects: []
+    U2Jv4MLzztlsYGnR:
+      type: utility
+      _id: U2Jv4MLzztlsYGnR
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: LQ6qF48GxZmjfrxT
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: 60
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points (3 targets)
+      img: ''
+      appliedEffects: []
+    jEtp3fhnNROqVhXY:
+      type: utility
+      _id: jEtp3fhnNROqVhXY
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: LQ6qF48GxZmjfrxT
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: 60
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '4'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points (4 targets)
+      img: ''
+      appliedEffects: []
+    iZC2IpSd49evlSDh:
+      type: utility
+      _id: iZC2IpSd49evlSDh
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: LQ6qF48GxZmjfrxT
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: 60
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '5'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points (5 targets)
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You cloak yourself from sight. You can target one additional creature for every additional psi point you spend on this ability. The added targets must be visible to you and within 60 feet of you.</p>
+      <p>Each target turns invisible and remains so until your concentration ends or until immediately after it targets, damages, or otherwise affects any creature with an attack, a spell, or another ability.</p>
+    chat: ''
+  identifier: step-from-sight
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: nom
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Invisible
+    img: systems/dnd5e/icons/svg/statuses/invisible.svg
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.gMOymWItTMoaIgNT
+    transfer: false
+    _id: LQ6qF48GxZmjfrxT
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You remain invisible until your concentration ends or until immediately after you target, damage, or otherwise affect any creature with an attack, a spell, or another ability.</p>
+    tint: '#ffffff'
+    statuses:
+      - invisible
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!gMOymWItTMoaIgNT.LQ6qF48GxZmjfrxT'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!gMOymWItTMoaIgNT'

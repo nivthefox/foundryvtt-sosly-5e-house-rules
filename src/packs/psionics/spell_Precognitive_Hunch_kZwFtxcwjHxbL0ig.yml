@@ -1,0 +1,168 @@
+folder: zLDylBwEWWuq3B0v
+name: Precognitive Hunch
+type: spell
+_id: kZwFtxcwjHxbL0ig
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  activities:
+    25ojzeeqy1FmAOeP:
+      type: utility
+      _id: 25ojzeeqy1FmAOeP
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects:
+        - _id: s578mojRSZJQc2dG
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you open yourself to receive momentary insights that improve your odds of success; until your concentration ends, whenever you make an attack roll, a saving throw, or an ability check, you roll a d4 and add it to the total.</p>
+      <p><!-- TODO: Review implementation - The d4 bonus is not automatically applied via effects. This may require manual application or active effect configuration. --></p>
+    chat: ''
+  identifier: precognitive-hunch
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Precognitive Hunch
+    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.kZwFtxcwjHxbL0ig
+    transfer: false
+    _id: s578mojRSZJQc2dG
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!kZwFtxcwjHxbL0ig.s578mojRSZJQc2dG'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!kZwFtxcwjHxbL0ig'

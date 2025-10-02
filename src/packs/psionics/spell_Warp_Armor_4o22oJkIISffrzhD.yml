@@ -1,0 +1,175 @@
+folder: zLDylBwEWWuq3B0v
+name: Warp Armor
+type: spell
+_id: 4o22oJkIISffrzhD
+img: icons/equipment/chest/breastplate-rusted-brown.webp
+system:
+  activities:
+    8p0FAeTn6lsl7JRg:
+      type: save
+      _id: 8p0FAeTn6lsl7JRg
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: NsJT74OiTWHXf3m7
+          onSave: false
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      damage:
+        onSave: half
+        parts: []
+      save:
+        ability: con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, choose a nonmagical suit of armor worn by one creature you can see within 60 feet of you. That creature must make a Constitution saving throw, or the creature's AC becomes 10 + its Dexterity modifier until the end of your next turn.</p>
+    chat: ''
+  identifier: warp-armor
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Warped Armor
+    img: icons/equipment/chest/breastplate-rusted-brown.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.4o22oJkIISffrzhD
+    transfer: false
+    _id: NsJT74OiTWHXf3m7
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.calc
+        mode: 5
+        value: flat
+        priority: null
+      - key: system.attributes.ac.flat
+        mode: 5
+        value: 10 + @abilities.dex.mod
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>Your AC is reduced to 10 + your Dexterity modifier until the end of the attacker''s next turn.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - turnEndSource
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!4o22oJkIISffrzhD.NsJT74OiTWHXf3m7'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!4o22oJkIISffrzhD'

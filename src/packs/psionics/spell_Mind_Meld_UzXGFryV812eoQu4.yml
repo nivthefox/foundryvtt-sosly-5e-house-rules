@@ -1,0 +1,121 @@
+folder: qirdYeQL7WmxiOku
+name: Mind Meld
+type: spell
+_id: UzXGFryV812eoQu4
+img: icons/magic/perception/eye-tendrils-pink.webp
+system:
+  activities:
+    kHziea84ubS2Kj5w:
+      type: utility
+      _id: kHziea84ubS2Kj5w
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '120'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you can communicate telepathically with one creature you can see within 120 feet of you. The target must have an Intelligence score of at least 2, otherwise this talent fails and the action is wasted.</p>
+      <p>You don't need to share a language with the target for it to understand your telepathic utterances, and it understands you even if it lacks a language. You can allow the target to respond to you telepathically, but it must understand at least one language in order to communicate this way. Alternatively, you can gain access to one memory of the target's choice, gaining perfect recall of one thing it saw or did. This communication can occur until the end of the current turn.</p>
+    chat: ''
+  identifier: mind-meld
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: turn
+    value: '1'
+  level: 0
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '120'
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1738454400000
+  modifiedTime: 1738454400000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!UzXGFryV812eoQu4'

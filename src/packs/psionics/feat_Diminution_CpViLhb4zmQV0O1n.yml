@@ -1,0 +1,151 @@
+folder: m2PtsowjwBvhRcVY
+name: Diminution
+type: feat
+_id: CpViLhb4zmQV0O1n
+img: icons/magic/air/fog-gas-smoke-swirling.webp
+system:
+  activities:
+    b7uKvDLeupAg9nz0:
+      type: utility
+      _id: b7uKvDLeupAg9nz0
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: inXAci1wddoD2VCg
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You manipulate matter on a microscopic level, allowing you to shrink yourself and others.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Dexterity (Stealth) checks.</p>
+      <p><em><!-- TODO: Review implementation of advantage on Dexterity (Stealth) checks for psychic focus. This may require manual tracking or custom active effects. --></em></p>
+    chat: ''
+  identifier: diminution
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: imm
+effects:
+  - name: Diminution
+    img: icons/magic/air/fog-gas-smoke-swirling.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.CpViLhb4zmQV0O1n
+    transfer: true
+    _id: inXAci1wddoD2VCg
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!CpViLhb4zmQV0O1n.inXAci1wddoD2VCg'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.hmg4R4NYcIfzhcJ8
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Wa6SepwO0JoBvIPY
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.nZAcS4eCddhsS22T
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.EfDavgJEq7dWtQvq
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!CpViLhb4zmQV0O1n'

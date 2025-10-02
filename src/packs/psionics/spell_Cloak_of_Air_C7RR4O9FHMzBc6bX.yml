@@ -1,0 +1,173 @@
+folder: zLDylBwEWWuq3B0v
+name: Cloak of Air
+type: spell
+_id: C7RR4O9FHMzBc6bX
+img: icons/magic/air/wind-vortex-swirl-blue.webp
+system:
+  activities:
+    boKfSOHurYn2i71G:
+      type: utility
+      _id: boKfSOHurYn2i71G
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: SDGtwPqqdZBNLL1c
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you seize control of the air around you to create a protective veil. Until your concentration ends, attack rolls against you have disadvantage, and when a creature you can see misses you with a melee attack, you can use your reaction to force the creature to repeat the attack roll against itself.</p>
+
+      <p><!-- TODO: Review implementation of attack reflection mechanic - this requires a reaction to force the attacker to roll against itself, which may need manual handling or additional automation --></p>
+    chat: ''
+  identifier: cloak-of-air
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Cloak of Air
+    img: icons/magic/air/wind-vortex-swirl-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.C7RR4O9FHMzBc6bX
+    transfer: false
+    _id: SDGtwPqqdZBNLL1c
+    type: base
+    system: {}
+    changes:
+      - key: flags.midi-qol.grants.disadvantage.attack.all
+        mode: 0
+        value: '1'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>Attack rolls against you have disadvantage. When a creature you can see misses you with a melee attack, you can use your reaction to force the creature to repeat the attack roll against itself.</p><p><!-- TODO: The reaction-based attack reflection requires manual handling or additional automation configuration --></p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!C7RR4O9FHMzBc6bX.SDGtwPqqdZBNLL1c'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!C7RR4O9FHMzBc6bX'

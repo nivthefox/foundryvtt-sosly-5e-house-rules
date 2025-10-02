@@ -1,0 +1,179 @@
+folder: zLDylBwEWWuq3B0v
+name: Augmented Weapon
+type: spell
+_id: oObLcXDSeKS8pWrh
+img: icons/weapons/swords/sword-winged-white.webp
+system:
+  activities:
+    kgaHRWkTHuwvUPep:
+      type: enchant
+      _id: kgaHRWkTHuwvUPep
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 3cEgacPQAmixtzn4
+          riders:
+            effect: []
+            item: []
+            activity: []
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      enchant:
+        identifier: ''
+      restrictions:
+        allowMagical: false
+        type: weapon
+        categories: []
+        properties: []
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, touch one simple or martial weapon. Until your concentration ends, that weapon becomes a magic weapon with a +3 bonus to its attack and damage rolls.</p>
+    chat: ''
+  identifier: augmented-weapon
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: touch
+    special: ''
+  school: imm
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: object
+      count: '1'
+      special: ''
+effects:
+  - name: Augmented Weapon +3
+    img: icons/weapons/swords/sword-winged-white.webp
+    _id: 3cEgacPQAmixtzn4
+    type: enchantment
+    system: {}
+    changes:
+      - key: system.properties
+        mode: 2
+        value: mgc
+        priority: null
+      - key: system.magicalBonus
+        mode: 4
+        value: '3'
+        priority: null
+      - key: name
+        mode: 5
+        value: Augmented {} +3
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Until your concentration ends, that weapon becomes a magic weapon with a +3 bonus to its attack and damage rolls.</p>
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        enchantment:
+          riders:
+            effect: []
+            item: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755600000000
+      modifiedTime: 1755600000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!oObLcXDSeKS8pWrh.3cEgacPQAmixtzn4'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!oObLcXDSeKS8pWrh'

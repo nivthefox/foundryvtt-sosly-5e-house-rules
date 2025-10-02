@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Mantle of Command
+type: feat
+_id: bMUPrpjj9yGWd86V
+img: icons/equipment/head/crown-jeweled-gold-red.webp
+system:
+  activities:
+    TFp2VXGQAMxuq2LV:
+      type: utility
+      _id: TFp2VXGQAMxuq2LV
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'When you end your turn and did not move during it'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: EacYiSUqbyWdmaJv
+      range:
+        units: ft
+        value: '30'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ally
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to command and coordinate your allies, enhancing their tactical capabilities.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, when you end your turn and didn't move during it, you can use your reaction to allow one ally you can see within 30 feet of you to move up to half their speed, following a path of your choice. To move in this way, the ally mustn't be incapacitated.</p>
+    chat: ''
+  identifier: mantle-of-command
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: avt
+effects:
+  - name: Mantle of Command
+    img: icons/equipment/head/crown-jeweled-gold-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.bMUPrpjj9yGWd86V
+    transfer: true
+    _id: EacYiSUqbyWdmaJv
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!bMUPrpjj9yGWd86V.EacYiSUqbyWdmaJv'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.lILhQd1g0jKLF9NK
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.6ZZ0RLcn4J3DpJAd
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.cAmkZp07KYN0NAn6
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.3j3NmpQkbzrDmSd3
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.W4J4buW1vh0CS1GE
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!bMUPrpjj9yGWd86V'

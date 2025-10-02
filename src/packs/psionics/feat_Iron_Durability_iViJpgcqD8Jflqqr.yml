@@ -1,0 +1,152 @@
+folder: m2PtsowjwBvhRcVY
+name: Iron Durability
+type: feat
+_id: iViJpgcqD8Jflqqr
+img: icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp
+system:
+  activities:
+    E8I4fIOIRgoG9aCl:
+      type: utility
+      _id: E8I4fIOIRgoG9aCl
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: yeqy2Z6mggfrzPmy
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to harden your body against damage.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you gain a +1 bonus to AC.</p>
+    chat: ''
+  identifier: iron-durability
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: imm
+effects:
+  - name: Iron Durability (Psychic Focus)
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.iViJpgcqD8Jflqqr
+    transfer: true
+    _id: yeqy2Z6mggfrzPmy
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '1'
+        priority: null
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>While focused on this discipline, you gain a +1 bonus to AC.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!iViJpgcqD8Jflqqr.yeqy2Z6mggfrzPmy'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.heBHUUxyK16zrWXC
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.jqPIjqi4BWbpQSBt
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!iViJpgcqD8Jflqqr'

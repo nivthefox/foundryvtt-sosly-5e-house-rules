@@ -1,0 +1,149 @@
+folder: m2PtsowjwBvhRcVY
+name: Crown of Rage
+type: feat
+_id: lPgW3Do0V7EpEz1C
+img: icons/magic/control/fear-fright-shadow-monster-glow-red.webp
+system:
+  activities:
+    sSjHJZstJW1lOCyg:
+      type: utility
+      _id: sSjHJZstJW1lOCyg
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 847yOzH6dZKN1nGl
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to control the aggressive impulses of others, turning their rage against their allies or causing them to attack without regard for their own safety.</p><p><strong>Psychic Focus.</strong> While you are focused on this discipline, any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage.</p>
+    chat: ''
+  identifier: crown-of-rage
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: avt
+effects:
+  - name: Crown of Rage
+    img: icons/magic/control/fear-fright-shadow-monster-glow-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lPgW3Do0V7EpEz1C
+    transfer: true
+    _id: 847yOzH6dZKN1nGl
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>Any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lPgW3Do0V7EpEz1C.847yOzH6dZKN1nGl'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.siSTgm9wbXIsbtoi
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.zjMDYmvG7qiF0Cak
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.g2tlqn8dQ0xbQkto
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.AnUEdBDHz5LDQ2QD
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755590000000
+  modifiedTime: 1755590000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!lPgW3Do0V7EpEz1C'

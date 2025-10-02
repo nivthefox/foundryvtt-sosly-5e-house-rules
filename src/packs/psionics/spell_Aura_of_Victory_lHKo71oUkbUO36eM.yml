@@ -1,0 +1,775 @@
+folder: zLDylBwEWWuq3B0v
+name: Aura of Victory
+type: spell
+_id: lHKo71oUkbUO36eM
+img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+system:
+  activities:
+    kRrLmrzjA9Y409CL:
+      type: utility
+      _id: kRrLmrzjA9Y409CL
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: ZKxxEHJQ5cvXk6FU
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    OYWp35bWSc5KHvsT:
+      type: utility
+      _id: OYWp35bWSc5KHvsT
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: h2VQuS2oIqUjeEO5
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    UZGmf3NSeop5kLW2:
+      type: utility
+      _id: UZGmf3NSeop5kLW2
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: MQ0MqiiXKHRMkh4H
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+    TpCiTqFlagEHZQA9:
+      type: utility
+      _id: TpCiTqFlagEHZQA9
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: kgXm2jHmONdvWIQA
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    R2k310W77uaM0NcG:
+      type: utility
+      _id: R2k310W77uaM0NcG
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: 2kUrnQGqepatlLCH
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+    cYaNo86iCHYeifDt:
+      type: utility
+      _id: cYaNo86iCHYeifDt
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: pejvPp7RHJGg7GTa
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+    uVieOxxBpGOTdEf2:
+      type: utility
+      _id: uVieOxxBpGOTdEf2
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: okOdhqa8Ll5AS8Bp
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you project psionic energy until your concentration
+      ends. The energy fortifies you and your allies when your enemies are
+      felled; whenever an enemy you can see is reduced to 0 hit points, you and
+      each of your allies within 30 feet of you gain temporary hit points equal
+      to double the psi points spent to activate this effect.</p>
+
+      <!-- TODO: Review implementation - This effect requires tracking enemy defeats and granting temporary HP. The active effects below serve as reminders of the aura's presence and the amount of temporary HP to grant (2x psi points spent). The GM/player will need to manually apply temporary HP when enemies are defeated. -->
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Aura of Victory (2 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: ZKxxEHJQ5cvXk6FU
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 2 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.ZKxxEHJQ5cvXk6FU'
+  - name: Aura of Victory (4 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: h2VQuS2oIqUjeEO5
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 4 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.h2VQuS2oIqUjeEO5'
+  - name: Aura of Victory (6 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: MQ0MqiiXKHRMkh4H
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 6 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.MQ0MqiiXKHRMkh4H'
+  - name: Aura of Victory (8 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: kgXm2jHmONdvWIQA
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 8 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.kgXm2jHmONdvWIQA'
+  - name: Aura of Victory (10 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: 2kUrnQGqepatlLCH
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 10 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.2kUrnQGqepatlLCH'
+  - name: Aura of Victory (12 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: pejvPp7RHJGg7GTa
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 12 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.pejvPp7RHJGg7GTa'
+  - name: Aura of Victory (14 Temp HP)
+    img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+    transfer: false
+    _id: okOdhqa8Ll5AS8Bp
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When an enemy you can see is reduced to 0 hit points, you and each
+      ally within 30 feet gain 14 temporary hit points.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lHKo71oUkbUO36eM.okOdhqa8Ll5AS8Bp'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755590000000
+  modifiedTime: 1755590000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!lHKo71oUkbUO36eM'

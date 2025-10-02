@@ -1,0 +1,124 @@
+folder: zLDylBwEWWuq3B0v
+name: Ice Sheet
+type: spell
+_id: 6CIkMH3Q57gQNkTK
+img: icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp
+system:
+  activities:
+    9psDKky0M9carUVm:
+      type: utility
+      _id: 9psDKky0M9carUVm
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: radius
+          size: '20'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, choose a point on the ground you can see within 60 feet of you. The ground in a 20-foot radius centered on that point becomes covered in ice for 10 minutes. It is difficult terrain, and any creature that moves more than 10 feet on it must succeed on a Dexterity saving throw or fall prone. If the surface is sloped, a creature that falls prone in the area immediately slides to the bottom of the slope.</p>
+
+      <!-- TODO: Review implementation of difficult terrain and prone condition mechanics -->
+    chat: ''
+  identifier: ice-sheet
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    special: ''
+    value: '60'
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: radius
+      size: '20'
+    affects:
+      choice: false
+      type: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580858682
+  modifiedTime: 1755582354017
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!6CIkMH3Q57gQNkTK'

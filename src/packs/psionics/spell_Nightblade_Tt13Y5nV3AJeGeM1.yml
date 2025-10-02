@@ -1,0 +1,136 @@
+folder: zLDylBwEWWuq3B0v
+name: Nightblade
+type: spell
+_id: Tt13Y5nV3AJeGeM1
+img: icons/magic/unholy/strike-beam-blood-red-purple.webp
+system:
+  activities:
+    1Dxha6AG37pAy7GL:
+      type: save
+      _id: 1Dxha6AG37pAy7GL
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: line
+          size: '100'
+          width: '5'
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - necrotic
+            number: 8
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you throw a shadowy blade that travels in a line 100 feet long and 5 feet wide. Each creature in the line must make a Constitution saving throw. A creature takes 8d6 necrotic damage and its speed is reduced by 10 feet on a failed save, or half as much damage and no additional effect on a successful one.</p>
+      <p><!-- TODO: Review implementation of speed reduction - this may require an effect or active effect configuration to apply the -10 ft speed penalty on failed saves --></p>
+    chat: ''
+  identifier: nightblade
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: line
+      size: '100'
+      width: '5'
+    affects:
+      choice: false
+      type: ''
+      count: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!Tt13Y5nV3AJeGeM1'

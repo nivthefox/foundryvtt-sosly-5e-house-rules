@@ -1,0 +1,186 @@
+folder: zLDylBwEWWuq3B0v
+name: Mind Storm
+type: spell
+_id: d52gU4TLPncqE4Rg
+img: icons/magic/lightning/bolts-salvo-purple.webp
+system:
+  activities:
+    MxX7T4qA2W1tGZ4i:
+      type: save
+      _id: MxX7T4qA2W1tGZ4i
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: y6Uk945k8neqHnSx
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: sphere
+          size: '20'
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 6
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, choose a point you can see within 60 feet of you. Each creature in a 20-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes 6d8 psychic damage and suffers disadvantage on all saving throws until the end of your next turn. On a successful save, a creature takes half as much damage.</p>
+    chat: ''
+  identifier: mind-storm
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: sphere
+      size: '20'
+    affects:
+      choice: false
+      type: ''
+      count: ''
+      special: ''
+effects:
+  - name: Mind Storm
+    img: icons/magic/lightning/bolts-salvo-purple.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.d52gU4TLPncqE4Rg
+    transfer: false
+    _id: y6Uk945k8neqHnSx
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.abilities.save
+        mode: 2
+        value: '-1d20'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You suffer disadvantage on all saving throws until the end of the caster's next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!d52gU4TLPncqE4Rg.y6Uk945k8neqHnSx'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755586570663
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!d52gU4TLPncqE4Rg'

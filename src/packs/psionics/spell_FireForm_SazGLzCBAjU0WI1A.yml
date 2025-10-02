@@ -1,0 +1,118 @@
+folder: zLDylBwEWWuq3B0v
+name: Fire Form
+type: spell
+_id: SazGLzCBAjU0WI1A
+img: icons/magic/fire/barrier-wall-flame-ring-purple.webp
+system:
+  activities:
+    qWNkHQ8M3L6yJm2y:
+      type: utility
+      _id: qWNkHQ8M3L6yJm2y
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      uses:
+        spent: 0
+        recovery: []
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You become wreathed in flames until your concentration ends. Any creature that end its turn within 5 feet of you takes 3d6 fire damage.</p>
+
+      <p><!-- TODO: Review implementation of aura damage. This requires automated damage when creatures end turn within 5 feet, which may need active effects or manual tracking. --></p>
+    chat: ''
+  identifier: fire-form
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!SazGLzCBAjU0WI1A'

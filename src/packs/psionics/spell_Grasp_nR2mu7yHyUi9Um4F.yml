@@ -1,0 +1,695 @@
+folder: zLDylBwEWWuq3B0v
+name: Grasp
+type: spell
+_id: nR2mu7yHyUi9Um4F
+img: icons/magic/control/debuff-chains-purple.webp
+system:
+  activities:
+    Vx38w29iB5J8TlAO:
+      type: save
+      _id: Vx38w29iB5J8TlAO
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects:
+        - _id: z3lJfqcPdbr9x8su
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Initial Grasp (3 Psi Points)
+      img: ''
+      appliedEffects: []
+    Sc9Sueh3pSFgzmkp:
+      type: save
+      _id: Sc9Sueh3pSFgzmkp
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 1
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (1 Psi Point)
+      img: ''
+      appliedEffects: []
+    BCbAdquwLQnsxyny:
+      type: save
+      _id: BCbAdquwLQnsxyny
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 2
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (2 Psi Points)
+      img: ''
+      appliedEffects: []
+    TAXbxluYHMuFZLhr:
+      type: save
+      _id: TAXbxluYHMuFZLhr
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 3
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (3 Psi Points)
+      img: ''
+      appliedEffects: []
+    pqZdCwsAY9ovpk0a:
+      type: save
+      _id: pqZdCwsAY9ovpk0a
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 4
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (4 Psi Points)
+      img: ''
+      appliedEffects: []
+    X1qbv9HERSQXUTkI:
+      type: save
+      _id: X1qbv9HERSQXUTkI
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 5
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (5 Psi Points)
+      img: ''
+      appliedEffects: []
+    WUsaEryMKyaY1t6r:
+      type: save
+      _id: WUsaEryMKyaY1t6r
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 6
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (6 Psi Points)
+      img: ''
+      appliedEffects: []
+    p2lr4Jd5eMF2y4hg:
+      type: save
+      _id: p2lr4Jd5eMF2y4hg
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'While target is grappled'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - bludgeoning
+            number: 7
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Crush (7 Psi Points)
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You attempt to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Strength saving throw or take 2d6 bludgeoning damage and be grappled by you until your concentration ends or until the target leaves your reach, which is 60 feet for this grapple.</p>
+
+      <p>The grappled target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your psionic ability plus your proficiency bonus. When a target attempts to escape in this way, you can spend psi points to boost your check, abiding by your psi limit. You gain a +1 bonus per psi point spent.</p>
+
+      <p>While a target is grappled in this manner, you create one of the following effects as an action:</p>
+      <ul>
+        <li><strong>Crush (1-7 psi):</strong> The target takes 1d6 bludgeoning damage per psi point spent.</li>
+        <li><strong>Move (1-7 psi):</strong> You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends.</li>
+      </ul>
+
+      <p><em><!-- TODO: Review implementation of Grasp power - This is a complex power with the following manual elements:
+      1. The grappled condition must be manually applied on failed save, and the effect should be linked to concentration
+      2. The contested check for escape (Athletics/Acrobatics vs psionic ability + proficiency + psi point bonus) requires manual adjudication
+      3. The Move option (5 feet per psi point) requires manual positioning of the creature
+      4. The ability to hold creatures in the air and cause falling damage when grapple ends must be tracked manually
+      This power may benefit from custom automation or active effects if available. --></em></p>
+    chat: ''
+  identifier: grasp
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Grappled (Telekinetic)
+    img: icons/magic/control/debuff-chains-purple.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.nR2mu7yHyUi9Um4F
+    transfer: false
+    _id: z3lJfqcPdbr9x8su
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You are grappled by telekinetic energy. Your reach for this grapple is 60 feet. You can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by the grappler's psionic ability modifier plus proficiency bonus (plus any psi points they spend for a +1 bonus each).</p>
+    tint: '#ffffff'
+    statuses:
+      - grappled
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!nR2mu7yHyUi9Um4F.z3lJfqcPdbr9x8su'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!nR2mu7yHyUi9Um4F'

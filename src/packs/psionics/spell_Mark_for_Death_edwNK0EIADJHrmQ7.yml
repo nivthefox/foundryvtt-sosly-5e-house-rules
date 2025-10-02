@@ -1,0 +1,174 @@
+folder: zLDylBwEWWuq3B0v
+name: Mark for Death
+type: spell
+_id: edwNK0EIADJHrmQ7
+img: icons/magic/death/skull-horned-worn-fire-blue.webp
+system:
+  activities:
+    3WsPuL163y0Bnaof:
+      type: utility
+      _id: 3WsPuL163y0Bnaof
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: SV00ZcYKVrWeOk9C
+      range:
+        units: ft
+        value: '90'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you study the target, making note of weak points. The next hit you score against the target before the end of your next turn is a critical hit.</p>
+      <p><!-- TODO: Review implementation of automatic critical hit - this mechanic may require manual application by the player/DM, as FoundryVTT does not natively support "next hit is a critical" effects. Consider using the effect as a reminder. --></p>
+    chat: ''
+  identifier: mark-for-death
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: turn
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '90'
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - _id: SV00ZcYKVrWeOk9C
+    name: Mark for Death
+    img: icons/magic/death/skull-horned-worn-fire-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.edwNK0EIADJHrmQ7
+    transfer: false
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      seconds: null
+      startTime: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>Marked for death. The next hit against this creature is a critical hit.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Hit
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!edwNK0EIADJHrmQ7.SV00ZcYKVrWeOk9C'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!edwNK0EIADJHrmQ7'

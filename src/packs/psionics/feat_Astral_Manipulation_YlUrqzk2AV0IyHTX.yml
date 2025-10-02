@@ -1,0 +1,152 @@
+folder: m2PtsowjwBvhRcVY
+name: Astral Manipulation
+type: feat
+_id: YlUrqzk2AV0IyHTX
+img: icons/magic/perception/orb-crystal-ball-scrying.webp
+system:
+  activities:
+    bLbxI0sSEBh8nh3m:
+      type: utility
+      _id: bLbxI0sSEBh8nh3m
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: A5RnPXlWQHKlnDtV
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You manipulate your own consciousness, slipping in and out of the Astral Plane at will.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you remain conscious of your surroundings while asleep. Additionally, you can use psionic talents while you are asleep, but they deal half as much damage as usual.</p>
+    chat: ''
+  identifier: astral-manipulation
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: nom
+effects:
+  - name: Astral Manipulation
+    img: icons/magic/perception/orb-crystal-ball-scrying.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.YlUrqzk2AV0IyHTX
+    transfer: true
+    _id: A5RnPXlWQHKlnDtV
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>While focused on this discipline, you remain conscious of your surroundings while asleep. Additionally, you can use psionic talents while you are asleep, but they deal half as much damage as usual.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755600000000
+      modifiedTime: 1755600000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!YlUrqzk2AV0IyHTX.A5RnPXlWQHKlnDtV'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.dtDd15VNdi9acCp5
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.9bnv6YGE5iEPzkmF
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.wuya2sNskNxHKnQT
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ZJXNQ7qAnUlyY0w7
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!YlUrqzk2AV0IyHTX'

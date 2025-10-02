@@ -1,0 +1,157 @@
+folder: m2PtsowjwBvhRcVY
+name: Mantle of Courage
+type: feat
+_id: 1KyvnJfVCPUndhV2
+img: icons/magic/defensive/shield-barrier-flaming-diamond-teal-yellow.webp
+system:
+  activities:
+    1J0zLUfVHuD2jsQ3:
+      type: utility
+      _id: 1J0zLUfVHuD2jsQ3
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 2fgnjaIOYzquS6cm
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You focus your psionic energy on courage and bravery, projecting an
+      aura that fortifies your allies against fear.</p><p><strong>Psychic
+      Focus.</strong> While focused on this discipline, you and allies within
+      10 feet of you who can see you have advantage on saving throws against
+      being frightened.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: avt
+effects:
+  - name: Mantle of Courage
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-teal-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.1KyvnJfVCPUndhV2
+    transfer: true
+    _id: 2fgnjaIOYzquS6cm
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>While focused on this discipline, you and allies within 10 feet of you
+      who can see you have advantage on saving throws against being
+      frightened.</p>
+
+      <!-- TODO: Review implementation - FoundryVTT may not automatically grant advantage on saving throws against frightened. This effect serves as a reminder of the psychic focus benefit. Consider using Active Auras or similar module for automatic advantage application, or apply manually during play. -->
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!1KyvnJfVCPUndhV2.2fgnjaIOYzquS6cm'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.7275qjgy8S0veRO8
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.lHKo71oUkbUO36eM
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.nVXnFuhtfAyD79yH
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755590000000
+  modifiedTime: 1755590000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!1KyvnJfVCPUndhV2'

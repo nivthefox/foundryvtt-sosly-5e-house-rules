@@ -1,0 +1,124 @@
+folder: zLDylBwEWWuq3B0v
+name: Psionic Contingency
+type: spell
+_id: 4G5m1VTFv3xPbGr3
+img: icons/magic/time/clock-face-white-blue.webp
+system:
+  activities:
+    GDkjt0zFTR8hKvSX:
+      type: utility
+      _id: GDkjt0zFTR8hKvSX
+      sort: 0
+      activation:
+        type: minute
+        value: 10
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Power Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Meditating for 10 minutes, you choose a discipline effect with a psi point cost of 5 or lower that has an activation time of 1 action, and that can target you. You use that effect—called the contingent effect—as part of using psionic contingency, spending psi points for both, but the contingent effect doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you use the two effects. For example, a wind form might stipulate that wind form comes into effect when you jump.</p>
+      <p>The contingent effect takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then psionic contingency ends.</p>
+      <p>The contingent effect takes effect only on you, even if it can normally target others. You can use only one psionic contingency at a time. If you use this effect again, the effect of another psionic contingency effect on you ends. Until it is triggered or otherwise ended, contingency remains for 10 days.</p>
+      <p><!-- TODO: Review implementation of contingent effect storage and triggering mechanics. This requires manual tracking and application of the stored effect. --></p>
+    chat: ''
+  identifier: psionic-contingency
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    value: 10
+    condition: ''
+  duration:
+    units: day
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: self
+      count: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!4G5m1VTFv3xPbGr3'

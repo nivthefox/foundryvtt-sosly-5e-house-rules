@@ -1,0 +1,183 @@
+folder: zLDylBwEWWuq3B0v
+name: Ego Whip
+type: spell
+_id: g0OI9Gwb6D8Ps3cv
+img: icons/magic/control/fear-fright-white.webp
+system:
+  activities:
+    IaY8sZtynGeIHDj1:
+      type: save
+      _id: IaY8sZtynGeIHDj1
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: IlQ5A3cerp537Lya
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 3
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 3d8 psychic damage, and it is filled with self-doubt, leaving it able to use its action on its next turn only to take the Dodge, Disengage, or Hide action. On a successful saving throw, it takes half as much damage.</p>
+      <!-- TODO: Review implementation of "able to use its action on its next turn only to take the Dodge, Disengage, or Hide action" - This effect is not fully implemented via active effects and needs manual enforcement or additional automation. -->
+    chat: ''
+  identifier: ego-whip
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Self-Doubt (Ego Whip)
+    img: icons/magic/control/fear-fright-white.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.g0OI9Gwb6D8Ps3cv
+    transfer: false
+    _id: IlQ5A3cerp537Lya
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - turnEnd
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580682616
+      modifiedTime: 1755580828096
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!g0OI9Gwb6D8Ps3cv.IlQ5A3cerp537Lya'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580858682
+  modifiedTime: 1755582354017
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!g0OI9Gwb6D8Ps3cv'

@@ -1,0 +1,172 @@
+folder: zLDylBwEWWuq3B0v
+name: Call to Inaction
+type: spell
+_id: CcZ0UwVHjC6zSTPo
+img: icons/magic/control/hypnosis-mesmerism-watch.webp
+system:
+  activities:
+    5Vyuhg4cV7ZnFaZD:
+      type: save
+      _id: 5Vyuhg4cV7ZnFaZD
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'After spending 1 minute conversing with a creature'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: zgdZMBlMpO4md8Zf
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: ''
+        parts: []
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>If you spend 1 minute conversing with a creature, you can attempt to seed it with overwhelming ennui. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw. The save automatically succeeds if the target is immune to being charmed. On a failed save, it sits and is incapacitated until your concentration ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.</p>
+    chat: ''
+  identifier: call-to-inaction
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: 'After spending 1 minute conversing with a creature'
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Overwhelming Ennui
+    img: icons/magic/control/hypnosis-mesmerism-watch.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.CcZ0UwVHjC6zSTPo
+    transfer: false
+    _id: zgdZMBlMpO4md8Zf
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You sit and are incapacitated until the effect ends. This effect immediately ends if you or any ally you can see is attacked or takes damage.</p>
+    tint: '#ffffff'
+    statuses:
+      - incapacitated
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!CcZ0UwVHjC6zSTPo.zgdZMBlMpO4md8Zf'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580858682
+  modifiedTime: 1755582354017
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!CcZ0UwVHjC6zSTPo'

@@ -1,0 +1,151 @@
+folder: m2PtsowjwBvhRcVY
+name: Aura Sight
+type: feat
+_id: GaL88ewhxa1hGcNa
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  activities:
+    Ta0D2edqPFztY3Th:
+      type: utility
+      _id: Ta0D2edqPFztY3Th
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: lA6Q2551FeHBDNQe
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to perceive and analyze the auras of creatures around you.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Wisdom (Insight) checks.</p>
+      <p><!-- TODO: Review implementation of advantage on Wisdom (Insight) checks for psychic focus. This may require manual tracking or custom active effects. --></p>
+    chat: ''
+  identifier: aura-sight
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Aura Sight
+    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.GaL88ewhxa1hGcNa
+    transfer: true
+    _id: lA6Q2551FeHBDNQe
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!GaL88ewhxa1hGcNa.lA6Q2551FeHBDNQe'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.JmTOKWL6XwBDRo04
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.SHaJ2XwqtHh7UzUW
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.foScrc85wBzrdBYw
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.zlstaYEsNHbZfAD0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!GaL88ewhxa1hGcNa'

@@ -1,0 +1,551 @@
+folder: zLDylBwEWWuq3B0v
+name: Void Spikes
+type: spell
+_id: t0Y7WfSMZQpJDPlx
+img: icons/magic/unholy/projectiles-blades-salvo-purple.webp
+system:
+  activities:
+    Dduo1pQqvyih2jFl:
+      type: damage
+      _id: Dduo1pQqvyih2jFl
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 1
+            denomination: 4
+            bonus: '1'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    odYkdnMYC02gkhDO:
+      type: damage
+      _id: odYkdnMYC02gkhDO
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '2'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 2
+            denomination: 4
+            bonus: '2'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    vPS4zl4DEg1sFr8T:
+      type: damage
+      _id: vPS4zl4DEg1sFr8T
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 3
+            denomination: 4
+            bonus: '3'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+    cAU1e9x44eHIFcAa:
+      type: damage
+      _id: cAU1e9x44eHIFcAa
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '4'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 4
+            denomination: 4
+            bonus: '4'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    FVMdDynCKwUBwOMA:
+      type: damage
+      _id: FVMdDynCKwUBwOMA
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '5'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 5
+            denomination: 4
+            bonus: '5'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+    D6EfChSQI7PFhvQ1:
+      type: damage
+      _id: D6EfChSQI7PFhvQ1
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '6'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 6
+            denomination: 4
+            bonus: '6'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+    RMnmTC9P5h89kQfM:
+      type: damage
+      _id: RMnmTC9P5h89kQfM
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: QW68lKtU7an8kxGr
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '7'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+        parts:
+          - types:
+              - necrotic
+            number: 7
+            denomination: 4
+            bonus: '7'
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you create a spike of pitch black negative energy for each psi point spent. Each spike hits a creature of your choice that you can see within 120 feet. A spike deals 1d4+1 necrotic damage to its target, and it can't regain hit points until the start of your next turn.</p>
+      <p>The spikes all strike simultaneously and you can direct them to hit one creature or several.</p>
+      <p><em><!-- TODO: Review implementation of healing prevention - The healing prevention effect should last until the start of your next turn. The effect may need manual application or active effect configuration. --></em></p>
+    chat: ''
+  identifier: void-spikes
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '120'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Healing Prevention
+    img: icons/magic/unholy/projectiles-blades-salvo-purple.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.t0Y7WfSMZQpJDPlx
+    transfer: false
+    _id: QW68lKtU7an8kxGr
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You can't regain hit points until the start of the attacker's next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!t0Y7WfSMZQpJDPlx.QW68lKtU7an8kxGr'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!t0Y7WfSMZQpJDPlx'

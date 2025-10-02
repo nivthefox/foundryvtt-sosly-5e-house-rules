@@ -1,0 +1,131 @@
+folder: zLDylBwEWWuq3B0v
+name: Phantom Idea
+type: spell
+_id: pKuclWcFOEwjWQhX
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  activities:
+    jOh24kj7e8D0Vv9l:
+      type: save
+      _id: jOh24kj7e8D0Vv9l
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'After concentrating for the full duration'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: hour
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+        override: false
+        prompt: true
+      damage:
+        onSave: none
+        parts: []
+      save:
+        ability: int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>While you concentrate on this ability, you probe one creature's mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability's full duration, the target must make three Intelligence saving throws, and you plant information from it based on the number of saving throws it fails. You choose whether the idea or memory is trivial (such as "I had porridge for breakfast" or "Ale is the worst") or personality-defining ("I failed to save my village from an orc marauders and am therefore a coward" or "Magic is a scourge, so I renounce it").</p>
+      <p>With one failed saving throw, the idea or memory lasts for the next 4 hours.</p>
+      <p>With two failed saving throws, the idea or memory lasts for the next 24 hours.</p>
+      <p>With three failed saving throws, the idea or memory lasts for the next 48 hours.</p>
+      <p><!-- TODO: Review implementation of three separate saving throws mechanic and memory implantation duration - this is a complex interaction that may need GM adjudication --></p>
+    chat: ''
+  identifier: phantom-idea
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: hour
+    value: '1'
+    concentration: true
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '30'
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755590000000
+  modifiedTime: 1755590000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!pKuclWcFOEwjWQhX'

@@ -1,0 +1,150 @@
+folder: m2PtsowjwBvhRcVY
+name: Predation
+type: feat
+_id: K78LpRYKu7Rj8Mmj
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  activities:
+    cYlcF9SqSLESY3KJ:
+      type: utility
+      _id: cYlcF9SqSLESY3KJ
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: i9idNQzPOULydsJf
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to enhance your predatory instincts and hunting capabilities.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Wisdom (Survival) skills you make to track any creature you dealt damage to in the last 24 hours.</p>
+    chat: ''
+  identifier: predation
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: sok
+effects:
+  - name: Predation
+    img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.K78LpRYKu7Rj8Mmj
+    transfer: true
+    _id: i9idNQzPOULydsJf
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>You have advantage on Wisdom (Survival) checks made to track any creature you dealt damage to in the last 24 hours.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!K78LpRYKu7Rj8Mmj.i9idNQzPOULydsJf'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ZLz1RnlDM3jvpGg4
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.gK6T2XTYTVJd30uD
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Tt13Y5nV3AJeGeM1
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.edwNK0EIADJHrmQ7
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!K78LpRYKu7Rj8Mmj'

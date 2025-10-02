@@ -1,0 +1,159 @@
+folder: m2PtsowjwBvhRcVY
+name: Mastery of Weather
+type: feat
+_id: 8oUq3w41Zzx2EazH
+img: icons/magic/lightning/bolt-strike-cloud-sky.webp
+system:
+  activities:
+    C83L9ZJsl1ynUP0H:
+      type: utility
+      _id: C83L9ZJsl1ynUP0H
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: PjssQ2Ux8sP65pDe
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: icons/magic/lightning/bolt-strike-blue.webp
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your mastery over the weather allows you to command lightning, wind, and rain.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have resistance to lightning and thunder damage.</p>
+    chat: ''
+  identifier: mastery-of-weather
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Mastery of Weather
+    img: icons/magic/lightning/bolt-strike-cloud-sky.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.8oUq3w41Zzx2EazH
+    transfer: true
+    _id: PjssQ2Ux8sP65pDe
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: lightning
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: thunder
+        priority: null
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!8oUq3w41Zzx2EazH.PjssQ2Ux8sP65pDe'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Nduu5SuDzlPyx1KH
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.SFD0IQElcC2xrdkJ
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.jC6VevsTY47qFYqQ
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.eexn11pUUtiuDvge
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.NoWPzjpCNAsKDaZN
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.XUFflXESxPnB3yIR
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!8oUq3w41Zzx2EazH'

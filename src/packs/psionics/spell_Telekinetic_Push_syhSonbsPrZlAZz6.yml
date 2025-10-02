@@ -1,0 +1,128 @@
+folder: zLDylBwEWWuq3B0v
+name: Telekinetic Push
+type: spell
+_id: syhSonbsPrZlAZz6
+img: icons/magic/movement/trail-streak-zigzag-teal.webp
+system:
+  activities:
+    1fOhTl9hltcfMALL:
+      type: save
+      _id: 1fOhTl9hltcfMALL
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are missed by a melee attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - str
+        dc:
+          calculation: str
+          formula: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Whenever you are missed by a melee attack, you can use your reaction to attempt to shove the creature.</p>
+      <p><!-- TODO: Review implementation - The shove should push the creature away, but the distance is not specified in the source. Standard shove is 5 feet. --></p>
+    chat: ''
+  identifier: telekinetic-push
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when you are missed by a melee attack'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: touch
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755582354017
+  modifiedTime: 1755582354017
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!syhSonbsPrZlAZz6'

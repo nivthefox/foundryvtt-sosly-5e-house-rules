@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Shape Matter
+type: feat
+_id: KwvphfRGq1N9xkuN
+img: icons/magic/earth/projectile-orb-stone-light.webp
+system:
+  activities:
+    RRHbiXVgRQQ0HaCZ:
+      type: utility
+      _id: RRHbiXVgRQQ0HaCZ
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: 1
+        concentration: false
+        override: false
+      effects:
+        - _id: a4C5n7qgidAdv12x
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: object
+          count: '1'
+          special: 'nonmagical object no larger than 1-foot cube'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to manipulate and reshape matter.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you can use an action to temporarily reshape one nonmagical object – no larger than 1-foot cube – into another nonmagical object of similar size and mass and of equal or lesser value. This effect lasts for 1 minute, and the object glows with a faint purple light.</p>
+    chat: ''
+  identifier: shape-matter
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Shape Matter
+    img: icons/magic/earth/projectile-orb-stone-light.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.KwvphfRGq1N9xkuN
+    transfer: true
+    _id: a4C5n7qgidAdv12x
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>The object glows with a faint purple light.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!KwvphfRGq1N9xkuN.a4C5n7qgidAdv12x'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.bTPLmyeIekTOBqYy
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.B01WaGaN4bEJ4xhD
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.DRqIEYYabXxE0rJ1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!KwvphfRGq1N9xkuN'

@@ -1,0 +1,120 @@
+folder: zLDylBwEWWuq3B0v
+name: Seeking Missile
+type: spell
+_id: Rb6EYVVOIymb7zdt
+img: icons/weapons/ammunition/arrow-flight-gray.webp
+system:
+  activities:
+    QAWe5d4hHVVuf3gk:
+      type: utility
+      _id: QAWe5d4hHVVuf3gk
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you miss with a ranged weapon attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a reaction when you miss with a ranged weapon attack, you can repeat the attack roll against the same target.</p>
+      <p><!-- TODO: Review implementation - the system cannot automatically repeat the attack roll; the user must manually make a new attack roll --></p>
+    chat: ''
+  identifier: seeking-missile
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when you miss with a ranged weapon attack'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: nom
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!Rb6EYVVOIymb7zdt'

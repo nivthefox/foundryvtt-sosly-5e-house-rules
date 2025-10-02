@@ -1,0 +1,155 @@
+folder: m2PtsowjwBvhRcVY
+name: Mastery of Wood and Earth
+type: feat
+_id: M6S7uVya0ur4Ur4c
+img: icons/magic/earth/barrier-stone-pillar-orange.webp
+system:
+  activities:
+    YSF5iwUxzvaWrFJL:
+      type: utility
+      _id: YSF5iwUxzvaWrFJL
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: qidDJj2nqaWTTtvB
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You master the ability to manipulate wood and earth with your mind.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have a +1 bonus to AC.</p>
+    chat: ''
+  identifier: mastery-of-wood-and-earth
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Mastery of Wood and Earth
+    img: icons/magic/earth/barrier-stone-pillar-orange.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.M6S7uVya0ur4Ur4c
+    transfer: true
+    _id: qidDJj2nqaWTTtvB
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '+1'
+        priority: null
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!M6S7uVya0ur4Ur4c.qidDJj2nqaWTTtvB'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.HCp5bSiuFfbhN4sW
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.IAKpkFTyyXcdLLbF
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.4o22oJkIISffrzhD
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.BfXzMC1WtLSOi398
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.aix8YrOIDc84TEwc
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.aQDqHiZWWNfx85in
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!M6S7uVya0ur4Ur4c'

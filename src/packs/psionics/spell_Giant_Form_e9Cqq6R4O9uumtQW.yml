@@ -1,0 +1,231 @@
+folder: zLDylBwEWWuq3B0v
+name: Giant Form
+type: spell
+_id: e9Cqq6R4O9uumtQW
+img: icons/magic/control/buff-strength-muscle-damage-red.webp
+system:
+  activities:
+    0NZyE0JHfb4rzQoy:
+      type: damage
+      _id: 0NZyE0JHfb4rzQoy
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '30'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: Temporary Hit Points
+      img: ''
+      appliedEffects: []
+    WEg7CA8sb899Oo4n:
+      type: utility
+      _id: WEg7CA8sb899Oo4n
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: NBXzPExAmDkq48Rp
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Size and Damage Effects
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you gain 30 temporary hit points. In addition, until your concentration ends, your melee weapon attacks deal an extra 2d6 bludgeoning damage on a hit, and your reach increases by 10 feet. If you're smaller than Huge, you also become Huge for the duration.</p>
+
+      <!-- TODO: Review implementation - Size increase to Huge and +2d6 bludgeoning damage to melee weapons must be applied manually. The active effect serves as a reminder. -->
+    chat: ''
+  identifier: giant-form
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: imm
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Giant Form
+    img: icons/magic/control/buff-strength-muscle-damage-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.e9Cqq6R4O9uumtQW
+    transfer: false
+    _id: NBXzPExAmDkq48Rp
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Until your concentration ends:</p>
+      <ul>
+        <li>Your melee weapon attacks deal an extra 2d6 bludgeoning damage</li>
+        <li>Your reach increases by 10 feet</li>
+        <li>If you're smaller than Huge, you become Huge</li>
+      </ul>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!e9Cqq6R4O9uumtQW.NBXzPExAmDkq48Rp'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755590000000
+  modifiedTime: 1755590000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!e9Cqq6R4O9uumtQW'

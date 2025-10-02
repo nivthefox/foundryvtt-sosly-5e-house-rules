@@ -1,0 +1,150 @@
+folder: m2PtsowjwBvhRcVY
+name: Displacement
+type: feat
+_id: wJOSKLkYUY0OHSHU
+img: icons/magic/movement/trail-streak-zigzag-yellow.webp
+system:
+  activities:
+    gcuZTKRmxkj83ZAT:
+      type: utility
+      _id: gcuZTKRmxkj83ZAT
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: VDXyybhTo6pDYoqV
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield your mind to bend space, allowing you to teleport short distances and phase out of reality.</p>
+      <p><strong>Psychic Focus.</strong> While focusing on this discipline, ranged attacks against you have disadvantage.</p>
+      <p><!-- TODO: Review implementation - Disadvantage on ranged attacks against you must be manually applied or tracked by the DM when this psychic focus is active. --></p>
+    chat: ''
+  identifier: displacement
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: sok
+effects:
+  - name: Displacement (Psychic Focus)
+    img: icons/magic/movement/trail-streak-zigzag-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.wJOSKLkYUY0OHSHU
+    transfer: true
+    _id: VDXyybhTo6pDYoqV
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: <p>Ranged attacks against you have disadvantage while you maintain this psychic focus.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!wJOSKLkYUY0OHSHU.VDXyybhTo6pDYoqV'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.HnSS2vpWDZysJUVR
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.y2M7V2LTeFZN88TN
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.v22wrEaDTi7lyeYv
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!wJOSKLkYUY0OHSHU'

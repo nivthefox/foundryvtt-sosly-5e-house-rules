@@ -1,0 +1,156 @@
+folder: m2PtsowjwBvhRcVY
+name: Mastery of Ice
+type: feat
+_id: lE2uy3NycIRLC9xt
+img: icons/magic/water/snowflake-ice-blue-white.webp
+system:
+  activities:
+    SsE5OPnSjIUozkKi:
+      type: utility
+      _id: SsE5OPnSjIUozkKi
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: jAshjIyzFGRMKGnE
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/cold.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to manipulate ice and cold.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have resistance to cold damage.</p>
+    chat: ''
+  identifier: mastery-of-ice
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Mastery of Ice
+    img: icons/magic/water/snowflake-ice-blue-white.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.lE2uy3NycIRLC9xt
+    transfer: true
+    _id: jAshjIyzFGRMKGnE
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: cold
+        priority: null
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!lE2uy3NycIRLC9xt.jAshjIyzFGRMKGnE'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.MAliK2fo0GKBCZIu
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.6CIkMH3Q57gQNkTK
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ACVBlfRj9QbzgsJq
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.zL4sH3oQ7M078Aum
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.VHqL74wEkPBdWFjc
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!lE2uy3NycIRLC9xt'

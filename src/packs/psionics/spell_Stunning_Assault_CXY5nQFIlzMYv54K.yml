@@ -1,0 +1,187 @@
+folder: zLDylBwEWWuq3B0v
+name: Stunning Assault
+type: spell
+_id: CXY5nQFIlzMYv54K
+img: icons/magic/control/fear-fright-white.webp
+system:
+  activities:
+    Sic9uPJnComIyrd3:
+      type: save
+      _id: Sic9uPJnComIyrd3
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: 'When you hit a creature with a melee weapon attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: qaDdchYRtfIjJOeV
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 5
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you hit a creature with a melee weapon attack, you cloud the creature's mind. The target takes an extra 5d6 psychic damage, and it must make a Constitution saving throw. On a failed save, the target is stunned until the end of your next turn.</p>
+
+      <p><em><!-- TODO: Review implementation of stunned condition - This power should apply the stunned status effect on a failed save, but the effect may need to be manually applied or configured with proper duration tracking. --></em></p>
+    chat: ''
+  identifier: stunning-assault
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: special
+    value: null
+    condition: 'When you hit a creature with a melee weapon attack'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Stunned
+    img: icons/magic/control/fear-fright-white.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.CXY5nQFIlzMYv54K
+    transfer: false
+    _id: qaDdchYRtfIjJOeV
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You are stunned until the end of the attacker's next turn.</p>
+    tint: '#ffffff'
+    statuses:
+      - stunned
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!CXY5nQFIlzMYv54K.qaDdchYRtfIjJOeV'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!CXY5nQFIlzMYv54K'

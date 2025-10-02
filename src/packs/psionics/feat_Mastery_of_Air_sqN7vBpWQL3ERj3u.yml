@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Mastery of Air
+type: feat
+_id: sqN7vBpWQL3ERj3u
+img: icons/magic/air/wind-tornado-funnel-blue.webp
+system:
+  activities:
+    xcC6tQxHYoryaetx:
+      type: utility
+      _id: xcC6tQxHYoryaetx
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: q7FxnD4dI7Cjwj8j
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to control the air around you.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you take no falling damage, and you ignore difficult terrain when walking.</p>
+    chat: ''
+  identifier: mastery-of-air
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Mastery of Air (Psychic Focus)
+    img: icons/magic/air/wind-tornado-funnel-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.sqN7vBpWQL3ERj3u
+    transfer: true
+    _id: q7FxnD4dI7Cjwj8j
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>While you maintain psychic focus on this discipline, you take no falling damage and ignore difficult terrain when walking.</p><p><!-- TODO: Review implementation - these effects (immunity to falling damage and ignoring difficult terrain) may require manual configuration or automation support that is not currently configured --></p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!sqN7vBpWQL3ERj3u.q7FxnD4dI7Cjwj8j'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.rh26gvNmpM1r7fRe
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.4EIjF4tnSPzDcI0V
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.C7RR4O9FHMzBc6bX
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.5ANAPMJlVa7jDq1m
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.kCdlzBEGzj8HHjLR
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.L7HWgZeN0eCl6w9A
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!sqN7vBpWQL3ERj3u'

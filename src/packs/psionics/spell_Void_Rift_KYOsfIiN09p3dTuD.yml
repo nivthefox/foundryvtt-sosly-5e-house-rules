@@ -1,0 +1,187 @@
+folder: zLDylBwEWWuq3B0v
+name: Void Rift
+type: spell
+_id: KYOsfIiN09p3dTuD
+img: icons/magic/unholy/orb-beam-pink.webp
+system:
+  activities:
+    f7fBue41CEeJdjIP:
+      type: save
+      _id: f7fBue41CEeJdjIP
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '90'
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: sphere
+          size: '20'
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - necrotic
+            number: 5
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: 6 Psi Points (Initial)
+      img: ''
+      appliedEffects: []
+    PxUwDD0T8l5vy79g:
+      type: utility
+      _id: PxUwDD0T8l5vy79g
+      sort: 1
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: 'When a creature enters the rift or ends its turn there'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: true
+        visible: false
+        name: 'Ongoing Damage'
+        formula: '5d8[necrotic]'
+      name: Ongoing Damage
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you tear a 20-foot radius sphere in reality centered on a point you can see within 90 feet. The void rift spreads around corners and is heavily obscured.</p>
+      <p>When the void rift appears, each creature in it must make a Constitution saving throw. On a failed save, a creature takes 5d8 necrotic damage, or half as much damage on a successful save.</p>
+      <p>A creature takes the same damage when it enters the rift for the first time on a turn or ends its turn there.</p>
+      <p><em><!-- TODO: Review implementation of ongoing damage - The ongoing damage should be automatically applied when creatures enter or end their turn in the area. This may require manual application using the Ongoing Damage activity. --></em></p>
+    chat: ''
+  identifier: void-rift
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '90'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: sphere
+      size: '20'
+    affects:
+      choice: false
+      type: ''
+      count: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!KYOsfIiN09p3dTuD'

@@ -1,0 +1,174 @@
+folder: zLDylBwEWWuq3B0v
+name: Mindhunter
+type: spell
+_id: ZLz1RnlDM3jvpGg4
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  activities:
+    tyuuJTYJnbyPXJQQ:
+      type: utility
+      _id: tyuuJTYJnbyPXJQQ
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: hour
+        value: '1'
+        concentration: true
+        override: false
+      effects:
+        - _id: 3AHcJz6e3sKnyNo5
+      range:
+        units: ft
+        value: '90'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you designate a target you can see within 90 feet as your quarry. For the duration, you deal an extra 1d6 psychic damage to the target whenever you hit it with an attack, and the target has disadvantage on Wisdom (Perception) checks made to detect you. If the target drops to 0 hit points before this effect ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.</p>
+      <p><!-- TODO: Review implementation - the extra 1d6 psychic damage and disadvantage on Perception must be manually applied by the DM/player. Consider adding effect changes if DAE can support this mechanic. --></p>
+    chat: ''
+  identifier: mindhunter
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: hour
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '90'
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - _id: 3AHcJz6e3sKnyNo5
+    name: Mindhunter
+    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ZLz1RnlDM3jvpGg4
+    transfer: false
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      seconds: 3600
+      startTime: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>Marked as quarry. You deal an extra 1d6 psychic damage when you hit this creature, and it has disadvantage on Wisdom (Perception) checks made to detect you.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ZLz1RnlDM3jvpGg4.3AHcJz6e3sKnyNo5'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!ZLz1RnlDM3jvpGg4'

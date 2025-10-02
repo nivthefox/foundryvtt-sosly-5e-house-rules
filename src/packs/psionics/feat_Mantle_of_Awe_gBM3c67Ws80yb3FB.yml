@@ -1,0 +1,158 @@
+folder: m2PtsowjwBvhRcVY
+name: Mantle of Awe
+type: feat
+_id: gBM3c67Ws80yb3FB
+img: icons/magic/control/buff-flight-wings-runes-purple.webp
+system:
+  activities:
+    qyeqrmsf2RzdjA7D:
+      type: utility
+      _id: qyeqrmsf2RzdjA7D
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: r5jc4GnE0iLDxA4c
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You learn to use psionic energy to manipulate others with a subtle
+      combination of psi and your own, natural charm.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you
+      gain a bonus to Charisma checks. The bonus equals half your Intelligence
+      modifier (minimum of +1).</p>
+    chat: ''
+  identifier: mantle-of-awe
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Mantle of Awe
+    img: icons/magic/control/buff-flight-wings-runes-purple.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.gBM3c67Ws80yb3FB
+    transfer: true
+    _id: r5jc4GnE0iLDxA4c
+    type: base
+    system: {}
+    changes:
+      - key: system.abilities.cha.bonuses.check
+        mode: 2
+        value: max(1, floor(@abilities.int.mod / 2))
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You gain a bonus to Charisma checks. The bonus equals half your
+      Intelligence modifier (minimum of +1).</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755600000000
+      modifiedTime: 1755600000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!gBM3c67Ws80yb3FB.r5jc4GnE0iLDxA4c'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.4JU1paedEzKpmyY9
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.QoIo9poXN0mrGza7
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.NW0s3OpwY2OdyOCe
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!gBM3c67Ws80yb3FB'

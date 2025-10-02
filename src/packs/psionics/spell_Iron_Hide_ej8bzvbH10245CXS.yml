@@ -1,0 +1,774 @@
+folder: zLDylBwEWWuq3B0v
+name: Iron Hide
+type: spell
+_id: ej8bzvbH10245CXS
+img: icons/magic/defensive/armor-stone-skin-grey.webp
+system:
+  activities:
+    SEjIAllrgLo8rBb0:
+      type: utility
+      _id: SEjIAllrgLo8rBb0
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: sTpUhVkb2NKqVMhe
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    sPeDrpkBGlgA2llL:
+      type: utility
+      _id: sPeDrpkBGlgA2llL
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: ghFNGDkqksfRxYzL
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    dzHHI2q3PQlH3hvP:
+      type: utility
+      _id: dzHHI2q3PQlH3hvP
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: vUwRO1S65yPRJioK
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+    Zb7c5Y32wrVSeUjr:
+      type: utility
+      _id: Zb7c5Y32wrVSeUjr
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: kbCSV7znPRfVF4qm
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    xiXC88aVaq09PyAx:
+      type: utility
+      _id: xiXC88aVaq09PyAx
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: XkRkvfljgSWR48gj
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+    fJinO6Ma3gtf8QlV:
+      type: utility
+      _id: fJinO6Ma3gtf8QlV
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: aZgriOJv7pqfDPC0
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+    iD6jtgVVsuspJ2jW:
+      type: utility
+      _id: iD6jtgVVsuspJ2jW
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are hit by an attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        concentration: false
+        override: false
+      effects:
+        - _id: bNKZsbTTxMFFqCox
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a reaction when you are hit by an attack, you gain a +1 bonus to AC for each psi point you spend on this ability. The bonus lasts until the end of your next turn. This bonus applies against the triggering attack.</p>
+    chat: ''
+  identifier: iron-hide
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when you are hit by an attack'
+  duration:
+    units: turn
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: imm
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Iron Hide (+1 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: sTpUhVkb2NKqVMhe
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '1'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +1 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.sTpUhVkb2NKqVMhe'
+  - name: Iron Hide (+2 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: ghFNGDkqksfRxYzL
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '2'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +2 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.ghFNGDkqksfRxYzL'
+  - name: Iron Hide (+3 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: vUwRO1S65yPRJioK
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '3'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +3 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.vUwRO1S65yPRJioK'
+  - name: Iron Hide (+4 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: kbCSV7znPRfVF4qm
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '4'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +4 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.kbCSV7znPRfVF4qm'
+  - name: Iron Hide (+5 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: XkRkvfljgSWR48gj
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '5'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +5 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.XkRkvfljgSWR48gj'
+  - name: Iron Hide (+6 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: aZgriOJv7pqfDPC0
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '6'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +6 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.aZgriOJv7pqfDPC0'
+  - name: Iron Hide (+7 AC)
+    img: icons/magic/defensive/armor-stone-skin-grey.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ej8bzvbH10245CXS
+    transfer: false
+    _id: bNKZsbTTxMFFqCox
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '7'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: '<p>You gain a +7 bonus to AC until the end of your next turn. This bonus applies against the triggering attack.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ej8bzvbH10245CXS.bNKZsbTTxMFFqCox'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!ej8bzvbH10245CXS'

@@ -1,0 +1,162 @@
+folder: zLDylBwEWWuq3B0v
+name: Creation
+type: spell
+_id: DRqIEYYabXxE0rJ1
+img: icons/magic/light/explosion-star-glow-silhouette.webp
+system:
+  activities:
+    U5FPxI9YylbQdjuj:
+      type: utility
+      _id: U5FPxI9YylbQdjuj
+      sort: 0
+      activation:
+        type: minute
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: spec
+        concentration: false
+        override: false
+        special: 'See description'
+      effects: []
+      range:
+        units: ft
+        value: '30'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: '5-foot cube'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Over the course of 1 minute, you pull wisps of ectoplasm from the Ethereal Plane to create a nonliving object of vegetable matter within 30 feet: soft goods, rope, wood, or something similar. You can also use this power to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p>
+
+      <p>The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vegetable matter</td>
+            <td>1 day</td>
+          </tr>
+          <tr>
+            <td>Stone or crystal</td>
+            <td>12 hours</td>
+          </tr>
+          <tr>
+            <td>Precious metals</td>
+            <td>1 hour</td>
+          </tr>
+          <tr>
+            <td>Gems</td>
+            <td>10 minutes</td>
+          </tr>
+          <tr>
+            <td>Adamantine or mithral</td>
+            <td>1 minute</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Using any material created by this power as another power or spell's material component causes that power or spell to fail.</p>
+    chat: ''
+  identifier: creation
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: minute
+    value: 1
+    condition: ''
+  duration:
+    units: spec
+    special: 'See description'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '30'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: space
+      count: ''
+      special: '5-foot cube'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!DRqIEYYabXxE0rJ1'

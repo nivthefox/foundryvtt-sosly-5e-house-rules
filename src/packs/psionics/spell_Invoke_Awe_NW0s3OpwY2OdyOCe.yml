@@ -1,0 +1,190 @@
+folder: zLDylBwEWWuq3B0v
+name: Invoke Awe
+type: spell
+_id: NW0s3OpwY2OdyOCe
+img: icons/magic/control/fear-fright-white.webp
+system:
+  activities:
+    TNINbMIhERcvjzEF:
+      type: save
+      _id: TNINbMIhERcvjzEF
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: rhB4h2qnnfJNmHJc
+          onSave: false
+      range:
+        units: ft
+        value: '60'
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '5'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        onSave: none
+        parts: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you exert an aura that inspires awe in others. Choose up
+      to 5 creatures you can see within 60 feet of you. Each target must succeed
+      on an Intelligence saving throw or be charmed by you until your
+      concentration ends. While charmed, the target obeys all your verbal
+      commands to the best of its ability and without doing anything obviously
+      self-destructive. The charmed target will attack only creatures that it
+      has seen attack or harm you since it was charmed or that it was already
+      hostile toward. At the end of each of its turns, it can repeat the saving
+      throw, ending the effect on itself on a success.</p>
+    chat: ''
+  identifier: invoke-awe
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '5'
+      special: ''
+effects:
+  - name: Charmed (Invoke Awe)
+    img: icons/magic/control/fear-fright-white.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.NW0s3OpwY2OdyOCe
+    transfer: false
+    _id: rhB4h2qnnfJNmHJc
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 600
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>The target obeys all your verbal commands to the best of its ability
+      and without doing anything obviously self-destructive. The charmed target
+      will attack only creatures that it has seen attack or harm you since it
+      was charmed or that it was already hostile toward. At the end of each of
+      its turns, it can repeat the saving throw, ending the effect on itself on
+      a success.</p>
+    tint: '#ffffff'
+    statuses:
+      - charmed
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - turnEndSource
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755600000000
+      modifiedTime: 1755600000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!NW0s3OpwY2OdyOCe.rhB4h2qnnfJNmHJc'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!NW0s3OpwY2OdyOCe'

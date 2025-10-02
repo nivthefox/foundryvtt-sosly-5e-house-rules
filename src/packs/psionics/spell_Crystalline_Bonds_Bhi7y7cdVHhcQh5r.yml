@@ -1,0 +1,182 @@
+folder: zLDylBwEWWuq3B0v
+name: Crystalline Bonds
+type: spell
+_id: Bhi7y7cdVHhcQh5r
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  activities:
+    FzuLywYQZUOl0ZyU:
+      type: save
+      _id: FzuLywYQZUOl0ZyU
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects:
+        - _id: nug5WtqOQt5h9g8o
+      range:
+        units: ft
+        value: '90'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you cause crystals to grow on a creature that you can see within 90 feet. The target must succeed on a Strength saving throw or be restrained by the crystalline growths for 1 minute. The target can use its action to make a Strength check against your discipline save DC. On a success, it frees itself.</p>
+      <p>At the start of each of its turns, the target takes 2d4 slashing damage from the crystals' razor-sharp edges.</p>
+      <p>When the effect ends, the crystals erode away into dust.</p>
+      <p><!-- TODO: Review implementation - Ongoing damage of 2d4 slashing at start of each turn requires manual application. The Strength check to escape uses an action and must be rolled manually against your discipline save DC. --></p>
+    chat: ''
+  identifier: crystalline-bonds
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '90'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects:
+  - name: Crystalline Bonds
+    img: icons/magic/control/debuff-chains-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.Bhi7y7cdVHhcQh5r
+    transfer: false
+    _id: nug5WtqOQt5h9g8o
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You are restrained by crystalline growths. You can use your action to make a Strength check against the discipline save DC. On a success, you free yourself.</p>
+      <p>At the start of each of your turns, you take 2d4 slashing damage from the crystals' razor-sharp edges.</p>
+    tint: '#ffffff'
+    statuses:
+      - restrained
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!Bhi7y7cdVHhcQh5r.nug5WtqOQt5h9g8o'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!Bhi7y7cdVHhcQh5r'

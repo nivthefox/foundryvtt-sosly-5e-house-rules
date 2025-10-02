@@ -1,0 +1,490 @@
+folder: zLDylBwEWWuq3B0v
+name: Soothing Presence
+type: spell
+_id: K3zRd2oVnQHnj4YN
+img: icons/magic/light/orb-lightbulb-blue.webp
+system:
+  activities:
+    Tpc1VA5YdMyWCDy4:
+      type: damage
+      _id: Tpc1VA5YdMyWCDy4
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '3'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    UZQmqImSBEvUJzPj:
+      type: damage
+      _id: UZQmqImSBEvUJzPj
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '6'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    K0YM8sQyljBwmRNf:
+      type: damage
+      _id: K0YM8sQyljBwmRNf
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '9'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+    YlDx2YOQjKD9Gx9x:
+      type: damage
+      _id: YlDx2YOQjKD9Gx9x
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '12'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    1CjKrNlfzN6BbWfv:
+      type: damage
+      _id: 1CjKrNlfzN6BbWfv
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '15'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+    J3bcf1Bj84jlG2ZS:
+      type: damage
+      _id: J3bcf1Bj84jlG2ZS
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '18'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+    4fIKT5rOB95FThKz:
+      type: damage
+      _id: 4fIKT5rOB95FThKz
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types: []
+            custom:
+              enabled: true
+              formula: '21'
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: null
+            denomination: null
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target gains 3 temporary hit points per psi point spent on this effect.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '3'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580858682
+  modifiedTime: 1755582354017
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!K3zRd2oVnQHnj4YN'

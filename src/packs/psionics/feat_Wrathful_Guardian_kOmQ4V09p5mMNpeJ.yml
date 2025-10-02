@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Wrathful Guardian
+type: feat
+_id: kOmQ4V09p5mMNpeJ
+img: icons/magic/unholy/strike-body-explode-disintegrate.webp
+system:
+  activities:
+    EkEGwXD5myoysiEx:
+      type: utility
+      _id: EkEGwXD5myoysiEx
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when a creature you can see attacks a target other than you that is within 5 feet of you'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Sh8cuYuql4d3mxNB
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You channel your anger and wrath into powerful offensive abilities.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, when a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to take the attack instead.</p>
+
+      <!-- TODO: Review implementation of psychic focus reaction - "take the attack instead" - this redirects an attack to yourself, which may require manual adjudication by the DM or automated redirection -->
+    chat: ''
+  identifier: wrathful-guardian
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: avt
+effects:
+  - name: Wrathful Guardian
+    img: icons/magic/unholy/strike-body-explode-disintegrate.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.kOmQ4V09p5mMNpeJ
+    transfer: true
+    _id: Sh8cuYuql4d3mxNB
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to take the attack instead.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!kOmQ4V09p5mMNpeJ.Sh8cuYuql4d3mxNB'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ccv1YXlYLLCu0nn1
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Pc8lozFthhMmMyw9
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.9qK0pI6tPWdm1jWx
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!kOmQ4V09p5mMNpeJ'

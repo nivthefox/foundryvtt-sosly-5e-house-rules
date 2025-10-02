@@ -1,0 +1,158 @@
+folder: m2PtsowjwBvhRcVY
+name: Corrosive Metabolism
+type: feat
+_id: PDO0wh4TuHngvi9L
+img: icons/magic/acid/projectile-glob-green.webp
+system:
+  activities:
+    fQBSm6itfDsdEwGu:
+      type: utility
+      _id: fQBSm6itfDsdEwGu
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Umcg4uF8WDxbTOeK
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/acid.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your control over acids and toxins enhances your physiology.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have resistance to acid and poison damage.</p>
+    chat: ''
+  identifier: corrosive-metabolism
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: imm
+effects:
+  - name: Corrosive Metabolism
+    img: icons/magic/acid/projectile-glob-green.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.PDO0wh4TuHngvi9L
+    transfer: true
+    _id: Umcg4uF8WDxbTOeK
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: acid
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: poison
+        priority: null
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!PDO0wh4TuHngvi9L.Umcg4uF8WDxbTOeK'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ELSbI8FmSQQiex2z
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.fIYOehqlUSxF9WRG
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.9H7wEWslEtAfYPUI
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.K5jxuZhTq5VIg5Ra
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.LCeXxPryFT2eRNem
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!PDO0wh4TuHngvi9L'

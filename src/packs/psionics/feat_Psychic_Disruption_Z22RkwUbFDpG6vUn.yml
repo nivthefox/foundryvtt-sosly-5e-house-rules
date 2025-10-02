@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Psychic Disruption
+type: feat
+_id: Z22RkwUbFDpG6vUn
+img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+system:
+  activities:
+    vGLNbhOdLEmh91RK:
+      type: utility
+      _id: vGLNbhOdLEmh91RK
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: bPsx7syKRMzrA6Ih
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield the power of your mind to disrupt the focus and mental clarity of your foes.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Charisma (Deception) checks.</p>
+    chat: ''
+  identifier: psychic-disruption
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Psychic Disruption
+    img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.Z22RkwUbFDpG6vUn
+    transfer: true
+    _id: bPsx7syKRMzrA6Ih
+    type: base
+    system: {}
+    changes:
+      - key: flags.dnd5e.advantage.ability.check.cha.dec
+        mode: 0
+        value: '1'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!Z22RkwUbFDpG6vUn.bPsx7syKRMzrA6Ih'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.NpCtMtrqnI1xCxOx
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.JCn9Om1wLBo84jKG
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.d52gU4TLPncqE4Rg
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!Z22RkwUbFDpG6vUn'

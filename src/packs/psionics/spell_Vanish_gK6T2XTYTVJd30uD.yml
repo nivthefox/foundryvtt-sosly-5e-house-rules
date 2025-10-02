@@ -1,0 +1,169 @@
+folder: zLDylBwEWWuq3B0v
+name: Vanish
+type: spell
+_id: gK6T2XTYTVJd30uD
+img: icons/magic/perception/silhouette-stealth-shadow.webp
+system:
+  activities:
+    Xnhf6CImhhdkn3V2:
+      type: utility
+      _id: Xnhf6CImhhdkn3V2
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: YsPcFpBnKZYLDyRG
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible for up to 1 minute or until you attack or cast a spell.</p>
+      <p><!-- TODO: Review implementation - the teleportation must be done manually by the player (move token on map). The invisibility effect will be applied but will need to be manually removed when the character attacks or casts a spell. --></p>
+    chat: ''
+  identifier: vanish
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - _id: YsPcFpBnKZYLDyRG
+    name: Vanish
+    img: icons/magic/perception/silhouette-stealth-shadow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.gK6T2XTYTVJd30uD
+    transfer: false
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      seconds: 60
+      startTime: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>You are invisible until you attack or cast a spell, or until 1 minute passes.</p>'
+    tint: '#ffffff'
+    statuses:
+      - invisible
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!gK6T2XTYTVJd30uD.YsPcFpBnKZYLDyRG'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!gK6T2XTYTVJd30uD'

@@ -1,0 +1,150 @@
+folder: m2PtsowjwBvhRcVY
+name: Giant Growth
+type: feat
+_id: xLYLFn73pzAdgvTi
+img: icons/magic/control/buff-strength-muscle-damage-red.webp
+system:
+  activities:
+    mxfSCbVVuIfxcvhI:
+      type: utility
+      _id: mxfSCbVVuIfxcvhI
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: yoAkfmthbjThGPHE
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You infuse yourself with psionic energy to grow to tremendous size, bolstering your strength and stature.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, your reach increases by 5 feet.</p>
+
+      <!-- TODO: Review implementation - Reach increase must be applied manually. The psychic focus effect serves as a reminder. -->
+    chat: ''
+  identifier: giant-growth
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: imm
+effects:
+  - name: Giant Growth
+    img: icons/magic/control/buff-strength-muscle-damage-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.xLYLFn73pzAdgvTi
+    transfer: true
+    _id: yoAkfmthbjThGPHE
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>While focused on this discipline, your reach increases by 5 feet.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755590000000
+      modifiedTime: 1755590000000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!xLYLFn73pzAdgvTi.yoAkfmthbjThGPHE'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ZNnuYVIm9lt41ob4
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.e9Cqq6R4O9uumtQW
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755590000000
+  modifiedTime: 1755590000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!xLYLFn73pzAdgvTi'

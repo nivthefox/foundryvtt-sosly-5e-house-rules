@@ -1,12 +1,13 @@
 folder: m2PtsowjwBvhRcVY
-name: Crown of Despair
+name: Mastery of Water
 type: feat
-_id: KWmtyN8SHhdX6ldN
-img: icons/magic/perception/eye-slit-pink.webp
+_id: mkVawTDgqvjOj8u9
+img: icons/magic/water/wave-water-blue.webp
 system:
   activities:
-    cisczy56RUMrHuUN:
+    AFTz4R2NDlFxdQqL:
       type: utility
+      _id: AFTz4R2NDlFxdQqL
       sort: 0
       activation:
         type: bonus
@@ -25,8 +26,7 @@ system:
         concentration: false
         override: false
       effects:
-        - _id: OTiQLb1zahILKHMF
-        - _id: 1Gp6vLk8jR79GalG
+        - _id: stuH9b5IXlqxmR2L
       range:
         units: self
         override: false
@@ -52,19 +52,17 @@ system:
         formula: ''
       name: Psychic Focus
       img: systems/dnd5e/icons/svg/damage/radiant.svg
-      _id: cisczy56RUMrHuUN
+      appliedEffects: []
   uses:
     spent: 0
     recovery: []
     max: ''
   description:
     value: >-
-      <p>You have learned to harvest seeds of despair in a creature's psyche,
-      wracking it with self-doubt and inaction.</p><p><strong>Psychic
-      Focus.</strong> While focused on this discipline, you have advantage on
-      Charisma (Intimidation) checks.</p>
+      <p>Your psionic energy flows with the currents and tides of water, granting you mastery over this versatile element.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have a swimming speed equal to your walking speed, and you can breathe underwater.</p>
     chat: ''
-  identifier: new-item
+  identifier: mastery-of-water
   source:
     revision: 1
     rules: '2024'
@@ -79,13 +77,13 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: ava
+    subtype: wuj
 effects:
-  - name: Crown of Despair
-    img: icons/magic/perception/eye-slit-pink.webp
-    origin: Compendium.sosly-5e-house-rules.psionics.Item.KWmtyN8SHhdX6ldN
+  - name: Mastery of Water (Psychic Focus)
+    img: icons/magic/water/wave-water-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.mkVawTDgqvjOj8u9
     transfer: true
-    _id: 1Gp6vLk8jR79GalG
+    _id: stuH9b5IXlqxmR2L
     type: base
     system: {}
     changes: []
@@ -98,7 +96,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: ''
+    description: '<p>You have a swimming speed equal to your walking speed, and you can breathe underwater.</p>'
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -121,10 +119,10 @@ effects:
       coreVersion: '12.331'
       systemId: dnd5e
       systemVersion: 4.4.4
-      createdTime: 1755587163826
-      modifiedTime: 1755589331954
-      lastModifiedBy: NbCXvDXaYhqPCRFb
-    _key: '!items.effects!KWmtyN8SHhdX6ldN.1Gp6vLk8jR79GalG'
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!mkVawTDgqvjOj8u9.stuH9b5IXlqxmR2L'
 sort: 0
 ownership:
   default: 0
@@ -134,14 +132,21 @@ flags:
     riders:
       activity: []
       effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.sURmYREhnudfcIbS
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.JybE0W4wqmlWH1Os
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.5GoGvbRP7EWT7ZXK
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.BtjTshnDo13cCxaY
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Soue6k1BFteEQXjw
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.U10JbI78YBzXDJ7a
 _stats:
   compendiumSource: null
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
   systemVersion: 4.4.4
-  createdTime: 1755586937903
-  modifiedTime: 1755587163833
-  lastModifiedBy: NbCXvDXaYhqPCRFb
-_key: '!items!KWmtyN8SHhdX6ldN'
-
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!mkVawTDgqvjOj8u9'

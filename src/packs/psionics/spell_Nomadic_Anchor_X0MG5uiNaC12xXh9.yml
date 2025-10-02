@@ -1,0 +1,128 @@
+folder: zLDylBwEWWuq3B0v
+name: Nomadic Anchor
+type: spell
+_id: X0MG5uiNaC12xXh9
+img: icons/magic/symbols/runes-star-pentagon-blue.webp
+system:
+  activities:
+    cOfqKGZ17QyiJnAq:
+      type: utility
+      _id: cOfqKGZ17QyiJnAq
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: hour
+        value: '8'
+        concentration: false
+        override: false
+      effects: []
+      range:
+        value: '120'
+        units: ft
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '5'
+        affects:
+          choice: false
+          type: space
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you create an invisible, intangible teleportation anchor in a 5-foot cube you can see within 120 feet of you. For the next 8 hours, whenever you use this discipline to teleport, you can instead teleport to the anchor, even if you can't see it, but it must be within range of the teleportation ability.</p>
+      <p><!-- TODO: Review implementation - teleporting to anchor must be done manually --></p>
+    chat: ''
+  identifier: nomadic-anchor
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: hour
+    value: '8'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  school: nom
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: cube
+      size: '5'
+    affects:
+      choice: false
+      type: space
+      count: '1'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!X0MG5uiNaC12xXh9'

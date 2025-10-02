@@ -1,0 +1,366 @@
+folder: zLDylBwEWWuq3B0v
+name: Adaptive Shield
+type: spell
+_id: zQ9xK0FdAbn27Hjz
+img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+system:
+  activities:
+    W5j0JBQErAUPUkbH:
+      type: utility
+      _id: W5j0JBQErAUPUkbH
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you take acid, cold, fire, lightning, or thunder damage'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: qNpBGDdXWcT9wCND
+        - _id: MaHlXCS2WGHRyNfQ
+        - _id: DPbpjrhN9N1qJ3cN
+        - _id: jAwBcjp7iNyhWALJ
+        - _id: Gbbvvh24xvKw0uKg
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to damage of that type—including the triggering damage—until the end of your next turn.</p>
+      <p><!-- TODO: Review implementation - user must manually choose the appropriate resistance effect matching the damage type taken --></p>
+    chat: ''
+  identifier: adaptive-shield
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when you take acid, cold, fire, lightning, or thunder damage'
+  duration:
+    units: turn
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: imm
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - _id: qNpBGDdXWcT9wCND
+    name: Acid Resistance
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.zQ9xK0FdAbn27Hjz
+    transfer: false
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: acid
+        priority: 7
+    disabled: true
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!zQ9xK0FdAbn27Hjz.qNpBGDdXWcT9wCND'
+  - _id: MaHlXCS2WGHRyNfQ
+    name: Cold Resistance
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.zQ9xK0FdAbn27Hjz
+    transfer: false
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: cold
+        priority: 7
+    disabled: true
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!zQ9xK0FdAbn27Hjz.MaHlXCS2WGHRyNfQ'
+  - _id: DPbpjrhN9N1qJ3cN
+    name: Fire Resistance
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.zQ9xK0FdAbn27Hjz
+    transfer: false
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: fire
+        priority: 7
+    disabled: true
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!zQ9xK0FdAbn27Hjz.DPbpjrhN9N1qJ3cN'
+  - _id: jAwBcjp7iNyhWALJ
+    name: Lightning Resistance
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.zQ9xK0FdAbn27Hjz
+    transfer: false
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: lightning
+        priority: 7
+    disabled: true
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!zQ9xK0FdAbn27Hjz.jAwBcjp7iNyhWALJ'
+  - _id: Gbbvvh24xvKw0uKg
+    name: Thunder Resistance
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.zQ9xK0FdAbn27Hjz
+    transfer: false
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: thunder
+        priority: 7
+    disabled: true
+    duration:
+      rounds: 1
+      startTime: null
+      seconds: null
+      combat: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!zQ9xK0FdAbn27Hjz.Gbbvvh24xvKw0uKg'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!zQ9xK0FdAbn27Hjz'

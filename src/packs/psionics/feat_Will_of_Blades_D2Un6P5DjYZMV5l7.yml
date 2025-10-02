@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Will of Blades
+type: feat
+_id: D2Un6P5DjYZMV5l7
+img: icons/weapons/swords/sword-magic-purple.webp
+system:
+  activities:
+    on3SmkPN7fjrI16Y:
+      type: utility
+      _id: on3SmkPN7fjrI16Y
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: 'After scoring a critical hit or reducing a creature to 0 HP with a melee weapon'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 8QNC5iRPs5jPdvNC
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to enhance your melee weapon strikes with devastating precision and power.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, whenever you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you gain advantage on the next melee weapon attack you make before the end of your next turn.</p>
+    chat: ''
+  identifier: will-of-blades
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: sok
+effects:
+  - name: Will of Blades (Psychic Focus)
+    img: icons/weapons/swords/sword-magic-purple.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.D2Un6P5DjYZMV5l7
+    transfer: true
+    _id: 8QNC5iRPs5jPdvNC
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Whenever you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you gain advantage on the next melee weapon attack you make before the end of your next turn.</p>
+
+
+      <p><em><!-- TODO: Review implementation of conditional advantage - this may require manual application or DM adjudication --></em></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!D2Un6P5DjYZMV5l7.8QNC5iRPs5jPdvNC'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.s60Mz5htxv9markV
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.56xi7coYCRFs2sc9
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.5jN2DmNkcDxKnZyT
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!D2Un6P5DjYZMV5l7'

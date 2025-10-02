@@ -1,0 +1,148 @@
+folder: m2PtsowjwBvhRcVY
+name: Alacrity
+type: feat
+_id: wNFRVu4HWBepuSBu
+img: icons/magic/movement/chevrons-line-orange.webp
+system:
+  activities:
+    6SviblLiKJWNW1T0:
+      type: utility
+      _id: 6SviblLiKJWNW1T0
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when you are missed by a melee attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 6Nuz5N9R6rcGQYKG
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to manipulate your incredible speed and reflexes.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you can use a reaction when you are missed by a melee attack to move up to 5 feet. This movement doesn't provoke opportunity attacks.</p>
+      <p><!-- TODO: Review implementation - movement is manual, does not automatically prevent opportunity attacks --></p>
+    chat: ''
+  identifier: alacrity
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: sok
+effects:
+  - name: Alacrity
+    img: icons/magic/movement/chevrons-line-orange.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.wNFRVu4HWBepuSBu
+    transfer: true
+    _id: 6Nuz5N9R6rcGQYKG
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!wNFRVu4HWBepuSBu.6Nuz5N9R6rcGQYKG'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.aGClqOpKATAKxqHx
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.6WWfqCZg1tvR7HcS
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!wNFRVu4HWBepuSBu'

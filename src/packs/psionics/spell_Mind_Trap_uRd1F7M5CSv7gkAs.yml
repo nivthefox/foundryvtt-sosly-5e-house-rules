@@ -1,0 +1,277 @@
+folder: zLDylBwEWWuq3B0v
+name: Mind Trap
+type: spell
+_id: uRd1F7M5CSv7gkAs
+img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+system:
+  activities:
+    c0q6nt8GoAEkMw3A:
+      type: utility
+      _id: c0q6nt8GoAEkMw3A
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: hour
+        value: '8'
+        concentration: false
+        override: false
+      effects:
+        - _id: Cel2wPT6MUbN7VNA
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Set Mind Trap (7 Psi Points)
+      img: ''
+      appliedEffects: []
+    Z7ECQR6TLS75AA0K:
+      type: save
+      _id: Z7ECQR6TLS75AA0K
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'When you become aware of an attempt to remotely view you, detect your thoughts, or charm you'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: vS5oigDMF6jAFgOY
+      range:
+        units: special
+        override: false
+        special: 'the source of the effect'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 10
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: ''
+            custom:
+              enabled: false
+      name: Spring Mind Trap
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you create a mental trap for any who would attempt to detect, influence, or read your mind with magic. For the duration, you are aware of any attempts to remotely view you, detect your thoughts, or charm you by the source. As a reaction when you become aware of an attempt, you can spring the mind trap on the source of the effect. The target must succeed on a Wisdom saving throw or take 10d10 psychic damage and be stunned until the end of its next turn. On a successful save, the target takes half as much damage.</p>
+      <p><!-- TODO: Review implementation - awareness of mental intrusion is descriptive only and requires GM coordination --></p>
+    chat: ''
+  identifier: mind-trap
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: hour
+    value: '8'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Mind Trap (Active)
+    img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.uRd1F7M5CSv7gkAs
+    transfer: false
+    _id: Cel2wPT6MUbN7VNA
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 28800
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You are aware of any attempts to remotely view you, detect your thoughts, or charm you. You can spring the mind trap as a reaction.</p>
+      <p><em>Note: GM must inform you when mental intrusion attempts are made.</em></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!uRd1F7M5CSv7gkAs.Cel2wPT6MUbN7VNA'
+  - name: Stunned
+    img: icons/svg/daze.svg
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.uRd1F7M5CSv7gkAs
+    transfer: false
+    _id: vS5oigDMF6jAFgOY
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - stunned
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - turnEnd
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!uRd1F7M5CSv7gkAs.vS5oigDMF6jAFgOY'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!uRd1F7M5CSv7gkAs'

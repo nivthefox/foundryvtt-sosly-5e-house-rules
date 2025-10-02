@@ -1,0 +1,171 @@
+folder: zLDylBwEWWuq3B0v
+name: Feat of Strength
+type: spell
+_id: 2wvDi7me7iZZ0b74
+img: icons/skills/melee/hand-grip-sword-orange.webp
+system:
+  activities:
+    r59knSuQlVAO9SVb:
+      type: utility
+      _id: r59knSuQlVAO9SVb
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '2'
+        concentration: false
+        override: false
+      effects:
+        - _id: Q4JTDJ3c7mUz9Ita
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you gain a +5 bonus to Strength checks until the end of your next turn.</p>
+    chat: ''
+  identifier: feat-of-strength
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: turn
+    value: '2'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: imm
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Feat of Strength
+    img: icons/skills/melee/hand-grip-sword-orange.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.2wvDi7me7iZZ0b74
+    transfer: false
+    _id: Q4JTDJ3c7mUz9Ita
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.abilities.check
+        mode: 2
+        value: '+5'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 2
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>You gain a +5 bonus to Strength checks until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!2wvDi7me7iZZ0b74.Q4JTDJ3c7mUz9Ita'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!2wvDi7me7iZZ0b74'

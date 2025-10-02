@@ -1,0 +1,169 @@
+folder: m2PtsowjwBvhRcVY
+name: Mantle of Fury
+type: feat
+_id: ujQHyYFe0yK75MeB
+img: icons/magic/fire/projectile-bolts-salvo-yellow.webp
+system:
+  activities:
+    YQgW5BKCTjUgq6D4:
+      type: utility
+      _id: YQgW5BKCTjUgq6D4
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: zetYQ77QOemBdktF
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield your rage as a weapon, instilling fury in your allies and
+      overwhelming your enemies.</p><p><strong>Psychic Focus.</strong> While focused on this
+      discipline in combat, you and any ally who starts their turn within 10 feet of you gains a 5-foot increase to their walking speed during that turn.</p>
+    chat: ''
+  identifier: mantle-of-fury
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: avt
+effects:
+  - name: Mantle of Fury
+    img: icons/magic/fire/projectile-bolts-salvo-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.ujQHyYFe0yK75MeB
+    transfer: true
+    _id: zetYQ77QOemBdktF
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>While focused on this discipline in combat, you and any ally who starts their turn within 10 feet of you gains a 5-foot increase to their walking speed during that turn.</p>
+      <!-- TODO: Review implementation - Speed bonus applies at start of turn within 10 feet, may require Active Auras configuration -->
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: true
+        aura: Allies
+        nameOverride: ''
+        radius: '10'
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!ujQHyYFe0yK75MeB.zetYQ77QOemBdktF'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.p5BKbHkhKKUvps6T
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.pNVCGOD20SgcLRz1
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.7ZZCOckeT886RKRa
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.RdgasJiRXAhkjnWp
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!ujQHyYFe0yK75MeB'

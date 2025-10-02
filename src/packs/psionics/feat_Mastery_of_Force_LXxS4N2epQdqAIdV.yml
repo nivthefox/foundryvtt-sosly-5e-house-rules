@@ -1,0 +1,154 @@
+folder: m2PtsowjwBvhRcVY
+name: Mastery of Force
+type: feat
+_id: LXxS4N2epQdqAIdV
+img: icons/magic/air/wind-tornado-wall-blue.webp
+system:
+  activities:
+    ouWHXd6manMaVcHJ:
+      type: utility
+      _id: ouWHXd6manMaVcHJ
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: t1GCKEnnHy5G99FR
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield telekinetic energy to manipulate and move objects and creatures with your mind.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Strength checks.</p>
+
+      <p><em><!-- TODO: Review implementation of Psychic Focus - FoundryVTT does not have a built-in way to grant advantage on all Strength checks (including ability checks, saving throws, and skill checks). The effect is configured as a visual reminder, but players/DMs must manually apply advantage when making Strength-based rolls. Consider using a module like DAE or Midi-QOL for automated advantage application. --></em></p>
+    chat: ''
+  identifier: mastery-of-force
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Mastery of Force (Psychic Focus)
+    img: icons/magic/air/wind-tornado-wall-blue.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.LXxS4N2epQdqAIdV
+    transfer: true
+    _id: t1GCKEnnHy5G99FR
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>While focused on this discipline, you have advantage on Strength checks.</p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!LXxS4N2epQdqAIdV.t1GCKEnnHy5G99FR'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ehXw9PmGjbD5yx5S
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.eaKd4Ka031nPU8f8
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.pvAZ6LcAvGh32LiY
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.nR2mu7yHyUi9Um4F
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.IoHjvWlzb1ib80F5
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!LXxS4N2epQdqAIdV'

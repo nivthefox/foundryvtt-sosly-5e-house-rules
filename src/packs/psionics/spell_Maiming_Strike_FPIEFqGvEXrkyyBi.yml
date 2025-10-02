@@ -1,0 +1,799 @@
+folder: zLDylBwEWWuq3B0v
+name: Maiming Strike
+type: spell
+_id: FPIEFqGvEXrkyyBi
+img: icons/skills/melee/strike-sword-slashing-red.webp
+system:
+  activities:
+    CNtbBTRKifyYu8aB:
+      type: utility
+      _id: CNtbBTRKifyYu8aB
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: m7B2LLWzLAI6cyVp
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+    T0zZqoBJX4WPND9x:
+      type: utility
+      _id: T0zZqoBJX4WPND9x
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: ds62buTSEoYTL0xJ
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    4hIDagzawHj97xAh:
+      type: utility
+      _id: 4hIDagzawHj97xAh
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: SYJsPZg9yy6iNk8R
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+    F97epj5o1uwjuCw0:
+      type: utility
+      _id: F97epj5o1uwjuCw0
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: x4L65dCihl6nwLYn
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    9t22OVhafuJiWXz1:
+      type: utility
+      _id: 9t22OVhafuJiWXz1
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: ZFWINTiyo7f3RTBK
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 5 Psi Points
+      img: ''
+      appliedEffects: []
+    MobnZgzlBIqmxrZp:
+      type: utility
+      _id: MobnZgzlBIqmxrZp
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: uUHZfXAvIIoMwxHo
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+    OtJ0099XI1FXHdZd:
+      type: utility
+      _id: OtJ0099XI1FXHdZd
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: yKAyC3XQgc6ZMRC5
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you attempt to maim your target. The next time you hit with a melee weapon attack before the end of your next turn, it deals an extra 1d6 damage per psi point you spend of the same type dealt by the weapon, and the target's speed is reduced by 10 feet until end of your next turn.</p>
+
+
+      <p><em><!-- TODO: Review implementation of damage type matching - "deals an extra 1d6 damage per psi point you spend of the same type dealt by the weapon" - may require manual damage type selection --></em></p>
+    chat: ''
+  identifier: maiming-strike
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: turn
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Maiming Strike (+1d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: m7B2LLWzLAI6cyVp
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +1d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.m7B2LLWzLAI6cyVp'
+  - name: Maiming Strike (+2d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: ds62buTSEoYTL0xJ
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +2d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.ds62buTSEoYTL0xJ'
+  - name: Maiming Strike (+3d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: SYJsPZg9yy6iNk8R
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +3d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.SYJsPZg9yy6iNk8R'
+  - name: Maiming Strike (+4d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: x4L65dCihl6nwLYn
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +4d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.x4L65dCihl6nwLYn'
+  - name: Maiming Strike (+5d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: ZFWINTiyo7f3RTBK
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +5d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.ZFWINTiyo7f3RTBK'
+  - name: Maiming Strike (+6d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: uUHZfXAvIIoMwxHo
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +6d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.uUHZfXAvIIoMwxHo'
+  - name: Maiming Strike (+7d6, -10 ft speed)
+    img: icons/skills/melee/strike-sword-slashing-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.FPIEFqGvEXrkyyBi
+    transfer: false
+    _id: yKAyC3XQgc6ZMRC5
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 2
+        value: '-10'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Your next melee weapon attack deals +7d6 damage of the same type as the weapon, and the target's speed is reduced by 10 feet until the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1727740800000
+      modifiedTime: 1727740800000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!FPIEFqGvEXrkyyBi.yKAyC3XQgc6ZMRC5'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!FPIEFqGvEXrkyyBi'

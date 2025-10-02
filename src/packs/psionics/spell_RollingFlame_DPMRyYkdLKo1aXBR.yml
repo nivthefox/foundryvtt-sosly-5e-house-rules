@@ -1,0 +1,120 @@
+folder: zLDylBwEWWuq3B0v
+name: Rolling Flame
+type: spell
+_id: DPMRyYkdLKo1aXBR
+img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
+system:
+  activities:
+    SvJCjxcgtZVGcc3K:
+      type: utility
+      _id: SvJCjxcgtZVGcc3K
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      uses:
+        spent: 0
+        recovery: []
+      name: 3 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You create fire in a 20-foot-by-20-foot cube within 5 feet of you. The fire lasts until your concentration ends. Any creature in that area when you use this ability and any creature that ends its turn there takes 5 fire damage.</p>
+
+      <p><!-- TODO: Review implementation of area fire damage. This requires automated damage at end of turn, which may need active effects or manual tracking. --></p>
+    chat: ''
+  identifier: rolling-flame
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '5'
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: cube
+      size: '20'
+    affects:
+      choice: false
+      type: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!DPMRyYkdLKo1aXBR'

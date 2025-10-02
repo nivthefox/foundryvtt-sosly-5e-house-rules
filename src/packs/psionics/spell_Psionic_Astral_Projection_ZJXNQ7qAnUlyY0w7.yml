@@ -1,0 +1,131 @@
+folder: zLDylBwEWWuq3B0v
+name: Psionic Astral Projection
+type: spell
+_id: ZJXNQ7qAnUlyY0w7
+img: icons/magic/perception/orb-crystal-ball-scrying-blue.webp
+system:
+  activities:
+    t5jl853F3rtpM2cZ:
+      type: utility
+      _id: t5jl853F3rtpM2cZ
+      sort: 0
+      activation:
+        type: hour
+        value: 1
+        override: false
+        condition: 'uninterrupted meditation'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: spec
+        value: ''
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>After 1 hour of uninterrupted meditation, you project your astral body into the Astral Plane (the effect fails and the psi points are wasted if either of you can't fit in the destination space). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.</p>
+
+      <p>Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut—something that can happen only when an effect specifically states that it does—your soul and body are separated, killing you instantly.</p>
+
+      <p>Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.</p>
+
+      <p>The effect ends when you use your action to dismiss it. When the effect ends, your affected self returns to your physical body, and you awaken.</p>
+
+      <p>The effect might also end early. A successful <em>dispel magic</em> spell used against an astral or physical body ends the spell on that creature. If your original body or your astral form drops to 0 hit points, the effect ends. If the effect ends and the silver cord is intact, the cord pulls your astral form back to your body, ending your state of suspended animation.</p>
+
+      <p>If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points.</p>
+    chat: ''
+  identifier: psionic-astral-projection
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: hour
+    value: 1
+    condition: 'uninterrupted meditation'
+  duration:
+    units: spec
+    value: ''
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: nom
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+      count: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!ZJXNQ7qAnUlyY0w7'

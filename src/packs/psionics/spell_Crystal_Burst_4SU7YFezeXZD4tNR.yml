@@ -1,0 +1,135 @@
+folder: qirdYeQL7WmxiOku
+name: Crystal Burst
+type: spell
+_id: 4SU7YFezeXZD4tNR
+img: icons/magic/water/projectile-ice-crystal-shard.webp
+system:
+  activities:
+    4hfVTSAjk5qLFTIZ:
+      type: save
+      _id: 4hfVTSAjk5qLFTIZ
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: radius
+          size: '5'
+        affects:
+          choice: false
+          type: creature
+        override: false
+        prompt: true
+      damage:
+        onSave: none
+        parts:
+          - number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - slashing
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+      save:
+        ability: dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: Crystal Burst
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you launch razor-sharp shards of crystal at creatures around you. Each creature within 5 feet, other than you, must succeed on a Dexterity saving throw or take 1d6 slashing damage.</p>
+      <p>This damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+    chat: ''
+  identifier: crystal-burst
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+    value: ''
+  level: 0
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: wuj
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: radius
+      size: '5'
+    affects:
+      choice: false
+      type: creature
+      count: ''
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755600000000
+  modifiedTime: 1755600000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!4SU7YFezeXZD4tNR'

@@ -1,0 +1,122 @@
+folder: zLDylBwEWWuq3B0v
+name: Manifested Will
+type: spell
+_id: 5jN2DmNkcDxKnZyT
+img: icons/magic/control/energy-stream-link-spiral.webp
+system:
+  activities:
+    YJv5jxoKmHohiqsW:
+      type: utility
+      _id: YJv5jxoKmHohiqsW
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: 'When you would deal psychic damage as part of a melee weapon attack'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 1 Psi Point
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>When you would deal psychic damage as part of a melee weapon attack, or as part of a discipline effect that includes a melee weapon attack, you can deal force damage in place of the attack's normal damage type.</p>
+
+
+      <p><em><!-- TODO: Review implementation of damage type conversion from psychic to force - may require manual damage type selection --></em></p>
+    chat: ''
+  identifier: manifested-will
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: special
+    value: null
+    condition: 'When you would deal psychic damage as part of a melee weapon attack'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1727740800000
+  modifiedTime: 1727740800000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!5jN2DmNkcDxKnZyT'

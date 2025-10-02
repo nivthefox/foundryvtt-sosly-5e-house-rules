@@ -1,0 +1,151 @@
+folder: m2PtsowjwBvhRcVY
+name: Precognition
+type: feat
+_id: Jsj72o7oTWjwxaWM
+img: icons/magic/perception/third-eye-blue-red.webp
+system:
+  activities:
+    2iCRqTTrmbpJnsqe:
+      type: utility
+      _id: 2iCRqTTrmbpJnsqe
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: AySdkLZD2Rv6mkyX
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to perceive the flow of time and anticipate the actions of others.</p>
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on initiative rolls.</p>
+      <p><!-- TODO: Review implementation - The advantage on initiative rolls from psychic focus may require manual application or active effect configuration. --></p>
+    chat: ''
+  identifier: precognition
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: awa
+effects:
+  - name: Precognition
+    img: icons/magic/perception/third-eye-blue-red.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.Jsj72o7oTWjwxaWM
+    transfer: true
+    _id: AySdkLZD2Rv6mkyX
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!Jsj72o7oTWjwxaWM.AySdkLZD2Rv6mkyX'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.kZwFtxcwjHxbL0ig
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ztJNfNS7JI7A2HQe
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.Bwvxwc2jQlqmMfpy
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.R7FHhMUJ1T3JftWN
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!Jsj72o7oTWjwxaWM'

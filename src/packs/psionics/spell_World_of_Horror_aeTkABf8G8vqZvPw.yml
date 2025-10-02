@@ -1,0 +1,185 @@
+folder: zLDylBwEWWuq3B0v
+name: World of Horror
+type: spell
+_id: aeTkABf8G8vqZvPw
+img: icons/magic/unholy/orb-beam-pink.webp
+system:
+  activities:
+    Jan7u4ZSy3mAU49T:
+      type: save
+      _id: Jan7u4ZSy3mAU49T
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: dft0paii9LXLs7Hf
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - psychic
+            number: 8
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+              formula: ''
+            custom:
+              enabled: false
+      name: Cast
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, choose up to six creatures within 60 feet of you. Each target must make a Charisma saving throw. On a failed save, a target takes 8d6 psychic damage, and it is frightened until your concentration ends. On a successful save, a target takes half as much damage.</p>
+      <p>While frightened by this effect, a target's speed is reduced to 0, and the target can use its action, and any bonus action it might have, to make melee attacks. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+      <!-- TODO: Review implementation of special frightened effect - While the frightened condition is applied, the specific restrictions (speed reduced to 0, can only make melee attacks) require manual enforcement or custom automation beyond the standard frightened condition. -->
+    chat: ''
+  identifier: world-of-horror
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: 1
+    concentration: true
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    special: ''
+    value: 60
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '6'
+      special: ''
+effects:
+  - name: Frightened
+    img: icons/magic/unholy/orb-beam-pink.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.aeTkABf8G8vqZvPw
+    transfer: false
+    _id: dft0paii9LXLs7Hf
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - frightened
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - turnEndSource
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755586570663
+      modifiedTime: 1755586570663
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!aeTkABf8G8vqZvPw.dft0paii9LXLs7Hf'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755586570663
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!aeTkABf8G8vqZvPw'

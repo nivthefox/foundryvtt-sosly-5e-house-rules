@@ -1,0 +1,120 @@
+folder: zLDylBwEWWuq3B0v
+name: Honed Reflexes
+type: spell
+_id: 6WWfqCZg1tvR7HcS
+img: icons/skills/movement/figure-running-gray.webp
+system:
+  activities:
+    dYD5J8IJDJhLTpil:
+      type: utility
+      _id: dYD5J8IJDJhLTpil
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when an attack roll is made against you by an attacker you can see'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '7'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 7 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If you do so, you use the new roll.</p>
+      <p><!-- TODO: Review implementation - disadvantage must be manually applied by DM or player --></p>
+    chat: ''
+  identifier: honed-reflexes
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when an attack roll is made against you by an attacker you can see'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!6WWfqCZg1tvR7HcS'

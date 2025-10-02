@@ -1,0 +1,364 @@
+folder: zLDylBwEWWuq3B0v
+name: Wandering Mind
+type: spell
+_id: rVvRBZZXy8OY5moo
+img: icons/magic/perception/eye-ringed-glow-yellow.webp
+system:
+  activities:
+    rZ3UPVRgfqcyqWx5:
+      type: utility
+      _id: rZ3UPVRgfqcyqWx5
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: q1U5CV5qjwSCF0PP
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 2 Psi Points
+      img: ''
+      appliedEffects: []
+    uhThoKCGTt8chSEX:
+      type: utility
+      _id: uhThoKCGTt8chSEX
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '4'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: 9FET9qRtHfJ7Vrlm
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 4 Psi Points
+      img: ''
+      appliedEffects: []
+    P0X9WJ8PDluKWYAA:
+      type: utility
+      _id: P0X9WJ8PDluKWYAA
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '6'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '10'
+        concentration: true
+        override: false
+      effects:
+        - _id: jtBKhtTv6mKeEBnU
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 6 Psi Points
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You enter a deep contemplation. If you concentrate for this option's full duration, you then gain proficiency with up to three of the following skills (one skill for every 2 psi points spent): Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, and Survival. The benefit lasts for 1 hour, no concentration required.</p>
+      <p><!-- TODO: Review implementation - proficiency effects need to be manually applied after concentration ends and last 1 hour --></p>
+    chat: ''
+  identifier: wandering-mind
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '10'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: nom
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - _id: q1U5CV5qjwSCF0PP
+    name: Wandering Mind (1 Skill)
+    img: icons/magic/perception/eye-ringed-glow-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.rVvRBZZXy8OY5moo
+    transfer: false
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      seconds: 600
+      startTime: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: 'Gain proficiency in 1 skill after concentrating for the full 10 minutes: Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, or Survival. Lasts 1 hour after concentration ends.'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!rVvRBZZXy8OY5moo.q1U5CV5qjwSCF0PP'
+  - _id: 9FET9qRtHfJ7Vrlm
+    name: Wandering Mind (2 Skills)
+    img: icons/magic/perception/eye-ringed-glow-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.rVvRBZZXy8OY5moo
+    transfer: false
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      seconds: 600
+      startTime: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: 'Gain proficiency in 2 skills after concentrating for the full 10 minutes: Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, or Survival. Lasts 1 hour after concentration ends.'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!rVvRBZZXy8OY5moo.9FET9qRtHfJ7Vrlm'
+  - _id: jtBKhtTv6mKeEBnU
+    name: Wandering Mind (3 Skills)
+    img: icons/magic/perception/eye-ringed-glow-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.rVvRBZZXy8OY5moo
+    transfer: false
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      seconds: 600
+      startTime: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: 'Gain proficiency in 3 skills after concentrating for the full 10 minutes: Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, or Survival. Lasts 1 hour after concentration ends.'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!rVvRBZZXy8OY5moo.jtBKhtTv6mKeEBnU'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!rVvRBZZXy8OY5moo'

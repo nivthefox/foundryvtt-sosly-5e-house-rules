@@ -1,0 +1,156 @@
+folder: m2PtsowjwBvhRcVY
+name: Nomadic Step
+type: feat
+_id: D3WamrrhmM1t9xIz
+img: icons/magic/movement/trail-streak-zigzag-blue-yellow.webp
+system:
+  activities:
+    a4inHJKfYB9NBfuI:
+      type: utility
+      _id: a4inHJKfYB9NBfuI
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: 'after you teleport on your turn'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: turn
+        value: '1'
+        concentration: false
+        override: false
+      effects:
+        - _id: Zwz6i7rNzRP0fLhl
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to teleport across the battlefield and manipulate space.</p>
+      <p><strong>Psychic Focus.</strong> After you teleport on your turn while focused on this discipline, your walking speed increases by 10 feet until the end of the turn, as you are propelled by the magic of your teleportation.</p>
+    chat: ''
+  identifier: nomadic-step
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: nom
+effects:
+  - name: Nomadic Step
+    img: icons/magic/movement/trail-streak-zigzag-blue-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.D3WamrrhmM1t9xIz
+    transfer: true
+    _id: Zwz6i7rNzRP0fLhl
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration:
+          - turnEnd
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!D3WamrrhmM1t9xIz.Zwz6i7rNzRP0fLhl'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.pwGVQju4JygiQP5b
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.X0MG5uiNaC12xXh9
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.oMYkSTA6djsbw6PB
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.rZqcLZIJyVtWkIDC
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.wNNUccsMK7QE00ll
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.UXtdnoRZxiu0Q3Xt
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.nfgjTsK3KuYj6eGF
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.eYC8RqmfbNfyQKgd
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!D3WamrrhmM1t9xIz'

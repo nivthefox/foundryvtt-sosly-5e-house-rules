@@ -1,0 +1,153 @@
+folder: m2PtsowjwBvhRcVY
+name: Destructive Force
+type: feat
+_id: wknWarJRxbHpm78b
+img: icons/magic/light/explosion-star-large-orange.webp
+system:
+  activities:
+    iKNEG5BwkNMSyBnd:
+      type: utility
+      _id: iKNEG5BwkNMSyBnd
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: x83c8QpPHBFaMz1k
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Psychic Focus
+      img: systems/dnd5e/icons/svg/damage/force.svg
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You wield psionic energy to unleash devastating waves of destruction.</p>
+
+      <p><strong>Psychic Focus.</strong> While focused on this discipline, when you roll damage for a discipline effect or talent, you can treat any 1 on a damage die as a 2.</p>
+    chat: ''
+  identifier: destructive-force
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: discipline
+    subtype: wuj
+effects:
+  - name: Destructive Force
+    img: icons/magic/light/explosion-star-large-orange.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.wknWarJRxbHpm78b
+    transfer: true
+    _id: x83c8QpPHBFaMz1k
+    type: base
+    system: {}
+    changes: []
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>While focused on this discipline, when you roll damage for a discipline effect or talent, you can treat any 1 on a damage die as a 2.</p>
+
+      <p><em><!-- TODO: This effect must be applied manually when rolling damage. The system does not automatically convert 1s to 2s. --></em></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1755580598479
+      modifiedTime: 1755589324413
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!wknWarJRxbHpm78b.x83c8QpPHBFaMz1k'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  items-with-spells-5e:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.x2AI8kJxoryAq7RH
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.MHvAO0eHOUjZnHDu
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.7fkAXSKCLOPNigeN
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1755580409444
+  modifiedTime: 1755586570663
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!wknWarJRxbHpm78b'

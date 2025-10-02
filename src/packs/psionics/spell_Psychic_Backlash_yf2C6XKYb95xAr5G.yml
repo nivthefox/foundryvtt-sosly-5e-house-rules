@@ -1,0 +1,133 @@
+folder: zLDylBwEWWuq3B0v
+name: Psychic Backlash
+type: spell
+_id: yf2C6XKYb95xAr5G
+img: icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp
+system:
+  activities:
+    Lkzkr9Wuz6G08XdX:
+      type: damage
+      _id: Lkzkr9Wuz6G08XdX
+      sort: 0
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: 'when an attacker you can see makes an attack roll against you'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - types:
+              - psychic
+            custom:
+              enabled: false
+            scaling:
+              mode: ''
+              formula: ''
+              number: null
+            number: 2
+            denomination: 10
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes 2d10 psychic damage.</p>
+      <p><!-- TODO: Review implementation - disadvantage on attack roll must be applied manually --></p>
+    chat: ''
+  identifier: psychic-backlash
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: reaction
+    value: null
+    condition: 'when an attacker you can see makes an attack roll against you'
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: awa
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: '1'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!yf2C6XKYb95xAr5G'
