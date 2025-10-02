@@ -1,0 +1,173 @@
+folder: zLDylBwEWWuq3B0v
+name: Comforting Aura
+type: spell
+_id: SBRYDkcK9xxZYmY3
+img: icons/magic/light/orb-lightbulb-blue-teal.webp
+system:
+  activities:
+    M2p3pAPHXNBdWe74:
+      type: utility
+      _id: M2p3pAPHXNBdWe74
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects:
+        - _id: QE2CD3J3RkckCOjO
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ally
+          count: '3'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, choose up to three allies you can see (you can choose yourself in place of one of the allies). Until your concentration ends, each target can roll a d4 when making a saving throw and add the number rolled to the total.</p>
+    chat: ''
+  identifier: comforting-aura
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ally
+      count: '3'
+      special: ''
+effects:
+  - name: Comforting Aura
+    img: icons/magic/light/orb-lightbulb-blue-teal.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.SBRYDkcK9xxZYmY3
+    transfer: false
+    _id: QE2CD3J3RkckCOjO
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 60
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: '<p>You can roll a d4 when making a saving throw and add the number rolled to the total.</p><p><!-- TODO: Review implementation - The d4 bonus to saving throws may require manual application. --></p>'
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1759449600000
+      modifiedTime: 1759449600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!SBRYDkcK9xxZYmY3.QE2CD3J3RkckCOjO'
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!SBRYDkcK9xxZYmY3'

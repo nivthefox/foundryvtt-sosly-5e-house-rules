@@ -135,6 +135,7 @@ flags:
   items-with-spells-5e:
     item-spells:
       - uuid: Compendium.sosly-5e-house-rules.psionics.Item.aGClqOpKATAKxqHx
+      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.mlI5P35i6loiXa4c
       - uuid: Compendium.sosly-5e-house-rules.psionics.Item.6WWfqCZg1tvR7HcS
 _stats:
   compendiumSource: null

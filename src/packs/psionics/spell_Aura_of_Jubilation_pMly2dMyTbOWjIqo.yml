@@ -1,13 +1,13 @@
-folder: m2PtsowjwBvhRcVY
-name: Mantle of Joy
-type: feat
-_id: gR7cebnPE6OTRp1b
-img: icons/magic/light/explosion-star-large-blue-yellow.webp
+folder: zLDylBwEWWuq3B0v
+name: Aura of Jubilation
+type: spell
+_id: pMly2dMyTbOWjIqo
+img: icons/magic/light/explosion-star-large-orange-yellow.webp
 system:
   activities:
-    Z7chi8yf2TGT8WMQ:
+    reGobRp1friztSHZ:
       type: utility
-      _id: Z7chi8yf2TGT8WMQ
+      _id: reGobRp1friztSHZ
       sort: 0
       activation:
         type: bonus
@@ -17,16 +17,22 @@ system:
       consumption:
         scaling:
           allowed: false
-        spellSlot: true
-        targets: []
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '3'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
       description:
         chatFlavor: ''
       duration:
-        units: inst
-        concentration: false
+        units: minute
+        value: '1'
+        concentration: true
         override: false
       effects:
-        - _id: vqxss4ZUlIsLI6CM
+        - _id: QXr1ATAmnuftuyHN
       range:
         units: self
         override: false
@@ -50,8 +56,8 @@ system:
         visible: false
         name: ''
         formula: ''
-      name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      name: ''
+      img: ''
       appliedEffects: []
   uses:
     spent: 0
@@ -59,43 +65,61 @@ system:
     max: ''
   description:
     value: >-
-      <p>You wield psionic energy to create an aura of joy and positivity around yourself and others.</p><p><strong>Psychic Focus.</strong> While focused on this discipline, you have advantage on Charisma (Persuasion) checks.</p>
+      <p>As a bonus action, you radiate a distracting mirth until your concentration ends. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the Perception and Investigation skills.</p>
     chat: ''
-  identifier: mantle-of-joy
+  identifier: aura-of-jubilation
   source:
     revision: 1
     rules: '2024'
-  advancement: []
-  cover: null
-  crewed: false
-  enchant: {}
-  prerequisites:
-    level: null
-    repeatable: false
-  properties: []
-  requirements: ''
-  type:
-    value: discipline
-    subtype: avt
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
 effects:
-  - name: Mantle of Joy
-    img: icons/magic/light/explosion-star-large-blue-yellow.webp
-    origin: Compendium.sosly-5e-house-rules.psionics.Item.gR7cebnPE6OTRp1b
-    transfer: true
-    _id: vqxss4ZUlIsLI6CM
+  - name: Aura of Jubilation
+    img: icons/magic/light/explosion-star-large-orange-yellow.webp
+    origin: Compendium.sosly-5e-house-rules.psionics.Item.pMly2dMyTbOWjIqo
+    transfer: false
+    _id: QXr1ATAmnuftuyHN
     type: base
     system: {}
     changes: []
-    disabled: true
+    disabled: false
     duration:
       startTime: null
-      seconds: null
+      seconds: 60
       combat: null
       rounds: null
       turns: null
       startRound: null
       startTurn: null
-    description: 'While focused on this discipline, you have advantage on Charisma (Persuasion) checks.'
+    description: '<p>You radiate a distracting mirth. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the Perception and Investigation skills.</p><p><!-- TODO: Review implementation - The disadvantage on Perception and Investigation checks requires manual application as it affects creatures within 60 feet that can see the caster. --></p>'
     tint: '#ffffff'
     statuses: []
     sort: 0
@@ -121,7 +145,7 @@ effects:
       createdTime: 1759449600000
       modifiedTime: 1759449600000
       lastModifiedBy: NbCXvDXaYhqPCRFb
-    _key: '!items.effects!gR7cebnPE6OTRp1b.vqxss4ZUlIsLI6CM'
+    _key: '!items.effects!pMly2dMyTbOWjIqo.QXr1ATAmnuftuyHN'
 sort: 0
 ownership:
   default: 0
@@ -131,12 +155,6 @@ flags:
     riders:
       activity: []
       effect: []
-  items-with-spells-5e:
-    item-spells:
-      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.K3zRd2oVnQHnj4YN
-      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.SBRYDkcK9xxZYmY3
-      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.pMly2dMyTbOWjIqo
-      - uuid: Compendium.sosly-5e-house-rules.psionics.Item.NUO80vs52n0XwdDr
 _stats:
   compendiumSource: null
   duplicateSource: null
@@ -146,4 +164,4 @@ _stats:
   createdTime: 1759449600000
   modifiedTime: 1759449600000
   lastModifiedBy: NbCXvDXaYhqPCRFb
-_key: '!items!gR7cebnPE6OTRp1b'
+_key: '!items!pMly2dMyTbOWjIqo'

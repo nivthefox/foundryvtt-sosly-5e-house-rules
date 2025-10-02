@@ -1,0 +1,129 @@
+folder: zLDylBwEWWuq3B0v
+name: Beacon of Recovery
+type: spell
+_id: NUO80vs52n0XwdDr
+img: icons/magic/life/heart-cross-strong-flame-green-blue.webp
+system:
+  activities:
+    6clx4urakpBvyeeD:
+      type: utility
+      _id: 6clx4urakpBvyeeD
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        value: '1'
+        concentration: true
+        override: false
+      effects: []
+      range:
+        units: ft
+        value: '60'
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ally
+          count: '6'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: ''
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As a bonus action, you and up to five allies you can see within 60 feet of you can immediately make saving throws against every effect they're suffering that allows a save at the start or end of their turns.</p>
+      <p><!-- TODO: Review implementation - This power grants immediate saving throws against ongoing effects, which requires manual resolution. --></p>
+    chat: ''
+  identifier: beacon-of-recovery
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    value: null
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties:
+    - concentration
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  school: ava
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ally
+      count: '6'
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!NUO80vs52n0XwdDr'

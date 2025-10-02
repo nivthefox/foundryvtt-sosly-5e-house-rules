@@ -1,0 +1,209 @@
+folder: zLDylBwEWWuq3B0v
+name: Death from Above
+type: spell
+_id: mlI5P35i6loiXa4c
+img: icons/skills/melee/strike-blade-red-orange.webp
+system:
+  activities:
+    Zpd2XdS7VbxG4tYi:
+      type: save
+      _id: Zpd2XdS7VbxG4tYi
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '5'
+            target: Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: 'within 5 feet'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - bludgeoning
+              - piercing
+              - slashing
+            number: 3
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: null
+            custom:
+              enabled: false
+      name: Whirling Strike
+      img: ''
+      appliedEffects: []
+    kDcrfIqIcfuJ37NU:
+      type: attack
+      _id: kDcrfIqIcfuJ37NU
+      sort: 1
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: 'after whirling strike'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        value: '60'
+        units: ft
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+        override: false
+        prompt: true
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: false
+        parts:
+          - number: 3
+            denomination: 8
+            bonus: ''
+            types:
+              - bludgeoning
+              - piercing
+              - slashing
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: ''
+              number: null
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: Leap Attack
+      img: ''
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>As an action, you whirl around, striking each creature within 5 feet of you with one of your weapons. Creatures within the area must succeed on a Dexterity saving throw or take 3d6 damage. On a successful save, a creature takes half as much damage.</p>
+      <p>Then, choose a creature that you can see within 60 feet. You leap to an unoccupied space adjacent to the target. Make a melee weapon attack against the target. On a hit, the target takes 3d8 damage in place of the attack's normal effect. The damage type is the same as that of the weapon.</p>
+      <p><!-- TODO: Review implementation - The leap to an unoccupied space adjacent to the target requires manual resolution. The damage types for both activities are set to bludgeoning/piercing/slashing based on weapon damage. --></p>
+    chat: ''
+  identifier: death-from-above
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    value: null
+    condition: ''
+  duration:
+    units: inst
+  level: 99
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: psionic
+    prepared: false
+  properties: []
+  range:
+    units: self
+    special: ''
+  school: sok
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      special: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759449600000
+  modifiedTime: 1759449600000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!mlI5P35i6loiXa4c'
