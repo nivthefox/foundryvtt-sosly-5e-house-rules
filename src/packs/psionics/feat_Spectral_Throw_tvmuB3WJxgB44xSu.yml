@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: NlsAF20mu8i1KETe
 name: Spectral Throw
 type: feat
 _id: tvmuB3WJxgB44xSu
@@ -128,7 +128,7 @@ effects:
       modifiedTime: 1727740800000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!tvmuB3WJxgB44xSu.rIXGocah4vlid27O'
-sort: 0
+sort: 103125
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -149,7 +149,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1727740800000
-  modifiedTime: 1727740800000
+  modifiedTime: 1759433173821
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!tvmuB3WJxgB44xSu'
 

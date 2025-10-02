@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Shape Matter
 type: feat
 _id: KwvphfRGq1N9xkuN
@@ -131,7 +131,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!KwvphfRGq1N9xkuN.a4C5n7qgidAdv12x'
-sort: 0
+sort: 100098
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -152,7 +152,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433170822
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!KwvphfRGq1N9xkuN'
 

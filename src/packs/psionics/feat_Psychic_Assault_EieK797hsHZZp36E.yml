@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: SBXiddVqgCMWh8bc
 name: Psychic Assault
 type: feat
 _id: EieK797hsHZZp36E
@@ -128,7 +128,7 @@ effects:
       modifiedTime: 1755589324413
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!EieK797hsHZZp36E.l8ioFfPVkyfdLRND'
-sort: 0
+sort: 106250
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -150,7 +150,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755580409444
-  modifiedTime: 1755586570663
+  modifiedTime: 1759433162969
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!EieK797hsHZZp36E'
 

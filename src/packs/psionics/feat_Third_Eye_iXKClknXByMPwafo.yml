@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 65M4qPtLLRUCGtX6
 name: Third Eye
 type: feat
 _id: iXKClknXByMPwafo
@@ -137,7 +137,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!iXKClknXByMPwafo.viwYzn4QrsK9Bjmb'
-sort: 0
+sort: 106250
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -159,7 +159,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433181479
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!iXKClknXByMPwafo'
 

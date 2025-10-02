@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: nbooSj6pNtwlM7g4
 name: Mantle of Joy
 type: feat
 _id: gR7cebnPE6OTRp1b
@@ -127,7 +127,7 @@ effects:
       modifiedTime: 1759449600000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!gR7cebnPE6OTRp1b.vqxss4ZUlIsLI6CM'
-sort: 0
+sort: 100391
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -149,7 +149,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1759449600000
-  modifiedTime: 1759449600000
+  modifiedTime: 1759433111843
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!gR7cebnPE6OTRp1b'
 

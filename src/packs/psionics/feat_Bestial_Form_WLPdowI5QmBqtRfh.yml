@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: ybY3VTUmgIDtJgEZ
 name: Bestial Form
 type: feat
 _id: WLPdowI5QmBqtRfh
@@ -132,7 +132,7 @@ effects:
       modifiedTime: 1727740800000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!WLPdowI5QmBqtRfh.rXTA03DmUfTpZCpX'
-sort: 0
+sort: 200000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -152,7 +152,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1727740800000
-  modifiedTime: 1727740800000
+  modifiedTime: 1759433021199
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!WLPdowI5QmBqtRfh'
 

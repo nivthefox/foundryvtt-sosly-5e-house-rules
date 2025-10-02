@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Mastery of Light and Darkness
 type: feat
 _id: QgKfYKWnd3DX5Rvp
@@ -129,7 +129,7 @@ effects:
       modifiedTime: 1738440000000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!QgKfYKWnd3DX5Rvp.hydO6N6JmOFFFc1R'
-sort: 0
+sort: 103125
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -151,7 +151,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1738440000000
-  modifiedTime: 1738440000000
+  modifiedTime: 1759433119054
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!QgKfYKWnd3DX5Rvp'
 

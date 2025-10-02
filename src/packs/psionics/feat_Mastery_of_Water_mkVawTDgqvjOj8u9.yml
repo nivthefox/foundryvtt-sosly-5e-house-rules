@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Mastery of Water
 type: feat
 _id: mkVawTDgqvjOj8u9
@@ -127,7 +127,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!mkVawTDgqvjOj8u9.stuH9b5IXlqxmR2L'
-sort: 0
+sort: 100782
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -151,7 +151,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433120352
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!mkVawTDgqvjOj8u9'
 

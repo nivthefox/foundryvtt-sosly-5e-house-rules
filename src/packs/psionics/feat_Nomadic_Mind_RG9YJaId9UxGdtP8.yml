@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 65M4qPtLLRUCGtX6
 name: Nomadic Mind
 type: feat
 _id: RG9YJaId9UxGdtP8
@@ -130,7 +130,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!RG9YJaId9UxGdtP8.CH3qptni8cwA5HLB'
-sort: 0
+sort: 125000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -154,7 +154,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433135189
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!RG9YJaId9UxGdtP8'
 

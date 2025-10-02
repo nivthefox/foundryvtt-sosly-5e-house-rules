@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: NlsAF20mu8i1KETe
 name: Will of Blades
 type: feat
 _id: D2Un6P5DjYZMV5l7
@@ -136,7 +136,7 @@ effects:
       modifiedTime: 1755589324413
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!D2Un6P5DjYZMV5l7.8QNC5iRPs5jPdvNC'
-sort: 0
+sort: 101563
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -158,7 +158,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755580409444
-  modifiedTime: 1755586570663
+  modifiedTime: 1759433184657
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!D2Un6P5DjYZMV5l7'
 

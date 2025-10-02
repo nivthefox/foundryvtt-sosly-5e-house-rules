@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 65M4qPtLLRUCGtX6
 name: Nomadic Chameleon
 type: feat
 _id: 05tvVXexDpx4A7zW
@@ -127,7 +127,7 @@ effects:
       modifiedTime: 1759449600000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!05tvVXexDpx4A7zW.zT84S2pedXx6P3Uu'
-sort: 0
+sort: 150000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -148,7 +148,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1759449600000
-  modifiedTime: 1759449600000
+  modifiedTime: 1759433133906
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!05tvVXexDpx4A7zW'
 

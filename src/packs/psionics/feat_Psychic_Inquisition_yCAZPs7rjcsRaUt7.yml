@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: SBXiddVqgCMWh8bc
 name: Psychic Inquisition
 type: feat
 _id: yCAZPs7rjcsRaUt7
@@ -125,7 +125,7 @@ effects:
       modifiedTime: 1755590000000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!yCAZPs7rjcsRaUt7.K0MnBErLE6kNTB5p'
-sort: 0
+sort: 101563
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -147,7 +147,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755590000000
-  modifiedTime: 1755590000000
+  modifiedTime: 1759433166028
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!yCAZPs7rjcsRaUt7'
 

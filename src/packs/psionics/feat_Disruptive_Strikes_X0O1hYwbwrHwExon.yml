@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: NlsAF20mu8i1KETe
 name: Disruptive Strikes
 type: feat
 _id: X0O1hYwbwrHwExon
@@ -134,7 +134,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!X0O1hYwbwrHwExon.cIkgpBCq7WSG3HnT'
-sort: 0
+sort: 150000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -155,7 +155,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433058299
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!X0O1hYwbwrHwExon'
 

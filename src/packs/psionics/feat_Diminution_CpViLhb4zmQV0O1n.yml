@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: ybY3VTUmgIDtJgEZ
 name: Diminution
 type: feat
 _id: CpViLhb4zmQV0O1n
@@ -127,7 +127,7 @@ effects:
       modifiedTime: 1759449600000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!CpViLhb4zmQV0O1n.inXAci1wddoD2VCg'
-sort: 0
+sort: 106250
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -149,7 +149,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1759449600000
-  modifiedTime: 1759449600000
+  modifiedTime: 1759433051563
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!CpViLhb4zmQV0O1n'
 

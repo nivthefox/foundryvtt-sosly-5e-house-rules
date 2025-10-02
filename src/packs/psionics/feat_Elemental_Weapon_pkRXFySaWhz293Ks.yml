@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: NlsAF20mu8i1KETe
 name: Elemental Weapon
 type: feat
 _id: pkRXFySaWhz293Ks
@@ -131,7 +131,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!pkRXFySaWhz293Ks.KKlDO4Jgh3jTtmkL'
-sort: 0
+sort: 125000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -151,7 +151,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433059478
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!pkRXFySaWhz293Ks'
 

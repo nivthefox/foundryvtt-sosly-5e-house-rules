@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Mastery of the Void
 type: feat
 _id: KPZdKi7kqPVW3byI
@@ -179,7 +179,7 @@ effects:
       modifiedTime: 1727740800000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!KPZdKi7kqPVW3byI.0HXabCdmKHNsi6PG'
-sort: 0
+sort: 101563
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -201,7 +201,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1727740800000
-  modifiedTime: 1727740800000
+  modifiedTime: 1759433119735
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!KPZdKi7kqPVW3byI'
 

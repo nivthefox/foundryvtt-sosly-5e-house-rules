@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: ybY3VTUmgIDtJgEZ
 name: Giant Growth
 type: feat
 _id: xLYLFn73pzAdgvTi
@@ -128,7 +128,7 @@ effects:
       modifiedTime: 1755590000000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!xLYLFn73pzAdgvTi.yoAkfmthbjThGPHE'
-sort: 0
+sort: 103125
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -148,7 +148,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755590000000
-  modifiedTime: 1755590000000
+  modifiedTime: 1759433066485
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!xLYLFn73pzAdgvTi'
 

@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Mastery of Weather
 type: feat
 _id: 8oUq3w41Zzx2EazH
@@ -132,7 +132,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!8oUq3w41Zzx2EazH.PjssQ2Ux8sP65pDe'
-sort: 0
+sort: 100391
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -156,7 +156,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433121064
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!8oUq3w41Zzx2EazH'
 

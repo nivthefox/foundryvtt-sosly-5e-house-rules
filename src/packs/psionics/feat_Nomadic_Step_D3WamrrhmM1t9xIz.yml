@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 65M4qPtLLRUCGtX6
 name: Nomadic Step
 type: feat
 _id: D3WamrrhmM1t9xIz
@@ -128,7 +128,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!D3WamrrhmM1t9xIz.Zwz6i7rNzRP0fLhl'
-sort: 0
+sort: 112500
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -154,7 +154,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433136371
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!D3WamrrhmM1t9xIz'
 

@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: ybY3VTUmgIDtJgEZ
 name: Psionic Weapon
 type: feat
 _id: qwN08GWlM1edIiEr
@@ -124,7 +124,7 @@ effects:
       modifiedTime: 1755600000000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!qwN08GWlM1edIiEr.XfeV1fzBTqE46lRS'
-sort: 0
+sort: 100391
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -145,7 +145,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755600000000
-  modifiedTime: 1755600000000
+  modifiedTime: 1759433158539
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!qwN08GWlM1edIiEr'
 

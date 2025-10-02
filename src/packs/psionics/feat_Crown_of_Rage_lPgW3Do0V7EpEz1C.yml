@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: nbooSj6pNtwlM7g4
 name: Crown of Rage
 type: feat
 _id: lPgW3Do0V7EpEz1C
@@ -129,7 +129,7 @@ effects:
       modifiedTime: 1755590000000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!lPgW3Do0V7EpEz1C.847yOzH6dZKN1nGl'
-sort: 0
+sort: 150000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -151,7 +151,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755590000000
-  modifiedTime: 1755590000000
+  modifiedTime: 1759432953841
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!lPgW3Do0V7EpEz1C'
 

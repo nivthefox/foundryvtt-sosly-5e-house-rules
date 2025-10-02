@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: nbooSj6pNtwlM7g4
 name: Mantle of Fury
 type: feat
 _id: ujQHyYFe0yK75MeB
@@ -147,7 +147,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!ujQHyYFe0yK75MeB.zetYQ77QOemBdktF'
-sort: 0
+sort: 100782
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -169,7 +169,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433110462
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!ujQHyYFe0yK75MeB'
 

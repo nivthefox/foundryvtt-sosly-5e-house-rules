@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: nbooSj6pNtwlM7g4
 name: Mantle of Courage
 type: feat
 _id: 1KyvnJfVCPUndhV2
@@ -135,7 +135,7 @@ effects:
       modifiedTime: 1755590000000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!1KyvnJfVCPUndhV2.2fgnjaIOYzquS6cm'
-sort: 0
+sort: 103125
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -156,7 +156,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755590000000
-  modifiedTime: 1755590000000
+  modifiedTime: 1759433106448
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!1KyvnJfVCPUndhV2'
 

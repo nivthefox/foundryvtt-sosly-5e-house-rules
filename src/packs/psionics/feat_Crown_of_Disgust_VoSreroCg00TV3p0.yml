@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: nbooSj6pNtwlM7g4
 name: Crown of Disgust
 type: feat
 _id: VoSreroCg00TV3p0
@@ -129,7 +129,7 @@ effects:
       modifiedTime: 1755586570663
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!VoSreroCg00TV3p0.myUrv5JKe3Veok7t'
-sort: 0
+sort: 200000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -151,7 +151,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1755586570663
-  modifiedTime: 1755586570663
+  modifiedTime: 1759432951741
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!VoSreroCg00TV3p0'
 

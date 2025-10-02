@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Mastery of Wood and Earth
 type: feat
 _id: M6S7uVya0ur4Ur4c
@@ -128,7 +128,7 @@ effects:
       modifiedTime: 1727740800000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!M6S7uVya0ur4Ur4c.qidDJj2nqaWTTtvB'
-sort: 0
+sort: 100196
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -152,7 +152,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1727740800000
-  modifiedTime: 1727740800000
+  modifiedTime: 1759433121646
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!M6S7uVya0ur4Ur4c'
 

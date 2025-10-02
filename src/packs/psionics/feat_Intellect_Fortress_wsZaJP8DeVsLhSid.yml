@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: SBXiddVqgCMWh8bc
 name: Intellect Fortress
 type: feat
 _id: wsZaJP8DeVsLhSid
@@ -128,7 +128,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!wsZaJP8DeVsLhSid.tEjhYiVGc3qlonnO'
-sort: 0
+sort: 150000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -149,7 +149,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433077806
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!wsZaJP8DeVsLhSid'
 

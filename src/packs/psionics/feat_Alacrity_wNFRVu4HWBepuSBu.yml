@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: NlsAF20mu8i1KETe
 name: Alacrity
 type: feat
 _id: wNFRVu4HWBepuSBu
@@ -127,7 +127,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!wNFRVu4HWBepuSBu.6Nuz5N9R6rcGQYKG'
-sort: 0
+sort: 100000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -148,7 +148,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759432995222
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!wNFRVu4HWBepuSBu'
 

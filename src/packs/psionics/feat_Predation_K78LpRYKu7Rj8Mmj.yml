@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: NlsAF20mu8i1KETe
 name: Predation
 type: feat
 _id: K78LpRYKu7Rj8Mmj
@@ -127,7 +127,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!K78LpRYKu7Rj8Mmj.i9idNQzPOULydsJf'
-sort: 0
+sort: 106250
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -149,7 +149,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433145857
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!K78LpRYKu7Rj8Mmj'
 

@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Mastery of Air
 type: feat
 _id: sqN7vBpWQL3ERj3u
@@ -130,7 +130,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!items.effects!sqN7vBpWQL3ERj3u.q7FxnD4dI7Cjwj8j'
-sort: 0
+sort: 150000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -154,7 +154,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: null
-  modifiedTime: null
-  lastModifiedBy: null
+  modifiedTime: 1759433115951
+  lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!sqN7vBpWQL3ERj3u'
 

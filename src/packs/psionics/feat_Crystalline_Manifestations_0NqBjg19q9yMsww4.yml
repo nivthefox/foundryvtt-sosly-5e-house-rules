@@ -1,4 +1,4 @@
-folder: m2PtsowjwBvhRcVY
+folder: 9KqfGVGrhFqQDjVb
 name: Crystalline Manifestations
 type: feat
 _id: 0NqBjg19q9yMsww4
@@ -130,7 +130,7 @@ effects:
       modifiedTime: 1727740800000
       lastModifiedBy: NbCXvDXaYhqPCRFb
     _key: '!items.effects!0NqBjg19q9yMsww4.Yxwa6LORt2uA2pAU'
-sort: 0
+sort: 100000
 ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
@@ -152,7 +152,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 4.4.4
   createdTime: 1727740800000
-  modifiedTime: 1727740800000
+  modifiedTime: 1759433029670
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _key: '!items!0NqBjg19q9yMsww4'
 
