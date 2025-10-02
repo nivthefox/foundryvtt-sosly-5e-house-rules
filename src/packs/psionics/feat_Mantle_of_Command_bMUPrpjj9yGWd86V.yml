@@ -79,7 +79,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Mantle of Command
     img: icons/equipment/head/crown-jeweled-gold-red.webp

@@ -78,7 +78,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Force Bulwark
     img: icons/equipment/shield/heater-crystal-pink-purple.webp

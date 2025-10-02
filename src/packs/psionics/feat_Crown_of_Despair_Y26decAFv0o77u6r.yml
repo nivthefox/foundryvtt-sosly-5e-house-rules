@@ -77,7 +77,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Crown of Despair
     img: icons/magic/unholy/barrier-fire-pink.webp

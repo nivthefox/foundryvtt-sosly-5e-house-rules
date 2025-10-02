@@ -78,7 +78,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Mantle of Fury
     img: icons/magic/fire/projectile-bolts-salvo-yellow.webp

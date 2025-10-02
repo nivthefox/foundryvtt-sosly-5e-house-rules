@@ -76,7 +76,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Mantle of Joy
     img: icons/magic/light/explosion-star-large-blue-yellow.webp

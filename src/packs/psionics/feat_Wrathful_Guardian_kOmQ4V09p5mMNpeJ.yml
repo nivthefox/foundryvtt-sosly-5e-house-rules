@@ -80,7 +80,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Wrathful Guardian
     img: icons/magic/unholy/strike-body-explode-disintegrate.webp

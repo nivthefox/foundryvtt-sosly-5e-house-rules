@@ -76,7 +76,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Crown of Rage
     img: icons/magic/control/fear-fright-shadow-monster-glow-red.webp

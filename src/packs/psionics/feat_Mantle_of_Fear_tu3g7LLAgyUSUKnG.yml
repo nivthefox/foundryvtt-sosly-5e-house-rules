@@ -77,7 +77,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Mantle of Fear
     img: icons/magic/death/skull-horned-worn-fire-purple.webp

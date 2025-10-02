@@ -80,7 +80,7 @@ system:
   requirements: ''
   type:
     value: discipline
-    subtype: avt
+    subtype: ava
 effects:
   - name: Mantle of Courage
     img: icons/magic/defensive/shield-barrier-flaming-diamond-teal-yellow.webp
