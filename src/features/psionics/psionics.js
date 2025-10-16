@@ -2,6 +2,7 @@ import { addPsionicSubtitles } from './ui-spellbook';
 import { reorganizePsionicDisciplines } from './ui-features';
 import { registerPsychicFocusManagement } from './psychic-focus';
 import { registerArgonIntegration } from './ui-argon';
+import { injectPsionicistManifestingCard } from './ui-spellbook-card';
 
 function setupPsionicOptions() {
     CONFIG.DND5E.featureTypes.discipline = {
@@ -58,6 +59,8 @@ export function registerPsionics() {
     Hooks.on('renderActorSheet5eNPC2', addPsionicSubtitles);
     Hooks.on('renderActorSheet5eCharacter2', reorganizePsionicDisciplines);
     Hooks.on('renderActorSheet5eNPC2', reorganizePsionicDisciplines);
+    Hooks.on('renderActorSheet5eCharacter2', injectPsionicistManifestingCard);
+    Hooks.on('renderActorSheet5eNPC2', injectPsionicistManifestingCard);
     registerPsychicFocusManagement();
     registerArgonIntegration();
 }
