@@ -580,27 +580,15 @@ system:
       until the target leaves your reach, which is 60 feet for this grapple.</p>
 
       <p>The grappled target can escape by succeeding on a Strength (Athletics)
-      or Dexterity (Acrobatics) check contested by your psionic ability plus
-      your proficiency bonus. When a target attempts to escape in this way, you
-      can spend psi points to boost your check, abiding by your psi limit. You
-      gain a +1 bonus per psi point spent.</p>
+      or Dexterity (Acrobatics) check against your psionic DC. As a reaction,
+      you can expend power points to increase the DC by 1 for every power point
+      spent, abiding by your psi limit.</p>
 
       <p>While a target is grappled in this manner, you create one of the
       following effects as an action:</p> <ul>
         <li><strong>Crush (1-7 psi):</strong> The target takes 1d6 bludgeoning damage per psi point spent.</li>
         <li><strong>Move (1-7 psi):</strong> You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends.</li>
       </ul>
-
-      <p><em><!-- TODO: Review implementation of Grasp power - This is a complex
-      power with the following manual elements: 1. The grappled condition must
-      be manually applied on failed save, and the effect should be linked to
-      concentration 2. The contested check for escape (Athletics/Acrobatics vs
-      psionic ability + proficiency + psi point bonus) requires manual
-      adjudication 3. The Move option (5 feet per psi point) requires manual
-      positioning of the creature 4. The ability to hold creatures in the air
-      and cause falling damage when grapple ends must be tracked manually This
-      power may benefit from custom automation or active effects if available.
-      --></em></p>
     chat: ''
   identifier: grasp
   source:
@@ -660,9 +648,9 @@ effects:
     description: >-
       <p>You are grappled by telekinetic energy. Your reach for this grapple is
       60 feet. You can escape by succeeding on a Strength (Athletics) or
-      Dexterity (Acrobatics) check contested by the grappler's psionic ability
-      modifier plus proficiency bonus (plus any psi points they spend for a +1
-      bonus each).</p>
+      Dexterity (Acrobatics) check against the grappler's psionic DC. As a
+      reaction, they can expend power points to increase the DC by 1 for every
+      power point spent.</p>
     tint: '#ffffff'
     statuses:
       - grappled

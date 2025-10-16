@@ -46,7 +46,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 1
+        number: 2
         denomination: '8'
         types:
           - healing
@@ -99,7 +99,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 2
+        number: 4
         denomination: '8'
         types:
           - healing
@@ -153,7 +153,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 3
+        number: 6
         denomination: '8'
         types:
           - healing
@@ -207,7 +207,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 4
+        number: 8
         denomination: '8'
         types:
           - healing
@@ -261,7 +261,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 5
+        number: 10
         denomination: '8'
         types:
           - healing
@@ -315,7 +315,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 6
+        number: 12
         denomination: '8'
         types:
           - healing
@@ -369,7 +369,7 @@ system:
         recovery: []
         max: ''
       healing:
-        number: 7
+        number: 14
         denomination: '8'
         types:
           - healing
@@ -390,7 +390,7 @@ system:
   description:
     value: >-
       <p>You can spend power points to restore hit points to one creature you
-      touch. The creature regains 1d8 hit points per power point spent.</p>
+      touch. The creature regains 2d8 hit points per power point spent.</p>
     chat: ''
   identifier: new-item
   source:

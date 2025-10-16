@@ -69,7 +69,7 @@ system:
       seed it with overwhelming ennui. At the end of the minute, you can use an
       action to force the creature to make a Wisdom saving throw. The save
       automatically succeeds if the target is immune to being charmed. On a
-      failed save, it sits and is incapacitated until your concentration ends.
+      failed save, it becomes prone and is incapacitated until your concentration ends.
       This effect immediately ends if the target or any ally it can see is
       attacked or takes damage. On a successful save, the creature is unaffected
       and has no inkling of your attempt to bend its will.</p>
@@ -130,11 +130,12 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>You sit and are incapacitated until the effect ends. This effect
+      <p>You are prone and incapacitated until the effect ends. This effect
       immediately ends if you or any ally you can see is attacked or takes
       damage.</p>
     tint: '#ffffff'
     statuses:
+      - prone
       - incapacitated
     sort: 0
     flags:

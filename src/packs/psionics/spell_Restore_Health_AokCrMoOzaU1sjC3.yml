@@ -62,8 +62,7 @@ system:
     value: >-
       <p>You touch one creature and remove one of the following conditions from
       it: &amp;Reference[blinded], &amp;Reference[deafened],
-      &amp;Reference[paralyzed], or &amp;Reference[poisoned]. Alternatively, you
-      remove one disease from the creature.</p>
+      &amp;Reference[paralyzed], or &amp;Reference[poisoned].</p>
     chat: ''
   identifier: new-item
   source:

@@ -69,6 +69,8 @@ system:
       and has a speed of 0 until your concentration ends. It can repeat this
       saving throw at the end of each of its turns, ending the effect on itself
       on a success.</p>
+
+      <p>You can target one additional creature for every 2 additional psi points spent.</p>
     chat: ''
   identifier: dolorous-mind
   source:
