@@ -1,4 +1,39 @@
-const PSIONIC_SCHOOLS = ['ava', 'awa', 'imm', 'nom', 'sok', 'wuj'];
+export const PSIONIC_SCHOOLS = ['ava', 'awa', 'imm', 'nom', 'sok', 'wuj'];
+
+export function getMinimumPowerPointCost(spell, actor) {
+    if (!spell.system.activities) {
+        return null;
+    }
+
+    const powerPointsItems = actor.items.filter(item => item.system.identifier === 'spell-points');
+    if (!powerPointsItems.length) {
+        return null;
+    }
+
+    const powerPointsIds = new Set(powerPointsItems.map(item => item.id));
+
+    const costs = [];
+    for (const activity of spell.system.activities) {
+        if (!activity.consumption?.targets) {
+            continue;
+        }
+
+        for (const target of activity.consumption.targets) {
+            if (target.type === 'itemUses' && powerPointsIds.has(target.target)) {
+                const cost = parseInt(target.value);
+                if (!isNaN(cost)) {
+                    costs.push(cost);
+                }
+            }
+        }
+    }
+
+    if (costs.length === 0) {
+        return null;
+    }
+
+    return Math.min(...costs);
+}
 
 function extractPowerPointCosts(spell, actor) {
     if (!spell.system.activities) {

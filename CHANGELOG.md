@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Argon Combat HUD integration for psionic powers displaying power point costs on spell buttons
+
 ### Fixed
 - Fix psionic power point costs not displaying on character sheet spell subtitles by using correct v4 sheet hooks (renderActorSheet5eCharacter2/renderActorSheet5eNPC2)
 - Correct power point extraction to check character's spell-points item instead of compendium reference

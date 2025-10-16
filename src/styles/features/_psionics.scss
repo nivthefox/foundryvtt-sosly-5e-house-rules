@@ -1,0 +1,11 @@
+// Psionics feature styles
+
+.extended-combat-hud .action-hud .quantity-1:has(.psionic-cost) {
+    justify-content: flex-start;
+}
+
+.psionic-cost {
+    font-size: 0.8em;
+    white-space: nowrap;
+    padding-left: 0.25em;
+}
