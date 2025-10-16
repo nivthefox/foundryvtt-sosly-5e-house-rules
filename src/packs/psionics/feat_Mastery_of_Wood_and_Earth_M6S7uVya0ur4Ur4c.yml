@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/earth/barrier-lava-stone-orange.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -81,7 +81,7 @@ system:
     subtype: wuj
 effects:
   - name: Mastery of Wood and Earth
-    img: icons/magic/earth/barrier-stone-pillar-orange.webp
+    img: icons/magic/earth/barrier-lava-stone-orange.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.M6S7uVya0ur4Ur4c
     transfer: true
     _id: qidDJj2nqaWTTtvB

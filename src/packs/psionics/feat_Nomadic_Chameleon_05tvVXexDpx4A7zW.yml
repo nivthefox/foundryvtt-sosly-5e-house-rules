@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/creatures/reptiles/lizard-iguana-green.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: nom
 effects:
   - name: Nomadic Chameleon
-    img: icons/creatures/reptiles/lizard-crocodile-green.webp
+    img: icons/creatures/reptiles/lizard-iguana-green.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.05tvVXexDpx4A7zW
     transfer: true
     _id: zT84S2pedXx6P3Uu

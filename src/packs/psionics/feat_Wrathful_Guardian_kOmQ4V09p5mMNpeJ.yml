@@ -53,7 +53,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      img: icons/magic/unholy/strike-body-explode-disintegrate.webp
       appliedEffects: []
   uses:
     spent: 0

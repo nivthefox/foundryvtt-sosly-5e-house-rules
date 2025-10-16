@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/weapons/thrown/dagger-ringed-blue.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -85,7 +85,7 @@ system:
     subtype: sok
 effects:
   - name: Spectral Throw
-    img: icons/weapons/thrown/dagger-ringed-white.webp
+    img: icons/weapons/thrown/dagger-ringed-blue.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.tvmuB3WJxgB44xSu
     transfer: true
     _id: rIXGocah4vlid27O

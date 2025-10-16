@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/movement/chevrons-down-yellow.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -82,7 +82,7 @@ system:
     subtype: imm
 effects:
   - name: Celerity
-    img: icons/magic/movement/chevrons-triple-blue.webp
+    img: icons/magic/movement/chevrons-down-yellow.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.p8f0Cn7slg85mvq8
     transfer: true
     _id: Rs0lbZevsY3nWRwF

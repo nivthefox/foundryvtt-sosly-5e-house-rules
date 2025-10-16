@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/weapons/ammunition/arrows-war-white.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -86,7 +86,7 @@ system:
     subtype: nom
 effects:
   - name: Nomadic Arrow
-    img: icons/weapons/ammunition/arrows-bundle-blue.webp
+    img: icons/weapons/ammunition/arrows-war-white.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.LqAhkVMHTmmJct7n
     transfer: true
     _id: LmlgVOXtu5rl3uUk

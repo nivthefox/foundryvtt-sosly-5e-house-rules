@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      img: icons/magic/symbols/rune-sigil-horned-white-purple.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: awa
 effects:
   - name: Metapsionics
-    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    img: icons/magic/symbols/rune-sigil-horned-white-purple.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.tcg7B5reOo0taxnN
     transfer: true
     _id: tgWykX4kHJSYNhsg

@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      img: icons/magic/defensive/armor-shield-barrier-steel.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -81,7 +81,7 @@ system:
     subtype: awa
 effects:
   - name: Intellect Fortress
-    img: icons/magic/defensive/shield-barrier-glowing-pentagon-purple.webp
+    img: icons/magic/defensive/armor-shield-barrier-steel.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.wsZaJP8DeVsLhSid
     transfer: true
     _id: tEjhYiVGc3qlonnO

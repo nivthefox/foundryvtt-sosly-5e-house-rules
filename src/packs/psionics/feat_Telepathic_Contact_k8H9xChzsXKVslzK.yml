@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/perception/eye-slit-pink.webp
       appliedEffects: []
   uses:
     spent: 0

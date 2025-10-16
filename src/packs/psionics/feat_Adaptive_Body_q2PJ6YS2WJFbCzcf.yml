@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -85,7 +85,7 @@ system:
     subtype: imm
 effects:
   - name: Adaptive Body
-    img: icons/magic/nature/stealth-hide-brown.webp
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.q2PJ6YS2WJFbCzcf
     transfer: true
     _id: EnpzrMVhNUunXxZw

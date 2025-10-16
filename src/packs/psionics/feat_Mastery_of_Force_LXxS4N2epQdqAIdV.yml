@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/air/wind-tornado-wall-blue.webp
       appliedEffects: []
   uses:
     spent: 0

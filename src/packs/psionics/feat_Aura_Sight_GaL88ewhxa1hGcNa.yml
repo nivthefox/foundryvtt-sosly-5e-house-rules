@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: awa
 effects:
   - name: Aura Sight
-    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.GaL88ewhxa1hGcNa
     transfer: true
     _id: lA6Q2551FeHBDNQe

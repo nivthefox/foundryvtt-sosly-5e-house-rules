@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/acid.svg
+      img: icons/magic/acid/projectile-beams-salvo-green.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -81,7 +81,7 @@ system:
     subtype: imm
 effects:
   - name: Corrosive Metabolism
-    img: icons/magic/acid/projectile-glob-green.webp
+    img: icons/magic/acid/projectile-beams-salvo-green.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.PDO0wh4TuHngvi9L
     transfer: true
     _id: Umcg4uF8WDxbTOeK

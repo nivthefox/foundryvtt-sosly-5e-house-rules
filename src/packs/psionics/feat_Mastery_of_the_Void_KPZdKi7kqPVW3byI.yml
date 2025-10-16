@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      img: icons/magic/unholy/energy-smoke-pink.webp
       appliedEffects: []
     KpKr8u6ATtEoifKU:
       type: utility
@@ -136,7 +136,7 @@ system:
     subtype: wuj
 effects:
   - name: Mastery of the Void
-    img: icons/magic/unholy/orb-energy-pink.webp
+    img: icons/magic/unholy/energy-smoke-pink.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.KPZdKi7kqPVW3byI
     transfer: true
     _id: 0HXabCdmKHNsi6PG

@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/fire/projectile-arrow-fire-gem-yellow.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -83,7 +83,7 @@ system:
     subtype: ava
 effects:
   - name: Mantle of Fury
-    img: icons/magic/fire/projectile-bolts-salvo-yellow.webp
+    img: icons/magic/fire/projectile-arrow-fire-gem-yellow.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.ujQHyYFe0yK75MeB
     transfer: true
     _id: zetYQ77QOemBdktF

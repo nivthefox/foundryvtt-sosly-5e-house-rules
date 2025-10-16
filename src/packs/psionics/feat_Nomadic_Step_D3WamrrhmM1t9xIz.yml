@@ -52,7 +52,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/movement/trail-streak-impact-blue.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: nom
 effects:
   - name: Nomadic Step
-    img: icons/magic/movement/trail-streak-zigzag-blue-yellow.webp
+    img: icons/magic/movement/trail-streak-impact-blue.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.D3WamrrhmM1t9xIz
     transfer: true
     _id: Zwz6i7rNzRP0fLhl

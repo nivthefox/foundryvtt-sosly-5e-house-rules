@@ -54,7 +54,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/equipment/head/crown-fur-red-white.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -88,7 +88,7 @@ system:
     subtype: ava
 effects:
   - name: Mantle of Command
-    img: icons/equipment/head/crown-jeweled-gold-red.webp
+    img: icons/equipment/head/crown-fur-red-white.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.bMUPrpjj9yGWd86V
     transfer: true
     _id: EacYiSUqbyWdmaJv

@@ -53,7 +53,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/perception/silhouette-stealth-shadow.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -86,7 +86,7 @@ system:
     subtype: awa
 effects:
   - name: Deceive Senses
-    img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+    img: icons/magic/perception/silhouette-stealth-shadow.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.JnbYMpraOvsRbx9F
     transfer: true
     _id: i4WbIlv7MjcqAwCF

@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/air/fog-gas-smoke-blue-gray.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: imm
 effects:
   - name: Diminution
-    img: icons/magic/air/fog-gas-smoke-swirling.webp
+    img: icons/magic/air/fog-gas-smoke-blue-gray.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.CpViLhb4zmQV0O1n
     transfer: true
     _id: inXAci1wddoD2VCg

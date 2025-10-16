@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: icons/magic/lightning/bolt-strike-blue.webp
+      img: icons/magic/lightning/bolt-beam-strike-blue.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -81,7 +81,7 @@ system:
     subtype: wuj
 effects:
   - name: Mastery of Weather
-    img: icons/magic/lightning/bolt-strike-cloud-sky.webp
+    img: icons/magic/lightning/bolt-beam-strike-blue.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.8oUq3w41Zzx2EazH
     transfer: true
     _id: PjssQ2Ux8sP65pDe

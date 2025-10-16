@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/fire.svg
+      img: icons/magic/fire/orb-vortex.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: wuj
 effects:
   - name: Mastery of Fire
-    img: icons/magic/fire/orb-vortex-orange.webp
+    img: icons/magic/fire/orb-vortex.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.jnyqBrGPPlVZuYOX
     transfer: true
     _id: bZRTnrwhuqeLWqfG

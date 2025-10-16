@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/cold.svg
+      img: icons/magic/water/snowflake-ice-blue-white.webp
       appliedEffects: []
   uses:
     spent: 0

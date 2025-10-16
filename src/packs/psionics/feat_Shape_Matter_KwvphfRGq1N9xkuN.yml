@@ -54,7 +54,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/earth/orb-stone-smoke-teal.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -88,7 +88,7 @@ system:
     subtype: wuj
 effects:
   - name: Shape Matter
-    img: icons/magic/earth/projectile-orb-stone-light.webp
+    img: icons/magic/earth/orb-stone-smoke-teal.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.KwvphfRGq1N9xkuN
     transfer: true
     _id: a4C5n7qgidAdv12x

@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/equipment/shield/heater-crystal-blue.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -84,7 +84,7 @@ system:
     subtype: ava
 effects:
   - name: Force Bulwark
-    img: icons/equipment/shield/heater-crystal-pink-purple.webp
+    img: icons/equipment/shield/heater-crystal-blue.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.AEyxB8WYUq2aRMNu
     transfer: true
     _id: C914HZSIm2GaIa0Y

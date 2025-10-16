@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/magic/defensive/armor-shield-barrier-steel.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -83,7 +83,7 @@ system:
     subtype: ava
 effects:
   - name: Mantle of Courage
-    img: icons/magic/defensive/shield-barrier-flaming-diamond-teal-yellow.webp
+    img: icons/magic/defensive/armor-shield-barrier-steel.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.1KyvnJfVCPUndhV2
     transfer: true
     _id: 2fgnjaIOYzquS6cm

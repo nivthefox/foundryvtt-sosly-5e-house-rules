@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/psychic.svg
+      img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
       appliedEffects: []
   uses:
     spent: 0

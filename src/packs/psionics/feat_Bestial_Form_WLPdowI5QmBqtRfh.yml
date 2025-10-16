@@ -51,7 +51,7 @@ system:
         name: ''
         formula: ''
       name: Psychic Focus
-      img: systems/dnd5e/icons/svg/damage/radiant.svg
+      img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
       appliedEffects: []
   uses:
     spent: 0
@@ -82,7 +82,7 @@ system:
     subtype: imm
 effects:
   - name: Bestial Form
-    img: icons/creatures/mammals/wolf-timber-glowing-eyes.webp
+    img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.WLPdowI5QmBqtRfh
     transfer: true
     _id: rXTA03DmUfTpZCpX
