@@ -105,10 +105,19 @@ function groupPsionicsByDiscipline(categories) {
         }
 
         if (!disciplineGroups.has(parentDiscipline.id)) {
+            const powerPoints = button.actor.items.find(item => item.system.identifier === 'spell-points');
+
+            const uses = powerPoints
+                ? {
+                    max: powerPoints.system.uses.max,
+                    value: powerPoints.system.uses.max - powerPoints.system.uses.spent
+                }
+                : { max: Infinity, value: Infinity };
+
             disciplineGroups.set(parentDiscipline.id, {
                 label: parentDiscipline.name,
                 buttons: [],
-                uses: { max: Infinity, value: Infinity }
+                uses
             });
         }
 
@@ -129,6 +138,8 @@ function updatePsionicButtonQuantities(component, element, actor) {
     }
 
     const buttons = element.querySelectorAll('.feature-element');
+    let hasPsionicButtons = false;
+
     for (const button of buttons) {
         const img = button.style.backgroundImage;
         if (!img) {
@@ -140,6 +151,8 @@ function updatePsionicButtonQuantities(component, element, actor) {
         if (!item || !isPsionicSpell(item)) {
             continue;
         }
+
+        hasPsionicButtons = true;
 
         const costRange = getPowerPointCostRange(item, actor);
         if (costRange === null) {
@@ -153,6 +166,25 @@ function updatePsionicButtonQuantities(component, element, actor) {
 
         quantitySpan.innerHTML = `<span class="psionic-cost">${costRange}</span>`;
     }
+
+    if (!hasPsionicButtons) {
+        return;
+    }
+
+    const slotsContainer = element.querySelector('.feature-spell-slots');
+    if (!slotsContainer) {
+        return;
+    }
+
+    const powerPoints = actor.items.find(item => item.system.identifier === 'spell-points');
+    if (!powerPoints) {
+        return;
+    }
+
+    const current = powerPoints.system.uses.max - powerPoints.system.uses.spent;
+    const max = powerPoints.system.uses.max;
+
+    slotsContainer.innerHTML = `<span class="power-point-pool">${current}/${max} power points</span>`;
 }
 
 function hasPsionicSpells(actor) {
