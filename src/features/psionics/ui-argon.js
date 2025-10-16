@@ -120,7 +120,7 @@ function groupPsionicsByDiscipline(categories) {
     const disciplineCategories = Array.from(disciplineGroups.values());
     categories.splice(atWillIndex, 0, ...disciplineCategories);
 
-    return categories;
+    return categories.filter(category => category.buttons.length > 0);
 }
 
 function updatePsionicButtonQuantities(component, element, actor) {
@@ -155,7 +155,66 @@ function updatePsionicButtonQuantities(component, element, actor) {
     }
 }
 
-let buttonPanelButtonClass = null;
+function hasPsionicSpells(actor) {
+    if (!actor?.items) {
+        return false;
+    }
+    return actor.items.some(item => isPsionicSpell(item));
+}
+
+function splitPsionicItems(items, actor) {
+    if (!hasPsionicSpells(actor)) {
+        return { psionicItems: [], nonPsionicItems: items };
+    }
+
+    const psionicItems = [];
+    const nonPsionicItems = [];
+
+    for (const item of items) {
+        if (isPsionicSpell(item)) {
+            psionicItems.push(item);
+        } else {
+            nonPsionicItems.push(item);
+        }
+    }
+
+    return { psionicItems, nonPsionicItems };
+}
+
+function processPanelButtons(buttons, actor, buttonClass) {
+    if (!hasPsionicSpells(actor)) {
+        return buttons;
+    }
+
+    const spellButtonIndex = buttons.findIndex(b => b.type === 'spell');
+    if (spellButtonIndex === -1) {
+        return buttons;
+    }
+
+    const spellButton = buttons[spellButtonIndex];
+    const { psionicItems, nonPsionicItems } = splitPsionicItems(spellButton.items, actor);
+
+    if (psionicItems.length === 0) {
+        return buttons;
+    }
+
+    if (nonPsionicItems.length === 0) {
+        buttons.splice(spellButtonIndex, 1);
+    } else {
+        spellButton.items = nonPsionicItems;
+        spellButton._spells = spellButton.prePrepareSpells();
+    }
+
+    const psionicButton = new buttonClass({
+        type: 'psionic',
+        items: psionicItems,
+        color: spellButton.color
+    });
+
+    buttons.splice(spellButtonIndex + (nonPsionicItems.length === 0 ? 0 : 1), 0, psionicButton);
+
+    return buttons;
+}
 
 export function registerArgonIntegration() {
     if (!game.modules.get('enhancedcombathud')?.active) {
@@ -163,6 +222,61 @@ export function registerArgonIntegration() {
     }
 
     let DND5eButtonPanelButtonClass = null;
+    let buttonClassPatched = false;
+    let needsFirstRerender = false;
+
+    function patchButtonClass(buttonClass) {
+        if (buttonClassPatched || !buttonClass) {
+            return;
+        }
+        buttonClassPatched = true;
+        DND5eButtonPanelButtonClass = buttonClass;
+
+        const originalPrePrepareSpells = DND5eButtonPanelButtonClass.prototype.prePrepareSpells;
+        DND5eButtonPanelButtonClass.prototype.prePrepareSpells = function() {
+            if (this.type === 'psionic') {
+                this.type = 'spell';
+                const result = originalPrePrepareSpells.call(this);
+                this.type = 'psionic';
+                return result;
+            }
+            return originalPrePrepareSpells.call(this);
+        };
+
+        const originalGetPanel = DND5eButtonPanelButtonClass.prototype._getPanel;
+        DND5eButtonPanelButtonClass.prototype._getPanel = async function() {
+            if (this.type === 'psionic') {
+                if (this._spells) {
+                    this._spells = groupPsionicsByDiscipline(this._spells);
+                }
+                this.type = 'spell';
+                const result = await originalGetPanel.call(this);
+                this.type = 'psionic';
+                return result;
+            }
+            return originalGetPanel.call(this);
+        };
+
+        const labelDescriptor = Object.getOwnPropertyDescriptor(DND5eButtonPanelButtonClass.prototype, 'label');
+        Object.defineProperty(DND5eButtonPanelButtonClass.prototype, 'label', {
+            get() {
+                if (this.type === 'psionic') {
+                    return 'Manifest Power';
+                }
+                return labelDescriptor.get.call(this);
+            }
+        });
+
+        const iconDescriptor = Object.getOwnPropertyDescriptor(DND5eButtonPanelButtonClass.prototype, 'icon');
+        Object.defineProperty(DND5eButtonPanelButtonClass.prototype, 'icon', {
+            get() {
+                if (this.type === 'psionic') {
+                    return 'icons/svg/sun.svg';
+                }
+                return iconDescriptor.get.call(this);
+            }
+        });
+    }
 
     Hooks.on('argonInit', CoreHUD => {
         const originalDefineMainPanels = CoreHUD.defineMainPanels;
@@ -170,23 +284,39 @@ export function registerArgonIntegration() {
         CoreHUD.defineMainPanels = function(panels) {
             originalDefineMainPanels.call(this, panels);
 
-            Hooks.once('renderDND5eActionActionPanelArgonComponent', panel => {
-                const spellButton = panel.buttons?.find(b => b.type === 'spell');
-                if (!spellButton) {
-                    return;
+            for (const PanelClass of panels) {
+                if (!PanelClass.prototype._getButtons) {
+                    continue;
                 }
 
-                DND5eButtonPanelButtonClass = spellButton.constructor;
-                const originalGetPanel = DND5eButtonPanelButtonClass.prototype._getPanel;
+                const originalGetButtons = PanelClass.prototype._getButtons;
+                PanelClass.prototype._getButtons = async function() {
+                    const buttons = await originalGetButtons.call(this);
 
-                DND5eButtonPanelButtonClass.prototype._getPanel = async function() {
-                    if (this.type === 'spell' && this._spells) {
-                        this._spells = groupPsionicsByDiscipline(this._spells);
+                    if (!buttonClassPatched && buttons.length > 0) {
+                        const spellButton = buttons.find(b => b.type === 'spell');
+                        if (spellButton) {
+                            needsFirstRerender = true;
+                            patchButtonClass(spellButton.constructor);
+                        }
                     }
-                    return originalGetPanel.call(this);
+
+                    if (!DND5eButtonPanelButtonClass) {
+                        return buttons;
+                    }
+                    return processPanelButtons(buttons, this.actor, DND5eButtonPanelButtonClass);
                 };
-            });
+            }
         };
+
+        Hooks.once('renderCoreHUD', (app, html, data) => {
+            if (needsFirstRerender) {
+                for (const panel of app.components.main) {
+                    panel.render(true);
+                }
+                needsFirstRerender = false;
+            }
+        });
     });
 
     Hooks.on('renderAccordionPanelCategoryArgonComponent', updatePsionicButtonQuantities);
