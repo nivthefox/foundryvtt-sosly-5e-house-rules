@@ -16,11 +16,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add extract_pack.mjs tool for extracting arbitrary LevelDB packs to YAML format
 
 ### Fixed
+- Update all 57 psionic discipline Psychic Focus activity icons to match their parent feat icons for visual consistency
+- Update 25 psionic discipline effect icons to match their parent feat icons
+- Update Call to InAction power to apply prone condition instead of "sits" text description
+- Update Charming Presence power to match Sleep spell mechanics (10ft radius, 2pp fixed cost, no HP limit)
+- Update Grasp power escape mechanic from contested check to DC-based with reaction to boost DC using power points
+- Update Mend Wounds power healing from 1d8 to 2d8 per power point spent
+- Remove disease removal option from Restore Health power
 - Fix psionic power point costs not displaying on character sheet spell subtitles by using correct v4 sheet hooks (renderActorSheet5eCharacter2/renderActorSheet5eNPC2)
 - Correct power point extraction to check character's spell-points item instead of compendium reference
 - Add proper error handling for locked LevelDB databases in pack extraction/compilation tools
 
 ### Changed
+- Add scaling to Dolorous Mind power for targeting additional creatures (1 per 2 extra power points)
 - Enforce curly braces for all control structures with new ESLint rule
 - Migrate psionic subtitle UI from jQuery to native DOM APIs
 - Convert species images to WebP format for improved file size (Thiraxi, Minotaur)
