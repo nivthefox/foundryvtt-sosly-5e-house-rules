@@ -1,4 +1,4 @@
-import { PSIONIC_SCHOOLS, getPowerLimit, getMinimumPowerPointCost } from './ui-spellbook';
+import { PSIONIC_SCHOOLS, getPowerLimit, getMinimumPowerPointCost, getPowerPointItemIds } from './ui-spellbook';
 
 function isPsionicSpell(spell) {
     return spell.system.level === 99 && PSIONIC_SCHOOLS.includes(spell.system.school);
@@ -9,12 +9,10 @@ function getPowerPointCostRange(spell, actor) {
         return null;
     }
 
-    const powerPointsItems = actor.items.filter(item => item.system.identifier === 'spell-points');
-    if (!powerPointsItems.length) {
+    const powerPointsIds = getPowerPointItemIds(actor);
+    if (!powerPointsIds) {
         return null;
     }
-
-    const powerPointsIds = new Set(powerPointsItems.map(item => item.id));
 
     const costs = [];
     for (const activity of spell.system.activities) {

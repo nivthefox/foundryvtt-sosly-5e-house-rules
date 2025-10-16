@@ -1,5 +1,13 @@
 export const PSIONIC_SCHOOLS = ['ava', 'awa', 'imm', 'nom', 'sok', 'wuj'];
 
+export function getPowerPointItemIds(actor) {
+    const powerPointsItems = actor.items.filter(item => item.system.identifier === 'spell-points');
+    if (!powerPointsItems.length) {
+        return null;
+    }
+    return new Set(powerPointsItems.map(item => item.id));
+}
+
 export function getPowerLimit(actor) {
     const psionicistClass = actor.classes?.psionicist;
     if (!psionicistClass) {
@@ -24,12 +32,10 @@ export function getMinimumPowerPointCost(spell, actor) {
         return null;
     }
 
-    const powerPointsItems = actor.items.filter(item => item.system.identifier === 'spell-points');
-    if (!powerPointsItems.length) {
+    const powerPointsIds = getPowerPointItemIds(actor);
+    if (!powerPointsIds) {
         return null;
     }
-
-    const powerPointsIds = new Set(powerPointsItems.map(item => item.id));
 
     const costs = [];
     for (const activity of spell.system.activities) {
@@ -59,12 +65,10 @@ function extractPowerPointCosts(spell, actor) {
         return null;
     }
 
-    const powerPointsItems = actor.items.filter(item => item.system.identifier === 'spell-points');
-    if (!powerPointsItems.length) {
+    const powerPointsIds = getPowerPointItemIds(actor);
+    if (!powerPointsIds) {
         return null;
     }
-
-    const powerPointsIds = new Set(powerPointsItems.map(item => item.id));
 
     const costs = [];
     for (const activity of spell.system.activities) {
