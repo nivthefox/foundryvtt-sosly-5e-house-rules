@@ -1,4 +1,5 @@
 import { getPowerLimit } from './ui-spellbook';
+import { id as module_id } from '../../../module.json';
 
 /**
  * @param {Application} app
@@ -15,7 +16,8 @@ export async function injectPsionicistManifestingCard(app, html, context) {
         return;
     }
 
-    const intMod = context.actor.system.abilities.int.mod;
+    const abilityId = psionicistClass.system.spellcasting?.ability ?? 'int';
+    const abilityMod = context.actor.system.abilities[abilityId]?.mod ?? 0;
     const profBonus = context.actor.system.attributes.prof;
     const powerLimit = getPowerLimit(context.actor);
 
@@ -29,20 +31,30 @@ export async function injectPsionicistManifestingCard(app, html, context) {
         return;
     }
 
-    const attack = intMod + profBonus;
-    const save = 8 + intMod + profBonus;
+    const attack = abilityMod + profBonus;
+    const save = 8 + abilityMod + profBonus;
+    const isPrimary = context.actor.system.attributes.spellcasting === abilityId;
 
     const templateData = {
+        abilityId,
+        isPrimary,
         powerLimit,
-        abilityMod: `${intMod >= 0 ? '+' : ''}${intMod}`,
+        abilityMod: `${abilityMod >= 0 ? '+' : ''}${abilityMod}`,
         attackBonus: `${attack >= 0 ? '+' : ''}${attack}`,
         saveDC: save
     };
 
     const cardHTML = await renderTemplate(
-        'modules/sosly-5e-house-rules/templates/features/psionics/manifesting-card.hbs',
+        `modules/${module_id}/templates/features/psionics/manifesting-card.hbs`,
         templateData
     );
 
     topSection.insertAdjacentHTML('beforeend', cardHTML);
+
+    const button = topSection.querySelector(`.spellcasting[data-ability="${abilityId}"] button[data-action="spellcasting"]`);
+    if (button) {
+        button.addEventListener('click', () => {
+            context.actor.update({ 'system.attributes.spellcasting': abilityId });
+        });
+    }
 }
