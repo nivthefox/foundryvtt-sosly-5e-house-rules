@@ -1,0 +1,42 @@
+name: Psionic Sustenance
+type: feat
+img: icons/magic/air/air-burst-spiral-large-teal-green.webp
+system:
+  description:
+    value: <p>Your body produces all the nutrients, hydration, and energy you need. You don't require food or water.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  properties: []
+  identifier: psionic-sustenance
+effects: []
+flags: {}
+folder: ZikcewzQB5JtDbC9
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: tjSKouZyTFoSxtIe
+sort: 0
+_key: '!items!tjSKouZyTFoSxtIe'

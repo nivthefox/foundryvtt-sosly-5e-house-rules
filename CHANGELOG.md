@@ -12,14 +12,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Display actual power point pool (e.g., "6/84 power points") in Argon Combat HUD discipline groups instead of individual slot boxes
 - Filter psionic powers based on character's Power Limit in both Spellbook UI and Argon Combat HUD, hiding powers with minimum power point costs exceeding the current limit
 - Add Psionicist Manifesting card to character sheet spellbook displaying Power Limit, ability modifier, attack bonus, and save DC
+- Add Thiraxi playable species
+- Add extract_pack.mjs tool for extracting arbitrary LevelDB packs to YAML format
 
 ### Fixed
 - Fix psionic power point costs not displaying on character sheet spell subtitles by using correct v4 sheet hooks (renderActorSheet5eCharacter2/renderActorSheet5eNPC2)
 - Correct power point extraction to check character's spell-points item instead of compendium reference
+- Add proper error handling for locked LevelDB databases in pack extraction/compilation tools
 
 ### Changed
 - Enforce curly braces for all control structures with new ESLint rule
 - Migrate psionic subtitle UI from jQuery to native DOM APIs
+- Convert species images to WebP format for improved file size (Thiraxi, Minotaur)
+- Rename Thanoi folder to "Thanoi Features" for consistency with other species folders
 
 ## [1.18.5](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.18.5) - 2025-10-02
 

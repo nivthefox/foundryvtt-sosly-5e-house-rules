@@ -1,0 +1,68 @@
+name: Telepathy
+type: feat
+img: icons/magic/perception/eye-tendrils-web-purple.webp
+system:
+  description:
+    value: <p>You have @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.gMTdiYGmbiwDyymt]{Telepathy} to 120 feet.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  properties: []
+  identifier: telepathy-120-ft
+effects:
+  - _id: Xe3nQwB8vKm7Hj2L
+    name: Telepathy
+    changes:
+      - key: system.traits.languages.communication.telepathy.value
+        mode: 4
+        value: '120'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.sosly-5e-house-rules.origins.Item.gEmkzZQBMiLyR5dk
+    tint: '#ffffff'
+    transfer: true
+    img: icons/magic/perception/eye-tendrils-web-purple.webp
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!gEmkzZQBMiLyR5dk.Xe3nQwB8vKm7Hj2L'
+flags: {}
+folder: ZikcewzQB5JtDbC9
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: gEmkzZQBMiLyR5dk
+sort: 0
+_key: '!items!gEmkzZQBMiLyR5dk'

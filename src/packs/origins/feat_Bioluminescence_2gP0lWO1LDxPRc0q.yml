@@ -1,0 +1,153 @@
+name: Bioluminescence
+type: feat
+img: icons/magic/light/orb-lightbulb-gray.webp
+system:
+  description:
+    value: >-
+      <p>Your skin glows with colors that shift based on your emotional state. When you finish a Short Rest or Long Rest, you can choose one of the following colors, gaining proficiency in the associated skill. You may change this skill when you finish a Short or Long Rest:</p>
+      <ul>
+      <li><strong>Blue (Calm):</strong> Persuasion</li>
+      <li><strong>Red (Anger):</strong> Intimidation</li>
+      <li><strong>Green (Focus):</strong> Investigation</li>
+      <li><strong>Purple (Curiosity):</strong> Insight</li>
+      </ul>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  properties: []
+  identifier: bioluminescence
+effects:
+  - _id: NudlpStZDXN7c5vG
+    name: 'Bioluminescence: Blue (Calm) - Persuasion'
+    changes:
+      - key: system.skills.per.value
+        mode: 4
+        value: '1'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.sosly-5e-house-rules.origins.Item.2gP0lWO1LDxPRc0q
+    tint: '#0000ff'
+    transfer: true
+    img: icons/magic/light/orb-lightbulb-gray.webp
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!2gP0lWO1LDxPRc0q.NudlpStZDXN7c5vG'
+  - _id: lNwtjyQhLqPp4l5c
+    name: 'Bioluminescence: Red (Anger) - Intimidation'
+    changes:
+      - key: system.skills.itm.value
+        mode: 4
+        value: '1'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.sosly-5e-house-rules.origins.Item.2gP0lWO1LDxPRc0q
+    tint: '#ff0000'
+    transfer: true
+    img: icons/magic/light/orb-lightbulb-gray.webp
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!2gP0lWO1LDxPRc0q.lNwtjyQhLqPp4l5c'
+  - _id: IZKFZETJXYjNSrow
+    name: 'Bioluminescence: Green (Focus) - Investigation'
+    changes:
+      - key: system.skills.inv.value
+        mode: 4
+        value: '1'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.sosly-5e-house-rules.origins.Item.2gP0lWO1LDxPRc0q
+    tint: '#00ff00'
+    transfer: true
+    img: icons/magic/light/orb-lightbulb-gray.webp
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!2gP0lWO1LDxPRc0q.IZKFZETJXYjNSrow'
+  - _id: KlftxWItqV9vd1Ck
+    name: 'Bioluminescence: Purple (Curiosity) - Insight'
+    changes:
+      - key: system.skills.ins.value
+        mode: 4
+        value: '1'
+        priority: 20
+    disabled: true
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Compendium.sosly-5e-house-rules.origins.Item.2gP0lWO1LDxPRc0q
+    tint: '#800080'
+    transfer: true
+    img: icons/magic/light/orb-lightbulb-gray.webp
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!2gP0lWO1LDxPRc0q.KlftxWItqV9vd1Ck'
+flags: {}
+folder: ZikcewzQB5JtDbC9
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: 2gP0lWO1LDxPRc0q
+sort: 0
+_key: '!items!2gP0lWO1LDxPRc0q'

@@ -1,0 +1,42 @@
+name: Synesthete
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+system:
+  description:
+    value: <p>You can link your senses together, allowing one sense to stimulate another. You might smell colors, hear tastes, or see sounds. You gain Advantage on Wisdom (Perception) checks.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: null
+  properties: []
+  identifier: synesthete
+effects: []
+flags: {}
+folder: ZikcewzQB5JtDbC9
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: I5l8cnVhpwGeR4gl
+sort: 0
+_key: '!items!I5l8cnVhpwGeR4gl'
