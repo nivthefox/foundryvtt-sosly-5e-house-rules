@@ -1,4 +1,4 @@
-import { PSIONIC_SCHOOLS } from './ui-spellbook';
+import { PSIONIC_SCHOOLS, getPowerLimit, getMinimumPowerPointCost } from './ui-spellbook';
 
 function isPsionicSpell(spell) {
     return spell.system.level === 99 && PSIONIC_SCHOOLS.includes(spell.system.school);
@@ -77,6 +77,7 @@ function groupPsionicsByDiscipline(categories) {
     const atWillCategory = categories[atWillIndex];
     const psionicButtons = [];
     const nonPsionicButtons = [];
+    let actor = null;
 
     for (const button of atWillCategory.buttons) {
         if (!button.item) {
@@ -85,6 +86,9 @@ function groupPsionicsByDiscipline(categories) {
         }
 
         if (isPsionicSpell(button.item)) {
+            if (!actor) {
+                actor = button.actor;
+            }
             psionicButtons.push(button);
         } else {
             nonPsionicButtons.push(button);
@@ -95,8 +99,15 @@ function groupPsionicsByDiscipline(categories) {
         return categories;
     }
 
+    const powerLimit = getPowerLimit(actor);
     const disciplineGroups = new Map();
+
     for (const button of psionicButtons) {
+        const minCost = getMinimumPowerPointCost(button.item, button.actor);
+        if (powerLimit !== null && minCost !== null && minCost > powerLimit) {
+            continue;
+        }
+
         const parentDiscipline = getParentDiscipline(button.item, button.actor);
 
         if (!parentDiscipline) {
@@ -201,10 +212,14 @@ function splitPsionicItems(items, actor) {
 
     const psionicItems = [];
     const nonPsionicItems = [];
+    const powerLimit = getPowerLimit(actor);
 
     for (const item of items) {
         if (isPsionicSpell(item)) {
-            psionicItems.push(item);
+            const minCost = getMinimumPowerPointCost(item, actor);
+            if (powerLimit === null || minCost === null || minCost <= powerLimit) {
+                psionicItems.push(item);
+            }
         } else {
             nonPsionicItems.push(item);
         }

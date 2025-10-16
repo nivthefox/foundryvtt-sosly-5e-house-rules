@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add Argon Combat HUD integration for psionic powers with separate "Manifest Power" button, power point costs display, and discipline-based grouping
 - Display actual power point pool (e.g., "6/84 power points") in Argon Combat HUD discipline groups instead of individual slot boxes
+- Filter psionic powers based on character's Power Limit in both Spellbook UI and Argon Combat HUD, hiding powers with minimum power point costs exceeding the current limit
 
 ### Fixed
 - Fix psionic power point costs not displaying on character sheet spell subtitles by using correct v4 sheet hooks (renderActorSheet5eCharacter2/renderActorSheet5eNPC2)

@@ -1,5 +1,24 @@
 export const PSIONIC_SCHOOLS = ['ava', 'awa', 'imm', 'nom', 'sok', 'wuj'];
 
+export function getPowerLimit(actor) {
+    const psionicistClass = actor.classes?.psionicist;
+    if (!psionicistClass) {
+        return null;
+    }
+
+    const level = psionicistClass.system?.levels;
+    if (!level) {
+        return null;
+    }
+
+    const powerLimitAdvancement = psionicistClass.advancement?.byType?.ScaleValue?.find(adv => adv.title === 'Power Limit');
+    if (!powerLimitAdvancement) {
+        return null;
+    }
+
+    return powerLimitAdvancement.valueForLevel(level)?.value ?? null;
+}
+
 export function getMinimumPowerPointCost(spell, actor) {
     if (!spell.system.activities) {
         return null;
@@ -87,6 +106,7 @@ export function addPsionicSubtitles(app, html, data) {
 
     const el = html[0];
     const psionicSpellElements = el.querySelectorAll('[data-item-level="99"]');
+    const powerLimit = getPowerLimit(data.actor);
 
     for (const element of psionicSpellElements) {
         const itemId = element.dataset.itemId;
@@ -96,6 +116,12 @@ export function addPsionicSubtitles(app, html, data) {
 
         const spell = data.actor.items.get(itemId);
         if (!spell || !isPsionicSpell(spell)) {
+            continue;
+        }
+
+        const minCost = getMinimumPowerPointCost(spell, data.actor);
+        if (powerLimit !== null && minCost !== null && minCost > powerLimit) {
+            element.remove();
             continue;
         }
 
