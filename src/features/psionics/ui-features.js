@@ -7,7 +7,7 @@ function isPsionicDiscipline(item) {
 
 async function createPsionicDisciplinesSection(html) {
     const featuresSection = html.find('.features-list').first();
-    if (!featuresSection.length) return null;
+    if (!featuresSection.length) {return null;}
 
     const sectionData = {
         label: 'Psionic Disciplines',
@@ -47,18 +47,18 @@ async function createPsionicDisciplinesSection(html) {
 }
 
 export async function reorganizePsionicDisciplines(app, html, data) {
-    if (!data.actor) return;
+    if (!data.actor) {return;}
 
-    if (data.actor.type !== 'character') return;
+    if (data.actor.type !== 'character') {return;}
 
-    if (!html.find('.features-list').length) return;
+    if (!html.find('.features-list').length) {return;}
 
     const psionicDisciplines = data.actor.items.filter(isPsionicDiscipline);
-    if (!psionicDisciplines.length) return;
+    if (!psionicDisciplines.length) {return;}
 
     const otherFeaturesSection = html.find('[data-type="other"]').first();
     const disciplinesSection = await createPsionicDisciplinesSection(html);
-    if (!disciplinesSection) return;
+    if (!disciplinesSection) {return;}
 
     psionicDisciplines
         .sort((a, b) => a.name.localeCompare(b.name))

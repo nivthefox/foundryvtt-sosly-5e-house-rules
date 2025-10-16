@@ -49,12 +49,12 @@ export function registerMultipleConcentrationFeature() {
     });
 
     // Only register the rest if enabled
-    if (!isEnabled) return;
+    if (!isEnabled) {return;}
 
     // Set concentration limit for newly created actors
     Hooks.on('preCreateActor', async (actor, data, options, userId) => {
         // Only apply to character and npc types
-        if (data.type !== 'character' && data.type !== 'npc') return;
+        if (data.type !== 'character' && data.type !== 'npc') {return;}
 
         const originalLimit = data.system?.attributes?.concentration?.limit ?? 1;
         await actor.updateSource({

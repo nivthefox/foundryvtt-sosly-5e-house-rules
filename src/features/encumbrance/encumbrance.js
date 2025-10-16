@@ -62,9 +62,9 @@ export function prepareEncumbrance(rollData, { validateItem } = {}) {
             + dnd5e.utils.simplifyBonus(encumbrance.bonuses?.overall, rollData);
         let multiplier = dnd5e.utils.simplifyBonus(encumbrance.multipliers[threshold], rollData)
             * dnd5e.utils.simplifyBonus(encumbrance.multipliers.overall, rollData);
-        if (threshold === 'maximum') maximumMultiplier = multiplier;
-        if (this.parent.type === 'vehicle') base = this.attributes.capacity.cargo;
-        else multiplier *= (config.threshold[threshold]?.[unitSystem] ?? 1) * sizeMod;
+        if (threshold === 'maximum') {maximumMultiplier = multiplier;}
+        if (this.parent.type === 'vehicle') {base = this.attributes.capacity.cargo;}
+        else {multiplier *= (config.threshold[threshold]?.[unitSystem] ?? 1) * sizeMod;}
         return calculateEncumbranceThreshold(base, multiplier, bonus);
     };
 

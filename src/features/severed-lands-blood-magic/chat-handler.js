@@ -9,7 +9,7 @@ export function registerChatHandler() {
     Hooks.on('renderChatMessage', (message, html) => {
         // Only attach listeners to our madness chat cards
         const madnessButton = html.find('[data-action="selectMadness"]');
-        if (madnessButton.length === 0) return;
+        if (madnessButton.length === 0) {return;}
 
         madnessButton.on('click', async event => {
             event.preventDefault();

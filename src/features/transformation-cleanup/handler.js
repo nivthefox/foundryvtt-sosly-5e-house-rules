@@ -2,18 +2,18 @@ import {id as module_id} from '../../../module.json';
 import {logger} from '../../utils/logger';
 
 export function handleTransformationCleanup(actor, options) {
-    if (!game.settings.get(module_id, 'transformation-cleanup')) return;
+    if (!game.settings.get(module_id, 'transformation-cleanup')) {return;}
 
-    if (actor.type !== 'character') return;
+    if (actor.type !== 'character') {return;}
 
-    if (!actor.isPolymorphed) return;
+    if (!actor.isPolymorphed) {return;}
 
-    if (game.user.isGM) return;
+    if (game.user.isGM) {return;}
 
     const previousActorIds = actor.getFlag('dnd5e', 'previousActorIds') ?? [];
     const originalActorId = actor.getFlag('dnd5e', 'originalActor');
 
-    if (!previousActorIds.length) return;
+    if (!previousActorIds.length) {return;}
 
     const actorsToDelete = previousActorIds.filter(id => {
         const tempActor = game.actors.get(id);
@@ -22,7 +22,7 @@ export function handleTransformationCleanup(actor, options) {
 
     const allActorsToDelete = [...actorsToDelete, actor.id];
 
-    if (allActorsToDelete.length === 0) return;
+    if (allActorsToDelete.length === 0) {return;}
 
     setTimeout(async () => {
         try {

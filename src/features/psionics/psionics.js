@@ -53,7 +53,9 @@ function setupPsionicOptions() {
 
 export function registerPsionics() {
     Hooks.once('setup', setupPsionicOptions);
-    Hooks.on('renderActorSheet', addPsionicSubtitles);
-    Hooks.on('renderActorSheet', reorganizePsionicDisciplines);
+    Hooks.on('renderActorSheet5eCharacter2', addPsionicSubtitles);
+    Hooks.on('renderActorSheet5eNPC2', addPsionicSubtitles);
+    Hooks.on('renderActorSheet5eCharacter2', reorganizePsionicDisciplines);
+    Hooks.on('renderActorSheet5eNPC2', reorganizePsionicDisciplines);
     registerPsychicFocusManagement();
 }

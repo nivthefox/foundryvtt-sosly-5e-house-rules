@@ -18,7 +18,7 @@ async function addMadnessTracking(app, el, data) {
     }
 
     const statsContainer = el.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
-    if (!statsContainer) return;
+    if (!statsContainer) {return;}
 
     const madnessMax = game.settings.get(module_id, 'madness-max');
     const currentMadness = app.actor.flags?.sosly?.madness ?? 0;

@@ -12,7 +12,7 @@ function isPsychicFocusActivity(activity) {
 
 async function managePsychicFocusEffects(activity) {
     const actor = activity.actor;
-    if (!actor) return;
+    if (!actor) {return;}
 
     logger.info(`Managing effects for actor: ${actor.name}`);
 

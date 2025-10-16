@@ -109,7 +109,7 @@ export class Breather {
     async _handleFeatureRecovery(actor, config) {
         // Get recoverable features
         const recoverableFeatures = getRecoverableFeatures(actor);
-        if (!recoverableFeatures.length) return;
+        if (!recoverableFeatures.length) {return;}
 
         // Check which features were selected in the form
         const selectedFeatures = [];
@@ -121,7 +121,7 @@ export class Breather {
             }
         }
 
-        if (!selectedFeatures.length) return;
+        if (!selectedFeatures.length) {return;}
 
         // Validate hit dice availability
         const availableHD = actor.system.attributes.hd.value;
@@ -156,7 +156,7 @@ export class Breather {
     async _spendHitDie(actor) {
         const hd = actor.system.attributes.hd;
 
-        if (!hd.smallestAvailable || hd.value <= 0) return;
+        if (!hd.smallestAvailable || hd.value <= 0) {return;}
 
         // Find a class that has the smallest HD size and unspent HD
         const targetClass = Array.from(hd.classes)
@@ -178,7 +178,7 @@ export class Breather {
      */
     inject(app, el) {
         const buttons = el.querySelector('.sheet-header-buttons');
-        if (!buttons) return;
+        if (!buttons) {return;}
 
         const button = document.createElement('button');
         button.classList.add('breather-button', 'gold-button');

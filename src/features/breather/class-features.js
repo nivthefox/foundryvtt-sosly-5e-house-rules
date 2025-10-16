@@ -29,19 +29,19 @@ export function getRecoverableFeatures(actor) {
       && i.name === config.name
         );
 
-        if (!feature) continue;
+        if (!feature) {continue;}
 
         // Check if feature has uses tracking
         const uses = feature.system.uses;
-        if (!uses || uses.max === null) continue;
+        if (!uses || uses.max === null) {continue;}
 
         // Check if feature is not at max uses
         const currentUses = uses.value ?? 0;
-        if (currentUses >= uses.max) continue;
+        if (currentUses >= uses.max) {continue;}
 
         // Calculate recovery amount
         const recoveryAmount = calculateRecoveryAmount(feature, config.recovery);
-        if (recoveryAmount <= 0) continue;
+        if (recoveryAmount <= 0) {continue;}
 
         // Add to recoverable features
         features.push({
@@ -67,7 +67,7 @@ export function getRecoverableFeatures(actor) {
  */
 export function calculateRecoveryAmount(feature, recoveryType) {
     const uses = feature.system.uses;
-    if (!uses || uses.max === null) return 0;
+    if (!uses || uses.max === null) {return 0;}
 
     const currentUses = uses.value ?? 0;
     const maxUses = uses.max;

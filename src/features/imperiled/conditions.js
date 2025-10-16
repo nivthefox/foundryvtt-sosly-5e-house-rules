@@ -47,7 +47,7 @@ const addEffect = (effects, {special, ...data}) => {
     data.img = data.icon ?? data.img;
     delete data.icon;
     effects.push(data);
-    if ( special ) CONFIG.specialStatusEffects[special] = data.id;
+    if ( special ) {CONFIG.specialStatusEffects[special] = data.id;}
 };
 
 export function registerImperiledConditions() {

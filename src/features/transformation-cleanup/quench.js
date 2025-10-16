@@ -86,8 +86,8 @@ export function registerTransformationCleanupTests() {
                     isPolymorphed: true,
                     id: tempActor.id,
                     getFlag: (module, key) => {
-                        if (key === 'previousActorIds') return [tempActor.id];
-                        if (key === 'originalActor') return testActor.id;
+                        if (key === 'previousActorIds') {return [tempActor.id];}
+                        if (key === 'originalActor') {return testActor.id;}
                         return null;
                     }
                 };

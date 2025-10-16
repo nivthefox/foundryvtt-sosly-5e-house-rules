@@ -22,7 +22,7 @@ export function registerConcentrationHandler() {
 
     // Handle HD expenditure after concentration begins
     Hooks.on('dnd5e.beginConcentrating', async (actor, item, effect, activity) => {
-        if (!pendingMultipleConcentration.get(actor)) return;
+        if (!pendingMultipleConcentration.get(actor)) {return;}
 
         // Clear the pending state
         pendingMultipleConcentration.delete(actor);

@@ -30,7 +30,7 @@ export async function showImperiledDialog(exhaustion) {
  * @param {string} reason - Reason for falling unconscious
  */
 export async function applyUnconscious(actor, imperiledEffect, reason = 'falls unconscious and is no longer imperiled') {
-    if (imperiledEffect) await imperiledEffect.delete();
+    if (imperiledEffect) {await imperiledEffect.delete();}
 
     const effect = await ActiveEffect.implementation.fromStatusEffect('unconscious');
     await ActiveEffect.implementation.create(effect, { parent: actor, keepId: true});

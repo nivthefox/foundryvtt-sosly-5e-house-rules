@@ -14,7 +14,7 @@ function addNetworthDisplay(app, el) {
     const networth = calculateNetWorth(app.actor);
     const currencies = el.querySelector('.tab.inventory .middle');
 
-    if (!currencies) return;
+    if (!currencies) {return;}
 
     const networthEl = document.createElement('div');
     networthEl.classList.add('net-worth');

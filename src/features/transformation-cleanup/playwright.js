@@ -58,8 +58,8 @@ test.describe('Transformation Cleanup Feature', () => {
                 isPolymorphed: true,
                 id: 'test-actor-id',
                 getFlag: (module, key) => {
-                    if (key === 'previousActorIds') return ['temp-actor-1', 'temp-actor-2'];
-                    if (key === 'originalActor') return 'original-actor-id';
+                    if (key === 'previousActorIds') {return ['temp-actor-1', 'temp-actor-2'];}
+                    if (key === 'originalActor') {return 'original-actor-id';}
                     return null;
                 }
             };

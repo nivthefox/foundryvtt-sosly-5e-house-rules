@@ -6,14 +6,14 @@
 export function registerDialogModification() {
     Hooks.on('renderActivityUsageDialog', (app, html, data) => {
         const concentrationSection = html.querySelector('section[data-application-part="concentration"]');
-        if (!concentrationSection) return;
+        if (!concentrationSection) {return;}
 
         const select = concentrationSection.querySelector('select[name="concentration.end"]');
-        if (!select) return;
+        if (!select) {return;}
 
         // Find the empty option (value="")
         const emptyOption = select.querySelector('option[value=""]');
-        if (!emptyOption) return;
+        if (!emptyOption) {return;}
 
         // Check if actor has HD available and determine the smallest HD
         const actor = app.actor;

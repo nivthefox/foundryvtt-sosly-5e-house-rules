@@ -111,10 +111,10 @@ class BreatherUI extends BaseRestDialog {
      */
     #setupFeatureValidation() {
         const form = this.element.querySelector('form');
-        if (!form) return;
+        if (!form) {return;}
 
         const checkboxes = form.querySelectorAll('dnd5e-checkbox[name^="features."]');
-        if (!checkboxes.length) return;
+        if (!checkboxes.length) {return;}
 
         // Validate on any checkbox change
         checkboxes.forEach(checkbox => {
@@ -126,7 +126,7 @@ class BreatherUI extends BaseRestDialog {
         if (rollButton) {
             const originalHandler = rollButton.onclick;
             rollButton.onclick = async event => {
-                if (originalHandler) await originalHandler.call(this, event);
+                if (originalHandler) {await originalHandler.call(this, event);}
                 this.#validateFeatureSelection();
             };
         }
@@ -140,13 +140,13 @@ class BreatherUI extends BaseRestDialog {
      */
     #validateFeatureSelection() {
         const form = this.element.querySelector('form');
-        if (!form) return;
+        if (!form) {return;}
 
         // Count selected features
         const checkboxes = form.querySelectorAll('dnd5e-checkbox[name^="features."]');
         let selectedCount = 0;
         checkboxes.forEach(checkbox => {
-            if (checkbox.checked) selectedCount++;
+            if (checkbox.checked) {selectedCount++;}
         });
 
         // Get available HD

@@ -1,21 +1,36 @@
 const PSIONIC_SCHOOLS = ['ava', 'awa', 'imm', 'nom', 'sok', 'wuj'];
 
-function extractPowerPointCosts(spell) {
-    if (!spell.system.activities) return null;
+function extractPowerPointCosts(spell, actor) {
+    if (!spell.system.activities) {
+        return null;
+    }
+
+    const powerPointsItems = actor.items.filter(item => item.system.identifier === 'spell-points');
+    if (!powerPointsItems.length) {
+        return null;
+    }
+
+    const powerPointsIds = new Set(powerPointsItems.map(item => item.id));
 
     const costs = [];
     for (const activity of spell.system.activities) {
-        if (!activity.consumption?.targets) continue;
+        if (!activity.consumption?.targets) {
+            continue;
+        }
 
         for (const target of activity.consumption.targets) {
-            if (target.type === 'itemUses' && target.target === 'Compendium.sosly-5e-house-rules.classes.Item.yXFJ10Lf7yDyu5OM') {
+            if (target.type === 'itemUses' && powerPointsIds.has(target.target)) {
                 const cost = parseInt(target.value);
-                if (!isNaN(cost)) costs.push(cost);
+                if (!isNaN(cost)) {
+                    costs.push(cost);
+                }
             }
         }
     }
 
-    if (costs.length === 0) return null;
+    if (costs.length === 0) {
+        return null;
+    }
 
     const minCost = Math.min(...costs);
     const maxCost = Math.max(...costs);
@@ -31,29 +46,36 @@ function isPsionicSpell(spell) {
 }
 
 export function addPsionicSubtitles(app, html, data) {
-    if (!data.actor) return;
+    if (!data.actor) {
+        return;
+    }
 
-    const psionicSpells = html.find('[data-item-level="99"]').filter((index, element) => {
+    const el = html[0];
+    const psionicSpellElements = el.querySelectorAll('[data-item-level="99"]');
+
+    for (const element of psionicSpellElements) {
         const itemId = element.dataset.itemId;
-        if (!itemId) return false;
+        if (!itemId) {
+            continue;
+        }
 
         const spell = data.actor.items.get(itemId);
-        return spell && isPsionicSpell(spell);
-    });
+        if (!spell || !isPsionicSpell(spell)) {
+            continue;
+        }
 
-    psionicSpells.each((index, element) => {
-        const itemId = element.dataset.itemId;
-        const spell = data.actor.items.get(itemId);
-        if (!spell) return;
+        const powerPointCosts = extractPowerPointCosts(spell, data.actor);
+        if (!powerPointCosts) {
+            continue;
+        }
 
-        const powerPointCosts = extractPowerPointCosts(spell);
-        if (!powerPointCosts) return;
-
-        const subtitleElement = element.querySelector('.name-stacked .subtitle');
-        if (!subtitleElement) return;
+        const subtitleElement = element.querySelector('.item-row > .item-name .name-stacked .subtitle');
+        if (!subtitleElement) {
+            continue;
+        }
 
         const existingText = subtitleElement.textContent.trim();
         const newText = existingText ? `${existingText} • ${powerPointCosts}` : powerPointCosts;
         subtitleElement.textContent = newText;
-    });
+    }
 }
