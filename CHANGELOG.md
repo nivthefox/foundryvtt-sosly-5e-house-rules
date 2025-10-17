@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.19.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.19.0) - 2025-10-16
+
 ### Added
 - Add Order of the Awakened psionicist subclass
 - Add Order of the Immortal psionicist subclass
