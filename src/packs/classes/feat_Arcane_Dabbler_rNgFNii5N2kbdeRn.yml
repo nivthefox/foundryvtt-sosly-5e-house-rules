@@ -1,0 +1,47 @@
+folder: eFgziyk8q6Nne96N
+name: Arcane Dabbler
+type: feat
+_id: rNgFNii5N2kbdeRn
+img: icons/magic/symbols/runes-star-pentagon-orange.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You learn three wizard spells of your choice and always have them prepared. The spells must be of 1st through 3rd level.</p><p>As a bonus action, you can spend power points to create spell slots that you can use to cast these spells, as well as other spells you are capable of casting. The power point cost of each spell slot is detailed on the table below.</p><table><thead><tr><th>Spell Slot Level</th><th>Power Point Cost</th></tr></thead><tbody><tr><td>1st</td><td>2</td></tr><tr><td>2nd</td><td>3</td></tr><tr><td>3rd</td><td>5</td></tr><tr><td>4th</td><td>6</td></tr><tr><td>5th</td><td>7</td></tr></tbody></table><p>The spell slot remains until you use it or finish a long rest. You must observe your power limit when spending power points to create a spell slot.</p><p>Whenever you gain a level in this class, you can replace one of the chosen wizard spells with a different wizard spell of 1st through 3rd level.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties: []
+  requirements: Wu Jen
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!rNgFNii5N2kbdeRn'

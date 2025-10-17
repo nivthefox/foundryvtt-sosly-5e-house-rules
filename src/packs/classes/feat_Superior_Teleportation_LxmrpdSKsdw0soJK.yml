@@ -1,0 +1,48 @@
+folder: ZewojV7rw6mG1aHX
+name: Superior Teleportation
+type: feat
+_id: LxmrpdSKsdw0soJK
+img: icons/magic/movement/portal-vortex-orange.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You gain a superior talent for teleportation. When you use a psionic discipline to teleport any distance, you can increase that distance by up to 10 feet.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties:
+    - trait
+  requirements: Nomad
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!LxmrpdSKsdw0soJK'

@@ -1,0 +1,87 @@
+folder: vm5zlYPjNSzsvAqq
+name: Order of the Soul Knife
+type: subclass
+_id: A1NowtA1nnTU7kzt
+img: modules/sosly-5e-house-rules/public/subclasses/soul-knife.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Manifest Deadly Weapons of Pure Psychic Energy</p></blockquote><p>The Order of the Soul Knife sacrifices the breadth of knowledge other psionicists gain to focus on a specific psionic technique. These psionicists learn to manifest a deadly weapon of pure psychic energy that they can use to cleave through foes.</p><p>Soul knives vary widely in their approach to this path. Some follow it out of a desire to achieve martial perfection. Others are ruthless assassins who seek to become the perfect killer.</p>
+    chat: ''
+  identifier: soulknife
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: ItemGrant
+      _id: martialTraining
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.tkLN03wJ6NrWhy3i
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.gvV3TaE8u0Y9CC55
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: honeTheBlade
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.rOxpIp9VWxkjfarv
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: consumptiveKnife
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.9qDD2O6CNyteN9qS
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: bladewind
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.2lXHEtTVv2ywQkX2
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: psionicist
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!A1NowtA1nnTU7kzt'

@@ -1,0 +1,104 @@
+folder: vm5zlYPjNSzsvAqq
+name: Order of the Awakened
+type: subclass
+_id: GVB5GCpWo5Ti4Hme
+img: modules/sosly-5e-house-rules/public/subclasses/awakened.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Unlock Mental Potential Through Transcendence</p></blockquote><p>Psionicists dedicated to the Order of the Awakened seek to unlock the full potential of the mind. By transcending the physical, the Awakened hope to attain a state of being focused on pure intellect and mental energy.</p><p>The Awakened are skilled at bending minds and unleashing devastating psionic attacks, and they can read the secrets of the world through psionic energy. Awakened psionicists who take to adventuring excel at unraveling mysteries, solving puzzles, and defeating monsters by turning them into unwilling pawns.</p>
+    chat: ''
+  identifier: awakened
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: ItemChoice
+      _id: bonusDisciplines
+      configuration:
+        allowDrops: true
+        choices:
+          '1':
+            count: 2
+            replacement: false
+        pool: []
+        spell: null
+        type: feat
+        restriction:
+          type: discipline
+          subtype: awa
+      value:
+        added: {}
+        replaced: {}
+      title: Bonus Disciplines
+      hint: ''
+    - type: ItemGrant
+      _id: awakenedTalent
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.mI1iL8XtVWKH7wJ8
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: psionicInvestigation
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.PxhotaYgOY8RRdWW
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: psionicSurge
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Wxoh4rmP8wSAZ7Mk
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: spectralForm
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.zcNXkvcvMsozNZdv
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: psionicist
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!GVB5GCpWo5Ti4Hme'

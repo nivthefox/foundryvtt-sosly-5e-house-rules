@@ -1,0 +1,104 @@
+folder: vm5zlYPjNSzsvAqq
+name: Order of the Immortal
+type: subclass
+_id: Kt0zkOTWs1XVtQi3
+img: modules/sosly-5e-house-rules/public/subclasses/immortal.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Transform Body Into Living Weapon Through Psionic Power</p></blockquote><p>The Order of the Immortal uses psionic energy to augment and modify the physical form. Followers of this order are known as Immortals. They use psionic energy to modify their bodies, strengthening them against attack and turning themselves into living weapons.</p><p>Their mastery of the physical form grants them their name, for Immortals are notoriously difficult to kill.</p>
+    chat: ''
+  identifier: immortal
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: ItemChoice
+      _id: bonusDisciplines
+      configuration:
+        allowDrops: true
+        choices:
+          '1':
+            count: 2
+            replacement: false
+        pool: []
+        spell: null
+        type: feat
+        restriction:
+          type: discipline
+          subtype: imm
+      value:
+        added: {}
+        replaced: {}
+      title: Bonus Disciplines
+      hint: ''
+    - type: ItemGrant
+      _id: immortalDurability
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.KeMuTQHiQdaaKzdi
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: psionicResilience
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.NtLhkKwvJPfB4QEa
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: surgeOfHealth
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.E5K69VkAbNOJ1F9e
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: immortalWill
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.MefKZeepi41nmUBP
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: psionicist
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!Kt0zkOTWs1XVtQi3'

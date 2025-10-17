@@ -1,0 +1,47 @@
+folder: KqRIryxklC2F7FFC
+name: Hone the Blade
+type: feat
+_id: rOxpIp9VWxkjfarv
+img: icons/weapons/swords/sword-guard-purple.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can spend power points to augment your soul knife's attack rolls and damage (no action required). You gain a bonus to attack and damage rolls with your soul knives depending on the number of power points spent, as shown on the table below. This bonus lasts for 10 minutes, and does not stack with any other increases to attack and damage rolls from disciplines, spells, or magic items.</p><table><thead><tr><th>Power Points</th><th>Attack and Damage Bonus</th></tr></thead><tbody><tr><td>2</td><td>+1</td></tr><tr><td>5</td><td>+2</td></tr><tr><td>7</td><td>+4</td></tr></tbody></table>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: Soul Knife
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!rOxpIp9VWxkjfarv'

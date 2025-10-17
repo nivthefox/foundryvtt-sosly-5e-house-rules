@@ -1,0 +1,19 @@
+name: Awakened
+sorting: a
+folder: gu2z2ezPtrWqbHju
+type: Item
+_id: mQzL5f5LK5jk4ZuX
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!folders!mQzL5f5LK5jk4ZuX'

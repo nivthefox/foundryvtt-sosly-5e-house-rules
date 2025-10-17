@@ -1,0 +1,104 @@
+folder: vm5zlYPjNSzsvAqq
+name: Order of the Wu Jen
+type: subclass
+_id: IiItQDSiMW8QNU5G
+img: modules/sosly-5e-house-rules/public/subclasses/wu-jen.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Master the Elements and Reshape Reality</p></blockquote><p>The Order of the Wu Jen features some of the most devoted psionicists. These psionicists seek to lock themselves away from the world, denying the limits of the physical world and replacing it with a reality that they create for themselves. Known as wu jens, these psionicists cast their minds into the world, seize control of its fundamental principles, and rebuild it.</p><p>In practical terms, wu jens excel at controlling the forces of the natural world. They can hurl objects with their minds, control the four elements, and alter reality to fit their desires.</p>
+    chat: ''
+  identifier: wujen
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: ItemChoice
+      _id: bonusDisciplines
+      configuration:
+        allowDrops: true
+        choices:
+          '1':
+            count: 2
+            replacement: false
+        pool: []
+        spell: null
+        type: feat
+        restriction:
+          type: discipline
+          subtype: wuj
+      value:
+        added: {}
+        replaced: {}
+      title: Bonus Disciplines
+      hint: ''
+    - type: ItemGrant
+      _id: hermitsStudy
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.qX6tww3IQRSKlhSh
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: elementalAttunement
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.yTIgD3XfS69wUN6g
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: arcaneDabbler
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.rNgFNii5N2kbdeRn
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: elementalMastery
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.yGI795o4Htt5V5yk
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: psionicist
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!IiItQDSiMW8QNU5G'

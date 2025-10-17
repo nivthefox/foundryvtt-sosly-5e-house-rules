@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add Order of the Awakened psionicist subclass
+- Add Order of the Immortal psionicist subclass
+- Add Order of the Nomad psionicist subclass
+- Add Order of the Soul Knife psionicist subclass
+- Add Order of the Wu Jen psionicist subclass
 - Add Argon Combat HUD integration for psionic powers with separate "Manifest Power" button, power point costs display, and discipline-based grouping
 - Display actual power point pool (e.g., "6/84 power points") in Argon Combat HUD discipline groups instead of individual slot boxes
 - Filter psionic powers based on character's Power Limit in both Spellbook UI and Argon Combat HUD, hiding powers with minimum power point costs exceeding the current limit

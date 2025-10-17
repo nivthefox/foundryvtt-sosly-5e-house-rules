@@ -1,0 +1,104 @@
+folder: vm5zlYPjNSzsvAqq
+name: Order of the Nomad
+type: subclass
+_id: IceEs1EqMF8hju5w
+img: modules/sosly-5e-house-rules/public/subclasses/nomad.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Explore the Multiverse Through Psionic Travel</p></blockquote><p>Psionicists of the Order of the Nomad keep their minds in a strange, rarified state. They seek to accumulate as much knowledge as possible, as they quest to unravel the mysteries of the multiverse and seek the underlying structure of all things. At the same time, they perceive a bizarre, living web of knowledge they call the noosphere.</p><p>Nomads, as their name indicates, delight in travel, exploration, and discovery. They desire to accumulate as much knowledge as possible, and the pursuit of secrets and hidden lore can become an obsession for them.</p>
+    chat: ''
+  identifier: nomad
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - type: ItemChoice
+      _id: bonusDisciplines
+      configuration:
+        allowDrops: true
+        choices:
+          '1':
+            count: 2
+            replacement: false
+        pool: []
+        spell: null
+        type: feat
+        restriction:
+          type: discipline
+          subtype: nom
+      value:
+        added: {}
+        replaced: {}
+      title: Bonus Disciplines
+      hint: ''
+    - type: ItemGrant
+      _id: breadthOfKnowledge
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.dsKtwfBpJtxQDwRX
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: memoryOfOneThousandSteps
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.YZn0OzzRzeKPeMOq
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: superiorTeleportation
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.LxmrpdSKsdw0soJK
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - type: ItemGrant
+      _id: effortlessJourney
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.TzsWD01TPCDzCdlu
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: psionicist
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!IceEs1EqMF8hju5w'

@@ -1,0 +1,47 @@
+folder: KqRIryxklC2F7FFC
+name: Soul Knife
+type: feat
+_id: gvV3TaE8u0Y9CC55
+img: icons/weapons/swords/sword-broad-serrated-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You gain the ability to manifest a melee weapon of psychic energy. During your turn (no action required), you can form semi-solid weapons composed of scintillating energy in your empty hands. You can choose the form the weapon(s) take each time you create them, but your weapon choice has no effect on its function. You can't hold anything in your hands while manifesting your soul knife. Your soul knife disappears if it leaves your hand, if you use this feature again, if you die, or if you dismiss them (no action required).</p><p>For you, a soul knife is a martial melee weapon with the light and finesse properties. It deals 1d8 psychic damage on a hit.</p><p>As a bonus action, you can prepare to use the blades to parry; you gain a +2 bonus to AC until the start of your next turn or until you are incapacitated.</p><p>You can transform magic weapons into your soul knife by performing a special ritual while you hold a weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon is transformed into pure psychic energy, and appears whenever you create your soul knife thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your soul knife if you die, if you perform the 1-hour ritual on a third weapon, or if you use a 1-hour ritual to return it to normal. The weapon appears at your feet if it is not currently manifested when the bond breaks.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 1
+    repeatable: false
+  properties: []
+  requirements: Soul Knife
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1759500000000
+  modifiedTime: 1759500000000
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_key: '!items!gvV3TaE8u0Y9CC55'
