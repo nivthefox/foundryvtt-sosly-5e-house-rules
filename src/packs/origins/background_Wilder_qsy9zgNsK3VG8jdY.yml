@@ -1,0 +1,97 @@
+name: Wilder
+type: background
+img: icons/magic/control/silhouette-aura-energy.webp
+system:
+  description:
+    value: >-
+      <p>You were born with raw psychic energy coursing through your
+      mind—a gift that manifested without training or study. Perhaps your
+      emotions moved objects, you heard distant thoughts, or glimpsed possible
+      futures in dreams. You developed keen instincts for reading people and
+      learned to control your manifestations through focus and herbal remedies
+      that calm your mind when the psychic energy becomes overwhelming.</p>
+    chat: ''
+  identifier: wilder
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  advancement:
+    - _id: wilderASI
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - wis
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: wilderSkills
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - skills:ins
+          - skills:prc
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: wilderTool
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - tool:herb
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: wilderFeat
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.qlYfygLALChz6rFo
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Origin Feat
+      hint: ''
+  wealth: '50'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+ownership:
+  default: 0
+folder: null
+_id: qsy9zgNsK3VG8jdY
+sort: 0
+_key: '!items!qsy9zgNsK3VG8jdY'

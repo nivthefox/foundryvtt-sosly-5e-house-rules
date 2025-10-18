@@ -1,0 +1,98 @@
+name: Wild Talent
+type: feat
+img: icons/magic/perception/hand-eye-pink.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You learn two psionic talents of your choice.</p><p>In addition,
+      choose one discipline. You learn that discipline and gain 2 psi points,
+      which may only be used on the chosen discipline.</p><p>If you do not
+      have the Psionics class feature, you can't gain the psychic focus benefit
+      of the discipline.</p><p>Your psionic ability for these powers is
+      Intelligence.</p>
+    chat: ''
+  identifier: wild-talent
+  source:
+    revision: 1
+    rules: '2024'
+    custom: ''
+  enchant: {}
+  type:
+    value: feat
+    subtype: origin
+  prerequisites:
+    level: null
+  properties: []
+  requirements: ''
+  advancement: []
+effects:
+  - name: Wild Talent
+    img: icons/magic/perception/hand-eye-pink.webp
+    origin: Compendium.sosly-5e-house-rules.feats.Item.qlYfygLALChz6rFo
+    _id: wildTalentEffect
+    type: base
+    system: {}
+    changes:
+      - key: system.scale.psionicist.power-points
+        mode: 2
+        value: '2'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      Grants 2 psi points which may only be used on your chosen discipline.
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: none
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!qlYfygLALChz6rFo.wildTalentEffect'
+folder: fivVf9w4MWrcgBK2
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: qlYfygLALChz6rFo
+sort: 0
+_key: '!items!qlYfygLALChz6rFo'
