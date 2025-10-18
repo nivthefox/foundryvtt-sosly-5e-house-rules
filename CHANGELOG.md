@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Talents accordion to Manifest Power HUD element in Argon Combat HUD, displaying psionic talents (level 0 cantrips) as the first section before discipline-grouped powers
+
+### Changed
+- Consolidate psionic utility functions into shared `ui-common.js` module, eliminating code duplication across `ui-spellbook.js`, `ui-argon.js`, and `ui-spellbook-card.js`
+- Update `isPsionicSpell()` to correctly identify both psionic talents (level 0) and psionic powers (level 99)
+- Process both Cantrip and At Will categories in Argon Combat HUD to properly extract and organize psionic talents and powers
+
 ## [1.19.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.19.0) - 2025-10-16
 
 ### Added

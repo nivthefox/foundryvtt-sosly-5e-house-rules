@@ -1,4 +1,4 @@
-import { getPowerLimit } from './ui-spellbook';
+import { getPowerLimit } from './ui-common';
 import { id as module_id } from '../../../module.json';
 
 /**

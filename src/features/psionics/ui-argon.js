@@ -1,8 +1,4 @@
-import { PSIONIC_SCHOOLS, getPowerLimit, getMinimumPowerPointCost, getPowerPointItemIds } from './ui-spellbook';
-
-function isPsionicSpell(spell) {
-    return spell.system.level === 99 && PSIONIC_SCHOOLS.includes(spell.system.school);
-}
+import { isPsionicSpell, getPowerLimit, getMinimumPowerPointCost, getPowerPointItemIds } from './ui-common';
 
 function getPowerPointCostRange(spell, actor) {
     if (!spell.system.activities) {
@@ -68,39 +64,64 @@ function groupPsionicsByDiscipline(categories) {
     }
 
     const atWillIndex = categories.findIndex(c => c.label === 'DND5E.SpellPrepAtWill');
-    if (atWillIndex === -1) {
+    const cantripIndex = categories.findIndex(c => c.label === 'Cantrip');
+
+    if (atWillIndex === -1 && cantripIndex === -1) {
         return categories;
     }
 
-    const atWillCategory = categories[atWillIndex];
-    const psionicButtons = [];
-    const nonPsionicButtons = [];
+    const psionicPowers = [];
+    const nonPsionicAtWill = [];
+    const talents = [];
+    const nonPsionicCantrips = [];
     let actor = null;
 
-    for (const button of atWillCategory.buttons) {
-        if (!button.item) {
-            nonPsionicButtons.push(button);
-            continue;
-        }
-
-        if (isPsionicSpell(button.item)) {
-            if (!actor) {
-                actor = button.actor;
+    if (atWillIndex !== -1) {
+        const atWillCategory = categories[atWillIndex];
+        for (const button of atWillCategory.buttons) {
+            if (!button.item) {
+                nonPsionicAtWill.push(button);
+                continue;
             }
-            psionicButtons.push(button);
-        } else {
-            nonPsionicButtons.push(button);
+
+            if (isPsionicSpell(button.item)) {
+                if (!actor) {
+                    actor = button.actor;
+                }
+                psionicPowers.push(button);
+            } else {
+                nonPsionicAtWill.push(button);
+            }
         }
     }
 
-    if (psionicButtons.length === 0) {
+    if (cantripIndex !== -1) {
+        const cantripCategory = categories[cantripIndex];
+        for (const button of cantripCategory.buttons) {
+            if (!button.item) {
+                nonPsionicCantrips.push(button);
+                continue;
+            }
+
+            if (isPsionicSpell(button.item)) {
+                if (!actor) {
+                    actor = button.actor;
+                }
+                talents.push(button);
+            } else {
+                nonPsionicCantrips.push(button);
+            }
+        }
+    }
+
+    if (psionicPowers.length === 0 && talents.length === 0) {
         return categories;
     }
 
     const powerLimit = getPowerLimit(actor);
     const disciplineGroups = new Map();
 
-    for (const button of psionicButtons) {
+    for (const button of psionicPowers) {
         const minCost = getMinimumPowerPointCost(button.item, button.actor);
         if (powerLimit !== null && minCost !== null && minCost > powerLimit) {
             continue;
@@ -109,7 +130,7 @@ function groupPsionicsByDiscipline(categories) {
         const parentDiscipline = getParentDiscipline(button.item, button.actor);
 
         if (!parentDiscipline) {
-            nonPsionicButtons.push(button);
+            nonPsionicAtWill.push(button);
             continue;
         }
 
@@ -133,10 +154,31 @@ function groupPsionicsByDiscipline(categories) {
         disciplineGroups.get(parentDiscipline.id).buttons.push(button);
     }
 
-    atWillCategory.buttons = nonPsionicButtons;
+    if (atWillIndex !== -1) {
+        categories[atWillIndex].buttons = nonPsionicAtWill;
+    }
 
-    const disciplineCategories = Array.from(disciplineGroups.values());
-    categories.splice(atWillIndex, 0, ...disciplineCategories);
+    if (cantripIndex !== -1) {
+        categories[cantripIndex].buttons = nonPsionicCantrips;
+    }
+
+    const psionicCategories = [];
+
+    if (talents.length > 0) {
+        psionicCategories.push({
+            label: 'Talents',
+            buttons: talents
+        });
+    }
+
+    psionicCategories.push(...Array.from(disciplineGroups.values()));
+
+    const insertIndex = Math.min(
+        atWillIndex !== -1 ? atWillIndex : Infinity,
+        cantripIndex !== -1 ? cantripIndex : Infinity
+    );
+
+    categories.splice(insertIndex, 0, ...psionicCategories);
 
     return categories.filter(category => category.buttons.length > 0);
 }
