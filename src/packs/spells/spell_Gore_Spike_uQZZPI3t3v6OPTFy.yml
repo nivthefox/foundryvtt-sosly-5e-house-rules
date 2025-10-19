@@ -1,0 +1,129 @@
+name: Gore Spike
+type: spell
+system:
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <p>You attempt to rip the blood from a foe's body. One creature that you can see within range must succeed on a Constitution saving throw or else take [[/damage 1d10 type=necrotic]] necrotic damage. The target has disadvantage on any saving throws to maintain concentration caused by this spell. This spell has no effect on creatures with no blood.</p>
+      <p><em><strong>Cantrip Upgrade.</strong></em> At 5th level it deals 2d10, at 11th level it deals 3d10, and at 17th level it deals 4d10.</p>
+    chat: ''
+  level: 0
+  school: nec
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - necrotic
+            number: 1
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: gore-spike
+ownership:
+  default: 0
+img: icons/magic/death/skull-energy-light-pink.webp
+flags: {}
+effects: []
+folder: MgD1KyupgXa2j2fO
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: uQZZPI3t3v6OPTFy
+sort: 0
+_key: '!items!uQZZPI3t3v6OPTFy'

@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Talents accordion to Argon Combat HUD
 - Add Wild Talent origin feat
 - Add Wilder background
+- Add Clue divination spell
+- Add Disguised Blast illusion spell
+- Add Gore Spike blood necromancy cantrip
+- Add Hemokinesis blood transmutation cantrip
+- Add Sanguine Wave blood necromancy spell
+- Add Shadow Lance illusion cantrip
 
 ### Changed
 - Consolidate psionic utility functions

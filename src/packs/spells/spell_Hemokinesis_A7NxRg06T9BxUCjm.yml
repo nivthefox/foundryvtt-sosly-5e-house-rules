@@ -1,0 +1,116 @@
+name: Hemokinesis
+type: spell
+system:
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <p>You choose an area of liquid blood that you can see within range and that fits within a 5-foot cube. You cannot affect the blood in a creature unless it is dead. You manipulate it in one of the following ways:</p>
+      <ul>
+      <li>You cause the blood to froth, creating a strong scent of blood in the air. This smell reaches 120 feet in all directions and lasts for 1 hour.</li>
+      <li>You instantaneously move or otherwise change the flow of the blood as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.</li>
+      <li>You cause the blood to form into simple shapes and animate at your direction. This change lasts for 1 hour.</li>
+      </ul>
+      <p>Alternatively, you can target one creature of size Medium or smaller within range and that you can see that has blood and attempt to push the blood in its body. The target must make a Constitution saving throw or else you push the target up to 5 feet in any direction.</p>
+      <p>If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+    chat: ''
+  level: 0
+  school: trs
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      effects: []
+      _id: dnd5eactivity000
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      sort: 0
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: hour
+        concentration: false
+        override: false
+      range:
+        units: self
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+  identifier: hemokinesis
+ownership:
+  default: 0
+img: icons/magic/water/projectile-stream-blood-red.webp
+flags: {}
+effects: []
+folder: MgD1KyupgXa2j2fO
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: A7NxRg06T9BxUCjm
+sort: 0
+_key: '!items!A7NxRg06T9BxUCjm'

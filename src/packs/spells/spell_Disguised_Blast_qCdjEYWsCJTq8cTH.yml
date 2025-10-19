@@ -1,0 +1,131 @@
+name: Disguised Blast
+type: spell
+system:
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <p>You send a missile of magical force, camouflaged and disguised by illusion, hurtling at one creature that you can see within range. The target must make an Intelligence saving throw, taking [[/damage 5d4 type=force]] damage on a failure, or half as much damage on a success.</p>
+      <p>A target automatically succeeds on its save against the spell if it doesn't rely on sight, as with blindsight, or if it can see through illusions, as with truesight.</p>
+      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/damage 2d4]] for each slot level above 1st.</p>
+    chat: ''
+  level: 1
+  school: ill
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a glass eye
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - force
+            number: 5
+            denomination: 4
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 2
+            custom:
+              enabled: false
+      sort: 0
+  identifier: disguised-blast
+ownership:
+  default: 0
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+flags: {}
+effects: []
+folder: OouqYOD5Z1oGHStK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: qCdjEYWsCJTq8cTH
+sort: 0
+_key: '!items!qCdjEYWsCJTq8cTH'

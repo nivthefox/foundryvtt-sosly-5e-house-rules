@@ -1,0 +1,131 @@
+name: Sanguine Wave
+type: spell
+system:
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <p>Choose either yourself, a willing creature within range that has less than half of its hit points remaining, or the body of a creature within range that was reduced to 0 hit points or killed within the last minute and that has not regained hit points since then. The target must have blood, or else the spell fails.</p>
+      <p>A wave of crimson energy surges out from the target. Each creature other than the target within 5 feet of the target must make a Constitution saving throw, taking [[/damage 2d8 type=necrotic]] necrotic damage on a failed save, or half as much damage on a successful one.</p>
+      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/damage 1d8]] for each slot level above 1st.</p>
+    chat: ''
+  level: 1
+  school: nec
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a goblet or a humanoid skull
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '5'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - necrotic
+            number: 2
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: sanguine-wave
+ownership:
+  default: 0
+img: icons/magic/unholy/strike-body-explode-disintegrate.webp
+flags: {}
+effects: []
+folder: OouqYOD5Z1oGHStK
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: ySuIQVLHD4tw1J2V
+sort: 0
+_key: '!items!ySuIQVLHD4tw1J2V'

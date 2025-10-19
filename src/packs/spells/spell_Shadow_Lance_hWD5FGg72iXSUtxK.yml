@@ -1,0 +1,129 @@
+name: Shadow Lance
+type: spell
+system:
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <p>You weave shadow into a solid spike and hurl it at a creature that you can see within range. The target must succeed on a Dexterity saving throw or else take [[/damage 1d8 type=piercing]] piercing damage. If both you and the target are in dim light or darkness, the target instead takes [[/damage 1d10 type=piercing]] piercing damage, and you are heavily obscured from it until the start of your next turn. The effect ends immediately if you or the target enter bright light.</p>
+      <p><em><strong>Cantrip Upgrade.</strong></em> The spell's damage increases by one die when you reach 5th level (2d8 or 2d10), 11th level (3d8 or 3d10), and 17th level (4d8 or 4d10).</p>
+    chat: ''
+  level: 0
+  school: ill
+  properties:
+    - vocal
+    - somatic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: round
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: round
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - piercing
+            number: 1
+            denomination: 8
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+  identifier: shadow-lance
+ownership:
+  default: 0
+img: icons/magic/unholy/projectile-spike-white.webp
+flags: {}
+effects: []
+folder: MgD1KyupgXa2j2fO
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: hWD5FGg72iXSUtxK
+sort: 0
+_key: '!items!hWD5FGg72iXSUtxK'
