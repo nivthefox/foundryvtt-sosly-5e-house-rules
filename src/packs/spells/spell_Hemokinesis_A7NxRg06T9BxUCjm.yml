@@ -98,7 +98,7 @@ system:
   identifier: hemokinesis
 ownership:
   default: 0
-img: icons/magic/water/projectile-stream-blood-red.webp
+img: icons/magic/air/wind-stream-red.webp
 flags: {}
 effects: []
 folder: MgD1KyupgXa2j2fO

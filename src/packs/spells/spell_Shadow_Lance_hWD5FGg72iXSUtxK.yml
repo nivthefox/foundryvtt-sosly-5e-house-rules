@@ -111,7 +111,7 @@ system:
   identifier: shadow-lance
 ownership:
   default: 0
-img: icons/magic/unholy/projectile-spike-white.webp
+img: icons/magic/light/projectile-bolts-salvo-white.webp
 flags: {}
 effects: []
 folder: MgD1KyupgXa2j2fO
