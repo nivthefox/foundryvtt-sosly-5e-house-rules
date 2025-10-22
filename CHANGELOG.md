@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.23.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.23.0) - 2025-10-22
+
 ### Added
 - Add Blood Pool tracking meter to character sheets for Severed Lands Blood Magic
 - Add click-to-edit inline editing for Blood Pool meter
