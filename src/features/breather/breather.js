@@ -181,6 +181,7 @@ export class Breather {
         if (!buttons) {return;}
 
         const button = document.createElement('button');
+        button.type = 'button';
         button.classList.add('breather-button', 'gold-button');
         button.setAttribute('data-tooltip', 'sosly.breather.label');
         button.setAttribute('aria-label', game.i18n.localize('sosly.breather.label'));

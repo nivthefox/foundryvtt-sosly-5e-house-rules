@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Wild Shape support for Blood Magic (blood vials merge into beast form with 2x capacity)
 - Add Wild Shape and Blood Magic house rule documentation
 
+### Fixed
+- Fix Breather button being triggered by Enter key presses anywhere on the sheet
+- Fix flag namespaces to use correct module ID (migrate old flags automatically on sheet load)
+
 ## [1.22.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.22.1) - 2025-10-22
 
 ### Fixed
