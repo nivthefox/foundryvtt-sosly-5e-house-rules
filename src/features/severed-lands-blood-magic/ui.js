@@ -78,13 +78,51 @@ async function addBloodTracking(app, el, data) {
         return;
     }
 
-    const bloodPool = calculateBloodPool(app.actor);
-    if (!bloodPool) {
+    const statsContainer = el.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
+    if (!statsContainer) {
         return;
     }
 
-    const statsContainer = el.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
-    if (!statsContainer) {
+    if (app.actor.isPolymorphed) {
+        const originalActorId = app.actor.getFlag('dnd5e', 'originalActor');
+        const originalActor = game.actors.get(originalActorId);
+
+        if (!originalActor) {
+            return;
+        }
+
+        const bloodPool = calculateBloodPool(originalActor);
+        if (!bloodPool) {
+            return;
+        }
+
+        const empoweredBlood = app.actor.getFlag(module_id, 'empoweredBlood') ?? bloodPool.current;
+
+        const meterResult = await createMeter({
+            label: game.i18n.localize('sosly.severedLandsBloodMagic.bloodPool'),
+            valueNow: empoweredBlood,
+            valueMax: bloodPool.max * 2,
+            cssClass: 'blood-pool',
+            editable: false,
+            inlineEditable: true,
+            document: app.actor,
+            onUpdate: async newValue => {
+                await app.actor.setFlag(module_id, 'empoweredBlood', newValue);
+            }
+        });
+
+        const meterElement = document.createElement('div');
+        meterElement.innerHTML = meterResult.html;
+        const meterGroup = meterElement.firstElementChild;
+
+        meterResult.setup(meterGroup);
+
+        statsContainer.appendChild(meterGroup);
+        return;
+    }
+
+    const bloodPool = calculateBloodPool(app.actor);
+    if (!bloodPool) {
         return;
     }
 
@@ -110,9 +148,60 @@ async function addBloodTracking(app, el, data) {
     statsContainer.appendChild(meterGroup);
 }
 
+async function handleTransform(original, source, transformedData, settings, options) {
+    if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
+        return;
+    }
+
+    const bloodPool = calculateBloodPool(original);
+    if (!bloodPool) {
+        return;
+    }
+
+    foundry.utils.setProperty(transformedData, `flags.${module_id}.empoweredBlood`, bloodPool.current);
+}
+
+async function handleRevert(transformedActor, options) {
+    if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
+        return;
+    }
+
+    if (!transformedActor.isPolymorphed) {
+        return;
+    }
+
+    const empoweredBlood = transformedActor.getFlag(module_id, 'empoweredBlood');
+    if (empoweredBlood === undefined) {
+        return;
+    }
+
+    const originalActorId = transformedActor.getFlag('dnd5e', 'originalActor');
+    const originalActor = game.actors.get(originalActorId);
+
+    if (!originalActor) {
+        return;
+    }
+
+    const bloodPool = calculateBloodPool(originalActor);
+    if (!bloodPool) {
+        return;
+    }
+
+    const clampedBlood = Math.min(empoweredBlood, bloodPool.max);
+    await distributeBloodAcrossVials(originalActor, clampedBlood);
+}
+
 export function registerBloodMagicHooks() {
     Hooks.on('renderActorSheet5eCharacter2', async (app, html, data) => {
         const el = html[0];
         await addBloodTracking(app, el, data);
     });
+
+    Hooks.on('renderActorSheet5eNPC2', async (app, html, data) => {
+        const el = html[0];
+        await addBloodTracking(app, el, data);
+    });
+
+    Hooks.on('dnd5e.transformActorV2', handleTransform);
+    Hooks.on('dnd5e.revertOriginalForm', handleRevert);
 }

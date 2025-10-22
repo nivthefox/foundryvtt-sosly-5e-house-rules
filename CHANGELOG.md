@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add click-to-edit inline editing for Blood Pool meter
 - Add Blood Vial equipment item for storing blood
 - Add blood vial decay mechanic (halves stored blood on long rest)
+- Add Wild Shape support for Blood Magic (blood vials merge into beast form with 2x capacity)
+- Add Wild Shape and Blood Magic house rule documentation
 
 ## [1.22.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.22.1) - 2025-10-22
 

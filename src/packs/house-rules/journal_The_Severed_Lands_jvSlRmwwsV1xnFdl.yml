@@ -28,8 +28,19 @@ pages:
         down).</p><p><strong>Sacrificial Casting.</strong> When you reduce a
         creature (other than a Construct, Undead, or Elemental) to 0 hit points
         with a weapon attack or cantrip, you can immediately cast a spell with a
-        casting time of 1 action as part of the same action. The spell’s level
-        can’t exceed the creature’s Hit Dice.</p><h3>Madness</h3><p>Each time
+        casting time of 1 action as part of the same action. The spell's level
+        can't exceed the creature's Hit Dice.</p><p><strong>Wild Shape and Blood
+        Magic.</strong> If you have the ability to cast spells while in a beast
+        form, you must still sacrifice blood and suffer the effects of madness.
+        Any blood vials you are carrying merge into your form; however, while
+        merged into your form you become empowered by their essence and can expend
+        the contents of those vials to empower your magic without having to draw
+        from the vial directly. When you reduce a creature to 0 hit points, you
+        can use a bonus action to increase the amount of blood empowering you as
+        if you had filled another vial. When your shape change ends, the blood
+        empowering you transfers back into any vials you are carrying. Blood in
+        excess of the vials you are carrying is wasted, and covers your skin,
+        instead.</p><h3>Madness</h3><p>Each time
         you cast a spell using a spell slot through blood magic, you must make a
         saving throw (DC = 10 + the spell’s level) using your Spellcasting
         ability score.</p><p>On a failed save, you may choose to gain a point of
