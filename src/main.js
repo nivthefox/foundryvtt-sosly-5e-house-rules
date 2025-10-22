@@ -13,6 +13,7 @@ import {registerTransformationCleanupFeature} from './features/transformation-cl
 import {registerLocationFeature} from './features/location/index';
 import {registerPsionicsFeature} from './features/psionics/index.js';
 import {registerSeveredLandsBloodMagicFeature} from './features/severed-lands-blood-magic/index';
+import {registerBeastFormFeature} from './features/beast-form/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -29,5 +30,6 @@ Hooks.once('init', async () => {
     registerLocationFeature();
     registerPsionicsFeature();
     registerSeveredLandsBloodMagicFeature();
+    registerBeastFormFeature();
     logger.info('Initialized');
 });

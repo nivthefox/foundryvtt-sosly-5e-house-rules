@@ -471,6 +471,54 @@ pages:
       modifiedTime: 1736890229048
       lastModifiedBy: n9iY1vD5eGeaHb7l
     _key: '!journal.pages!8MopJr18J312YX26.mSXdERiQroyAnH45'
+  - name: Beast Form Spells
+    type: text
+    sort: 750000
+    _id: fXQEofk4MrynDIoZ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Traditional druidic teachings hold that spellcasting requires speech and gestures impossible in animal form. These spells challenge that limitation, channeling magic through predatory instinct and raw physicality.</p>
+        <p>Each spell bears the <strong>Beast Form (B)</strong> component, meaning it can only be cast while Wild Shaped. The transformed body itself becomes the conduit for these primal magics—the beast form component cannot be replaced by any focus.</p>
+        <p>A druid must prepare these spells during their normal preparation, choosing which primal magics to carry into their transformation.</p>
+        <h2>Beast Form Spells</h2>
+        <ul>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.k7Hm7hHmnSNy531b]{Battering Claws} (1st level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.b04245IxZErw2Fk5]{Grasping Claws} (1st level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.HDk7BS7n8jKquN9z]{Latch On} (1st level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.D6YMX1HGkdTE6dW7]{Feral Mauling} (2nd level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.WmIikDeu50A7TaU2]{Hungry for the Kill} (2nd level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.cCJSngS7OZ0yNS61]{Mighty Roar} (2nd level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.1C9BgwpcIK1t6zYk]{Ambush} (3rd level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.oJafBgxJwWkJHwY8]{Primal Ravage} (3rd level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.yBlQB92K3wU52K4H]{Rending Claws} (3rd level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.OvuFpUzoskaAhA0r]{Relentless Pursuit} (4th level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.Krb6Jgzu77ptvqBj]{Scatter the Herd} (4th level)</p></li>
+          <li><p>@UUID[Compendium.sosly-5e-house-rules.spells.Item.Mwhxdfua3gkIhmcr]{Savage Takedown} (5th level)</p></li>
+        </ul>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      n9iY1vD5eGeaHb7l: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.1.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!journal.pages!8MopJr18J312YX26.fXQEofk4MrynDIoZ'
   - name: Variant Encumbrance
     type: text
     sort: 800000

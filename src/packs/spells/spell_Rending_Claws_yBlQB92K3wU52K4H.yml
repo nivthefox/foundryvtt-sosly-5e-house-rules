@@ -1,0 +1,117 @@
+name: Rending Claws
+type: spell
+img: icons/creatures/abilities/mouth-teeth-long-red.webp
+system:
+  description:
+    value: >-
+      <p>The target hit by the attack takes an extra 3d6 damage. For the duration of the spell, whenever you hit the target with a melee attack while shape-shifted into a Beast form, the target takes an extra 2d6 damage. At the end of each of the target's turns, it can make a Constitution saving throw to end this effect. The extra damage is the same as the attack's damage type.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage of the initial attack increases by 1d6 for each spell slot level above 3.</p>
+    chat: ''
+  source:
+    custom: Beast Form Spells
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 3
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: '3d6'
+        name: 'Extra Damage'
+        prompt: false
+        visible: false
+      save:
+        ability: con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: rending-claws
+  properties:
+    - somatic
+    - beastform
+effects: []
+flags: {}
+folder: vufwjv5ImnM2tNaF
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: yBlQB92K3wU52K4H
+sort: 0
+_key: '!items!yBlQB92K3wU52K4H'

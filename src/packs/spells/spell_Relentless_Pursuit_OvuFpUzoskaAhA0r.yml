@@ -1,0 +1,113 @@
+name: Relentless Pursuit
+type: spell
+img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
+system:
+  description:
+    value: >-
+      <p>While you remain shape-changed into a Beast form, your movement is increased by 20 feet, and you ignore difficult terrain. Creatures hit by your melee attacks while shape-shifted into a beast form take an extra 2d6 damage, and their speed is reduced by a cumulative 5 feet until the end of your next turn. The extra damage is the same as the attack's damage type.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> Your movement increases by 5 feet for each spell slot level above 4.</p>
+    chat: ''
+  source:
+    custom: Beast Form Spells
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '10'
+    units: minute
+  target:
+    affects:
+      type: self
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 4
+  school: trs
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: true
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: relentless-pursuit
+  properties:
+    - somatic
+    - concentration
+    - beastform
+effects: []
+flags: {}
+folder: DYdV65fB6NADTWnJ
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: OvuFpUzoskaAhA0r
+sort: 0
+_key: '!items!OvuFpUzoskaAhA0r'

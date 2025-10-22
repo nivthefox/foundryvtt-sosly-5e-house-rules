@@ -1,0 +1,117 @@
+name: Scatter the Herd
+type: spell
+img: icons/creatures/abilities/cougar-roar-rush-orange.webp
+system:
+  description:
+    value: >-
+      <p>You make a melee attack against each creature of your choice within reach of your Beast form's melee attack, and your attacks deal an extra 1d6 damage on a hit, and the target makes a Wisdom saving throw. On a failed save, it must immediately use its reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target only takes the extra damage.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 4.</p>
+    chat: ''
+  source:
+    custom: Beast Form Spells
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: ''
+      choice: true
+      special: 'Each creature within reach'
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 4
+  school: enc
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: '1d6'
+        name: 'Extra Damage'
+        prompt: false
+        visible: false
+      save:
+        ability: wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+  identifier: scatter-the-herd
+  properties:
+    - somatic
+    - beastform
+effects: []
+flags: {}
+folder: DYdV65fB6NADTWnJ
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: Krb6Jgzu77ptvqBj
+sort: 0
+_key: '!items!Krb6Jgzu77ptvqBj'

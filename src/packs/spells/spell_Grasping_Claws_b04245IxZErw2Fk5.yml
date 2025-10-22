@@ -1,0 +1,112 @@
+name: Grasping Claws
+type: spell
+img: icons/creatures/abilities/paw-glowing-yellow.webp
+system:
+  description:
+    value: >-
+      <p>The target hit by the attack takes an extra 1d6 damage. Until the end of your next turn, the target's speed is halved and the next attack roll made against the target has advantage. The extra damage is the same as the attack's damage type.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 1.</p>
+    chat: ''
+  source:
+    custom: Beast Form Spells
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: '1d6'
+        name: 'Extra Damage'
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: grasping-claws
+  properties:
+    - somatic
+    - beastform
+effects: []
+flags: {}
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: b04245IxZErw2Fk5
+sort: 0
+_key: '!items!b04245IxZErw2Fk5'

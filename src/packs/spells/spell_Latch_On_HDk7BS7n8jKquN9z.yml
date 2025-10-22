@@ -1,0 +1,112 @@
+name: Latch On
+type: spell
+img: icons/creatures/abilities/fang-tooth-blood-red.webp
+system:
+  description:
+    value: >-
+      <p>The target hit by the attack takes an extra 1d6 damage, and the target is grappled by you. To escape the grapple, they must use their action to make a Strength (Athletics) or Dexterity (Acrobatics) check against your spell save DC. While you maintain the grapple, you have advantage on your attack rolls for any melee attacks made while shape-shifted into a Beast form.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 1.</p>
+    chat: ''
+  source:
+    custom: Beast Form Spells
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    license: ''
+  activation:
+    type: bonus
+    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: '1d6'
+        name: 'Extra Damage'
+        prompt: false
+        visible: false
+      sort: 0
+  identifier: latch-on
+  properties:
+    - somatic
+    - beastform
+effects: []
+flags: {}
+folder: OouqYOD5Z1oGHStK
+ownership:
+  default: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: HDk7BS7n8jKquN9z
+sort: 0
+_key: '!items!HDk7BS7n8jKquN9z'

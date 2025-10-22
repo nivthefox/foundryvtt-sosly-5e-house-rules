@@ -6,6 +6,10 @@ TYPES:
 sosly:
   conditions:
     Imperiled: Imperiled
+  components:
+    beastform:
+      label: Beast Form
+      abbreviation: B
   breather:
     result:
       full: "{name} takes a breather spending {dice} to recover {health}."

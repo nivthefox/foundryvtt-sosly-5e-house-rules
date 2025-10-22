@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.21.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.21.0) - 2025-10-21
+
+### Added
+- Add Beast Form (B) spell component for casting spells while Wild Shaped
+- Add 12 Beast Form spells for druids: Battering Claws, Grasping Claws, Latch On (1st); Feral Mauling, Hungry for the Kill, Mighty Roar (2nd); Ambush, Primal Ravage, Rending Claws (3rd); Relentless Pursuit, Scatter the Herd (4th); Savage Takedown (5th)
+- Add Beast Form Spells documentation to House Rules journal
+
 ## [1.20.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.20.1) - 2025-10-18
 
 ### Fixed
