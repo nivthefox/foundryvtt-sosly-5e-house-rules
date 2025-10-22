@@ -1,0 +1,62 @@
+name: Blood Vial
+type: consumable
+img: icons/consumables/potions/vial-cork-red.webp
+system:
+  description:
+    value: >-
+      <p>A vial used to hold blood for use with Blood Magic. This vial can hold blood equal to up to 30 hit points.</p>
+      <p>When you reduce a creature to 0 hit points, you can use a bonus action to collect blood equal to the damage dealt by the killing blow. You can also fill the vial during a rest by taking necrotic damage.</p>
+      <p><strong>Blood Decay:</strong> Blood loses potency over time. After each long rest, halve the value of stored blood in this vial (round down).</p>
+    chat: ''
+  source:
+    custom: SoSly 5e House Rules
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 1
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: common
+  identified: true
+  uses:
+    spent: 30
+    max: '30'
+    recovery:
+      - period: ''
+        type: recoverAll
+        formula: ''
+  type:
+    value: trinket
+    subtype: ''
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  attuned: false
+  identifier: blood-vial
+effects: []
+folder: YxlY1lduxLKWDV5n
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+_id: BloodVial001
+sort: 0
+_key: '!items!BloodVial001'

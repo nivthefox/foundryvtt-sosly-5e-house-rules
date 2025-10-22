@@ -6,6 +6,23 @@
     position: relative;
 }
 
+// Inline editing styles for meters
+.dnd5e2.sheet.actor .meter.progress {
+    input {
+        position: relative;
+        z-index: 10;
+        background: transparent;
+        color: inherit;
+        border: none;
+        text-align: center;
+    }
+
+    .label {
+        position: relative;
+        z-index: 10;
+    }
+}
+
 // Threshold tick marks for meters
 .dnd5e2.sheet.actor .meter .threshold-tick {
     position: absolute;

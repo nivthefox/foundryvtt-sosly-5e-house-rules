@@ -114,14 +114,17 @@ class MeterConfig extends DocumentSheet5e {
  * @param {number} options.valueMax - Maximum value
  * @param {string} options.cssClass - Additional CSS class for the meter
  * @param {boolean} [options.editable=false] - Whether to show config button
+ * @param {boolean} [options.inlineEditable=false] - Whether to enable click-to-edit inline
  * @param {Document} [options.document] - Document to update when configuring
  * @param {string} [options.property] - Property path to update
+ * @param {Function} [options.onUpdate] - Custom update handler for inline editing
  * @param {number[]} [options.thresholds] - Array of threshold values for tick marks
  * @param {boolean} [options.allowOverflow=false] - Whether values can exceed maximum
  * @returns {string} HTML string for the meter component
  */
 export async function createMeter({label, valueNow, valueMax, cssClass,
-    editable = false, document, property, thresholds = [], allowOverflow = false}) {
+    editable = false, inlineEditable = false, document, property, onUpdate,
+    thresholds = [], allowOverflow = false}) {
 
     const percentage = valueMax > 0 ? Math.round(Math.min(valueNow / valueMax, 1) * 100) : 0;
     const isOverflow = allowOverflow && valueNow > valueMax;
@@ -139,6 +142,7 @@ export async function createMeter({label, valueNow, valueMax, cssClass,
         valueMax,
         cssClass,
         editable,
+        inlineEditable,
         percentage,
         thresholds: thresholdTicks,
         isOverflow,
@@ -147,12 +151,12 @@ export async function createMeter({label, valueNow, valueMax, cssClass,
 
     const html = await renderTemplate(`modules/${module_id}/templates/components/meter.hbs`, templateData);
 
-    // If editable, set up the config button handler
-    if (editable && document && property) {
-        // We need to return both HTML and a setup function
-        return {
-            html,
-            setup: element => {
+    // Set up handlers
+    return {
+        html,
+        setup: element => {
+            // Config button handler
+            if (editable && document && property) {
                 const configButton = element.querySelector('[data-action="config"]');
                 if (configButton) {
                     configButton.addEventListener('click', event => {
@@ -161,8 +165,50 @@ export async function createMeter({label, valueNow, valueMax, cssClass,
                     });
                 }
             }
-        };
-    }
 
-    return {html, setup: () => {}};
+            // Inline edit handler
+            if (inlineEditable) {
+                const meter = element.querySelector('.meter.progress');
+                const labelDiv = meter.querySelector('.label');
+                const input = meter.querySelector('input');
+
+                if (!meter || !labelDiv || !input) {
+                    return;
+                }
+
+                // Click to show input
+                labelDiv.addEventListener('click', () => {
+                    labelDiv.hidden = true;
+                    input.hidden = false;
+                    input.focus();
+                    input.select();
+                });
+
+                // Blur to hide input and update value
+                input.addEventListener('blur', async () => {
+                    input.hidden = true;
+                    labelDiv.hidden = false;
+
+                    const newValue = parseInt(input.value) || 0;
+                    const clampedValue = Math.max(0, Math.min(newValue, valueMax));
+
+                    if (onUpdate) {
+                        await onUpdate(clampedValue);
+                    } else if (document && property) {
+                        await document.update({[property]: clampedValue});
+                    }
+                });
+
+                // Enter to commit
+                input.addEventListener('keydown', event => {
+                    if (event.key === 'Enter') {
+                        input.blur();
+                    } else if (event.key === 'Escape') {
+                        input.value = valueNow;
+                        input.blur();
+                    }
+                });
+            }
+        }
+    };
 }

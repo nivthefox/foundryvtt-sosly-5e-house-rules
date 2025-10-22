@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Blood Pool tracking meter to character sheets for Severed Lands Blood Magic
+- Add click-to-edit inline editing for Blood Pool meter
+- Add Blood Vial equipment item for storing blood
+- Add blood vial decay mechanic (halves stored blood on long rest)
+
 ## [1.22.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.22.1) - 2025-10-22
 
 ### Fixed

@@ -8,6 +8,7 @@ import { registerSeveredLandsBloodMagicSettings } from './settings';
 import { registerSpellHandler } from './spell-handler';
 import { registerRecoveryHandler } from './recovery';
 import { registerChatHandler } from './chat-handler';
+import { registerBloodMagicHooks } from './ui';
 import { handleMadnessCombatTurn } from './combat';
 
 export function registerSeveredLandsBloodMagicFeature() {
@@ -17,6 +18,7 @@ export function registerSeveredLandsBloodMagicFeature() {
     registerSpellHandler();
     registerRecoveryHandler();
     registerChatHandler();
+    registerBloodMagicHooks();
 
     // Register combat turn handler for madness save re-attempts
     Hooks.on('combatTurnChange', async (combat, previous, next) => {

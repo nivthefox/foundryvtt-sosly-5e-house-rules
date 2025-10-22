@@ -118,6 +118,7 @@ sosly:
       slot: "{actor}'s magic hungers for more! An additional level {level} spell slot is consumed."
       damage: "{actor}'s magic hungers but finds no fuel! They take {damage} psychic damage."
     recovery: "{actor} recovers from madness (reduced by {profBonus}, now at {current} madness)"
+    bloodPool: Blood Pool
     dmSelect:
       title: Select Madness Effect
       short-term: Short-term Madness

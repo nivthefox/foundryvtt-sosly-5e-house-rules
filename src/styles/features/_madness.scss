@@ -1,8 +1,14 @@
 // Madness feature-specific meter styling
-
 .dnd5e2.sheet.actor .meter.madness.progress::before {
     background: linear-gradient(to right, #5c3a00 0%, #b8860b 100%);
     border-inline-end: var(--border-width) solid #6b4500;
+}
+
+// Blood Pool meter styling
+.dnd5e2.sheet.actor .meter.blood-pool.progress::before {
+    background: url('../public/ui/blood-texture.webp') repeat-x, linear-gradient(to right, #8b0000 0%, #dc143c 100%);
+    background-size: auto, 100% 100%;
+    border-inline-end: var(--border-width) solid #a00000;
 }
 
 // Blood Magic Madness Chat Cards

@@ -18,5 +18,8 @@
             <span class="max">{{valueMax}}</span>
             {{/unless}}
         </div>
+        {{#if inlineEditable}}
+        <input type="text" data-dtype="Number" placeholder="0" value="{{valueNow}}" hidden>
+        {{/if}}
     </div>
 </div>
