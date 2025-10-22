@@ -21,11 +21,37 @@ export class ItemListControls {
                 comparator: (a, b) => a.name.localeCompare(b.name, game.i18n.lang)
             }
         };
+
+        this._migrateOldFlags();
+    }
+
+    async _migrateOldFlags() {
+        const sortFlag = `sheetPrefs.location.tabs.${this.target}.sort`;
+        const groupFlag = `sheetPrefs.location.tabs.${this.target}.group`;
+
+        const oldSortValue = foundry.utils.getProperty(game.user.flags, `dnd5e.${sortFlag}`);
+        const oldGroupValue = foundry.utils.getProperty(game.user.flags, `dnd5e.${groupFlag}`);
+
+        const updates = {};
+
+        if (oldSortValue !== undefined) {
+            updates[`flags.${module_id}.${sortFlag}`] = oldSortValue;
+            updates[`flags.dnd5e.-=${sortFlag}`] = null;
+        }
+
+        if (oldGroupValue !== undefined) {
+            updates[`flags.${module_id}.${groupFlag}`] = oldGroupValue;
+            updates[`flags.dnd5e.-=${groupFlag}`] = null;
+        }
+
+        if (Object.keys(updates).length > 0) {
+            await game.user.update(updates);
+        }
     }
 
     get sortMode() {
         const flag = `sheetPrefs.location.tabs.${this.target}.sort`;
-        return game.user.getFlag('dnd5e', flag) || 'm';
+        return game.user.getFlag(module_id, flag) || 'm';
     }
 
     async buildSearchControls() {
@@ -112,7 +138,7 @@ export class ItemListControls {
         const currentMode = this.sortMode;
         const newMode = currentMode === 'm' ? 'a' : 'm';
 
-        await game.user.setFlag('dnd5e', flag, newMode);
+        await game.user.setFlag(module_id, flag, newMode);
 
         const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
         const sortControl = searchElement?.querySelector('[data-action="sort"]');
@@ -130,10 +156,10 @@ export class ItemListControls {
 
     async _onToggleGroup() {
         const flag = `sheetPrefs.location.tabs.${this.target}.group`;
-        const currentValue = game.user.getFlag('dnd5e', flag);
+        const currentValue = game.user.getFlag(module_id, flag);
         const newValue = currentValue === false;
 
-        await game.user.setFlag('dnd5e', flag, newValue);
+        await game.user.setFlag(module_id, flag, newValue);
 
         this._initGrouping();
         this._applyGrouping();
@@ -212,7 +238,7 @@ export class ItemListControls {
 
     get grouping() {
         const flag = `sheetPrefs.location.tabs.${this.target}.group`;
-        return game.user.getFlag('dnd5e', flag) !== false;
+        return game.user.getFlag(module_id, flag) !== false;
     }
 
     _initGrouping() {

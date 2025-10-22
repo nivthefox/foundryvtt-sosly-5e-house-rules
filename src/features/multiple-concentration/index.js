@@ -25,26 +25,43 @@ export function registerMultipleConcentrationFeature() {
             // Setting concentration limits to 2
             const actors = game.actors.filter(actor =>
                 (actor.type === 'character' || actor.type === 'npc')
-                && actor.getFlag('sosly', 'originalConcentrationLimit') === undefined
+                && actor.getFlag(module_id, 'originalConcentrationLimit') === undefined
             );
 
             for (const actor of actors) {
                 const currentLimit = actor.system.attributes?.concentration?.limit ?? 1;
-                await actor.setFlag('sosly', 'originalConcentrationLimit', currentLimit);
+                await actor.setFlag(module_id, 'originalConcentrationLimit', currentLimit);
                 await actor.update({'system.attributes.concentration.limit': 2});
             }
         } else {
             // Restoring original concentration limits
             const actors = game.actors.filter(actor =>
                 (actor.type === 'character' || actor.type === 'npc')
-                && actor.getFlag('sosly', 'originalConcentrationLimit') !== undefined
+                && actor.getFlag(module_id, 'originalConcentrationLimit') !== undefined
             );
 
             for (const actor of actors) {
-                const originalLimit = actor.getFlag('sosly', 'originalConcentrationLimit');
+                const originalLimit = actor.getFlag(module_id, 'originalConcentrationLimit');
                 await actor.update({'system.attributes.concentration.limit': originalLimit});
-                await actor.unsetFlag('sosly', 'originalConcentrationLimit');
+                await actor.unsetFlag(module_id, 'originalConcentrationLimit');
             }
+        }
+    });
+
+    // Migrate old 'sosly' namespace flags to module_id namespace
+    Hooks.on('renderActorSheet', async (app, html, data) => {
+        const actor = app.actor;
+        if (!actor || (actor.type !== 'character' && actor.type !== 'npc')) {
+            return;
+        }
+
+        const oldFlag = foundry.utils.getProperty(actor.flags, 'sosly.originalConcentrationLimit');
+        if (oldFlag !== undefined) {
+            await actor.update({
+                [`flags.${module_id}.originalConcentrationLimit`]: oldFlag,
+                'flags.sosly.-=originalConcentrationLimit': null
+            });
+            logger.info(`Migrated concentration flag for actor ${actor.name}`);
         }
     });
 
@@ -59,7 +76,7 @@ export function registerMultipleConcentrationFeature() {
         const originalLimit = data.system?.attributes?.concentration?.limit ?? 1;
         await actor.updateSource({
             'system.attributes.concentration.limit': 2,
-            'flags.sosly.originalConcentrationLimit': originalLimit
+            [`flags.${module_id}.originalConcentrationLimit`]: originalLimit
         });
     });
 
