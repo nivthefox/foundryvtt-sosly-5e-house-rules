@@ -439,7 +439,7 @@ prototypeToken:
     negative: false
     priority: 0
   texture:
-    src: tokenizer/npc-images/kobold_inventor.Token.webp?1761122312566
+    src: modules/sosly-5e-house-rules/public/tokens/kobold_inventor.Token.webp
     tint: '#ffffff'
     scaleX: 0.8
     scaleY: 0.8
@@ -1548,5 +1548,5 @@ _stats:
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _id: MVkR0RBCtNeKuzLo
 sort: 0
-img: tokenizer/npc-images/kobold_inventor.Avatar.webp?1761122312566
+img: modules/sosly-5e-house-rules/public/monsters/Kobold Inventor.webp
 _key: '!actors!MVkR0RBCtNeKuzLo'

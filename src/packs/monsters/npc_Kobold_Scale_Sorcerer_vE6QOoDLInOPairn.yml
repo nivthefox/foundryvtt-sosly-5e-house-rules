@@ -439,7 +439,7 @@ prototypeToken:
     negative: false
     priority: 0
   texture:
-    src: tokenizer/npc-images/kobold_scale_sorcerer.Token.webp?1761122511310
+    src: modules/sosly-5e-house-rules/public/tokens/kobold_scale_sorcerer.Token.webp
     tint: '#ffffff'
     scaleX: 0.8
     scaleY: 0.8
@@ -1758,5 +1758,5 @@ _stats:
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _id: vE6QOoDLInOPairn
 sort: 0
-img: tokenizer/npc-images/kobold_scale_sorcerer.Avatar.webp?1761122511310
+img: modules/sosly-5e-house-rules/public/monsters/Kobold Scale Sorcerer.webp
 _key: '!actors!vE6QOoDLInOPairn'

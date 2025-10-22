@@ -439,7 +439,7 @@ prototypeToken:
     negative: false
     priority: 0
   texture:
-    src: tokenizer/npc-images/kobold_dragonshield.Token.webp?1761122149186
+    src: modules/sosly-5e-house-rules/public/tokens/kobold_dragonshield.Token.webp
     tint: '#ffffff'
     scaleX: 0.8
     scaleY: 0.8
@@ -1101,5 +1101,5 @@ _stats:
   lastModifiedBy: NbCXvDXaYhqPCRFb
 _id: 2YpZpdxivpCUSf9L
 sort: 0
-img: tokenizer/npc-images/kobold_dragonshield.Avatar.webp?1761122149186
+img: modules/sosly-5e-house-rules/public/monsters/Kobold Dragonshield.webp
 _key: '!actors!2YpZpdxivpCUSf9L'
