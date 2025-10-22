@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'When you take damage'
+        condition: When you take damage
       consumption:
         scaling:
           allowed: false
@@ -65,7 +65,11 @@ system:
     max: '1'
   description:
     value: >-
-      <p>You can draw on your psychic focus to escape death's grasp. As a reaction when you take damage, you can halve that damage against you. Your psychic focus immediately ends if it's active, and you can't use it until you finish a short or long rest.</p><p>You can't use this feature if you can't use your psychic focus.</p>
+      <p>You can draw on your psychic focus to escape death's grasp. As a
+      reaction when you take damage, you can halve that damage against you. Your
+      psychic focus immediately ends if it's active, and you can't use it until
+      you finish a short or long rest.</p><p>You can't use this feature if you
+      can't use your psychic focus.</p>
     chat: ''
   identifier: new-item
   source:

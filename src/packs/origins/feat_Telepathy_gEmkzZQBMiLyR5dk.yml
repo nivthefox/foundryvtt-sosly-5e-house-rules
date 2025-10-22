@@ -3,7 +3,10 @@ type: feat
 img: icons/magic/perception/eye-tendrils-web-purple.webp
 system:
   description:
-    value: <p>You have @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.gMTdiYGmbiwDyymt]{Telepathy} to 120 feet.</p>
+    value: >-
+      <p>You have
+      @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.gMTdiYGmbiwDyymt]{Telepathy}
+      to 120 feet.</p>
     chat: ''
   source:
     custom: ''
@@ -49,6 +52,16 @@ effects:
     description: ''
     statuses: []
     sort: 0
+    _stats:
+      coreVersion: '12.331'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+    flags: {}
     _key: '!items.effects!gEmkzZQBMiLyR5dk.Xe3nQwB8vKm7Hj2L'
 flags: {}
 folder: ZikcewzQB5JtDbC9

@@ -4,8 +4,13 @@ img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
 system:
   description:
     value: >-
-      <p>While you remain shape-changed into a Beast form, your movement is increased by 20 feet, and you ignore difficult terrain. Creatures hit by your melee attacks while shape-shifted into a beast form take an extra 2d6 damage, and their speed is reduced by a cumulative 5 feet until the end of your next turn. The extra damage is the same as the attack's damage type.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> Your movement increases by 5 feet for each spell slot level above 4.</p>
+      <p>While you remain shape-changed into a Beast form, your movement is
+      increased by 20 feet, and you ignore difficult terrain. Creatures hit by
+      your melee attacks while shape-shifted into a beast form take an extra 2d6
+      damage, and their speed is reduced by a cumulative 5 feet until the end of
+      your next turn. The extra damage is the same as the attack's damage
+      type.</p> <p><em><strong>Using a Higher-Level Spell Slot.</strong></em>
+      Your movement increases by 5 feet for each spell slot level above 4.</p>
     chat: ''
   source:
     custom: Beast Form Spells

@@ -11,7 +11,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain the ability to extend your knowledge. When you finish a long rest, you gain one tool or skill proficiency of your choice. You can replace this selection with a language. This benefit lasts until you finish a long rest.</p>
+      <p>You gain the ability to extend your knowledge. When you finish a long
+      rest, you gain one tool or skill proficiency of your choice. You can
+      replace this selection with a language. This benefit lasts until you
+      finish a long rest.</p>
     chat: ''
   identifier: new-item
   source:

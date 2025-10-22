@@ -4,8 +4,11 @@ img: icons/creatures/abilities/mouth-teeth-rows-red.webp
 system:
   description:
     value: >-
-      <p>The target hit by the attack takes an extra 2d6 necrotic damage, and you can spend and roll one of your unspent Hit Dice and regain a number of hit points equal to the roll plus your spellcasting ability modifier.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 2.</p>
+      <p>The target hit by the attack takes an extra 2d6 necrotic damage, and
+      you can spend and roll one of your unspent Hit Dice and regain a number of
+      hit points equal to the roll plus your spellcasting ability modifier.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra
+      damage increases by 1d6 for each spell slot level above 2.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -16,7 +19,9 @@ system:
     license: ''
   activation:
     type: bonus
-    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    condition: >-
+      Immediately after hitting a creature with a melee attack while
+      shape-shifted into a Beast form
     value: 1
   duration:
     value: ''
@@ -84,8 +89,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '2d6'
-        name: 'Extra Necrotic Damage'
+        formula: 2d6
+        name: Extra Necrotic Damage
         prompt: false
         visible: false
       sort: 0

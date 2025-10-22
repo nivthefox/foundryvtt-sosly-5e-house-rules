@@ -10,9 +10,17 @@ system:
     revision: 1
   description:
     value: >-
-      <p>Choose either yourself, a willing creature within range that has less than half of its hit points remaining, or the body of a creature within range that was reduced to 0 hit points or killed within the last minute and that has not regained hit points since then. The target must have blood, or else the spell fails.</p>
-      <p>A wave of crimson energy surges out from the target. Each creature other than the target within 5 feet of the target must make a Constitution saving throw, taking [[/damage 2d8 type=necrotic]] necrotic damage on a failed save, or half as much damage on a successful one.</p>
-      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/damage 1d8]] for each slot level above 1st.</p>
+      <p>Choose either yourself, a willing creature within range that has less
+      than half of its hit points remaining, or the body of a creature within
+      range that was reduced to 0 hit points or killed within the last minute
+      and that has not regained hit points since then. The target must have
+      blood, or else the spell fails.</p> <p>A wave of crimson energy surges out
+      from the target. Each creature other than the target within 5 feet of the
+      target must make a Constitution saving throw, taking [[/damage 2d8
+      type=necrotic]] necrotic damage on a failed save, or half as much damage
+      on a successful one.</p> <p><em><strong>At Higher Levels.</strong></em>
+      When you cast this spell using a spell slot of 2nd level or higher, the
+      damage increases by [[/damage 1d8]] for each slot level above 1st.</p>
     chat: ''
   level: 1
   school: nec

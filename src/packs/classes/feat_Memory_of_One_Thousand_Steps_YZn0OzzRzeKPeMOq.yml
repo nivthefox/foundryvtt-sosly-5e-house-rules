@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'When you are hit by an attack'
+        condition: When you are hit by an attack
       consumption:
         scaling:
           allowed: false
@@ -65,7 +65,11 @@ system:
     max: '1'
   description:
     value: >-
-      <p>You gain the ability to use psionics to recall your steps. As a reaction when you are hit by an attack, you can teleport to an unoccupied space that you occupied since the start of your last turn, and the attack misses you. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+      <p>You gain the ability to use psionics to recall your steps. As a
+      reaction when you are hit by an attack, you can teleport to an unoccupied
+      space that you occupied since the start of your last turn, and the attack
+      misses you. Once you use this feature, you can't use it again until you
+      finish a short or long rest.</p>
     chat: ''
   identifier: new-item
   source:

@@ -65,7 +65,13 @@ system:
     max: '1'
   description:
     value: >-
-      <p>You gain the ability to become a ghostly figure of psionic energy. As an action, you can transform into a transparent, ghostly version of yourself. While in this form, you have resistance to all damage, move at half speed, and can pass through objects and creatures while moving but can't willingly end your movement in their spaces. The form lasts for 10 minutes or until you use an action to end it.</p><p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+      <p>You gain the ability to become a ghostly figure of psionic energy. As
+      an action, you can transform into a transparent, ghostly version of
+      yourself. While in this form, you have resistance to all damage, move at
+      half speed, and can pass through objects and creatures while moving but
+      can't willingly end your movement in their spaces. The form lasts for 10
+      minutes or until you use an action to end it.</p><p>Once you use this
+      feature, you can't use it again until you finish a long rest.</p>
     chat: ''
   identifier: new-item
   source:
@@ -104,7 +110,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: <p>You have resistance to all damage, move at half speed, and can pass through objects and creatures while moving.</p>
+    description: >-
+      <p>You have resistance to all damage, move at half speed, and can pass
+      through objects and creatures while moving.</p>
     tint: '#ffffff'
     transfer: false
     statuses: []

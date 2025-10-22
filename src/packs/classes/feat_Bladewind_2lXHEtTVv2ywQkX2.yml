@@ -40,7 +40,7 @@ system:
           choice: false
           type: creature
           count: ''
-          special: 'Any number of creatures within 5 feet of you'
+          special: Any number of creatures within 5 feet of you
         override: false
         prompt: false
       uses:
@@ -75,7 +75,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain the ability to momentarily fragment your soul knife into numerous identical blades, each of which strikes at an opponent. As an action, you can make a melee attack with your soul knife against any number of creatures within 5 feet of you, with a separate attack roll for each target.</p>
+      <p>You gain the ability to momentarily fragment your soul knife into
+      numerous identical blades, each of which strikes at an opponent. As an
+      action, you can make a melee attack with your soul knife against any
+      number of creatures within 5 feet of you, with a separate attack roll for
+      each target.</p>
     chat: ''
   identifier: new-item
   source:

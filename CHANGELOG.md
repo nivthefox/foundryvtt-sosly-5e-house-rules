@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Kobold Dragonshield monster (CR 1)
+- Add Kobold Inventor monster with 8 weapon inventions (CR 1/4)
+- Add Kobold Scale Sorcerer monster with innate spellcasting (CR 1)
+
 ## [1.21.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.21.0) - 2025-10-21
 
 ### Added

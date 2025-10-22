@@ -4,7 +4,10 @@ img: icons/creatures/abilities/lion-roar-yellow.webp
 system:
   description:
     value: >-
-      <p>Each creature of your choice within a 15 foot emanation centered on you must make a Wisdom saving throw or be frightened of you until the spell ends. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+      <p>Each creature of your choice within a 15 foot emanation centered on you
+      must make a Wisdom saving throw or be frightened of you until the spell
+      ends. A frightened target can repeat the saving throw at the end of each
+      of its turns, ending the effect on itself on a success.</p>
     chat: ''
   source:
     custom: Beast Form Spells

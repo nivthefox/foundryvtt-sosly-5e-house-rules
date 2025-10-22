@@ -13,7 +13,7 @@ system:
         type: reaction
         value: null
         override: false
-        condition: 'When you take damage of that type'
+        condition: When you take damage of that type
       consumption:
         scaling:
           allowed: false
@@ -60,7 +60,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>If you have resistance to a type of damage, you can spend 2 power points as a reaction when you take damage of that type to ignore that damage; you gain immunity to that damage type until the end of your next turn.</p>
+      <p>If you have resistance to a type of damage, you can spend 2 power
+      points as a reaction when you take damage of that type to ignore that
+      damage; you gain immunity to that damage type until the end of your next
+      turn.</p>
     chat: ''
   identifier: new-item
   source:
@@ -95,7 +98,9 @@ effects:
       turns: 1
       startRound: null
       startTurn: null
-    description: <p>You have immunity to the damage type until the end of your next turn.</p>
+    description: >-
+      <p>You have immunity to the damage type until the end of your next
+      turn.</p>
     tint: '#ffffff'
     transfer: false
     statuses: []

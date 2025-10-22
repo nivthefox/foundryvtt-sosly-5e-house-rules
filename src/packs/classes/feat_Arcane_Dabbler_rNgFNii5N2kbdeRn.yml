@@ -11,7 +11,18 @@ system:
     max: ''
   description:
     value: >-
-      <p>You learn three wizard spells of your choice and always have them prepared. The spells must be of 1st through 3rd level.</p><p>As a bonus action, you can spend power points to create spell slots that you can use to cast these spells, as well as other spells you are capable of casting. The power point cost of each spell slot is detailed on the table below.</p><table><thead><tr><th>Spell Slot Level</th><th>Power Point Cost</th></tr></thead><tbody><tr><td>1st</td><td>2</td></tr><tr><td>2nd</td><td>3</td></tr><tr><td>3rd</td><td>5</td></tr><tr><td>4th</td><td>6</td></tr><tr><td>5th</td><td>7</td></tr></tbody></table><p>The spell slot remains until you use it or finish a long rest. You must observe your power limit when spending power points to create a spell slot.</p><p>Whenever you gain a level in this class, you can replace one of the chosen wizard spells with a different wizard spell of 1st through 3rd level.</p>
+      <p>You learn three wizard spells of your choice and always have them
+      prepared. The spells must be of 1st through 3rd level.</p><p>As a bonus
+      action, you can spend power points to create spell slots that you can use
+      to cast these spells, as well as other spells you are capable of casting.
+      The power point cost of each spell slot is detailed on the table
+      below.</p><table><thead><tr><th>Spell Slot Level</th><th>Power Point
+      Cost</th></tr></thead><tbody><tr><td>1st</td><td>2</td></tr><tr><td>2nd</td><td>3</td></tr><tr><td>3rd</td><td>5</td></tr><tr><td>4th</td><td>6</td></tr><tr><td>5th</td><td>7</td></tr></tbody></table><p>The
+      spell slot remains until you use it or finish a long rest. You must
+      observe your power limit when spending power points to create a spell
+      slot.</p><p>Whenever you gain a level in this class, you can replace one
+      of the chosen wizard spells with a different wizard spell of 1st through
+      3rd level.</p>
     chat: ''
   identifier: new-item
   source:

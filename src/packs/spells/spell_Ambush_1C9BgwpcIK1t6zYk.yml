@@ -4,8 +4,11 @@ img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
 system:
   description:
     value: >-
-      <p>The target hit by the attack takes an extra 4d6 damage. If you were invisible to the target, it takes an extra 8d6 damage, instead. The extra damage is the same as the attack's damage type.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 2d6 for each spell slot level above 3.</p>
+      <p>The target hit by the attack takes an extra 4d6 damage. If you were
+      invisible to the target, it takes an extra 8d6 damage, instead. The extra
+      damage is the same as the attack's damage type.</p> <p><em><strong>Using a
+      Higher-Level Spell Slot.</strong></em> The extra damage increases by 2d6
+      for each spell slot level above 3.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -16,7 +19,9 @@ system:
     license: ''
   activation:
     type: bonus
-    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    condition: >-
+      Immediately after hitting a creature with a melee attack while
+      shape-shifted into a Beast form
     value: 1
   duration:
     value: ''
@@ -84,8 +89,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '4d6'
-        name: 'Extra Damage'
+        formula: 4d6
+        name: Extra Damage
         prompt: false
         visible: false
       sort: 0

@@ -4,8 +4,11 @@ img: icons/creatures/abilities/paw-print-pair-purple.webp
 system:
   description:
     value: >-
-      <p>The target hit by the attack takes an extra 1d6 damage, and is moved 10 feet in a direction of your choice. The extra damage is the same as the attack's damage type.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 1.</p>
+      <p>The target hit by the attack takes an extra 1d6 damage, and is moved 10
+      feet in a direction of your choice. The extra damage is the same as the
+      attack's damage type.</p> <p><em><strong>Using a Higher-Level Spell
+      Slot.</strong></em> The extra damage increases by 1d6 for each spell slot
+      level above 1.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -16,7 +19,9 @@ system:
     license: ''
   activation:
     type: bonus
-    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    condition: >-
+      Immediately after hitting a creature with a melee attack while
+      shape-shifted into a Beast form
     value: 1
   duration:
     value: ''
@@ -84,8 +89,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '1d6'
-        name: 'Extra Damage'
+        formula: 1d6
+        name: Extra Damage
         prompt: false
         visible: false
       sort: 0

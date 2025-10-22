@@ -10,9 +10,16 @@ system:
     revision: 1
   description:
     value: >-
-      <p>You send a missile of magical force, camouflaged and disguised by illusion, hurtling at one creature that you can see within range. The target must make an Intelligence saving throw, taking [[/damage 5d4 type=force]] damage on a failure, or half as much damage on a success.</p>
-      <p>A target automatically succeeds on its save against the spell if it doesn't rely on sight, as with blindsight, or if it can see through illusions, as with truesight.</p>
-      <p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/damage 2d4]] for each slot level above 1st.</p>
+      <p>You send a missile of magical force, camouflaged and disguised by
+      illusion, hurtling at one creature that you can see within range. The
+      target must make an Intelligence saving throw, taking [[/damage 5d4
+      type=force]] damage on a failure, or half as much damage on a success.</p>
+      <p>A target automatically succeeds on its save against the spell if it
+      doesn't rely on sight, as with blindsight, or if it can see through
+      illusions, as with truesight.</p> <p><em><strong>At Higher
+      Levels.</strong></em> When you cast this spell using a spell slot of 2nd
+      level or higher, the damage increases by [[/damage 2d4]] for each slot
+      level above 1st.</p>
     chat: ''
   level: 1
   school: ill

@@ -9,11 +9,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>You learn two psionic talents of your choice.</p><p>In addition,
-      choose one discipline. You learn that discipline and gain 2 psi points,
-      which may only be used on the chosen discipline.</p><p>If you do not
-      have the Psionics class feature, you can't gain the psychic focus benefit
-      of the discipline.</p><p>Your psionic ability for these powers is
+      <p>You learn two psionic talents of your choice.</p><p>In addition, choose
+      one discipline. You learn that discipline and gain 2 psi points, which may
+      only be used on the chosen discipline.</p><p>If you do not have the
+      Psionics class feature, you can't gain the psychic focus benefit of the
+      discipline.</p><p>Your psionic ability for these powers is
       Intelligence.</p>
     chat: ''
   identifier: wild-talent
@@ -51,8 +51,7 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: >-
-      Grants 2 psi points which may only be used on your chosen discipline.
+    description: Grants 2 psi points which may only be used on your chosen discipline.
     tint: '#ffffff'
     transfer: true
     statuses: []

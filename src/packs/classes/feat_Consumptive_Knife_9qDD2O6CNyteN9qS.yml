@@ -11,7 +11,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>Whenever you slay an enemy creature with a soul knife attack, you immediately regain 2 power points.</p>
+      <p>Whenever you slay an enemy creature with a soul knife attack, you
+      immediately regain 2 power points.</p>
     chat: ''
   identifier: new-item
   source:

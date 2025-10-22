@@ -6,7 +6,14 @@ img: modules/sosly-5e-house-rules/public/subclasses/soul-knife.webp
 system:
   description:
     value: >-
-      <blockquote><p>Manifest Deadly Weapons of Pure Psychic Energy</p></blockquote><p>The Order of the Soul Knife sacrifices the breadth of knowledge other psionicists gain to focus on a specific psionic technique. These psionicists learn to manifest a deadly weapon of pure psychic energy that they can use to cleave through foes.</p><p>Soul knives vary widely in their approach to this path. Some follow it out of a desire to achieve martial perfection. Others are ruthless assassins who seek to become the perfect killer.</p>
+      <blockquote><p>Manifest Deadly Weapons of Pure Psychic
+      Energy</p></blockquote><p>The Order of the Soul Knife sacrifices the
+      breadth of knowledge other psionicists gain to focus on a specific psionic
+      technique. These psionicists learn to manifest a deadly weapon of pure
+      psychic energy that they can use to cleave through foes.</p><p>Soul knives
+      vary widely in their approach to this path. Some follow it out of a desire
+      to achieve martial perfection. Others are ruthless assassins who seek to
+      become the perfect killer.</p>
     chat: ''
   identifier: soulknife
   source:

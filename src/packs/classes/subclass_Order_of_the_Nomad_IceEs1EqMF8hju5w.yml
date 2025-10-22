@@ -6,7 +6,16 @@ img: modules/sosly-5e-house-rules/public/subclasses/nomad.webp
 system:
   description:
     value: >-
-      <blockquote><p>Explore the Multiverse Through Psionic Travel</p></blockquote><p>Psionicists of the Order of the Nomad keep their minds in a strange, rarified state. They seek to accumulate as much knowledge as possible, as they quest to unravel the mysteries of the multiverse and seek the underlying structure of all things. At the same time, they perceive a bizarre, living web of knowledge they call the noosphere.</p><p>Nomads, as their name indicates, delight in travel, exploration, and discovery. They desire to accumulate as much knowledge as possible, and the pursuit of secrets and hidden lore can become an obsession for them.</p>
+      <blockquote><p>Explore the Multiverse Through Psionic
+      Travel</p></blockquote><p>Psionicists of the Order of the Nomad keep their
+      minds in a strange, rarified state. They seek to accumulate as much
+      knowledge as possible, as they quest to unravel the mysteries of the
+      multiverse and seek the underlying structure of all things. At the same
+      time, they perceive a bizarre, living web of knowledge they call the
+      noosphere.</p><p>Nomads, as their name indicates, delight in travel,
+      exploration, and discovery. They desire to accumulate as much knowledge as
+      possible, and the pursuit of secrets and hidden lore can become an
+      obsession for them.</p>
     chat: ''
   identifier: nomad
   source:

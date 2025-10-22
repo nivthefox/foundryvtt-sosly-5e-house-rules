@@ -3,7 +3,9 @@ type: feat
 img: icons/magic/air/air-burst-spiral-large-teal-green.webp
 system:
   description:
-    value: <p>Your body produces all the nutrients, hydration, and energy you need. You don't require food or water.</p>
+    value: >-
+      <p>Your body produces all the nutrients, hydration, and energy you need.
+      You don't require food or water.</p>
     chat: ''
   source:
     custom: ''

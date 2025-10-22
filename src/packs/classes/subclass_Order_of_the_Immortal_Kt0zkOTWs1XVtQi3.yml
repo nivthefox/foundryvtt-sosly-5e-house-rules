@@ -6,7 +6,13 @@ img: modules/sosly-5e-house-rules/public/subclasses/immortal.webp
 system:
   description:
     value: >-
-      <blockquote><p>Transform Body Into Living Weapon Through Psionic Power</p></blockquote><p>The Order of the Immortal uses psionic energy to augment and modify the physical form. Followers of this order are known as Immortals. They use psionic energy to modify their bodies, strengthening them against attack and turning themselves into living weapons.</p><p>Their mastery of the physical form grants them their name, for Immortals are notoriously difficult to kill.</p>
+      <blockquote><p>Transform Body Into Living Weapon Through Psionic
+      Power</p></blockquote><p>The Order of the Immortal uses psionic energy to
+      augment and modify the physical form. Followers of this order are known as
+      Immortals. They use psionic energy to modify their bodies, strengthening
+      them against attack and turning themselves into living
+      weapons.</p><p>Their mastery of the physical form grants them their name,
+      for Immortals are notoriously difficult to kill.</p>
     chat: ''
   identifier: immortal
   source:

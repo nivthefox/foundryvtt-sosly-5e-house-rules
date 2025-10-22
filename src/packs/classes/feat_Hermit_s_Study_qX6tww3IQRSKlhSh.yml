@@ -11,7 +11,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain proficiency with one of the following skills of your choice: Animal Handling, Arcana, History, Insight, Medicine, Nature, Perception, Religion, or Survival.</p>
+      <p>You gain proficiency with one of the following skills of your choice:
+      Animal Handling, Arcana, History, Insight, Medicine, Nature, Perception,
+      Religion, or Survival.</p>
     chat: ''
   identifier: new-item
   source:

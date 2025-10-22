@@ -4,7 +4,45 @@ img: modules/sosly-5e-house-rules/public/species/thiraxi.webp
 system:
   description:
     value: >-
-      <p>The Thiraxi are the native sentient species of Erdyr, born of the world's ancient soil and deeply attuned to its rhythms. When followers of the lost god Adrair arrived thousands of years ago, the Thiraxi were driven from their ancestral lands into remote wastes and deep jungles. To this day, many Thiraxi refer to these invaders as the "Godless Ones"—a title that carries bitter irony in a world now abandoned by all gods.</p><p>Thiraxi society is tribal and semi-nomadic, building labyrinthine stone sanctuaries underground or into cliff faces where silence is law and psychic echoes carry between minds. They wield psionic abilities through ritual and meditation, viewing these mental gifts not as blessings but as necessary burdens that must be carefully balanced. Elders known as Mind-Weavers serve as leaders and judges, mediating disputes through trance states where the thoughts of all involved are laid bare.</p><p>The Thiraxi are tall, lithe beings with semi-translucent skin that glows in bioluminescent hues reflecting their emotions. They have large black eyes adapted to low light, long limb proportions, and delicate crown-like ridges of keratin resembling antlers or coral.</p><h3>Thiraxi Traits</h3><p><em><strong>Creature Type.</strong></em> Aberration</p><p><em><strong>Size.</strong></em> Medium (about 6–8 feet tall)</p><p><em><strong>Speed.</strong></em> 30 feet</p><p>As a Thiraxi, you have these special traits.</p><p><em><strong>Darkvision.</strong></em> You have Darkvision with a range of 60 feet.</p><p><em><strong>Mental Insight.</strong></em> You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p><p><em><strong>Synesthete.</strong></em> You can link your senses together, allowing one sense to stimulate another. You might smell colors, hear tastes, or see sounds. You gain Advantage on Wisdom (Perception) checks.</p><p><em><strong>Bioluminescence.</strong></em> Your skin glows with colors that shift based on your emotional state. When you finish a Short Rest or Long Rest, you can choose one of the following colors, gaining proficiency in the associated skill. You may change this skill when you finish a Short or Long Rest:</p><ul><li><strong>Blue (Calm):</strong> Persuasion</li><li><strong>Red (Anger):</strong> Intimidation</li><li><strong>Green (Focus):</strong> Investigation</li><li><strong>Purple (Curiosity):</strong> Insight</li></ul><p><em><strong>Psionic Sustenance.</strong></em> Your body produces all the nutrients, hydration, and energy you need. You don't require food or water.</p><p><em><strong>Telepathy.</strong></em> You have Telepathy to 120 feet.</p>
+      <p>The Thiraxi are the native sentient species of Erdyr, born of the
+      world's ancient soil and deeply attuned to its rhythms. When followers of
+      the lost god Adrair arrived thousands of years ago, the Thiraxi were
+      driven from their ancestral lands into remote wastes and deep jungles. To
+      this day, many Thiraxi refer to these invaders as the "Godless Ones"—a
+      title that carries bitter irony in a world now abandoned by all
+      gods.</p><p>Thiraxi society is tribal and semi-nomadic, building
+      labyrinthine stone sanctuaries underground or into cliff faces where
+      silence is law and psychic echoes carry between minds. They wield psionic
+      abilities through ritual and meditation, viewing these mental gifts not as
+      blessings but as necessary burdens that must be carefully balanced. Elders
+      known as Mind-Weavers serve as leaders and judges, mediating disputes
+      through trance states where the thoughts of all involved are laid
+      bare.</p><p>The Thiraxi are tall, lithe beings with semi-translucent skin
+      that glows in bioluminescent hues reflecting their emotions. They have
+      large black eyes adapted to low light, long limb proportions, and delicate
+      crown-like ridges of keratin resembling antlers or coral.</p><h3>Thiraxi
+      Traits</h3><p><em><strong>Creature Type.</strong></em>
+      Aberration</p><p><em><strong>Size.</strong></em> Medium (about 6–8 feet
+      tall)</p><p><em><strong>Speed.</strong></em> 30 feet</p><p>As a Thiraxi,
+      you have these special traits.</p><p><em><strong>Darkvision.</strong></em>
+      You have Darkvision with a range of 60 feet.</p><p><em><strong>Mental
+      Insight.</strong></em> You have Advantage on Intelligence, Wisdom, and
+      Charisma saving throws.</p><p><em><strong>Synesthete.</strong></em> You
+      can link your senses together, allowing one sense to stimulate another.
+      You might smell colors, hear tastes, or see sounds. You gain Advantage on
+      Wisdom (Perception)
+      checks.</p><p><em><strong>Bioluminescence.</strong></em> Your skin glows
+      with colors that shift based on your emotional state. When you finish a
+      Short Rest or Long Rest, you can choose one of the following colors,
+      gaining proficiency in the associated skill. You may change this skill
+      when you finish a Short or Long Rest:</p><ul><li><strong>Blue
+      (Calm):</strong> Persuasion</li><li><strong>Red (Anger):</strong>
+      Intimidation</li><li><strong>Green (Focus):</strong>
+      Investigation</li><li><strong>Purple (Curiosity):</strong>
+      Insight</li></ul><p><em><strong>Psionic Sustenance.</strong></em> Your
+      body produces all the nutrients, hydration, and energy you need. You don't
+      require food or water.</p><p><em><strong>Telepathy.</strong></em> You have
+      Telepathy to 120 feet.</p>
     chat: ''
   identifier: thiraxi
   source:

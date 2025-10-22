@@ -11,7 +11,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your hit point maximum increases by 1 per psionicist level.</p><p>In addition, while you aren't wearing armor or wielding a shield, your base AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+      <p>Your hit point maximum increases by 1 per psionicist level.</p><p>In
+      addition, while you aren't wearing armor or wielding a shield, your base
+      AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
     chat: ''
   identifier: new-item
   source:
@@ -62,7 +64,9 @@ effects:
       turns: null
       startRound: null
       startTurn: null
-    description: <p>While you aren't wearing armor or wielding a shield, your AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+    description: >-
+      <p>While you aren't wearing armor or wielding a shield, your AC equals 10
+      + your Dexterity modifier + your Constitution modifier.</p>
     tint: '#ffffff'
     transfer: true
     statuses: []

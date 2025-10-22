@@ -6,7 +6,16 @@ img: modules/sosly-5e-house-rules/public/subclasses/wu-jen.webp
 system:
   description:
     value: >-
-      <blockquote><p>Master the Elements and Reshape Reality</p></blockquote><p>The Order of the Wu Jen features some of the most devoted psionicists. These psionicists seek to lock themselves away from the world, denying the limits of the physical world and replacing it with a reality that they create for themselves. Known as wu jens, these psionicists cast their minds into the world, seize control of its fundamental principles, and rebuild it.</p><p>In practical terms, wu jens excel at controlling the forces of the natural world. They can hurl objects with their minds, control the four elements, and alter reality to fit their desires.</p>
+      <blockquote><p>Master the Elements and Reshape
+      Reality</p></blockquote><p>The Order of the Wu Jen features some of the
+      most devoted psionicists. These psionicists seek to lock themselves away
+      from the world, denying the limits of the physical world and replacing it
+      with a reality that they create for themselves. Known as wu jens, these
+      psionicists cast their minds into the world, seize control of its
+      fundamental principles, and rebuild it.</p><p>In practical terms, wu jens
+      excel at controlling the forces of the natural world. They can hurl
+      objects with their minds, control the four elements, and alter reality to
+      fit their desires.</p>
     chat: ''
   identifier: wujen
   source:

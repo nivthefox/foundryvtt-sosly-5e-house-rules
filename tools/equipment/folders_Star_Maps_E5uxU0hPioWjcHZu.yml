@@ -1,8 +1,8 @@
-name: Thanoi Features
+name: Star Maps
 sorting: a
-folder: iprmNgxQbT21wsdX
+folder: YKJofRdXHKeBKJ4C
 type: Item
-_id: rf0igJaxiW3drB9b
+_id: E5uxU0hPioWjcHZu
 description: ''
 sort: 0
 color: null
@@ -12,9 +12,8 @@ _stats:
   duplicateSource: null
   coreVersion: '12.331'
   systemId: dnd5e
-  systemVersion: 4.3.9
+  systemVersion: 4.0.0
   createdTime: null
   modifiedTime: null
-  lastModifiedBy: null
-_key: '!folders!rf0igJaxiW3drB9b'
-
+  lastModifiedBy: dnd5ebuilder0000
+_key: '!folders!E5uxU0hPioWjcHZu'

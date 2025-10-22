@@ -1,0 +1,115 @@
+name: Noble
+type: background
+img: icons/magic/symbols/circled-gem-pink.webp
+system:
+  description:
+    value: >-
+      <p>You were raised in a castle or manor, surrounded by wealth, power, and
+      privilege. Your family of minor aristocrats ensured that you received a
+      first-class education, some of which you appreciated and some of which you
+      resented. Your time in your parents' home, especially the many hours you
+      spent observing your family at court, also taught you a great deal about
+      leadership.</p><p></p>
+    chat: ''
+  identifier: noble
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  advancement:
+    - _id: fOmvHQ7TSGySCgE1
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - dex
+          - con
+          - wis
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: zT368Xzc9qnBozGD
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - skills:his
+          - skills:per
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: 8SXKsllkL4pXKi8Q
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - tool:game:*
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: lqzLA1x9J8JIfriT
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.oYevzGWRFHslWEfI
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Origin Feat
+      hint: ''
+    - _id: QjyUsK3Z8D1QBfTf
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 3
+            pool:
+              - skills:*
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+  wealth: '50'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591969813
+  modifiedTime: 1736592150921
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: 6g5MkriXyE4m8ooQ
+sort: 200000
+_key: '!items!6g5MkriXyE4m8ooQ'

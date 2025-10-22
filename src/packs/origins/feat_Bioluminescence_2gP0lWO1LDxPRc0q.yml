@@ -4,12 +4,13 @@ img: icons/magic/light/orb-lightbulb-gray.webp
 system:
   description:
     value: >-
-      <p>Your skin glows with colors that shift based on your emotional state. When you finish a Short Rest or Long Rest, you can choose one of the following colors, gaining proficiency in the associated skill. You may change this skill when you finish a Short or Long Rest:</p>
-      <ul>
-      <li><strong>Blue (Calm):</strong> Persuasion</li>
-      <li><strong>Red (Anger):</strong> Intimidation</li>
-      <li><strong>Green (Focus):</strong> Investigation</li>
-      <li><strong>Purple (Curiosity):</strong> Insight</li>
+      <p>Your skin glows with colors that shift based on your emotional state.
+      When you finish a Short Rest or Long Rest, you can choose one of the
+      following colors, gaining proficiency in the associated skill. You may
+      change this skill when you finish a Short or Long Rest:</p> <ul>
+      <li><strong>Blue (Calm):</strong> Persuasion</li> <li><strong>Red
+      (Anger):</strong> Intimidation</li> <li><strong>Green (Focus):</strong>
+      Investigation</li> <li><strong>Purple (Curiosity):</strong> Insight</li>
       </ul>
     chat: ''
   source:
@@ -56,6 +57,16 @@ effects:
     description: ''
     statuses: []
     sort: 0
+    _stats:
+      coreVersion: '12.331'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+    flags: {}
     _key: '!items.effects!2gP0lWO1LDxPRc0q.NudlpStZDXN7c5vG'
   - _id: lNwtjyQhLqPp4l5c
     name: 'Bioluminescence: Red (Anger) - Intimidation'
@@ -82,6 +93,16 @@ effects:
     description: ''
     statuses: []
     sort: 0
+    _stats:
+      coreVersion: '12.331'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+    flags: {}
     _key: '!items.effects!2gP0lWO1LDxPRc0q.lNwtjyQhLqPp4l5c'
   - _id: IZKFZETJXYjNSrow
     name: 'Bioluminescence: Green (Focus) - Investigation'
@@ -108,6 +129,16 @@ effects:
     description: ''
     statuses: []
     sort: 0
+    _stats:
+      coreVersion: '12.331'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+    flags: {}
     _key: '!items.effects!2gP0lWO1LDxPRc0q.IZKFZETJXYjNSrow'
   - _id: KlftxWItqV9vd1Ck
     name: 'Bioluminescence: Purple (Curiosity) - Insight'
@@ -134,6 +165,16 @@ effects:
     description: ''
     statuses: []
     sort: 0
+    _stats:
+      coreVersion: '12.331'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+    flags: {}
     _key: '!items.effects!2gP0lWO1LDxPRc0q.KlftxWItqV9vd1Ck'
 flags: {}
 folder: ZikcewzQB5JtDbC9

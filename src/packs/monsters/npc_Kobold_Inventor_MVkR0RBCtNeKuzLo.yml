@@ -1,0 +1,1552 @@
+name: Kobold Inventor
+type: npc
+system:
+  abilities:
+    str:
+      value: 7
+      proficient: 0
+      bonuses:
+        check: ''
+        save: ''
+      max: null
+    dex:
+      value: 15
+      proficient: 0
+      bonuses:
+        check: ''
+        save: ''
+      max: null
+    con:
+      value: 12
+      proficient: 0
+      bonuses:
+        check: ''
+        save: ''
+      max: null
+    int:
+      value: 14
+      proficient: 0
+      bonuses:
+        check: ''
+        save: ''
+      max: null
+    wis:
+      value: 10
+      proficient: 0
+      bonuses:
+        check: ''
+        save: ''
+      max: null
+    cha:
+      value: 8
+      proficient: 0
+      bonuses:
+        check: ''
+        save: ''
+      max: null
+  attributes:
+    ac:
+      flat: null
+      calc: default
+      formula: ''
+    hp:
+      value: 13
+      max: 13
+      temp: null
+      tempmax: null
+      formula: 3d6 + 3
+    init:
+      ability: ''
+      bonus: '0'
+      roll:
+        min: null
+        max: null
+        mode: 0
+    movement:
+      burrow: 0
+      climb: 0
+      fly: 0
+      swim: 0
+      walk: 30
+      units: ft
+      hover: false
+    attunement:
+      max: 3
+    senses:
+      darkvision: 60
+      blindsight: 0
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spellcasting: int
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    hd:
+      spent: 0
+    death:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+  details:
+    biography:
+      value: ''
+      public: ''
+    alignment: Any Alignment
+    race: null
+    type:
+      value: dragon
+      subtype: ''
+      swarm: ''
+      custom: ''
+    environment: ''
+    cr: 0.25
+    spellLevel: 0
+    ideal: ''
+    bond: ''
+    flaw: ''
+  traits:
+    size: sm
+    di:
+      value: []
+      bypasses: []
+      custom: ''
+    dr:
+      value: []
+      bypasses: []
+      custom: ''
+    dv:
+      value: []
+      bypasses: []
+      custom: ''
+    ci:
+      value: []
+      custom: ''
+    languages:
+      value:
+        - common
+      custom: Draconic
+    dm:
+      amount: {}
+      bypasses: []
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  skills:
+    acr:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ani:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    arc:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ath:
+      value: 0
+      ability: str
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    dec:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    his:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ins:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    itm:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    inv:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    med:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    nat:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    prc:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    prf:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    per:
+      value: 0
+      ability: cha
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    rel:
+      value: 0
+      ability: int
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    slt:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    ste:
+      value: 0
+      ability: dex
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+    sur:
+      value: 0
+      ability: wis
+      bonuses:
+        check: ''
+        passive: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+      override: null
+    spell0:
+      value: 0
+      override: null
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  resources:
+    legact:
+      value: 0
+      max: 0
+    legres:
+      value: 0
+      max: 0
+    lair:
+      value: false
+      initiative: null
+  tools: {}
+  source:
+    custom: ''
+    book: MPMM
+    page: '164'
+    license: ''
+    revision: 1
+    rules: '2024'
+prototypeToken:
+  name: Kobold Inventor
+  displayName: 0
+  actorLink: false
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  flags: {}
+  randomImg: false
+  alpha: 1
+  light:
+    alpha: 1
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      speed: 5
+      intensity: 5
+      type: null
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    attenuation: 0.5
+    color: null
+    negative: false
+    priority: 0
+  texture:
+    src: tokenizer/npc-images/kobold_inventor.Token.webp?1761122312566
+    tint: '#ffffff'
+    scaleX: 0.8
+    scaleY: 0.8
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  sight:
+    angle: 360
+    enabled: true
+    range: 60
+    brightness: 0
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    saturation: 0
+    contrast: 0
+  detectionModes:
+    - id: lightPerception
+      range: null
+      enabled: true
+    - id: basicSight
+      range: 0
+      enabled: true
+  appendNumber: true
+  prependAdjective: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+items:
+  - name: Dagger
+    system:
+      description:
+        value: <p>[[/attack extended]]. [[/damage average extended]].</p>
+        chat: ''
+      price:
+        value: 2
+        denomination: gp
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 1
+        units: lb
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      cover: null
+      crewed: false
+      range:
+        value: 20
+        long: 60
+        units: ft
+        reach: null
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      damage:
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: true
+            formula: ''
+          scaling:
+            mode: ''
+            number: null
+            formula: ''
+        base:
+          number: 1
+          denomination: 4
+          types:
+            - piercing
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+          bonus: ''
+      armor:
+        value: null
+      hp:
+        value: null
+        max: null
+        dt: null
+        conditions: ''
+      type:
+        value: simpleM
+        baseItem: dagger
+      magicalBonus: null
+      properties:
+        - fin
+        - lgt
+        - thr
+      proficient: 1
+      activities:
+        3SJSAL3pv9gKkAM9:
+          type: attack
+          activation:
+            type: action
+            value: 1
+            condition: ''
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            concentration: false
+            value: ''
+            units: inst
+            special: ''
+            override: false
+          effects: []
+          range:
+            value: '20'
+            units: ft
+            special: ''
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: ''
+              choice: false
+              special: ''
+            prompt: false
+            override: false
+          attack:
+            ability: ''
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: melee
+              classification: weapon
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts: []
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          sort: 0
+          _id: 3SJSAL3pv9gKkAM9
+          name: ''
+          img: ''
+          appliedEffects: []
+      ammunition: {}
+      mastery: nick
+      identifier: dagger
+    _id: phbwepDagger0000
+    type: weapon
+    folder: FL1Jee9DzStc7vM3
+    img: modules/dnd-players-handbook/assets/icons/items/dagger.webp
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+          effect: []
+    _stats:
+      compendiumSource: Compendium.dnd-players-handbook.equipment.phbwepDagger0000
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.2.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!MVkR0RBCtNeKuzLo.phbwepDagger0000'
+  - name: Sling
+    system:
+      description:
+        value: <p>[[/attack extended]]. [[/damage average extended]].</p>
+        chat: ''
+      price:
+        value: 1
+        denomination: sp
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      cover: null
+      crewed: false
+      range:
+        value: 30
+        long: 120
+        units: ft
+        reach: null
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      damage:
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: true
+            formula: ''
+          scaling:
+            mode: ''
+            number: null
+            formula: ''
+        base:
+          number: 1
+          denomination: 4
+          types:
+            - bludgeoning
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+          bonus: ''
+      armor:
+        value: null
+      hp:
+        value: null
+        max: null
+        dt: null
+        conditions: ''
+      type:
+        value: simpleR
+        baseItem: sling
+      magicalBonus: null
+      properties:
+        - amm
+      proficient: 1
+      activities:
+        pJCR6dF3xxKAupNv:
+          type: attack
+          activation:
+            type: action
+            value: 1
+            condition: ''
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            concentration: false
+            value: ''
+            units: inst
+            special: ''
+            override: false
+          effects: []
+          range:
+            value: '30'
+            units: ft
+            special: ''
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: ''
+              choice: false
+              special: ''
+            prompt: false
+            override: false
+          attack:
+            ability: ''
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: ranged
+              classification: weapon
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts: []
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          sort: 0
+          _id: pJCR6dF3xxKAupNv
+          name: ''
+          img: ''
+          appliedEffects: []
+      ammunition:
+        type: slingBullet
+      mastery: slow
+      identifier: sling
+    _id: phbwepSling00000
+    type: weapon
+    folder: atG8UGtcNyNweUOt
+    img: modules/dnd-players-handbook/assets/icons/items/sling.webp
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+          effect: []
+    _stats:
+      compendiumSource: Compendium.dnd-players-handbook.equipment.phbwepSling00000
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.2.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!MVkR0RBCtNeKuzLo.phbwepSling00000'
+  - _id: mmPackTactics000
+    name: Pack Tactics
+    type: feat
+    system:
+      type:
+        value: monster
+        subtype: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      description:
+        value: >-
+          <p>The [[lookup @name lowercase]] has Advantage on an attack roll
+          against a creature if at least one of the [[lookup @name lowercase]]'s
+          allies is within 5 feet of the creature and the ally doesn't have the
+          Incapacitated condition.</p>
+        chat: ''
+      identifier: pack-tactics
+      source:
+        revision: 1
+        rules: '2024'
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties:
+        - trait
+      requirements: Ally within 5 feet of attack target
+      advancement: []
+      cover: null
+      crewed: false
+    folder: null
+    img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPackTactics000
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.2.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    sort: 0
+    _key: '!actors.items!MVkR0RBCtNeKuzLo.mmPackTactics000'
+  - _id: mmSunlightSensit
+    name: Sunlight Sensitivity
+    type: feat
+    system:
+      type:
+        value: monster
+        subtype: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      description:
+        value: >-
+          <p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage
+          on ability checks and attack rolls.</p>
+        chat: ''
+      identifier: sunlight-sensitivity
+      source:
+        revision: 1
+        rules: '2024'
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties:
+        - trait
+      requirements: While in sunlight
+      advancement: []
+      cover: null
+      crewed: false
+    folder: null
+    img: icons/creatures/eyes/humanoid-single-blind.webp
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSunlightSensit
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.2.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    sort: 0
+    _key: '!actors.items!MVkR0RBCtNeKuzLo.mmSunlightSensit'
+  - _id: te9l6bbOcZuFTbnM
+    name: Weapon Invention
+    type: feat
+    system:
+      type:
+        value: monster
+        subtype: ''
+      activities:
+        ZowC7Pcz01u1qCPg:
+          type: attack
+          name: Acid
+          _id: ZowC7Pcz01u1qCPg
+          sort: 0
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: creature
+              count: '1'
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp
+          appliedEffects: []
+          attack:
+            ability: dex
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: ranged
+              classification: spell
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts:
+              - number: 2
+                denomination: 6
+                bonus: ''
+                types:
+                  - acid
+                custom:
+                  enabled: false
+                  formula: ''
+                scaling:
+                  mode: whole
+                  number: null
+                  formula: ''
+        4DZEakYIaVahWaKa:
+          type: save
+          name: Alchemist's Fire
+          _id: 4DZEakYIaVahWaKa
+          sort: 1
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: creature
+              count: '1'
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/consumables/potions/potion-flask-corked-orange.webp
+          appliedEffects: []
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            onSave: half
+            parts:
+              - number: 1
+                denomination: 4
+                bonus: ''
+                types:
+                  - fire
+                custom:
+                  enabled: false
+                  formula: ''
+                scaling:
+                  mode: whole
+                  number: null
+                  formula: ''
+          save:
+            ability: dex
+            dc:
+              calculation: ''
+              formula: '10'
+        qa0W7oZnZdRgf59o:
+          type: utility
+          name: Basket of Centipedes
+          _id: qa0W7oZnZdRgf59o
+          sort: 2
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: >-
+              <p>A swarm of insects (centipedes) with 11 HP emerges from the
+              basket and rolls initiative. At the end of each turn, there's a
+              50% chance the swarm disperses.</p>
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: square
+              size: '5'
+            affects:
+              choice: false
+              type: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          roll:
+            prompt: false
+            visible: false
+            name: ''
+            formula: ''
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/commodities/biological/antenna-yellow.webp
+          appliedEffects: []
+        JhQWodur6svsaSRj:
+          type: save
+          name: Green Slime Pot
+          _id: JhQWodur6svsaSRj
+          sort: 3
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: >-
+              <p>Target takes 5 (1d10) acid damage at the start of each turn. DC
+              10 Dexterity check to scrape/wash off.</p>
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: creature
+              count: '1'
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/commodities/biological/pustules-brown.webp
+          appliedEffects: []
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            onSave: half
+            parts: []
+          save:
+            ability: dex
+            dc:
+              calculation: ''
+              formula: '10'
+        0HzhIRZuXCNYtdz7:
+          type: utility
+          name: Rot Grub Pot
+          _id: 0HzhIRZuXCNYtdz7
+          sort: 4
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: >-
+              <p>A swarm of rot grubs fills a 5-foot square within 20 feet. It
+              emerges and rolls initiative. At the end of each turn, there's a
+              50% chance the swarm disperses.</p>
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: square
+              size: '5'
+            affects:
+              choice: false
+              type: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          roll:
+            prompt: false
+            visible: false
+            name: ''
+            formula: ''
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/commodities/biological/pustules-pink.webp
+          appliedEffects: []
+        1pu0eRQVOLPJHzGq:
+          type: attack
+          name: Scorpion on a Stick
+          _id: 1pu0eRQVOLPJHzGq
+          sort: 5
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: >-
+              <p>On hit, target must make DC 9 Constitution saving throw or take
+              4 (1d8) poison damage. Half damage on save.</p>
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: creature
+              count: '1'
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/commodities/biological/stinger-insect-grey.webp
+          appliedEffects: []
+          attack:
+            ability: dex
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: melee
+              classification: weapon
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts:
+              - number: 1
+                denomination: 1
+                bonus: ''
+                types:
+                  - piercing
+                custom:
+                  enabled: false
+                  formula: ''
+                scaling:
+                  mode: whole
+                  number: null
+                  formula: ''
+              - number: 1
+                denomination: 8
+                bonus: ''
+                types:
+                  - poison
+                custom:
+                  enabled: false
+                  formula: ''
+                scaling:
+                  mode: whole
+                  number: null
+                  formula: ''
+        Lp5OnjclFetjkxFL:
+          type: save
+          name: Skunk in a Cage
+          _id: Lp5OnjclFetjkxFL
+          sort: 6
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: >-
+              <p>The skunk can't attack but uses its action to spray musk at a
+              random creature within 5 feet. DC 9 Constitution save or
+              Incapacitated until end of next turn. Skunk returns on effective
+              attack or at end of turn.</p>
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '5'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: creature
+              count: '1'
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/environment/traps/cage-simple-wood.webp
+          appliedEffects: []
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            onSave: none
+            parts: []
+          save:
+            ability: con
+            dc:
+              calculation: ''
+              formula: '9'
+        d2WqsyIfmrJluYFk:
+          type: utility
+          name: Wasp Nest in a Bag
+          _id: d2WqsyIfmrJluYFk
+          sort: 7
+          activation:
+            type: action
+            value: 1
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: activity
+                value: '1'
+                target: ''
+                scaling:
+                  mode: ''
+                  formula: ''
+          description:
+            chatFlavor: >-
+              <p>A swarm of insects (wasps) with 11 HP emerges from the bag and
+              rolls initiative. At the end of each turn, there's a 50% chance
+              the swarm disperses.</p>
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: ft
+            special: ''
+            value: '20'
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: square
+              size: '5'
+            affects:
+              choice: false
+              type: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery:
+              - period: lr
+                type: recoverAll
+            max: '1'
+          roll:
+            prompt: false
+            visible: false
+            name: ''
+            formula: ''
+          img: >-
+            modules/sosly-5e-house-rules/.claude/icons/commodities/biological/wing-insect-blue.webp
+          appliedEffects: []
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      description:
+        value: >-
+          <p>The kobold uses one of the following options (choose one or roll a
+          d8); the kobold can use each one no more than once per day.</p>
+        chat: ''
+      identifier: weapon-invention
+      source:
+        revision: 1
+        rules: '2024'
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      advancement: []
+      cover: null
+      crewed: false
+    folder: null
+    img: modules/sosly-5e-house-rules/.claude/icons/anvil.png
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.2.2
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    sort: 0
+    _key: '!actors.items!MVkR0RBCtNeKuzLo.te9l6bbOcZuFTbnM'
+effects: []
+folder: KEBPIOvLumIhUm6q
+ownership:
+  default: 0
+flags:
+  dnd5e-sheet-notes:
+    version: 1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.2.2
+  createdTime: null
+  modifiedTime: 1761122312578
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+_id: MVkR0RBCtNeKuzLo
+sort: 0
+img: tokenizer/npc-images/kobold_inventor.Avatar.webp?1761122312566
+_key: '!actors!MVkR0RBCtNeKuzLo'

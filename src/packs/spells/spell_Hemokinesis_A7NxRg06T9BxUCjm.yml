@@ -10,14 +10,22 @@ system:
     revision: 1
   description:
     value: >-
-      <p>You choose an area of liquid blood that you can see within range and that fits within a 5-foot cube. You cannot affect the blood in a creature unless it is dead. You manipulate it in one of the following ways:</p>
-      <ul>
-      <li>You cause the blood to froth, creating a strong scent of blood in the air. This smell reaches 120 feet in all directions and lasts for 1 hour.</li>
-      <li>You instantaneously move or otherwise change the flow of the blood as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.</li>
-      <li>You cause the blood to form into simple shapes and animate at your direction. This change lasts for 1 hour.</li>
-      </ul>
-      <p>Alternatively, you can target one creature of size Medium or smaller within range and that you can see that has blood and attempt to push the blood in its body. The target must make a Constitution saving throw or else you push the target up to 5 feet in any direction.</p>
-      <p>If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+      <p>You choose an area of liquid blood that you can see within range and
+      that fits within a 5-foot cube. You cannot affect the blood in a creature
+      unless it is dead. You manipulate it in one of the following ways:</p>
+      <ul> <li>You cause the blood to froth, creating a strong scent of blood in
+      the air. This smell reaches 120 feet in all directions and lasts for 1
+      hour.</li> <li>You instantaneously move or otherwise change the flow of
+      the blood as you direct, up to 5 feet in any direction. This movement
+      doesn't have enough force to cause damage.</li> <li>You cause the blood to
+      form into simple shapes and animate at your direction. This change lasts
+      for 1 hour.</li> </ul> <p>Alternatively, you can target one creature of
+      size Medium or smaller within range and that you can see that has blood
+      and attempt to push the blood in its body. The target must make a
+      Constitution saving throw or else you push the target up to 5 feet in any
+      direction.</p> <p>If you cast this spell multiple times, you can have no
+      more than two of its non-instantaneous effects active at a time, and you
+      can dismiss such an effect as an action.</p>
     chat: ''
   level: 0
   school: trs

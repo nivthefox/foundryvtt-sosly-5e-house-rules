@@ -4,8 +4,15 @@ img: icons/creatures/abilities/wolf-howl-moon-purple.webp
 system:
   description:
     value: >-
-      <p>The target hit by the attack takes an extra 3d6 damage. For the duration of the spell, the target has disadvantage on attack rolls and Wisdom (Perception) checks made against creatures other than you. Creatures immune to being frightened are immune to this effect. At the end of its turn, the creature can make a Wisdom saving throw to end this effect. The extra damage is the same as the attack's damage type.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage of the initial attack increases by 1d6 for each spell slot level above 3.</p>
+      <p>The target hit by the attack takes an extra 3d6 damage. For the
+      duration of the spell, the target has disadvantage on attack rolls and
+      Wisdom (Perception) checks made against creatures other than you.
+      Creatures immune to being frightened are immune to this effect. At the end
+      of its turn, the creature can make a Wisdom saving throw to end this
+      effect. The extra damage is the same as the attack's damage type.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra
+      damage of the initial attack increases by 1d6 for each spell slot level
+      above 3.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -16,7 +23,9 @@ system:
     license: ''
   activation:
     type: bonus
-    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    condition: >-
+      Immediately after hitting a creature with a melee attack while
+      shape-shifted into a Beast form
     value: 1
   duration:
     value: '1'
@@ -84,8 +93,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '3d6'
-        name: 'Extra Damage'
+        formula: 3d6
+        name: Extra Damage
         prompt: false
         visible: false
       save:

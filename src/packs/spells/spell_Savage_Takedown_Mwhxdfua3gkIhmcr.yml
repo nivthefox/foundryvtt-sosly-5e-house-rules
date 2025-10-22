@@ -4,8 +4,13 @@ img: icons/creatures/abilities/bear-roar-bite-brown.webp
 system:
   description:
     value: >-
-      <p>The target hit by the attack takes an extra 5d6 damage, and becomes prone. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Wisdom saving throw or be incapacitated for the duration. The target can repeat the saving throw at the end of each turn. The extra damage is the same as the attack's damage type.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 5.</p>
+      <p>The target hit by the attack takes an extra 5d6 damage, and becomes
+      prone. If the attack reduces the target to 50 Hit Points or fewer, the
+      target must succeed on a Wisdom saving throw or be incapacitated for the
+      duration. The target can repeat the saving throw at the end of each turn.
+      The extra damage is the same as the attack's damage type.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra
+      damage increases by 1d6 for each spell slot level above 5.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -16,7 +21,9 @@ system:
     license: ''
   activation:
     type: bonus
-    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    condition: >-
+      Immediately after hitting a creature with a melee attack while
+      shape-shifted into a Beast form
     value: 1
   duration:
     value: '1'
@@ -84,8 +91,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '5d6'
-        name: 'Extra Damage'
+        formula: 5d6
+        name: Extra Damage
         prompt: false
         visible: false
       save:

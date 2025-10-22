@@ -10,8 +10,13 @@ system:
     revision: 1
   description:
     value: >-
-      <p>You attempt to rip the blood from a foe's body. One creature that you can see within range must succeed on a Constitution saving throw or else take [[/damage 1d10 type=necrotic]] necrotic damage. The target has disadvantage on any saving throws to maintain concentration caused by this spell. This spell has no effect on creatures with no blood.</p>
-      <p><em><strong>Cantrip Upgrade.</strong></em> At 5th level it deals 2d10, at 11th level it deals 3d10, and at 17th level it deals 4d10.</p>
+      <p>You attempt to rip the blood from a foe's body. One creature that you
+      can see within range must succeed on a Constitution saving throw or else
+      take [[/damage 1d10 type=necrotic]] necrotic damage. The target has
+      disadvantage on any saving throws to maintain concentration caused by this
+      spell. This spell has no effect on creatures with no blood.</p>
+      <p><em><strong>Cantrip Upgrade.</strong></em> At 5th level it deals 2d10,
+      at 11th level it deals 3d10, and at 17th level it deals 4d10.</p>
     chat: ''
   level: 0
   school: nec

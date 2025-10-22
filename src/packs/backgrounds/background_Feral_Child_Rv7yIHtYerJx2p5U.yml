@@ -1,0 +1,95 @@
+name: Feral Child
+type: background
+img: icons/creatures/mammals/wolf-shadow-black.webp
+system:
+  description:
+    value: >-
+      <p>You spent your youth in the wilderness, doing whatever you could to
+      survive. You have rarely known comfort, and have become hardened against
+      the worst nature has to offer.</p>
+    chat: ''
+  identifier: feral-child
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  advancement:
+    - _id: UISPQyA8zGUH4zIE
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - dex
+          - int
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: C9JVxkYbx0uNqfFS
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.Rz308YBqKstZ8jzP
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Origin Feat
+      hint: ''
+    - _id: aZiUkm0EkdUFwVFD
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - skills:ath
+          - skills:sur
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: SKyefNgBdJi5EOSO
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - tool:herb
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+  wealth: '50'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591967395
+  modifiedTime: 1736592093504
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: Rv7yIHtYerJx2p5U
+sort: 100000
+_key: '!items!Rv7yIHtYerJx2p5U'

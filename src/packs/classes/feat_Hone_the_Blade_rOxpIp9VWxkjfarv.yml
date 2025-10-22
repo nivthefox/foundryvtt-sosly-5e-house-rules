@@ -11,7 +11,14 @@ system:
     max: ''
   description:
     value: >-
-      <p>You can spend power points to augment your soul knife's attack rolls and damage (no action required). You gain a bonus to attack and damage rolls with your soul knives depending on the number of power points spent, as shown on the table below. This bonus lasts for 10 minutes, and does not stack with any other increases to attack and damage rolls from disciplines, spells, or magic items.</p><table><thead><tr><th>Power Points</th><th>Attack and Damage Bonus</th></tr></thead><tbody><tr><td>2</td><td>+1</td></tr><tr><td>5</td><td>+2</td></tr><tr><td>7</td><td>+4</td></tr></tbody></table>
+      <p>You can spend power points to augment your soul knife's attack rolls
+      and damage (no action required). You gain a bonus to attack and damage
+      rolls with your soul knives depending on the number of power points spent,
+      as shown on the table below. This bonus lasts for 10 minutes, and does not
+      stack with any other increases to attack and damage rolls from
+      disciplines, spells, or magic items.</p><table><thead><tr><th>Power
+      Points</th><th>Attack and Damage
+      Bonus</th></tr></thead><tbody><tr><td>2</td><td>+1</td></tr><tr><td>5</td><td>+2</td></tr><tr><td>7</td><td>+4</td></tr></tbody></table>
     chat: ''
   identifier: new-item
   source:

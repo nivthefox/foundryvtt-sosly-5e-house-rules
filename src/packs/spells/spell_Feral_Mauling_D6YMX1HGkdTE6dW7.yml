@@ -4,8 +4,12 @@ img: icons/creatures/abilities/fangs-teeth-bite.webp
 system:
   description:
     value: >-
-      <p>The target hit by the attack takes an extra 2d6 damage, and has disadvantage on all attack rolls for the duration of the spell. At the end of their turn, the target can make a Constitution saving throw to end this effect. The extra damage is the same as the attack's damage type.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 2.</p>
+      <p>The target hit by the attack takes an extra 2d6 damage, and has
+      disadvantage on all attack rolls for the duration of the spell. At the end
+      of their turn, the target can make a Constitution saving throw to end this
+      effect. The extra damage is the same as the attack's damage type.</p>
+      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra
+      damage increases by 1d6 for each spell slot level above 2.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -16,7 +20,9 @@ system:
     license: ''
   activation:
     type: bonus
-    condition: 'Immediately after hitting a creature with a melee attack while shape-shifted into a Beast form'
+    condition: >-
+      Immediately after hitting a creature with a melee attack while
+      shape-shifted into a Beast form
     value: 1
   duration:
     value: '1'
@@ -84,8 +90,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '2d6'
-        name: 'Extra Damage'
+        formula: 2d6
+        name: Extra Damage
         prompt: false
         visible: false
       sort: 0

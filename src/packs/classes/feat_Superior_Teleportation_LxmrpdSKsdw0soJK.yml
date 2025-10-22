@@ -11,7 +11,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain a superior talent for teleportation. When you use a psionic discipline to teleport any distance, you can increase that distance by up to 10 feet.</p>
+      <p>You gain a superior talent for teleportation. When you use a psionic
+      discipline to teleport any distance, you can increase that distance by up
+      to 10 feet.</p>
     chat: ''
   identifier: new-item
   source:

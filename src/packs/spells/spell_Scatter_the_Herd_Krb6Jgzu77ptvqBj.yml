@@ -4,8 +4,14 @@ img: icons/creatures/abilities/cougar-roar-rush-orange.webp
 system:
   description:
     value: >-
-      <p>You make a melee attack against each creature of your choice within reach of your Beast form's melee attack, and your attacks deal an extra 1d6 damage on a hit, and the target makes a Wisdom saving throw. On a failed save, it must immediately use its reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target only takes the extra damage.</p>
-      <p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6 for each spell slot level above 4.</p>
+      <p>You make a melee attack against each creature of your choice within
+      reach of your Beast form's melee attack, and your attacks deal an extra
+      1d6 damage on a hit, and the target makes a Wisdom saving throw. On a
+      failed save, it must immediately use its reaction, if available, to move
+      as far away from you as it can, using the safest route. On a successful
+      save, the target only takes the extra damage.</p> <p><em><strong>Using a
+      Higher-Level Spell Slot.</strong></em> The extra damage increases by 1d6
+      for each spell slot level above 4.</p>
     chat: ''
   source:
     custom: Beast Form Spells
@@ -26,7 +32,7 @@ system:
       type: creature
       count: ''
       choice: true
-      special: 'Each creature within reach'
+      special: Each creature within reach
     template:
       units: ''
       contiguous: false
@@ -84,8 +90,8 @@ system:
         max: ''
         recovery: []
       roll:
-        formula: '1d6'
-        name: 'Extra Damage'
+        formula: 1d6
+        name: Extra Damage
         prompt: false
         visible: false
       save:

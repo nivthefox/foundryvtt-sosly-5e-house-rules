@@ -1,0 +1,125 @@
+name: Guide
+type: background
+img: icons/skills/social/peace-luck-insult.webp
+system:
+  description:
+    value: >-
+      <p>You came of age outdoors, far from settled lands. Your home was
+      anywhere you chose to spread your bedroll. There are wonders in the
+      wilderness— strange monsters, pristine forests and streams, overgrown
+      ruins of great halls once trod by giants— and you learned to fend for
+      yourself as you explored them. From time to time, you guided friendly
+      nature priests who instructed you in the fundamentals of channeling the
+      magic of the wild.</p><p></p>
+    chat: ''
+  identifier: guide
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment: []
+  advancement:
+    - _id: nHF48O2oYekq0A6V
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - int
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: vnJShzckna4TpIeH
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - skills:ste
+          - skills:sur
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: ng4t9XKBSJsXcDNj
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - tool:art:cartographer
+        choices: []
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: 1VOxtORPZHxPI8JR
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.feats.Item.9cMR20p9Q6vRsJTh
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Origin Feat
+      hint: ''
+    - _id: TGxsywHYuzEi0jEg
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: '2'
+      value: {}
+      title: Cantrips
+      hint: ''
+    - _id: 46MUxNCk40VODEWK
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: '1'
+      value: {}
+      title: Prepared Spells
+      hint: ''
+  wealth: '50'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: 1736591968634
+  modifiedTime: 1736592110731
+  lastModifiedBy: n9iY1vD5eGeaHb7l
+ownership:
+  default: 0
+  n9iY1vD5eGeaHb7l: 3
+folder: null
+_id: dkaOZsub2sZSQWa0
+sort: 300000
+_key: '!items!dkaOZsub2sZSQWa0'

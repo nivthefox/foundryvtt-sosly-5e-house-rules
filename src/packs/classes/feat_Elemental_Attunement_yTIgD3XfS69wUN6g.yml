@@ -11,7 +11,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>When a creature's resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 power point to cause that use of the discipline to ignore the creature's resistance. You can't spend this point if doing so would increase the discipline's cost above your power limit.</p>
+      <p>When a creature's resistance reduces the damage dealt by a psionic
+      discipline of yours, you can spend 1 power point to cause that use of the
+      discipline to ignore the creature's resistance. You can't spend this point
+      if doing so would increase the discipline's cost above your power
+      limit.</p>
     chat: ''
   identifier: new-item
   source:

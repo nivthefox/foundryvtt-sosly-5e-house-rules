@@ -10,8 +10,7 @@ system:
     recovery: []
     max: ''
   description:
-    value: >-
-      <p>You gain proficiency with medium armor and martial weapons.</p>
+    value: <p>You gain proficiency with medium armor and martial weapons.</p>
     chat: ''
   identifier: new-item
   source:

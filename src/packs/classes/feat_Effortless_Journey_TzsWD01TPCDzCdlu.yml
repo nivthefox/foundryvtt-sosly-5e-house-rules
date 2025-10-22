@@ -11,7 +11,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your mind can mystically move your body. Once on each of your turns, you can forfeit up to 30 feet of your movement to teleport the distance you forfeited. You must teleport to an unoccupied space you can see.</p>
+      <p>Your mind can mystically move your body. Once on each of your turns,
+      you can forfeit up to 30 feet of your movement to teleport the distance
+      you forfeited. You must teleport to an unoccupied space you can see.</p>
     chat: ''
   identifier: new-item
   source:

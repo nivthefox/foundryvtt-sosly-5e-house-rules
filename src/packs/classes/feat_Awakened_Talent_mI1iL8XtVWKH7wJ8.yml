@@ -11,7 +11,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain proficiency with one of the following skills of your choice: Animal Handling, Deception, Insight, Intimidation, Investigation, Perception, and Persuasion.</p><p>Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
+      <p>You gain proficiency with one of the following skills of your choice:
+      Animal Handling, Deception, Insight, Intimidation, Investigation,
+      Perception, and Persuasion.</p><p>Choose one of your skill proficiencies.
+      Your proficiency bonus is doubled for any ability check you make that uses
+      the chosen proficiency.</p>
     chat: ''
   identifier: new-item
   source:
