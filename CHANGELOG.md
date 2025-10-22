@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.22.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.22.1) - 2025-10-22
+
+### Fixed
+- Fix kobold avatar and token image paths to use public directory
+
 ## [1.22.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.22.0) - 2025-10-22
 
 ### Added
