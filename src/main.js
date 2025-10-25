@@ -15,6 +15,7 @@ import {registerPsionicsFeature} from './features/psionics/index.js';
 import {registerSeveredLandsBloodMagicFeature} from './features/severed-lands-blood-magic/index';
 import {registerBeastFormFeature} from './features/beast-form/index';
 import {registerLowLightVisionFeature} from './features/low-light-vision/index';
+import {registerInfravisionFeature} from './features/infravision/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -33,5 +34,6 @@ Hooks.once('init', async () => {
     registerSeveredLandsBloodMagicFeature();
     registerBeastFormFeature();
     registerLowLightVisionFeature();
+    registerInfravisionFeature();
     logger.info('Initialized');
 });
