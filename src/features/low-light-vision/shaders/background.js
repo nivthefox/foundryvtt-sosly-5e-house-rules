@@ -51,7 +51,9 @@ export class LowLightBackgroundShader extends BackgroundVisionShader {
       float darkness = smoothstep(0.9, 1.0, minDistRatio);
 
       if (darkness > 0.0) {
-        gl_FragColor = mix(gl_FragColor, vec4(0.0, 0.0, 0.0, 1.0), darkness);
+        float luminance = dot(gl_FragColor.rgb, vec3(0.299, 0.587, 0.114));
+        vec3 desaturated = vec3(luminance);
+        gl_FragColor.rgb = mix(gl_FragColor.rgb, desaturated * 0.3, darkness);
       }
     }`;
 

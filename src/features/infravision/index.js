@@ -1,7 +1,6 @@
 import {id as module_id} from '../../../module.json';
 import {logger} from '../../utils/logger';
 import {registerInfravisionSettings} from './settings';
-import {InfravisionMode} from './vision-mode';
 import {InfravisionDetectionMode} from './detection-mode';
 
 export function registerInfravisionFeature() {
@@ -14,10 +13,6 @@ export function registerInfravisionFeature() {
     }
 
     Hooks.once('i18nInit', () => {
-        const infravisionVisionMode = new InfravisionMode();
-        CONFIG.Canvas.visionModes.infravision = infravisionVisionMode;
-        logger.info('Infravision vision mode registered');
-
         const infravisionDetectionMode = new InfravisionDetectionMode();
         CONFIG.Canvas.detectionModes.infravision = infravisionDetectionMode;
         logger.info('Infravision detection mode registered');

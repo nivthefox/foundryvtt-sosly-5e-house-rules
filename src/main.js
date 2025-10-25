@@ -16,6 +16,7 @@ import {registerSeveredLandsBloodMagicFeature} from './features/severed-lands-bl
 import {registerBeastFormFeature} from './features/beast-form/index';
 import {registerLowLightVisionFeature} from './features/low-light-vision/index';
 import {registerInfravisionFeature} from './features/infravision/index';
+import {registerVision5eCompatibility} from './features/vision-5e-compatibility/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -35,5 +36,6 @@ Hooks.once('init', async () => {
     registerBeastFormFeature();
     registerLowLightVisionFeature();
     registerInfravisionFeature();
+    registerVision5eCompatibility();
     logger.info('Initialized');
 });
