@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Low-Light Vision mode with configurable dim light multiplier and optional grayscale
+
 ## [1.23.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.23.0) - 2025-10-22
 
 ### Added
