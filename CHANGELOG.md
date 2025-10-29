@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.24.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.24.0) - 2025-10-29
+
 ### Added
 - Add Infravision detection mode that highlights living creatures with red glow (excludes constructs, undead, objects, petrified, and defeated creatures)
 - Add Low-Light Vision mode with configurable dim light multiplier and optional grayscale
