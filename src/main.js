@@ -17,6 +17,7 @@ import {registerBeastFormFeature} from './features/beast-form/index';
 import {registerLowLightVisionFeature} from './features/low-light-vision/index';
 import {registerInfravisionFeature} from './features/infravision/index';
 import {registerVision5eCompatibility} from './features/vision-5e-compatibility/index';
+import {registerLevelsRegionVisibilityFeature} from './features/levels-region-visibility/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -37,5 +38,6 @@ Hooks.once('init', async () => {
     registerLowLightVisionFeature();
     registerInfravisionFeature();
     registerVision5eCompatibility();
+    registerLevelsRegionVisibilityFeature();
     logger.info('Initialized');
 });
