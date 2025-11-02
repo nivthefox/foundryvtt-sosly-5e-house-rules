@@ -89,7 +89,7 @@ system:
     subtype: awa
 effects:
   - name: Telepathic Contact Focus
-    img: icons/magic/perception/third-eye-blue-red.webp
+    img: icons/magic/perception/eye-slit-pink.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.k8H9xChzsXKVslzK
     transfer: true
     _id: TNnSGhJc5fg6fKa5

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fix psionic discipline focus effect icons to match discipline icons
+
 ## [1.24.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.24.0) - 2025-10-29
 
 ### Added

@@ -86,7 +86,7 @@ system:
     subtype: sok
 effects:
   - name: Will of Blades (Psychic Focus)
-    img: icons/weapons/swords/sword-magic-purple.webp
+    img: icons/weapons/swords/sword-guard-flanged-purple.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.D2Un6P5DjYZMV5l7
     transfer: true
     _id: 8QNC5iRPs5jPdvNC

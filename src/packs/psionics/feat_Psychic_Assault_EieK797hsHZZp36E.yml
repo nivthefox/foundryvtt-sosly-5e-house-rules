@@ -85,7 +85,7 @@ system:
     subtype: awa
 effects:
   - name: Psychic Assault Focus
-    img: icons/magic/light/projectile-beams-salvo-pink.webp
+    img: icons/magic/light/projectile-beams-salvo-white.webp
     origin: Compendium.sosly-5e-house-rules.psionics.Item.EieK797hsHZZp36E
     transfer: true
     _id: l8ioFfPVkyfdLRND
