@@ -1,5 +1,6 @@
 /.claude
 /dist
+/extracted
 /node_modules
 /packs
 /playwright-report
