@@ -1,0 +1,244 @@
+_id: yqAUnM77gG845FS1
+name: Deadly Precision
+type: feat
+folder: jve4be1oq4Wc5lKs
+img: icons/weapons/daggers/dagger-jeweled-black.webp
+system:
+  description:
+    value: >-
+      <p>Your assassin's training has taught you to exploit anatomical
+      weaknesses and deliver strikes that leave lasting debilitation, granting
+      you additional
+      @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+      Strike} options.</p> <p><strong>Crippling Strike (Cost: 1d6).</strong> You
+      target vital joints or tendons. The target must succeed on a Constitution
+      saving throw or have its speed reduced to 0 until the end of your next
+      turn.</p> <p><strong>Nerve Strike (Cost: 1d6).</strong> You strike a
+      cluster of nerves with surgical precision. The target must succeed on a
+      Constitution saving throw or have disadvantage on attack rolls until the
+      end of your next turn as pain wracks its body.</p> <section class="secret"
+      id="secret-deadly-precision">
+        <p><strong>Foundry Note</strong></p>
+        <p>The <strong>Crippling Strike</strong> activity includes an Active Effect for
+        tracking the crippled target, but does not automate the speed reduction - apply this
+        manually when the target attempts to move.</p>
+        <p>The <strong>Nerve Strike</strong> activity includes an Active Effect for tracking
+        the nerve-struck target, but does not automate the disadvantage on attacks - apply
+        this manually when the target makes an attack roll.</p>
+      </section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties: []
+  requirements: Assassin
+  activities:
+    iTjN84YN8crBercF:
+      type: save
+      name: Crippling Strike
+      _id: iTjN84YN8crBercF
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: lSHe02Kgf9VXi9IO
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability: con
+        dc:
+          calculation: dex
+          formula: ''
+      img: ''
+      appliedEffects:
+        - lSHe02Kgf9VXi9IO
+    8ql6FnKdCkD2NPMV:
+      type: save
+      name: Nerve Strike
+      _id: 8ql6FnKdCkD2NPMV
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 3mrjqS7qJevlwz4Y
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 200000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability: con
+        dc:
+          calculation: dex
+          formula: ''
+      img: ''
+      appliedEffects:
+        - 3mrjqS7qJevlwz4Y
+  enchant: {}
+  identifier: deadly-precision
+  advancement: []
+  cover: null
+  crewed: false
+effects:
+  - name: 'Deadly Precision: Crippled'
+    img: icons/weapons/daggers/dagger-jeweled-black.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.yqAUnM77gG845FS1
+    transfer: false
+    _id: lSHe02Kgf9VXi9IO
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>The target has its speed reduced to 0 until the end of your next
+      turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1736985600000
+      modifiedTime: 1736985600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!yqAUnM77gG845FS1.lSHe02Kgf9VXi9IO'
+  - name: 'Deadly Precision: Nerve Struck'
+    img: icons/weapons/daggers/dagger-jeweled-black.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.yqAUnM77gG845FS1
+    transfer: false
+    _id: 3mrjqS7qJevlwz4Y
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>The target has disadvantage on attack rolls until the end of your next
+      turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1736985600000
+      modifiedTime: 1736985600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!yqAUnM77gG845FS1.3mrjqS7qJevlwz4Y'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1736985600000
+  modifiedTime: 1763282104063
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+sort: 200000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!yqAUnM77gG845FS1'

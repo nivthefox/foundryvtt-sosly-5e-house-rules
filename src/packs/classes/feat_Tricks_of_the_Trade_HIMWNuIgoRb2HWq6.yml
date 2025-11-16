@@ -1,0 +1,160 @@
+_id: HIMWNuIgoRb2HWq6
+name: Tricks of the Trade
+type: feat
+folder: jve4be1oq4Wc5lKs
+img: icons/skills/social/theft-pickpocket-bribery-brown.webp
+system:
+  description:
+    value: >-
+      <p>Your expertise in misdirection and manipulation grants you additional
+      @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+      Strike} options that reflect your mastery of distraction and
+      disarmament.</p> <p><strong>Disarming Strike (Cost: 1d6).</strong> The
+      target must succeed on a Strength saving throw or drop one item it's
+      holding of your choice. The item lands at the target's feet. If you have a
+      free hand and are within 5 feet of the target, you can catch the item
+      instead.</p> <p><strong>Distraction (Cost: 1d6).</strong> You can move
+      through the target's space without provoking opportunity attacks from
+      them, and their space doesn't count as difficult terrain for you.
+      Additionally, the next attack roll against the target before the start of
+      your next turn has advantage.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties: []
+  requirements: Thief
+  activities:
+    EIJLidYPrQWO68zB:
+      type: save
+      name: Disarming Strike
+      _id: EIJLidYPrQWO68zB
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability: str
+        dc:
+          calculation: dex
+          formula: ''
+      img: ''
+      appliedEffects: []
+    oqojNkZe0Jn8qPTj:
+      type: utility
+      name: Distraction
+      _id: oqojNkZe0Jn8qPTj
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 200000
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      img: ''
+      appliedEffects: []
+  enchant: {}
+  identifier: tricks-of-the-trade
+  advancement: []
+  cover: null
+  crewed: false
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1736985600000
+  modifiedTime: 1763282106230
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+sort: 125000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!HIMWNuIgoRb2HWq6'

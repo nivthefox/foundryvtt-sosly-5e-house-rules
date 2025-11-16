@@ -191,8 +191,28 @@ pages:
         on Hands} pool.</p></li></ul><h2>Ranger</h2><ul><li><p>Ranger can spend
         1 Hit Die during a breather in order to regain a use of their
         @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrFavoredEne]{Favored
-        Enemy}.</p></li></ul><h2>Sorcerer</h2><ul><li><p>Sorcerers can spend 1
-        Hit Die during a breather to regain half of their
+        Enemy}.</p></li></ul><h2>Rogue</h2><ul><li><p>Rogues with the Thief
+        subclass gain access to additional
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+        Strike} options through
+        @UUID[Compendium.sosly-5e-house-rules.classes.Item.HIMWNuIgoRb2HWq6]{Tricks
+        of the Trade}.</p></li><li><p>Rogues with the Arcane Trickster subclass
+        gain access to additional
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+        Strike} options through
+        @UUID[Compendium.sosly-5e-house-rules.classes.Item.VYkGTEX3YpykkbVS]{Arcane
+        Disruption}.</p></li><li><p>Rogues with the Assassin subclass gain
+        access to additional
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+        Strike} options through
+        @UUID[Compendium.sosly-5e-house-rules.classes.Item.yqAUnM77gG845FS1]{Deadly
+        Precision}.</p></li><li><p>Rogues with the Soulknife subclass gain
+        access to additional
+        @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+        Strike} options through
+        @UUID[Compendium.sosly-5e-house-rules.classes.Item.LILMYnw3wvAHzFVl]{Mind
+        Blade Techniques}.</p></li></ul><h2>Sorcerer</h2><ul><li><p>Sorcerers
+        can spend 1 Hit Die during a breather to regain half of their
         @UUID[Compendium.dnd-players-handbook.classes.Item.phbscrFontOfMagi]{Font
         of Magic}.</p></li></ul>
     video:

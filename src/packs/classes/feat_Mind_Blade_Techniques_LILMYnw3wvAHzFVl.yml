@@ -1,0 +1,208 @@
+_id: LILMYnw3wvAHzFVl
+name: Mind Blade Techniques
+type: feat
+folder: jve4be1oq4Wc5lKs
+img: icons/weapons/daggers/dagger-curved-purple.webp
+system:
+  description:
+    value: >-
+      <p>Your psychic blades can slice through more than just flesh, cutting
+      into the very thoughts and perceptions of your enemies, granting you
+      additional
+      @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeCunningStr]{Cunning
+      Strike} options.</p> <p><strong>Psychic Static (Cost: 1d6).</strong> The
+      target must succeed on a Wisdom saving throw or subtract 1d4 from all
+      attack rolls and ability checks until the end of your next turn.</p>
+      <p><strong>Memory Spike (Cost: 2d6).</strong> You drive a psychic spike
+      into the target's short-term memory. The target must succeed on an
+      Intelligence saving throw or you can immediately attempt to Hide from the
+      target as a part of this attack.</p> <section class="secret"
+      id="secret-mind-blade-techniques">
+        <p><strong>Foundry Note</strong></p>
+        <p>The <strong>Psychic Static</strong> activity includes an Active Effect for
+        tracking the affected target, but does not automate the -1d4 penalty - apply this
+        manually when the target makes an attack roll or ability check.</p>
+        <p>For <strong>Memory Spike</strong>, you can immediately attempt to Hide from the
+        target if they fail their save. This does not automate the Hide action - make your
+        Stealth check manually.</p>
+      </section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties: []
+  requirements: Soulknife
+  activities:
+    Xn29Gc0XqcYRstlG:
+      type: save
+      name: Psychic Static
+      _id: Xn29Gc0XqcYRstlG
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 2mBUWSMfsKJnTzvy
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability: wis
+        dc:
+          calculation: dex
+          formula: ''
+      img: ''
+      appliedEffects:
+        - 2mBUWSMfsKJnTzvy
+    TYf64RfB2PAbFXQf:
+      type: save
+      name: Memory Spike
+      _id: TYf64RfB2PAbFXQf
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 200000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability: int
+        dc:
+          calculation: dex
+          formula: ''
+      img: ''
+      appliedEffects: []
+  enchant: {}
+  identifier: mind-blade-techniques
+  advancement: []
+  cover: null
+  crewed: false
+effects:
+  - name: 'Mind Blade Techniques: Psychic Static'
+    img: icons/weapons/daggers/dagger-curved-purple.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.LILMYnw3wvAHzFVl
+    transfer: false
+    _id: 2mBUWSMfsKJnTzvy
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>The target subtracts 1d4 from all attack rolls and ability checks until
+      the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: 1736985600000
+      modifiedTime: 1736985600000
+      lastModifiedBy: NbCXvDXaYhqPCRFb
+    _key: '!items.effects!LILMYnw3wvAHzFVl.2mBUWSMfsKJnTzvy'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1736985600000
+  modifiedTime: 1763282105062
+  lastModifiedBy: NbCXvDXaYhqPCRFb
+sort: 150000
+ownership:
+  default: 0
+  NbCXvDXaYhqPCRFb: 3
+_key: '!items!LILMYnw3wvAHzFVl'

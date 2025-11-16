@@ -110,7 +110,82 @@ pages:
     text:
       format: 1
       content: >-
-        <p><em>Optional Rule</em></p><p>This rule introduces consequences for severe damage, allowing characters to sustain long-term injuries instead of immediate death or exhaustion.</p><h3>When Injuries Occur</h3><p>Characters gain lingering injuries in three situations:</p><ul><li>Instead of gaining exhaustion from the Imperiled condition</li><li>Instead of counting a failed death save as successful</li><li>Instead of taking full damage from a critical hit</li></ul><h3>Recovery Mechanics</h3><p>Lingering injuries are intended to last, and will not heal with time alone. Recovery requires magical or psionic healing, or multiple long rests (varies by injury type). During long rests, a character needs a successful Wisdom (Medicine) check (DC 10) to progress toward recovery.</p><h3>Alternative Injuries</h3><p>Players may negotiate narrative injuries with their DM instead of using the table—such as permanent disadvantage from losing an eye or permanent limb loss. Recovery terms are determined collaboratively.</p><h3>Injury Table</h3><p>Roll on the @UUID[Compendium.sosly-5e-house-rules.effect-tables.RollTable.Gm1AesqOVcCfMYCi]{Lingering Injuries} table to determine the injury.</p><table><tbody><tr><th><p>d20</p></th><th><p>Injury</p></th><th><p>Effect</p></th><th><p>Recovery</p></th></tr><tr><td><p>1</p></td><td><p>Internal Hemorrhage</p></td><td><p>Lose 1d6 maximum hit points each day</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long rests</p></td></tr><tr><td><p>2</p></td><td><p>Internal Hemorrhage</p></td><td><p>Lose 1d6 maximum hit points each day</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long rests</p></td></tr><tr><td><p>3</p></td><td><p>Shattered Bone</p></td><td><p>One limb unusable (DM chooses based on injury source)</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long rests</p></td></tr><tr><td><p>4</p></td><td><p>Shattered Bone</p></td><td><p>One limb unusable (DM chooses based on injury source)</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long rests</p></td></tr><tr><td><p>5</p></td><td><p>Nerve Damage</p></td><td><p>At start of your turn make a Constitution save (DC 15) or lose your Action</p></td><td><p>Lesser Restoration, Restore Health, or 3d6 long rests</p></td></tr><tr><td><p>6</p></td><td><p>Nerve Damage</p></td><td><p>At start of your turn make a Constitution save (DC 15) or lose your Action</p></td><td><p>Lesser Restoration, Restore Health, or 3d6 long rests</p></td></tr><tr><td><p>7</p></td><td><p>Torn Ligament</p></td><td><p>Speed halved</p></td><td><p>Lesser Restoration, Restore Health, or 3d6 long rests</p></td></tr><tr><td><p>8</p></td><td><p>Hideous Scar</p></td><td><p>Disadvantage on Charisma (Persuasion) checks, advantage on Charisma (Intimidation) checks</p></td><td><p>Lesser Restoration, Restore Health, or 2d6 long rests</p></td></tr><tr><td><p>9</p></td><td><p>Blood Loss</p></td><td><p>Gain 1 level of exhaustion that can't be removed</p></td><td><p>Any psionic or magical healing or 2d6 long rests</p></td></tr><tr><td><p>10</p></td><td><p>Traumatic Shock</p></td><td><p>One ability score is reduced by 1d4</p></td><td><p>Any psionic or magical healing or 2d6 long rests</p></td></tr><tr><td><p>11</p></td><td><p>Traumatic Shock</p></td><td><p>One ability score is reduced by 1d4</p></td><td><p>Any psionic or magical healing or 2d6 long rests</p></td></tr><tr><td><p>12</p></td><td><p>Traumatic Shock</p></td><td><p>One ability score is reduced by 1d4</p></td><td><p>Any psionic or magical healing or 2d6 long rests</p></td></tr><tr><td><p>13</p></td><td><p>Concussed</p></td><td><p>Disadvantage on Initiative</p></td><td><p>Any psionic or magical healing, or 2d6 long rests</p></td></tr><tr><td><p>14</p></td><td><p>Concussed</p></td><td><p>Disadvantage on Initiative</p></td><td><p>Any psionic or magical healing, or 2d6 long rests</p></td></tr><tr><td><p>15</p></td><td><p>Bruised Ribs</p></td><td><p>Speed reduced by 5 ft</p></td><td><p>Any psionic or magical healing, or 1d6 long rests</p></td></tr><tr><td><p>16</p></td><td><p>Bruised Ribs</p></td><td><p>Speed reduced by 5 ft</p></td><td><p>Any psionic or magical healing, or 1d6 long rests</p></td></tr><tr><td><p>17</p></td><td><p>Black Eye</p></td><td><p>Disadvantage on Perception checks</p></td><td><p>Any psionic or magical healing, or 1d6 long rests</p></td></tr><tr><td><p>18</p></td><td><p>Black Eye</p></td><td><p>Disadvantage on Perception checks</p></td><td><p>Any psionic or magical healing, or 1d6 long rests</p></td></tr><tr><td><p>19</p></td><td><p>Minor Scar</p></td><td><p>No mechanical effect</p></td><td><p>Permanent</p></td></tr><tr><td><p>20</p></td><td><p>Minor Scar</p></td><td><p>No mechanical effect</p></td><td><p>Permanent</p></td></tr></tbody></table>
+        <p><em>Optional Rule</em></p><p>This rule introduces consequences for
+        severe damage, allowing characters to sustain long-term injuries instead
+        of immediate death or exhaustion.</p><h3>When Injuries
+        Occur</h3><p>Characters gain lingering injuries in three
+        situations:</p><ul><li>Instead of gaining exhaustion from the Imperiled
+        condition</li><li>Instead of counting a failed death save as
+        successful</li><li>Instead of taking full damage from a critical
+        hit</li></ul><h3>Recovery Mechanics</h3><p>Lingering injuries are
+        intended to last, and will not heal with time alone. Recovery requires
+        magical or psionic healing, or multiple long rests (varies by injury
+        type). During long rests, a character needs a successful Wisdom
+        (Medicine) check (DC 10) to progress toward recovery.</p><h3>Alternative
+        Injuries</h3><p>Players may negotiate narrative injuries with their DM
+        instead of using the table—such as permanent disadvantage from losing an
+        eye or permanent limb loss. Recovery terms are determined
+        collaboratively.</p><h3>Injury Table</h3><p>Roll on the
+        @UUID[Compendium.sosly-5e-house-rules.effect-tables.RollTable.Gm1AesqOVcCfMYCi]{Lingering
+        Injuries} table to determine the
+        injury.</p><table><tbody><tr><th><p>d20</p></th><th><p>Injury</p></th><th><p>Effect</p></th><th><p>Recovery</p></th></tr><tr><td><p>1</p></td><td><p>Internal
+        Hemorrhage</p></td><td><p>Lose 1d6 maximum hit points each
+        day</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long
+        rests</p></td></tr><tr><td><p>2</p></td><td><p>Internal
+        Hemorrhage</p></td><td><p>Lose 1d6 maximum hit points each
+        day</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long
+        rests</p></td></tr><tr><td><p>3</p></td><td><p>Shattered
+        Bone</p></td><td><p>One limb unusable (DM chooses based on injury
+        source)</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long
+        rests</p></td></tr><tr><td><p>4</p></td><td><p>Shattered
+        Bone</p></td><td><p>One limb unusable (DM chooses based on injury
+        source)</p></td><td><p>Greater Restoration, Restore Vigor, or 4d6 long
+        rests</p></td></tr><tr><td><p>5</p></td><td><p>Nerve
+        Damage</p></td><td><p>At start of your turn make a Constitution save (DC
+        15) or lose your Action</p></td><td><p>Lesser Restoration, Restore
+        Health, or 3d6 long rests</p></td></tr><tr><td><p>6</p></td><td><p>Nerve
+        Damage</p></td><td><p>At start of your turn make a Constitution save (DC
+        15) or lose your Action</p></td><td><p>Lesser Restoration, Restore
+        Health, or 3d6 long rests</p></td></tr><tr><td><p>7</p></td><td><p>Torn
+        Ligament</p></td><td><p>Speed halved</p></td><td><p>Lesser Restoration,
+        Restore Health, or 3d6 long
+        rests</p></td></tr><tr><td><p>8</p></td><td><p>Hideous
+        Scar</p></td><td><p>Disadvantage on Charisma (Persuasion) checks,
+        advantage on Charisma (Intimidation) checks</p></td><td><p>Lesser
+        Restoration, Restore Health, or 2d6 long
+        rests</p></td></tr><tr><td><p>9</p></td><td><p>Blood
+        Loss</p></td><td><p>Gain 1 level of exhaustion that can't be
+        removed</p></td><td><p>Any psionic or magical healing or 2d6 long
+        rests</p></td></tr><tr><td><p>10</p></td><td><p>Traumatic
+        Shock</p></td><td><p>One ability score is reduced by
+        1d4</p></td><td><p>Any psionic or magical healing or 2d6 long
+        rests</p></td></tr><tr><td><p>11</p></td><td><p>Traumatic
+        Shock</p></td><td><p>One ability score is reduced by
+        1d4</p></td><td><p>Any psionic or magical healing or 2d6 long
+        rests</p></td></tr><tr><td><p>12</p></td><td><p>Traumatic
+        Shock</p></td><td><p>One ability score is reduced by
+        1d4</p></td><td><p>Any psionic or magical healing or 2d6 long
+        rests</p></td></tr><tr><td><p>13</p></td><td><p>Concussed</p></td><td><p>Disadvantage
+        on Initiative</p></td><td><p>Any psionic or magical healing, or 2d6 long
+        rests</p></td></tr><tr><td><p>14</p></td><td><p>Concussed</p></td><td><p>Disadvantage
+        on Initiative</p></td><td><p>Any psionic or magical healing, or 2d6 long
+        rests</p></td></tr><tr><td><p>15</p></td><td><p>Bruised
+        Ribs</p></td><td><p>Speed reduced by 5 ft</p></td><td><p>Any psionic or
+        magical healing, or 1d6 long
+        rests</p></td></tr><tr><td><p>16</p></td><td><p>Bruised
+        Ribs</p></td><td><p>Speed reduced by 5 ft</p></td><td><p>Any psionic or
+        magical healing, or 1d6 long
+        rests</p></td></tr><tr><td><p>17</p></td><td><p>Black
+        Eye</p></td><td><p>Disadvantage on Perception checks</p></td><td><p>Any
+        psionic or magical healing, or 1d6 long
+        rests</p></td></tr><tr><td><p>18</p></td><td><p>Black
+        Eye</p></td><td><p>Disadvantage on Perception checks</p></td><td><p>Any
+        psionic or magical healing, or 1d6 long
+        rests</p></td></tr><tr><td><p>19</p></td><td><p>Minor
+        Scar</p></td><td><p>No mechanical
+        effect</p></td><td><p>Permanent</p></td></tr><tr><td><p>20</p></td><td><p>Minor
+        Scar</p></td><td><p>No mechanical
+        effect</p></td><td><p>Permanent</p></td></tr></tbody></table>
     video:
       controls: true
       volume: 0.5

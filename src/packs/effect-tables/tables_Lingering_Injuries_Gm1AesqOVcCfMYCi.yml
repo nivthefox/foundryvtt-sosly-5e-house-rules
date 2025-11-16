@@ -3,7 +3,9 @@ name: Lingering Injuries
 _id: Gm1AesqOVcCfMYCi
 img: icons/svg/d20-black.svg
 description: >-
-  Optional rule for severe damage consequences. Roll when a character would gain exhaustion from the Imperiled condition, count a failed death save as successful, or take full damage from a critical hit.
+  Optional rule for severe damage consequences. Roll when a character would gain
+  exhaustion from the Imperiled condition, count a failed death save as
+  successful, or take full damage from a critical hit.
 formula: 1d20
 replacement: true
 displayRoll: true
@@ -21,7 +23,6 @@ _stats:
   createdTime: 1751851000000
   modifiedTime: 1751851000000
   lastModifiedBy: n9iY1vD5eGeaHb7l
-_key: '!tables!Gm1AesqOVcCfMYCi'
 results:
   - type: text
     weight: 1
@@ -31,7 +32,8 @@ results:
     drawn: false
     _id: jt5XZMfhRQvfvNAt
     text: >-
-      <strong>Internal Hemorrhage:</strong> Lose 1d6 maximum hit points each day. Recovery: Greater Restoration, Restore Vigor, or 4d6 long rests.
+      <strong>Internal Hemorrhage:</strong> Lose 1d6 maximum hit points each
+      day. Recovery: Greater Restoration, Restore Vigor, or 4d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -44,7 +46,8 @@ results:
     drawn: false
     _id: dq0nYy5tpeibCG1R
     text: >-
-      <strong>Internal Hemorrhage:</strong> Lose 1d6 maximum hit points each day. Recovery: Greater Restoration, Restore Vigor, or 4d6 long rests.
+      <strong>Internal Hemorrhage:</strong> Lose 1d6 maximum hit points each
+      day. Recovery: Greater Restoration, Restore Vigor, or 4d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -57,7 +60,9 @@ results:
     drawn: false
     _id: CcNYwXUjXFTPmsLp
     text: >-
-      <strong>Shattered Bone:</strong> One limb unusable (DM chooses based on injury source). Recovery: Greater Restoration, Restore Vigor, or 4d6 long rests.
+      <strong>Shattered Bone:</strong> One limb unusable (DM chooses based on
+      injury source). Recovery: Greater Restoration, Restore Vigor, or 4d6 long
+      rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -70,7 +75,9 @@ results:
     drawn: false
     _id: rGHM75uQTWXzgzOh
     text: >-
-      <strong>Shattered Bone:</strong> One limb unusable (DM chooses based on injury source). Recovery: Greater Restoration, Restore Vigor, or 4d6 long rests.
+      <strong>Shattered Bone:</strong> One limb unusable (DM chooses based on
+      injury source). Recovery: Greater Restoration, Restore Vigor, or 4d6 long
+      rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -83,7 +90,9 @@ results:
     drawn: false
     _id: B7ATtVX74rnmeZYT
     text: >-
-      <strong>Nerve Damage:</strong> At start of your turn make a Constitution save (DC 15) or lose your Action. Recovery: Lesser Restoration, Restore Health, or 3d6 long rests.
+      <strong>Nerve Damage:</strong> At start of your turn make a Constitution
+      save (DC 15) or lose your Action. Recovery: Lesser Restoration, Restore
+      Health, or 3d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -96,7 +105,9 @@ results:
     drawn: false
     _id: 8SwY1CSSAXKswRnz
     text: >-
-      <strong>Nerve Damage:</strong> At start of your turn make a Constitution save (DC 15) or lose your Action. Recovery: Lesser Restoration, Restore Health, or 3d6 long rests.
+      <strong>Nerve Damage:</strong> At start of your turn make a Constitution
+      save (DC 15) or lose your Action. Recovery: Lesser Restoration, Restore
+      Health, or 3d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -109,7 +120,8 @@ results:
     drawn: false
     _id: H7BbAHilsFbKcpxz
     text: >-
-      <strong>Torn Ligament:</strong> Speed halved. Recovery: Lesser Restoration, Restore Health, or 3d6 long rests.
+      <strong>Torn Ligament:</strong> Speed halved. Recovery: Lesser
+      Restoration, Restore Health, or 3d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -122,7 +134,9 @@ results:
     drawn: false
     _id: rtn5GucaWPoTMnVG
     text: >-
-      <strong>Hideous Scar:</strong> Disadvantage on Charisma (Persuasion) checks, advantage on Charisma (Intimidation) checks. Recovery: Lesser Restoration, Restore Health, or 2d6 long rests.
+      <strong>Hideous Scar:</strong> Disadvantage on Charisma (Persuasion)
+      checks, advantage on Charisma (Intimidation) checks. Recovery: Lesser
+      Restoration, Restore Health, or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -135,7 +149,8 @@ results:
     drawn: false
     _id: EuX9OvJ0dp9hOHej
     text: >-
-      <strong>Blood Loss:</strong> Gain 1 level of exhaustion that can't be removed. Recovery: Any psionic or magical healing or 2d6 long rests.
+      <strong>Blood Loss:</strong> Gain 1 level of exhaustion that can't be
+      removed. Recovery: Any psionic or magical healing or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -148,7 +163,8 @@ results:
     drawn: false
     _id: HPvn5nnoOyZeObeo
     text: >-
-      <strong>Traumatic Shock:</strong> One ability score is reduced by 1d4. Recovery: Any psionic or magical healing or 2d6 long rests.
+      <strong>Traumatic Shock:</strong> One ability score is reduced by 1d4.
+      Recovery: Any psionic or magical healing or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -161,7 +177,8 @@ results:
     drawn: false
     _id: 7WaN01SAgOe3uqad
     text: >-
-      <strong>Traumatic Shock:</strong> One ability score is reduced by 1d4. Recovery: Any psionic or magical healing or 2d6 long rests.
+      <strong>Traumatic Shock:</strong> One ability score is reduced by 1d4.
+      Recovery: Any psionic or magical healing or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -174,7 +191,8 @@ results:
     drawn: false
     _id: PntprZhrzMuIcAVp
     text: >-
-      <strong>Traumatic Shock:</strong> One ability score is reduced by 1d4. Recovery: Any psionic or magical healing or 2d6 long rests.
+      <strong>Traumatic Shock:</strong> One ability score is reduced by 1d4.
+      Recovery: Any psionic or magical healing or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -187,7 +205,8 @@ results:
     drawn: false
     _id: 6tfAlh6FJZL8M8JR
     text: >-
-      <strong>Concussed:</strong> Disadvantage on Initiative. Recovery: Any psionic or magical healing, or 2d6 long rests.
+      <strong>Concussed:</strong> Disadvantage on Initiative. Recovery: Any
+      psionic or magical healing, or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -200,7 +219,8 @@ results:
     drawn: false
     _id: Y20y0Hq5vN7TxcGN
     text: >-
-      <strong>Concussed:</strong> Disadvantage on Initiative. Recovery: Any psionic or magical healing, or 2d6 long rests.
+      <strong>Concussed:</strong> Disadvantage on Initiative. Recovery: Any
+      psionic or magical healing, or 2d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -213,7 +233,8 @@ results:
     drawn: false
     _id: ewbGuY8OfQtzOjFz
     text: >-
-      <strong>Bruised Ribs:</strong> Speed reduced by 5 ft. Recovery: Any psionic or magical healing, or 1d6 long rests.
+      <strong>Bruised Ribs:</strong> Speed reduced by 5 ft. Recovery: Any
+      psionic or magical healing, or 1d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -226,7 +247,8 @@ results:
     drawn: false
     _id: heslUEdexftvwqwi
     text: >-
-      <strong>Bruised Ribs:</strong> Speed reduced by 5 ft. Recovery: Any psionic or magical healing, or 1d6 long rests.
+      <strong>Bruised Ribs:</strong> Speed reduced by 5 ft. Recovery: Any
+      psionic or magical healing, or 1d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -239,7 +261,8 @@ results:
     drawn: false
     _id: 0SUEqolBfY0wWfBE
     text: >-
-      <strong>Black Eye:</strong> Disadvantage on Perception checks. Recovery: Any psionic or magical healing, or 1d6 long rests.
+      <strong>Black Eye:</strong> Disadvantage on Perception checks. Recovery:
+      Any psionic or magical healing, or 1d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -252,7 +275,8 @@ results:
     drawn: false
     _id: xFBxJKSJ4B4ESATR
     text: >-
-      <strong>Black Eye:</strong> Disadvantage on Perception checks. Recovery: Any psionic or magical healing, or 1d6 long rests.
+      <strong>Black Eye:</strong> Disadvantage on Perception checks. Recovery:
+      Any psionic or magical healing, or 1d6 long rests.
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -264,8 +288,7 @@ results:
       - 19
     drawn: false
     _id: GdaGeYHMc0PFQxQq
-    text: >-
-      <strong>Minor Scar:</strong> No mechanical effect. Recovery: Permanent.
+    text: '<strong>Minor Scar:</strong> No mechanical effect. Recovery: Permanent.'
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
@@ -277,9 +300,9 @@ results:
       - 20
     drawn: false
     _id: RzNpnQo4oPpTyAbx
-    text: >-
-      <strong>Minor Scar:</strong> No mechanical effect. Recovery: Permanent.
+    text: '<strong>Minor Scar:</strong> No mechanical effect. Recovery: Permanent.'
     img: icons/svg/d20-black.svg
     documentId: null
     flags: {}
     _key: '!tables.results!Gm1AesqOVcCfMYCi.RzNpnQo4oPpTyAbx'
+_key: '!tables!Gm1AesqOVcCfMYCi'
