@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Lingering Injuries optional rule to Severed Lands house rules
+- Add Lingering Injuries roll table (1d20) with 20 injury results
+
 ### Fixed
 - Fix psionic discipline focus effect icons to match discipline icons
 

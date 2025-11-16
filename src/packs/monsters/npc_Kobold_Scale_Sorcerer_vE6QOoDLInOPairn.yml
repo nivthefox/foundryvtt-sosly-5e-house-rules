@@ -439,7 +439,8 @@ prototypeToken:
     negative: false
     priority: 0
   texture:
-    src: modules/sosly-5e-house-rules/public/tokens/kobold_scale_sorcerer.Token.webp
+    src: >-
+      modules/sosly-5e-house-rules/public/tokens/kobold_scale_sorcerer.Token.webp
     tint: '#ffffff'
     scaleX: 0.8
     scaleY: 0.8
