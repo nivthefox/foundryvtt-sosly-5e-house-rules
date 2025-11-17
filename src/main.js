@@ -16,6 +16,7 @@ import {registerSeveredLandsBloodMagicFeature} from './features/severed-lands-bl
 import {registerBeastFormFeature} from './features/beast-form/index';
 import {registerLowLightVisionFeature} from './features/low-light-vision/index';
 import {registerInfravisionFeature} from './features/infravision/index';
+import {registerLanguageChoiceFeature} from './features/language-choice/index';
 import {registerVision5eCompatibility} from './features/vision-5e-compatibility/index';
 import {registerLevelsRegionVisibilityFeature} from './features/levels-region-visibility/index';
 
@@ -30,6 +31,7 @@ Hooks.once('init', async () => {
     registerRestEnhancementsFeature();
     registerToolsFeature();
     registerItemIdentificationFeature();
+    registerLanguageChoiceFeature();
     registerTransformationCleanupFeature();
     registerLocationFeature();
     registerPsionicsFeature();

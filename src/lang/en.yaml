@@ -124,3 +124,10 @@ sosly:
       short-term: Short-term Madness
       long-term: Long-term Madness
       indefinite: Indefinite Madness
+  language-choice:
+    label: Campaign Language Setting
+    hint: Select the language set appropriate for your campaign world. Requires reload.
+    default: D&D 5th Edition (Default)
+    dragonlance: Dragonlance
+    forgottenrealms: Forgotten Realms
+    severedlands: The Severed Lands

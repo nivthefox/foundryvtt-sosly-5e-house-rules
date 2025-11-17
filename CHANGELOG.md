@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add Language Choice feature to configure campaign-specific language sets (D&D 5e Default, Dragonlance, Forgotten Realms, or Severed Lands)
 - Add optional Cunning Strike features for Rogue subclasses at 6th level (Thief, Arcane Trickster, Assassin, Soulknife)
 - Add Lingering Injuries optional rule to Severed Lands house rules
 - Add Lingering Injuries roll table (1d20) with 20 injury results
