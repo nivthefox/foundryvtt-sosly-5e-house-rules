@@ -19,6 +19,7 @@ import {registerInfravisionFeature} from './features/infravision/index';
 import {registerLanguageChoiceFeature} from './features/language-choice/index';
 import {registerVision5eCompatibility} from './features/vision-5e-compatibility/index';
 import {registerLevelsRegionVisibilityFeature} from './features/levels-region-visibility/index';
+import {registerItemsWithSpellsFeature} from './features/items-with-spells/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -41,5 +42,6 @@ Hooks.once('init', async () => {
     registerInfravisionFeature();
     registerVision5eCompatibility();
     registerLevelsRegionVisibilityFeature();
+    registerItemsWithSpellsFeature();
     logger.info('Initialized');
 });

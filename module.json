@@ -43,14 +43,6 @@
         }
       },
       {
-        "id": "items-with-spells-5e",
-        "type": "module",
-        "compatibility": {
-          "minimum": "13.0.2",
-          "verified": "13.0.2"
-        }
-      },
-      {
         "id": "ActiveAuras",
         "type": "module",
         "compatibility": {

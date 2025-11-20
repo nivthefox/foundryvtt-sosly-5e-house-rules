@@ -131,3 +131,8 @@ sosly:
     dragonlance: Dragonlance
     forgottenrealms: Forgotten Realms
     severedlands: The Severed Lands
+  items-with-spells:
+    label: Enable Items with Spells
+    hint: Enables a Spells tab on items allowing them to grant spells to their owners.
+    consumes: Consumes
+    empty: Drag and drop a spell here to link it to this item.
