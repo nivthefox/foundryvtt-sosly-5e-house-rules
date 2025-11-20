@@ -1,4 +1,5 @@
 import {ELIGIBLE_ITEM_TYPES} from './constants';
+import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData} from './utils';
 
 export function registerItemSheetSpells() {
     if (!dnd5e?.applications?.item?.ItemSheet5e2) {
@@ -39,12 +40,52 @@ export function registerItemSheetSpells() {
             sheetBody.appendChild(spellsTab);
         }
 
-        const templatePath = 'modules/sosly-5e-house-rules/templates/features/items-with-spells/spells-tab.hbs';
-        const rendered = await renderTemplate(templatePath, {});
+        const itemSpells = getItemSpells(app.item);
+        const spells = await fetchSpellData(itemSpells);
 
+        const templatePath = 'modules/sosly-5e-house-rules/templates/features/items-with-spells/spells-tab.hbs';
+        const rendered = await renderTemplate(templatePath, {spells});
+
+        spellsTab.innerHTML = '';
         const contentWrapper = document.createElement('div');
         contentWrapper.innerHTML = rendered;
         const content = contentWrapper.firstElementChild;
         spellsTab.appendChild(content);
+
+        if (app.isEditable) {
+            const dropZone = spellsTab.querySelector('.sosly-items-with-spells-content');
+            if (dropZone) {
+                dropZone.addEventListener('drop', async event => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    await handleDrop(event, app);
+                });
+                dropZone.addEventListener('dragover', event => {
+                    event.preventDefault();
+                });
+            }
+        }
     });
+}
+
+async function handleDrop(event, app) {
+    const data = TextEditor.getDragEventData(event);
+
+    if (data.type !== 'Item') {
+        return;
+    }
+
+    const spell = await fromUuid(data.uuid);
+
+    if (!spell || spell.type !== 'spell') {
+        return;
+    }
+
+    if (isSpellLinked(app.item, data.uuid)) {
+        ui.notifications.warn(game.i18n.localize('SOSLY.items-with-spells.duplicate'));
+        return;
+    }
+
+    await addSpellToItem(app.item, data.uuid);
+    app.render();
 }

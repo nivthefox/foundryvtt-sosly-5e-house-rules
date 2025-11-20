@@ -1,4 +1,4 @@
-<div class="items-section card">
+<div class="items-section card sosly-items-with-spells-content">
 	<div class="items-header header flexrow">
 		<h3 class="item-name">{{localize 'TYPES.Item.spellPl'}}</h3>
 		<div class="item-header">{{localize 'DND5E.SpellHeader.Roll'}}</div>
@@ -7,8 +7,50 @@
 		<div class="item-controls"></div>
 	</div>
 	<ol class="item-list unlist">
-		<li class="hint items-with-spell-filler">
-			{{localize 'sosly.items-with-spells.empty'}}
-		</li>
+		{{#if (eq spells.length 0)}}
+			<li class="hint items-with-spell-filler">
+				{{localize 'sosly.items-with-spells.empty'}}
+			</li>
+		{{else}}
+			{{#each spells as |spell|}}
+				<li class="item flexrow" data-item-id="{{spell.id}}">
+					<div class="item-name flexrow">
+						<div class="gold-icon item-image" style="background-image: url({{spell.img}})"></div>
+						<div class="stacked-name">
+							<span class="subtitle">{{spell.name}}</span>
+							<span class="title">{{localize 'sosly.items-with-spells.subtitle.linked'}}</span>
+						</div>
+					</div>
+
+					<div class="item-detail flexrow">
+						{{#if spell.displaySave}}
+							<span>{{spell.saveLabel}}</span>
+						{{/if}}
+						{{#if spell.displayAttack}}
+							<span>{{spell.attackLabel}}</span>
+						{{else if (not spell.displaySave)}}
+							<span class="empty-column">-</span>
+						{{/if}}
+					</div>
+
+					<div class="item-detail empty-column">
+						<span>-</span>
+					</div>
+
+					<div class="item-detail empty-column">
+						<span>-</span>
+					</div>
+
+					<div class="item-controls flexrow">
+						<a class="item-control" data-tooltip="sosly.items-with-spells.edit">
+							<i class="fas fa-edit"></i>
+						</a>
+						<a class="item-control" data-tooltip="sosly.items-with-spells.remove">
+							<i class="fas fa-trash"></i>
+						</a>
+					</div>
+				</li>
+			{{/each}}
+		{{/if}}
 	</ol>
 </div>
