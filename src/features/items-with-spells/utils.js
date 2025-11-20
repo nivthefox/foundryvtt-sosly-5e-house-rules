@@ -1,5 +1,6 @@
 const FLAG_SCOPE = 'sosly-5e-house-rules';
 const FLAG_KEY = 'item-spells';
+const PARENT_FLAG_KEY = 'parent-item';
 
 export function getItemSpells(item) {
     return item.getFlag(FLAG_SCOPE, FLAG_KEY) ?? [];
@@ -72,4 +73,61 @@ export async function fetchSpellData(spellList) {
     }
 
     return spells;
+}
+
+export function getParentItemId(spell) {
+    return spell.getFlag(FLAG_SCOPE, PARENT_FLAG_KEY);
+}
+
+export async function setParentItemId(spell, parentItemId) {
+    await spell.setFlag(FLAG_SCOPE, PARENT_FLAG_KEY, parentItemId);
+}
+
+export async function removeParentItemId(spell) {
+    await spell.unsetFlag(FLAG_SCOPE, PARENT_FLAG_KEY);
+}
+
+export async function removeSpellFromItem(item, spellId) {
+    const spells = getItemSpells(item);
+    const filtered = spells.filter(spell => spell.id !== spellId);
+    await item.setFlag(FLAG_SCOPE, FLAG_KEY, filtered);
+}
+
+export async function createSpellOnActor(actor, spellUuid, parentItemId) {
+    const sourceSpell = await fromUuid(spellUuid);
+
+    if (!sourceSpell) {
+        return null;
+    }
+
+    const spellData = sourceSpell.toObject();
+    const createdSpells = await actor.createEmbeddedDocuments('Item', [spellData]);
+    const createdSpell = createdSpells[0];
+
+    await setParentItemId(createdSpell, parentItemId);
+
+    return createdSpell;
+}
+
+export async function updateItemSpellFlags(item, oldId, newUuid) {
+    const spells = getItemSpells(item);
+    const spell = spells.find(s => s.id === oldId);
+
+    if (!spell) {
+        return;
+    }
+
+    spell.uuid = newUuid;
+    spell.id = newUuid.split('.').pop();
+
+    await item.setFlag(FLAG_SCOPE, FLAG_KEY, spells);
+}
+
+export function getSpellsForItem(actor, itemId) {
+    return actor.items.filter(item => {
+        if (item.type !== 'spell') {
+            return false;
+        }
+        return getParentItemId(item) === itemId;
+    });
 }

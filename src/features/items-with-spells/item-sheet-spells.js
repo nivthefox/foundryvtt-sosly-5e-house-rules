@@ -1,5 +1,5 @@
 import {ELIGIBLE_ITEM_TYPES} from './constants';
-import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData} from './utils';
+import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem} from './utils';
 
 export function registerItemSheetSpells() {
     if (!dnd5e?.applications?.item?.ItemSheet5e2) {
@@ -52,18 +52,30 @@ export function registerItemSheetSpells() {
         const content = contentWrapper.firstElementChild;
         spellsTab.appendChild(content);
 
-        if (app.isEditable) {
-            const dropZone = spellsTab.querySelector('.sosly-items-with-spells-content');
-            if (dropZone) {
-                dropZone.addEventListener('drop', async event => {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    await handleDrop(event, app);
-                });
-                dropZone.addEventListener('dragover', event => {
-                    event.preventDefault();
-                });
-            }
+        const contentZone = spellsTab.querySelector('.sosly-items-with-spells-content');
+
+        if (app.isEditable && contentZone) {
+            contentZone.addEventListener('drop', async event => {
+                event.preventDefault();
+                event.stopPropagation();
+                await handleDrop(event, app);
+            });
+            contentZone.addEventListener('dragover', event => {
+                event.preventDefault();
+            });
+        }
+
+        if (contentZone) {
+            contentZone.addEventListener('click', async event => {
+                const editButton = event.target.closest('.item-control[data-action="edit"]');
+                const deleteButton = event.target.closest('.item-control[data-action="delete"]');
+
+                if (editButton) {
+                    await handleEdit(event, app);
+                } else if (deleteButton) {
+                    await handleDelete(event, app);
+                }
+            });
         }
     });
 }
@@ -87,5 +99,72 @@ async function handleDrop(event, app) {
     }
 
     await addSpellToItem(app.item, data.uuid);
+    app.render();
+}
+
+async function handleEdit(event, app) {
+    const spellRow = event.target.closest('[data-item-id]');
+
+    if (!spellRow) {
+        return;
+    }
+
+    const spellId = spellRow.dataset.itemId;
+    const itemSpells = getItemSpells(app.item);
+    const spellEntry = itemSpells.find(s => s.id === spellId);
+
+    if (!spellEntry) {
+        return;
+    }
+
+    const spell = await fromUuid(spellEntry.uuid);
+
+    if (!spell) {
+        ui.notifications.warn('Spell not found');
+        return;
+    }
+
+    spell.sheet.render(true);
+}
+
+async function handleDelete(event, app) {
+    const spellRow = event.target.closest('[data-item-id]');
+
+    if (!spellRow) {
+        return;
+    }
+
+    const spellId = spellRow.dataset.itemId;
+    const itemSpells = getItemSpells(app.item);
+    const spellEntry = itemSpells.find(s => s.id === spellId);
+
+    if (!spellEntry) {
+        return;
+    }
+
+    const spell = await fromUuid(spellEntry.uuid);
+    const spellName = spell?.name ?? 'this spell';
+
+    const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: {
+            title: game.i18n.localize('sosly.items-with-spells.delete-confirm-title')
+        },
+        content: game.i18n.format('sosly.items-with-spells.delete-confirm', {
+            spellName: spellName,
+            itemName: app.item.name
+        }),
+        modal: true
+    });
+
+    if (!confirmed) {
+        return;
+    }
+
+    await removeSpellFromItem(app.item, spellId);
+
+    if (spell && spell.isEmbedded) {
+        await spell.delete();
+    }
+
     app.render();
 }

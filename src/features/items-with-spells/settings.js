@@ -15,4 +15,15 @@ export function registerItemsWithSpellsSettings() {
         restricted: true,
         requiresReload: true
     });
+
+    game.settings.register(module_id, 'items-with-spells-sort-order', {
+        name: game.i18n.localize('sosly.items-with-spells.sort-order.label'),
+        hint: game.i18n.localize('sosly.items-with-spells.sort-order.hint'),
+        scope: 'world',
+        config: true,
+        type: Boolean,
+        default: false,
+        restricted: true,
+        requiresReload: true
+    });
 }

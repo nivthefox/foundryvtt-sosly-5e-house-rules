@@ -141,3 +141,10 @@ sosly:
     edit: Edit
     remove: Remove
     duplicate: Spell already linked to this item.
+    delete-confirm-title: Remove Spell
+    delete-confirm: Remove {spellName} from {itemName}?
+    delete-parent-title: Delete Parent Item
+    delete-parent-confirm: "{itemName} grants {count} spell(s). Delete the spells as well?"
+    sort-order:
+      label: Items with Spells at Bottom
+      hint: When enabled, item spell groups appear at the bottom of the spells tab. When disabled, they appear at the top.
