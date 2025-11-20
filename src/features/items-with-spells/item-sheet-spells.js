@@ -1,5 +1,6 @@
 import {ELIGIBLE_ITEM_TYPES} from './constants';
 import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem} from './utils';
+import {ItemSpellOverrides} from './overrides-dialog';
 
 export function registerItemSheetSpells() {
     if (!dnd5e?.applications?.item?.ItemSheet5e2) {
@@ -44,7 +45,10 @@ export function registerItemSheetSpells() {
         const spells = await fetchSpellData(itemSpells);
 
         const templatePath = 'modules/sosly-5e-house-rules/templates/features/items-with-spells/spells-tab.hbs';
-        const rendered = await renderTemplate(templatePath, {spells});
+        const rendered = await renderTemplate(templatePath, {
+            spells,
+            isEmbedded: app.item.isEmbedded
+        });
 
         spellsTab.innerHTML = '';
         const contentWrapper = document.createElement('div');
@@ -69,11 +73,14 @@ export function registerItemSheetSpells() {
             contentZone.addEventListener('click', async event => {
                 const editButton = event.target.closest('.item-control[data-action="edit"]');
                 const deleteButton = event.target.closest('.item-control[data-action="delete"]');
+                const configureButton = event.target.closest('.item-control[data-action="configure"]');
 
                 if (editButton) {
                     await handleEdit(event, app);
                 } else if (deleteButton) {
                     await handleDelete(event, app);
+                } else if (configureButton) {
+                    await handleConfigure(event, app);
                 }
             });
         }
@@ -167,4 +174,16 @@ async function handleDelete(event, app) {
     }
 
     app.render();
+}
+
+async function handleConfigure(event, app) {
+    const spellRow = event.target.closest('[data-item-id]');
+
+    if (!spellRow) {
+        return;
+    }
+
+    const spellId = spellRow.dataset.itemId;
+    const dialog = new ItemSpellOverrides(app.item, spellId);
+    dialog.render(true);
 }

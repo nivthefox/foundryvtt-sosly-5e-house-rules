@@ -1,12 +1,12 @@
 <div class="items-section card sosly-items-with-spells-content">
-	<div class="items-header header flexrow">
-		<h3 class="item-name">{{localize 'TYPES.Item.spellPl'}}</h3>
-		<div class="item-header">{{localize 'DND5E.SpellHeader.Roll'}}</div>
-		<div class="item-header">{{localize 'DND5E.Uses'}}</div>
-		<div class="item-header">{{localize 'sosly.items-with-spells.consumes'}}</div>
-		<div class="item-controls"></div>
-	</div>
 	<ol class="item-list unlist">
+		<li class="items-header header flexrow">
+			<h3 class="item-name">{{localize 'TYPES.Item.spellPl'}}</h3>
+			<div class="item-header">{{localize 'DND5E.SpellHeader.Roll'}}</div>
+			<div class="item-header">{{localize 'DND5E.Uses'}}</div>
+			<div class="item-header">{{localize 'sosly.items-with-spells.consumes'}}</div>
+			<div class="item-controls"></div>
+		</li>
 		{{#if (eq spells.length 0)}}
 			<li class="hint items-with-spell-filler">
 				{{localize 'sosly.items-with-spells.empty'}}
@@ -22,7 +22,7 @@
 						</div>
 					</div>
 
-					<div class="item-detail flexrow">
+					<div class="item-detail">
 						{{#if spell.displaySave}}
 							<span>{{spell.saveLabel}}</span>
 						{{/if}}
@@ -33,15 +33,28 @@
 						{{/if}}
 					</div>
 
-					<div class="item-detail empty-column">
-						<span>-</span>
+					<div class="item-detail">
+						{{#if spell.usesLabel}}
+							<span>{{spell.usesLabel}}</span>
+						{{else}}
+							<span class="empty-column">-</span>
+						{{/if}}
 					</div>
 
-					<div class="item-detail empty-column">
-						<span>-</span>
+					<div class="item-detail">
+						{{#if spell.consumesLabel}}
+							<span>{{spell.consumesLabel}}</span>
+						{{else}}
+							<span class="empty-column">-</span>
+						{{/if}}
 					</div>
 
 					<div class="item-controls flexrow">
+						{{#unless isEmbedded}}
+							<a class="item-control" data-action="configure" data-tooltip="sosly.items-with-spells.configure">
+								<i class="fas fa-wand-sparkles"></i>
+							</a>
+						{{/unless}}
 						<a class="item-control" data-action="edit" data-tooltip="sosly.items-with-spells.edit">
 							<i class="fas fa-edit"></i>
 						</a>

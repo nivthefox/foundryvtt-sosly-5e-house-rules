@@ -1,8 +1,5 @@
 import {id as module_id} from '../../../module.json';
-
-/**
- * Items with Spells Feature Settings
- */
+import {registerMigration} from './migration';
 
 export function registerItemsWithSpellsSettings() {
     game.settings.register(module_id, 'items-with-spells', {
@@ -26,4 +23,6 @@ export function registerItemsWithSpellsSettings() {
         restricted: true,
         requiresReload: true
     });
+
+    registerMigration();
 }

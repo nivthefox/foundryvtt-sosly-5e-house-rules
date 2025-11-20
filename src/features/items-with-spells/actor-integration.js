@@ -17,7 +17,13 @@ export function registerActorIntegration() {
         }
 
         for (const spellEntry of itemSpells) {
-            const createdSpell = await createSpellOnActor(item.actor, spellEntry.uuid, item.id);
+            const createdSpell = await createSpellOnActor(
+                item.actor,
+                spellEntry.uuid,
+                item.id,
+                item,
+                spellEntry.overrides || {}
+            );
 
             if (!createdSpell) {
                 continue;

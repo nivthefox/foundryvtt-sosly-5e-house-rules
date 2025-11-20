@@ -148,3 +148,22 @@ sosly:
     sort-order:
       label: Items with Spells at Bottom
       hint: When enabled, item spell groups appear at the bottom of the spells tab. When disabled, they appear at the top.
+    configure: Configure Overrides
+    form:
+      configure-overrides: Configure Overrides
+      limited-hint: If this spell has a number of uses per rest or similar innate limitations, configure the number of charges above.
+      charges-hint: If this spell will be cast using charges from the parent item, configure the number of charges above.
+      no-uses-hint: The parent item has no limited uses that can be consumed, hence this field is disabled.
+      save-hint: If this spell has a flat DC or other specialized saving throw logic.
+      attack-hint: Set this if the spell has a flat attack bonus or other specialized attack logic.
+      no-override: Don't override
+      never: Never
+    migration:
+      label: Migrate from Items with Spells 5e
+      hint: Copy all items-with-spells data to this module. Only needs to be run once.
+      completed-hint: Migration has already been completed.
+      confirm-title: Confirm Migration
+      confirm-message: "Found {itemCount} items with linked spells and {spellCount} spells with parent items. This will copy all data to sosly-5e-house-rules. Continue?"
+      no-data: No items-with-spells-5e data found. Nothing to migrate.
+      complete: "Migration complete! Migrated {itemCount} items with spells and updated {spellCount} spell parent references. You can now disable the items-with-spells-5e module."
+      partial-failure: "Migration completed with errors. Successfully migrated {successCount} items, failed on {failureCount} items. Check console for details."

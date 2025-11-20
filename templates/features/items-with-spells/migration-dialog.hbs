@@ -1,0 +1,34 @@
+<div class="migration-dialog">
+    <div class="form-group">
+        <p>{{message}}</p>
+    </div>
+
+    {{#unless migrated}}
+        {{#if hasData}}
+            <footer class="form-footer flexrow">
+                <button type="button" class="gold" data-action="migrate">
+                    <i class="fas fa-file-import"></i>
+                    {{localize "Migrate"}}
+                </button>
+                <button type="button" data-action="cancel">
+                    <i class="fas fa-times"></i>
+                    {{localize "Cancel"}}
+                </button>
+            </footer>
+        {{else}}
+            <footer class="form-footer flexrow">
+                <button type="button" data-action="cancel">
+                    <i class="fas fa-times"></i>
+                    {{localize "Close"}}
+                </button>
+            </footer>
+        {{/if}}
+    {{else}}
+        <footer class="form-footer flexrow">
+            <button type="button" data-action="cancel">
+                <i class="fas fa-times"></i>
+                {{localize "Close"}}
+            </button>
+        </footer>
+    {{/unless}}
+</div>

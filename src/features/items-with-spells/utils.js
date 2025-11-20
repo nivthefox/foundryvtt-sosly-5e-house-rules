@@ -38,7 +38,9 @@ export async function fetchSpellData(spellList) {
                 name: 'Missing Spell',
                 img: 'icons/svg/mystery-man.svg',
                 displaySave: false,
-                displayAttack: false
+                displayAttack: false,
+                usesLabel: null,
+                consumesLabel: null
             });
             continue;
         }
@@ -51,7 +53,9 @@ export async function fetchSpellData(spellList) {
             displaySave: false,
             displayAttack: false,
             saveLabel: null,
-            attackLabel: null
+            attackLabel: null,
+            usesLabel: null,
+            consumesLabel: null
         };
 
         const saveActivity = spell.system.activities?.getByType('save')?.[0];
@@ -67,6 +71,23 @@ export async function fetchSpellData(spellList) {
         if (attackActivity?.labels?.toHit) {
             spellData.displayAttack = true;
             spellData.attackLabel = attackActivity.labels.toHit;
+        }
+
+        if (entry.overrides?.uses?.max) {
+            const max = entry.overrides.uses.max;
+            const recovery = entry.overrides.uses.recovery;
+            if (recovery) {
+                const recoveryLabel = CONFIG.DND5E.limitedUsePeriods[recovery]?.abbreviation || recovery;
+                spellData.usesLabel = `${max}/${recoveryLabel}`;
+            } else {
+                spellData.usesLabel = max.toString();
+            }
+        }
+
+        if (entry.overrides?.consumption?.value) {
+            const value = entry.overrides.consumption.value;
+            const plural = value > 1 ? 's' : '';
+            spellData.consumesLabel = `${value} charge${plural}`;
         }
 
         spells.push(spellData);
@@ -93,7 +114,7 @@ export async function removeSpellFromItem(item, spellId) {
     await item.setFlag(FLAG_SCOPE, FLAG_KEY, filtered);
 }
 
-export async function createSpellOnActor(actor, spellUuid, parentItemId) {
+export async function createSpellOnActor(actor, spellUuid, parentItemId, parentItem, overrides = {}) {
     const sourceSpell = await fromUuid(spellUuid);
 
     if (!sourceSpell) {
@@ -101,6 +122,12 @@ export async function createSpellOnActor(actor, spellUuid, parentItemId) {
     }
 
     const spellData = sourceSpell.toObject();
+
+    if (parentItem && Object.keys(overrides).length > 0) {
+        const update = createUpdateObject(parentItem, sourceSpell, overrides);
+        foundry.utils.mergeObject(spellData, update);
+    }
+
     const createdSpells = await actor.createEmbeddedDocuments('Item', [spellData]);
     const createdSpell = createdSpells[0];
 
@@ -130,4 +157,64 @@ export function getSpellsForItem(actor, itemId) {
         }
         return getParentItemId(item) === itemId;
     });
+}
+
+export function createUpdateObject(parentItem, spell, overrides = {}) {
+    const update = {
+        [`flags.${FLAG_SCOPE}.${PARENT_FLAG_KEY}`]: parentItem.id,
+        'system.preparation.mode': 'atwill',
+        'system.uses.spent': null
+    };
+
+    const tidy5eSectionFlag = spell.flags?.['tidy5e-sheet']?.section;
+    if (tidy5eSectionFlag) {
+        update['flags.tidy5e-sheet.section'] = null;
+    }
+
+    if (overrides.uses?.max) {
+        update['system.uses.max'] = overrides.uses.max;
+        if (overrides.uses.recovery) {
+            update['system.uses.recovery'] = [{period: overrides.uses.recovery}];
+        } else {
+            update['system.uses.recovery'] = null;
+        }
+    }
+
+    const consumptionTargets = !overrides.consumption?.value ? false : [{
+        type: 'itemUses',
+        value: overrides.consumption.value,
+        target: parentItem.id,
+        scaling: {mode: overrides.consumption.scaling ? 'amount' : ''}
+    }];
+
+    for (const activity of spell.system.activities.values()) {
+        const actId = activity.id;
+
+        update[`system.activities.${actId}.consumption.spellSlot`] = false;
+
+        if (consumptionTargets) {
+            update[`system.activities.${actId}.consumption.targets`] = consumptionTargets;
+        }
+
+        if (activity.type === 'save' && overrides.saveActivity && overrides.saveActivity?.calculation !== 'noOverride') {
+            update[`system.activities.${actId}.save.dc.calculation`] = overrides.saveActivity.calculation;
+            if (overrides.saveActivity.calculation === '' && overrides.saveActivity?.formula) {
+                update[`system.activities.${actId}.save.dc.formula`] = overrides.saveActivity.formula;
+            }
+        }
+
+        if (activity.type === 'attack' && overrides.attackActivity) {
+            if (overrides.attackActivity.ability !== 'noOverride') {
+                update[`system.activities.${actId}.attack.ability`] = overrides.attackActivity.ability;
+            }
+            if (overrides.attackActivity.bonus) {
+                update[`system.activities.${actId}.attack.bonus`] = overrides.attackActivity.bonus;
+            }
+            if (overrides.attackActivity.flat) {
+                update[`system.activities.${actId}.attack.flat`] = overrides.attackActivity.flat;
+            }
+        }
+    }
+
+    return update;
 }
