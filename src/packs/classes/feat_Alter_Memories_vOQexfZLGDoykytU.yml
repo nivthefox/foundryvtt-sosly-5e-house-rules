@@ -39,7 +39,7 @@ ownership:
   default: 0
   NbCXvDXaYhqPCRFb: 3
 flags:
-  items-with-spells-5e:
+  sosly-5e-house-rules:
     item-spells:
       - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplModifyMemo
   dnd5e:

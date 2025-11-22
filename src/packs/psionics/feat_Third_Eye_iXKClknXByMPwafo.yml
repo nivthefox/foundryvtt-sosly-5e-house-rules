@@ -146,7 +146,7 @@ flags:
     riders:
       activity: []
       effect: []
-  items-with-spells-5e:
+  sosly-5e-house-rules:
     item-spells:
       - uuid: Compendium.sosly-5e-house-rules.psionics.Item.StY2EAQQYZwSAFZw
       - uuid: Compendium.sosly-5e-house-rules.psionics.Item.ZIsqIDWGo8S367i4

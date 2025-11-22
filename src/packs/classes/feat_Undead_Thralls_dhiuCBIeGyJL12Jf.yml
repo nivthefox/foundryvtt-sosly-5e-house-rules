@@ -52,7 +52,7 @@ flags:
     riders:
       activity: []
       effect: []
-  items-with-spells-5e:
+  sosly-5e-house-rules:
     item-spells:
       - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAnimateDea
 _stats:
