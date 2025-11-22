@@ -53,14 +53,16 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
     }
 
     async _prepareContext() {
+        const fieldDefault = new foundry.data.fields.StringField();
+
         if (!this.spellEntry) {
-            return {};
+            return {fieldDefault};
         }
 
         this.spell = await fromUuid(this.spellEntry.uuid);
 
         if (!this.spell) {
-            return {};
+            return {fieldDefault};
         }
 
         const spell = this.spell;

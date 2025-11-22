@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fix Items with Spells override dialog crash when spell entry is missing or cannot be loaded
+
 ## [1.25.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.1) - 2025-11-22
 
 ### Fixed
