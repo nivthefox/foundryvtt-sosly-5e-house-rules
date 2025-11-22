@@ -1,5 +1,5 @@
 import {ELIGIBLE_ITEM_TYPES} from './constants';
-import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem} from './utils';
+import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem, createSpellOnActor, updateItemSpellFlags} from './utils';
 import {ItemSpellOverrides} from './overrides-dialog';
 
 export function registerItemSheetSpells() {
@@ -106,6 +106,26 @@ async function handleDrop(event, app) {
     }
 
     await addSpellToItem(app.item, data.uuid);
+
+    if (app.item.isEmbedded && app.item.actor) {
+        const itemSpells = getItemSpells(app.item);
+        const spellEntry = itemSpells.find(s => s.uuid === data.uuid);
+
+        if (spellEntry) {
+            const createdSpell = await createSpellOnActor(
+                app.item.actor,
+                spellEntry.uuid,
+                app.item.id,
+                app.item,
+                spellEntry.overrides || {}
+            );
+
+            if (createdSpell) {
+                await updateItemSpellFlags(app.item, spellEntry.id, createdSpell.uuid);
+            }
+        }
+    }
+
     app.render();
 }
 
