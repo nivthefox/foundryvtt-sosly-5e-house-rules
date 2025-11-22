@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.25.3](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.3) - 2025-11-22
+
+### Fixed
+- Fix spells not appearing on actor sheet when dragged onto embedded item's spells tab
+
 ## [1.25.2](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.2) - 2025-11-22
 
 ### Fixed
