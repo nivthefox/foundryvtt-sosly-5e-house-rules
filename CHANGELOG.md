@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fix custom currency abbreviations displaying as localization keys instead of translated values in item currency dropdowns
+
 ## [1.25.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.0) - 2025-11-22
 
 ### Added

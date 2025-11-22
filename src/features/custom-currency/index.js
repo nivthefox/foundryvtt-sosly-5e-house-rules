@@ -36,16 +36,19 @@ function applyCurrencyPreset(config) {
             continue;
         }
 
+        const localizedLabel = game.i18n.localize(custom.label);
+        const localizedAbbr = game.i18n.localize(custom.abbreviation);
+
         CONFIG.DND5E.currencies[key] = {
             ...CONFIG.DND5E.currencies[key],
-            label: custom.label,
-            abbreviation: custom.abbreviation,
+            label: localizedLabel,
+            abbreviation: localizedAbbr,
             icon: custom.icon
         };
 
         const upperKey = key.toUpperCase();
-        game.i18n.translations.DND5E[`Currency${upperKey}`] = game.i18n.localize(custom.label);
-        game.i18n.translations.DND5E[`CurrencyAbbr${upperKey}`] = game.i18n.localize(custom.abbreviation);
+        game.i18n.translations.DND5E[`Currency${upperKey}`] = localizedLabel;
+        game.i18n.translations.DND5E[`CurrencyAbbr${upperKey}`] = localizedAbbr;
     }
 
     injectCurrencyStyles();
