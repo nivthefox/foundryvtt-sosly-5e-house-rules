@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add Custom Currency feature to replace standard D&D currency names with setting-specific alternatives (Krynn/Dragonlance and Cormyr/Forgotten Realms presets available)
 - Add Items with Spells feature allowing magic items to grant spells to their owners with drag & drop linking, automatic spell management, and custom override configurations
 - Add migration tool from items-with-spells-5e module
 - Add Language Choice feature to configure campaign-specific language sets (D&D 5e Default, Dragonlance, Forgotten Realms, or Severed Lands)

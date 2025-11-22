@@ -167,3 +167,36 @@ sosly:
       no-data: No items-with-spells-5e data found. Nothing to migrate.
       complete: "Migration complete! Migrated {itemCount} items with spells and updated {spellCount} spell parent references. You can now disable the items-with-spells-5e module."
       partial-failure: "Migration completed with errors. Successfully migrated {successCount} items, failed on {failureCount} items. Check console for details."
+
+SOSLY:
+  SETTINGS:
+    CustomCurrency:
+      Name: Custom Currency
+      Hint: Replace standard D&D currency names with alternatives for specific campaign settings
+  CURRENCY:
+    Presets:
+      Default: Standard D&D (No Changes)
+      Krynn: Krynn (Dragonlance)
+      Cormyr: Cormyr (Forgotten Realms)
+    Krynn:
+      Platinum: Platinum
+      PlatinumAbbr: pp
+      Steel: Steel
+      SteelAbbr: stl
+      Iron: Iron
+      IronAbbr: ip
+      Bronze: Bronze
+      BronzeAbbr: bp
+      Silver: Silver
+      SilverAbbr: sp
+    Cormyr:
+      Tricrown: Tricrown
+      TricrownAbbr: tr
+      GoldenLion: Golden Lion
+      GoldenLionAbbr: gl
+      BlueEye: Blue Eye
+      BlueEyeAbbr: ebe
+      SilverFalcon: Silver Falcon
+      SilverFalconAbbr: sf
+      CopperThumb: Copper Thumb
+      CopperThumbAbbr: ct

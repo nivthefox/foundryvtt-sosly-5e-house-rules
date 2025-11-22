@@ -20,6 +20,7 @@ import {registerLanguageChoiceFeature} from './features/language-choice/index';
 import {registerVision5eCompatibility} from './features/vision-5e-compatibility/index';
 import {registerLevelsRegionVisibilityFeature} from './features/levels-region-visibility/index';
 import {registerItemsWithSpellsFeature} from './features/items-with-spells/index';
+import {registerCustomCurrencyFeature} from './features/custom-currency/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -43,5 +44,6 @@ Hooks.once('init', async () => {
     registerVision5eCompatibility();
     registerLevelsRegionVisibilityFeature();
     registerItemsWithSpellsFeature();
+    registerCustomCurrencyFeature();
     logger.info('Initialized');
 });
