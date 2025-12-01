@@ -31,6 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix Location sheet items not appearing in inventory
 - Fix Location sheet drag and drop to containers
 - Fix Location sheet search/filter not working in play mode
+- Fix Madness meter not appearing on character sheets in Foundry v13 with dnd5e 5.1
+- Fix Imperiled condition deprecation warnings in Foundry v13 with dnd5e 5.1
 
 ## [1.25.3](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.3) - 2025-11-22
 

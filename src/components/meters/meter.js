@@ -149,6 +149,7 @@ export async function createMeter({label, valueNow, valueMax, cssClass,
         allowOverflow
     };
 
+    const {renderTemplate} = foundry.applications.handlebars;
     const html = await renderTemplate(`modules/${module_id}/templates/components/meter.hbs`, templateData);
 
     // Set up handlers

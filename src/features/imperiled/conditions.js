@@ -6,8 +6,8 @@
 
 const conditionTypes = {
     imperiled: {
-        label: 'Imperiled',
-        icon: 'icons/svg/stoned.svg',
+        name: 'Imperiled',
+        img: 'icons/svg/stoned.svg',
         reference: 'Compendium.sosly-5e-house-rules.house-rules.JournalEntry.OosZQsAJrULa2WcY.JournalEntryPage.wWUvr8XTV3xFqI4R'
     }
 };
@@ -35,19 +35,19 @@ function setupStatusEffects() {
 }
 
 function setupConditionTypes() {
-    for ( const [id, {label: name, ...data}] of Object.entries(conditionTypes) ) {
-        CONFIG.DND5E.conditionTypes[id] = { id, label: name, name, ...data };
-        addEffect(CONFIG.statusEffects, { id, name, ...data });
+    for (const [id, data] of Object.entries(conditionTypes)) {
+        CONFIG.DND5E.conditionTypes[id] = {id, ...data};
+        addEffect(CONFIG.statusEffects, {id, ...data});
     }
 }
 
 const addEffect = (effects, {special, ...data}) => {
     data = foundry.utils.deepClone(data);
     data._id = dnd5e.utils.staticID(`dnd5e${data.id}`);
-    data.img = data.icon ?? data.img;
-    delete data.icon;
     effects.push(data);
-    if ( special ) {CONFIG.specialStatusEffects[special] = data.id;}
+    if (special) {
+        CONFIG.specialStatusEffects[special] = data.id;
+    }
 };
 
 export function registerImperiledConditions() {
