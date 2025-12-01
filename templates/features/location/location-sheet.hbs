@@ -84,7 +84,13 @@
                     </section>
 
                     <div class="middle">
-                        <div class="item-list-controls-placeholder" data-for="inventory"></div>
+                        <item-list-controls for="inventory" collection="items" label="Search inventory">
+                            <datalist data-list="filters">
+                                <option value="action">{{localize "DND5E.Action"}}</option>
+                                <option value="bonus">{{localize "DND5E.BonusAction"}}</option>
+                                <option value="reaction">{{localize "DND5E.Reaction"}}</option>
+                            </datalist>
+                        </item-list-controls>
                     </div>
 
                     <section class="items-list inventory-list" data-item-list="inventory">
@@ -93,7 +99,7 @@
                         <div class="items-section card" data-type="{{section.dataset.type}}">
                             <div class="items-header header">
                                 <h3 class="item-name">{{localize section.label}}</h3>
-                                {{#if (eq section.dataset.type "container")}}
+                                {{#if (eq section.dataset.type "containers")}}
                                 <div class="item-header item-capacity">Capacity</div>
                                 {{else}}
                                 <div class="item-header item-price">Price</div>
@@ -106,8 +112,8 @@
 
                             <ol class="item-list unlist">
                                 {{#each section.items as |item|}}
-                                <li class="item collapsible collapsed" data-item-id="{{item.id}}" data-entry-id="{{item.id}}" data-item-name="{{item.name}}" data-item-sort="{{item.sort}}" data-ungrouped="all" data-grouped="{{../dataset.type}}" data-uuid="Actor.{{../../../actor._id}}.Item.{{item.id}}">
-                                    <div class="item-row" draggable="true">
+                                <li class="item collapsible collapsed draggable" data-item-id="{{item.id}}" data-entry-id="{{item.id}}" data-item-name="{{item.name}}" data-item-sort="{{item.sort}}" data-ungrouped="all" data-grouped="{{../dataset.type}}" data-uuid="{{item.uuid}}">
+                                    <div class="item-row">
                                         <div class="item-name item-action item-tooltip rollable" role="button" data-action="{{#if (eq item.type 'container')}}editItem{{else}}use{{/if}}" aria-label="{{item.name}}" data-tooltip-class="dnd5e2 dnd5e-tooltip item-tooltip" data-tooltip-direction="LEFT">
                                             <img class="item-image gold-icon" src="{{item.img}}" alt="{{item.name}}" draggable="false">
                                             <div class="name name-stacked">
@@ -180,7 +186,7 @@
                                             </a>
                                             {{/if}}
 
-                                            <a class="item-control interface-only" data-toggle-description="" aria-label="Toggle Description">
+                                            <a class="item-control interface-only" data-action="toggleDescription" aria-label="Toggle Description">
                                                 <i class="fas fa-expand"></i>
                                             </a>
 
@@ -214,7 +220,7 @@
                     </section>
 
                     <div class="bottom">
-                        <button type="button" class="create-child gold-button" aria-label="Create Item" {{#if (eq owner true)}}{{else}}disabled=""{{/if}}>
+                        <button type="button" class="create-child gold-button" data-action="createChild" aria-label="Create Item" {{#if (eq owner true)}}{{else}}disabled=""{{/if}}>
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>

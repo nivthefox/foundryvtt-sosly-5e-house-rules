@@ -1,22 +1,66 @@
-import {ItemListControls} from '../../components/item-list-controls/item-list-controls.js';
-import {LocationItemManager} from './managers/item-manager.js';
-import {LocationDataManager} from './managers/data-manager.js';
-import {LocationUIManager} from './managers/ui-manager.js';
+import {LocationItemManager} from './managers/item-manager';
+import {LocationDataManager} from './managers/data-manager';
+import {LocationUIManager} from './managers/ui-manager';
 
-export class LocationSheet extends ActorSheet {
+const {HandlebarsApplicationMixin} = foundry.applications.api;
+const {ActorSheetV2} = foundry.applications.sheets;
+
+export class LocationSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     static MODES = {
         PLAY: 1,
         EDIT: 2
     };
 
-    static TABS = [
-        { tab: 'inventory', label: 'sosly.location.tabs.inventory', svg: 'backpack' }
-    ];
+    static DEFAULT_OPTIONS = {
+        classes: ['dnd5e2', 'sheet', 'actor', 'location', 'vertical-tabs'],
+        position: {
+            width: 720,
+            height: 680
+        },
+        window: {
+            resizable: true,
+            contentClasses: ['standard-form']
+        },
+        form: {
+            submitOnChange: true
+        },
+        elements: {
+            inventory: '.inventory-element'
+        },
+        actions: {
+            currency: LocationSheet.#onManageCurrency,
+            showPortrait: LocationSheet.#onShowPortrait,
+            editItem: LocationSheet.#onEditItem,
+            deleteItem: LocationSheet.#onDeleteItem,
+            use: LocationSheet.#onUseItem,
+            increase: LocationSheet.#onQuantityIncrease,
+            decrease: LocationSheet.#onQuantityDecrease,
+            toggleDescription: LocationSheet.#onToggleDescription,
+            createChild: LocationSheet.#onCreateChild
+        }
+    };
 
-    constructor(object, options) {
-        super(object, options);
+    static PARTS = {
+        sheet: {
+            template: 'modules/sosly-5e-house-rules/templates/features/location/location-sheet.hbs',
+            root: true,
+            scrollable: ['.sheet-body']
+        }
+    };
+
+    static TABS = {
+        primary: {
+            tabs: [
+                {id: 'inventory', icon: 'fa-solid fa-backpack', label: 'sosly.location.tabs.inventory'}
+            ],
+            initial: 'inventory'
+        }
+    };
+
+    constructor(options = {}) {
+        super(options);
         this._mode = this.constructor.MODES.PLAY;
-        this.itemListControls = new ItemListControls(this, 'inventory');
+        this._filters = {};
         this.managers = {
             items: new LocationItemManager(this),
             data: new LocationDataManager(this),
@@ -25,127 +69,109 @@ export class LocationSheet extends ActorSheet {
     }
 
     get isEditable() {
-        return this.document.isOwner && (this._mode === this.constructor.MODES.EDIT);
+        return this.document.isOwner;
     }
 
-    static get defaultOptions() {
-        return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ['dnd5e2', 'sheet', 'actor', 'location', 'vertical-tabs'],
-            width: 720,
-            height: 680,
-            minWidth: 600,
-            minHeight: 500,
-            resizable: true,
-            scrollY: ['.sheet-body'],
-            tabs: [
-                {
-                    navSelector: '.tabs',
-                    contentSelector: '.tab-body',
-                    initial: 'inventory'
-                }
-            ],
-            dragDrop: [
-                {dragSelector: '.item', dropSelector: null}
-            ]
-        });
+    get isEditMode() {
+        return this._mode === this.constructor.MODES.EDIT;
     }
 
-    get template() {
-        return 'modules/sosly-5e-house-rules/templates/features/location/location-sheet.hbs';
+    _filterChildren(collection, properties) {
+        if (collection !== 'items') {
+            return [];
+        }
+        let items = Array.from(this.document.items);
+        for (const property of properties) {
+            if (property === 'action') {
+                items = items.filter(i => i.system.activation?.type === 'action');
+            } else if (property === 'bonus') {
+                items = items.filter(i => i.system.activation?.type === 'bonus');
+            } else if (property === 'reaction') {
+                items = items.filter(i => i.system.activation?.type === 'reaction');
+            }
+        }
+        return items;
     }
 
-    async getData() {
-        return await this.managers.data.getData();
+    _sortChildren(collection, sort) {
+        if (collection !== 'items') {
+            return [];
+        }
+        const items = Array.from(this.document.items);
+        if (sort === 'a') {
+            return items.sort((a, b) => a.name.localeCompare(b.name, game.i18n.lang));
+        }
+        return items.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     }
 
+    async _prepareContext(options) {
+        const context = await super._prepareContext(options);
+        return await this.managers.data.prepareContext(context);
+    }
 
-    activateListeners(html) {
-        super.activateListeners(html);
+    async _onFirstRender(context, options) {
+        await super._onFirstRender(context, options);
+        this.managers.ui.onFirstRender(this.element);
+    }
 
-        html.find('[data-action="currency"]').prop('disabled', false);
-        html.find('input[name^="system.currency"]').prop('disabled', false);
+    async _onRender(context, options) {
+        await super._onRender(context, options);
 
-        html.on('click', '[data-action="currency"]', this._onManageCurrency.bind(this));
+        const element = this.element;
 
-        const form = html[0];
-        form.ondrop = this._onDrop.bind(this);
-        form.ondragover = this._onDragOver.bind(this);
-        form.ondragstart = this._onDragStart.bind(this);
+        element.querySelectorAll('[data-action="currency"]').forEach(el => el.disabled = false);
+        element.querySelectorAll('input[name^="system.currency"]').forEach(el => el.disabled = false);
 
-        this.managers.items.activateListeners(html);
-
-        this._setupSearchControls(html);
+        this.managers.items.activateListeners(element);
+        this.managers.ui.onRender(element);
 
         if (this._mode === this.constructor.MODES.PLAY) {
-            html.find('.portrait').on('click', this._onShowPortrait.bind(this));
+            element.querySelectorAll('.portrait').forEach(el => {
+                el.addEventListener('click', this.#onShowPortraitClick.bind(this));
+            });
         }
 
         if (this.document.isOwner) {
-            html.on('change', 'input[data-field^="system.currency"]', this._onChangeField.bind(this));
+            element.querySelectorAll('input[data-field^="system.currency"]').forEach(el => {
+                el.addEventListener('change', this.#onChangeField.bind(this));
+            });
         }
 
-        if (!this.isEditable) {
-            return;
-        }
-
-        html.on('change', '[data-field]', this._onChangeField.bind(this));
-    }
-
-    async _setupSearchControls(html) {
-        const placeholder = html.find('.item-list-controls-placeholder[data-for="inventory"]')[0];
-        if (placeholder) {
-            const searchControls = await this.itemListControls.buildSearchControls();
-            placeholder.replaceWith(searchControls);
-            this.itemListControls.initializeSearchControls(searchControls);
+        if (this.isEditable) {
+            element.querySelectorAll('[data-field]').forEach(el => {
+                el.addEventListener('change', this.#onChangeField.bind(this));
+            });
         }
     }
 
-    async _onChangeField(event) {
+    #onChangeField(event) {
         const field = event.currentTarget.dataset.field;
         const value = event.currentTarget.value;
 
         const updates = {};
         foundry.utils.setProperty(updates, field, value);
-
-        await this.document.update(updates);
+        this.document.update(updates);
     }
 
-
-    _onDragStart(event) {
-        const result = this.managers.items.onDragStart(event);
-        if (result !== null) {
-            return result;
-        }
-        return super._onDragStart?.(event);
-    }
-
-
-    _onManageCurrency(event) {
-        event.preventDefault();
-        new dnd5e.applications.CurrencyManager({ document: this.document }).render({ force: true });
-    }
-
-    _onShowPortrait() {
+    #onShowPortraitClick() {
         const img = this.document.img;
-        if (game.release.generation < 13) {
-            new ImagePopout(img, { title: this.document.name, uuid: this.document.uuid }).render(true);
-        } else {
-            new foundry.applications.apps.ImagePopout({
-                src: img,
-                uuid: this.document.uuid,
-                window: { title: this.document.name }
-            }).render({ force: true });
-        }
+        new foundry.applications.apps.ImagePopout({
+            src: img,
+            uuid: this.document.uuid,
+            window: {title: this.document.name}
+        }).render({force: true});
     }
 
-    async _onDrop(event) {
-        const data = TextEditor.getDragEventData(event);
+    _canDragStart(selector) {
+        return this.document.isOwner;
+    }
 
-        if (data.type === 'Item') {
-            return this.managers.items.onDropItem(event, data);
-        }
+    _canDragDrop(selector) {
+        return this.document.isOwner;
+    }
 
-        return super._onDrop(event);
+    async _onDragStart(event) {
+        return super._onDragStart(event);
     }
 
     _onDragOver(event) {
@@ -153,24 +179,118 @@ export class LocationSheet extends ActorSheet {
         event.dataTransfer.dropEffect = 'move';
     }
 
-    async _onDropStackConsumables(itemData, options = {}) {
-        return this.managers.items.onDropStackConsumables(itemData, options);
+    async _onDropItem(event, item) {
+        return this.managers.items.onDropItem(event, item.toDragData());
     }
 
-
-    async _renderOuter() {
-        return await this.managers.ui.renderOuter();
-    }
-
-    async _render(force, options) {
-        return await this.managers.ui.render(force, options);
-    }
-
-    async _onChangeSheetMode(event) {
+    async onChangeSheetMode(event) {
         return await this.managers.ui.onChangeSheetMode(event);
     }
 
-    _onChangeTab(event, tabs, active) {
-        return this.managers.ui.onChangeTab(event, tabs, active);
+    static #onManageCurrency(event, target) {
+        event.preventDefault();
+        new dnd5e.applications.CurrencyManager({document: this.document}).render({force: true});
+    }
+
+    static #onShowPortrait(event, target) {
+        const img = this.document.img;
+        new foundry.applications.apps.ImagePopout({
+            src: img,
+            uuid: this.document.uuid,
+            window: {title: this.document.name}
+        }).render({force: true});
+    }
+
+    static #onEditItem(event, target) {
+        event.stopImmediatePropagation();
+        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+        if (item) {
+            item.sheet.render(true);
+        }
+    }
+
+    static async #onDeleteItem(event, target) {
+        event.stopImmediatePropagation();
+        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+        if (!item) {
+            return;
+        }
+
+        const confirmed = await foundry.applications.api.DialogV2.confirm({
+            window: {title: game.i18n.localize('sosly.location.deleteItem.title')},
+            content: game.i18n.format('sosly.location.deleteItem.content', {name: item.name}),
+            modal: true
+        });
+
+        if (confirmed) {
+            await item.delete();
+        }
+    }
+
+    static #onUseItem(event, target) {
+        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+        if (!item) {
+            return;
+        }
+
+        if (typeof item.displayCard === 'function') {
+            return item.displayCard();
+        }
+        if (typeof item.roll === 'function') {
+            return item.roll();
+        }
+        if (typeof item.use === 'function') {
+            return item.use();
+        }
+        return item.sheet.render(true);
+    }
+
+    static async #onQuantityIncrease(event, target) {
+        event.preventDefault();
+        const input = target.parentElement.querySelector('input[data-name="system.quantity"]');
+        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+
+        if (!item || !input) {
+            return;
+        }
+
+        const newValue = (parseInt(input.value) || 0) + 1;
+        input.value = newValue;
+        return item.update({'system.quantity': newValue});
+    }
+
+    static async #onQuantityDecrease(event, target) {
+        event.preventDefault();
+        const input = target.parentElement.querySelector('input[data-name="system.quantity"]');
+        const itemId = target.closest('[data-item-id]')?.dataset.itemId;
+        const item = this.document.items.get(itemId);
+
+        if (!item || !input) {
+            return;
+        }
+
+        const newValue = Math.max(0, (parseInt(input.value) || 0) - 1);
+        input.value = newValue;
+        return item.update({'system.quantity': newValue});
+    }
+
+    static #onToggleDescription(event, target) {
+        const item = this.document.items.get(target.closest('[data-item-id]')?.dataset.itemId);
+        if (item) {
+            return this.managers.items.onExpand(target, item);
+        }
+    }
+
+    static #onCreateChild(event, target) {
+        const inventoryTypes = ['weapon', 'equipment', 'consumable', 'tool', 'container', 'loot'];
+        return Item.implementation.createDialog({}, {
+            parent: this.document,
+            pack: this.document.pack,
+            types: inventoryTypes
+        });
     }
 }

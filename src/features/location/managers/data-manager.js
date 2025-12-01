@@ -7,19 +7,17 @@ export class LocationDataManager {
         return this.sheet.document;
     }
 
-    async getData() {
-        const context = await ActorSheet.prototype.getData.call(this.sheet);
+    async prepareContext(context) {
         const source = this.document.toObject();
         const system = this.document.system;
 
+        context.actor = this.document;
         context.system = system;
         context.source = source.system;
-        context.editable = this.sheet.isEditable;
+        context.editable = this.sheet.isEditable && this.sheet.isEditMode;
         context.owner = this.document.isOwner;
 
         await this.prepareItems(context);
-
-        context.filters = this.sheet.itemListControls._filters;
 
         this.prepareCurrencyLabels(context);
         this.prepareTypeChoices(context);
@@ -27,24 +25,24 @@ export class LocationDataManager {
         return context;
     }
 
-
     async prepareItems(context) {
         const inventory = {};
-        const inventoryTypes = Object.entries(CONFIG.Item?.dataModels || {})
-            .filter(([, model]) => model.metadata?.inventoryItem)
-            .sort(([, lhs], [, rhs]) => (lhs.metadata.inventoryOrder - rhs.metadata.inventoryOrder));
+        const inventorySections = Object.values(CONFIG.Item.dataModels)
+            .filter(model => 'inventorySection' in model)
+            .map(model => model.inventorySection)
+            .sort((a, b) => a.order - b.order);
 
-        for (const [type] of inventoryTypes) {
-            inventory[type] = {
-                label: `${CONFIG.Item.typeLabels[type]}Pl`,
+        for (const section of inventorySections) {
+            inventory[section.id] = {
+                label: section.label,
                 items: [],
-                dataset: { type }
+                dataset: {type: section.id}
             };
         }
 
         if (!this.document.items?.size) {
             context.inventory = Object.values(inventory);
-            context.inventory.push({ label: 'DND5E.Contents', items: [], dataset: { type: 'all' } });
+            context.inventory.push({label: 'DND5E.Contents', items: [], dataset: {type: 'all'}});
             return;
         }
 
@@ -52,21 +50,25 @@ export class LocationDataManager {
             if (item.type === 'feat' || item.system.container) {
                 continue;
             }
+            const sectionId = item.system.constructor.inventorySection?.id;
+            if (!sectionId) {
+                continue;
+            }
             const preparedItem = await this.prepareItemContext(item, context);
-            if (inventory[item.type]) {
-                inventory[item.type].items.push(preparedItem);
+            if (inventory[sectionId]) {
+                inventory[sectionId].items.push(preparedItem);
             }
         }
 
         context.inventory = Object.values(inventory);
-        context.inventory.push({ label: 'DND5E.Contents', items: [], dataset: { type: 'all' } });
+        context.inventory.push({label: 'DND5E.Contents', items: [], dataset: {type: 'all'}});
 
         context.inventory.forEach(section => {
             section.categories = [
-                { activityPartial: 'dnd5e.activity-column-price' },
-                { activityPartial: 'dnd5e.activity-column-weight' },
-                { activityPartial: 'dnd5e.activity-column-quantity' },
-                { activityPartial: 'dnd5e.activity-column-uses' }
+                {activityPartial: 'dnd5e.activity-column-price'},
+                {activityPartial: 'dnd5e.activity-column-weight'},
+                {activityPartial: 'dnd5e.activity-column-quantity'},
+                {activityPartial: 'dnd5e.activity-column-uses'}
             ];
         });
     }
@@ -85,6 +87,7 @@ export class LocationDataManager {
 
         return {
             id: item.id,
+            uuid: item.uuid,
             name: item.name,
             img: item.img,
             type: item.type,
@@ -136,5 +139,4 @@ export class LocationDataManager {
             ? game.i18n.localize(typeChoices[system.details.type])
             : '';
     }
-
 }

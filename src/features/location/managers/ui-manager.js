@@ -9,25 +9,28 @@ export class LocationUIManager {
         return this.sheet.document;
     }
 
-    async renderOuter() {
-        const html = await ActorSheet.prototype._renderOuter.call(this.sheet);
-        const htmlElement = html[0] || html;
-        const header = htmlElement.querySelector('.window-header');
-
+    onFirstRender(element) {
+        const header = element.querySelector('.window-header');
         if (!header) {
-            return html;
+            return;
         }
 
         this.addModeToggle(header);
-        await this.addHeaderElements(htmlElement);
-        this.addWarningsButton(header);
-        this.setupHeaderButtons(header);
+        this.addHeaderElements(element);
+    }
 
-        return html;
+    onRender(element) {
+        this.repositionTabs(element);
+        this.updateFormTabClass('inventory');
     }
 
     addModeToggle(header) {
         if (!this.document.isOwner) {
+            return;
+        }
+
+        const existing = header.querySelector('.mode-slider');
+        if (existing) {
             return;
         }
 
@@ -41,80 +44,46 @@ export class LocationUIManager {
         header.insertAdjacentElement('afterbegin', toggle);
     }
 
-    async addHeaderElements(htmlElement) {
-        const html = await renderTemplate(`modules/${module_id}/templates/features/location/header-elements.hbs`, {});
+    async addHeaderElements(element) {
+        const existing = element.querySelector('.header-elements');
+        if (existing) {
+            return;
+        }
+
+        const html = await foundry.applications.handlebars.renderTemplate(
+            `modules/${module_id}/templates/features/location/header-elements.hbs`,
+            {}
+        );
 
         const elements = document.createElement('div');
         elements.classList.add('header-elements');
         elements.innerHTML = html;
 
-        htmlElement.querySelector('.window-title')?.insertAdjacentElement('afterend', elements);
+        element.querySelector('.window-title')?.insertAdjacentElement('afterend', elements);
     }
 
-    addWarningsButton(header) {
-        const warningsBtn = document.createElement('a');
-        warningsBtn.classList.add('pseudo-header-button', 'preparation-warnings');
-        warningsBtn.dataset.tooltip = 'Warnings';
-        warningsBtn.setAttribute('aria-label', 'Warnings');
-        warningsBtn.setAttribute('hidden', '');
-        warningsBtn.innerHTML = '<i class="fas fa-triangle-exclamation"></i>';
-        const firstButton = header.querySelector('.header-button');
-        firstButton?.insertAdjacentElement('beforebegin', warningsBtn);
-    }
-
-    setupHeaderButtons(header) {
-        const idLink = header.querySelector('.document-id-link');
-        const firstButton = header.querySelector('.header-button');
-
-        if (idLink && firstButton) {
-            firstButton.insertAdjacentElement('beforebegin', idLink);
-            idLink.classList.add('pseudo-header-button');
-            idLink.dataset.tooltipDirection = 'DOWN';
-        }
-
-        header.querySelectorAll('.header-button').forEach(btn => {
-            const label = btn.querySelector(':scope > i').nextSibling;
-            if (label && label.textContent.trim()) {
-                btn.dataset.tooltip = label.textContent.trim();
-                btn.setAttribute('aria-label', label.textContent.trim());
-                btn.addEventListener('dblclick', event => event.stopPropagation());
-                label.remove();
-            }
-        });
-    }
-
-    async render(force, options) {
-        await ActorSheet.prototype._render.call(this.sheet, force, options);
-        this.repositionTabs();
-    }
-
-    repositionTabs() {
-        const nav = this.sheet.element[0].querySelector('.tabs');
-        const windowHeader = this.sheet.element[0].querySelector('.window-header');
-        if (nav && windowHeader) {
+    repositionTabs(element) {
+        const nav = element.querySelector('.tabs');
+        const windowHeader = element.querySelector('.window-header');
+        if (nav && windowHeader && nav.parentElement !== element) {
             nav.remove();
-            this.sheet.element[0].insertBefore(nav, windowHeader);
+            element.insertBefore(nav, windowHeader);
         }
     }
 
     async onChangeSheetMode(event) {
-        const { MODES } = this.sheet.constructor;
+        const {MODES} = this.sheet.constructor;
         const toggle = event.currentTarget;
         this.sheet._mode = toggle.checked ? MODES.EDIT : MODES.PLAY;
-        await this.sheet.submit();
-        this.sheet.render();
-    }
-
-    onChangeTab(event, tabs, active) {
-        ActorSheet.prototype._onChangeTab.call(this.sheet, event, tabs, active);
-        this.updateFormTabClass(active);
+        this.sheet.render({force: true});
     }
 
     updateFormTabClass(active) {
-        const form = this.sheet.form;
-        if (form) {
-            form.className = form.className.replace(/\btab-\w+/g, '');
-            form.classList.add(`tab-${active}`);
+        const content = this.sheet.element?.querySelector('.window-content');
+        if (!content) {
+            return;
         }
+        content.className = content.className.replace(/\btab-\w+/g, '');
+        content.classList.add(`tab-${active}`);
     }
 }

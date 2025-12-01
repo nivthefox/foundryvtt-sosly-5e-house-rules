@@ -1,4 +1,5 @@
 import {id as module_id} from '../../../module.json';
+const {renderTemplate} = foundry.applications.handlebars;
 
 export class ItemListControls {
     constructor(sheet, target = 'inventory') {
@@ -120,7 +121,7 @@ export class ItemListControls {
     }
 
     _onClearFilters() {
-        const searchElement = this.sheet.element[0].querySelector(`[data-for="${this.target}"]`);
+        const searchElement = this.sheet.element?.querySelector(`[data-for="${this.target}"]`);
         if (!searchElement) {
             return;
         }
@@ -140,7 +141,7 @@ export class ItemListControls {
 
         await game.user.setFlag(module_id, flag, newMode);
 
-        const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
+        const searchElement = this.sheet.element?.querySelector(`[data-for="${this.target}"]`);
         const sortControl = searchElement?.querySelector('[data-action="sort"]');
         const iconElement = sortControl?.querySelector('i');
 
@@ -166,7 +167,7 @@ export class ItemListControls {
     }
 
     _initSorting() {
-        const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
+        const searchElement = this.sheet.element?.querySelector(`[data-for="${this.target}"]`);
         if (!searchElement) {
             return;
         }
@@ -187,7 +188,7 @@ export class ItemListControls {
     }
 
     _applySorting() {
-        const inventoryList = this.sheet.element[0]?.querySelector(`[data-item-list="${this.target}"]`);
+        const inventoryList = this.sheet.element?.querySelector(`[data-item-list="${this.target}"]`);
         if (!inventoryList) {
             return;
         }
@@ -221,7 +222,7 @@ export class ItemListControls {
     }
 
     _applyFilters() {
-        const list = this.sheet.element[0].querySelector(`[data-item-list="${this.target}"]`);
+        const list = this.sheet.element?.querySelector(`[data-item-list="${this.target}"]`);
         if (!list) {
             return;
         }
@@ -242,7 +243,7 @@ export class ItemListControls {
     }
 
     _initGrouping() {
-        const searchElement = this.sheet.element[0]?.querySelector(`[data-for="${this.target}"]`);
+        const searchElement = this.sheet.element?.querySelector(`[data-for="${this.target}"]`);
         const groupControl = searchElement?.querySelector('[data-action="group"]');
         if (groupControl) {
             groupControl.classList.toggle('active', this.grouping);
@@ -250,7 +251,7 @@ export class ItemListControls {
     }
 
     _applyGrouping() {
-        const inventoryList = this.sheet.element[0]?.querySelector(`[data-item-list="${this.target}"]`);
+        const inventoryList = this.sheet.element?.querySelector(`[data-item-list="${this.target}"]`);
         if (!inventoryList) {
             return;
         }

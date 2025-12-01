@@ -27,6 +27,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fix Breather button not appearing on actor sheets in Foundry v13 with dnd5e 5.1
 - Fix Breather dialog failing to open due to missing rest type configuration
+- Fix Location sheet not respecting dark mode theme
+- Fix Location sheet items not appearing in inventory
+- Fix Location sheet drag and drop to containers
+- Fix Location sheet search/filter not working in play mode
 
 ## [1.25.3](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.3) - 2025-11-22
 
