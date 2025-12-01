@@ -12,12 +12,16 @@ import { showImperiledDialog, applyUnconscious, createImperiledChatMessage } fro
  * @param {object} next - Next turn data
  */
 export async function handleImperiled(combat, previous, next) {
-    if (previous === null) {
+    if (!previous?.combatantId) {
         return;
     }
 
-    const actorId = combat.combatants.get(previous.combatantId).actorId;
-    const actor = game.actors.get(actorId);
+    const combatant = combat.combatants.get(previous.combatantId);
+    if (!combatant?.actorId) {
+        return;
+    }
+
+    const actor = game.actors.get(combatant.actorId);
 
     const exhaustion = actor.system.attributes.exhaustion;
     const existing = actor.effects.get(dnd5e.utils.staticID('dnd5eimperiled'));
