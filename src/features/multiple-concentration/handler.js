@@ -66,7 +66,7 @@ export function registerConcentrationHandler() {
 
         // Post chat message using template
         if (hdExpended || error) {
-            const content = await renderTemplate(
+            const content = await foundry.applications.handlebars.renderTemplate(
                 `modules/${module_id}/templates/features/multiple-concentration/chat-message.hbs`,
                 {
                     actor: actor.name,

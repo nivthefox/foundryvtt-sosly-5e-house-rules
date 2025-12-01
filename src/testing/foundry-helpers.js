@@ -71,7 +71,8 @@ export async function createSpell(page, actorId, name = 'Test Spell', spellData 
                 level: 1,
                 school: 'div',
                 properties: [],
-                preparation: { mode: 'prepared', prepared: true },
+                method: 'prepared',
+                prepared: true,
                 activities: {
                     dnd5eactivity000: {
                         type: 'utility',

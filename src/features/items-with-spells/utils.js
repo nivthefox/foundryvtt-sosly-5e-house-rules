@@ -167,7 +167,7 @@ export function getSpellsForItem(actor, itemId) {
 export function createUpdateObject(parentItem, spell, overrides = {}) {
     const update = {
         [`flags.${FLAG_SCOPE}.${PARENT_FLAG_KEY}`]: parentItem.id,
-        'system.preparation.mode': 'atwill',
+        'system.method': 'atwill',
         'system.uses.spent': null
     };
 
