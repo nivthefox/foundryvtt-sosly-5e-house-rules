@@ -31,7 +31,7 @@ class BreatherUI extends BaseRestDialog {
     static async configure(actor, config = {}) {
         return new Promise((resolve, reject) => {
             const app = new this({
-                config,
+                config: { type: 'breather', ...config },
                 buttons: [{
                     default: true,
                     icon: 'fa-solid fa-flag',

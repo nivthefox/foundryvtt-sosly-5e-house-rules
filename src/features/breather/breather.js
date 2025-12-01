@@ -204,15 +204,12 @@ export class Breather {
     static register() {
         const breather = new Breather();
 
-        // Register hooks for character and NPC sheets
-        Hooks.on('renderActorSheet5eCharacter2', (app, html) => {
-            const el = html[0];
-            breather.inject(app, el);
+        Hooks.on('renderCharacterActorSheet', (app, element) => {
+            breather.inject(app, element);
         });
 
-        Hooks.on('renderActorSheet5eNPC2', (app, html) => {
-            const el = html[0];
-            breather.inject(app, el);
+        Hooks.on('renderNPCActorSheet', (app, element) => {
+            breather.inject(app, element);
         });
     }
 }

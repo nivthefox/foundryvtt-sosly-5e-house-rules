@@ -24,6 +24,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update Beast Heart Communion feat: rename "Wild Healing" to "Wild Casting" and expand to allow casting all Beast Form spells while wild shaped (instead of only Cure Wounds)
 - Increase Psionic Blast damage from 1d6/pp to 1d10 + 1d10/pp
 
+### Fixed
+- Fix Breather button not appearing on actor sheets in Foundry v13 with dnd5e 5.1
+- Fix Breather dialog failing to open due to missing rest type configuration
+
 ## [1.25.3](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.3) - 2025-11-22
 
 ### Fixed
