@@ -3,6 +3,7 @@ import {getRecoverableFeatures} from './class-features';
 import {id as module_id} from '../../../module.json';
 
 const BaseRestDialog = dnd5e.applications.actor.BaseRestDialog;
+const FormDataExtended = foundry.applications.ux.FormDataExtended;
 
 class BreatherUI extends BaseRestDialog {
     constructor(options = {}) {

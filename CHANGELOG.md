@@ -24,9 +24,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update Beast Heart Communion feat: rename "Wild Healing" to "Wild Casting" and expand to allow casting all Beast Form spells while wild shaped (instead of only Cure Wounds)
 - Increase Psionic Blast damage from 1d6/pp to 1d10 + 1d10/pp
 
+### Removed
+- Legendary action combat recovery (now handled natively by dnd5e 5.1)
+
 ### Fixed
 - Fix Breather button not appearing on actor sheets in Foundry v13 with dnd5e 5.1
 - Fix Breather dialog failing to open due to missing rest type configuration
+- Fix Breather hit die roll deprecation warning for FormDataExtended
+- Fix concentration rest dialog crash when prompting to end concentration
 - Fix Location sheet not respecting dark mode theme
 - Fix Location sheet items not appearing in inventory
 - Fix Location sheet drag and drop to containers

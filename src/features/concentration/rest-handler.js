@@ -16,7 +16,7 @@ export async function handleConcentrationRest(actor) {
     }
 
     for (const effect of concentrating) {
-        const confirmContent = game.i18n?.format('sosly.concentration.confirmation', {spell: effect.label.replace(/Concentrating:\s+/, '')});
+        const confirmContent = game.i18n?.format('sosly.concentration.confirmation', {spell: effect.name.replace(/Concentrating:\s+/, '')});
         const confirmation = await foundry.applications.api.DialogV2.confirm({
             window: {
                 title: game.i18n?.localize('sosly.concentration.title'),
