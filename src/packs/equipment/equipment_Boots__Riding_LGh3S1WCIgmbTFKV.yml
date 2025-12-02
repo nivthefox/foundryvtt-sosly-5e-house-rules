@@ -50,7 +50,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: boots-riding
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -100,7 +99,6 @@ _stats:
 folder: Ck8hCzk0ztCrwX7U
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: LGh3S1WCIgmbTFKV
 sort: 200000
 _key: '!items!LGh3S1WCIgmbTFKV'

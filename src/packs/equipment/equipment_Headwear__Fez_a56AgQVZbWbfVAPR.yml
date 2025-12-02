@@ -47,7 +47,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: headwear-fez
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -97,7 +96,6 @@ _stats:
 folder: Q4XE3TVgjGxnWQvV
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: a56AgQVZbWbfVAPR
 sort: 0
 _key: '!items!a56AgQVZbWbfVAPR'

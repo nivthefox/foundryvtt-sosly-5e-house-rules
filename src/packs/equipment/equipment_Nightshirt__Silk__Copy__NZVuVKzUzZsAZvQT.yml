@@ -47,8 +47,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: nightshirt-silk
-  container: null
+  identifier: nightshirt-silk-copy
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: ajfmFQfduBfdvTOx
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 sort: 0
 _id: NZVuVKzUzZsAZvQT
 _key: '!items!NZVuVKzUzZsAZvQT'

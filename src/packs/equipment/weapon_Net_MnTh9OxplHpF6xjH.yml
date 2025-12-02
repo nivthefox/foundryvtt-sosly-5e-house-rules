@@ -83,7 +83,6 @@ system:
     baseItem: net
   unidentified:
     description: ''
-  container: null
   crewed: false
   magicalBonus: null
   activities:
@@ -213,7 +212,6 @@ effects: []
 folder: aI9jS3ZLDdlYBEeH
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   compendiumSource: null

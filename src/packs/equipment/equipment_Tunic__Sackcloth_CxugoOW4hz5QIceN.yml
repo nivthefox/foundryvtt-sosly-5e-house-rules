@@ -48,7 +48,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: tunic-sackcloth
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: ajfmFQfduBfdvTOx
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: CxugoOW4hz5QIceN
 sort: 0
 _key: '!items!CxugoOW4hz5QIceN'

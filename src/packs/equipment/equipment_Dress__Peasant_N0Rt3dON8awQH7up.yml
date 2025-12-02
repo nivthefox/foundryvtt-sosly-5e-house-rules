@@ -48,7 +48,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: dress-peasant
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: Fna0YnMqckSmaUEv
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: N0Rt3dON8awQH7up
 sort: 0
 _key: '!items!N0Rt3dON8awQH7up'

@@ -47,8 +47,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: breeches-or-pants-leather
-  container: null
+  identifier: skirt-leather
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: njdwzIX01lhf1KVB
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: wak5bj2MottKAqNS
 sort: 200000
 _key: '!items!wak5bj2MottKAqNS'

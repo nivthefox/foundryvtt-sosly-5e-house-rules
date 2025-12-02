@@ -54,7 +54,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: bodysuit-black
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -104,7 +103,6 @@ _stats:
 folder: I90xXdRW6eiqn204
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: nzN7oJEhh4iSQcV3
 sort: 0
 _key: '!items!nzN7oJEhh4iSQcV3'

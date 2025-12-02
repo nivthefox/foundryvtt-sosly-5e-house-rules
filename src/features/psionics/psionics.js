@@ -55,12 +55,12 @@ function setupPsionicOptions() {
 
 export function registerPsionics() {
     Hooks.once('setup', setupPsionicOptions);
-    Hooks.on('renderActorSheet5eCharacter2', addPsionicSubtitles);
-    Hooks.on('renderActorSheet5eNPC2', addPsionicSubtitles);
-    Hooks.on('renderActorSheet5eCharacter2', reorganizePsionicDisciplines);
-    Hooks.on('renderActorSheet5eNPC2', reorganizePsionicDisciplines);
-    Hooks.on('renderActorSheet5eCharacter2', injectPsionicistManifestingCard);
-    Hooks.on('renderActorSheet5eNPC2', injectPsionicistManifestingCard);
+    Hooks.on('renderCharacterActorSheet', addPsionicSubtitles);
+    Hooks.on('renderNPCActorSheet', addPsionicSubtitles);
+    Hooks.on('renderCharacterActorSheet', reorganizePsionicDisciplines);
+    Hooks.on('renderNPCActorSheet', reorganizePsionicDisciplines);
+    Hooks.on('renderCharacterActorSheet', injectPsionicistManifestingCard);
+    Hooks.on('renderNPCActorSheet', injectPsionicistManifestingCard);
     registerPsychicFocusManagement();
     registerArgonIntegration();
 }

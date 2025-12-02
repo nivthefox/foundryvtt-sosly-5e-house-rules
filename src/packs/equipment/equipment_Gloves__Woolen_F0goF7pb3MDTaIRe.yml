@@ -58,7 +58,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: gloves-woolen
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -108,7 +107,6 @@ _stats:
 folder: UUHPRPLj1mKNfrsG
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: F0goF7pb3MDTaIRe
 sort: 0
 _key: '!items!F0goF7pb3MDTaIRe'

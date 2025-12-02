@@ -53,7 +53,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: winter-fullcloth
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -103,7 +102,6 @@ _stats:
 folder: I90xXdRW6eiqn204
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: GHiVDqbddLYShdRn
 sort: 0
 _key: '!items!GHiVDqbddLYShdRn'

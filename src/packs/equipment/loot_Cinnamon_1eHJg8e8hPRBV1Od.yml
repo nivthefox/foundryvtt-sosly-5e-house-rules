@@ -1,7 +1,6 @@
 name: Cinnamon
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 type: loot
 system:
   description:
@@ -28,7 +27,6 @@ system:
   identified: true
   unidentified:
     description: ''
-  container: null
   properties: []
   type:
     value: ''

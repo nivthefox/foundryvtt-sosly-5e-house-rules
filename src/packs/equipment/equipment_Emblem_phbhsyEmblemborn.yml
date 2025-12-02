@@ -19,7 +19,6 @@ system:
   identified: true
   unidentified:
     description: ''
-  container: null
   quantity: 1
   weight:
     value: 0
@@ -62,7 +61,6 @@ effects: []
 sort: 125000
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags:
   dnd5e: {}
 _stats:

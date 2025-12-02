@@ -77,7 +77,7 @@
         }
     },
     "devDependencies": {
-        "@foundryvtt/foundryvtt-cli": "^1.0.3",
+        "@foundryvtt/foundryvtt-cli": "^3.0.2",
         "@playwright/test": "^1.54.1",
         "@rollup/plugin-alias": "^5.1.0",
         "@rollup/plugin-json": "^6.1.0",

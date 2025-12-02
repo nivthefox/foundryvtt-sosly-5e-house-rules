@@ -49,8 +49,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: pads-elbow
-  container: null
+  identifier: pads-wrist-brace
   attuned: false
   properties: []
 effects: []
@@ -100,7 +99,6 @@ _stats:
 folder: K1ziRy4kt1HtiRTU
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 sort: 0
 _id: tuZgyU67nOLP3LDN
 _key: '!items!tuZgyU67nOLP3LDN'

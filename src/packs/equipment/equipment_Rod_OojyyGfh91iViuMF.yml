@@ -54,7 +54,6 @@ system:
     baseItem: ''
   unidentified:
     description: ''
-  container: null
   crewed: false
   activities: {}
   attuned: false
@@ -65,7 +64,6 @@ folder: xedn1r43VWuEBcli
 sort: 0
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags:
   dnd5e:
     riders:

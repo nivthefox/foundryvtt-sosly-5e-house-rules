@@ -7,14 +7,13 @@ system:
   description:
     value: <p>An exotic spice for brewing a delicious drink.</p>
     chat: ''
-  identifier: new-item
+  identifier: tea
   source:
     revision: 1
     rules: '2024'
   identified: true
   unidentified:
     description: ''
-  container: null
   quantity: 1
   weight:
     value: 1
@@ -31,7 +30,6 @@ effects: []
 sort: 100000
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   compendiumSource: null

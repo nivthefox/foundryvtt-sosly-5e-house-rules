@@ -37,7 +37,6 @@ system:
     baseItem: navg
   unidentified:
     description: ''
-  container: null
   properties: []
   uses:
     max: ''
@@ -102,7 +101,6 @@ folder: o393vzOEBIbgQvSb
 sort: 0
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   duplicateSource: null

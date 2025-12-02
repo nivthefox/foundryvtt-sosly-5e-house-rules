@@ -47,8 +47,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: breeches-or-pants-woolen
-  container: null
+  identifier: skirt-linen
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: njdwzIX01lhf1KVB
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: hEubckOfHGSbJHYj
 sort: 150000
 _key: '!items!hEubckOfHGSbJHYj'

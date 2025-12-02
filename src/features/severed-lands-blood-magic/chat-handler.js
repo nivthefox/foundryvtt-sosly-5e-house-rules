@@ -7,11 +7,13 @@ import { createMadnessEffect } from './effects';
  */
 export function registerChatHandler() {
     Hooks.on('renderChatMessage', (message, html) => {
-        // Only attach listeners to our madness chat cards
-        const madnessButton = html.find('[data-action="selectMadness"]');
-        if (madnessButton.length === 0) {return;}
+        const element = html instanceof jQuery ? html[0] : html;
+        const madnessButton = element.querySelector('[data-action="selectMadness"]');
+        if (!madnessButton) {
+            return;
+        }
 
-        madnessButton.on('click', async event => {
+        madnessButton.addEventListener('click', async event => {
             event.preventDefault();
 
             // Only allow GM to click the button

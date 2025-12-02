@@ -52,7 +52,6 @@ system:
     baseItem: ringmail
   unidentified:
     description: ''
-  container: null
   properties:
     - stealthDisadvantage
   activities: {}
@@ -62,7 +61,6 @@ effects: []
 folder: UdZuhsN2KIbVEbP4
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   compendiumSource: null

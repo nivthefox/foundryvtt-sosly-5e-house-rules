@@ -51,7 +51,6 @@ system:
     baseItem: shield
   unidentified:
     description: ''
-  container: null
   properties: []
   activities: {}
   attuned: false
@@ -60,7 +59,6 @@ effects: []
 folder: aBXgZ09s2O2nzzjT
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   compendiumSource: null

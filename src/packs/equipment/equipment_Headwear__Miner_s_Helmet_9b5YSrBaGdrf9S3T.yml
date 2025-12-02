@@ -52,7 +52,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: headwear-miners-helmet
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -102,7 +101,6 @@ _stats:
 folder: Q4XE3TVgjGxnWQvV
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: 9b5YSrBaGdrf9S3T
 sort: 0
 _key: '!items!9b5YSrBaGdrf9S3T'

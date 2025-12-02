@@ -284,7 +284,7 @@ export class LocationItemManager {
             const summary = wrapper?.querySelector('.item-summary');
             if (summary) {
                 summary.style.overflow = 'hidden';
-                summary.style.height = summary.scrollHeight + 'px';
+                summary.style.height = `${summary.scrollHeight}px`;
                 requestAnimationFrame(() => {
                     summary.style.transition = 'height 200ms ease-out';
                     summary.style.height = '0';
@@ -333,7 +333,7 @@ export class LocationItemManager {
 
         requestAnimationFrame(() => {
             summary.style.transition = 'height 200ms ease-out';
-            summary.style.height = summary.scrollHeight + 'px';
+            summary.style.height = `${summary.scrollHeight}px`;
             setTimeout(() => {
                 summary.style.height = '';
                 summary.style.overflow = '';

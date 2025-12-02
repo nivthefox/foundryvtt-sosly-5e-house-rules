@@ -49,8 +49,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: loincloth
-  container: null
+  identifier: drawers-cotton
   attuned: false
   properties: []
 effects: []
@@ -100,7 +99,6 @@ _stats:
 folder: I90xXdRW6eiqn204
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: U5UGDqtVScKZrZ3h
 sort: 0
 _key: '!items!U5UGDqtVScKZrZ3h'

@@ -48,7 +48,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: buckle-fancy
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: WdugXqt3iwO9InJz
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: VdpDPrmetoNuE7T1
 sort: 0
 _key: '!items!VdpDPrmetoNuE7T1'

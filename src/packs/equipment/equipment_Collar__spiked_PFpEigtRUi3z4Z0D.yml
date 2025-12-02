@@ -50,7 +50,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: collar-spiked
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -103,7 +102,6 @@ _stats:
 folder: K1ziRy4kt1HtiRTU
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: PFpEigtRUi3z4Z0D
 sort: 0
 _key: '!items!PFpEigtRUi3z4Z0D'

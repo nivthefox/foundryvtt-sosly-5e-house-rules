@@ -73,12 +73,12 @@ async function distributeBloodAcrossVials(actor, newTotal) {
     }
 }
 
-async function addBloodTracking(app, el, data) {
+async function addBloodTracking(app, element, context) {
     if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
         return;
     }
 
-    const statsContainer = el.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
+    const statsContainer = element.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
     if (!statsContainer) {
         return;
     }
@@ -192,14 +192,12 @@ async function handleRevert(transformedActor, options) {
 }
 
 export function registerBloodMagicHooks() {
-    Hooks.on('renderActorSheet5eCharacter2', async (app, html, data) => {
-        const el = html[0];
-        await addBloodTracking(app, el, data);
+    Hooks.on('renderCharacterActorSheet', async (app, element, context, options) => {
+        await addBloodTracking(app, element, context);
     });
 
-    Hooks.on('renderActorSheet5eNPC2', async (app, html, data) => {
-        const el = html[0];
-        await addBloodTracking(app, el, data);
+    Hooks.on('renderNPCActorSheet', async (app, element, context, options) => {
+        await addBloodTracking(app, element, context);
     });
 
     Hooks.on('dnd5e.transformActorV2', handleTransform);

@@ -38,20 +38,17 @@ function addNetworthDisplay(app, el) {
  */
 export function registerNetworthHooks() {
     // PCs
-    Hooks.on('renderActorSheet5eCharacter2', (app, html, data) => {
-        const el = html[0];
-        addNetworthDisplay(app, el);
+    Hooks.on('renderCharacterActorSheet', (app, element, context, options) => {
+        addNetworthDisplay(app, element);
     });
 
     // NPCs
-    Hooks.on('renderActorSheet5eNPC2', (app, html, data) => {
-        const el = html[0];
-        addNetworthDisplay(app, el);
+    Hooks.on('renderNPCActorSheet', (app, element, context, options) => {
+        addNetworthDisplay(app, element);
     });
 
     // Locations
-    Hooks.on('renderLocationSheet', (app, html, data) => {
-        const el = html[0];
-        addNetworthDisplay(app, el);
+    Hooks.on('renderLocationSheet', (app, element, context, options) => {
+        addNetworthDisplay(app, element);
     });
 }

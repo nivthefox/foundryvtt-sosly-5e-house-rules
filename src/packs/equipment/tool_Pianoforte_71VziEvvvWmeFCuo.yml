@@ -51,14 +51,13 @@ system:
       Each type of musical instrument requires a separate proficiency.</p><p
       class="whitespace-pre-wrap break-words"></p>
     chat: ''
-  identifier: new-item
+  identifier: pianoforte
   source:
     revision: 1
     rules: '2024'
   identified: true
   unidentified:
     description: ''
-  container: null
   quantity: 1
   weight:
     value: 750
@@ -82,7 +81,6 @@ effects: []
 folder: o393vzOEBIbgQvSb
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags:
   exportSource:
     world: syclod

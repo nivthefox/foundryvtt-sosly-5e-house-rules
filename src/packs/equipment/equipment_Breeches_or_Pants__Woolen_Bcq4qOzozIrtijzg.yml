@@ -49,7 +49,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: breeches-or-pants-woolen
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -99,7 +98,6 @@ _stats:
 folder: njdwzIX01lhf1KVB
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: Bcq4qOzozIrtijzg
 sort: 0
 _key: '!items!Bcq4qOzozIrtijzg'

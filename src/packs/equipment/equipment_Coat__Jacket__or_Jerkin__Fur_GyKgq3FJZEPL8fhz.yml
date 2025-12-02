@@ -48,7 +48,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: coat-jacket-or-jerkin-fur
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: vYM4ciD3eKYBXL6e
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: GyKgq3FJZEPL8fhz
 sort: 0
 _key: '!items!GyKgq3FJZEPL8fhz'

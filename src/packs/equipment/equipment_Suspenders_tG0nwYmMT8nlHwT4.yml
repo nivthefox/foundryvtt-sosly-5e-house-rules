@@ -50,7 +50,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: suspenders
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -100,7 +99,6 @@ _stats:
 folder: K1ziRy4kt1HtiRTU
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: tG0nwYmMT8nlHwT4
 sort: 0
 _key: '!items!tG0nwYmMT8nlHwT4'

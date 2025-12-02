@@ -12,14 +12,13 @@ system:
   description:
     value: <p>A simple copper ring.</p>
     chat: ''
-  identifier: new-item
+  identifier: ring
   source:
     revision: 1
     rules: '2024'
   identified: true
   unidentified:
     description: ''
-  container: null
   quantity: 1
   weight:
     value: 0
@@ -52,7 +51,6 @@ effects: []
 sort: 0
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   compendiumSource: null

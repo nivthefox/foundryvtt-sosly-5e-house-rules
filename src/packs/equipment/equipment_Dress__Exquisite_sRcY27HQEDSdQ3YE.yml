@@ -50,7 +50,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: dress-exquisite
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -100,7 +99,6 @@ _stats:
 folder: Fna0YnMqckSmaUEv
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: sRcY27HQEDSdQ3YE
 sort: 0
 _key: '!items!sRcY27HQEDSdQ3YE'

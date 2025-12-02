@@ -50,7 +50,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: robe-velvet
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -103,7 +102,6 @@ _stats:
 folder: Fna0YnMqckSmaUEv
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: BtCL6YCNBmSsEYOS
 sort: 0
 _key: '!items!BtCL6YCNBmSsEYOS'

@@ -50,7 +50,6 @@ system:
     baseItem: ''
   activities: {}
   identifier: robe-silk
-  container: null
   attuned: false
   properties: []
 effects: []
@@ -100,7 +99,6 @@ _stats:
 folder: Fna0YnMqckSmaUEv
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: tFthYkri6tg4X035
 sort: 0
 _key: '!items!tFthYkri6tg4X035'

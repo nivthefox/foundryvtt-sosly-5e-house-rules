@@ -5,16 +5,18 @@ function isPsionicDiscipline(item) {
     return item.type === 'feat' && item.system.type?.value === 'discipline';
 }
 
-async function createPsionicDisciplinesSection(html) {
-    const featuresSection = html.find('.features-list').first();
-    if (!featuresSection.length) {return null;}
+async function createPsionicDisciplinesSection(element) {
+    const featuresSection = element.querySelector('.features-list');
+    if (!featuresSection) {
+        return null;
+    }
 
     const sectionData = {
         label: 'Psionic Disciplines',
         categories: [
-            { classes: 'item-uses', label: 'DND5E.Uses' },
-            { classes: 'item-recovery', label: 'DND5E.Recovery' },
-            { classes: 'item-controls' }
+            {classes: 'item-uses', label: 'DND5E.Uses'},
+            {classes: 'item-recovery', label: 'DND5E.Recovery'},
+            {classes: 'item-controls'}
         ]
     };
 
@@ -24,68 +26,83 @@ async function createPsionicDisciplinesSection(html) {
             sectionData
         );
 
-        const $section = $(sectionHtml);
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = sectionHtml;
+        const section = tempDiv.firstElementChild;
 
-        // Find insertion point
-        const otherSection = html.find('[data-type="other"]').first();
-        if (otherSection.length) {
-            $section.insertBefore(otherSection);
+        const otherSection = element.querySelector('[data-type="other"]');
+        if (otherSection) {
+            otherSection.parentNode.insertBefore(section, otherSection);
         } else {
-            const lastSection = html.find('.items-section').last();
-            if (lastSection.length) {
-                $section.insertAfter(lastSection);
+            const sections = element.querySelectorAll('.items-section');
+            const lastSection = sections[sections.length - 1];
+            if (lastSection) {
+                lastSection.parentNode.insertBefore(section, lastSection.nextSibling);
             } else {
-                featuresSection.append($section);
+                featuresSection.appendChild(section);
             }
         }
 
-        return $section;
+        return section;
     } catch (error) {
         logger.warn(`Failed to create Psionic Disciplines section: ${error}`);
         return null;
     }
 }
 
-export async function reorganizePsionicDisciplines(app, html, data) {
-    if (!data.actor) {return;}
+export async function reorganizePsionicDisciplines(app, element, context, options) {
+    if (!context.actor) {
+        return;
+    }
 
-    if (data.actor.type !== 'character') {return;}
+    if (context.actor.type !== 'character') {
+        return;
+    }
 
-    if (!html.find('.features-list').length) {return;}
+    if (!element.querySelector('.features-list')) {
+        return;
+    }
 
-    const psionicDisciplines = data.actor.items.filter(isPsionicDiscipline);
-    if (!psionicDisciplines.length) {return;}
+    const psionicDisciplines = context.actor.items.filter(isPsionicDiscipline);
+    if (!psionicDisciplines.length) {
+        return;
+    }
 
-    const otherFeaturesSection = html.find('[data-type="other"]').first();
-    const disciplinesSection = await createPsionicDisciplinesSection(html);
-    if (!disciplinesSection) {return;}
+    const otherFeaturesSection = element.querySelector('[data-type="other"]');
+    const disciplinesSection = await createPsionicDisciplinesSection(element);
+    if (!disciplinesSection) {
+        return;
+    }
+
+    const itemList = disciplinesSection.querySelector('.item-list');
 
     psionicDisciplines
         .sort((a, b) => a.name.localeCompare(b.name))
         .forEach(discipline => {
-            const itemElement = html.find(`[data-item-id="${discipline.id}"]`);
-            if (itemElement.length) {
-                itemElement.attr('data-grouped', 'discipline');
-
-                // Set subtitle to just the discipline type (only the main item subtitle, not activity subtitles)
-                const subtitleElement = itemElement.find('.item-row > .item-name .subtitle').first();
-                if (subtitleElement.length && discipline.system.type?.subtype) {
-                    const disciplineSubtype = CONFIG.DND5E
-                        .featureTypes?.discipline?.subtypes?.[discipline.system.type.subtype];
-                    if (disciplineSubtype) {
-                        subtitleElement.text(disciplineSubtype);
-                    }
-                }
-
-                itemElement.detach().appendTo(disciplinesSection.find('.item-list'));
+            const itemElement = element.querySelector(`[data-item-id="${discipline.id}"]`);
+            if (!itemElement) {
+                return;
             }
+
+            itemElement.setAttribute('data-grouped', 'discipline');
+
+            const subtitleElement = itemElement.querySelector('.item-row > .item-name .subtitle');
+            if (subtitleElement && discipline.system.type?.subtype) {
+                const disciplineSubtype = CONFIG.DND5E
+                    .featureTypes?.discipline?.subtypes?.[discipline.system.type.subtype];
+                if (disciplineSubtype) {
+                    subtitleElement.textContent = disciplineSubtype;
+                }
+            }
+
+            itemList.appendChild(itemElement);
         });
 
-    if (disciplinesSection.find('.item-list li').length === 0) {
+    if (!disciplinesSection.querySelector('.item-list li')) {
         disciplinesSection.remove();
     }
 
-    if (otherFeaturesSection.find('.item-list li').length === 0) {
+    if (otherFeaturesSection && !otherFeaturesSection.querySelector('.item-list li')) {
         otherFeaturesSection.remove();
     }
 }

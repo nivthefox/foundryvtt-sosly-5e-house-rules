@@ -39,39 +39,38 @@ function extractPowerPointCosts(spell, actor) {
     return `${minCost}-${maxCost} Power Points`;
 }
 
-export function addPsionicSubtitles(app, html, data) {
-    if (!data.actor) {
+export function addPsionicSubtitles(app, element, context, options) {
+    if (!context.actor) {
         return;
     }
 
-    const el = html[0];
-    const psionicPowerElements = el.querySelectorAll('[data-item-level="99"]');
-    const psionicTalentElements = el.querySelectorAll('[data-item-level="0"]');
-    const powerLimit = getPowerLimit(data.actor);
+    const psionicPowerElements = element.querySelectorAll('[data-item-level="99"]');
+    const psionicTalentElements = element.querySelectorAll('[data-item-level="0"]');
+    const powerLimit = getPowerLimit(context.actor);
 
-    for (const element of [...psionicPowerElements, ...psionicTalentElements]) {
-        const itemId = element.dataset.itemId;
+    for (const itemEl of [...psionicPowerElements, ...psionicTalentElements]) {
+        const itemId = itemEl.dataset.itemId;
         if (!itemId) {
             continue;
         }
 
-        const spell = data.actor.items.get(itemId);
+        const spell = context.actor.items.get(itemId);
         if (!spell || !isPsionicSpell(spell)) {
             continue;
         }
 
-        const minCost = getMinimumPowerPointCost(spell, data.actor);
+        const minCost = getMinimumPowerPointCost(spell, context.actor);
         if (powerLimit !== null && minCost !== null && minCost > powerLimit) {
-            element.remove();
+            itemEl.remove();
             continue;
         }
 
-        const powerPointCosts = extractPowerPointCosts(spell, data.actor);
+        const powerPointCosts = extractPowerPointCosts(spell, context.actor);
         if (!powerPointCosts) {
             continue;
         }
 
-        const subtitleElement = element.querySelector('.item-row > .item-name .name-stacked .subtitle');
+        const subtitleElement = itemEl.querySelector('.item-row > .item-name .name-stacked .subtitle');
         if (!subtitleElement) {
             continue;
         }

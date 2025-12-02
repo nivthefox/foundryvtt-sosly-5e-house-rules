@@ -49,7 +49,6 @@ system:
     subtype: ''
   unidentified:
     description: ''
-  container: null
   properties: []
   magicalBonus: null
   activities:
@@ -178,7 +177,6 @@ effects: []
 folder: KHwMyyWoS0oKKr2f
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 flags: {}
 _stats:
   compendiumSource: null

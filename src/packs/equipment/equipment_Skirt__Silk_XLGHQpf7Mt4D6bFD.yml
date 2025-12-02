@@ -46,8 +46,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: breeches-or-pants-silk
-  container: null
+  identifier: skirt-silk
   attuned: false
   properties: []
 effects: []
@@ -97,7 +96,6 @@ _stats:
 folder: njdwzIX01lhf1KVB
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: XLGHQpf7Mt4D6bFD
 sort: 162500
 _key: '!items!XLGHQpf7Mt4D6bFD'

@@ -3,10 +3,11 @@ import { id as module_id } from '../../../module.json';
 
 /**
  * @param {Application} app
- * @param {jQuery} html
+ * @param {HTMLElement} element
  * @param {object} context
+ * @param {object} options
  */
-export async function injectPsionicistManifestingCard(app, html, context) {
+export async function injectPsionicistManifestingCard(app, element, context, options) {
     if (!context.actor) {
         return;
     }
@@ -25,8 +26,7 @@ export async function injectPsionicistManifestingCard(app, html, context) {
         return;
     }
 
-    const el = html[0];
-    const topSection = el.querySelector('.spells .top');
+    const topSection = element.querySelector('.spells .top');
     if (!topSection) {
         return;
     }

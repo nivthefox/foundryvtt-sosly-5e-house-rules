@@ -47,8 +47,7 @@ system:
     value: clothing
     baseItem: ''
   activities: {}
-  identifier: breeches-or-pants-cotton
-  container: null
+  identifier: skirt-cotton
   attuned: false
   properties: []
 effects: []
@@ -98,7 +97,6 @@ _stats:
 folder: njdwzIX01lhf1KVB
 ownership:
   default: 0
-  n9iY1vD5eGeaHb7l: 3
 _id: TCskeNban6O1MffS
 sort: 100000
 _key: '!items!TCskeNban6O1MffS'
