@@ -1,3 +1,5 @@
+const {BackgroundVisionShader} = foundry.canvas.rendering.shaders;
+
 export class InfravisionBackgroundShader extends BackgroundVisionShader {
     static fragmentShader = `
     ${this.SHADER_HEADER}

@@ -1,6 +1,8 @@
 import {InfravisionBackgroundShader} from './shaders/background';
 import {InfravisionCanvasShader} from './shaders/canvas';
 
+const {VisionMode} = foundry.canvas.perception;
+
 export class InfravisionMode extends VisionMode {
     constructor() {
         super({

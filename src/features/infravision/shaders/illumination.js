@@ -1,3 +1,5 @@
+const {IlluminationVisionShader} = foundry.canvas.rendering.shaders;
+
 export class InfravisionIlluminationShader extends IlluminationVisionShader {
     static fragmentShader = `
     ${this.SHADER_HEADER}

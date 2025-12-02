@@ -1,3 +1,6 @@
+const {DetectionMode} = foundry.canvas.perception;
+const {GlowOverlayFilter} = foundry.canvas.rendering.filters;
+
 export class InfravisionDetectionMode extends DetectionMode {
     constructor() {
         super({

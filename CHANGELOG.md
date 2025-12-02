@@ -15,17 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix spell uses not displaying on NPC spellcasting tab for Items with Spells
 - Fix spell overrides not being applied to embedded spells when configured on items already on an actor
 
-## [1.26.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.26.0) - 2025-12-03
-
-### Added
-- Add Blood Sorcery subclass for Sorcerer
+## [Unreleased]
 
 ### Changed
-- Update Beast Heart Communion feat: rename "Wild Healing" to "Wild Casting" and expand to allow casting all Beast Form spells while wild shaped (instead of only Cure Wounds)
-- Increase Psionic Blast damage from 1d6/pp to 1d10 + 1d10/pp
+- Low-Light Vision now properly extends both vision and detection to 2x dim light range
 
 ### Removed
 - Legendary action combat recovery (now handled natively by dnd5e 5.1)
+- Low-Light Vision grayscale mode (removed due to v13 shader incompatibility)
 
 ### Fixed
 - Fix Items with Spells override dialog dropdowns not being clickable in Foundry v13 with dnd5e 5.1
@@ -46,6 +43,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix Net Worth display not appearing on character sheets in Foundry v13 with dnd5e 5.1
 - Fix Psionic disciplines section not appearing on character sheets in Foundry v13 with dnd5e 5.1
 - Fix Psionicist manifesting card not appearing on character sheets in Foundry v13 with dnd5e 5.1
+
+## [1.26.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.26.0) - 2025-12-03
+
+### Added
+- Add Blood Sorcery subclass for Sorcerer
+
+### Changed
+- Update Beast Heart Communion feat: rename "Wild Healing" to "Wild Casting" and expand to allow casting all Beast Form spells while wild shaped (instead of only Cure Wounds)
+- Increase Psionic Blast damage from 1d6/pp to 1d10 + 1d10/pp
 
 ## [1.25.3](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.25.3) - 2025-11-22
 

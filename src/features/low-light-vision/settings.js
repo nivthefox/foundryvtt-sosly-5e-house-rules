@@ -26,13 +26,4 @@ export function registerLowLightVisionSettings() {
         requiresReload: true
     });
 
-    game.settings.register(module_id, 'low-light-vision-grayscale', {
-        name: 'Low-Light Vision Grayscale',
-        hint: 'Convert low-light vision to grayscale (default: enabled).',
-        scope: 'world',
-        config: true,
-        type: Boolean,
-        default: true,
-        requiresReload: true
-    });
 }
