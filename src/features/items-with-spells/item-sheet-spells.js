@@ -2,13 +2,16 @@ import {ELIGIBLE_ITEM_TYPES} from './constants';
 import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem, createSpellOnActor, updateItemSpellFlags, getSpellEntryId} from './utils';
 import {ItemSpellOverrides} from './overrides-dialog';
 
+const {renderTemplate} = foundry.applications.handlebars;
+const TextEditor = foundry.applications.ux.TextEditor.implementation;
+
 export function registerItemSheetSpells() {
-    if (!dnd5e?.applications?.item?.ItemSheet5e2) {
-        console.warn('sosly-5e-house-rules | Items with Spells feature requires D&D 5e v4+');
+    if (!dnd5e?.applications?.item?.ItemSheet5e) {
+        console.warn('sosly-5e-house-rules | Items with Spells feature requires D&D 5e v5+');
         return;
     }
 
-    dnd5e.applications.item.ItemSheet5e2.TABS.push({
+    dnd5e.applications.item.ItemSheet5e.TABS.push({
         tab: 'sosly-items-with-spells',
         label: 'TYPES.Item.spellPl',
         condition: item => {
@@ -22,23 +25,24 @@ export function registerItemSheetSpells() {
         }
     });
 
-    Hooks.on('renderItemSheetV2', async (app, [html]) => {
+    Hooks.on('renderItemSheet5e', async (app, html) => {
         if (!ELIGIBLE_ITEM_TYPES.includes(app.item.type)) {
             return;
         }
 
-        const sheetBody = html.querySelector('.sheet-body');
-        if (!sheetBody) {
+        const windowContent = html.querySelector('.window-content');
+        if (!windowContent) {
             return;
         }
 
         let spellsTab = html.querySelector('.tab[data-tab="sosly-items-with-spells"]');
         if (!spellsTab) {
-            const activeClass = app._tabs?.[0]?.active === 'sosly-items-with-spells' ? 'active' : '';
-            const wrapper = document.createElement('div');
-            wrapper.innerHTML = `<div class="tab sosly-items-with-spells ${activeClass}" data-group="primary" data-tab="sosly-items-with-spells"></div>`;
-            spellsTab = wrapper.firstElementChild;
-            sheetBody.appendChild(spellsTab);
+            const activeClass = app.tabGroups?.primary === 'sosly-items-with-spells' ? 'active' : '';
+            spellsTab = document.createElement('section');
+            spellsTab.className = `sosly-items-with-spells tab ${activeClass}`.trim();
+            spellsTab.dataset.group = 'primary';
+            spellsTab.dataset.tab = 'sosly-items-with-spells';
+            windowContent.appendChild(spellsTab);
         }
 
         const itemSpells = getItemSpells(app.item);

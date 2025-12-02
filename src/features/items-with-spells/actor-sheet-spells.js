@@ -27,6 +27,9 @@ function prepareItemSpellbook(wrapped, context) {
     const atBottom = game.settings.get(module_id, 'items-with-spells-sort-order');
     const order = atBottom ? 2000 : -5;
 
+    const existingSection = Object.values(spellbook)[0];
+    const columns = existingSection?.columns ?? [];
+
     const spellsPerItem = new Map();
     const spellsToRemove = new Map();
 

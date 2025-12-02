@@ -1,4 +1,4 @@
-import {getItemSpells, getSpellEntryId, createUpdateObject} from './utils';
+import {getItemSpells, createUpdateObject} from './utils';
 
 const {ApplicationV2, HandlebarsApplicationMixin} = foundry.applications.api;
 
@@ -9,7 +9,7 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
         super({id});
 
         const itemSpells = getItemSpells(item);
-        const spellEntry = itemSpells.find(s => getSpellEntryId(s) === spellId);
+        const spellEntry = itemSpells.find(s => s.id === spellId);
 
         this.overrides = spellEntry?.overrides ?? {};
         this.spellId = spellId;
@@ -19,7 +19,8 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
 
     static DEFAULT_OPTIONS = {
         id: 'sosly-items-with-spells-overrides',
-        tag: 'form',
+        classes: ['dnd5e2'],
+        tag: 'dialog',
         form: {
             handler: ItemSpellOverrides._formHandler,
             closeOnSubmit: false,
@@ -32,7 +33,8 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
         window: {
             icon: 'fas fa-wand-sparkles',
             title: 'Override Dialog',
-            contentClasses: ['dnd5e2', 'sheet', 'item', 'iws']
+            contentTag: 'form',
+            contentClasses: ['standard-form', 'iws']
         }
     };
 
@@ -78,6 +80,7 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
         }));
 
         return {
+            editable: true,
             spell,
             overrides,
             spellStats: {
@@ -94,8 +97,7 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
                         .filter(([, config]) => !config.deprecated)
                         .map(([value, config]) => ({
                             value,
-                            label: config.label,
-                            group: game.i18n.localize('DND5E.DurationTime')
+                            label: config.label
                         }))
                 ],
                 abilityOptions: [
@@ -157,7 +159,7 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
 
     async saveOverrides() {
         const itemSpells = getItemSpells(this.item);
-        const spellEntry = itemSpells.find(s => getSpellEntryId(s) === this.spellId);
+        const spellEntry = itemSpells.find(s => s.id === this.spellId);
 
         if (!spellEntry) {
             return;
@@ -166,11 +168,12 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
         spellEntry.overrides = this.overrides;
         await this.item.setFlag('sosly-5e-house-rules', 'item-spells', itemSpells);
 
-        if (this.item.isEmbedded) {
+        if (this.item.isEmbedded && this.item.actor) {
             const embeddedSpell = await fromUuid(spellEntry.uuid);
-            if (embeddedSpell) {
-                const update = createUpdateObject(this.item, embeddedSpell, this.overrides);
-                await embeddedSpell.update(update);
+            if (embeddedSpell && embeddedSpell.isEmbedded) {
+                const sourceSpell = this.spell;
+                const updateData = createUpdateObject(this.item, sourceSpell, this.overrides);
+                await embeddedSpell.update(updateData);
             }
         }
 

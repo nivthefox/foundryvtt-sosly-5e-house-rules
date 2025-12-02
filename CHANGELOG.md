@@ -28,6 +28,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Legendary action combat recovery (now handled natively by dnd5e 5.1)
 
 ### Fixed
+- Fix Items with Spells override dialog dropdowns not being clickable in Foundry v13 with dnd5e 5.1
+- Fix Items with Spells spell overrides not applying to actor spells when saved
 - Fix Blood Magic blood pool meter not appearing on character sheets in Foundry v13 with dnd5e 5.1
 - Fix Breather button not appearing on actor sheets in Foundry v13 with dnd5e 5.1
 - Fix Breather dialog failing to open due to missing rest type configuration
