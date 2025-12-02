@@ -1,6 +1,6 @@
 // Net worth feature styles
 
-.dnd5e2 .inventory-element .middle .net-worth {
+.dnd5e2 .inventory-element .currency .net-worth {
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -12,6 +12,6 @@
     font-weight: bold;
 }
 
-.dnd5e2 .inventory-element .middle .net-worth .fa-coins {
+.dnd5e2 .inventory-element .currency .net-worth .fa-coins {
     color: var(--dnd5e-color-gold);
 }
