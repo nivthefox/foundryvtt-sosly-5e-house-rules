@@ -17,11 +17,9 @@ system:
       you create from your own blood retain their full potency indefinitely and
       do not decay over long rests.</p><p><strong>Primal Understanding.</strong>
       You have advantage on saving throws against madness caused by blood
-      magic.</p><p><strong>Wild Healing.</strong> You can cast
-      @UUID[Compendium.dnd-players-handbook.spells.phbsplCureWounds]{Cure
-      Wounds} on yourself while wild shaped, ignoring all spell components and
-      without rolling for madness. You must still expend a spell slot, as
-      normal.</p>
+      magic.</p><p><strong>Wild Casting.</strong> You can cast Beast Form spells
+      while wild shaped, ignoring all spell components and without rolling for
+      madness. You must still expend a spell slot, as normal.</p>
     chat: ''
   identifier: new-item
   source:
