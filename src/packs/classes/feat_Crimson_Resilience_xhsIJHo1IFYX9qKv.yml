@@ -1,0 +1,166 @@
+folder: 37PJwvCyVGBcKLk4
+name: Crimson Resilience
+type: feat
+_id: xhsIJHo1IFYX9qKv
+img: icons/magic/defensive/shield-barrier-glowing-triangle-red.webp
+system:
+  activities:
+    YbAhK3u8qRlPs6YI:
+      type: heal
+      _id: YbAhK3u8qRlPs6YI
+      sort: 0
+      activation:
+        type: reaction
+        value: 1
+        override: false
+        condition: When reduced to 0 Hit Points
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: Defying death through sheer bloody-minded will
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      healing:
+        number: null
+        denomination: null
+        bonus: ''
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@classes.sorcerer.levels'
+        scaling:
+          mode: ''
+          number: null
+          formula: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: Defy Death
+      img: ''
+  uses:
+    spent: 0
+    max: '1'
+    recovery:
+      - period: lr
+        type: recoverAll
+  description:
+    value: >-
+      <p><em>18th-level Blood Sorcery feature</em></p>
+      <p>While you are Bloodied, you have Resistance to Bludgeoning, Piercing,
+      and Slashing damage. Additionally, when you are reduced to 0 Hit Points,
+      you can use your reaction to regain a number of Hit Points equal to your
+      Sorcerer level. Once you use this feature, you can't do so again until you
+      finish a Long Rest.</p>
+      <section class="secret" id="secret-xhsIJHo1IFYX9qKv">
+      <p><strong>Foundry Note</strong></p>
+      <p>Toggle the "Crimson Resilience: Bloodied" effect on your character sheet
+      when you become Bloodied to activate the damage resistances.</p>
+      </section>
+    chat: ''
+  identifier: crimson-resilience
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 18
+  properties: []
+  requirements: Blood Sorcery
+effects:
+  - name: 'Crimson Resilience: Bloodied'
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-red.webp
+    origin: Compendium.sosly-5e-house-rules.classes.Item.xhsIJHo1IFYX9qKv
+    _id: ZloojYK7rxoVYU2c
+    type: base
+    system: {}
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: bludgeoning
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: piercing
+        priority: null
+      - key: system.traits.dr.value
+        mode: 2
+        value: slashing
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: 'Resistance to bludgeoning, piercing, and slashing damage while Bloodied.'
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: none
+        showIcon: true
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: dnd5e
+      systemVersion: 4.4.4
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!items.effects!xhsIJHo1IFYX9qKv.ZloojYK7rxoVYU2c'
+sort: 400000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!xhsIJHo1IFYX9qKv'

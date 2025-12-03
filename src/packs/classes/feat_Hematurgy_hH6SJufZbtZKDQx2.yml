@@ -1,0 +1,336 @@
+folder: 37PJwvCyVGBcKLk4
+name: Hematurgy
+type: feat
+_id: hH6SJufZbtZKDQx2
+img: icons/skills/wounds/blood-drip-droplet-red.webp
+system:
+  activities:
+    aBgXEQY3B0RsSGoG:
+      type: damage
+      _id: aBgXEQY3B0RsSGoG
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When casting a 1st-level spell via Hematurgy
+      consumption:
+        targets:
+          - type: hitDice
+            value: '1'
+            target: smallest
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: Blood sacrifice for a 1st-level spell
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      damage:
+        critical:
+          allow: false
+        parts:
+          - number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 1st Level
+      img: ''
+    VDzt1C1p90V1Tero:
+      type: damage
+      _id: VDzt1C1p90V1Tero
+      sort: 100000
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When casting a 2nd-level spell via Hematurgy
+      consumption:
+        targets:
+          - type: hitDice
+            value: '2'
+            target: smallest
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: Blood sacrifice for a 2nd-level spell
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      damage:
+        critical:
+          allow: false
+        parts:
+          - number: 2
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 2nd Level
+      img: ''
+    T8gTpjg3a6mllbgr:
+      type: damage
+      _id: T8gTpjg3a6mllbgr
+      sort: 200000
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When casting a 3rd-level spell via Hematurgy
+      consumption:
+        targets:
+          - type: hitDice
+            value: '3'
+            target: smallest
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: Blood sacrifice for a 3rd-level spell
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      damage:
+        critical:
+          allow: false
+        parts:
+          - number: 3
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 3rd Level
+      img: ''
+    IovvSPp1wYZDQLaN:
+      type: damage
+      _id: IovvSPp1wYZDQLaN
+      sort: 300000
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When casting a 4th-level spell via Hematurgy
+      consumption:
+        targets:
+          - type: hitDice
+            value: '4'
+            target: smallest
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: Blood sacrifice for a 4th-level spell
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      damage:
+        critical:
+          allow: false
+        parts:
+          - number: 4
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 4th Level
+      img: ''
+    jqWTkK4Jf5XTo4Cc:
+      type: damage
+      _id: jqWTkK4Jf5XTo4Cc
+      sort: 400000
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When casting a 5th-level spell via Hematurgy
+      consumption:
+        targets:
+          - type: hitDice
+            value: '5'
+            target: smallest
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: Blood sacrifice for a 5th-level spell
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: false
+      damage:
+        critical:
+          allow: false
+        parts:
+          - number: 5
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+            custom:
+              enabled: false
+              formula: ''
+            scaling: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: 5th Level
+      img: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p><em>3rd-level Blood Sorcery feature</em></p>
+      <p>When you take the Magic action to cast a spell of 1st level or higher,
+      you can spend a number of Hit Dice equal to the level of the spell (up to
+      your Charisma modifier). You do not expend a spell slot. Instead, you take
+      1d6 necrotic damage for each Hit Die expended. This damage cannot be
+      reduced or prevented in any way, but it does not disrupt your
+      concentration.</p>
+      <p>If the spell deals damage, it deals necrotic damage, instead. If you
+      reduce a creature to 0 hit points with a spell cast in this way, you
+      regain 1 expended Hit Die.</p>
+    chat: ''
+  identifier: hematurgy
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Blood Sorcery
+effects: []
+sort: 100000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!hH6SJufZbtZKDQx2'

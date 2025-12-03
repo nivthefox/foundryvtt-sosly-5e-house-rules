@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add Blood Sorcery subclass for Sorcerer
+
 ### Changed
 - Update Beast Heart Communion feat: rename "Wild Healing" to "Wild Casting" and expand to allow casting all Beast Form spells while wild shaped (instead of only Cure Wounds)
 

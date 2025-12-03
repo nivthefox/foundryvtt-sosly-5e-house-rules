@@ -1,0 +1,70 @@
+folder: 37PJwvCyVGBcKLk4
+name: Blood Spells
+type: feat
+_id: KCcCCE89jIAjWFYg
+img: icons/magic/symbols/runes-star-magenta.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p><em>3rd-level Blood Sorcery feature</em></p>
+      <p>When you reach a Sorcerer level specified in the Blood Spells table, you
+      thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Sorcerer Level</th>
+            <th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3rd</td>
+            <td><em>False Life</em>, <em>Inflict Wounds</em>, <em>Ray of Sickness</em>, <em>Wither and Bloom</em></td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td><em>Life Transference</em>, <em>Vampiric Touch</em></td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td><em>Blight</em>, <em>Death Ward</em></td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td><em>Contagion</em>, <em>Enervation</em></td>
+          </tr>
+        </tbody>
+      </table>
+    chat: ''
+  identifier: blood-spells
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Blood Sorcery
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!KCcCCE89jIAjWFYg'
