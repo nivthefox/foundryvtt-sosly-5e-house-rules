@@ -70,6 +70,12 @@ function prepareItemSpellbook(wrapped, data, spells) {
             continue;
         }
 
+        for (const spell of itemSpells) {
+            const ctx = data.itemContext[spell.id] ??= {};
+            ctx.hasUses = spell.hasLimitedUses;
+            ctx.hasRecharge = spell.hasRecharge;
+        }
+
         const section = {
             order: order,
             label: item.name,

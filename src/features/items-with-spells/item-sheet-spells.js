@@ -1,5 +1,5 @@
 import {ELIGIBLE_ITEM_TYPES} from './constants';
-import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem, createSpellOnActor, updateItemSpellFlags} from './utils';
+import {getItemSpells, isSpellLinked, addSpellToItem, fetchSpellData, removeSpellFromItem, createSpellOnActor, updateItemSpellFlags, getSpellEntryId} from './utils';
 import {ItemSpellOverrides} from './overrides-dialog';
 
 export function registerItemSheetSpells() {
@@ -121,7 +121,7 @@ async function handleDrop(event, app) {
             );
 
             if (createdSpell) {
-                await updateItemSpellFlags(app.item, spellEntry.id, createdSpell.uuid);
+                await updateItemSpellFlags(app.item, getSpellEntryId(spellEntry), createdSpell.uuid);
             }
         }
     }
@@ -138,7 +138,7 @@ async function handleEdit(event, app) {
 
     const spellId = spellRow.dataset.itemId;
     const itemSpells = getItemSpells(app.item);
-    const spellEntry = itemSpells.find(s => s.id === spellId);
+    const spellEntry = itemSpells.find(s => getSpellEntryId(s) === spellId);
 
     if (!spellEntry) {
         return;
@@ -163,7 +163,7 @@ async function handleDelete(event, app) {
 
     const spellId = spellRow.dataset.itemId;
     const itemSpells = getItemSpells(app.item);
-    const spellEntry = itemSpells.find(s => s.id === spellId);
+    const spellEntry = itemSpells.find(s => getSpellEntryId(s) === spellId);
 
     if (!spellEntry) {
         return;

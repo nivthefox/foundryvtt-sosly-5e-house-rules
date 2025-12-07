@@ -1,4 +1,4 @@
-import {getItemSpells} from './utils';
+import {getItemSpells, getSpellEntryId, createUpdateObject} from './utils';
 
 const {ApplicationV2, HandlebarsApplicationMixin} = foundry.applications.api;
 
@@ -9,7 +9,7 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
         super({id});
 
         const itemSpells = getItemSpells(item);
-        const spellEntry = itemSpells.find(s => s.id === spellId);
+        const spellEntry = itemSpells.find(s => getSpellEntryId(s) === spellId);
 
         this.overrides = spellEntry?.overrides ?? {};
         this.spellId = spellId;
@@ -89,6 +89,7 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
             options: {
                 recoveryPeriods: [
                     {value: '', label: game.i18n.localize('sosly.items-with-spells.form.never')},
+                    {value: 'atwill', label: game.i18n.localize('DND5E.SpellPrepAtWill')},
                     ...Object.entries(CONFIG.DND5E.limitedUsePeriods)
                         .filter(([, config]) => !config.deprecated)
                         .map(([value, config]) => ({
@@ -156,14 +157,23 @@ export class ItemSpellOverrides extends HandlebarsApplicationMixin(ApplicationV2
 
     async saveOverrides() {
         const itemSpells = getItemSpells(this.item);
-        const spell = itemSpells.find(s => s.id === this.spellId);
+        const spellEntry = itemSpells.find(s => getSpellEntryId(s) === this.spellId);
 
-        if (!spell) {
+        if (!spellEntry) {
             return;
         }
 
-        spell.overrides = this.overrides;
+        spellEntry.overrides = this.overrides;
         await this.item.setFlag('sosly-5e-house-rules', 'item-spells', itemSpells);
+
+        if (this.item.isEmbedded) {
+            const embeddedSpell = await fromUuid(spellEntry.uuid);
+            if (embeddedSpell) {
+                const update = createUpdateObject(this.item, embeddedSpell, this.overrides);
+                await embeddedSpell.update(update);
+            }
+        }
+
         this.item.render();
     }
 

@@ -2,6 +2,10 @@ const FLAG_SCOPE = 'sosly-5e-house-rules';
 const FLAG_KEY = 'item-spells';
 const PARENT_FLAG_KEY = 'parent-item';
 
+export function getSpellEntryId(entry) {
+    return entry.id ?? entry.uuid.split('.').pop();
+}
+
 export function getItemSpells(item) {
     return item.getFlag(FLAG_SCOPE, FLAG_KEY) ?? [];
 }
@@ -13,11 +17,9 @@ export function isSpellLinked(item, spellUuid) {
 
 export async function addSpellToItem(item, spellUuid) {
     const spells = getItemSpells(item);
-    const id = spellUuid.split('.').pop();
 
     const newSpell = {
         uuid: spellUuid,
-        id: id,
         overrides: {}
     };
 
@@ -31,9 +33,11 @@ export async function fetchSpellData(spellList) {
     for (const entry of spellList) {
         const spell = await fromUuid(entry.uuid);
 
+        const entryId = getSpellEntryId(entry);
+
         if (!spell) {
             spells.push({
-                id: entry.id,
+                id: entryId,
                 uuid: entry.uuid,
                 name: 'Missing Spell',
                 img: 'icons/svg/mystery-man.svg',
@@ -46,7 +50,7 @@ export async function fetchSpellData(spellList) {
         }
 
         const spellData = {
-            id: entry.id,
+            id: entryId,
             uuid: entry.uuid,
             name: spell.name,
             img: spell.img,
@@ -73,7 +77,9 @@ export async function fetchSpellData(spellList) {
             spellData.attackLabel = attackActivity.labels.toHit;
         }
 
-        if (entry.overrides?.uses?.max) {
+        if (entry.overrides?.uses?.recovery === 'atwill') {
+            spellData.usesLabel = game.i18n.localize('DND5E.SpellPrepAtWill');
+        } else if (entry.overrides?.uses?.max) {
             const max = entry.overrides.uses.max;
             const recovery = entry.overrides.uses.recovery;
             if (recovery) {
@@ -110,7 +116,7 @@ export async function removeParentItemId(spell) {
 
 export async function removeSpellFromItem(item, spellId) {
     const spells = getItemSpells(item);
-    const filtered = spells.filter(spell => spell.id !== spellId);
+    const filtered = spells.filter(spell => getSpellEntryId(spell) !== spellId);
     await item.setFlag(FLAG_SCOPE, FLAG_KEY, filtered);
 }
 
@@ -138,14 +144,13 @@ export async function createSpellOnActor(actor, spellUuid, parentItemId, parentI
 
 export async function updateItemSpellFlags(item, oldId, newUuid) {
     const spells = getItemSpells(item);
-    const spell = spells.find(s => s.id === oldId);
+    const spell = spells.find(s => getSpellEntryId(s) === oldId);
 
     if (!spell) {
         return;
     }
 
     spell.uuid = newUuid;
-    spell.id = newUuid.split('.').pop();
 
     await item.setFlag(FLAG_SCOPE, FLAG_KEY, spells);
 }
@@ -171,7 +176,10 @@ export function createUpdateObject(parentItem, spell, overrides = {}) {
         update['flags.tidy5e-sheet.section'] = null;
     }
 
-    if (overrides.uses?.max) {
+    if (overrides.uses?.recovery === 'atwill') {
+        update['system.uses.max'] = null;
+        update['system.uses.recovery'] = null;
+    } else if (overrides.uses?.max) {
         update['system.uses.max'] = overrides.uses.max;
         if (overrides.uses.recovery) {
             update['system.uses.recovery'] = [{period: overrides.uses.recovery}];
