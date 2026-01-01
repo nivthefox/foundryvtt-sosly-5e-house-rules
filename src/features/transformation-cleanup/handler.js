@@ -24,16 +24,40 @@ export function handleTransformationCleanup(actor, options) {
 
     if (allActorsToDelete.length === 0) {return;}
 
-    setTimeout(async () => {
-        try {
-            const existingActors = allActorsToDelete.filter(id => game.actors.get(id));
+    setTimeout(() => {
+        const existingActors = allActorsToDelete.filter(id => game.actors.get(id));
 
-            if (existingActors.length > 0) {
-                await Actor.implementation.deleteDocuments(existingActors);
-                logger.info(`Transformation Cleanup: Deleted ${existingActors.length} temporary actor(s)`);
-            }
-        } catch (error) {
-            logger.warn(`Transformation Cleanup: Failed to delete temporary actors - ${error}`);
+        if (existingActors.length === 0) {return;}
+
+        if (!game.users.activeGM) {
+            logger.warn('Transformation Cleanup: No GM online to process deletion');
+            ui.notifications.warn(game.i18n.localize('sosly.transformation-cleanup.no-gm'));
+            return;
         }
+
+        game.socket.emit('module.sosly-5e-house-rules', {
+            action: 'deleteTransformationActors',
+            actorIds: existingActors
+        });
+        logger.info(`Transformation Cleanup: Requested deletion of ${existingActors.length} temporary actor(s)`);
     }, 500);
+}
+
+export async function handleTransformationCleanupSocket(data) {
+    if (!game.user.isGM) {return;}
+
+    if (data.action !== 'deleteTransformationActors') {return;}
+
+    if (!Array.isArray(data.actorIds) || data.actorIds.length === 0) {return;}
+
+    const existingActors = data.actorIds.filter(id => game.actors.get(id));
+
+    if (existingActors.length === 0) {return;}
+
+    try {
+        await Actor.implementation.deleteDocuments(existingActors);
+        logger.info(`Transformation Cleanup: Deleted ${existingActors.length} temporary actor(s)`);
+    } catch (error) {
+        logger.warn(`Transformation Cleanup: Failed to delete temporary actors - ${error}`);
+    }
 }

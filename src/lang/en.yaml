@@ -57,6 +57,7 @@ sosly:
   transformation-cleanup:
     label: Automatic Transformation Cleanup
     hint: Automatically removes temporary actors when PCs revert from transformed forms (Polymorph, Wild Shape, etc.), eliminating need for DM intervention.
+    no-gm: Could not clean up transformation actors — no GM online
   networth: Net Worth
   location:
     label: Location Actor Subtype
