@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix spell uses not displaying on NPC spellcasting tab for Items with Spells
 - Fix spell overrides not being applied to embedded spells when configured on items already on an actor
 
-## [Unreleased]
+## [13.0.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v13.0.0) - 2026-01-01
 
 ### Changed
 - Update module compatibility for Foundry VTT v13 and D&D 5e system 5.1
