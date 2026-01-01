@@ -65,9 +65,6 @@ function prepareItemSpellbook(wrapped, context) {
         spellbook[sectionKey].items = spellbook[sectionKey].items.filter(s => !spells.has(s));
     }
 
-    const existingSection = Object.values(spellbook)[0];
-    const columns = existingSection?.columns ?? [];
-
     for (const [parentId, data] of spellsPerItem) {
         const sectionKey = `item-${parentId}`;
         spellbook[sectionKey] = {
