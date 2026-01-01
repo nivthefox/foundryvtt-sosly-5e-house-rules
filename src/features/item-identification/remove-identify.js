@@ -3,11 +3,11 @@
 
 export function removeIdentifyButton() {
     // Remove Identify button at top of Item Sheet
-    Hooks.on('renderItemSheet5e2', (sheet, [html]) => {
+    Hooks.on('renderItemSheet5e', (sheet, element) => {
         if (game.user.isGM) {return;}
         const unidentified = sheet.item.system.identified === false;
         if (!unidentified) {return;}
-        html.querySelectorAll('.pseudo-header-button.state-toggle.toggle-identified').forEach(n => n.remove());
+        element.querySelectorAll('.toggle-identified').forEach(n => n.remove());
     });
 
     // Remove Identify button from Item Context menu on Actor Sheet
@@ -15,7 +15,6 @@ export function removeIdentifyButton() {
         if (game.user.isGM) {return;}
         const unidentified = item.system.identified === false;
         if (!unidentified) {return;}
-        buttons.findIndex(option => option.name === 'DND5E.Identify');
         buttons.findSplice(e => e.name === 'DND5E.Identify');
     });
 }
