@@ -18,31 +18,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-- Low-Light Vision now properly extends both vision and detection to 2x dim light range
+- Update module compatibility for Foundry VTT v13 and D&D 5e system 5.1
 
 ### Removed
 - Legendary action combat recovery (now handled natively by dnd5e 5.1)
 - Low-Light Vision grayscale mode (removed due to v13 shader incompatibility)
-
-### Fixed
-- Fix Items with Spells override dialog dropdowns not being clickable in Foundry v13 with dnd5e 5.1
-- Fix Items with Spells spell overrides not applying to actor spells when saved
-- Fix Blood Magic blood pool meter not appearing on character sheets in Foundry v13 with dnd5e 5.1
-- Fix Breather button not appearing on actor sheets in Foundry v13 with dnd5e 5.1
-- Fix Breather dialog failing to open due to missing rest type configuration
-- Fix Breather hit die roll deprecation warning for FormDataExtended
-- Fix concentration rest dialog crash when prompting to end concentration
-- Fix Imperiled condition deprecation warnings in Foundry v13 with dnd5e 5.1
-- Fix Imperiled combat turn handler error when combatant data is unavailable
-- Fix Items with Spells spellbook sections not displaying in Foundry v13 with dnd5e 5.1
-- Fix Location sheet not respecting dark mode theme
-- Fix Location sheet items not appearing in inventory
-- Fix Location sheet drag and drop to containers
-- Fix Location sheet search/filter not working in play mode
-- Fix Madness meter not appearing on character sheets in Foundry v13 with dnd5e 5.1
-- Fix Net Worth display not appearing on character sheets in Foundry v13 with dnd5e 5.1
-- Fix Psionic disciplines section not appearing on character sheets in Foundry v13 with dnd5e 5.1
-- Fix Psionicist manifesting card not appearing on character sheets in Foundry v13 with dnd5e 5.1
 
 ## [1.26.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.26.0) - 2025-12-03
 
