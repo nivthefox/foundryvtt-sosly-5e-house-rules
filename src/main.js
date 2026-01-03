@@ -22,6 +22,7 @@ import {registerLevelsRegionVisibilityFeature} from './features/levels-region-vi
 import {registerItemsWithSpellsFeature} from './features/items-with-spells/index';
 import {registerCustomCurrencyFeature} from './features/custom-currency/index';
 import {registerGridlessSnappingFeature} from './features/gridless-snapping/index';
+import {registerResetMovementFeature} from './features/reset-movement/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -47,5 +48,6 @@ Hooks.once('init', async () => {
     registerItemsWithSpellsFeature();
     registerCustomCurrencyFeature();
     registerGridlessSnappingFeature();
+    registerResetMovementFeature();
     logger.info('Initialized');
 });

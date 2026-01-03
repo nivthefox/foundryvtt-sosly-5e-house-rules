@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add speed-based snap points when dragging tokens on gridless maps
+- Add token control buttons to reset movement during combat (reset to turn start or step back one movement)
 
 ## [13.0.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v13.0.0) - 2026-01-01
 

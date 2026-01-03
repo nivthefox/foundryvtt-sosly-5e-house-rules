@@ -58,6 +58,22 @@ sosly:
     label: Automatic Transformation Cleanup
     hint: Automatically removes temporary actors when PCs revert from transformed forms (Polymorph, Wild Shape, etc.), eliminating need for DM intervention.
     no-gm: Could not clean up transformation actors — no GM online
+  reset-movement:
+    reset-to-start: Reset Movement to Turn Start
+    step-back: Step Back One Movement
+    select-token: Please select a single token.
+    select-one-token: Please select only one token.
+    no-movement: No movement to reset.
+    not-owner: You do not own this token.
+    no-gm: No GM is currently available to approve reset requests.
+    request-sent: Movement reset request sent to GM.
+    approved: Movement reset approved.
+    denied: Movement reset request was denied.
+    approval:
+      title: Movement Reset Request
+      content: "{player} requests to reset movement for {token} ({mode})."
+      approve: Approve
+      deny: Deny
   networth: Net Worth
   location:
     label: Location Actor Subtype
