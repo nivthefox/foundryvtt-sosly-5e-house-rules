@@ -21,6 +21,7 @@ import {registerVision5eCompatibility} from './features/vision-5e-compatibility/
 import {registerLevelsRegionVisibilityFeature} from './features/levels-region-visibility/index';
 import {registerItemsWithSpellsFeature} from './features/items-with-spells/index';
 import {registerCustomCurrencyFeature} from './features/custom-currency/index';
+import {registerGridlessSnappingFeature} from './features/gridless-snapping/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -45,5 +46,6 @@ Hooks.once('init', async () => {
     registerLevelsRegionVisibilityFeature();
     registerItemsWithSpellsFeature();
     registerCustomCurrencyFeature();
+    registerGridlessSnappingFeature();
     logger.info('Initialized');
 });

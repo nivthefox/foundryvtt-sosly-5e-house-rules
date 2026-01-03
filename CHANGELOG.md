@@ -5,15 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.26.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.26.1) - 2025-12-06
+## [Unreleased]
 
 ### Added
-- Add "At Will" option for Items with Spells override configuration (unlimited casting with no use tracking)
-
-### Fixed
-- Fix Items with Spells migration not working with data from items-with-spells-5e module
-- Fix spell uses not displaying on NPC spellcasting tab for Items with Spells
-- Fix spell overrides not being applied to embedded spells when configured on items already on an actor
+- Add speed-based snap points when dragging tokens on gridless maps
 
 ## [13.0.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v13.0.0) - 2026-01-01
 
@@ -23,6 +18,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Legendary action combat recovery (now handled natively by dnd5e 5.1)
 - Low-Light Vision grayscale mode (removed due to v13 shader incompatibility)
+
+## [1.26.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.26.1) - 2025-12-06
+
+### Added
+- Add "At Will" option for Items with Spells override configuration (unlimited casting with no use tracking)
+
+### Fixed
+- Fix Items with Spells migration not working with data from items-with-spells-5e module
+- Fix spell uses not displaying on NPC spellcasting tab for Items with Spells
+- Fix spell overrides not being applied to embedded spells when configured on items already on an actor
 
 ## [1.26.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/v1.26.0) - 2025-12-03
 
