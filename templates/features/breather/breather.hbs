@@ -28,6 +28,23 @@
         {{/each}}
         {{/if}}
     </fieldset>
+    {{#if availableSpellSlots.length}}
+    <fieldset>
+        <legend>{{ localize "sosly.breather.spellSlots.label" }}</legend>
+        <div class="form-fields">
+            <select name="spellSlotLevel">
+                {{#each availableSpellSlots}}
+                <option value="{{this.level}}">{{this.label}} ({{this.cost}} HD)</option>
+                {{/each}}
+            </select>
+            <button type="button" class="dice-button restore-spell-slot" data-action="restoreSpellSlot"
+                    data-tooltip="sosly.breather.spellSlots.restore"
+                    aria-label="{{ localize 'sosly.breather.spellSlots.restore' }}">
+                <i class="fa-solid fa-arrow-rotate-left" inert></i>
+            </button>
+        </div>
+    </fieldset>
+    {{/if}}
     {{else}}
     <div class="note warn">
         {{ localize 'sosly.breather.nohd' }}

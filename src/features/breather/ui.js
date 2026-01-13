@@ -77,7 +77,44 @@ class BreatherUI extends BaseRestDialog {
             context.recoverableFeatures = getRecoverableFeatures(actor);
         }
 
+        // Get available spell slots for recovery
+        if (!context.isGroup) {
+            context.availableSpellSlots = this.#getAvailableSpellSlots();
+        }
+
         return context;
+    }
+
+    /**
+     * Get spell slots that can be recovered (have capacity and affordable HD cost)
+     * @returns {Array<object>} Array of available spell slot options
+     */
+    #getAvailableSpellSlots() {
+        const actor = this.actor;
+        const availableHD = actor.system.attributes.hd.value;
+        const slots = [];
+
+        for (let level = 1; level <= 9; level++) {
+            const slotKey = `spell${level}`;
+            const slotData = actor.system.spells?.[slotKey];
+
+            // Skip if no slots at this level or no capacity
+            if (!slotData?.max || slotData.value >= slotData.max) {continue;}
+
+            // Skip if not enough HD
+            if (availableHD < level) {continue;}
+
+            slots.push({
+                level,
+                slotKey,
+                label: game.i18n.localize(`DND5E.SpellLevel${level}`),
+                cost: level,
+                current: slotData.value,
+                max: slotData.max
+            });
+        }
+
+        return slots;
     }
 
     async _onRender(context, options) {
@@ -87,6 +124,12 @@ class BreatherUI extends BaseRestDialog {
         const rollButton = this.element.querySelector('[data-action="rollHitDie"]');
         if (rollButton) {
             rollButton.addEventListener('click', this.#onRollHitDie.bind(this));
+        }
+
+        // Bind click handler for spell slot restore button
+        const restoreButton = this.element.querySelector('[data-action="restoreSpellSlot"]');
+        if (restoreButton) {
+            restoreButton.addEventListener('click', this.#onRestoreSpellSlot.bind(this));
         }
 
         // Add real-time validation for class features
@@ -104,6 +147,55 @@ class BreatherUI extends BaseRestDialog {
             await this.actor.rollHitDie({ denomination: denom });
             foundry.utils.mergeObject(this.config, new FormDataExtended(this.form).object);
             this.render();
+        }
+    }
+
+    /**
+     * Handle restoring a spell slot
+     * @param {Event} event - The click event
+     */
+    async #onRestoreSpellSlot(event) {
+        event.preventDefault();
+        const select = this.form?.elements?.spellSlotLevel;
+        const level = parseInt(select?.value);
+        if (!level || isNaN(level)) {return;}
+
+        const slotKey = `spell${level}`;
+        const slotData = this.actor.system.spells?.[slotKey];
+        if (!slotData || slotData.value >= slotData.max) {return;}
+
+        // Spend hit dice (one per spell level)
+        for (let i = 0; i < level; i++) {
+            await this.#spendHitDie();
+        }
+
+        // Restore the spell slot
+        await this.actor.update({
+            [`system.spells.${slotKey}.value`]: slotData.value + 1
+        });
+
+        // Re-render to update available options
+        this.render();
+    }
+
+    /**
+     * Spend a single hit die from the smallest available class
+     * @returns {Promise<void>}
+     */
+    async #spendHitDie() {
+        const hd = this.actor.system.attributes.hd;
+        if (!hd.smallestAvailable || hd.value <= 0) {return;}
+
+        // Find a class that has the smallest HD size and unspent HD
+        const targetClass = Array.from(hd.classes)
+            .filter(c => c.system.hd.denomination === hd.smallestAvailable)
+            .find(c => c.system.hd.value > 0);
+
+        if (targetClass) {
+            await this.actor.updateEmbeddedDocuments('Item', [{
+                _id: targetClass.id,
+                'system.hd.spent': targetClass.system.hd.spent + 1
+            }]);
         }
     }
 

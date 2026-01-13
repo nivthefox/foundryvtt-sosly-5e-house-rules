@@ -21,6 +21,9 @@ sosly:
       hint: On a breather, you may spend remaining Hit Dice.
     select: Select Dice to Roll
     nohd: No Hit Dice remaining.
+    spellSlots:
+      label: Recover Spell Slot
+      restore: Restore
     error:
       insufficientHD: Not enough Hit Dice to recover selected features
   concentration:
