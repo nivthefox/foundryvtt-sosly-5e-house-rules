@@ -6,6 +6,8 @@
 export const featureConfigs = [
     { name: 'Rage', key: 'rage', recovery: 'single' },
     { name: 'Bardic Inspiration', key: 'bardic-inspiration', recovery: 'single' },
+    { name: 'Wild Shape', key: 'wild-shape', recovery: 'single' },
+    { name: 'Second Wind', key: 'second-wind', recovery: 'single' },
     { name: "Monk's Focus", key: 'monks-focus', recovery: 'half' },
     { name: 'Channel Divinity', key: 'channel-divinity', recovery: 'single' },
     { name: 'Lay on Hands', key: 'lay-on-hands', recovery: 'half' },
