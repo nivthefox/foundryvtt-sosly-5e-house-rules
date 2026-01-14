@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Druids and Fighters can now spend hit dice during a breather to recover Wild Shape and Second Wind uses
 - Spellcasters can now spend hit dice during a breather to recover spell slots (1 HD per spell level)
+- Spell school filters now only show schools the character actually has spells for
 
 ## [13.1.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.1.0) - 2026-01-11
 

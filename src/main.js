@@ -23,6 +23,7 @@ import {registerItemsWithSpellsFeature} from './features/items-with-spells/index
 import {registerCustomCurrencyFeature} from './features/custom-currency/index';
 import {registerGridlessSnappingFeature} from './features/gridless-snapping/index';
 import {registerResetMovementFeature} from './features/reset-movement/index';
+import {registerSpellFilterFeature} from './features/spell-filter/index';
 
 Hooks.once('init', async () => {
     registerEncumbranceFeature();
@@ -49,5 +50,6 @@ Hooks.once('init', async () => {
     registerCustomCurrencyFeature();
     registerGridlessSnappingFeature();
     registerResetMovementFeature();
+    registerSpellFilterFeature();
     logger.info('Initialized');
 });
