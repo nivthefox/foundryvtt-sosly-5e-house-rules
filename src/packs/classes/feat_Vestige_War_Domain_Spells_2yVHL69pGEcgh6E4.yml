@@ -1,0 +1,157 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Vestige War Domain Spells
+type: feat
+_id: 2yVHL69pGEcgh6E4
+img: icons/magic/control/buff-flight-wings-runes-red-yellow.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your vestige channels the martial power of the War domain. When you
+      reach a Warlock level specified in the Vestige War Domain Spells table,
+      you thereafter always have the listed spells prepared.</p>
+
+      <table>
+      <caption>Vestige War Domain Spells</caption>
+      <thead>
+      <tr><td>Warlock Level</td><td>Prepared Spells</td></tr>
+      </thead>
+      <tbody>
+      <tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidingBol]{Guiding Bolt},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicWeapo]{Magic Weapon},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon}</td></tr>
+      <tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCrusadersM]{Crusader's Mantle},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</td></tr>
+      <tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]{Fire Shield},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM]{Freedom of Movement}</td></tr>
+      <tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]{Hold Monster},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]{Steel Wind Strike}</td></tr>
+      </tbody>
+      </table>
+
+      <section class="secret" id="secret-vestigeWarSpells">
+      <p><strong>Foundry Note</strong></p>
+      <p>These spells are granted automatically as you advance.</p>
+      </section>
+    chat: ''
+  identifier: vestige-war-domain-spells
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: Xc8rdT9wdAWi6j7f
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplGuidingBol
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMagicWeapo
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Vestige War Domain Spells
+      hint: ''
+    - _id: PRAf650fjv1CVOEz
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCrusadersM
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Vestige War Domain Spells
+      hint: ''
+    - _id: KUROAcx3VORLMSlH
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplFireShield
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: Vestige War Domain Spells
+      hint: ''
+    - _id: 73gUSnaOPjFrFwO5
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: Vestige War Domain Spells
+      hint: ''
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Vestige Patron
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!2yVHL69pGEcgh6E4'

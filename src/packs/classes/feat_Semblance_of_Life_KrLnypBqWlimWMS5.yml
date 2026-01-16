@@ -1,0 +1,65 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Semblance of Life
+type: feat
+_id: KrLnypBqWlimWMS5
+img: icons/magic/holy/angel-winged-humanoid-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>At 14th level, your vestige can briefly manifest a more powerful form.
+      As an Action, you can have your vestige transform, allowing it to cast one
+      of the following spells (no spell slot or material components required),
+      based on its form:</p>
+
+      <ul>
+      <li><strong>Celestial:</strong> <em>Summon Celestial</em> (at 5th level)</li>
+      <li><strong>Fiend:</strong> <em>Summon Fiend</em> (at 5th level)</li>
+      <li><strong>Undead:</strong> <em>Summon Undead</em> (at 5th level)</li>
+      </ul>
+
+      <p>The spell is cast at 5th level without requiring Concentration. The
+      summoned creature appears in the vestige's space as the vestige temporarily
+      transforms into it. When the spell ends, the vestige returns to its normal
+      form in the creature's space.</p>
+
+      <p>Once you use this feature, you can't do so again until you finish a
+      Long Rest.</p>
+    chat: ''
+  identifier: semblance-of-life
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!KrLnypBqWlimWMS5'

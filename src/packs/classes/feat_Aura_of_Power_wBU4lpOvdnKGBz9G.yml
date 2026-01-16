@@ -1,0 +1,57 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Aura of Power
+type: feat
+_id: wBU4lpOvdnKGBz9G
+img: icons/magic/defensive/shield-barrier-glowing-gold.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>At 10th level, your vestige radiates an aura of otherworldly power.
+      While your vestige is within 30 feet of you, both you and your vestige
+      gain the following benefits based on the vestige's form:</p>
+
+      <ul>
+      <li><strong>Celestial:</strong> You and your vestige have Resistance to
+      Radiant damage and Immunity to the Blinded condition.</li>
+      <li><strong>Fiend:</strong> You and your vestige have Resistance to Fire
+      damage and Immunity to the Frightened condition.</li>
+      <li><strong>Undead:</strong> You and your vestige have Resistance to
+      Necrotic damage and Immunity to the Charmed condition.</li>
+      </ul>
+    chat: ''
+  identifier: aura-of-power
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 10
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!wBU4lpOvdnKGBz9G'

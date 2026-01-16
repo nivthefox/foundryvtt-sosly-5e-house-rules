@@ -1,0 +1,157 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Vestige Plaguelight Domain Spells
+type: feat
+_id: bIEA5KOHPOT0CR4e
+img: icons/magic/unholy/beam-impact-purple.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your vestige channels the corrupting radiance of the Plaguelight domain.
+      When you reach a Warlock level specified in the Vestige Plaguelight Domain
+      Spells table, you thereafter always have the listed spells prepared.</p>
+
+      <table>
+      <caption>Vestige Plaguelight Domain Spells</caption>
+      <thead>
+      <tr><td>Warlock Level</td><td>Prepared Spells</td></tr>
+      </thead>
+      <tbody>
+      <tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlindnessD]{Blindness/Deafness},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectPois]{Detect Poison and Disease},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShiningSmi]{Shining Smite}</td></tr>
+      <tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDaylight00]{Daylight},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</td></tr>
+      <tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]{Death Ward},
+      @UUID[Compendium.sosly-5e-house-rules.extra-spells.Item.KpsilsvW9yCjb3pd]{Sickening Radiance}</td></tr>
+      <tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplContagion0]{Contagion},
+      @UUID[Compendium.sosly-5e-house-rules.extra-spells.Item.9doA1KTAMirUP5NE]{Dawn}</td></tr>
+      </tbody>
+      </table>
+
+      <section class="secret" id="secret-vestigePlaguellightSpells">
+      <p><strong>Foundry Note</strong></p>
+      <p>These spells are granted automatically as you advance.</p>
+      </section>
+    chat: ''
+  identifier: vestige-plaguelight-domain-spells
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: EDac1h36tlTugN9j
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplBlindnessD
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDetectPois
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplShiningSmi
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Vestige Plaguelight Domain Spells
+      hint: ''
+    - _id: ZrnJ6JqTIKErwnAs
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDaylight00
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Vestige Plaguelight Domain Spells
+      hint: ''
+    - _id: xSqqH9g2hMLw5Swv
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.extra-spells.Item.KpsilsvW9yCjb3pd
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: Vestige Plaguelight Domain Spells
+      hint: ''
+    - _id: JaOCjkpVqYf8Z5RS
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplContagion0
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.extra-spells.Item.9doA1KTAMirUP5NE
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: Vestige Plaguelight Domain Spells
+      hint: ''
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Vestige Patron
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!bIEA5KOHPOT0CR4e'

@@ -1,0 +1,161 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Vestige Companion
+type: feat
+_id: rEr8XJhfaioybuqZ
+img: icons/magic/unholy/strike-body-life-soul-purple.webp
+system:
+  activities:
+    MgecW2JPmI5LUU5a:
+      _id: MgecW2JPmI5LUU5a
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: perm
+        override: false
+        concentration: false
+      range:
+        value: '30'
+        units: ft
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          type: space
+          count: '1'
+        override: false
+      bonuses:
+        ac: '@abilities.cha.mod'
+        hd: '@classes.warlock.levels'
+        hp: '@classes.warlock.levels * 4'
+        attackDamage: '@abilities.cha.mod'
+        saveDamage: ''
+        healing: '@abilities.cha.mod'
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: true
+        saves: true
+        proficiency: true
+      profiles:
+        - count: ''
+          name: Celestial
+          _id: rAyjPkI5fsJioqQ3
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.gTUcmx03JH1x3SJD
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: Fiend
+          _id: H44AkhRn6DZBgw0E
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.sG8X9AOkvH7YlQof
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: Undead
+          _id: 6gLMXuQ20NDeNB4y
+          uuid: Compendium.sosly-5e-house-rules.auxiliaries.Actor.3C8CZztZkUfQlEAP
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        identifier: ''
+        mode: ''
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      effects: []
+      name: Summon Vestige
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>At 3rd level, your patron grants you a companion spirit—a vestige of a
+      powerful being from beyond the mortal realm. As an Action, you can summon
+      this vestige to an unoccupied space you can see within 30 feet of you.</p>
+
+      <p>When you summon the vestige, choose its form: <strong>Celestial</strong>,
+      <strong>Fiend</strong>, or <strong>Undead</strong>. The vestige uses the
+      corresponding stat block, which uses your Proficiency Bonus (PB) and
+      Charisma modifier in several places.</p>
+
+      <p>The vestige is friendly to you and your companions. In combat, it shares
+      your Initiative count but takes its turn immediately after yours. It obeys
+      your verbal commands (no action required). If you don't issue any commands,
+      it takes the Dodge action and uses its movement to avoid danger.</p>
+
+      <p>The vestige remains until it drops to 0 Hit Points, until you dismiss it
+      (no action required), or until you finish a Long Rest. You can summon the
+      vestige once, and you regain the ability to do so when you finish a Long
+      Rest.</p>
+
+      <section class="fvtt advice" style="margin:0.5rem;padding:0.5rem">
+      <article>
+      <p>The vestige's statistics are modified as follows when summoned:</p>
+      <table>
+      <caption>Vestige Companion</caption>
+      <tbody>
+      <tr><td><strong>AC</strong></td><td>13 + your Charisma modifier</td></tr>
+      <tr><td><strong>HP</strong></td><td>4 x your Warlock level</td></tr>
+      <tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr>
+      <tr><td><strong>Attack/Damage</strong></td><td>uses your spell attack modifier; damage bonus equals your Charisma modifier</td></tr>
+      </tbody>
+      </table>
+      </article>
+      </section>
+    chat: ''
+  identifier: vestige-companion
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!rEr8XJhfaioybuqZ'

@@ -1,0 +1,157 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Vestige Life Domain Spells
+type: feat
+_id: fkGnNR2eYW5R6gvg
+img: icons/magic/life/cross-flared-green.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your vestige channels the healing power of the Life domain. When you
+      reach a Warlock level specified in the Vestige Life Domain Spells table,
+      you thereafter always have the listed spells prepared.</p>
+
+      <table>
+      <caption>Vestige Life Domain Spells</caption>
+      <thead>
+      <tr><td>Warlock Level</td><td>Prepared Spells</td></tr>
+      </thead>
+      <tbody>
+      <tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAid0000000]{Aid},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBless00000]{Bless},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCureWounds]{Cure Wounds},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLesserRest]{Lesser Restoration}</td></tr>
+      <tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMassHealin]{Mass Healing Word},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRevivify00]{Revivify}</td></tr>
+      <tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAuraofLife]{Aura of Life},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]{Death Ward}</td></tr>
+      <tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Greater Restoration},
+      @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMassCureWo]{Mass Cure Wounds}</td></tr>
+      </tbody>
+      </table>
+
+      <section class="secret" id="secret-vestigeLifeSpells">
+      <p><strong>Foundry Note</strong></p>
+      <p>These spells are granted automatically as you advance.</p>
+      </section>
+    chat: ''
+  identifier: vestige-life-domain-spells
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: 7ajet8DUbzpjkoxz
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAid0000000
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplBless00000
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCureWounds
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplLesserRest
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Vestige Life Domain Spells
+      hint: ''
+    - _id: THc71fV8GjTjcjwB
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMassHealin
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplRevivify00
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Vestige Life Domain Spells
+      hint: ''
+    - _id: pe7CoQwDDsurlTu7
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplAuraofLife
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: Vestige Life Domain Spells
+      hint: ''
+    - _id: B04IsfsGz82AOS1k
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMassCureWo
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: pact
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: Vestige Life Domain Spells
+      hint: ''
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Vestige Patron
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!fkGnNR2eYW5R6gvg'

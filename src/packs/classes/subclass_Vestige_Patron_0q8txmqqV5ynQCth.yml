@@ -1,0 +1,122 @@
+folder: r97xxOKlEZnQendK
+name: Vestige Patron
+type: subclass
+_id: 0q8txmqqV5ynQCth
+img: modules/dnd-players-handbook/assets/icons/classes/celestial.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Channel the Power of Spirits Beyond</p></blockquote>
+
+      <p>Your pact binds you to a vestige—the spiritual remnant of a powerful
+      being that exists in a state between life and death, between the mortal
+      world and the outer planes. Vestiges are the echoes of celestials who fell
+      from grace, fiends who were destroyed but not truly killed, or undead
+      beings of such power that their essence persists even after their final
+      destruction.</p>
+
+      <p>When you form this pact, a fragment of such a being attaches itself to
+      your soul, granting you a companion spirit that fights alongside you and
+      channels the divine or profane power it once wielded in full. As your
+      power grows, your bond with the vestige deepens, and you begin to manifest
+      aspects of its otherworldly nature.</p>
+    chat: ''
+  identifier: vestige
+  source:
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: B1byow83nCU6Dnzr
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.rEr8XJhfaioybuqZ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - _id: EPUd07VTey44jxKW
+      type: ItemChoice
+      configuration:
+        choices:
+          '3':
+            count: 1
+            replacement: false
+        allowDrops: true
+        type: feat
+        pool:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.fkGnNR2eYW5R6gvg
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.lwk1vh8YV9RavLvq
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.bIEA5KOHPOT0CR4e
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.u6d7iL1bc7lwiWBx
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.2yVHL69pGEcgh6E4
+        spell: null
+        restriction: {}
+      value:
+        added: {}
+        replaced: {}
+      level: 3
+      title: Choose Domain Spells
+      hint: >-
+        Choose a domain that reflects your vestige's nature. You gain the
+        domain's spells at appropriate Warlock levels.
+    - _id: WsDpavvKABrRT4Bj
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.yF31xjKLPbetPHeE
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+      hint: ''
+    - _id: zES7SJpY1DEwOkvs
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.wBU4lpOvdnKGBz9G
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Subclass Features
+      hint: ''
+    - _id: kRWe01HsIcBPE2Pq
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.KrLnypBqWlimWMS5
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+      hint: ''
+  classIdentifier: warlock
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!0q8txmqqV5ynQCth'

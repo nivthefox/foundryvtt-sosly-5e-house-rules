@@ -1,0 +1,52 @@
+folder: Vq3QXEmBeXMiTcCx
+name: Vestige Recovery
+type: feat
+_id: yF31xjKLPbetPHeE
+img: icons/magic/life/heart-cross-strong-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>At 6th level, your vestige's divine power recharges more readily. Your
+      vestige's Divine Power ability now recharges when you finish a Short Rest
+      or Long Rest, instead of only on a Long Rest.</p>
+
+      <p>Additionally, when your vestige is reduced to 0 Hit Points, you can use
+      your Reaction to have it instead drop to 1 Hit Point. Once you use this
+      reaction, you can't do so again until you finish a Long Rest.</p>
+    chat: ''
+  identifier: vestige-recovery
+  source:
+    revision: 1
+    rules: '2024'
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!yF31xjKLPbetPHeE'
