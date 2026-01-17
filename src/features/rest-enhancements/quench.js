@@ -6,7 +6,9 @@ import {
     sortClassesByHitDie,
     findBestHitDieRecovery,
     calculateExhaustionReduction,
-    calculateHitDiceStats
+    calculateHitDiceStats,
+    calculateLongRestExhaustionReduction,
+    calculateNewExhaustion
 } from './calculations';
 
 export function registerRestEnhancementsTests() {
@@ -123,6 +125,46 @@ export function registerRestEnhancementsTests() {
                         assert.equal(stats.total, 0);
                         assert.equal(stats.spent, 0);
                         assert.equal(stats.available, 0);
+                    });
+                });
+
+                describe('calculateLongRestExhaustionReduction', function() {
+                    it('should return CON modifier when positive', function() {
+                        assert.equal(calculateLongRestExhaustionReduction(3), 3);
+                        assert.equal(calculateLongRestExhaustionReduction(5), 5);
+                    });
+
+                    it('should return 1 when CON modifier is 1', function() {
+                        assert.equal(calculateLongRestExhaustionReduction(1), 1);
+                    });
+
+                    it('should return 1 when CON modifier is 0', function() {
+                        assert.equal(calculateLongRestExhaustionReduction(0), 1);
+                    });
+
+                    it('should return 1 when CON modifier is negative', function() {
+                        assert.equal(calculateLongRestExhaustionReduction(-1), 1);
+                        assert.equal(calculateLongRestExhaustionReduction(-3), 1);
+                    });
+                });
+
+                describe('calculateNewExhaustion', function() {
+                    it('should reduce exhaustion by the specified amount', function() {
+                        assert.equal(calculateNewExhaustion(5, 2), 3);
+                        assert.equal(calculateNewExhaustion(3, 1), 2);
+                    });
+
+                    it('should not go below 0', function() {
+                        assert.equal(calculateNewExhaustion(2, 5), 0);
+                        assert.equal(calculateNewExhaustion(1, 3), 0);
+                    });
+
+                    it('should handle zero exhaustion', function() {
+                        assert.equal(calculateNewExhaustion(0, 1), 0);
+                    });
+
+                    it('should handle exact reduction to zero', function() {
+                        assert.equal(calculateNewExhaustion(3, 3), 0);
                     });
                 });
             },

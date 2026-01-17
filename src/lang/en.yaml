@@ -27,6 +27,10 @@ sosly:
     spellSlots:
       label: Recover Spell Slot
       restore: Restore
+    exhaustion:
+      label: Remove Exhaustion
+      current: Current Exhaustion
+      recover: Remove 1 Exhaustion (1 HD)
     error:
       insufficientHD: Not enough Hit Dice to recover selected features
   concentration:

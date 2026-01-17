@@ -45,6 +45,19 @@
         </div>
     </fieldset>
     {{/if}}
+    {{#if canRecoverExhaustion}}
+    <fieldset>
+        <legend>{{ localize "sosly.breather.exhaustion.label" }}</legend>
+        <div class="form-fields">
+            <span>{{ localize "sosly.breather.exhaustion.current" }}: {{currentExhaustion}}</span>
+            <button type="button" class="dice-button" data-action="recoverExhaustion"
+                    data-tooltip="sosly.breather.exhaustion.recover"
+                    aria-label="{{ localize 'sosly.breather.exhaustion.recover' }}">
+                <i class="fa-solid fa-bed" inert></i>
+            </button>
+        </div>
+    </fieldset>
+    {{/if}}
     {{else}}
     <div class="note warn">
         {{ localize 'sosly.breather.nohd' }}

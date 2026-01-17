@@ -66,3 +66,22 @@ export function calculateHitDiceStats(classItems) {
         available: total - spent
     };
 }
+
+/**
+ * Calculate exhaustion reduction for long rest based on CON modifier
+ * @param {number} conMod - Constitution modifier
+ * @returns {number} Amount of exhaustion to reduce (minimum 1)
+ */
+export function calculateLongRestExhaustionReduction(conMod) {
+    return Math.max(1, conMod);
+}
+
+/**
+ * Calculate new exhaustion level after reduction
+ * @param {number} current - Current exhaustion level
+ * @param {number} reduction - Amount to reduce
+ * @returns {number} New exhaustion level (minimum 0)
+ */
+export function calculateNewExhaustion(current, reduction) {
+    return Math.max(0, current - reduction);
+}

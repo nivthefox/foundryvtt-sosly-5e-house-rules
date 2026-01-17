@@ -8,6 +8,7 @@ import {logger} from '../../utils/logger';
 
 import { registerRestEnhancementsSettings } from './settings';
 import { handleShortRest } from './short-rest';
+import { handlePreLongRest, handleLongRest } from './long-rest';
 import { registerRestEnhancementsTests } from './quench';
 
 export function registerRestEnhancementsFeature() {
@@ -23,6 +24,18 @@ export function registerRestEnhancementsFeature() {
     Hooks.on('dnd5e.shortRest', async (actor, data) => {
         if (game.settings.get(module_id, 'rest-enhancements')) {
             await handleShortRest(actor, data);
+        }
+    });
+
+    Hooks.on('dnd5e.preLongRest', (actor, config) => {
+        if (game.settings.get(module_id, 'rest-enhancements')) {
+            handlePreLongRest(actor, config);
+        }
+    });
+
+    Hooks.on('dnd5e.longRest', async (actor, config) => {
+        if (game.settings.get(module_id, 'rest-enhancements')) {
+            await handleLongRest(actor, config);
         }
     });
 }

@@ -82,6 +82,13 @@ class BreatherUI extends BaseRestDialog {
             context.availableSpellSlots = this.#getAvailableSpellSlots();
         }
 
+        // Get exhaustion recovery info
+        if (!context.isGroup) {
+            const exhaustion = actor.system.attributes.exhaustion || 0;
+            context.currentExhaustion = exhaustion;
+            context.canRecoverExhaustion = exhaustion > 0 && context.canRoll;
+        }
+
         return context;
     }
 
@@ -132,6 +139,12 @@ class BreatherUI extends BaseRestDialog {
             restoreButton.addEventListener('click', this.#onRestoreSpellSlot.bind(this));
         }
 
+        // Bind click handler for exhaustion recovery button
+        const exhaustionButton = this.element.querySelector('[data-action="recoverExhaustion"]');
+        if (exhaustionButton) {
+            exhaustionButton.addEventListener('click', this.#onRecoverExhaustion.bind(this));
+        }
+
         // Add real-time validation for class features
         this.#setupFeatureValidation();
     }
@@ -172,6 +185,31 @@ class BreatherUI extends BaseRestDialog {
         // Restore the spell slot
         await this.actor.update({
             [`system.spells.${slotKey}.value`]: slotData.value + 1
+        });
+
+        // Re-render to update available options
+        this.render();
+    }
+
+    /**
+     * Handle recovering from exhaustion
+     * @param {Event} event - The click event
+     */
+    async #onRecoverExhaustion(event) {
+        event.preventDefault();
+
+        const currentExhaustion = this.actor.system.attributes.exhaustion || 0;
+        if (currentExhaustion <= 0) {return;}
+
+        const availableHD = this.actor.system.attributes.hd.value;
+        if (availableHD <= 0) {return;}
+
+        // Spend 1 hit die
+        await this.#spendHitDie();
+
+        // Reduce exhaustion by 1
+        await this.actor.update({
+            'system.attributes.exhaustion': currentExhaustion - 1
         });
 
         // Re-render to update available options
