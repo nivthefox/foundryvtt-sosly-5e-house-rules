@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Attunement Limits setting that ties maximum attuned items to proficiency bonus instead of the default 3
 - Long rests now grant Inspiration if you don't already have it
 - Breathers now allow spending a hit die to remove one level of exhaustion
+- Breathers now display a recovery summary in chat showing HP gained, features restored, spell slots recovered, and exhaustion removed
 
 ### Changed
 - Long rest exhaustion recovery now uses Constitution modifier (minimum 1) instead of flat 1

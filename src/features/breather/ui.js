@@ -1,11 +1,14 @@
 import {findBestHitDie, formatHitDieOptions} from './calculations';
 import {getRecoverableFeatures} from './class-features';
+import {addBreatherDelta} from './deltas';
 import {id as module_id} from '../../../module.json';
 
 const BaseRestDialog = dnd5e.applications.actor.BaseRestDialog;
 const FormDataExtended = foundry.applications.ux.FormDataExtended;
 
 class BreatherUI extends BaseRestDialog {
+    #hdRollHookId = null;
+
     constructor(options = {}) {
         super(options);
     }
@@ -50,8 +53,6 @@ class BreatherUI extends BaseRestDialog {
 
     async _prepareContext(options) {
         const context = await super._prepareContext(options);
-
-        // Prepare hit dice data
         const actor = this.actor;
         context.isGroup = actor.type === 'group';
 
@@ -64,25 +65,21 @@ class BreatherUI extends BaseRestDialog {
                 value: context.denomination,
                 label: `${context.denomination} (${hd.value} ${game.i18n.localize('DND5E.available')})`
             }];
-        }
-        else if (foundry.utils.hasProperty(actor, 'system.attributes.hd')) {
+        } else if (foundry.utils.hasProperty(actor, 'system.attributes.hd')) {
             context.availableHD = actor.system.attributes.hd.bySize;
             context.canRoll = actor.system.attributes.hd.value > 0;
             context.denomination = findBestHitDie(context.availableHD);
             context.hdOptions = formatHitDieOptions(context.availableHD, game.i18n.localize('DND5E.available'));
         }
 
-        // Get recoverable class features
         if (!context.isGroup && actor.type === 'character') {
             context.recoverableFeatures = getRecoverableFeatures(actor);
         }
 
-        // Get available spell slots for recovery
         if (!context.isGroup) {
             context.availableSpellSlots = this.#getAvailableSpellSlots();
         }
 
-        // Get exhaustion recovery info
         if (!context.isGroup) {
             const exhaustion = actor.system.attributes.exhaustion || 0;
             context.currentExhaustion = exhaustion;
@@ -105,11 +102,12 @@ class BreatherUI extends BaseRestDialog {
             const slotKey = `spell${level}`;
             const slotData = actor.system.spells?.[slotKey];
 
-            // Skip if no slots at this level or no capacity
-            if (!slotData?.max || slotData.value >= slotData.max) {continue;}
-
-            // Skip if not enough HD
-            if (availableHD < level) {continue;}
+            if (!slotData?.max || slotData.value >= slotData.max) {
+                continue;
+            }
+            if (availableHD < level) {
+                continue;
+            }
 
             slots.push({
                 level,
@@ -127,26 +125,54 @@ class BreatherUI extends BaseRestDialog {
     async _onRender(context, options) {
         await super._onRender(context, options);
 
-        // Bind click handler for hit die roll button
+        if (!this.#hdRollHookId) {
+            this.#hdRollHookId = Hooks.on('dnd5e.rollHitDieV2', this.#onRollHitDie_Track.bind(this));
+        }
+
         const rollButton = this.element.querySelector('[data-action="rollHitDie"]');
         if (rollButton) {
             rollButton.addEventListener('click', this.#onRollHitDie.bind(this));
         }
 
-        // Bind click handler for spell slot restore button
         const restoreButton = this.element.querySelector('[data-action="restoreSpellSlot"]');
         if (restoreButton) {
             restoreButton.addEventListener('click', this.#onRestoreSpellSlot.bind(this));
         }
 
-        // Bind click handler for exhaustion recovery button
         const exhaustionButton = this.element.querySelector('[data-action="recoverExhaustion"]');
         if (exhaustionButton) {
             exhaustionButton.addEventListener('click', this.#onRecoverExhaustion.bind(this));
         }
 
-        // Add real-time validation for class features
         this.#setupFeatureValidation();
+    }
+
+    async close(options) {
+        if (this.#hdRollHookId) {
+            Hooks.off('dnd5e.rollHitDieV2', this.#hdRollHookId);
+            this.#hdRollHookId = null;
+        }
+        return super.close(options);
+    }
+
+    async #onRollHitDie_Track(rolls, { subject, updates }) {
+        if (subject.id !== this.actor.id) {
+            return;
+        }
+
+        if (updates.actor?.['system.attributes.hp.value']) {
+            const hpGained = updates.actor['system.attributes.hp.value'] - subject.system.attributes.hp.value;
+            await addBreatherDelta(this.actor, 'system.attributes.hp.value', hpGained);
+        }
+
+        if (updates.class?.['system.hd.spent']) {
+            const cls = subject.system.attributes.hd.classes.find(c =>
+                c.system.hd.value > 0 && updates.class['system.hd.spent'] === c.system.hd.spent + 1
+            );
+            if (cls) {
+                await addBreatherDelta(this.actor, 'system.hd.spent', 1, cls.id);
+            }
+        }
     }
 
     /**
@@ -171,23 +197,26 @@ class BreatherUI extends BaseRestDialog {
         event.preventDefault();
         const select = this.form?.elements?.spellSlotLevel;
         const level = parseInt(select?.value);
-        if (!level || isNaN(level)) {return;}
+        if (!level || isNaN(level)) {
+            return;
+        }
 
         const slotKey = `spell${level}`;
         const slotData = this.actor.system.spells?.[slotKey];
-        if (!slotData || slotData.value >= slotData.max) {return;}
-
-        // Spend hit dice (one per spell level)
-        for (let i = 0; i < level; i++) {
-            await this.#spendHitDie();
+        if (!slotData || slotData.value >= slotData.max) {
+            return;
         }
 
-        // Restore the spell slot
+        for (let i = 0; i < level; i++) {
+            await this.#spendHitDieWithTracking();
+        }
+
+        await addBreatherDelta(this.actor, `system.spells.${slotKey}.value`, 1);
+
         await this.actor.update({
             [`system.spells.${slotKey}.value`]: slotData.value + 1
         });
 
-        // Re-render to update available options
         this.render();
     }
 
@@ -199,37 +228,38 @@ class BreatherUI extends BaseRestDialog {
         event.preventDefault();
 
         const currentExhaustion = this.actor.system.attributes.exhaustion || 0;
-        if (currentExhaustion <= 0) {return;}
+        if (currentExhaustion <= 0) {
+            return;
+        }
 
         const availableHD = this.actor.system.attributes.hd.value;
-        if (availableHD <= 0) {return;}
+        if (availableHD <= 0) {
+            return;
+        }
 
-        // Spend 1 hit die
-        await this.#spendHitDie();
+        await this.#spendHitDieWithTracking();
 
-        // Reduce exhaustion by 1
+        await addBreatherDelta(this.actor, 'system.attributes.exhaustion', -1);
+
         await this.actor.update({
             'system.attributes.exhaustion': currentExhaustion - 1
         });
 
-        // Re-render to update available options
         this.render();
     }
 
-    /**
-     * Spend a single hit die from the smallest available class
-     * @returns {Promise<void>}
-     */
-    async #spendHitDie() {
+    async #spendHitDieWithTracking() {
         const hd = this.actor.system.attributes.hd;
-        if (!hd.smallestAvailable || hd.value <= 0) {return;}
+        if (!hd.smallestAvailable || hd.value <= 0) {
+            return;
+        }
 
-        // Find a class that has the smallest HD size and unspent HD
         const targetClass = Array.from(hd.classes)
             .filter(c => c.system.hd.denomination === hd.smallestAvailable)
             .find(c => c.system.hd.value > 0);
 
         if (targetClass) {
+            await addBreatherDelta(this.actor, 'system.hd.spent', 1, targetClass.id);
             await this.actor.updateEmbeddedDocuments('Item', [{
                 _id: targetClass.id,
                 'system.hd.spent': targetClass.system.hd.spent + 1
@@ -242,27 +272,31 @@ class BreatherUI extends BaseRestDialog {
      */
     #setupFeatureValidation() {
         const form = this.element.querySelector('form');
-        if (!form) {return;}
+        if (!form) {
+            return;
+        }
 
         const checkboxes = form.querySelectorAll('dnd5e-checkbox[name^="features."]');
-        if (!checkboxes.length) {return;}
+        if (!checkboxes.length) {
+            return;
+        }
 
-        // Validate on any checkbox change
         checkboxes.forEach(checkbox => {
             checkbox.addEventListener('change', () => this.#validateFeatureSelection());
         });
 
-        // Also validate when HD are rolled (since that changes available HD)
+        // Re-validate after HD rolls since available HD changes
         const rollButton = form.querySelector('[data-action="rollHitDie"]');
         if (rollButton) {
             const originalHandler = rollButton.onclick;
             rollButton.onclick = async event => {
-                if (originalHandler) {await originalHandler.call(this, event);}
+                if (originalHandler) {
+                    await originalHandler.call(this, event);
+                }
                 this.#validateFeatureSelection();
             };
         }
 
-        // Initial validation
         this.#validateFeatureSelection();
     }
 
@@ -271,19 +305,20 @@ class BreatherUI extends BaseRestDialog {
      */
     #validateFeatureSelection() {
         const form = this.element.querySelector('form');
-        if (!form) {return;}
+        if (!form) {
+            return;
+        }
 
-        // Count selected features
         const checkboxes = form.querySelectorAll('dnd5e-checkbox[name^="features."]');
         let selectedCount = 0;
         checkboxes.forEach(checkbox => {
-            if (checkbox.checked) {selectedCount++;}
+            if (checkbox.checked) {
+                selectedCount++;
+            }
         });
 
-        // Get available HD
         const availableHD = this.actor.system.attributes.hd.value;
 
-        // Get or create validation message element
         let validationMsg = form.querySelector('.feature-validation-error');
         if (!validationMsg && selectedCount > availableHD) {
             validationMsg = document.createElement('div');
@@ -294,10 +329,8 @@ class BreatherUI extends BaseRestDialog {
             }
         }
 
-        // Update validation state
         const restButton = this.element.querySelector('button[name="rest"]');
         if (selectedCount > availableHD) {
-            // Show error and disable button
             if (validationMsg) {
                 validationMsg.textContent = game.i18n.localize('sosly.breather.error.insufficientHD')
                     || `Not enough Hit Dice. You need ${selectedCount} HD but only have ${availableHD}.`;
@@ -307,7 +340,6 @@ class BreatherUI extends BaseRestDialog {
                 restButton.dataset.tooltip = game.i18n.localize('sosly.breather.error.insufficientHD');
             }
         } else {
-            // Remove error and enable button
             if (validationMsg) {
                 validationMsg.remove();
             }

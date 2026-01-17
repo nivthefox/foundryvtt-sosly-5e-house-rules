@@ -1,19 +1,15 @@
-/**
- * Breather Controller
- * Handles breather rest actions and feature recovery
- */
-
+import {id as MODULE_ID} from '../../../module.json';
 import {Breather as BreatherDialog} from './ui';
 import {getRecoverableFeatures} from './class-features';
+import {addBreatherDelta, clearBreatherDeltas, getBreatherDeltas} from './deltas';
 
 export class Breather {
     /**
      * Perform a breather action for the given actor
      * @param {Actor} actor - The actor taking a breather
-     * @param {Event} event - The click event
      * @return {Promise<void>}
      */
-    async breather(actor, event) {
+    async breather(actor) {
         if (actor.type === 'vehicle') {
             return;
         }
@@ -24,75 +20,33 @@ export class Breather {
             return;
         }
 
-        // Take note of the initial hit points and number of hit dice the Actor has
-        const hd0 = foundry.utils.getProperty(actor, 'system.attributes.hd.value');
-        const hp0 = foundry.utils.getProperty(actor, 'system.attributes.hp.value');
+        await actor.setFlag(MODULE_ID, 'breatherDeltas', { actor: [], item: {} });
 
-        // Display a Dialog for rolling hit dice
-        const dialogResult = await BreatherDialog.breatherDialog({actor, canRoll: hd0 > 0});
-        if (!dialogResult.completed) {
-            // If the dialog was cancelled, return early
-            return;
-        }
-        config = foundry.utils.mergeObject(config, dialogResult);
-
-        // Handle class feature recovery if any were selected
-        await this._handleFeatureRecovery(actor, config);
-
-        // Call the breather hook
-        if (Hooks.call('sosly.breather', actor, config) === false) {
-            return;
+        const dialogResult = await BreatherDialog.breatherDialog({actor});
+        if (dialogResult.completed) {
+            config = foundry.utils.mergeObject(config, dialogResult);
+            await this._handleFeatureRecovery(actor, config);
+            Hooks.call('sosly.breather', actor, config);
         }
 
-        // Calculate deltas
-        const dhd = hd0 - foundry.utils.getProperty(actor, 'system.attributes.hd.value');
-        const dhp = foundry.utils.getProperty(actor, 'system.attributes.hp.value') - hp0;
+        const deltas = getBreatherDeltas(actor);
+        await clearBreatherDeltas(actor);
 
-        // Create result object for chat message
-        const result = {
-            type: 'breather',
-            dhd: dhd,
-            dhp: dhp,
-            actor: actor
-        };
-
-        // Display a Chat Message summarizing the rest effects
-        if (config.chat !== false) {
-            await this._displayBreatherResultMessage(actor, config, result);
+        if (deltas && (deltas.actor.length || Object.keys(deltas.item).length)) {
+            await this._displayBreatherResultMessage(actor, config, deltas);
         }
-
-        // if (!config.dialog && config.autoHD) {
-        //     await actor.autoSpendHitDice({threshold: config.autoHDThreshold});
-        // }
     }
 
-    /**
-     * Display the breather result message in chat
-     * @param {Actor} actor - The actor that took the breather
-     * @param {object} config - Configuration options
-     * @param {object} result - The result of the breather action
-     * @return {Promise<void>}
-     */
-    async _displayBreatherResultMessage(actor, config, result) {
-        let {dhd, dhp} = result;
-        const diceRestored = dhd !== 0;
-        const healthRestored = dhp !== 0;
-
-        const pr = new Intl.PluralRules(game.i18n.lang);
-        const message = `sosly.breather.result.${(diceRestored && healthRestored) ? 'full' : 'short'}`;
-        let chatData = {
-            content: game.i18n.format(message, {
-                name: actor.name,
-                dice: game.i18n.format(`DND5E.HITDICE.Counted.${pr.select(dhd)}`, {number: dnd5e.utils.formatNumber(dhd)}),
-                health: game.i18n.format(`DND5E.HITPOINTS.Counted.${pr.select(dhp)}`, {number: dnd5e.utils.formatNumber(dhp)})
-            }),
+    async _displayBreatherResultMessage(actor, config, deltas) {
+        const chatData = {
+            content: game.i18n.format('sosly.breather.result.short', { name: actor.name }),
             flavor: `${game.i18n.localize('sosly.breather.title')} (5 ${game.i18n.localize('DND5E.TimeMinute')})`,
             type: 'rest',
-            rolls: result.rolls,
             speaker: ChatMessage.getSpeaker({actor, alias: actor.name}),
             system: {
                 activations: [],
-                type: result.type
+                deltas,
+                type: 'breather'
             }
         };
 
@@ -100,43 +54,38 @@ export class Breather {
         return ChatMessage.create(chatData);
     }
 
-    /**
-     * Handle feature recovery from the breather dialog
-     * @param {Actor5e} actor - The actor recovering features
-     * @param {object} config - The dialog configuration
-     * @returns {Promise<void>}
-     */
     async _handleFeatureRecovery(actor, config) {
-        // Get recoverable features
         const recoverableFeatures = getRecoverableFeatures(actor);
-        if (!recoverableFeatures.length) {return;}
+        if (!recoverableFeatures.length) {
+            return;
+        }
 
-        // Check which features were selected in the form
         const selectedFeatures = [];
         for (const feature of recoverableFeatures) {
-            // dnd5e-checkbox sends "on" when checked, nothing when unchecked
-            const isChecked = config.features?.[feature.key];
-            if (isChecked) {
+            if (config.features?.[feature.key]) {
                 selectedFeatures.push(feature);
             }
         }
 
-        if (!selectedFeatures.length) {return;}
+        if (!selectedFeatures.length) {
+            return;
+        }
 
-        // Validate hit dice availability
         const availableHD = actor.system.attributes.hd.value;
         if (selectedFeatures.length > availableHD) {
             ui.notifications.error(game.i18n.localize('sosly.breather.error.insufficientHD') || 'Not enough Hit Dice to recover selected features');
             return;
         }
 
-        // Spend hit dice for each selected feature
-        // eslint-disable-next-line no-unused-vars
-        for (const feature of selectedFeatures) {
-            await this._spendHitDie(actor);
+        for (const _feature of selectedFeatures) {
+            await this._spendHitDieWithTracking(actor);
         }
 
-        // Update feature uses
+        for (const feature of selectedFeatures) {
+            const delta = -feature.recoveryAmount; // negative because we're reducing "spent"
+            await addBreatherDelta(actor, 'system.uses.spent', delta, feature.id);
+        }
+
         const updates = selectedFeatures.map(feature => ({
             _id: feature.id,
             'system.uses.spent': Math.max(0, feature.feature.system.uses.spent - feature.recoveryAmount)
@@ -144,26 +93,22 @@ export class Breather {
 
         await actor.updateEmbeddedDocuments('Item', updates);
 
-        // Store recovered features in config for hooks/chat
         config.featuresRecovered = selectedFeatures;
     }
 
-    /**
-     * Spend a single hit die from the smallest available class
-     * @param {Actor5e} actor - The actor spending HD
-     * @returns {Promise<void>}
-     */
-    async _spendHitDie(actor) {
+    async _spendHitDieWithTracking(actor) {
         const hd = actor.system.attributes.hd;
 
-        if (!hd.smallestAvailable || hd.value <= 0) {return;}
+        if (!hd.smallestAvailable || hd.value <= 0) {
+            return;
+        }
 
-        // Find a class that has the smallest HD size and unspent HD
         const targetClass = Array.from(hd.classes)
             .filter(c => c.system.hd.denomination === hd.smallestAvailable)
             .find(c => c.system.hd.value > 0);
 
         if (targetClass) {
+            await addBreatherDelta(actor, 'system.hd.spent', 1, targetClass.id);
             await actor.updateEmbeddedDocuments('Item', [{
                 _id: targetClass.id,
                 'system.hd.spent': targetClass.system.hd.spent + 1
@@ -178,7 +123,9 @@ export class Breather {
      */
     inject(app, el) {
         const buttons = el.querySelector('.sheet-header-buttons');
-        if (!buttons) {return;}
+        if (!buttons) {
+            return;
+        }
 
         const button = document.createElement('button');
         button.type = 'button';

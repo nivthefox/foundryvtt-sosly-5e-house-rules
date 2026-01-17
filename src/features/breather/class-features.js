@@ -2,7 +2,6 @@
  * Class feature detection and recovery configuration for Breather
  */
 
-// Feature registry configuration
 export const featureConfigs = [
     { name: 'Rage', key: 'rage', recovery: 'single' },
     { name: 'Bardic Inspiration', key: 'bardic-inspiration', recovery: 'single' },
@@ -23,29 +22,28 @@ export const featureConfigs = [
 export function getRecoverableFeatures(actor) {
     const features = [];
 
-    // Check each configured feature
     for (const config of featureConfigs) {
-    // Find the feature on the actor
-        const feature = actor.items.find(i =>
-            i.type === 'feat'
-      && i.name === config.name
-        );
+        const feature = actor.items.find(i => i.type === 'feat' && i.name === config.name);
 
-        if (!feature) {continue;}
+        if (!feature) {
+            continue;
+        }
 
-        // Check if feature has uses tracking
         const uses = feature.system.uses;
-        if (!uses || uses.max === null) {continue;}
+        if (!uses || uses.max === null) {
+            continue;
+        }
 
-        // Check if feature is not at max uses
         const currentUses = uses.value ?? 0;
-        if (currentUses >= uses.max) {continue;}
+        if (currentUses >= uses.max) {
+            continue;
+        }
 
-        // Calculate recovery amount
         const recoveryAmount = calculateRecoveryAmount(feature, config.recovery);
-        if (recoveryAmount <= 0) {continue;}
+        if (recoveryAmount <= 0) {
+            continue;
+        }
 
-        // Add to recoverable features
         features.push({
             id: feature.id,
             name: feature.name,
@@ -57,7 +55,6 @@ export function getRecoverableFeatures(actor) {
         });
     }
 
-    // Sort alphabetically by name
     return features.sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -69,7 +66,9 @@ export function getRecoverableFeatures(actor) {
  */
 export function calculateRecoveryAmount(feature, recoveryType) {
     const uses = feature.system.uses;
-    if (!uses || uses.max === null) {return 0;}
+    if (!uses || uses.max === null) {
+        return 0;
+    }
 
     const currentUses = uses.value ?? 0;
     const maxUses = uses.max;
