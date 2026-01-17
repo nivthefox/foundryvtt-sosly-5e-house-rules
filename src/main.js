@@ -1,4 +1,5 @@
 import {logger} from './utils/logger';
+import {registerAttunementLimitsFeature} from './features/attunement-limits/index';
 import {registerBreatherFeature} from './features/breather/index';
 import {registerNetworthFeature} from './features/networth/index';
 import {registerMadnessFeature} from './features/madness/index';
@@ -26,6 +27,7 @@ import {registerResetMovementFeature} from './features/reset-movement/index';
 import {registerSpellFilterFeature} from './features/spell-filter/index';
 
 Hooks.once('init', async () => {
+    registerAttunementLimitsFeature();
     registerEncumbranceFeature();
     registerBreatherFeature();
     registerNetworthFeature();

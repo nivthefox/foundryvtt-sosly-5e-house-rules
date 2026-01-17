@@ -4,6 +4,9 @@ TYPES:
       location: Location
 
 sosly:
+  attunement-limits:
+    label: Attunement Limits (Proficiency)
+    hint: Sets maximum attuned items equal to proficiency bonus instead of 3.
   conditions:
     Imperiled: Imperiled
   components:

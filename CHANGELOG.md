@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add Vestige Patron subclass for Warlock with summonable companion spirit (Celestial, Fiend, or Undead variants) and domain spell selection (Life, Light, Plaguelight, Trickery, War)
+- Add Attunement Limits setting that ties maximum attuned items to proficiency bonus instead of the default 3
 
 ## [13.2.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.2.0) - 2026-01-13
 
