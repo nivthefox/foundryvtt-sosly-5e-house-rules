@@ -1,0 +1,96 @@
+folder: dXq4JQS4uMeZeZ6U
+name: 'Channel Divinity: Emissary of Peace'
+type: feat
+_id: bxvsxJGe8h4GNK8F
+img: icons/skills/social/diplomacy-handshake-yellow.webp
+system:
+  activities:
+    dnd5eactivity000:
+      type: utility
+      _id: dnd5eactivity000
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:channel-divinity-paladin
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '10'
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+      img: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can use your Channel Divinity to augment your presence with divine
+      power. As a bonus action, you grant yourself a +5 bonus to Charisma
+      (Persuasion) checks for the next 10 minutes.</p>
+    chat: ''
+  identifier: emissary-of-peace
+  source:
+    revision: 1
+    rules: '2024'
+    book: Xanathar's Guide to Everything
+  enchant: {}
+  type:
+    value: class
+    subtype: channelDivinity
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.344'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!bxvsxJGe8h4GNK8F'

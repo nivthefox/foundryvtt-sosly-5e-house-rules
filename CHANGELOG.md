@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add Oath of Redemption subclass for Paladin
 - Add Vestige Patron subclass for Warlock with summonable companion spirit (Celestial, Fiend, or Undead variants) and domain spell selection (Life, Light, Plaguelight, Trickery, War)
 - Add Attunement Limits setting that ties maximum attuned items to proficiency bonus instead of the default 3
 - Long rests now grant Inspiration if you don't already have it

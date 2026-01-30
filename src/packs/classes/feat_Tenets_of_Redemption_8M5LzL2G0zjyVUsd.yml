@@ -1,0 +1,71 @@
+folder: dXq4JQS4uMeZeZ6U
+name: Tenets of Redemption
+type: feat
+_id: 8M5LzL2G0zjyVUsd
+img: icons/magic/holy/prayer-hands-glowing-yellow.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>The tenets of the Oath of Redemption hold a paladin to a high standard
+      of peace and justice.</p>
+
+      <p><strong>Peace.</strong> Violence is a weapon of last resort. Diplomacy
+      and understanding are the paths to long-lasting peace.</p>
+
+      <p><strong>Innocence.</strong> All people begin life in an innocent state,
+      and it is their environment or the influence of dark forces that drives
+      them to evil. By setting the proper example, and working to heal the
+      wounds of a deeply flawed world, you can set anyone on a righteous
+      path.</p>
+
+      <p><strong>Patience.</strong> Change takes time. Those who have walked the
+      path of the wicked must be given reminders to keep them honest and true.
+      Once you have planted the seed of righteousness in a creature, you must
+      work day after day to allow that seed to survive and flourish.</p>
+
+      <p><strong>Wisdom.</strong> Your heart and mind must stay clear, for
+      eventually you will be forced to admit defeat. While every creature can be
+      redeemed, some are so far along the path of evil that you have no choice
+      but to end their lives for the greater good. Any such action must be
+      carefully weighed and the consequences fully understood, but once you have
+      made the decision, follow through with it knowing your path is just.</p>
+    chat: ''
+  identifier: tenets-of-redemption
+  source:
+    revision: 1
+    rules: '2024'
+    book: Xanathar's Guide to Everything
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties:
+    - trait
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.344'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!8M5LzL2G0zjyVUsd'

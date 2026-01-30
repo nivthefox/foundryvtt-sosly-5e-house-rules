@@ -1,0 +1,86 @@
+folder: dXq4JQS4uMeZeZ6U
+name: Oath of Redemption Spells
+type: feat
+_id: 88FvUKEIHJE3sTTM
+img: icons/magic/symbols/circled-gem-pink.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You gain oath spells at the paladin levels listed in the Oath of
+      Redemption Spells table.</p>
+
+      <table>
+        <caption>Oath of Redemption Spells</caption>
+        <thead>
+          <tr>
+            <td>Paladin Level</td>
+            <td>Spells</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3rd</td>
+            <td>@UUID[Compendium.dnd5e.spells24.Item.phbSanctuary0000]{Sanctuary}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000]{Sleep}</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCalmEmotio]{Calm Emotions}, @UUID[Compendium.dnd5e.spells24.Item.phbsplHoldPerson]{Hold Person}</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell}, @UUID[Compendium.dnd5e.spells24.Item.phbsplHypnoticPa]{Hypnotic Pattern}</td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>@UUID[Compendium.dnd5e.spells24.Item.phbsplOtilukesRe]{Otiluke's Resilient Sphere}, @UUID[Compendium.dnd5e.spells24.Item.phbsplStoneskin0]{Stoneskin}</td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Hold Monster}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Wall of Force}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="secret" id="secret-foundry-note">
+        <p><strong>Foundry Note</strong></p>
+        <p>The spells will be automatically granted as you level up.</p>
+      </section>
+    chat: ''
+  identifier: oath-of-redemption-spells
+  source:
+    revision: 1
+    rules: '2024'
+    book: Xanathar's Guide to Everything
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.344'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!88FvUKEIHJE3sTTM'

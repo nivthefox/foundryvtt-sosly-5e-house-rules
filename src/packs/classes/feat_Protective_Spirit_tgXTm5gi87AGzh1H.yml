@@ -1,0 +1,51 @@
+folder: dXq4JQS4uMeZeZ6U
+name: Protective Spirit
+type: feat
+_id: tgXTm5gi87AGzh1H
+img: icons/magic/holy/angel-winged-humanoid-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Starting at 15th level, a holy presence mends your wounds in battle.
+      You regain hit points equal to 1d6 + half your paladin level if you end
+      your turn in combat with fewer than half of your hit points remaining and
+      you aren't incapacitated.</p>
+    chat: ''
+  identifier: protective-spirit
+  source:
+    revision: 1
+    rules: '2024'
+    book: Xanathar's Guide to Everything
+  enchant: {}
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 15
+    repeatable: false
+  properties: []
+  requirements: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.344'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!tgXTm5gi87AGzh1H'

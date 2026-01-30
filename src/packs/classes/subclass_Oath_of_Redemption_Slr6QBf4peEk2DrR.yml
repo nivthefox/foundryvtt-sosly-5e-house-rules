@@ -1,0 +1,212 @@
+folder: 87E2NYaC9lknFWyn
+name: Oath of Redemption
+type: subclass
+_id: Slr6QBf4peEk2DrR
+img: modules/sosly-5e-house-rules/public/subclasses/oath-of-redemption.webp
+system:
+  description:
+    value: >-
+      <blockquote><p>Walk the Difficult Path of Peace and
+      Justice</p></blockquote>
+
+      <p>The Oath of Redemption sets a paladin on a difficult path, one that
+      requires a holy warrior to use violence only as a last resort. Paladins
+      who dedicate themselves to this oath believe that any person can be
+      redeemed and that the path of benevolence and justice is one that anyone
+      can walk. These paladins face evil creatures in the hope of turning their
+      foes to the light, and they slay their enemies only when such a deed will
+      clearly save other lives. Paladins who follow this path are known as
+      redeemers.</p>
+
+      <p>While redeemers are idealists, they are no fools. Redeemers know that
+      undead, demons, devils, and other supernatural threats can be inherently
+      evil. Against such foes, paladins who swear this oath bring the full wrath
+      of their weapons and spells to bear. Yet the redeemers still pray that,
+      one day, even creatures of wickedness will invite their own
+      redemption.</p>
+    chat: ''
+  identifier: redemption
+  source:
+    revision: 1
+    rules: '2024'
+    book: Xanathar's Guide to Everything
+  advancement:
+    - _id: adv3features0001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.8M5LzL2G0zjyVUsd
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.88FvUKEIHJE3sTTM
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.bxvsxJGe8h4GNK8F
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.kWptVqTjHN70Rr2h
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+      hint: ''
+    - _id: adv3spells00001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbSanctuary0000
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplSleep00000
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Oath of Redemption Spells
+      hint: ''
+    - _id: adv5spells00001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplCalmEmotio
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplHoldPerson
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Oath of Redemption Spells
+      hint: ''
+    - _id: adv7features0001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.xE7xJqboEmoM6xPU
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 7
+      title: Subclass Features
+      hint: ''
+    - _id: adv9spells00001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplCounterspe
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplHypnoticPa
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: Oath of Redemption Spells
+      hint: ''
+    - _id: adv13spells0001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplOtilukesRe
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplStoneskin0
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 13
+      title: Oath of Redemption Spells
+      hint: ''
+    - _id: adv15features001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.tgXTm5gi87AGzh1H
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 15
+      title: Subclass Features
+      hint: ''
+    - _id: adv17spells0001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplHoldMonste
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplWallofForc
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 17
+      title: Oath of Redemption Spells
+      hint: ''
+    - _id: adv20features001
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.JuenokdrC2EaAOnD
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 20
+      title: Subclass Features
+      hint: ''
+  classIdentifier: paladin
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.344'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!items!Slr6QBf4peEk2DrR'
