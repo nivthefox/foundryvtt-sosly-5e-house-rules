@@ -1,0 +1,48 @@
+folder: LVfP0SANDJw2eqgo
+name: Mystical Connection
+type: feat
+_id: Qqaskv5UbyESVtS9
+img: icons/magic/perception/eye-ringed-glow-angry-large-teal.webp
+system:
+  description:
+    value: >-
+      <p><em>14th-level College of Spirits feature</em></p>
+      <p>You gain mastery over the spirits you call forth. Whenever you roll on the Spirits from Beyond table, you can roll the die twice and choose which of the two effects to bestow.</p>
+    chat: ''
+  source:
+    custom: 'UA2025-HorrorSubclasses'
+    revision: 1
+    rules: '2024'
+  type:
+    value: class
+    subtype: ''
+  requirements: College of Spirits 14
+  properties: []
+  prerequisites:
+    level: 14
+  activities: {}
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  enchant: {}
+  identifier: mystical-connection
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+ownership:
+  default: 0
+sort: 0
+_key: '!items!Qqaskv5UbyESVtS9'

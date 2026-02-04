@@ -1,0 +1,89 @@
+folder: 6Kk5eK2naIYH5dib
+name: College of Spirits
+type: subclass
+img: icons/sundries/gaming/playing-cards.webp
+system:
+  description:
+    value: >-
+      <p><em>Call Forth Spirits from Beyond the Grave</em></p>
+      <p>Using occult trappings, Bards of the College of Spirits conjure legendary and long-dead spirits to change the world once more. But such entities are capricious, and what a Bard summons isn't always entirely under their control.</p>
+    chat: ''
+  identifier: college-of-spirits
+  classIdentifier: bard
+  source:
+    custom: 'UA2025-HorrorSubclasses'
+    revision: 1
+    rules: '2024'
+  advancement:
+    - _id: y3E9iBZCXIjRScX2
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - tool:card
+        choices: []
+      value:
+        chosen: []
+      level: 3
+      title: ''
+      hint: 'Gaming Set (Playing Cards) proficiency'
+    - _id: jf9kCSXumqwCWSbd
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.N4cXlzjyKrvVjrP3
+            optional: false
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.U34KzuMUIOavHycU
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Features
+      hint: ''
+    - _id: KWhdWsaJdLyzpyFD
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.oAl6Bz5aeFTPouiq
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Features
+      hint: ''
+    - _id: OV08ZGqxWasKixh4
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.sosly-5e-house-rules.classes.Item.Qqaskv5UbyESVtS9
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Features
+      hint: ''
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_id: KHbmc9F4oMJgyQwV
+ownership:
+  default: 0
+sort: 0
+_key: '!items!KHbmc9F4oMJgyQwV'

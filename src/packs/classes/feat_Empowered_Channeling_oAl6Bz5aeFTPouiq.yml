@@ -1,0 +1,148 @@
+folder: LVfP0SANDJw2eqgo
+name: Empowered Channeling
+type: feat
+_id: oAl6Bz5aeFTPouiq
+img: icons/magic/light/orb-hands-humanoid-yellow.webp
+system:
+  description:
+    value: >-
+      <p><em>6th-level College of Spirits feature</em></p>
+      <p>Your ability to channel spirits improves. You gain the following benefits.</p>
+      <p><strong>Power from Beyond.</strong> Once per turn, when you cast a Bard spell that deals damage or restores Hit Points, roll a d6. You gain a bonus to one of the spell's damage rolls or to the total Hit Points the spell restores equal to the number rolled.</p>
+      <p><strong>Spiritual Manifestation.</strong> You always have the <em>Spirit Guardians</em> spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p>
+      <p>Whenever you start casting the spell, you can modify it so the spirits also guard against worldly threats. When cast in this way, you and allies within the spell's Emanation have Half Cover. Once you modify the spell in this way, you can't do so again until you finish a Short or Long Rest.</p>
+    chat: ''
+  source:
+    custom: 'UA2025-HorrorSubclasses'
+    revision: 1
+    rules: '2024'
+  type:
+    value: class
+    subtype: ''
+  requirements: College of Spirits 6
+  properties: []
+  prerequisites:
+    level: 6
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: 'Once per turn when casting a Bard spell that deals damage or restores HP'
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: true
+        name: Power from Beyond
+        formula: 1d6
+      sort: 0
+      name: Power from Beyond
+      img: ''
+    dnd5eactivity001:
+      _id: dnd5eactivity001
+      type: utility
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: 'Spirit Guardians with Half Cover modification'
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      sort: 100000
+      name: Half Cover Modification
+      img: ''
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+  enchant: {}
+  identifier: empowered-channeling
+effects: []
+flags:
+  sosly-5e-house-rules:
+    item-spells:
+      - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar
+        overrides:
+          uses:
+            max: '1'
+            recovery: lr
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+ownership:
+  default: 0
+sort: 0
+_key: '!items!oAl6Bz5aeFTPouiq'

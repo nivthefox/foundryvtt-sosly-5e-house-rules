@@ -1,0 +1,19 @@
+name: Subclass Features
+sorting: a
+folder: 6Kk5eK2naIYH5dib
+type: Item
+_id: LVfP0SANDJw2eqgo
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+_key: '!folders!LVfP0SANDJw2eqgo'

@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add College of Spirits subclass for Bard (UA2025-HorrorSubclasses) with Channeler, Spirits from Beyond table, Empowered Channeling, and Mystical Connection features
+- Add Guiding Whispers cantrip (PHB Guidance with 60ft range for College of Spirits)
 - Add Oath of Redemption subclass for Paladin
 - Add Vestige Patron subclass for Warlock with summonable companion spirit (Celestial, Fiend, or Undead variants) and domain spell selection (Life, Light, Plaguelight, Trickery, War)
 - Add Attunement Limits setting that ties maximum attuned items to proficiency bonus instead of the default 3
@@ -17,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Long rest exhaustion recovery now uses Constitution modifier (minimum 1) instead of flat 1
+
+### Removed
+- Remove playtest Guidance cantrip (replaced by Guiding Whispers)
 
 ## [13.2.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.2.0) - 2026-01-13
 

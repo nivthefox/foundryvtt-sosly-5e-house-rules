@@ -1,0 +1,157 @@
+folder: LVfP0SANDJw2eqgo
+name: Spirits from Beyond
+type: feat
+_id: U34KzuMUIOavHycU
+img: icons/magic/unholy/silhouette-evil-horned-giant.webp
+system:
+  description:
+    value: >-
+      <p><em>3rd-level College of Spirits feature</em></p>
+      <p>While holding a Spellcasting Focus, you can take a Bonus Action to expend one use of your Bardic Inspiration and call forth the powers of a spirit. Roll the Bardic Inspiration die and refer to the Spirits from Beyond table to determine the spirit you channel, then choose one creature you can see within 30 feet of yourself as the spirit's target. The spirit immediately takes effect; if a spirit's effect requires a saving throw, the DC equals your Bard spell save DC.</p>
+      <table border="1">
+        <caption>Spirits from Beyond</caption>
+        <thead>
+          <tr>
+            <th>Bardic Insp. Die</th>
+            <th>Spirit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>Beloved.</strong> The target regains Hit Points equal to one roll of your Bardic Inspiration die plus your Charisma modifier.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Sharpshooter.</strong> The target takes Force damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>Avenger.</strong> Until the end of your next turn, any creature that hits the target with a melee attack roll takes Force damage equal to a roll of your Bardic Inspiration die.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Renegade.</strong> The target can immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Fortune Teller.</strong> The target has Advantage on D20 Tests until the start of your next turn.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>Wayfarer.</strong> The target gains Temporary Hit Points equal to a roll of your Bardic Inspiration die plus your Bard level. While it has these Temporary Hit Points, the target's Speed increases by 10 feet.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><strong>Trickster.</strong> The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to two rolls of your Bardic Inspiration die and has the Charmed condition until the start of your next turn. On a successful save, the target takes half as much damage only.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><strong>Shade.</strong> The target gains the Invisible condition until the end of its next turn or until the target makes an attack roll, deals damage, or casts a spell. When the invisibility ends, each creature in a 5-foot Emanation originating from the target must succeed on a Constitution saving throw or take Necrotic damage equal to two rolls of your Bardic Inspiration die.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><strong>Arsonist.</strong> The target makes a Dexterity saving throw, taking Fire damage equal to four rolls of your Bardic Inspiration die on a failed save or half as much on a successful one.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><strong>Coward.</strong> The target and each creature of your choice in a 30-foot Emanation originating from the target must succeed on a Wisdom saving throw or have the Frightened condition until the start of your next turn. While Frightened, a creature's Speed is halved, and it can take either an action or a Bonus Action, not both.</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><strong>Brute.</strong> Each creature of your choice in a 30-foot Emanation originating from the target makes a Strength saving throw. On a failed save, a creature takes Thunder damage equal to three rolls of your Bardic Inspiration die and has the Prone condition. On a successful save, a creature takes half as much damage only.</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><strong>Controlled Channeling.</strong> You determine the spirit's effect by choosing one of the other rows in this table.</td>
+          </tr>
+        </tbody>
+      </table>
+    chat: ''
+  source:
+    custom: 'UA2025-HorrorSubclasses'
+    revision: 1
+    rules: '2024'
+  type:
+    value: class
+    subtype: ''
+  requirements: College of Spirits 3
+  properties: []
+  prerequisites:
+    level: 3
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: Compendium.dnd-players-handbook.classes.Item.phbclsBardicIns
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: true
+        name: Spirit Roll
+        formula: 1@scale.bard.inspiration.die
+      sort: 0
+      name: Channel Spirit
+      img: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  enchant: {}
+  identifier: spirits-from-beyond
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+ownership:
+  default: 0
+sort: 0
+_key: '!items!U34KzuMUIOavHycU'

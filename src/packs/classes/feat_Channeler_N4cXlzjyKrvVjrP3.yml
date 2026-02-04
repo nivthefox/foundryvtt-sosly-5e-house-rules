@@ -1,0 +1,53 @@
+folder: LVfP0SANDJw2eqgo
+name: Channeler
+type: feat
+_id: N4cXlzjyKrvVjrP3
+img: icons/sundries/gaming/playing-cards.webp
+system:
+  description:
+    value: >-
+      <p><em>3rd-level College of Spirits feature</em></p>
+      <p>You learn how to contact spirits beyond the grave, letting their power and knowledge flow through you. You gain the following benefits.</p>
+      <p><strong>Guiding Whispers.</strong> You know the <em>Guiding Whispers</em> cantrip. It has a range of 60 feet when you cast it.</p>
+      <p><strong>Spiritual Focus.</strong> You employ tools that aid you in channeling spirits. You gain a Gaming Set (Playing Cards). You have proficiency with this Gaming Set, and you can use the cards or one of the following items as a Spellcasting Focus for your Bard spells: Arcane Focus (Crystal or Orb), Candle, or Ink Pen.</p>
+    chat: ''
+  source:
+    custom: 'UA2025-HorrorSubclasses'
+    revision: 1
+    rules: '2024'
+  type:
+    value: class
+    subtype: ''
+  requirements: College of Spirits 3
+  properties: []
+  prerequisites:
+    level: 3
+  activities: {}
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  enchant: {}
+  identifier: channeler
+effects: []
+flags:
+  sosly-5e-house-rules:
+    item-spells:
+      - uuid: Compendium.sosly-5e-house-rules.spells.Item.Qj4hu6txDolScDst
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: dnd5e
+  systemVersion: 4.1.2
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+ownership:
+  default: 0
+sort: 0
+_key: '!items!N4cXlzjyKrvVjrP3'
