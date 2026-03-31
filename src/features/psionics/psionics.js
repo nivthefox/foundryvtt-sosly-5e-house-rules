@@ -1,5 +1,5 @@
 import { addPsionicSubtitles } from './ui-spellbook';
-import { reorganizePsionicDisciplines } from './ui-features';
+
 import { registerPsychicFocusManagement } from './psychic-focus';
 import { registerArgonIntegration } from './ui-argon';
 import { injectPsionicistManifestingCard } from './ui-spellbook-card';
@@ -57,8 +57,6 @@ export function registerPsionics() {
     setupPsionicOptions();
     Hooks.on('renderCharacterActorSheet', addPsionicSubtitles);
     Hooks.on('renderNPCActorSheet', addPsionicSubtitles);
-    Hooks.on('renderCharacterActorSheet', reorganizePsionicDisciplines);
-    Hooks.on('renderNPCActorSheet', reorganizePsionicDisciplines);
     Hooks.on('renderCharacterActorSheet', injectPsionicistManifestingCard);
     Hooks.on('renderNPCActorSheet', injectPsionicistManifestingCard);
     registerPsychicFocusManagement();
