@@ -17,7 +17,7 @@ function setupPsionicOptions() {
         },
     };
     CONFIG.DND5E.spellLevels[99] = 'Psionic Power';
-    CONFIG.DND5E.spellPreparationModes.psionic = {
+    CONFIG.DND5E.spellcasting.psionic = {
         label: 'Psionic',
         order: 999
     };
@@ -54,7 +54,7 @@ function setupPsionicOptions() {
 }
 
 export function registerPsionics() {
-    Hooks.once('setup', setupPsionicOptions);
+    setupPsionicOptions();
     Hooks.on('renderCharacterActorSheet', addPsionicSubtitles);
     Hooks.on('renderNPCActorSheet', addPsionicSubtitles);
     Hooks.on('renderCharacterActorSheet', reorganizePsionicDisciplines);
