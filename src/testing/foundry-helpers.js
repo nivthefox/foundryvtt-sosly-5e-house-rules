@@ -3,7 +3,8 @@
  */
 
 import {expect} from '@playwright/test';
-import {id as module_id} from '../../module.json';
+
+const module_id = 'sosly-5e-house-rules';
 
 /**
  * Clean up all chat messages in the FoundryVTT game
