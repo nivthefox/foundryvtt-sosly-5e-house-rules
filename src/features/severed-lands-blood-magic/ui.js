@@ -2,6 +2,14 @@ import {id as module_id} from '../../../module.json';
 import { createMeter } from '../../components/meters/meter.js';
 
 const BLOOD_VIAL_IDENTIFIER = 'blood-vial';
+const BLOOD_METER_SELECTOR = '[data-sosly-meter="blood-pool"]';
+const bloodRenderTokens = new WeakMap();
+
+function removeBloodMeters(element) {
+    for (const meter of element.querySelectorAll(BLOOD_METER_SELECTOR)) {
+        meter.remove();
+    }
+}
 
 function calculateBloodPool(actor) {
     const bloodVials = actor.items.filter(item => item.system.identifier === BLOOD_VIAL_IDENTIFIER);
@@ -73,32 +81,23 @@ async function distributeBloodAcrossVials(actor, newTotal) {
     }
 }
 
-async function addBloodTracking(app, element, context) {
-    if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
-        return;
-    }
-
-    const statsContainer = element.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
-    if (!statsContainer) {
-        return;
-    }
-
+async function createBloodMeter(app) {
     if (app.actor.isPolymorphed) {
         const originalActorId = app.actor.getFlag('dnd5e', 'originalActor');
         const originalActor = game.actors.get(originalActorId);
 
         if (!originalActor) {
-            return;
+            return null;
         }
 
         const bloodPool = calculateBloodPool(originalActor);
         if (!bloodPool) {
-            return;
+            return null;
         }
 
         const empoweredBlood = app.actor.getFlag(module_id, 'empoweredBlood') ?? bloodPool.current;
 
-        const meterResult = await createMeter({
+        return createMeter({
             label: game.i18n.localize('sosly.severedLandsBloodMagic.bloodPool'),
             valueNow: empoweredBlood,
             valueMax: bloodPool.max * 2,
@@ -110,23 +109,14 @@ async function addBloodTracking(app, element, context) {
                 await app.actor.setFlag(module_id, 'empoweredBlood', newValue);
             }
         });
-
-        const meterElement = document.createElement('div');
-        meterElement.innerHTML = meterResult.html;
-        const meterGroup = meterElement.firstElementChild;
-
-        meterResult.setup(meterGroup);
-
-        statsContainer.appendChild(meterGroup);
-        return;
     }
 
     const bloodPool = calculateBloodPool(app.actor);
     if (!bloodPool) {
-        return;
+        return null;
     }
 
-    const meterResult = await createMeter({
+    return createMeter({
         label: game.i18n.localize('sosly.severedLandsBloodMagic.bloodPool'),
         valueNow: bloodPool.current,
         valueMax: bloodPool.max,
@@ -138,14 +128,47 @@ async function addBloodTracking(app, element, context) {
             await distributeBloodAcrossVials(app.actor, newValue);
         }
     });
+}
+
+async function addBloodTracking(app, element) {
+    const renderToken = Symbol('blood-pool-render');
+    bloodRenderTokens.set(app, renderToken);
+
+    if (!game.settings.get(module_id, 'severed-lands-blood-magic')) {
+        removeBloodMeters(element);
+        return;
+    }
+
+    const statsContainer = element.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
+    if (!statsContainer) {
+        return;
+    }
+
+    const meterResult = await createBloodMeter(app);
+
+    if (bloodRenderTokens.get(app) !== renderToken) {
+        return;
+    }
+
+    if (!game.settings.get(module_id, 'severed-lands-blood-magic') || !meterResult) {
+        removeBloodMeters(element);
+        return;
+    }
+
+    const currentStatsContainer = element.querySelector('.dnd5e2.sheet.actor .sidebar .stats');
+    if (!currentStatsContainer) {
+        return;
+    }
 
     const meterElement = document.createElement('div');
     meterElement.innerHTML = meterResult.html;
     const meterGroup = meterElement.firstElementChild;
 
+    meterGroup.setAttribute('data-sosly-meter', 'blood-pool');
     meterResult.setup(meterGroup);
 
-    statsContainer.appendChild(meterGroup);
+    removeBloodMeters(element);
+    currentStatsContainer.appendChild(meterGroup);
 }
 
 async function handleTransform(original, source, transformedData, settings, options) {
@@ -193,11 +216,11 @@ async function handleRevert(transformedActor, options) {
 
 export function registerBloodMagicHooks() {
     Hooks.on('renderCharacterActorSheet', async (app, element, context, options) => {
-        await addBloodTracking(app, element, context);
+        await addBloodTracking(app, element);
     });
 
     Hooks.on('renderNPCActorSheet', async (app, element, context, options) => {
-        await addBloodTracking(app, element, context);
+        await addBloodTracking(app, element);
     });
 
     Hooks.on('dnd5e.transformActorV2', handleTransform);
