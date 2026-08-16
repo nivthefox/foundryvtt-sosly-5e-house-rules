@@ -1,9 +1,13 @@
 import {id as module_id} from '../../../module.json';
 import {logger} from '../../utils/logger';
+import {createAnimationFrameDebouncer, LightUnionCache} from './light-union-cache';
 import {registerLowLightVisionSettings} from './settings';
 import {LowLightVisionMode} from './vision-mode';
 
 const {PointVisionSource} = foundry.canvas.sources;
+const CIRCLE_SEGMENTS = 32;
+const extendedLightUnionCache = new LightUnionCache();
+const visionRefreshDebouncer = createAnimationFrameDebouncer(refreshLowLightVision);
 
 /**
  * Low-Light Vision Feature
@@ -20,6 +24,7 @@ export function registerLowLightVisionFeature() {
 
     Hooks.once('setup', () => {
         CONFIG.Canvas.visionModes.lowLight = new LowLightVisionMode();
+        registerExtendedLightGeometryLifecycle();
         patchVisionSourcePolygons();
         patchLightPerceptionDetection();
         logger.info('Low-Light Vision mode registered');
@@ -77,11 +82,11 @@ function patchVisionSourcePolygons() {
         }
 
         const extended = calculateExtendedLightPolygon(this);
+        this._lowLightExtendedPolygon = extended;
         if (!extended) {
             return original;
         }
 
-        this._lowLightExtendedPolygon = extended;
         return extended;
     };
 
@@ -102,39 +107,14 @@ function calculateExtendedLightPolygon(source) {
     }
 
     const multiplier = game.settings.get(module_id, 'low-light-vision-multiplier');
-    const CIRCLE_SEGMENTS = 32;
-
-    const clipper = new ClipperLib.Clipper();
-    let hasLights = false;
-
-    for (const light of canvas.effects.lightSources) {
-        if (!light.active) {
-            continue;
-        }
-
-        const extendedDim = (light.data.dim || 0) * multiplier;
-        if (extendedDim <= 0) {
-            continue;
-        }
-
-        const circlePath = approximateCircle(light.x, light.y, extendedDim, CIRCLE_SEGMENTS);
-        clipper.AddPath(circlePath, ClipperLib.PolyType.ptSubject, true);
-        hasLights = true;
-    }
-
-    if (!hasLights) {
-        return null;
-    }
-
-    const unionResult = new ClipperLib.Paths();
-    clipper.Execute(
-        ClipperLib.ClipType.ctUnion,
-        unionResult,
-        ClipperLib.PolyFillType.pftNonZero,
-        ClipperLib.PolyFillType.pftNonZero
+    const unionResult = extendedLightUnionCache.get(
+        canvas.scene?.id,
+        multiplier,
+        canvas.effects.lightSources,
+        calculateExtendedLightUnion
     );
 
-    if (unionResult.length === 0) {
+    if (!unionResult?.length) {
         return null;
     }
 
@@ -156,6 +136,115 @@ function calculateExtendedLightPolygon(source) {
     }
 
     return clipperPathToPolygon(result[0], source);
+}
+
+function calculateExtendedLightUnion(lights) {
+    if (lights.length === 0) {
+        return null;
+    }
+
+    const clipper = new ClipperLib.Clipper();
+    for (const light of lights) {
+        const circlePath = approximateCircle(light.x, light.y, light.radius, CIRCLE_SEGMENTS);
+        clipper.AddPath(circlePath, ClipperLib.PolyType.ptSubject, true);
+    }
+
+    const unionResult = new ClipperLib.Paths();
+    clipper.Execute(
+        ClipperLib.ClipType.ctUnion,
+        unionResult,
+        ClipperLib.PolyFillType.pftNonZero,
+        ClipperLib.PolyFillType.pftNonZero
+    );
+
+    if (unionResult.length === 0) {
+        return null;
+    }
+
+    return unionResult;
+}
+
+function registerExtendedLightGeometryLifecycle() {
+    Hooks.on('createAmbientLight', handleExtendedLightDocumentChange);
+    Hooks.on('updateAmbientLight', handleExtendedLightDocumentChange);
+    Hooks.on('deleteAmbientLight', handleExtendedLightDocumentChange);
+    Hooks.on('createToken', handleTokenLightDocumentChange);
+    Hooks.on('updateToken', handleTokenLightUpdate);
+    Hooks.on('deleteToken', handleTokenLightDocumentChange);
+    Hooks.on('updateScene', handleSceneLightingUpdate);
+    Hooks.on('canvasTearDown', clearExtendedLightGeometry);
+}
+
+function handleExtendedLightDocumentChange(document) {
+    if (!belongsToCurrentScene(document)) {
+        return;
+    }
+    invalidateExtendedLightGeometry();
+}
+
+function handleTokenLightDocumentChange(document) {
+    if (!belongsToCurrentScene(document) || (document.light?.dim || 0) <= 0) {
+        return;
+    }
+    invalidateExtendedLightGeometry();
+}
+
+function handleTokenLightUpdate(document, changes = {}) {
+    if (!belongsToCurrentScene(document) || !tokenUpdateAffectsExtendedLight(document, changes)) {
+        return;
+    }
+    invalidateExtendedLightGeometry();
+}
+
+function tokenUpdateAffectsExtendedLight(document, changes) {
+    if ('light' in changes) {
+        return true;
+    }
+
+    const positionOrVisibilityChanged = ('x' in changes) || ('y' in changes) || ('hidden' in changes);
+    return positionOrVisibilityChanged && (document.light?.dim || 0) > 0;
+}
+
+function handleSceneLightingUpdate(scene, changes = {}) {
+    if (scene !== canvas.scene) {
+        return;
+    }
+
+    const lightingChanged = ('darkness' in changes) || ('grid' in changes) || ('dimensions' in changes);
+    if (!lightingChanged) {
+        return;
+    }
+    invalidateExtendedLightGeometry();
+}
+
+function belongsToCurrentScene(document) {
+    return canvas.ready && document.parent === canvas.scene;
+}
+
+function invalidateExtendedLightGeometry() {
+    extendedLightUnionCache.invalidate();
+    visionRefreshDebouncer.schedule();
+}
+
+function clearExtendedLightGeometry() {
+    extendedLightUnionCache.invalidate();
+    visionRefreshDebouncer.cancel();
+}
+
+function refreshLowLightVision() {
+    if (!canvas.ready || !hasActiveLowLightVisionSource()) {
+        return;
+    }
+    canvas.perception.update({initializeVision: true});
+}
+
+function hasActiveLowLightVisionSource() {
+    for (const source of canvas.effects.visionSources) {
+        if (source.visionMode?.id === 'lowLight') {
+            return true;
+        }
+    }
+    return false;
 }
 
 function approximateCircle(cx, cy, radius, segments) {

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Reduce low-light vision slowdown in scenes with many lights
+
 ## [13.3.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.3.0) - 2026-02-03
 
 ### Added
