@@ -3,7 +3,7 @@
  */
 
 import {expect} from '@playwright/test';
-import {id as module_id} from '../module.json';
+import {id as module_id} from '../../module.json';
 
 /**
  * Clean up all chat messages in the FoundryVTT game
