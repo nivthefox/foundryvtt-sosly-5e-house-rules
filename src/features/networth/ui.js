@@ -5,19 +5,9 @@
 
 import { calculateNetWorth } from './calculator';
 
-/**
- * Add net worth display to character sheet
- * @param {Application} app - The sheet application
- * @param {HTMLElement} el - The sheet HTML element
- */
-function addNetworthDisplay(app, el) {
-    const networth = calculateNetWorth(app.actor);
-    const currencies = el.querySelector('.inventory-element .currency');
+const NET_WORTH_SELECTOR = ':scope > .net-worth';
 
-    if (!currencies) {
-        return;
-    }
-
+function createNetworthDisplay() {
     const networthEl = document.createElement('div');
     networthEl.classList.add('net-worth');
 
@@ -27,12 +17,37 @@ function addNetworthDisplay(app, el) {
     icon.setAttribute('aria-label', 'Net Worth');
 
     const content = document.createElement('span');
-    content.textContent = networth.toLocaleString();
 
     networthEl.appendChild(icon);
     networthEl.appendChild(content);
 
-    currencies.appendChild(networthEl);
+    return networthEl;
+}
+
+/**
+ * Add net worth display to character sheet
+ * @param {Application} app - The sheet application
+ * @param {HTMLElement} el - The sheet HTML element
+ */
+function addNetworthDisplay(app, el) {
+    const currencies = el.querySelector('.inventory-element .currency');
+
+    if (!currencies) {
+        return;
+    }
+
+    const displays = currencies.querySelectorAll(NET_WORTH_SELECTOR);
+    const networthEl = displays[0] ?? createNetworthDisplay();
+
+    for (const duplicate of Array.from(displays).slice(1)) {
+        duplicate.remove();
+    }
+
+    networthEl.querySelector('span').textContent = calculateNetWorth(app.actor).toLocaleString();
+
+    if (networthEl.parentElement !== currencies) {
+        currencies.appendChild(networthEl);
+    }
 }
 
 /**
