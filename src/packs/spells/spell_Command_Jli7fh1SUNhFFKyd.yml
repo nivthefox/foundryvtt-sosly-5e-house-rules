@@ -176,9 +176,6 @@ flags:
       altValue: true
   core: {}
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
     riders:
       activity: []
       effect: []

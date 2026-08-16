@@ -193,10 +193,6 @@ flags:
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.GG6uZIcyCmp7cPey
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
     riders:
       activity: []
       effect: []

@@ -162,8 +162,6 @@ flags:
   core:
     sourceId: Compendium.sosly.spells.Item.2jrzJrMEEEVx40Z4
   dnd5e:
-    migratedProperties:
-      - vocal
     riders:
       activity: []
       effect: []

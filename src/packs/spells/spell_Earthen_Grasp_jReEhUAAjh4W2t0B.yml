@@ -146,9 +146,6 @@ flags:
     id: temp_swxucta6r2
   core: {}
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
     riders:
       activity: []
       effect: []

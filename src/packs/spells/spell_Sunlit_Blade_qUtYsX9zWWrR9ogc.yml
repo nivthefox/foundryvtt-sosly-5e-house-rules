@@ -251,10 +251,6 @@ flags:
     hash: 63eee9375dc20fd931e4e55a0bbf0c31bafde258
     sourceId: Compendium.sosly.spells.Item.epb9RGQvwcruQBlf
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - somatic
-      - material
     riders:
       activity: []
       effect: []

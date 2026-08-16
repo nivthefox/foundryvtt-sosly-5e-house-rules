@@ -223,10 +223,6 @@ flags:
   scene-packer:
     hash: eb476a5363ea5a4c886fc1c171810f6b7f864c97
     sourceId: Compendium.sosly.spells.Item.NpyqERtGWSynIOo7
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - somatic
 _stats:
   compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.NpyqERtGWSynIOo7
   duplicateSource: null

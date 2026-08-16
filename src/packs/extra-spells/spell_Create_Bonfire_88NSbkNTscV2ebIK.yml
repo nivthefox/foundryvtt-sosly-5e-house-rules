@@ -177,11 +177,6 @@ flags:
     depth: null
     environment: ''
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - concentration
     riders:
       activity: []
       effect: []

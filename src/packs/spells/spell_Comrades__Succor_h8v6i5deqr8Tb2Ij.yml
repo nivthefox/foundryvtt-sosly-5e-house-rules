@@ -98,6 +98,7 @@ system:
   identifier: comrades-succor
   properties:
     - vocal
+    - somatic
     - material
     - ritual
 effects: []
@@ -143,12 +144,6 @@ flags:
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.HcOigiij4o38OEJR
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - material
-      - ritual
     riders:
       activity: []
       effect: []

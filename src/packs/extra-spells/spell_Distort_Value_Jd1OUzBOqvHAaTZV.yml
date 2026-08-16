@@ -130,10 +130,6 @@ flags:
   cf:
     id: temp_ag8qdr5hh9i
   core: {}
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
 img: icons/commodities/currency/coin-engraved-sun-smile-copper.webp
 effects: []
 _stats:

@@ -154,12 +154,6 @@ flags:
     references: []
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.QZPMWIBpt4IOHngC
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - material
 img: icons/consumables/fruit/berries-hanging-red.webp
 effects: []
 _stats:

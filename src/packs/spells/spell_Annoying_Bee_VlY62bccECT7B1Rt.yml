@@ -226,11 +226,6 @@ flags:
     id: temp_9ykd9r1nsxt
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.VlY62bccECT7B1Rt
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
 _stats:
   compendiumSource: Compendium.sosly-5e-house-rules.spells.Item.VlY62bccECT7B1Rt
   duplicateSource: null

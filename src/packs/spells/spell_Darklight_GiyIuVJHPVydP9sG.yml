@@ -97,6 +97,7 @@ system:
   properties:
     - vocal
     - somatic
+    - concentration
 effects: []
 flags:
   scene-packer:
@@ -118,12 +119,6 @@ flags:
   core: {}
   cf:
     id: temp_sch38kntbfe
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - concentration
 _stats:
   compendiumSource: null
   duplicateSource: null

@@ -107,6 +107,7 @@ system:
     - vocal
     - somatic
     - material
+    - concentration
 img: icons/magic/air/fog-gas-smoke-gray.webp
 effects: []
 flags:
@@ -133,13 +134,6 @@ flags:
       altValue: true
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.Dgp2vwSLuNwcBDJN
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - material
-      - concentration
 _stats:
   compendiumSource: null
   duplicateSource: null

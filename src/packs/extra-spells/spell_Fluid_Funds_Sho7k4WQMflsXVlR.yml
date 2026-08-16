@@ -96,6 +96,7 @@ system:
   identifier: fluid-funds
   properties:
     - vocal
+    - somatic
     - material
     - ritual
 effects: []
@@ -140,12 +141,6 @@ flags:
     id: temp_fgrqfjce6mm
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.v2HE7kEyhujkoDvV
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - somatic
-      - material
-      - ritual
 _stats:
   compendiumSource: null
   duplicateSource: null

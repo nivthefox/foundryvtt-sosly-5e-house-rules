@@ -92,6 +92,7 @@ system:
         visible: false
   identifier: amaneusis
   properties:
+    - vocal
     - somatic
     - material
     - ritual
@@ -138,11 +139,6 @@ flags:
   scene-packer:
     sourceId: Compendium.sosly.spells.Item.O1AYPiaFIlTg2tua
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - material
-      - ritual
     riders:
       activity: []
       effect: []

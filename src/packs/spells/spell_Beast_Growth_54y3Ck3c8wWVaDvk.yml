@@ -98,6 +98,7 @@ system:
     - vocal
     - somatic
     - material
+    - ritual
 effects: []
 flags:
   scene-packer:
@@ -119,13 +120,6 @@ flags:
   core: {}
   cf:
     id: temp_9ykd9r1nsxt
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - material
-      - ritual
 _stats:
   compendiumSource: null
   duplicateSource: null

@@ -67,7 +67,6 @@ flags:
     riders:
       activity: []
       effect: []
-    migratedUses: 1
 _stats:
   compendiumSource: null
   duplicateSource: null

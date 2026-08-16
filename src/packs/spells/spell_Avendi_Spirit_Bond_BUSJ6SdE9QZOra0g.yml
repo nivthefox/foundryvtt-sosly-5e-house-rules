@@ -4,7 +4,43 @@ type: spell
 _id: BUSJ6SdE9QZOra0g
 img: icons/magic/nature/wolf-paw-glow-teal-blue.webp
 system:
-  activities: {}
+  activities:
+    avendiSpiritBond:
+      _id: avendiSpiritBond
+      type: utility
+      name: Bond
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      sort: 0
   uses:
     spent: 0
     recovery: []

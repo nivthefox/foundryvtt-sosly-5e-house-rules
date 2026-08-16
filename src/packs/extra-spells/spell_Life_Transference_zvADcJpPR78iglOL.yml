@@ -162,9 +162,6 @@ flags:
       value: true
       altValue: true
   dnd5e:
-    migratedProperties:
-      - vocal
-      - somatic
     riders:
       activity: []
       effect: []

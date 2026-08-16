@@ -151,11 +151,6 @@ flags:
   core: {}
   cf:
     id: temp_9ykd9r1nsxt
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
 _stats:
   compendiumSource: null
   duplicateSource: null

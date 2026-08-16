@@ -120,7 +120,10 @@ system:
       img: ''
       appliedEffects: []
   identifier: wither-and-bloom
-  properties: []
+  properties:
+    - vocal
+    - somatic
+    - material
 name: Wither and Bloom
 flags:
   ddbimporter:
@@ -179,11 +182,6 @@ flags:
     references: []
   core: {}
   dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - material
     riders:
       activity: []
       effect: []

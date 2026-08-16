@@ -153,11 +153,6 @@ flags:
       value: true
       altValue: true
   core: {}
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - somatic
-      - material
 img: icons/sundries/survival/rope-wrapped-purple.webp
 effects: []
 _stats:

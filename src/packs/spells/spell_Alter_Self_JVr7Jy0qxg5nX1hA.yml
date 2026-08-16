@@ -141,12 +141,6 @@ flags:
       value: true
       altValue: true
   core: {}
-  dnd5e:
-    persistSourceMigration: true
-    migratedProperties:
-      - vocal
-      - somatic
-      - concentration
 img: icons/magic/control/silhouette-hold-change-green.webp
 effects: []
 _stats:
