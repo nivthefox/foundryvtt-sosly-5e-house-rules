@@ -111,6 +111,7 @@ export class LocationSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     async _onFirstRender(context, options) {
         await super._onFirstRender(context, options);
+        this.managers.items.initializeContextMenu(this.element);
         this.managers.ui.onFirstRender(this.element);
     }
 

@@ -16,14 +16,16 @@ export class LocationItemManager {
         return this.sheet.isEditable;
     }
 
-    activateListeners(element) {
-        element.querySelectorAll('[data-context-menu]').forEach(el => {
-            el.addEventListener('click', this.onContextMenuClick.bind(this));
-        });
-
+    initializeContextMenu(element) {
         new dnd5e.applications.ContextMenu5e(element, '.item', [], {
             onOpen: this.onOpenContextMenu.bind(this),
             jQuery: false
+        });
+    }
+
+    activateListeners(element) {
+        element.querySelectorAll('[data-context-menu]').forEach(el => {
+            el.addEventListener('click', this.onContextMenuClick.bind(this));
         });
 
         element.querySelectorAll('.create-child').forEach(btn => {
