@@ -78,6 +78,7 @@ function patchVisionSourcePolygons() {
         const original = originalCreateLightPolygon.call(this);
 
         if (this.visionMode?.id !== 'lowLight') {
+            this._lowLightExtendedPolygon = null;
             return original;
         }
 
