@@ -485,4 +485,84 @@ test.describe('Breather', () => {
         const layStillVisible = dialog.locator('dnd5e-checkbox[name="features.lay-on-hands"]');
         await expect(layStillVisible).toBeVisible();
     });
+
+    test('repeated partial renders keep one functional button', async ({ page }) => {
+        const actorIds = [
+            await createActor(page, 'Breather Idempotence Character', 'character'),
+            await createActor(page, 'Breather Idempotence NPC', 'npc')
+        ];
+
+        const results = await page.evaluate(async ids => {
+            const delay = ms => new Promise(resolve => {
+                setTimeout(resolve, ms);
+            });
+            const actorResults = [];
+
+            for (const id of ids) {
+                const actor = game.actors.get(id);
+                const app = actor.sheet;
+                let actionCalls = 0;
+                const hookId = Hooks.on('sosly.preBreather', breatherActor => {
+                    if (breatherActor === actor) {
+                        actionCalls++;
+                        return false;
+                    }
+                });
+
+                try {
+                    app.render({force: true});
+                    await delay(800);
+
+                    const initialHeader = app.element.querySelector('.sheet-header-buttons');
+                    const initialButtonCount = initialHeader.querySelectorAll('.breather-button').length;
+
+                    for (let i = 0; i < 20; i++) {
+                        app.render({parts: ['features']});
+                        await delay(100);
+                    }
+
+                    const partialHeader = app.element.querySelector('.sheet-header-buttons');
+                    const partialButtonCount = partialHeader.querySelectorAll('.breather-button').length;
+                    partialHeader.querySelector('.breather-button').click();
+                    await delay(100);
+                    const partialRenderActionCalls = actionCalls;
+
+                    app.render({force: true});
+                    await delay(800);
+
+                    const replacementHeader = app.element.querySelector('.sheet-header-buttons');
+                    const replacementButtonCount = replacementHeader.querySelectorAll('.breather-button').length;
+                    replacementHeader.querySelector('.breather-button').click();
+                    await delay(100);
+
+                    actorResults.push({
+                        type: actor.type,
+                        initialButtonCount,
+                        partialHeaderPreserved: partialHeader === initialHeader,
+                        partialButtonCount,
+                        partialRenderActionCalls,
+                        headerReplaced: replacementHeader !== initialHeader,
+                        replacementButtonCount,
+                        replacementActionCalls: actionCalls
+                    });
+                } finally {
+                    Hooks.off('sosly.preBreather', hookId);
+                    await app.close();
+                }
+            }
+
+            return actorResults;
+        }, actorIds);
+
+        expect(results.map(result => result.type)).toEqual(['character', 'npc']);
+        for (const result of results) {
+            expect(result.initialButtonCount).toBe(1);
+            expect(result.partialHeaderPreserved).toBe(true);
+            expect(result.partialButtonCount).toBe(1);
+            expect(result.partialRenderActionCalls).toBe(1);
+            expect(result.headerReplaced).toBe(true);
+            expect(result.replacementButtonCount).toBe(1);
+            expect(result.replacementActionCalls).toBe(2);
+        }
+    });
 });

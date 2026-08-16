@@ -127,6 +127,10 @@ export class Breather {
             return;
         }
 
+        if (buttons.querySelector('.breather-button')) {
+            return;
+        }
+
         const button = document.createElement('button');
         button.type = 'button';
         button.classList.add('breather-button', 'gold-button');
