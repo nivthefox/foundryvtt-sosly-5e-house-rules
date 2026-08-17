@@ -1,6 +1,16 @@
 import { getPowerLimit } from './ui-common';
 import { id as module_id } from '../../../module.json';
 
+const MANIFESTING_CARD_SELECTOR = '[data-sosly-card="psionic-manifesting"]';
+const SPELLBOOK_TOP_SELECTOR = '[data-application-part="spells"] > .top';
+const manifestingRenderTokens = new WeakMap();
+
+function removeManifestingCards(element) {
+    for (const card of element.querySelectorAll(MANIFESTING_CARD_SELECTOR)) {
+        card.remove();
+    }
+}
+
 /**
  * @param {Application} app
  * @param {HTMLElement} element
@@ -8,12 +18,17 @@ import { id as module_id } from '../../../module.json';
  * @param {object} options
  */
 export async function injectPsionicistManifestingCard(app, element, context, options) {
+    const renderToken = Symbol('psionic-manifesting-render');
+    manifestingRenderTokens.set(app, renderToken);
+
     if (!context.actor) {
+        removeManifestingCards(element);
         return;
     }
 
     const psionicistClass = context.actor.classes?.psionicist;
     if (!psionicistClass) {
+        removeManifestingCards(element);
         return;
     }
 
@@ -23,11 +38,7 @@ export async function injectPsionicistManifestingCard(app, element, context, opt
     const powerLimit = getPowerLimit(context.actor);
 
     if (powerLimit === null) {
-        return;
-    }
-
-    const topSection = element.querySelector('.spells .top');
-    if (!topSection) {
+        removeManifestingCards(element);
         return;
     }
 
@@ -49,9 +60,28 @@ export async function injectPsionicistManifestingCard(app, element, context, opt
         templateData
     );
 
-    topSection.insertAdjacentHTML('beforeend', cardHTML);
+    if (manifestingRenderTokens.get(app) !== renderToken) {
+        return;
+    }
 
-    const button = topSection.querySelector(`.spellcasting[data-ability="${abilityId}"] button[data-action="spellcasting"]`);
+    const topSection = element.querySelector(SPELLBOOK_TOP_SELECTOR);
+    if (!topSection) {
+        removeManifestingCards(element);
+        return;
+    }
+
+    const template = document.createElement('template');
+    template.innerHTML = cardHTML.trim();
+    const card = template.content.firstElementChild;
+    if (!card) {
+        removeManifestingCards(element);
+        return;
+    }
+
+    removeManifestingCards(element);
+    topSection.appendChild(card);
+
+    const button = card.querySelector('button[data-action="spellcasting"]');
     if (button) {
         button.addEventListener('click', () => {
             context.actor.update({ 'system.attributes.spellcasting': abilityId });
