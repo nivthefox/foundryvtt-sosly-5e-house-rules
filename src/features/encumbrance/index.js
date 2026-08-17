@@ -8,7 +8,6 @@ import {logger} from '../../utils/logger';
 
 import { registerEncumbranceSettings } from './settings';
 import { prepareEncumbrance } from './encumbrance.js';
-import { registerEncumbranceHooks } from './hooks.js';
 import { registerEncumbranceTests } from './quench';
 
 export function registerEncumbranceFeature() {
@@ -22,8 +21,6 @@ export function registerEncumbranceFeature() {
     }
 
     if (game.settings.get(module_id, 'encumbrance')) {
-        registerEncumbranceHooks();
-
         // Use libWrapper to wrap the D&D 5e system's prepareEncumbrance method
         // This is more targeted than wrapping prepareDerivedData
         libWrapper.register(module_id, 'dnd5e.dataModels.actor.AttributesFields.prepareEncumbrance', function(wrapped, rollData, options = {}) {
