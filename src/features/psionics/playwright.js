@@ -3,8 +3,12 @@ import { loginUser } from '../../testing/foundry-helpers.js';
 
 const CARD_SELECTOR = '[data-sosly-card="psionic-manifesting"]';
 const DISCIPLINE_SECTION_SELECTOR = '[data-sosly-section="psionic-disciplines"]';
+const PSIONIC_COST_SELECTOR = '[data-sosly-psionic-cost]';
 const CLASS_ID = 'RZUGlaJPnjd23lWC';
 const CLASSES_PACK = 'sosly-5e-house-rules.classes';
+const POWER_POINTS_ID = 'yXFJ10Lf7yDyu5OM';
+const PSIONIC_POWER_ID = '41QCZrkxbRfk8uVn';
+const PSIONICS_PACK = 'sosly-5e-house-rules.psionics';
 
 async function createPsionicActor(page, type, ownerName = null) {
     return page.evaluate(async ({ actorType, classId, packId, actorOwnerName }) => {
@@ -671,5 +675,337 @@ test.describe('Psionic discipline section', () => {
             enabledControls: expect.any(Number)
         });
         expect(result.enabledControls).toBeGreaterThan(0);
+    });
+});
+
+async function createSubtitleActor(page, type, ownerName = null) {
+    return page.evaluate(async ({
+        actorType,
+        actorOwnerName,
+        classId,
+        classesPack,
+        powerPointsId,
+        psionicPowerId,
+        psionicsPack
+    }) => {
+        const actorSource = {
+            name: `Playwright F-11 ${actorType}`,
+            type: actorType,
+            system: {
+                abilities: {
+                    int: {value: 18}
+                }
+            }
+        };
+        if (actorOwnerName) {
+            const owner = game.users.getName(actorOwnerName);
+            actorSource.ownership = {
+                default: CONST.DOCUMENT_OWNERSHIP_LEVELS.NONE,
+                [owner.id]: CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+            };
+        }
+
+        const actor = await Actor.create(actorSource);
+        const psionicistSource = (await game.packs.get(classesPack).getDocument(classId)).toObject();
+        delete psionicistSource._id;
+        psionicistSource.system.levels = 5;
+        psionicistSource.system.advancement = psionicistSource.system.advancement.filter(
+            advancement => advancement.type === 'ScaleValue'
+        );
+        await actor.createEmbeddedDocuments('Item', [psionicistSource]);
+
+        const powerPointsSource = (await game.packs.get(classesPack).getDocument(powerPointsId)).toObject();
+        delete powerPointsSource._id;
+        powerPointsSource.name = `Playwright F-11 ${actorType} Power Points`;
+        powerPointsSource.system.uses.max = '20';
+        const [powerPoints] = await actor.createEmbeddedDocuments('Item', [powerPointsSource]);
+
+        const psionicSource = (await game.packs.get(psionicsPack).getDocument(psionicPowerId)).toObject();
+        delete psionicSource._id;
+        psionicSource.name = `Playwright F-11 ${actorType} Psionic Power`;
+        const firstActivity = Object.values(psionicSource.system.activities)[0];
+        firstActivity.name = 'Two Power Points';
+        firstActivity.consumption.targets[0].target = powerPoints.id;
+        firstActivity.consumption.targets[0].value = '2';
+        const secondActivity = foundry.utils.deepClone(firstActivity);
+        secondActivity._id = foundry.utils.randomID();
+        secondActivity.name = 'Four Power Points';
+        secondActivity.consumption.targets[0].value = '4';
+        psionicSource.system.activities[secondActivity._id] = secondActivity;
+        const [psionicPower] = await actor.createEmbeddedDocuments('Item', [psionicSource]);
+
+        const highCostSource = foundry.utils.deepClone(psionicSource);
+        delete highCostSource._id;
+        highCostSource.name = `Playwright F-11 ${actorType} Above Limit`;
+        for (const activity of Object.values(highCostSource.system.activities)) {
+            activity.consumption.targets[0].value = '6';
+        }
+        const [highCostPower] = await actor.createEmbeddedDocuments('Item', [highCostSource]);
+
+        const ordinarySource = foundry.utils.deepClone(psionicSource);
+        delete ordinarySource._id;
+        ordinarySource.name = `Playwright F-11 ${actorType} Ordinary Spell`;
+        ordinarySource.system.level = 1;
+        ordinarySource.system.method = 'spell';
+        ordinarySource.system.school = 'abj';
+        const [ordinarySpell] = await actor.createEmbeddedDocuments('Item', [ordinarySource]);
+
+        return {
+            actorId: actor.id,
+            psionicPowerId: psionicPower.id,
+            highCostPowerId: highCostPower.id,
+            ordinarySpellId: ordinarySpell.id
+        };
+    }, {
+        actorType: type,
+        actorOwnerName: ownerName,
+        classId: CLASS_ID,
+        classesPack: CLASSES_PACK,
+        powerPointsId: POWER_POINTS_ID,
+        psionicPowerId: PSIONIC_POWER_ID,
+        psionicsPack: PSIONICS_PACK
+    });
+}
+
+async function validateSubtitleActor(page, fixture, type) {
+    return page.evaluate(async ({
+        actorId,
+        psionicPowerId,
+        highCostPowerId,
+        ordinarySpellId,
+        actorType,
+        costSelector
+    }) => {
+        const actor = game.actors.get(actorId);
+        const app = actor.sheet;
+        const renderHook = `render${actorType === 'character' ? 'Character' : 'NPC'}ActorSheet`;
+        const delay = ms => new Promise(resolve => {
+            setTimeout(resolve, ms);
+        });
+        const getRow = itemId => app.element?.querySelector(`[data-item-id="${itemId}"]`);
+        const getSubtitle = () => getRow(psionicPowerId)?.querySelector(
+            '.item-row > .item-name .name-stacked .subtitle'
+        );
+        const waitFor = async predicate => {
+            for (let attempt = 0; attempt < 50; attempt++) {
+                if (predicate()) {
+                    return;
+                }
+                await delay(100);
+            }
+            throw new Error(`Timed out waiting for ${actorType} subtitle state`);
+        };
+        const summarize = () => {
+            const row = getRow(psionicPowerId);
+            const subtitle = getSubtitle();
+            const annotations = Array.from(subtitle?.querySelectorAll(costSelector) ?? []);
+            const baseSubtitle = subtitle?.cloneNode(true);
+            baseSubtitle?.querySelectorAll(costSelector).forEach(annotation => annotation.remove());
+            return {
+                rowCount: app.element?.querySelectorAll(`[data-item-id="${psionicPowerId}"]`).length ?? 0,
+                annotationCount: annotations.length,
+                annotation: annotations[0]?.textContent.trim(),
+                subtitle: subtitle?.textContent.trim(),
+                baseSubtitle: baseSubtitle?.textContent.trim(),
+                rowHasLegacyLevel: row?.hasAttribute('data-item-level') ?? false,
+                sectionMethod: row?.closest('[data-method]')?.dataset.method,
+                sectionLevel: row?.closest('[data-level]')?.dataset.level
+            };
+        };
+
+        try {
+            app.render({force: true, mode: app.constructor.MODES.EDIT});
+            await waitFor(() => getRow(psionicPowerId));
+            await delay(300);
+
+            const registration = {
+                hasGetLabel: typeof CONFIG.DND5E.spellcasting.psionic?.getLabel === 'function',
+                label: CONFIG.DND5E.spellcasting.psionic?.getLabel?.()
+            };
+            const initial = summarize();
+            const initialRow = getRow(psionicPowerId);
+            const initialOrdinaryHtml = getRow(ordinarySpellId).outerHTML;
+
+            for (let iteration = 0; iteration < 20; iteration++) {
+                Hooks.callAll(renderHook, app, app.element, {actor}, {});
+            }
+            const repeated = {
+                ...summarize(),
+                sameRow: getRow(psionicPowerId) === initialRow,
+                ordinaryUnchanged: getRow(ordinarySpellId).outerHTML === initialOrdinaryHtml
+            };
+
+            const psionicPower = actor.items.get(psionicPowerId);
+            const changedActivities = psionicPower.toObject().system.activities;
+            const changedCosts = ['3', '5'];
+            Object.values(changedActivities).forEach((activity, index) => {
+                activity.consumption.targets[0].value = changedCosts[index];
+            });
+            await psionicPower.update({'system.activities': changedActivities}, {render: false});
+            Hooks.callAll(renderHook, app, app.element, {actor}, {});
+            const changed = summarize();
+
+            const noCostActivities = psionicPower.toObject().system.activities;
+            for (const activity of Object.values(noCostActivities)) {
+                activity.consumption.targets = [];
+            }
+            await psionicPower.update({'system.activities': noCostActivities}, {render: false});
+            Hooks.callAll(renderHook, app, app.element, {actor}, {});
+            const removed = summarize();
+
+            const restoredActivities = psionicPower.toObject().system.activities;
+            const restoredCosts = ['2', '4'];
+            Object.values(restoredActivities).forEach((activity, index) => {
+                activity.consumption.targets = [{
+                    type: 'itemUses',
+                    value: restoredCosts[index],
+                    target: actor.items.find(item => item.system.identifier === 'spell-points').id,
+                    scaling: {mode: ''}
+                }];
+            });
+            await psionicPower.update({'system.activities': restoredActivities}, {render: false});
+            Hooks.callAll(renderHook, app, app.element, {actor}, {});
+            const restored = summarize();
+
+            const rowBeforeFullRender = getRow(psionicPowerId);
+            app.render({force: true});
+            await waitFor(() => getRow(psionicPowerId) && getRow(psionicPowerId) !== rowBeforeFullRender);
+            const fullRender = {
+                ...summarize(),
+                rowReplaced: getRow(psionicPowerId) !== rowBeforeFullRender
+            };
+
+            const rowBeforeSpellsRender = getRow(psionicPowerId);
+            app.render({parts: ['spells']});
+            await waitFor(() => getRow(psionicPowerId) && getRow(psionicPowerId) !== rowBeforeSpellsRender);
+            const spellsRender = {
+                ...summarize(),
+                rowReplaced: getRow(psionicPowerId) !== rowBeforeSpellsRender
+            };
+
+            return {
+                registration,
+                initial,
+                repeated,
+                changed,
+                removed,
+                restored,
+                fullRender,
+                spellsRender,
+                aboveLimitRowCount: app.element.querySelectorAll(
+                    `[data-item-id="${highCostPowerId}"]`
+                ).length
+            };
+        } finally {
+            await app.close();
+        }
+    }, {...fixture, actorType: type, costSelector: PSIONIC_COST_SELECTOR});
+}
+
+function expectStableSubtitle(result) {
+    expect(result.rowCount).toBe(1);
+    expect(result.annotationCount).toBe(1);
+    expect(result.annotation).toBe('• 2-4 Power Points');
+    expect(result.subtitle).toBe('Action • 2-4 Power Points');
+    expect(result.baseSubtitle).toBe('Action');
+    expect(result.rowHasLegacyLevel).toBe(false);
+    expect(result.sectionMethod).toBe('psionic');
+    expect(result.sectionLevel).toBe('1');
+}
+
+test.describe('Psionic spell subtitles', () => {
+    test.beforeEach(async ({page}) => {
+        await loginUser(page, 'Gamemaster');
+    });
+
+    test.afterEach(async ({page}) => {
+        const isGamemaster = await page.evaluate(() => game?.user?.isGM ?? false);
+        if (!isGamemaster) {
+            await page.goto('/join');
+            await loginUser(page, 'Gamemaster');
+        }
+        await page.evaluate(async () => {
+            const actors = game.actors.filter(actor => actor.name.startsWith('Playwright F-11 '));
+            for (const actor of actors) {
+                await actor.delete();
+            }
+        });
+    });
+
+    test('reconciles current character and NPC spellbook rows', async ({page}) => {
+        for (const type of ['character', 'npc']) {
+            const result = await validateSubtitleActor(page, await createSubtitleActor(page, type), type);
+
+            expect(result.registration).toEqual({hasGetLabel: true, label: 'Psionic'});
+            expectStableSubtitle(result.initial);
+            expectStableSubtitle(result.repeated);
+            expect(result.repeated.sameRow).toBe(true);
+            expect(result.repeated.ordinaryUnchanged).toBe(true);
+            expect(result.changed).toEqual({
+                ...result.initial,
+                annotation: '• 3-5 Power Points',
+                subtitle: 'Action • 3-5 Power Points'
+            });
+            expect(result.removed).toEqual({
+                ...result.initial,
+                annotationCount: 0,
+                annotation: undefined,
+                subtitle: 'Action'
+            });
+            expectStableSubtitle(result.restored);
+            expectStableSubtitle(result.fullRender);
+            expect(result.fullRender.rowReplaced).toBe(true);
+            expectStableSubtitle(result.spellsRender);
+            expect(result.spellsRender.rowReplaced).toBe(true);
+            expect(result.aboveLimitRowCount).toBe(0);
+        }
+    });
+
+    test('shows one current annotation to Player2 owners', async ({page}) => {
+        const fixtures = [];
+        for (const type of ['character', 'npc']) {
+            fixtures.push({type, fixture: await createSubtitleActor(page, type, 'Player2')});
+        }
+
+        await page.goto('/join');
+        await loginUser(page, 'Player2');
+        const results = [];
+        for (const {fixture} of fixtures) {
+            results.push(await page.evaluate(async ({actorId, psionicPowerId, highCostPowerId, costSelector}) => {
+                const actor = game.actors.get(actorId);
+                const app = actor.sheet;
+                const delay = ms => new Promise(resolve => {
+                    setTimeout(resolve, ms);
+                });
+                const getRow = itemId => app.element?.querySelector(`[data-item-id="${itemId}"]`);
+
+                try {
+                    app.render({force: true, mode: app.constructor.MODES.EDIT});
+                    for (let attempt = 0; attempt < 50 && !getRow(psionicPowerId); attempt++) {
+                        await delay(100);
+                    }
+                    const row = getRow(psionicPowerId);
+                    return {
+                        actorIsOwner: actor.isOwner,
+                        annotationCount: row?.querySelectorAll(costSelector).length ?? 0,
+                        annotation: row?.querySelector(costSelector)?.textContent.trim(),
+                        aboveLimitRowCount: app.element?.querySelectorAll(
+                            `[data-item-id="${highCostPowerId}"]`
+                        ).length ?? 0
+                    };
+                } finally {
+                    await app.close();
+                }
+            }, {...fixture, costSelector: PSIONIC_COST_SELECTOR}));
+        }
+
+        for (const result of results) {
+            expect(result).toEqual({
+                actorIsOwner: true,
+                annotationCount: 1,
+                annotation: '• 2-4 Power Points',
+                aboveLimitRowCount: 0
+            });
+        }
     });
 });

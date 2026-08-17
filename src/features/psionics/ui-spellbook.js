@@ -1,5 +1,7 @@
 import { isPsionicSpell, getPowerPointItemIds, getPowerLimit, getMinimumPowerPointCost } from './ui-common';
 
+const PSIONIC_COST_SELECTOR = '[data-sosly-psionic-cost]';
+
 function extractPowerPointCosts(spell, actor) {
     if (!spell.system.activities) {
         return null;
@@ -39,16 +41,41 @@ function extractPowerPointCosts(spell, actor) {
     return `${minCost}-${maxCost} Power Points`;
 }
 
+function reconcilePowerPointSubtitle(itemEl, powerPointCosts) {
+    const subtitleElement = itemEl.querySelector('.item-row > .item-name .name-stacked .subtitle');
+    if (!subtitleElement) {
+        return;
+    }
+
+    let annotation = subtitleElement.querySelector(PSIONIC_COST_SELECTOR);
+    if (!powerPointCosts) {
+        annotation?.remove();
+        return;
+    }
+
+    if (!annotation) {
+        annotation = subtitleElement.ownerDocument.createElement('span');
+        annotation.dataset.soslyPsionicCost = '';
+        subtitleElement.append(annotation);
+    }
+
+    const baseSubtitle = Array.from(subtitleElement.childNodes)
+        .filter(node => node !== annotation)
+        .map(node => node.textContent)
+        .join('')
+        .trim();
+    annotation.textContent = `${baseSubtitle ? ' • ' : ''}${powerPointCosts}`;
+}
+
 export function addPsionicSubtitles(app, element, context, options) {
     if (!context.actor) {
         return;
     }
 
-    const psionicPowerElements = element.querySelectorAll('[data-item-level="99"]');
-    const psionicTalentElements = element.querySelectorAll('[data-item-level="0"]');
+    const itemElements = element.querySelectorAll('[data-item-id]');
     const powerLimit = getPowerLimit(context.actor);
 
-    for (const itemEl of [...psionicPowerElements, ...psionicTalentElements]) {
+    for (const itemEl of itemElements) {
         const itemId = itemEl.dataset.itemId;
         if (!itemId) {
             continue;
@@ -66,17 +93,6 @@ export function addPsionicSubtitles(app, element, context, options) {
         }
 
         const powerPointCosts = extractPowerPointCosts(spell, context.actor);
-        if (!powerPointCosts) {
-            continue;
-        }
-
-        const subtitleElement = itemEl.querySelector('.item-row > .item-name .name-stacked .subtitle');
-        if (!subtitleElement) {
-            continue;
-        }
-
-        const existingText = subtitleElement.textContent.trim();
-        const newText = existingText ? `${existingText} • ${powerPointCosts}` : powerPointCosts;
-        subtitleElement.textContent = newText;
+        reconcilePowerPointSubtitle(itemEl, powerPointCosts);
     }
 }
