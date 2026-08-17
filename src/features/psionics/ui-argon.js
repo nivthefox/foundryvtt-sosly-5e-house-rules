@@ -311,6 +311,8 @@ export function registerArgonIntegration() {
     let DND5eButtonPanelButtonClass = null;
     let buttonClassPatched = false;
     let needsFirstRerender = false;
+    const patchedCoreHUDClasses = new WeakSet();
+    const patchedPanelClasses = new WeakSet();
 
     function patchButtonClass(buttonClass) {
         if (buttonClassPatched || !buttonClass) {
@@ -366,13 +368,17 @@ export function registerArgonIntegration() {
     }
 
     Hooks.on('argonInit', CoreHUD => {
+        if (patchedCoreHUDClasses.has(CoreHUD)) {
+            return;
+        }
+
         const originalDefineMainPanels = CoreHUD.defineMainPanels;
 
         CoreHUD.defineMainPanels = function(panels) {
             originalDefineMainPanels.call(this, panels);
 
             for (const PanelClass of panels) {
-                if (!PanelClass.prototype._getButtons) {
+                if (!PanelClass.prototype._getButtons || patchedPanelClasses.has(PanelClass)) {
                     continue;
                 }
 
@@ -393,8 +399,10 @@ export function registerArgonIntegration() {
                     }
                     return processPanelButtons(buttons, this.actor, DND5eButtonPanelButtonClass);
                 };
+                patchedPanelClasses.add(PanelClass);
             }
         };
+        patchedCoreHUDClasses.add(CoreHUD);
 
         Hooks.once('renderCoreHUD', (app, html, data) => {
             if (needsFirstRerender) {
