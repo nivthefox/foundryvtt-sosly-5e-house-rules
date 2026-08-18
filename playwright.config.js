@@ -6,9 +6,7 @@ const launchOptions = {
     args: process.env.CI ? [
         '--no-sandbox',
         '--disable-dev-shm-usage',
-        '--disable-gpu',
-        '--disable-web-security',
-        '--disable-features=VizDisplayCompositor'
+        '--disable-web-security'
     ] : ['--enable-gpu', '--use-gl=egl']
 };
 
