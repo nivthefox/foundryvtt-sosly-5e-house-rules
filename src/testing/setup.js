@@ -1,6 +1,6 @@
 import {chromium} from '@playwright/test';
 
-import {loginUser} from './foundry-helpers.js';
+import {loginUser, logoutUser} from './foundry-helpers.js';
 import {assertRuntime} from './runtime.js';
 
 export default async function globalSetup(cfg) {
@@ -20,6 +20,7 @@ export default async function globalSetup(cfg) {
             moduleActive: game.modules.get(moduleId)?.active
         }), 'sosly-5e-house-rules');
         assertRuntime(runtime);
+        await logoutUser(page);
     } finally {
         await browser.close();
     }
