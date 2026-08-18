@@ -45,7 +45,7 @@ npm run lint:code
 npm run build
 ```
 
-The Playwright integration suite requires a licensed Foundry runtime. The supported environment uses Foundry 13.350 and installs dnd5e 5.2.5 into an isolated Docker volume:
+The Playwright integration suite requires a licensed Foundry runtime. The supported environment uses Foundry 13.351 and installs dnd5e 5.2.5 into an isolated Docker volume:
 
 ```shell
 docker compose -f docker-compose.test.yml up --detach --wait

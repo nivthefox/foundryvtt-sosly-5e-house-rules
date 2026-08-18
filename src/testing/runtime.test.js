@@ -6,7 +6,7 @@ import {assertRuntime, EXPECTED_RUNTIME} from './runtime.js';
 describe('Foundry integration runtime', () => {
     it('accepts the declared runtime', () => {
         assert.doesNotThrow(() => assertRuntime({
-            coreVersion: '13.350',
+            coreVersion: '13.351',
             systemId: EXPECTED_RUNTIME.systemId,
             systemVersion: EXPECTED_RUNTIME.systemVersion,
             moduleId: EXPECTED_RUNTIME.moduleId,
