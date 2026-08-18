@@ -2,9 +2,6 @@
 /extracted
 /node_modules
 /packs
-/playwright-report
-/test-results
-/.playwright-state
 .env
 .idea/
 *.iml
