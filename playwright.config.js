@@ -38,8 +38,7 @@ export default defineConfig({
 
   workers: 1,
 
-  /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: 0,
   
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: process.env.CI ? [['line'], ['html']] : [['html']],
@@ -52,8 +51,8 @@ export default defineConfig({
     /* Foundry v13 requires at least 1366x768 and blocks the UI below it. */
     viewport: {width: 1440, height: 900},
     
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    /* Retain CI traces for failed tests. See https://playwright.dev/docs/trace-viewer */
+    trace: process.env.CI ? 'retain-on-failure' : 'off',
     
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',

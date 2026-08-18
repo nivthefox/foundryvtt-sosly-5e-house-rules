@@ -6,6 +6,15 @@ import {expect} from '@playwright/test';
 
 const module_id = 'sosly-5e-house-rules';
 
+async function dismissHardwareAccelerationWarning(page) {
+    const warning = page.locator('#notifications > *').filter({hasText: 'hardware acceleration'});
+    if (!await warning.isVisible()) {
+        return;
+    }
+
+    await warning.click({force: true});
+}
+
 /**
  * Clean up all chat messages in the FoundryVTT game
  * @param page
@@ -188,6 +197,7 @@ export async function loginUser(page, username) {
     // Verify that you are logged in as expected user
     const currentUser = await page.evaluate(() => game?.user?.name);
     expect(currentUser).toBe(username);
+    await dismissHardwareAccelerationWarning(page);
 }
 
 /**
