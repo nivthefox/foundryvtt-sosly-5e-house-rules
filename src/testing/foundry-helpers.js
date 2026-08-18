@@ -196,9 +196,9 @@ export async function loginUser(page, username) {
  */
 export async function logoutUser(page) {
     // Attempt to log out
-    await page.click('#ui-right a.item[data-tab="settings"]');
-    await page.waitForSelector('#ui-right button[data-action="logout"]', { timeout: 5000 });
-    await page.click('#ui-right button[data-action="logout"]');
+    await page.click('#ui-right button[data-action="tab"][data-tab="settings"]');
+    await page.waitForSelector('#ui-right button[data-action="openApp"][data-app="logout"]', { timeout: 5000 });
+    await page.click('#ui-right button[data-action="openApp"][data-app="logout"]');
     await page.waitForTimeout(1000); // wait for the transition to the login screen
 
     // Wait for the website to be ready
