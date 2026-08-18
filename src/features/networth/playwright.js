@@ -26,6 +26,15 @@ test.describe('Net Worth display', () => {
                 const delay = ms => new Promise(resolve => {
                     setTimeout(resolve, ms);
                 });
+                const waitFor = async (predicate, message) => {
+                    for (let attempt = 0; attempt < 50; attempt++) {
+                        if (predicate()) {
+                            return;
+                        }
+                        await delay(100);
+                    }
+                    throw new Error(message);
+                };
                 const hookByType = {
                     character: 'renderCharacterActorSheet',
                     npc: 'renderNPCActorSheet',
@@ -39,8 +48,11 @@ test.describe('Net Worth display', () => {
                     const hook = hookByType[actor.type];
 
                     try {
-                        app.render({force: true});
-                        await delay(800);
+                        await app.render({force: true});
+                        await waitFor(
+                            () => app.element?.querySelector('.inventory-element .currency .net-worth'),
+                            `Timed out waiting for ${actor.type} net worth display`
+                        );
 
                         const initialContainer = app.element.querySelector('.inventory-element .currency');
                         const initialDisplay = initialContainer.querySelector('.net-worth');
@@ -57,8 +69,11 @@ test.describe('Net Worth display', () => {
                         const updatedDisplays = initialContainer.querySelectorAll('.net-worth');
                         const updatedDisplay = updatedDisplays[0];
 
-                        app.render({force: true});
-                        await delay(800);
+                        await app.render({force: true});
+                        await waitFor(
+                            () => app.element?.querySelector('.inventory-element .currency .net-worth'),
+                            `Timed out waiting for replacement ${actor.type} net worth display`
+                        );
 
                         const replacementContainer = app.element.querySelector('.inventory-element .currency');
                         const replacementDisplays = replacementContainer.querySelectorAll('.net-worth');

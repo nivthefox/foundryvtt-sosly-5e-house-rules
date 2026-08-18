@@ -13,11 +13,23 @@ async function loginUser(page, username) {
     }, MODULE_ID, {timeout: 30000});
 }
 
-async function measureContextMenuListeners(page, actorId, rerenders) {
-    return page.evaluate(async ({actorId, rerenders}) => {
+async function measureContextMenuListeners(page, actorId, itemId, rerenders) {
+    return page.evaluate(async ({actorId, itemId, rerenders}) => {
         const actor = game.actors.get(actorId);
         const originalAddEventListener = EventTarget.prototype.addEventListener;
         const contextMenuRoots = [];
+        const delay = ms => new Promise(resolve => {
+            setTimeout(resolve, ms);
+        });
+        const waitForItem = async () => {
+            for (let attempt = 0; attempt < 50; attempt++) {
+                if (actor.sheet.element?.querySelector(`[data-item-id="${itemId}"]`)) {
+                    return;
+                }
+                await delay(100);
+            }
+            throw new Error(`Timed out waiting for ${actor.name} item row as ${game.user.name}`);
+        };
 
         EventTarget.prototype.addEventListener = function(type, listener, options) {
             if ((type === 'contextmenu') && this.classList?.contains('location')) {
@@ -28,6 +40,7 @@ async function measureContextMenuListeners(page, actorId, rerenders) {
 
         try {
             await actor.sheet.render({force: true});
+            await waitForItem();
             const root = actor.sheet.element;
             const registrationsAfterFirstRender = contextMenuRoots.filter(element => element === root).length;
 
@@ -45,7 +58,7 @@ async function measureContextMenuListeners(page, actorId, rerenders) {
         } finally {
             EventTarget.prototype.addEventListener = originalAddEventListener;
         }
-    }, {actorId, rerenders});
+    }, {actorId, itemId, rerenders});
 }
 
 async function verifyContextMenu(page, itemId) {
@@ -86,7 +99,7 @@ async function verifyRootTeardown(page, actorId) {
 
 test.describe('Location sheet context menu lifecycle', () => {
     test('does not add context-menu listeners when the persistent root rerenders', async ({browser}) => {
-        const gmContext = await browser.newContext();
+        const gmContext = await browser.newContext({viewport: {width: 1440, height: 900}});
         const gmPage = await gmContext.newPage();
         await loginUser(gmPage, 'Gamemaster');
 
@@ -105,16 +118,16 @@ test.describe('Location sheet context menu lifecycle', () => {
         }, LOCATION_TYPE);
 
         try {
-            const gmResult = await measureContextMenuListeners(gmPage, fixture.actorId, 100);
+            const gmResult = await measureContextMenuListeners(gmPage, fixture.actorId, fixture.itemId, 100);
             expect(gmResult.rootPersisted).toBe(true);
             await verifyContextMenu(gmPage, fixture.itemId);
             await verifyRootTeardown(gmPage, fixture.actorId);
 
-            const playerContext = await browser.newContext();
+            const playerContext = await browser.newContext({viewport: {width: 1440, height: 900}});
             const playerPage = await playerContext.newPage();
             await loginUser(playerPage, 'Player2');
 
-            const playerResult = await measureContextMenuListeners(playerPage, fixture.actorId, 100);
+            const playerResult = await measureContextMenuListeners(playerPage, fixture.actorId, fixture.itemId, 100);
             expect(playerResult.rootPersisted).toBe(true);
             await verifyContextMenu(playerPage, fixture.itemId);
             await verifyRootTeardown(playerPage, fixture.actorId);

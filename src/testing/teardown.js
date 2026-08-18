@@ -1,5 +1,5 @@
 import { chromium } from '@playwright/test';
-import {cleanupTestActors, cleanupChatMessages, loginUser} from './foundry-helpers';
+import {cleanupTestActors, cleanupChatMessages, loginUser} from './foundry-helpers.js';
 
 /**
  * Global teardown that runs once after all tests are complete
@@ -8,7 +8,7 @@ import {cleanupTestActors, cleanupChatMessages, loginUser} from './foundry-helpe
 export default async function globalTeardown(cfg) {
     console.log('Running global teardown...');
 
-    const browser = await chromium.launch();
+    const browser = await chromium.launch(cfg.projects[0].use.launchOptions);
     const context = await browser.newContext({
         baseURL: cfg.projects[0].use.baseURL,
     });

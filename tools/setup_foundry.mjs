@@ -1,101 +1,222 @@
-import { chromium } from '@playwright/test';
+import {chromium} from '@playwright/test';
 
-(async function setupFoundryComplete() {
-    const browser = await chromium.launch({
-        args: ['--enable-gpu', '--use-gl=egl'],
-        headless: true,
-        timeout: 120000,
-    });
-    const context = await browser.newContext({
-        viewport: { width: 1920, height: 1080 }, // Set a reasonable viewport size
-        baseURL: 'http://localhost:30000', // Base URL for Foundry
-    });
-    const page = await context.newPage();
+import {assertRuntime, EXPECTED_RUNTIME} from '../src/testing/runtime.js';
 
-    console.log('=== Starting FoundryVTT Setup ===');
+const BASE_URL = process.env.FOUNDRY_TEST_URL ?? 'http://localhost:30000';
+const ADMIN_KEY = process.env.FOUNDRY_ADMIN_KEY ?? 'sosly-integration';
+const WORLD_ID = 'sosly-integration';
+const WORLD_TITLE = 'SoSly Integration Tests';
+const PLAYER_NAME = 'Player2';
 
-    // 1. Navigate to Foundry
-    console.log('1. Navigating to Foundry...');
-    await page.goto('/');
+const PACKAGES = [
+    {
+        type: 'system',
+        id: 'dnd5e',
+        version: EXPECTED_RUNTIME.systemVersion,
+        manifest: 'https://github.com/foundryvtt/dnd5e/releases/download/release-5.1.9/system.json'
+    },
+    {
+        type: 'module',
+        id: 'socketlib',
+        version: 'v1.1.3',
+        manifest: 'https://github.com/farling42/foundryvtt-socketlib/releases/download/v1.1.3/module.json'
+    },
+    {
+        type: 'module',
+        id: 'lib-wrapper',
+        version: '1.13.4.0',
+        manifest: 'https://github.com/ruipin/fvtt-lib-wrapper/releases/download/v1.13.4.0/module.json'
+    },
+    {
+        type: 'module',
+        id: 'ActiveAuras',
+        version: '0.12.4',
+        manifest: 'https://github.com/kandashi/Active-Auras/releases/download/0.12.4/module.json'
+    },
+    {
+        type: 'module',
+        id: 'dnd5e-spellpoints',
+        version: '3.2.20',
+        manifest: 'https://github.com/misthero/dnd5e-spellpoints/releases/download/v3.2.20/module.json'
+    }
+];
 
-    // 2. Accept license if needed
+const ACTIVE_MODULES = PACKAGES
+    .filter(pkg => pkg.type === 'module')
+    .map(pkg => pkg.id)
+    .concat(EXPECTED_RUNTIME.moduleId);
+
+async function authenticateSetup(page) {
+    await page.goto(`${BASE_URL}/setup`);
+
     if (page.url().includes('/license')) {
-        console.log('2. Accepting license agreement...');
-        await page.waitForLoadState('networkidle');
+        await acceptEula(page);
+    }
 
-        // Click the checkbox
-        const checkbox = page.locator('input[type="checkbox"]');
-        if (await checkbox.isVisible()) {
-          await checkbox.check();
+    if (page.url().includes('/auth')) {
+        await page.locator('input[name="adminPassword"]').fill(ADMIN_KEY);
+        await page.locator('button[value="adminAuth"]').click();
+    }
+
+    await page.waitForURL('**/setup', {timeout: 30000});
+    await page.waitForFunction(() => {
+        return window.game?.view === 'setup'
+            && window.game.systems
+            && window.game.modules
+            && window.game.worlds;
+    }, null, {timeout: 30000});
+}
+
+async function acceptEula(page) {
+    const licenseKeyInput = page.locator('input[name="licenseKey"]');
+    if (await licenseKeyInput.isVisible()) {
+        throw new Error('Foundry did not receive a license from the configured environment.');
+    }
+
+    await page.locator('#eula-agree').check();
+    await page.locator('#sign').click();
+    await page.waitForLoadState('domcontentloaded');
+}
+
+async function installPackage(page, pkg) {
+    const installedVersion = await page.evaluate(({id, type}) => {
+        const packages = type === 'system' ? game.systems : game.modules;
+        return packages.get(id)?.version;
+    }, pkg);
+
+    if (installedVersion === pkg.version) {
+        return;
+    }
+
+    const actualVersion = await page.evaluate(async packageData => {
+        const installed = await game.installPackage({
+            type: packageData.type,
+            manifest: packageData.manifest,
+            notify: false,
+            force: true
+        });
+        return installed.version;
+    }, pkg);
+
+    if (actualVersion !== pkg.version) {
+        throw new Error(`Installed ${pkg.id} ${actualVersion}; expected ${pkg.version}.`);
+    }
+}
+
+async function createWorld(page) {
+    const worldExists = await page.evaluate(worldId => game.worlds.has(worldId), WORLD_ID);
+    if (worldExists) {
+        return;
+    }
+
+    await page.evaluate(async world => {
+        const response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                action: 'createWorld',
+                id: world.id,
+                title: world.title,
+                system: world.system
+            })
+        });
+
+        if (response.error) {
+            throw new Error(response.error);
+        }
+    }, {
+        id: WORLD_ID,
+        title: WORLD_TITLE,
+        system: EXPECTED_RUNTIME.systemId
+    });
+
+    await page.reload();
+    await page.waitForFunction(worldId => window.game?.worlds?.has(worldId), WORLD_ID, {timeout: 30000});
+}
+
+async function launchWorld(page) {
+    const launchButton = page.locator(
+        `[data-package-id="${WORLD_ID}"] [data-action="worldLaunch"]`
+    );
+    await launchButton.waitFor({state: 'attached', timeout: 30000});
+    await launchButton.evaluate(element => element.click());
+    await page.waitForURL('**/join', {timeout: 120000});
+}
+
+async function loginGamemaster(page) {
+    await page.locator('select[name="userid"]').selectOption({label: 'Gamemaster'});
+    await page.locator('button[name="join"]').click();
+    await page.waitForFunction(() => window.game?.ready === true, null, {timeout: 120000});
+}
+
+async function configureWorld(page) {
+    await page.evaluate(async ({activeModules, playerName}) => {
+        if (!game.users.find(user => user.name === playerName)) {
+            await User.create({
+                name: playerName,
+                role: CONST.USER_ROLES.PLAYER
+            });
         }
 
-        // Click agree button
-        const agreeButton = page.locator('button:has-text("Agree")');
-        await agreeButton.click();
+        const moduleConfiguration = foundry.utils.deepClone(
+            game.settings.get('core', 'moduleConfiguration')
+        );
+        for (const moduleId of activeModules) {
+            moduleConfiguration[moduleId] = true;
+        }
+        await game.settings.set('core', 'moduleConfiguration', moduleConfiguration);
+    }, {
+        activeModules: ACTIVE_MODULES,
+        playerName: PLAYER_NAME
+    });
 
-        // Wait for navigation to setup page
-        await page.waitForURL('**/setup', {timeout: 30000});
-        console.log('   ✓ License accepted');
+    await page.reload();
+    await page.waitForFunction(moduleId => {
+        return window.game?.ready && window.game.modules.get(moduleId)?.active;
+    }, EXPECTED_RUNTIME.moduleId, {timeout: 120000});
+
+    await page.evaluate(async moduleId => {
+        await game.settings.set(moduleId, 'location.enabled', true);
+    }, EXPECTED_RUNTIME.moduleId);
+    await page.reload();
+    await page.waitForFunction(locationType => {
+        return window.game?.ready && CONFIG.Actor.dataModels[locationType];
+    }, `${EXPECTED_RUNTIME.moduleId}.location`, {timeout: 120000});
+}
+
+async function readRuntime(page) {
+    return page.evaluate(moduleId => ({
+        coreVersion: game.version,
+        systemId: game.system.id,
+        systemVersion: game.system.version,
+        moduleId: game.modules.get(moduleId)?.id,
+        moduleActive: game.modules.get(moduleId)?.active
+    }), EXPECTED_RUNTIME.moduleId);
+}
+
+async function main() {
+    const launchOptions = {headless: true};
+    if (process.env.PLAYWRIGHT_CHANNEL) {
+        launchOptions.channel = process.env.PLAYWRIGHT_CHANNEL;
     }
 
-    // 3. Now we should be on the setup page
-    await page.waitForURL('**/setup', {timeout: 10000});
-    console.log('3. Reached setup page');
+    const browser = await chromium.launch(launchOptions);
+    const context = await browser.newContext({baseURL: BASE_URL});
+    const page = await context.newPage();
 
-    // Handle usage data sharing dialog if present
-    await page.waitForSelector('div.dialog button[data-button="no"]', {timeout: 5000});
-    await page.click('div.dialog button[data-button="no"]');
-    console.log('   ✓ Usage data sharing declined');
-
-    // Handle the tour dialog if present
-    const setupTour = await page
-        .waitForSelector('aside.tour a[data-action="exit"]', {timeout: 5000})
-        .catch(() => false);
-    if (setupTour) {
-        await page.click('aside.tour a[data-action="exit"]');
-        console.log('   ✓ Tour dialog closed');
+    try {
+        await authenticateSetup(page);
+        for (const pkg of PACKAGES) {
+            await installPackage(page, pkg);
+        }
+        await createWorld(page);
+        await launchWorld(page);
+        await loginGamemaster(page);
+        await configureWorld(page);
+        assertRuntime(await readRuntime(page));
+    } finally {
+        await browser.close();
     }
+}
 
-    // 4. Install D&D 5e system
-    console.log('4. Installing D&D 5e system...');
-    await page.waitForSelector('#systems button[data-action="installPackage"]', {timeout: 10000});
-    await page.click('#systems button[data-action="installPackage"]');
-    await page.waitForSelector('[data-package-id="dnd5e"]', {timeout: 10000});
-    await page.click('[data-package-id="dnd5e"] button.install');
-    console.log('   ✓ D&D 5e system installation started');
-    await page.click('#install-package a.close');
-    console.log('   ✓ Closed installation dialog');
-
-    // Wait for the installation to complete
-    await page.waitForFunction(() => {
-        const activeTab = document.querySelector('nav.tabs h2.active');
-        return activeTab && activeTab.getAttribute('data-tab') !== 'systems';
-    }, { timeout: 120000, polling: 1000 });
-    await page.click('h2[data-tab="systems"]');
-    console.log('   ✓ Switched back to Systems tab');
-    await page.waitForSelector('li[data-package-id="dnd5e"]', {timeout: 5000});
-    console.log('   ✓ D&D 5e system installation completed');
-
-    // 5. Install Dependencies
-    console.log('5. Installing dependencies...');
-    await page.click('h2[data-tab="modules"]');
-    await page.waitForSelector('#modules button[data-action="installPackage"]', {timeout: 10000});
-    await page.click('#modules button[data-action="installPackage"]');
-    await page.waitForSelector('[data-package-id="lib-wrapper"]', {timeout: 10000});
-    await page.click('[data-package-id="lib-wrapper"] button.install');
-    console.log('   ✓ libWrapper installation started');
-    await page.waitForSelector('[data-package-id="quench"]', {timeout: 10000});
-    await page.click('[data-package-id="quench"] button.install');
-    console.log('   ✓ Quench installation started');
-    await page.click('#install-package a.close');
-    console.log('   ✓ Closed installation dialog');
-
-    // Wait for the installation to complete
-    await page.waitForSelector('li[data-package-id="lib-wrapper"]', {timeout: 120000});
-    await page.waitForSelector('li[data-package-id="quench"]', {timeout: 120000});
-    console.log('   ✓ Dependencies installed');
-
-    // 6. Initial setup complete - world will be provided separately
-    console.log('6. Initial setup complete. License verified, systems and dependencies installed.');
-    await browser.close();
-})();
+await main();

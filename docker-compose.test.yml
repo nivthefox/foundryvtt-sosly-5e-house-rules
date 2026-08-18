@@ -1,33 +1,43 @@
 services:
+  data-init:
+    image: ghcr.io/felddy/foundryvtt:13.350.0
+    user: root
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - >-
+        mkdir -p /data/Data/modules/sosly-5e-house-rules /data/Data/systems /data/Data/worlds &&
+        cp /module-source/module.json /data/Data/modules/sosly-5e-house-rules/module.json &&
+        cp -a /module-source/dist /module-source/public /module-source/templates
+        /data/Data/modules/sosly-5e-house-rules/ &&
+        tar --exclude='*/LOCK' -cf - -C /module-source packs |
+        tar -xf - -C /data/Data/modules/sosly-5e-house-rules &&
+        chown -R node:node /data
+    volumes:
+      - foundry-test-data:/data
+      - ./:/module-source:ro
+
   foundry:
-    image: felddy/foundryvtt:12
+    image: ghcr.io/felddy/foundryvtt:13.350.0
+    hostname: sosly-integration
+    depends_on:
+      data-init:
+        condition: service_completed_successfully
     environment:
       - FOUNDRY_USERNAME=${FOUNDRY_USERNAME}
       - FOUNDRY_PASSWORD=${FOUNDRY_PASSWORD}
       - FOUNDRY_LICENSE_KEY=${FOUNDRY_LICENSE_KEY}
-      - FOUNDRY_HOSTNAME=localhost
-      - FOUNDRY_LOCAL_HOSTNAME=localhost
-      - FOUNDRY_PROTOCOL=4
-      - FOUNDRY_PROXY_PORT=30000
-      - FOUNDRY_PROXY_SSL=false
-      - FOUNDRY_WORLD=test-world
+      - FOUNDRY_ADMIN_KEY=${FOUNDRY_ADMIN_KEY:-sosly-integration}
+      - FOUNDRY_TELEMETRY=false
     ports:
-      - "30000:30000"
+      - "${FOUNDRY_TEST_PORT:-30000}:30000"
     volumes:
-      # Use a named volume for data persistence
       - foundry-test-data:/data
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:30000"]
       interval: 10s
       timeout: 5s
-      retries: 5
-      start_period: 30s
-    networks:
-      - foundry-test
-
-networks:
-  foundry-test:
-    driver: bridge
+      retries: 12
+      start_period: 90s
 
 volumes:
   foundry-test-data:
