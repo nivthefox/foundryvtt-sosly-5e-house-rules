@@ -7,8 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [13.3.3](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.3.3) - 2026-08-18
+
 ### Fixed
+- Prevent Location sheet item context menu actions from firing more than once after rerenders
+- Repair legacy compendium items so spell metadata and activities load correctly
 - Reduce low-light vision slowdown in scenes with many lights
+- Refresh low-light vision correctly after switching vision modes
+- Prevent actor sheet rerenders from duplicating or leaving stale Breather buttons, Madness and Blood Pool meters, Net Worth, psionic manifesting cards, and spell subtitles
+- Restore the Psionic Disciplines section on actor sheets
+- Prevent repeated Argon Combat HUD initialization from registering psionic integrations more than once
+
+## [13.3.2](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.3.2) - 2026-03-30
+
+### Fixed
+- Keep psionic disciplines visible on D&D 5e 5.2 actor sheets
+
+## [13.3.1](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.3.1) - 2026-03-30
+
+### Fixed
+- Fix psion actor sheets crashing when opened
 
 ## [13.3.0](https://github.com/nivthefox/foundryvtt-sosly-5e-house-rules/releases/tag/13.3.0) - 2026-02-03
 
