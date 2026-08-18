@@ -71,6 +71,8 @@ jobs:
       github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      PLAYWRIGHT_CHANNEL: chrome
     steps:
       - name: checkout code
         uses: actions/checkout@v4
@@ -92,8 +94,8 @@ jobs:
       - name: Install dependencies
         run: npm ci --cache .npm --prefer-offline
 
-      - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
+      - name: Verify browser
+        run: google-chrome --version
 
       - name: Build module
         run: NODE_ENV=production npm run build
