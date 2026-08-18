@@ -13,7 +13,7 @@ const PACKAGES = [
         type: 'system',
         id: 'dnd5e',
         version: EXPECTED_RUNTIME.systemVersion,
-        manifest: 'https://github.com/foundryvtt/dnd5e/releases/download/release-5.1.9/system.json'
+        manifest: 'https://github.com/foundryvtt/dnd5e/releases/download/release-5.2.5/system.json'
     },
     {
         type: 'module',

@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - "main"
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
 
 env:
   node_version: '20'
@@ -66,9 +69,7 @@ jobs:
         run: NODE_ENV=production npm run build
 
   integration:
-    if: >-
-      github.event_name == 'push' ||
-      github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:

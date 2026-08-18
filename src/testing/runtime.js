@@ -1,7 +1,7 @@
 export const EXPECTED_RUNTIME = Object.freeze({
     coreMajor: '13',
     systemId: 'dnd5e',
-    systemVersion: '5.1.9',
+    systemVersion: '5.2.5',
     moduleId: 'sosly-5e-house-rules'
 });
 

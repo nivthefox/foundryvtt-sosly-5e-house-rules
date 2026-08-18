@@ -22,7 +22,7 @@ describe('Foundry integration runtime', () => {
             moduleId: EXPECTED_RUNTIME.moduleId,
             moduleActive: false
         }), error => {
-            assert.match(error.message, /Expected Foundry 13\.x, dnd5e 5\.1\.9/);
+            assert.match(error.message, /Expected Foundry 13\.x, dnd5e 5\.2\.5/);
             assert.match(error.message, /Received Foundry 12\.343, dnd5e 4\.4\.4/);
             assert.match(error.message, /inactive/);
             return true;

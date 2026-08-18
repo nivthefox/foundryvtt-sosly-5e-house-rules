@@ -11,7 +11,7 @@ This module provides custom house rules, conditions, classes, spells, equipment,
 
 ## Requirements
 - **Foundry VTT:** v13
-- **System:** D&D 5e v5.1+
+- **System:** D&D 5e v5.2.5+
 - **Dependencies:**
   - lib-wrapper v1.0.0.0+
   - dnd5e-spellpoints v2.4.22+
@@ -45,7 +45,7 @@ npm run lint:code
 npm run build
 ```
 
-The Playwright integration suite requires a licensed Foundry runtime. The supported environment uses Foundry 13.350 and installs dnd5e 5.1.9 into an isolated Docker volume:
+The Playwright integration suite requires a licensed Foundry runtime. The supported environment uses Foundry 13.350 and installs dnd5e 5.2.5 into an isolated Docker volume:
 
 ```shell
 docker compose -f docker-compose.test.yml up --detach --wait
@@ -55,10 +55,10 @@ npm run test:integration
 
 Set `FOUNDRY_USERNAME` and `FOUNDRY_PASSWORD`, or `FOUNDRY_LICENSE_KEY`, before starting the container. Set `PLAYWRIGHT_CHANNEL=chrome` to use an installed Chrome browser instead of Playwright's bundled Chromium. Use `FOUNDRY_TEST_PORT` and the corresponding `FOUNDRY_TEST_URL` when port 30000 is already occupied.
 
+Pull requests run the license-independent unit, lint, and build checks. The licensed Foundry integration suite runs nightly at 12:00 UTC and can be started manually from the `checks` workflow.
+
 Run the integration suite twice against a newly created environment to detect setup or cleanup state that is not repeatable. Remove only this environment and its isolated data with:
 
 ```shell
 docker compose -f docker-compose.test.yml down --volumes
 ```
-
-Public CI does not receive a Foundry license, so it runs every license-independent check but does not represent those checks as integration coverage.
